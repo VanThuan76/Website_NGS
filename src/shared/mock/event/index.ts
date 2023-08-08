@@ -1,6 +1,17 @@
 export const eventData = [
     {
         title: "WorkShop",
+        channel: "Offline",
+        description:
+            "Đổi mới tự động hoá trong thời đại 4.0",
+        address: "Phòng New York, Tầng 4, Toà 6th Element",
+        time: "20 thg 7 2023",
+        image:
+            "https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg",
+    },
+    {
+        title: "WorkShop",
+        channel: "Offline",
         description:
             "Đổi mới tự động hoá trong thời đại 4.0",
         address: "Phòng New York, Tầng 4, Toà 6th Element",
@@ -10,6 +21,7 @@ export const eventData = [
     },
     {
         title: "On board",
+        channel: "Online",
         description:
             "Chào mừng thành viên NGS mới gia nhập",
         time: "20 thg 7 2023",
@@ -20,6 +32,7 @@ export const eventData = [
     },
     {
         title: "Training",
+        channel: "Online",
         description:
             "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
         address: "Phòng Toronto, Tầng 4, Toà 6th Element",
@@ -30,6 +43,7 @@ export const eventData = [
 ];
 export interface IEvent {
     title: string,
+    channel: string,
     description: string
     address: string
     time: string

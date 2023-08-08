@@ -1,5 +1,5 @@
+import { PreImage } from "@/components/common/PreImage";
 import { footerData } from "@/mocks/footer";
-import MenuNGS from "../../icon/logo/MenuNGS";
 import InforFooter from "./info";
 
 const Footer = () => {
@@ -7,7 +7,7 @@ const Footer = () => {
     <section className="w-full flex flex-col gap-5 justify-between items-center mx-auto px-16 py-10 bg-[#000] text-white font-thin">
       <div className="grid grid-cols-4 gap-4 items-center">
         <div className="flex flex-col justify-center items-start">
-          <MenuNGS className="mb-3" />
+          <PreImage height={200} width={200} src={"/logo.svg"} alt={'Logo'} layer={false} />
           <p>Địa chỉ: {footerData.contactData.address}</p>
           <p>Số điện thoại: {footerData.contactData.phone}</p>
           <p>Email: {footerData.contactData.email}</p>

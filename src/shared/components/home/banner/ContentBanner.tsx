@@ -1,7 +1,7 @@
+import BtnCommon from '@/components/common/BtnCommon';
+import InitBasicAnimation from '@/components/common/InitBasicAnimation';
 import { AnimatePresence, motion } from 'framer-motion';
 import { Data } from '.';
-import BtnCommon from '../../common/BtnCommon';
-import InitBasicAnimation from '../../common/InitBasicAnimation';
 export const staggerChildren = {
   animate: {
     transition: {
@@ -31,7 +31,7 @@ interface Props {
 
 const ContentBanner = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='absolute min-h-screen flex flex-col justify-center items-center gap-10 leading-[90%] lg:left-0 lg:px-12 lg:items-start z-30'>
+    <InitBasicAnimation className='absolute min-h-screen w-2/3 flex flex-col justify-center items-center gap-10 leading-[90%] lg:left-0 lg:px-12 lg:items-start z-40'>
       <div className='text-left text-3xl lg:text-6xl'>
         <h1 className='inline-block pr-2 text-3xl lg:text-6xl'>Cải tiến</h1>
         <AnimatePresence mode='wait'>
@@ -49,7 +49,7 @@ const ContentBanner = ({ selectedTab }: Props) => {
         </AnimatePresence>
       </div>
       <motion.div className='w-[80%] text-sm lg:text-lg mt-5'>{selectedTab ? selectedTab.description : ''}</motion.div>
-      <BtnCommon colorSvg={'#fff'} />
+      <BtnCommon title='Đăng ký ngay' colorSvg={'#fff'} />
     </InitBasicAnimation>
   );
 };

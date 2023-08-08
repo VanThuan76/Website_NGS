@@ -2,17 +2,15 @@ import Image, { ImageProps } from 'next/image';
 
 interface Props extends ImageProps {
   layer?: boolean;
-  cls?: string;
 }
 
-export function PreImage({ src, cls, layer, ...rest }: Props) {
+export function PreImage({ src, layer, ...rest }: Props) {
   return (
     <div>
       {src ? (
         <div className='relative w-full h-full overflow-hidden'>
           <Image
             src={src}
-            className={`${cls}`}
             style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
             {...rest}
           />
@@ -22,7 +20,6 @@ export function PreImage({ src, cls, layer, ...rest }: Props) {
         <div>
           <Image
             src='/images/default.png'
-            className={`${cls}`}
             style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
             {...rest}
           />

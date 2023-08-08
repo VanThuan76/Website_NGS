@@ -10,7 +10,6 @@ import Event from 'src/shared/components/home/event';
 import News from 'src/shared/components/home/news';
 import Partner from 'src/shared/components/home/partner';
 import Security from 'src/shared/components/home/security';
-import Slogan from 'src/shared/components/home/slogan';
 import AboutUs from 'src/shared/components/home/aboutUs';
 import dynamic from 'next/dynamic';
 import ConnectUs from 'src/shared/components/home/connectUs';
@@ -35,9 +34,6 @@ export function Home() {
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <Security />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
-        <Slogan />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <AboutUs />

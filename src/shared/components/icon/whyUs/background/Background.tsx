@@ -2,9 +2,9 @@ import React, { SVGProps } from 'react';
 
 export default function Background({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='1440' height='919' viewBox='0 0 1440 919' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
+    <svg width='1440' height='800' viewBox='0 0 1440 800' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g clipPath='url(#clip0_3079_8426)'>
-        <rect width='1440' height='919' fill='#141523' />
+        <rect width='1440' height='800' fill='#141523' />
         <g opacity='0.3' filter='url(#filter0_f_3079_8426)'>
           <path
             fillRule='evenodd'

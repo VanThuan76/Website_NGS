@@ -41,7 +41,7 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
   };
 
   return (
-    <div className="relative z-50 min-h-[300px] cursor-pointer">
+    <div className="relative z-50 min-h-[500px] cursor-pointer">
       <motion.div
         initial="inactive"
         animate={selectedIcon?.key === 1 ? "active" : "inactive"}
@@ -56,7 +56,7 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
         initial="inactive"
         animate={selectedIcon?.key === 2 ? "active" : "inactive"}
         variants={iconLastVariants}
-        className="absolute bottom-0 left-[118px] z-30"
+        className="absolute bottom-0 left-[148px] z-30"
       >
         <motion.div
           animate={{
@@ -71,7 +71,7 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
         initial="inactive"
         animate={selectedIcon?.key === 3 ? "active" : "inactive"}
         variants={iconLastVariants}
-        className="absolute bottom-[18px] left-[98px]"
+        className="absolute bottom-[18px] left-[118px]"
       >
         <IconLast open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(WhyUsData[2] as IWhyUsData)} />
       </motion.div>

@@ -6,8 +6,8 @@ interface IconFirstProps extends SVGProps<SVGSVGElement> {
 export default function IconFirst({ gradientColor = "", ...rest }: IconFirstProps) {
   return (
     <svg
-      width="102"
-      height="161"
+      width="200"
+      height="250"
       viewBox="0 0 102 161"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

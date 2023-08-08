@@ -5,8 +5,8 @@ interface IconLastProps extends SVGProps<SVGSVGElement> {
 export default function IconLast({ open, ...rest }: IconLastProps) {
   return (
     <svg
-      width="299"
-      height="252"
+      width="500"
+      height="400"
       viewBox="0 0 401 339"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"

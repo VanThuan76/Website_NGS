@@ -1,4 +1,4 @@
-import { ITestimonial, testimonialData } from "src/shared/mock/testimonial";
+import { ITestimonial, testimonialData } from "@/mocks/testimonial";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { PreImage } from "../../common/PreImage";
@@ -42,7 +42,6 @@ const Testimonial = () => {
                       height={650}
                       alt={"event"}
                       layer={item !== isHovered}
-                      cls="object-cover"
                     />
                     <ContentTestimonial data={item} />
                   </motion.div>
@@ -57,3 +56,4 @@ const Testimonial = () => {
 };
 
 export default Testimonial;
+1

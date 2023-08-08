@@ -6,6 +6,7 @@ import Background from '@/components/icon/whyUs/background/Background';
 import ContentWhyUs from './ContentWhyUs';
 import { partnerData } from '@/mocks/partner';
 import { PreImage } from '@/components/common/PreImage';
+import TitleSection from '@/components/common/TitleSection';
 
 const WhyUs = () => {
   const [selectedIcon, setSelectedIcon] = useState<IWhyUsData>(WhyUsData[0]);
@@ -15,7 +16,7 @@ const WhyUs = () => {
         <div className='w-full min-h-[800px]'>
           <div className='relative w-full h-full'>
             <motion.div
-              className='absolute top-0 left-0 w-full h-full -translate-y-48'
+              className='absolute top-0 left-0 w-full h-full'
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
@@ -26,12 +27,12 @@ const WhyUs = () => {
             <div className='absolute top-0 left-0 w-full px-32'>
               <div className='w-full flex justify-between items-center'>
                 <div className='w-full flex flex-col justify-between items-center gap-3'>
-                  <h2 className='w-full pr-32 text-2xl font-thin text-left float-left text-orange-500'>
-                    Điều gì tạo nên NGS
-                  </h2>
-                  <h1 className='w-full pr-32 text-3xl text-left float-left'>
-                    Tại sao nên chọn đồng hành cùng chúng tôi!
-                  </h1>
+                  <TitleSection
+                    title='Điều gì tạo nên NGS'
+                    description='Tại sao nên chọn đồng hành cùng chúng tôi!'
+                    findMore={false}
+                    className="w-[80%]"
+                  />
                   <div className='w-full mt-5'>
                     <ContentWhyUs selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
                   </div>

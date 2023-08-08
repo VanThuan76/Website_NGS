@@ -12,8 +12,8 @@ export default function IconMid({
 }: IconMidProps) {
   return (
     <svg
-      width="210"
-      height="188"
+      width="350"
+      height="300"
       viewBox="0 0 211 189"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
