@@ -7,10 +7,20 @@ export interface Props {
 const FormConnectUs = ({ connectUsData }: Props) => {
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
+  const [selectedItems, setSelectedItems] = useState<string[]>([]);
+
+  const handleItemClick = (item: string) => {
+    if (selectedItems.includes(item)) {
+      setSelectedItems(prevItems => prevItems.filter(selectedItem => selectedItem !== item));
+    } else {
+      setSelectedItems(prevItems => [...prevItems, item]);
+    }
+  };
   const handleSubmit = (e: any) => {
     e.preventDefault();
     console.log('Email:', fullName);
     console.log('Phone Number:', phoneNumber);
+    console.log('Options:', selectedItems);
   };
   return (
     <div className='w-full flex flex-col justify-start items-start'>
@@ -18,8 +28,15 @@ const FormConnectUs = ({ connectUsData }: Props) => {
       <div className='mt-3 grid grid-cols-3 gap-3 pl-8'>
         {connectUsData &&
           connectUsData.map((item, idx) => {
+            const isSelected = selectedItems.includes(item);
             return (
-              <div key={idx} className='text-center p-3 rounded-full border-2 border-slate-400'>
+              <div
+                key={idx}
+                className={`text-center p-3 rounded-full border-2 ${
+                  isSelected ? 'border-blue-500' : 'border-slate-400'
+                }`}
+                onClick={() => handleItemClick(item)}
+              >
                 {item}
               </div>
             );

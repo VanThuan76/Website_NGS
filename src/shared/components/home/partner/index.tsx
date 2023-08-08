@@ -1,17 +1,14 @@
-import { partnerData } from "src/shared/mock/partner";
-import { PreImage } from "../../common/PreImage";
-import TitleSection from "../../common/TitleSection";
+import { PreImage } from "@/components/common/PreImage";
+import { IPartnerData, partnerData } from "@/mocks/partner";
+import { useState } from "react";
 
 const Partner = () => {
+  const [selectedPartner, setSelectedPartner] = useState<IPartnerData>(partnerData[0]);
   return (
     <section className="bg-[var(--blue-color-500)]">
-      <div className="px-32">
-        <TitleSection
-          title="Dịch vụ"
-          description="Thay đổi bộ mặt Doanh nghiệp của bạn bằng giải pháp quản lý mới"
-          findMore={true}
-        />
-        <div className="w-full mt-10 flex items-start justify-between gap-5" style={{ borderBottom: "1px solid #555" }}>
+      <div className="flex flex-col justify-center items px-32">
+        <h1 className="mt-5 pt-10 text-3xl">Đối tác đồng hành cùng NGSD</h1>
+        <div className="w-full mt-5 flex items-start justify-between gap-5" style={{borderBottom: "1px solid #555"}}>
           {partnerData.map((item, idx) => (
             <PreImage
               key={idx}

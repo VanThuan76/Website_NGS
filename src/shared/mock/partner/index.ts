@@ -24,3 +24,9 @@ export const partnerData = [
         logo: "/partner.svg"
     }
 ]
+export interface IPartnerData {
+    name: string,
+    rank: string,
+    des: string,
+    logo: string
+}

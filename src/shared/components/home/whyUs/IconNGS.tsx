@@ -1,7 +1,7 @@
-import { IWhyUsData, WhyUsData } from "src/shared/mock/whyUs";
-import IconFirst from "../../icon/iconLogoWhyUs/iconFirst";
-import IconLast from "../../icon/iconLogoWhyUs/iconLast";
-import IconMid from "../../icon/iconLogoWhyUs/iconMid";
+import IconFirst from "@/components/icon/whyUs/iconLogoWhyUs/iconFirst";
+import IconLast from "@/components/icon/whyUs/iconLogoWhyUs/iconLast";
+import IconMid from "@/components/icon/whyUs/iconLogoWhyUs/iconMid";
+import { IWhyUsData, WhyUsData } from "@/mocks/whyUs";
 import { motion } from "framer-motion";
 
 interface Props {
