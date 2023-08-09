@@ -12,7 +12,7 @@ const WhyUs = () => {
   const [selectedIcon, setSelectedIcon] = useState<IWhyUsData>(WhyUsData[0]);
   return (
     <>
-      <section className='mt-20'>
+      <section className='pb-24'>
         <div className='w-full min-h-[800px]'>
           <div className='relative w-full h-full'>
             <motion.div

@@ -4,7 +4,7 @@ import FormConnectUs from './FormConnectUs';
 
 const ConnectUs = () => {
   return (
-    <section className='mx-auto px-32 py-10'>
+    <section className='mx-auto px-32 pb-24'>
       <div className='w-full p-12 flex justify-between items-start bg-[#5E18F4] rounded-md'>
         <div className='w-[50%] flex flex-col justify-between items-start gap-5'>
           <h1 className='text-3xl'>Kết nối với NGS</h1>

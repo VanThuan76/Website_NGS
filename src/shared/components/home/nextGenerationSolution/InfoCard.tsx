@@ -1,8 +1,8 @@
-import { PreImage } from '../../common/PreImage';
+import { PreImage } from '@/components/common/PreImage';
+import IconLineDirection from '@/components/icon/IconLineDirection';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 import { useState } from 'react';
-import BtnCommon from '../../common/BtnCommon';
-import IconLineDirection from '../../icon/IconLineDirection';
 
 interface Props {
   title: string;
@@ -12,6 +12,17 @@ interface Props {
 
 const InfoCard = ({ title, description, className }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
+  const { theme } = useTheme();
+  const animateTheme =
+    theme === 'dark'
+      ? { 
+          backgroundColor: isHovered ? '' : '#141523',
+          color: isHovered ? '#fff' : '',
+        }
+      : {
+          backgroundColor: isHovered ? '' : '#fff',
+          color: isHovered ? '#000' : '',
+        };
 
   return (
     <motion.div
@@ -19,10 +30,7 @@ const InfoCard = ({ title, description, className }: Props) => {
       style={{ border: '1px solid #222442' }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
-      animate={{
-        backgroundColor: isHovered ? '' : '#141523',
-        color: isHovered ? '#fff' : '',
-      }}
+      animate={animateTheme}
       transition={{
         duration: 0.5,
         ease: 'easeInOut',
@@ -66,7 +74,7 @@ const InfoCard = ({ title, description, className }: Props) => {
         )}
       </div>
       <div className='flex justify-between items-center gap-3 mt-10'>
-        <motion.p className={`text-sm ${isHovered ? "underline" : "none"}`}>Tìm hiểu thêm</motion.p>
+        <motion.p className={`text-sm ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
         <IconLineDirection color={'#fff'} />
       </div>
     </motion.div>

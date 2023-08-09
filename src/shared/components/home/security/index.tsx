@@ -5,7 +5,7 @@ import SecurityCard from './SecurityCard';
 
 const Security = () => {
   return (
-    <section className='mt-10'>
+    <section className='pb-24'>
       <div className='w-full min-h-[1000px]'>
         <div className='relative w-full h-full'>
           <motion.div

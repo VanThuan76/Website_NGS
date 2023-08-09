@@ -1,13 +1,15 @@
-import { fakeMenu } from 'src/shared/mock/menu';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import { PreImage } from '../../common/PreImage';
-import ThemeModeToggle from '../../common/ToggleThemeMode';
-import LanguageSwitch from '../../common/LanguageSwitch';
-import { HambugerMenu } from './HambugerMenu';
-import { Sheet, SheetContent, SheetTrigger } from '../../common/ui/sheet';
-import { Button } from '@/components/common/ui/button';
 import { Menu } from 'lucide-react';
+
+import { fakeMenu } from 'src/shared/mock/menu';
+import { PreImage } from '@/components/common/PreImage';
+import ThemeModeToggle from '@/components/common/ToggleThemeMode';
+import LanguageSwitch from '@/components/common/LanguageSwitch';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';
+
+import { HambugerMenu } from './HambugerMenu';
+import { Button } from '@/components/common/ui/button';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,13 +33,13 @@ const Header = () => {
   return (
     <section
       className={`w-full top-0 z-50 flex justify-between items-center gap-5 px-5 md:px-10 transition ${isScrolled
-        ? 'sticky text-white border-b-[1px] border-opacity-50 border-black-300 inset-0 bg-opacity-10 backdrop-filter backdrop-blur duration-500 ease-in-out bg-[#141523] h-[80px]'
-        : 'fixed bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
+        ? 'sticky text-black border-b-[1px] border-opacity-50 border-black-300 inset-0 bg-opacity-10 backdrop-filter backdrop-blur duration-500 ease-in-out dark:bg-[#141523] h-[80px]'
+        : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
         }`}
     >
       <div className='flex justify-around items-center'>
         <PreImage height={100} width={100} src={"/logo.svg"} alt={'Logo'} layer={false} />
-        <ul className='justify-center items-center gap-10 hidden lg:flex ml-10 text-white'>
+        <ul className='justify-center items-center gap-10 hidden lg:flex ml-10 dark:text-white'>
           {fakeMenu.map((item, idx) => (
             <Link href={'#'} key={idx}>
               <li>{item}</li>
@@ -97,7 +99,7 @@ const Header = () => {
 
           <ThemeModeToggle />
           <LanguageSwitch />
-          <button className='text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>Liên hệ</button>
+          <button className='dark:text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>Liên hệ</button>
         </div>
       </div>
     </section>

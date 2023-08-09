@@ -8,7 +8,7 @@ const LayoutWebsite = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className="min-h-screen">
+      <main className="min-h-screen dark:bg-[#141523]">
       {children}
       </main>
       <Footer />

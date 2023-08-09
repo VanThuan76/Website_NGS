@@ -1,3 +1,4 @@
+import { useTheme } from 'next-themes';
 import Image, { ImageProps } from 'next/image';
 
 interface Props extends ImageProps {
@@ -5,6 +6,9 @@ interface Props extends ImageProps {
 }
 
 export function PreImage({ src, layer, ...rest }: Props) {
+  const {theme} = useTheme();
+  const backgroundLayer = theme === "light" ? "bg-white" : "bg-black"
+
   return (
     <div>
       {src ? (
@@ -14,7 +18,7 @@ export function PreImage({ src, layer, ...rest }: Props) {
             style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
             {...rest}
           />
-          {layer && <div style={rest.style} className={`${rest.className} absolute top-0 left-0 w-full h-full bg-black opacity-30`}></div>}
+          {layer && <div style={rest.style} className={`${rest.className} ${backgroundLayer} absolute top-0 left-0 w-full h-full opacity-30`}></div>}
         </div>
       ) : (
         <div>

@@ -5,8 +5,8 @@ import TitleSection from '../../common/TitleSection';
 
 const AboutUs = () => {
   return (
-    <section className='px-32 mt-10'>
-      <div className='w-full flex justify-between items-start gap-5'>
+    <section className='pb-24 px-32'>
+      <div className='mb-20 w-full flex justify-between items-start gap-5'>
         <div className='w-[60%] relative gap-5'>
           <PreImage
             src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
@@ -19,7 +19,7 @@ const AboutUs = () => {
               borderRadius: '8px 8px 8px 96px',
             }}
           />
-          <div className='absolute bottom-0 right-0'>
+          <div className='absolute -bottom-10 right-0'>
             <PreImage
               src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
               height={350}

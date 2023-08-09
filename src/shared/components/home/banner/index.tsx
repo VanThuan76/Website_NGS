@@ -1,11 +1,11 @@
-import Border from '@/components/icon/banner/Border';
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
-import InitBasicAnimation from '../../common/InitBasicAnimation';
-import { PreImage } from '../../common/PreImage';
-import IconArrowLeft from '../../icon/IconArrowLeft';
-import IconArrowRight from '../../icon/IconArrowRight';
+import { useEffect, useState } from 'react';
+
+import InitBasicAnimation from '@/components/common/InitBasicAnimation';
+import { PreImage } from '@/components/common/PreImage';
+import Border from '@/components/icon/banner/Border';
 import ContentBanner from './ContentBanner';
+import { useTheme } from 'next-themes';
 export interface Data {
   title: string;
   description: string;
@@ -17,6 +17,8 @@ interface Props {
 }
 const Banner = ({ data }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Data>(data[0] as Data);
+  const {theme} = useTheme();
+  const colorBorder = theme === "dark" ? "#141523" : "#fff"
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -46,9 +48,23 @@ const Banner = ({ data }: Props) => {
     });
   };
 
+  useEffect(() => {
+    const handleKeyDown = (event: any) => {
+      if (event.key === 'ArrowRight') {
+        handleNext();
+      } else if (event.key === 'ArrowLeft') {
+        handlePrev();
+      }
+    };
+    document.body.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+
   return (
-    <section className='block py-24'>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden text-white'>
+    <section className='block py-8'>
+      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden dark:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <ContentBanner selectedTab={selectedTab && selectedTab} />
           <AnimatePresence mode='wait'>
@@ -56,10 +72,10 @@ const Banner = ({ data }: Props) => {
               key={selectedTab ? selectedTab.title : 'empty'}
               initial={{ x: -10, opacity: 0.8 }}
               animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.1 }}
+              transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
               className='relative w-full flex-shrink-0 snap-start'
             >
-              <Border className='absolute top-12 z-30' />
+              <Border color={colorBorder} className='absolute top-12 z-30' />
               <PreImage
                 src={selectedTab && selectedTab.image}
                 height={1080}

@@ -35,13 +35,11 @@ const ContentBanner = ({ selectedTab }: Props) => {
       <div className='text-left text-3xl lg:text-6xl'>
         <h1 className='inline-block pr-2 text-3xl lg:text-6xl'>Cải tiến</h1>
         <AnimatePresence mode='wait'>
-          <motion.span variants={staggerChildren} animate='animate'>
+          <motion.span variants={staggerChildren} initial='initial' animate='animate'>
             {selectedTab
               ? selectedTab.title.split(' ').map((word, idx) => (
-                  <motion.div key={idx} className='inline-block' variants={wordAnimation}>
-                    <motion.span animate='animate' className='inline-block lowercase'>
-                      {word + '\u00A0'}
-                    </motion.span>
+                  <motion.div key={idx} className='inline-block' variants={word.length > 1 ? wordAnimation : {}}>
+                    <motion.span className='inline-block lowercase'>{word + '\u00A0'}</motion.span>
                   </motion.div>
                 ))
               : ''}

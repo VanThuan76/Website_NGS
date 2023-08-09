@@ -9,7 +9,7 @@ const Event = () => {
   const [selectedTab, setSelectedTab] = useState<IEvent>(eventData[0] as IEvent);
 
   return (
-    <section className='w-full flex flex-col justify-around items-center mx-auto px-32 py-10'>
+    <section className='w-full flex flex-col justify-around items-center mx-auto px-32 pb-24'>
       <div className='w-full min-h-[700px] flex flex-col justify-around items-center gap-10'>
         <TitleSection
           title='Sự kiện'

@@ -1,12 +1,12 @@
 import BtnCommon from '@/components/common/BtnCommon';
+import { PreImage } from '@/components/common/PreImage';
+import TitleSection from '@/components/common/TitleSection';
 import { newsData } from 'src/shared/mock/news';
-import { PreImage } from '../../common/PreImage';
-import TitleSection from '../../common/TitleSection';
 import NewsItem from './NewsItem';
 
 const News = () => {
   return (
-    <section className='px-32'>
+    <section className='px-32 py-24'>
       <div className='w-full my-10'>
         <TitleSection
           title='Tin tức'
