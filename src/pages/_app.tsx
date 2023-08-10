@@ -7,10 +7,10 @@ import { ReactElement, ReactNode } from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import LayoutWebsite from "src/shared/components/layout/LayoutWebsite";
 import Head from "next/head";
-import { Inter } from 'next/font/google'
+import { Bai_Jamjuree } from 'next/font/google'
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 
-const interText = Inter({ subsets: ["vietnamese"], display: 'swap', weight: ['500', '600', '700', '800', '900'] })
+const interText = Bai_Jamjuree({ subsets: ["vietnamese"], display: 'swap', weight: ["200", "300", "400", "500", "600", "700"] })
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => React.ReactNode;

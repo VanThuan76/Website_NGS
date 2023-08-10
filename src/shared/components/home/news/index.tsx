@@ -6,7 +6,7 @@ import NewsItem from './NewsItem';
 
 const News = () => {
   return (
-    <section className='px-32 py-24'>
+    <section id="News" className='px-32 py-24'>
       <div className='w-full my-10'>
         <TitleSection
           title='Tin tức'

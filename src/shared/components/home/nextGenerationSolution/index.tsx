@@ -6,7 +6,7 @@ import InfoCard from './InfoCard';
 
 const NextGenerationSolution = () => {
   return (
-    <section className='pb-24 px-32'>
+    <section id="Solution" className='pb-24 px-32'>
       <TitleSection
         title='Giải pháp'
         description='Cung cấp các giải pháp số cho doanh nghiệp của bạn'

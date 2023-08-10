@@ -8,7 +8,7 @@ const Testimonial = () => {
   const [isHovered, setIsHovered] = useState<ITestimonial>(testimonialData[0] as ITestimonial);
 
   return (
-    <section className='mx-auto px-32 py-24'>
+    <section id="Testimonial" className='mx-auto px-32 py-24'>
       <div className='w-full flex justify-start items-start gap-5'>
         <div className='w-1/2 flex flex-col justify-start items-start'>
           <TitleSection

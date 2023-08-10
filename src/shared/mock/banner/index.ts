@@ -21,3 +21,4 @@ export const bannerData = [
             "https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg",
     },
 ];
+export const sectionHomeData = ["Home", "Solution", "Service", "Security", "AboutUs", "WhyUs", "Event", "News", "Partner", "Testimonial", "CaseStudy"];

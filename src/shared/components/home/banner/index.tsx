@@ -18,6 +18,7 @@ interface Props {
 const Banner = ({ data }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Data>(data[0] as Data);
   const {theme} = useTheme();
+
   const colorBorder = theme === "dark" ? "#141523" : "#fff"
   const contentAnimated = {
     active: {
@@ -47,7 +48,7 @@ const Banner = ({ data }: Props) => {
       return prevIndex >= 0 ? data[prevIndex] : data[data.length - 1];
     });
   };
-
+  
   useEffect(() => {
     const handleKeyDown = (event: any) => {
       if (event.key === 'ArrowRight') {
@@ -63,7 +64,7 @@ const Banner = ({ data }: Props) => {
   }, []);
 
   return (
-    <section className='block py-8'>
+    <section id="Home" className='block py-8'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden dark:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <ContentBanner selectedTab={selectedTab && selectedTab} />
@@ -96,7 +97,7 @@ const Banner = ({ data }: Props) => {
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 cursor-pointer ${
+                  className={`px-5 pb-3 border-b-4 ${
                     item === selectedTab ? 'text-white' : 'text-slate-300 '
                   } cursor-pointer font-medium`}
                   onClick={() => setSelectedTab(item)}

@@ -6,7 +6,7 @@ import { AnimatePresence } from "framer-motion";
 
 const Service = () => {
   return (
-    <section className="pb-24 px-32">
+    <section id="Service" className="pb-24 px-32">
       <TitleSection
         title="Dịch vụ"
         description="Thay đổi bộ mặt Doanh nghiệp của bạn bằng giải pháp quản lý mới"

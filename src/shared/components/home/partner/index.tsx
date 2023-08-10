@@ -5,7 +5,7 @@ import { useState } from 'react';
 const Partner = () => {
   const [selectedPartner, setSelectedPartner] = useState<IPartnerData>(partnerData[0]);
   return (
-    <section className='bg-[#7d4aeb]'>
+    <section id="Partner" className='bg-[#7d4aeb]'>
       <div className='flex flex-col justify-center items px-32'>
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
         <div className='relative w-full mt-5 pb-32 flex items-start justify-between gap-5'>

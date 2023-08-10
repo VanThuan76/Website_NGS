@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
-import TitleSection from '../../common/TitleSection';
-import Background from '../../icon/security/Background';
+
+import TitleSection from '@/components/common/TitleSection';
+import Background from '@/components/icon/security/Background';
 import SecurityCard from './SecurityCard';
 
 const Security = () => {
   return (
-    <section className='pb-24'>
+    <section id="Security" className='pb-24'>
       <div className='w-full min-h-[1000px]'>
         <div className='relative w-full h-full'>
           <motion.div
