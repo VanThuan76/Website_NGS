@@ -1,14 +1,18 @@
 import "../styles/globals.css";
 import "../styles/business-color.css";
 import "../styles/customStyle.scss";
-import { NextPage } from "next";
-import type { AppProps } from "next/app";
-import { ReactElement, ReactNode } from "react";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import LayoutWebsite from "src/shared/components/layout/LayoutWebsite";
 import Head from "next/head";
+import type { AppProps } from "next/app";
+import { NextPage } from "next";
+import { ReactElement } from "react";
 import { Bai_Jamjuree } from 'next/font/google'
+import { Provider } from 'react-redux';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+import { store } from 'src/shared/stores';
+import LayoutWebsite from "src/shared/components/layout/LayoutWebsite";
+import ErrorBoundary from "@/components/layout/layoutAdmin/ErrorBoudary";
 
 const interText = Bai_Jamjuree({ subsets: ["vietnamese"], display: 'swap', weight: ["200", "300", "400", "500", "600", "700"] })
 
@@ -46,6 +50,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout =
     Component.getLayout ?? ((page) => <LayoutWebsite>{page}</LayoutWebsite>);
   return (
+    <ErrorBoundary>
     <main className={interText.className}>
       <Head>
         <title>Website NGS</title>
@@ -62,13 +67,14 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
           href="/logo.svg"
         />
       </Head>
-
+      <Provider store={store}>
       <QueryClientProvider client={queryClient}>
         <ConfigLayout getLayout={getLayout}>
           <Component {...pageProps} />
         </ConfigLayout>
-
       </QueryClientProvider >
+      </Provider>
     </main>
+    </ErrorBoundary>
   );
 }

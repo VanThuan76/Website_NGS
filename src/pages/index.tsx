@@ -1,19 +1,19 @@
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import Banner from 'src/shared/components/home/banner';
-import { bannerData } from 'src/shared/mock/banner';
-import NextGenerationSolution from 'src/shared/components/home/nextGenerationSolution';
-import WhyUs from 'src/shared/components/home/whyUs';
-import Testimonial from 'src/shared/components/home/testimonial';
-import Service from 'src/shared/components/home/service';
-import Event from 'src/shared/components/home/event';
-import News from 'src/shared/components/home/news';
-import Partner from 'src/shared/components/home/partner';
-import Security from 'src/shared/components/home/security';
-import AboutUs from 'src/shared/components/home/aboutUs';
+import Banner from '@/components/business/website/home/banner';
+import { bannerData } from '@/mocks/website/banner';
+import NextGenerationSolution from '@/components/business/website/home/nextGenerationSolution';
+import WhyUs from '@/components/business/website/home/whyUs';
+import Testimonial from '@/components/business/website/home/testimonial';
+import Service from '@/components/business/website/home/service';
+import Event from '@/components/business/website/home/event';
+import News from '@/components/business/website/home/news';
+import Partner from '@/components/business/website/home/partner';
+import Security from '@/components/business/website/home/security';
+import AboutUs from '@/components/business/website/home/aboutUs';
 import dynamic from 'next/dynamic';
-import ConnectUs from 'src/shared/components/home/connectUs';
-import CaseStudy from '@/components/home/caseStudy';
+import ConnectUs from '@/components/business/website/home/connectUs';
+import CaseStudy from '@/components/business/website/home/caseStudy';
 
 const ScrollRevealWrapper = dynamic(() => import('src/shared/components/common/ScrollRevealWrapper'), { ssr: false });
 export function Home() {
