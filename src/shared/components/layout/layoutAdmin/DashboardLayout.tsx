@@ -14,6 +14,8 @@ import { APP_MENU } from '@/utils/constants/menu';
 import AccountSetting from '@/components/business/admin/AccountSetting';
 import { MENULAYOUT } from '@/utils/constants/settings';
 import { PreImage } from '@/components/common/PreImage';
+import classNames from 'classnames';
+import { useAppSelector } from '@/hooks/useRedux';
 
 export const metadata: Metadata = {
   title: 'Admin dashboard',
@@ -21,19 +23,20 @@ export const metadata: Metadata = {
 };
 
 const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
+  const isCollapseMenu = useAppSelector(state => state.appSlice.isCollapseMenu)
   return (
     <>
       <header className='w-full sticky top-0 z-40  border-b bg-background'>
         <div className='w-full flex-wrap flex h-20 items-center justify-between px-2 lg:px-8 py-4'>
           <div className='flex items-center  gap-2 lg:gap-4'>
-            <div className='lg:hidden'>
+            <div className='lg:hidden xl:hidden'>
               <Sheet>
                 <SheetTrigger asChild>
                   <Button className='lg:hidden' variant={'outline'} size={'sm'}>
                     <Menu />
                   </Button>
                 </SheetTrigger>
-                <SheetContent className='w-[200px]' side={'left'}>
+                <SheetContent className='w-[200px] px-1 py-8' side={'left'}>
                   <SidebarNav menus={APP_MENU} />
                 </SheetContent>
               </Sheet>
@@ -54,10 +57,11 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
         </div>
       </header>
       {MENULAYOUT === 'vertical' && (
-        <div className='mt-0 flex gap-4 w-full '>
+        <div className='mt-0 flex gap-4 w-full shrink-0'>
           <aside
-            className='min-w-[200px] hidden md:block flex-col bg-primary-foreground/5  py-4 px-2 sticky top-[65px]   
-                        h-[calc(100vh_-_65px)] overflow-y-auto '
+            className={classNames('min-w-[200px] w-[200px]  lg:block md:block xl:block hidden flex-col bg-primary-foreground/5 py-4 px-2 sticky top-[65px] h-[calc(100vh_-_65px)] overflow-y-auto transition-[width] ease-linear', {
+              'min-w-[50px] w-[50px]': isCollapseMenu
+            })}
           >
             <SidebarNav menus={APP_MENU} />
           </aside>

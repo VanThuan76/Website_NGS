@@ -29,16 +29,19 @@ class ErrorBoundary extends Component<Props, State> {
             return (
                 <section className="pt-45 lg:pt-50 xl:pt-55 pb-25 lg:pb-32.5 xl:pb-37.5 overflow-hidden">
                     <div className="animate_top mx-auto max-w-[518px] text-center">
-                        <Image
-                            src={Img500}
-                            alt="404"
-                            className="mx-auto mb-7.5"
-                            width={396}
-                            height={156}
-                        />
+                        <div className="overflow-hidden w-full h-[300px]">
+                            <Image
+                                src={Img500}
+                                alt="500"
+                                className="mx-auto mb-7.5 mt-20 relative"
+                                width={396}
+                                height={156}
+                            />
+                        </div>
+
 
                         <h2 className="font-semibold text-2xl md:text-4xl text-black dark:text-white mb-5">
-                            Xảy ra lỗi
+                            Opps!
                         </h2>
                         <p className="mb-7.5">
                             Máy chủ xảy ra lỗi, vui lòng thử lại hoặc liên hệ admin

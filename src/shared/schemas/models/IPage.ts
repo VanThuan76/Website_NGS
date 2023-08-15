@@ -8,14 +8,14 @@ export interface IPage extends IBaseModel {
     sections: any,
     parentId?: number,
 }
-export interface ISection extends IBaseModel {
-    code: React.Key,
-    description: string,
-    order: number,
-    active: boolean,
-    content: { image: string, text: string, video: string }[],
-    rawHTML?: string
-}
+// export interface ISection extends IBaseModel {
+//     code: React.Key,
+//     description: string,
+//     order: number,
+//     active: boolean,
+//     content: { image: string, text: string, video: string }[],
+//     rawHTML?: string
+// }
 
 export const fakeData = [
     {

@@ -47,7 +47,7 @@ export default function PageChart({ }: Props) {
                 nodePadding='10px'
             >
                 {fakeMenu.map(item => {
-                    return <TreeNode label={<Label name={item} active={true}></Label>} />
+                    return <TreeNode key={item} label={<Label name={item} active={true}></Label>} />
                 })}
             </Tree>
         </div>

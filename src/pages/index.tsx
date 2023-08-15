@@ -14,6 +14,7 @@ import AboutUs from '@/components/business/website/home/aboutUs';
 import dynamic from 'next/dynamic';
 import ConnectUs from '@/components/business/website/home/connectUs';
 import CaseStudy from '@/components/business/website/home/caseStudy';
+import { NGSDataGSL } from '@/mocks/website/nextGenerationSolution';
 
 const ScrollRevealWrapper = dynamic(() => import('src/shared/components/common/ScrollRevealWrapper'), { ssr: false });
 export function Home() {
@@ -28,7 +29,7 @@ export function Home() {
         <Banner data={bannerData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
-        <NextGenerationSolution />
+        <NextGenerationSolution data={NGSDataGSL}/>
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'top', distance: '30px', duration: 1000 }}>
         <Service />

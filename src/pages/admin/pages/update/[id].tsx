@@ -9,25 +9,24 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/common/ui
 import PageEditor from '@/components/business/admin/pages/PageEditor';
 import TablePageRequest from '@/components/business/admin/pages/TablePageRequest';
 import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
+import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrigger, SelectValue } from '@/components/common/ui/select';
+import { useDispatch } from 'react-redux';
+import { useAppSelector } from '@/hooks/useRedux';
+import { setActiveSection } from 'src/shared/stores/pageEditorSlice';
+import { toggleMenu } from 'src/shared/stores/appSlice';
 
 type Props = {
   id: React.Key;
 };
 
-type Content = {
-  title?: string;
-  image?: string;
-};
-
 export function EditPage({ id }: Props) {
-  const [activeSection, setActiveSection] = React.useState(pageAdminData[0]);
-  const [content, setContent] = React.useState<Record<string, Content>>();
-
+  const { data, pageName, sections, activeSectionCode } = useAppSelector(state => state.pageEditorSlice)
+  const dispatch = useDispatch()
   return (
     <section className='w-full'>
       <div className='flex justify-between'>
         <div className='space-y-0.5'>
-          <h2 className='text-2xl font-bold tracking-tight'>Chỉnh sửa Page</h2>
+          <h2 className='text-2xl font-bold tracking-tight'>Chỉnh sửa {pageName}</h2>
           <p className='text-muted-foreground'>Chỉnh sửa nội dung trang web</p>
         </div>
         <Button>
@@ -43,8 +42,18 @@ export function EditPage({ id }: Props) {
             <TabsTrigger value='2'>Request</TabsTrigger>
           </TabsList>
           <TabsContent value='1' className='space-y-4'>
-            <div className='space-x-2 text-right'>
-              <Button variant={'outline'}>Edit</Button>
+            <div className='space-x-2 flex justify-end items-center'>
+              <Select value={activeSectionCode} onValueChange={(e) => { dispatch(setActiveSection(e)) }}>
+                <SelectTrigger className="w-[180px]">
+                  <SelectValue placeholder="Lựa chọn section" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectGroup>
+                    {sections.map(item => <SelectItem key={item.code} value={item.code}>{item.name}</SelectItem>)}
+                  </SelectGroup>
+                </SelectContent>
+              </Select>
+              {/* <Button variant={'outline'}>Edit</Button> */}
               <Button>Page Preview</Button>
             </div>
             <PageEditor />

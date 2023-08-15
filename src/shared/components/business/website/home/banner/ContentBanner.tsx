@@ -1,7 +1,8 @@
 import BtnCommon from '@/components/common/BtnCommon';
 import InitBasicAnimation from '@/components/common/InitBasicAnimation';
 import { AnimatePresence, motion } from 'framer-motion';
-import { Data } from '.';
+import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
+
 export const staggerChildren = {
   animate: {
     transition: {
@@ -26,7 +27,7 @@ export const wordAnimation = {
   },
 };
 interface Props {
-  selectedTab: Data;
+  selectedTab: Partial<SectionData>;
 }
 
 const ContentBanner = ({ selectedTab }: Props) => {
@@ -37,7 +38,7 @@ const ContentBanner = ({ selectedTab }: Props) => {
         <AnimatePresence mode='wait'>
           <motion.span variants={staggerChildren} initial='initial' animate='animate'>
             {selectedTab
-              ? selectedTab.title.split(' ').map((word, idx) => (
+              ? selectedTab?.title?.split(' ').map((word, idx) => (
                   <motion.div key={idx} className='inline-block' variants={word.length > 1 ? wordAnimation : {}}>
                     <motion.span className='inline-block lowercase'>{word + '\u00A0'}</motion.span>
                   </motion.div>

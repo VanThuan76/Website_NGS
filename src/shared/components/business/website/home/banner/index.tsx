@@ -6,18 +6,15 @@ import { PreImage } from '@/components/common/PreImage';
 import Border from '@/components/icon/banner/Border';
 import ContentBanner from './ContentBanner';
 import { useTheme } from 'next-themes';
-export interface Data {
-  title: string;
-  description: string;
-  image: string;
-}
+import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
+
 
 interface Props {
-  data: Data[];
+  data: Partial<SectionData>[];
 }
 const Banner = ({ data }: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Data>(data[0] as Data);
-  const {theme} = useTheme();
+  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data[0] as SectionData);
+  const { theme } = useTheme();
 
   const colorBorder = theme === "dark" ? "#141523" : "#fff"
   const contentAnimated = {
@@ -37,18 +34,18 @@ const Banner = ({ data }: Props) => {
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab): Data | any => {
+    setSelectedTab((prevTab): SectionData | any => {
       const nextIndex = data.indexOf(prevTab) + 1;
       return nextIndex < data.length ? data[nextIndex] : data[0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab): Data | any => {
+    setSelectedTab((prevTab): SectionData | any => {
       const prevIndex = data.indexOf(prevTab) - 1;
       return prevIndex >= 0 ? data[prevIndex] : data[data.length - 1];
     });
   };
-  
+
   useEffect(() => {
     const handleKeyDown = (event: any) => {
       if (event.key === 'ArrowRight') {
@@ -78,6 +75,7 @@ const Banner = ({ data }: Props) => {
             >
               <Border color={colorBorder} className='absolute top-12 z-30' />
               <PreImage
+                //@ts-ignore
                 src={selectedTab && selectedTab.image}
                 height={1080}
                 width={1980}
@@ -97,9 +95,8 @@ const Banner = ({ data }: Props) => {
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 ${
-                    item === selectedTab ? 'text-white' : 'text-slate-300 '
-                  } cursor-pointer font-medium`}
+                  className={`px-5 pb-3 border-b-4 ${item === selectedTab ? 'text-white' : 'text-slate-300 '
+                    } cursor-pointer font-medium`}
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.title}`}
