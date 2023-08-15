@@ -17,13 +17,13 @@ const ServiceSection = ({ item, idx }: Props) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='flex justify-start items-start gap-8'>
-        <div className='mb-3 text-2xl'>0{idx + 1}</div>
-        <h1 className='text-3xl'>{item.title}</h1>
+      <div className='flex justify-start items-start gap-4 md:gap-8'>
+        <div className='mb-3 text-xl md:text-2xl'>0{idx + 1}</div>
+        <h1 className='text-xl md:text-2xl lg:text-3xl'>{item.title}</h1>
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start pl-20'
+        className='flex-col justify-center items-start pl-10 md:pl-20'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{
@@ -31,7 +31,7 @@ const ServiceSection = ({ item, idx }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        <p>{item.des}</p>
+        <p className='text-sm md:text-base'>{item.des}</p>
         <BtnCommon title='Tìm hiểu thêm' colorSvg={'#fff'} />
       </motion.div>
     </div>

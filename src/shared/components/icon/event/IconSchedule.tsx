@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function IconSchedule({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
+    <svg width='24' height='25' viewBox='0 0 24 25' fill='currentColor' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <rect
         x='2'
         y='5.83325'

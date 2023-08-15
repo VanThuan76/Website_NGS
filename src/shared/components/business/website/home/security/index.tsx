@@ -6,45 +6,39 @@ import SecurityCard from './SecurityCard';
 
 const Security = () => {
   return (
-    <section id="Security" className='pb-24'>
-      <div className='w-full min-h-[1000px]'>
-        <div className='relative w-full h-full'>
-          <motion.div
-            className='absolute top-0 left-0 w-full h-full'
+    <section id='Security' className='relative pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
+        <TitleSection
+          title='Bảo mật'
+          description='Bảo vệ doanh nghiệp của bạn khỏi các nguy cơ an ninh mạng'
+          findMore={true}
+          className="w-full flex flex-col md:flex-row justify-between items-center gap-3"
+        />
+        <div className='w-full flex flex-col justify-between items-center xl:items-end gap-5 mt-10 mx-auto'>
+          <div className='grid grid-cols-2 justify-end items-end gap-2 md:gap-3'>
+            <SecurityCard className="col-span-1" />
+            <SecurityCard className="col-span-1" />
+          </div>
+
+          <div className='grid grid-cols-2 lg:grid-cols-3 justify-end items-end gap-2 md:gap-3'>
+            <SecurityCard className="col-span-1"/>
+            <SecurityCard className="col-span-1"/>
+            <SecurityCard className="col-span-1"/>
+          </div>
+          <div className='grid grid-cols-2 lg:grid-cols-4 justify-end items-end gap-2 md:gap-3'>
+            <SecurityCard className="col-span-1"/>
+            <SecurityCard className="col-span-1"/>
+            <SecurityCard className="col-span-1"/>
+            <SecurityCard className="col-span-1"/>
+          </div>
+          {/* <motion.div
+            className='absolute top-0 left-0 w-full h-full z-10'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Background />
-          </motion.div>
-          <div className='absolute top-0 left-0 w-full px-32'>
-            <TitleSection
-              title='Bảo mật'
-              description='Bảo vệ doanh nghiệp của bạn khỏi các nguy cơ an ninh mạng'
-              findMore={true}
-              className="flex flex-col justify-center items-start gap-5"
-            />
-            <div className='flex flex-col justify-between items-end gap-5'>
-            <div className='flex justify-end items-end gap-10'>
-              <SecurityCard />
-              <SecurityCard />
-            </div>
-
-            <div className='flex justify-end items-end gap-10'>
-              <SecurityCard />
-              <SecurityCard />
-              <SecurityCard />
-            </div>
-            <div className='flex justify-end items-end gap-10'>
-              <SecurityCard />
-              <SecurityCard />
-              <SecurityCard />
-              <SecurityCard />
-            </div>
-            </div>
-          </div>
-        </div>
+            <Background  className='w-full'/>
+          </motion.div> */}
       </div>
     </section>
   );

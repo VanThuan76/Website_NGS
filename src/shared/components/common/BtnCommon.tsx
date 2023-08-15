@@ -10,7 +10,6 @@ interface Props {
 const BtnCommon = ({ cls, colorSvg, title }: Props) => {
   const buttonVariants = {
     hover: {
-      backgroundColor: "var(--violet-color-600)",
       width: "100%",
       opacity: 0.3      
     },
@@ -19,7 +18,7 @@ const BtnCommon = ({ cls, colorSvg, title }: Props) => {
   return (
     <motion.button
       whileHover="hover"
-      className={`bg-[#723AD4] text-white relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 rounded-full ${cls}`}
+      className={`border-2 border-slate-400 text-orange-500 relative flex justify-between items-center gap-3 text-left py-2 px-4 cursor-pointer mt-3 rounded-full ${cls}`}
     >
       <p className="text-sm">{title}</p>
       <IconLineDirection color={colorSvg} />

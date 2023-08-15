@@ -1,8 +1,11 @@
-import IconOne from '../../../../icon/security/IconOne';
+import IconOne from '@/components/icon/security/IconOne';
 
-const SecurityCard = () => {
+interface Props {
+  className: string;
+}
+const SecurityCard = ({ className }: Props) => {
   return (
-    <div className='w-[250px] h-[200px] flex flex-col justify-center items-center bg-[#222442]'>
+    <div className={`px-12 md:px-16 xl:px-20 py-10 flex flex-col justify-center items-center dark:bg-[#222442] rounded-lg shadow-md ${className}`}>
       <IconOne />
       <p>SOC</p>
     </div>
