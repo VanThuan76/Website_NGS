@@ -11,9 +11,9 @@ const NextGenerationSolution = () => {
         title='Giải pháp'
         description='Cung cấp các giải pháp số cho doanh nghiệp của bạn'
         findMore={true}
-        className="w-full flex flex-col md:flex-row justify-between items-center gap-3"
+        className="w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3"
       />
-      <div className='w-full min-h-[550px] lg:min-h-[350px] grid grid-cols-2 lg:grid-cols-4 mt-10 bg-transparent overflow-hidden'>
+      <div className='w-full min-h-[550px] lg:min-h-[350px] xl:min-h-[350px] grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden'>
         {NGSDataGSL.map((item, idx) => (
           <div className='relative w-full h-full' key={idx}>
             <motion.div

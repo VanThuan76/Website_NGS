@@ -44,7 +44,7 @@ const Header = () => {
     >
       <div className='flex justify-around items-center'>
         <PreImage height={100} width={100} src={'/logo.svg'} alt={'Logo'} layer={false} />
-        <ul className='justify-center items-center gap-10 hidden lg:flex ml-10 dark:text-white'>
+        <ul className='justify-center items-center gap-10 hidden lg:flex xl:flex ml-10 dark:text-white'>
           {fakeMenu.map((item, idx) => (
             <Link href={'#'} key={idx}>
               <li>{item}</li>
@@ -81,7 +81,7 @@ const Header = () => {
           </ul>
         </div>
         <div className='flex gap-8 items-center'>
-          <div className='lg:hidden'>
+          <div className='lg:hidden xl:hidden'>
             <Sheet>
               <SheetTrigger asChild>
                 <div>

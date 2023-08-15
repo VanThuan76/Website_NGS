@@ -41,9 +41,9 @@ const InfoCard = ({ title, description, className }: Props) => {
         width={50}
         height={50}
         alt='solution'
-        className='mb-4 md:mb-6 lg:mb-10 rounded-lg'
+        className='mb-4 md:mb-6 xl:mb-10 rounded-lg'
       />
-      <div className='w-full h-[80%] lg:h-full flex flex-col justify-between items-start gap-5'>
+      <div className='w-full h-[80%] lg:h-full flex flex-col justify-start items-start gap-5'>
         <motion.h1
           initial={{ marginTop: '100px' }}
           animate={{ marginTop: isHovered ? '0' : '100px' }}
@@ -51,7 +51,7 @@ const InfoCard = ({ title, description, className }: Props) => {
             duration: 0.5,
             ease: 'easeInOut',
           }}
-          className='text-sm md:text-base lg:text-xl 2xl:text-2xl uppercase mt-10 md:mt-14 lg:mt-16 2xl:mt-20'
+          className='text-sm md:text-base lg:text-xl xl:text-2xl uppercase mt-10 md:mt-14 lg:mt-16 xl:mt-20'
         >
           {title}
         </motion.h1>

@@ -19,7 +19,7 @@ const LayoutWebsite = ({ children }: Props) => {
         {children}
         <InitBasicAnimation className='fixed top-24 right-10 z-40'>
           <div className='flex items-center justify-between gap-5'>
-            <ul className='hidden md:flex flex-col items-end justify-between gap-5'>
+            <ul className='hidden lg:flex xl:flex flex-col items-end justify-between gap-5'>
               {sectionHomeData.map((item, idx) => (
                 <motion.li
                   key={idx}
@@ -35,6 +35,7 @@ const LayoutWebsite = ({ children }: Props) => {
                     spy={true}
                     offset={-100}
                     onSetActive={() => setCurrentSection(item)}
+                    className='lg:text-sm xl:text-base'
                   >
                     {item}
                   </Link>
