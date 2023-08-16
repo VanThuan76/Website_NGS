@@ -9,7 +9,6 @@ export const store = configureStore({
     reducer: {
         appSlice: appSlice,
         pageEditorSlice: pageEditorSlice,
-
     }
 })
 

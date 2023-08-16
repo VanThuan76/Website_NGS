@@ -11,6 +11,8 @@ import Media from 'src/pages/admin/media';
 import { IAdminNews } from 'src/shared/schemas/models/INews';
 import { z } from 'zod';
 import TriggerDialogForm from '../media/TriggerDialogForm';
+import InputEditor from '@/components/common/form/InputEditor';
+import EditorBlock from '@/components/common/editor';
 
 type Props = {
   onSubmit: (value: Partial<IAdminNews>) => void;
@@ -71,10 +73,11 @@ export default function FormNews({ onSubmit, isLoading, defaultValue, onBack }: 
               Tải ảnh
             </div>
           }
-          form={<Media />}
+          form={<Media viewMode='view' />}
         />
         <InputTextArea form={form} fieldName='description' label='Description' />
-        <InputTextArea form={form} fieldName='content' label='Content' />
+        <InputEditor form={form} fieldName='content' label='Content' />
+
         <InputText form={form} fieldName='author' label='Author' />
         <div className='flex justify-start gap-4'>
           <Button type='reset' onClick={() => onBack && onBack()} variant={'outline'}>

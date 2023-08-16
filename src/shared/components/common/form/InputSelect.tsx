@@ -5,10 +5,11 @@ import { Button } from '../ui/button'
 import { Check, ChevronsUpDown } from 'lucide-react'
 import { cn } from '@/utils/tailwind/functions'
 import { Command, CommandEmpty, CommandGroup, CommandInput, CommandItem } from '../ui/command'
+import { UseFormReturn } from 'react-hook-form'
 
 /* TODO : filter theo label hoac value */
 type Props = {
-    form: any
+    form: UseFormReturn<any>
     fieldName: string
     label?: string
     placeHolder?: string

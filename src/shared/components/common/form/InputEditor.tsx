@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/form'
-import { Input } from '../ui/input'
+import dynamic from 'next/dynamic'
+import { OutputData } from '@editorjs/editorjs'
 import { UseFormReturn } from 'react-hook-form'
 
 type Props = {
@@ -9,8 +10,10 @@ type Props = {
     label?: string
     placeHolder?: string
 }
-
-export default function InputText({ fieldName, form, label, placeHolder }: Props) {
+const EditorBlock = dynamic(() => import("@/components/common/editor/index"), {
+    ssr: false,
+});
+export default function InputEditor({ fieldName, form, label, placeHolder }: Props) {
     return (
         <FormField
             control={form.control}
@@ -18,8 +21,8 @@ export default function InputText({ fieldName, form, label, placeHolder }: Props
             render={({ field }) => (
                 <FormItem className='text-start'>
                     {label && <FormLabel >{label}</FormLabel>}
-                    <FormControl>
-                        <Input placeholder={placeHolder} {...field} />
+                    <FormControl >
+                        {/* EDITOR */}
                     </FormControl>
                     <FormMessage />
                 </FormItem>

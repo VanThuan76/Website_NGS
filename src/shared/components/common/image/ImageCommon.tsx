@@ -10,9 +10,9 @@ export function ImageCommon({ src, layer, ...rest }: Props) {
   const backgroundLayer = theme === 'light' ? 'bg-white' : 'bg-black';
 
   return (
-    <div>
+    <>
       {src ? (
-        <div className='relative h-full w-full overflow-hidden'>
+        <div className='relative h-full w-full flex justify-center overflow-hidden bg-primary/10'>
           <Image src={src} style={{ width: `${rest.width}px`, height: `${rest.height}px` }} {...rest} />
           {layer && (
             <div
@@ -26,6 +26,6 @@ export function ImageCommon({ src, layer, ...rest }: Props) {
           <Image src='/images/default.png' style={{ width: `${rest.width}px`, height: `${rest.height}px` }} {...rest} />
         </div>
       )}
-    </div>
+    </>
   );
 }

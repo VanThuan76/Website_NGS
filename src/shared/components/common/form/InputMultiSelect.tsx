@@ -9,6 +9,7 @@ import {
 } from "@/components/common/ui/command";
 import { Command as CommandPrimitive } from "cmdk";
 import { FormField, FormItem, FormLabel } from "../ui/form";
+import { UseFormReturn } from "react-hook-form";
 
 type Framework = Record<"value" | "label", string>;
 
@@ -48,7 +49,7 @@ type Framework = Record<"value" | "label", string>;
 // ] satisfies Framework[];
 
 type Props = {
-    form: any
+    form: UseFormReturn<any>
     fieldName: string
     label?: string
     placeHolder?: string

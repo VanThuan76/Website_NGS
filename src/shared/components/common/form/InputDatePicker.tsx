@@ -6,9 +6,10 @@ import { CalendarIcon } from 'lucide-react'
 import { Calendar } from '../ui/calendar'
 import { cn } from '@/utils/tailwind/functions'
 import { format } from 'date-fns'
+import { UseFormReturn } from 'react-hook-form'
 
 type Props = {
-    form: any
+    form: UseFormReturn<any>
     fieldName: string
     label?: string
     placeHolder?: string
