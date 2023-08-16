@@ -15,8 +15,8 @@ export default function InputText({ fieldName, form, label, placeHolder }: Props
             control={form.control}
             name={fieldName}
             render={({ field }) => (
-                <FormItem>
-                    {label && <FormLabel>{label}</FormLabel>}
+                <FormItem className='text-start'>
+                    {label && <FormLabel >{label}</FormLabel>}
                     <FormControl>
                         <Input placeholder={placeHolder} {...field} />
                     </FormControl>

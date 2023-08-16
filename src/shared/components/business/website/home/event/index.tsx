@@ -7,19 +7,13 @@ import 'swiper/css/pagination';
 
 import TitleSection from '@/components/common/TitleSection';
 import ContentEvent from './ContentEvent';
-import useBreakPointTw from '@/hooks/useBreakPointTw';
 import { eventData, IEvent } from '@/mocks/website/event';
 import { PreImage } from '@/components/common/PreImage';
 import { SCREENTYPE } from '@/utils/constants';
 
 const Event = () => {
   const [selectedTab, setSelectedTab] = useState<IEvent>(eventData[0] as IEvent);
-  const [isSmallScreen, setSmallScreen] = useState(false);
-  const { screen } = useBreakPointTw();
-  useEffect(() => {
-    if ([SCREENTYPE.IPAD, SCREENTYPE.MOBILE].includes(screen)) setSmallScreen(true);
-    else setSmallScreen(false);
-  }, [screen]);
+
 
   return (
     <section
@@ -33,69 +27,70 @@ const Event = () => {
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
-        {isSmallScreen ? (
-          <Swiper pagination={true} modules={[Pagination]} className='w-full'>
+        <div className='w-full block md:hidden '>
+          <Swiper pagination={true} modules={[Pagination]} >
             {eventData.map((item, idx) => (
-              <SwiperSlide className='w-full h-full flex flex-col rounded-lg'>
+              <SwiperSlide className='w-full h-full flex flex-col rounded-lg' key={idx}>
                 <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
                 <ContentEvent event={item} />
               </SwiperSlide>
             ))}
           </Swiper>
-        ) : (
-          <div className='w-full grid grid-cols-6 justify-between items-end gap-5'>
-            <AnimatePresence>
-              {eventData.map((item, idx) => {
-                return (
-                  <motion.div
-                    key={idx}
-                    initial={{
-                      opacity: 0.8,
-                      transform: 'translateX(-10px)',
-                    }}
-                    animate={{
-                      opacity: item === selectedTab ? 1 : 0.8,
-                      transform: item === selectedTab ? 'translateX(0)' : 'translateX(-10px)',
-                    }}
-                    transition={{
-                      duration: 1,
-                      ease: 'easeInOut',
-                    }}
-                    className={`${
-                      item === selectedTab ? 'col-span-3' : 'col-span-1'
+        </div>
+
+
+        <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden '>
+          <AnimatePresence>
+            {eventData.map((item, idx) => {
+              return (
+                <motion.div
+                  key={idx}
+                  initial={{
+                    opacity: 0.8,
+                    transform: 'translateX(-10px)',
+                  }}
+                  animate={{
+                    opacity: item === selectedTab ? 1 : 0.8,
+                    transform: item === selectedTab ? 'translateX(0)' : 'translateX(-10px)',
+                  }}
+                  transition={{
+                    duration: 1,
+                    ease: 'easeInOut',
+                  }}
+                  className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'
                     } w-full flex-shrink-0 snap-start cursor-pointer`}
-                    onClick={() => setSelectedTab(item)}
+                  onClick={() => setSelectedTab(item)}
+                >
+                  <motion.div
+                    layout
+                    className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
                   >
-                    <motion.div
-                      layout
-                      className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
-                    >
-                      {item === selectedTab ? (
-                        <div className='w-full h-full flex flex-col rounded-lg'>
-                          <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
-                          <ContentEvent event={item} />
-                        </div>
-                      ) : (
-                        <PreImage
-                          alt='Event'
-                          src={item.image}
-                          width={1980}
-                          height={600}
-                          className='object-cover rounded-lg'
-                        />
-                      )}
-                      {item !== selectedTab ? (
-                        <div className='absolute bottom-0 font-bold text-sm text-center'>{item.description}</div>
-                      ) : (
-                        ''
-                      )}
-                    </motion.div>
+                    {item === selectedTab ? (
+                      <div className='w-full h-full flex flex-col rounded-lg'>
+                        <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
+                        <ContentEvent event={item} />
+                      </div>
+                    ) : (
+                      <PreImage
+                        alt='Event'
+                        src={item.image}
+                        width={1980}
+                        height={600}
+                        className='object-cover rounded-lg'
+                      />
+                    )}
+                    {item !== selectedTab ? (
+                      <div className='absolute bottom-0 font-bold text-sm text-center'>{item.description}</div>
+                    ) : (
+                      ''
+                    )}
                   </motion.div>
-                );
-              })}
-            </AnimatePresence>
-          </div>
-        )}
+                </motion.div>
+              );
+            })}
+          </AnimatePresence>
+        </div>
+
       </div>
     </section>
   );

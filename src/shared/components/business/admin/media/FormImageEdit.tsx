@@ -27,13 +27,12 @@ const FormImageEdit = ({ data, onSubmit, isLoading, defaultValue, onBack }: Prop
   return (
     <>
       <div className='w-full grid grid-cols-2 items-start justify-start gap-5 p-6'>
-        <div className='w-full'>
+        <div className='w-full flex flex-col gap-4 justify-center items-center'>
           <EditorImage image={data.url} />
         </div>
-        <div className='flex flex-col items-start justify-start'>
+        <div className='flex flex-col items-start justify-start gap-4'>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam voluptas dolorum aliquid totam facilis
-            fugiat earum rerum quis enim nihil itaque nam, dolores quam vitae quas quia obcaecati accusantium ipsa?
+            Điền thông tin ảnh:
           </p>
           <Form {...form}>
             <form
@@ -41,12 +40,18 @@ const FormImageEdit = ({ data, onSubmit, isLoading, defaultValue, onBack }: Prop
               onError={e => {
                 console.log(e);
               }}
-              className='mt-5 space-y-4 grid grid-cols-2 justify-start items-start'
+              className='space-y-4'
             >
-              <InputText form={form} fieldName='name' label='Tên File' />
-              <InputText form={form} fieldName='caption' label='Chú thích' />
-              <InputText form={form} fieldName='path' label='Đường dẫn' />
-              <InputText form={form} fieldName='location' label='Địa chỉ' />
+              <div className='space-x-2 w-full flex'>
+
+                <InputText form={form} fieldName='name' label='Tên File' />
+                <InputText form={form} fieldName='caption' label='Chú thích' />
+              </div>
+              <div className='space-x-2 w-full flex text-start'>
+                <InputText form={form} fieldName='path' label='Đường dẫn' />
+                <InputText form={form} fieldName='location' label='Địa chỉ' />
+              </div>
+
               <div className='flex justify-start gap-4'>
                 <Button type='submit'> {isLoading && <Loader2 className='mr-2 h-4 w-4 animate-spin' />}Lưu</Button>
               </div>

@@ -18,6 +18,11 @@ export const folderMedia = [
         id: 12,
         title: "Folder MediaVIP",
         imageCount: 3
+    },
+    {
+        id: 15,
+        title: "Folder MediaVIP2",
+        imageCount: 3
     }
 ]
 export interface IFolderMedia {

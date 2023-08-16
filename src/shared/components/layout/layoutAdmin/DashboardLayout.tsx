@@ -65,7 +65,7 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
           >
             <SidebarNav menus={APP_MENU} />
           </aside>
-          <main className='flex flex-grow flex-wrap overflow-hidden p-2 lg:p-12 border-l'>{children}</main>
+          <main className='flex flex-grow flex-wrap overflow-hidden p-2 md:p-6 lg:p-10 xl:p-12 border-l'>{children}</main>
         </div>
       )}
       {MENULAYOUT === 'horizontal' && (

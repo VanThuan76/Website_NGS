@@ -7,10 +7,11 @@ import {
   DialogDescription,
 } from '@/components/common/ui/dialog';
 
-interface Props{
+interface Props {
   titleDialog: string
   trigger: React.ReactNode
   form: React.ReactNode
+  className?: string
 }
 const TriggerDialogForm = (data: Props) => {
   return (
@@ -18,10 +19,10 @@ const TriggerDialogForm = (data: Props) => {
       <DialogTrigger>
         {data.trigger}
       </DialogTrigger>
-      <DialogContent>
+      <DialogContent className={data.className} >
         <DialogHeader>
           <DialogTitle>{data.titleDialog}</DialogTitle>
-          <DialogDescription>
+          <DialogDescription >
             {data.form}
           </DialogDescription>
         </DialogHeader>

@@ -46,7 +46,7 @@ export default function FormFolder({ onSubmit, isLoading, defaultValue, onBack }
         onError={e => {
           console.log(e);
         }}
-        className='mt-5 space-y-4'
+        className='mt-5 space-y-4 text-left'
       >
         <InputText form={form} fieldName='name' label='Tên' />
         <InputText form={form} fieldName='location' label='Địa chỉ' />

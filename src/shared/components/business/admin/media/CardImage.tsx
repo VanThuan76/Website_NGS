@@ -14,19 +14,20 @@ const CardImage = ({ data }: Props) => {
 
   return (
     <div
-      className='relative flex cursor-pointer flex-col items-start justify-start gap-3 rounded-md bg-slate-100 p-4 shadow-lg dark:bg-slate-500'
+      className='relative flex cursor-pointer flex-col items-start justify-start gap-3 rounded-md  p-2 lg:p-4 shadow-lg bg-primary-foreground'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <ImageCommon width={400} height={200} src={data.url} alt={`Image ${data.title}`} className='w-full rounded-md' />
       <div className='flex w-full items-center justify-between'>
-        <div className='flexf flex-col items-start justify-start'>
+        <div className='hidden md:flex lg:flex xl:flex flex-col items-start justify-start'>
           <p>{data.title}</p>
           <p className='text-sm font-thin'>{data.size}</p>
         </div>
         <Badge>IMAGE</Badge>
       </div>
       <TriggerDialogForm
+        className='min-w-[1080px]'
         titleDialog='Chỉnh sửa ảnh'
         trigger={
           <EditIcon

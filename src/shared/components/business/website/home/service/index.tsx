@@ -3,18 +3,11 @@ import { NGSDataService } from '@/mocks/website/service';
 import ServiceSection from './ServiceSection';
 import TitleSection from '@/components/common/TitleSection';
 import { PreImage } from '@/components/common/PreImage';
-import useBreakPointTw from '@/hooks/useBreakPointTw';
 import { useEffect, useState } from 'react';
 import { SCREENTYPE } from '@/utils/constants';
 
 const Service = () => {
-  const [isSmallScreen, setSmallScreen] = useState(false);
-  const { screen } = useBreakPointTw();
 
-  useEffect(() => {
-    if ([SCREENTYPE.TABLET].includes(screen)) setSmallScreen(true);
-    else setSmallScreen(false);
-  }, [screen]);
 
   return (
     <section id='Service' className='pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
@@ -27,7 +20,7 @@ const Service = () => {
       <div className='w-full mt-10 flex items-start justify-between lg:gap-10 xl:gap-10'>
         <PreImage
           src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
-          height={isSmallScreen ? 460 : 520}
+          height={460}
           width={500}
           layer={false}
           alt={'Service'}

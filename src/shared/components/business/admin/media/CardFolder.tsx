@@ -7,6 +7,7 @@ import EyeIcon from '@/components/icon/EyeIcon';
 import EditIcon from '@/components/icon/EditIcon';
 import FolderIcon from '@/components/icon/FolderIcon';
 import { IFolderMedia } from '@/mocks/admin/media';
+import { Edit } from 'lucide-react';
 
 interface Props {
   data: IFolderMedia;
@@ -17,7 +18,7 @@ const CardFolder = ({ data }: Props) => {
 
   return (
     <div
-      className='relative flex w-full cursor-pointer items-center justify-between gap-3 rounded-md bg-slate-100 px-4 shadow-lg dark:bg-slate-500'
+      className='relative flex w-full cursor-pointer items-center justify-between gap-3 rounded-md bg-primary-foreground px-4 shadow-lg border'
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -31,9 +32,7 @@ const CardFolder = ({ data }: Props) => {
       <TriggerDialogForm
         titleDialog='Tạo thư mục'
         trigger={
-          <EditIcon
-            className={`absolute right-5 top-3 z-40 cursor-pointer text-xl ${isHovered ? 'block' : 'hidden'}`}
-          />
+          <Edit size={18} className={`absolute right-5 top-3 z-40 cursor-pointer text-xl ${isHovered ? 'block' : 'hidden'}`} />
         }
         form={
           <FormFolder

@@ -42,7 +42,7 @@ const SidebarNav = ({ menus }: Props) => {
                       <ChevronDown className={classNames('text-foreground/50 w-3.5 h-3.5 transition-all group-data-[state=open]:rotate-90', { 'hidden': isCollapseMenu })} />
                     </div>
                   </TooltipTrigger>
-                  <TooltipContent side='right' hidden={isCollapseMenu} className='flex flex-col'>
+                  <TooltipContent side='right' className={classNames('flex flex-col', { 'hidden': !isCollapseMenu })}>
                     {
                       item.chidren.map(chil =>
                         <span key={chil.href}

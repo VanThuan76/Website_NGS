@@ -65,6 +65,7 @@ export default function FormNews({ onSubmit, isLoading, defaultValue, onBack }: 
         {/* <UploadInput /> */}
         <TriggerDialogForm
           titleDialog='Trình ảnh'
+          className='xl:min-w-[1080px] lg:min-w-[1080px]'
           trigger={
             <div className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg'>
               Tải ảnh

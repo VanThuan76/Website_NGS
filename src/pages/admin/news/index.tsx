@@ -144,7 +144,7 @@ export function NewsList() {
 
   ];
   return (
-    <section className='w-full'>
+    <section className='w-full space-y-4'>
       <div className='flex justify-between'>
         <div className='text-2xl font-bold'>{TABLE_NAME}</div>
         <Button onClick={() => router.push('/admin/news/create')}>
