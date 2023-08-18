@@ -155,7 +155,7 @@ export default function InputEditor({ fieldName, form, label, placeHolder }: Pro
                                 <Button variant="outline"><EyeIcon size={16} className='mr-2' /> Preview</Button>
                             </DialogTrigger>
                             <DialogContent className="sm:max-w-[1080px]">
-                                <EditorPreview data={JSON.parse(form.getValues()[fieldName])} />
+                                <EditorPreview data={JSON.parse(form.getValues()[fieldName] || "{}")} />
                             </DialogContent>
                         </Dialog></FormLabel>}
                         <FormControl >
