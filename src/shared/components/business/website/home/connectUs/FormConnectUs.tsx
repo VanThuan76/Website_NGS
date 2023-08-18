@@ -24,15 +24,15 @@ const FormConnectUs = ({ connectUsData }: Props) => {
   };
   return (
     <div className='w-full flex flex-col justify-start items-start'>
-      <h1 className='text-3xl font-thin pl-8'>Bạn quan tâm đến...</h1>
-      <div className='mt-3 grid grid-cols-3 gap-3 pl-8'>
+      <h1 className='text-2xl lg:text-3xl font-thin lg:pl-8'>Bạn quan tâm đến...</h1>
+      <div className='mt-3 grid grid-cols-2 md:grid-cols-3 gap-3 lg:pl-8'>
         {connectUsData &&
           connectUsData.map((item, idx) => {
             const isSelected = selectedItems.includes(item);
             return (
               <div
                 key={idx}
-                className={`text-center p-3 rounded-full border-2 ${
+                className={`text-center p-[7px] lg:p-3 rounded-full border-2 ${
                   isSelected ? 'border-blue-500' : 'border-slate-400'
                 }`}
                 onClick={() => handleItemClick(item)}
@@ -43,7 +43,7 @@ const FormConnectUs = ({ connectUsData }: Props) => {
           })}
       </div>
       <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full p-8 rounded'>
+        <form onSubmit={handleSubmit} className='w-full p-2 md:p-4 lg:p-8 mt-4'>
           <div className='w-full mb-4'>
             <label htmlFor='fullName' className='block mb-1'>
               Họ và tên của bạn?

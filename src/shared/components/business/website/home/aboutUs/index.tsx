@@ -5,7 +5,7 @@ import TitleSection from '../../../../common/TitleSection';
 
 const AboutUs = () => {
   return (
-    <section id="AboutUs" className='pb-24 px-32'>
+    <section id="AboutUs" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
       <div className='mb-20 w-full flex justify-between items-start gap-5'>
         <div className='w-[60%] relative gap-5'>
           <PreImage

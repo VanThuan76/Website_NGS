@@ -1,14 +1,13 @@
 import BtnCommon from '@/components/common/BtnCommon';
+import { IWhyUsData } from '@/mocks/website/whyUs';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 
 interface Props {
-  item: any;
-  idx: number;
+  item: IWhyUsData;
 }
 
-const ServiceSection = ({ item, idx }: Props) => {
-  
+const ResponsiveContent = ({ item }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -18,7 +17,6 @@ const ServiceSection = ({ item, idx }: Props) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className='flex justify-start items-start gap-4 md:gap-8'>
-        <div className='mb-3 text-xl md:text-2xl'>0{idx + 1}</div>
         <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl'>{item.title}</h1>
       </div>
 
@@ -31,11 +29,11 @@ const ServiceSection = ({ item, idx }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        <p className='text-sm md:text-base'>{item.des}</p>
+        <p className='text-sm md:text-base'>{item.description}</p>
         <BtnCommon title='Tìm hiểu thêm' colorSvg={'#fff'} />
       </motion.div>
     </div>
   );
 };
 
-export default ServiceSection;
+export default ResponsiveContent;

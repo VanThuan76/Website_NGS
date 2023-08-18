@@ -3,19 +3,15 @@ import { NGSDataService } from '@/mocks/website/service';
 import ServiceSection from './ServiceSection';
 import TitleSection from '@/components/common/TitleSection';
 import { PreImage } from '@/components/common/PreImage';
-import { useEffect, useState } from 'react';
-import { SCREENTYPE } from '@/utils/constants';
 
 const Service = () => {
-
-
   return (
-    <section id='Service' className='pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
+    <section id='Service' className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
       <TitleSection
         title='Dịch vụ'
         description='Thay đổi bộ mặt Doanh nghiệp của bạn bằng giải pháp quản lý mới'
         findMore={true}
-        className='w-full flex flex-col lg:flex-row xl:flex-row justify-between items-center gap-3'
+        className='w-full flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
       />
       <div className='w-full mt-10 flex items-start justify-between lg:gap-10 xl:gap-10'>
         <PreImage

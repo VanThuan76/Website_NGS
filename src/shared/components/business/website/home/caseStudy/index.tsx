@@ -6,7 +6,7 @@ import CaseStudyItem from './CaseStudyItem';
 
 const CaseStudy = () => {
   return (
-    <section id="CaseStudy" className='px-32 py-24'>
+    <section id="CaseStudy" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
       <div className='w-full my-10'>
         <TitleSection
           title='Casestudy'

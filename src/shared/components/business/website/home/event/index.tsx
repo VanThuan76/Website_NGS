@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
@@ -9,7 +9,6 @@ import TitleSection from '@/components/common/TitleSection';
 import ContentEvent from './ContentEvent';
 import { eventData, IEvent } from '@/mocks/website/event';
 import { PreImage } from '@/components/common/PreImage';
-import { SCREENTYPE } from '@/utils/constants';
 
 const Event = () => {
   const [selectedTab, setSelectedTab] = useState<IEvent>(eventData[0] as IEvent);
@@ -18,28 +17,29 @@ const Event = () => {
   return (
     <section
       id='Event'
-      className='w-full flex flex-col justify-around items-center mx-auto pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'
+      className='w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'
     >
-      <div className='w-full min-h-[700px] flex flex-col justify-around items-center gap-10'>
+      <div className='w-full flex flex-col justify-around items-center gap-10'>
         <TitleSection
           title='Sự kiện'
           description='Gặp gỡ chuyên gia từ NGS và khám phá cách phát triển doanh nghiệp của bạn.'
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
-        <div className='w-full block md:hidden '>
-          <Swiper pagination={true} modules={[Pagination]} >
+        <div className='w-full block lg:hidden'>
+          {/* @ts-ignore */}
+          <Swiper pagination={{
+          dynamicBullets: true,
+        }} modules={[Pagination]} className="shadow-lg" >
             {eventData.map((item, idx) => (
-              <SwiperSlide className='w-full h-full flex flex-col rounded-lg' key={idx}>
+              <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
                 <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
                 <ContentEvent event={item} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-
-
-        <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden '>
+        <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
           <AnimatePresence>
             {eventData.map((item, idx) => {
               return (

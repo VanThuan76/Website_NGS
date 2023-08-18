@@ -6,7 +6,7 @@ import SecurityCard from './SecurityCard';
 
 const Security = () => {
   return (
-    <section id='Security' className='relative pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
+    <section id='Security' className='relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
       <TitleSection
         title='Bảo mật'
         description='Bảo vệ doanh nghiệp của bạn khỏi các nguy cơ an ninh mạng'

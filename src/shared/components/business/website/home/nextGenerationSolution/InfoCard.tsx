@@ -75,7 +75,7 @@ const InfoCard = ({ title, description, className }: Props) => {
       </div>
       <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
         <motion.p className={`text-sm ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
-        <IconLineDirection color={'#fff'} />
+        <IconLineDirection color={theme !== 'dark'? "#000" : "#fff"} />
       </div>
     </motion.div>
   );

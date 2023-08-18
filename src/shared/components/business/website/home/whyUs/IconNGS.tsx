@@ -49,6 +49,7 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
         className="absolute bottom-0 left-20 z-40"
       >
         <IconFirst
+          className="w-[100px] xl:w-[200px]"
           onClick={() => setSelectedIcon(WhyUsData[0] as IWhyUsData)}
         />
       </motion.div>
@@ -56,7 +57,7 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
         initial="inactive"
         animate={selectedIcon?.key === 2 ? "active" : "inactive"}
         variants={iconLastVariants}
-        className="absolute bottom-0 left-[148px] z-30"
+        className="absolute bottom-0 left-[118px] xl:left-[148px] z-30"
       >
         <motion.div
           animate={{
@@ -64,16 +65,16 @@ const IconNGS = ({ setSelectedIcon, selectedIcon }: Props) => {
           }}
           onClick={() => setSelectedIcon(WhyUsData[1] as IWhyUsData)}
         >
-          <IconMid open={true} />
+          <IconMid className="w-[250px] xl:w-[350px]" open={true} />
         </motion.div>
       </motion.div>
       <motion.div
         initial="inactive"
         animate={selectedIcon?.key === 3 ? "active" : "inactive"}
         variants={iconLastVariants}
-        className="absolute bottom-[18px] left-[118px]"
+        className="absolute bottom-[8px] xl:bottom-[28px] left-[98px] xl:left-[108px]"
       >
-        <IconLast open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(WhyUsData[2] as IWhyUsData)} />
+        <IconLast className="w-[350px] xl:w-[500px]" open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(WhyUsData[2] as IWhyUsData)} />
       </motion.div>
     </div>
   );
