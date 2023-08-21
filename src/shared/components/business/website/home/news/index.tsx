@@ -17,7 +17,7 @@ const News = () => {
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
         <div className='mt-10 w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-6'>
-          <div className='bg-[#1B1D35] flex flex-col justify-between items-center pb-5 rounded-lg' style={{border: "1px solid #555"}}>
+          <div className='dark:bg-[#1B1D35] flex flex-col justify-between items-center pb-5 rounded-lg shadow-lg'>
             <PreImage
               src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
               height={300}

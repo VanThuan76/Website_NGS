@@ -4,29 +4,21 @@ import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-creative';
-import { EffectCreative } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const Responsive = () => {
   const [selectedPartner, setSelectedPartner] = useState<IPartnerData>(partnerData[0]);
   return (
-    <div className='w-full h-full block lg:hidden mt-10'>
-      <Swiper
-       grabCursor={true}
-       effect={'creative'}
-       creativeEffect={{
-         prev: {
-           shadow: true,
-           translate: ['-20%', 0, -1],
-         },
-         next: {
-           translate: ['100%', 0, 0],
-         },
-       }}
-        modules={[EffectCreative]}
-        className='w-full rounded-lg'
+    <div className='w-full block lg:hidden mt-10'>
+      {/* @ts-ignore */}
+      <Swiper pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className='shadow-lg'
       >
         {partnerData.map((item, idx) => (
-          <SwiperSlide className='w-full min-h-[300px] bg-orange-600 dark:bg-[#6c3fce] p-5 rounded-lg' key={idx}>
+          <SwiperSlide className='w-full p-5 rounded-lg' key={idx}>
             <div className='w-full'>
               <PreImage
                 src={item.logo}

@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-export default function IconConnectUs({ ...rest }: SVGProps<SVGSVGElement>) {
+export default function IconConnectUsDark({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
     <svg width='184' height='184' viewBox='0 0 184 184' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
       <path

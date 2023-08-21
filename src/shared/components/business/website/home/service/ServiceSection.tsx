@@ -1,5 +1,6 @@
 import BtnCommon from '@/components/common/BtnCommon';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
 interface Props {
@@ -8,11 +9,13 @@ interface Props {
 }
 
 const ServiceSection = ({ item, idx }: Props) => {
-  
+  const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
+
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className='w-full py-3 flex flex-col gap-5 min-h-[10px] xl:min-h-[100px] overflow-hidden cursor-pointer'
+      className='w-full py-3 flex flex-col gap-5 min-h-[10px] lg:min-h-[100px] overflow-hidden cursor-pointer'
       style={{ borderBottom: '1px solid #555' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -31,8 +34,13 @@ const ServiceSection = ({ item, idx }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        <p className='text-sm md:text-base'>{item.des}</p>
-        <BtnCommon title='Tìm hiểu thêm' colorSvg={'#fff'} />
+        {/* //Responsive */}
+        <p className='hidden md:block text-sm md:text-base'>{item.des}</p>
+        <p className='block md:hidden text-sm md:text-base'>
+          {item.des.length > 100 ? `${item.des.substring(0, 80)}...` : item.des}
+        </p>{' '}
+        {/* //Responsive */}
+        <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );

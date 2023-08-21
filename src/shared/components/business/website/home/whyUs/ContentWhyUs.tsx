@@ -1,14 +1,18 @@
+import BtnCommon from '@/components/common/BtnCommon';
 import { IWhyUsData, WhyUsData } from '@/mocks/website/whyUs';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 interface Props {
   setSelectedIcon: any;
   selectedIcon: IWhyUsData;
 }
 const ContentWhyUs = ({ setSelectedIcon, selectedIcon }: Props) => {
+  const {theme} = useTheme();
+  const colorIcon = theme !== "dark" ? "#F06426" : "#fff"
   const contentAnimated = {
     active: {
-      borderColor: '#723AD4',
-      color: '#fff',
+      borderColor:  theme === "dark" ? '#723AD4' :"#F06426" ,
+      color: theme === "dark" ? '#fff'  : "#000",
       opacity: 1,
       transition: {
         duration: 0.3,
@@ -44,6 +48,7 @@ const ContentWhyUs = ({ setSelectedIcon, selectedIcon }: Props) => {
       <motion.div className='text-sm lg:text-lg mt-10 text-[#C2C0BF]'>
         {selectedIcon ? selectedIcon.description : ''}
       </motion.div>
+      <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
     </div>
   );
 };

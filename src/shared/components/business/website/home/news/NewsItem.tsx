@@ -5,10 +5,7 @@ interface Props {
 }
 const NewsItem = ({ data }: Props) => {
   return (
-    <div
-      className='w-full bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg'
-      style={{ border: '1px solid #555' }}
-    >
+    <div className='w-full dark:bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg shadow-lg'>
       <div className='w-full col-span-1'>
         <PreImage
           src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}

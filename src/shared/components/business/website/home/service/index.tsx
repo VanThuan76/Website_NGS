@@ -6,7 +6,7 @@ import { PreImage } from '@/components/common/PreImage';
 
 const Service = () => {
   return (
-    <section id='Service' className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
+    <section id='Service' className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32'>
       <TitleSection
         title='Dịch vụ'
         description='Thay đổi bộ mặt Doanh nghiệp của bạn bằng giải pháp quản lý mới'
@@ -23,7 +23,7 @@ const Service = () => {
           className='hidden lg:block xl:block relative rounded-lg'
         />
         <AnimatePresence>
-          <div className='w-full lg:w-1/2 xl:w-1/2 flex flex-col justify-center items-center'>
+          <div className='w-full lg:w-1/2 flex flex-col justify-center items-center'>
             {NGSDataService.map((item, idx) => {
               return <ServiceSection key={idx} item={item} idx={idx} />;
             })}

@@ -23,7 +23,7 @@ const FormConnectUs = ({ connectUsData }: Props) => {
     console.log('Options:', selectedItems);
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start'>
+    <div className='w-full flex flex-col justify-start items-start text-white'>
       <h1 className='text-2xl lg:text-3xl font-thin lg:pl-8'>Bạn quan tâm đến...</h1>
       <div className='mt-3 grid grid-cols-2 md:grid-cols-3 gap-3 lg:pl-8'>
         {connectUsData &&

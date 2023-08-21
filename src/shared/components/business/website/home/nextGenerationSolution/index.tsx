@@ -9,14 +9,14 @@ type Props = {
 }
 const NextGenerationSolution = ({ data }: Props) => {
   return (
-    <section id="Solution" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96'>
+    <section id="Solution" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32'>
       <TitleSection
         title='Giải pháp'
         description='Cung cấp các giải pháp số cho doanh nghiệp của bạn'
         findMore={true}
         className="w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3"
       />
-      <div className='w-full min-h-[550px] lg:min-h-[350px] xl:min-h-[350px] grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden'>
+      <div className='w-full min-h-[550px] lg:min-h-[350px] grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden'>
         {data.map((item, idx) => (
           <div className='relative w-full h-full' key={idx}>
             <motion.div

@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/BtnCommon';
 import { IWhyUsData } from '@/mocks/website/whyUs';
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
 interface Props {
@@ -8,6 +9,8 @@ interface Props {
 }
 
 const ResponsiveContent = ({ item }: Props) => {
+  const {theme} = useTheme();
+  const colorIcon = theme !== "dark" ? "#F06426" : "#fff"
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -30,7 +33,7 @@ const ResponsiveContent = ({ item }: Props) => {
         }}
       >
         <p className='text-sm md:text-base'>{item.description}</p>
-        <BtnCommon title='Tìm hiểu thêm' colorSvg={'#fff'} />
+        <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );

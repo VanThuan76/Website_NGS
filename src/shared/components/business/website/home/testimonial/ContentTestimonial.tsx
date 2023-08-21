@@ -6,7 +6,7 @@ export interface Props {
 }
 const ContentTestimonial = ({ data }: Props) => {
   return (
-    <div className='dark:bg-[#1B1D35] w-full text-white p-6 xl:p-10 rounded-lg' style={{ border: '1px solid #555' }}>
+    <div className='dark:bg-[#1B1D35] w-full p-6 xl:p-10 rounded-lg' style={{ border: '1px solid #555' }}>
       <div className='flex flex-col justify-start items-start gap-5'>
         <h1>{data.description}</h1>
         <div className='w-full flex justify-start items-center gap-3'>
