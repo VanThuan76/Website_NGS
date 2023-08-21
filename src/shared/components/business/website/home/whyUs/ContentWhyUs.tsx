@@ -36,7 +36,7 @@ const ContentWhyUs = ({ setSelectedIcon, selectedIcon }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item as IWhyUsData)}
-              className={`px-5 pb-3 border-b-2 cursor-pointer ${
+              className={`w-full lg:w-auto text-center px-5 pb-3 border-b-2 cursor-pointer ${
                 idx === 0 ? 'rounded-l-sm' : idx === WhyUsData.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >

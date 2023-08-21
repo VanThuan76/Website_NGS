@@ -1,6 +1,6 @@
 import React, { SVGProps } from 'react';
 
-export default function Background({ ...rest }: SVGProps<SVGSVGElement>) {
+export default function BackgroundDark({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
     <svg width='1440' height='1020' viewBox='0 0 1440 1020' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g clipPath='url(#clip0_2487_3117)'>

@@ -32,7 +32,7 @@ const FormConnectUs = ({ connectUsData }: Props) => {
             return (
               <div
                 key={idx}
-                className={`text-center p-[7px] lg:p-3 rounded-full border-2 ${
+                className={`text-center p-2 rounded-full border-2 ${
                   isSelected ? 'border-blue-500' : 'border-slate-400'
                 }`}
                 onClick={() => handleItemClick(item)}
@@ -73,7 +73,7 @@ const FormConnectUs = ({ connectUsData }: Props) => {
 
           <button
             type='submit'
-            className={`bg-[#fff] text-black relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 rounded-md hover:bg-[#c1c0c0] hover:ease-in-out hover:transition`}
+            className={`bg-[#fff] text-black relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 hover:bg-[#c1c0c0] hover:ease-in-out hover:transition rounded-lg`}
           >
             <p className='text-sm'>Đăng ký</p>
             <IconLineDirection color='#000' />

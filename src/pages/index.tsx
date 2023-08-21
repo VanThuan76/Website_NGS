@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import Banner from '@/components/business/website/home/banner';
-import { bannerData } from '@/mocks/website/banner';
 import NextGenerationSolution from '@/components/business/website/home/nextGenerationSolution';
 import WhyUs from '@/components/business/website/home/whyUs';
 import Testimonial from '@/components/business/website/home/testimonial';
@@ -14,7 +13,10 @@ import AboutUs from '@/components/business/website/home/aboutUs';
 import dynamic from 'next/dynamic';
 import ConnectUs from '@/components/business/website/home/connectUs';
 import CaseStudy from '@/components/business/website/home/caseStudy';
+import Price from '@/components/business/website/home/price';
+
 import { NGSDataGSL } from '@/mocks/website/nextGenerationSolution';
+import { bannerData } from '@/mocks/website/banner';
 
 const ScrollRevealWrapper = dynamic(() => import('src/shared/components/common/ScrollRevealWrapper'), { ssr: false });
 export function Home() {
@@ -36,6 +38,9 @@ export function Home() {
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <Security />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+          <Price />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <AboutUs />

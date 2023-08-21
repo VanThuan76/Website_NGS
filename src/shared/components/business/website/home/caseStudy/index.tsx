@@ -28,7 +28,7 @@ const CaseStudy = () => {
               width={600}
               layer={false}
               alt={'CaseStudy'}
-              className='w-full rounded-lg'
+              className='w-full rounded-lg object-cover'
             />
             <div className='absolute bottom-10 left-0 px-5 w-full flex flex-col justify-between items-start'>
               <p className='text-xl'>{caseStudyData[0].title}</p>

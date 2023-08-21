@@ -19,7 +19,7 @@ const CaseStudyItem = ({ data }: Props) => {
           width={600}
           layer={false}
           alt={'CaseStudy'}
-          className='w-full rounded-lg'
+          className='w-full rounded-lg object-cover'
         />
       </div>
       <div className='absolute bottom-5 left-0 px-5 w-full flex flex-col justify-between items-start'>

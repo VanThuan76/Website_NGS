@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Footer from './footer';
 import Header from './header';
@@ -11,7 +11,6 @@ interface Props {
 }
 const LayoutWebsite = ({ children }: Props) => {
   const [currentSection, setCurrentSection] = useState<string>('Home');
-
   return (
     <>
       <Header />

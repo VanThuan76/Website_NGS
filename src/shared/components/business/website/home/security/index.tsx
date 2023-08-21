@@ -1,11 +1,15 @@
 import { motion } from 'framer-motion';
 
 import TitleSection from '@/components/common/TitleSection';
-import Background from '@/components/icon/security/Background';
+import BackgroundDark from '@/components/icon/security/BackgroundDark';
 import SecurityCard from './SecurityCard';
 import ResponsiveSecurity from './ResponsiveSecurity';
+import BackgroundLight from '@/components/icon/security/BackgroundLight';
+import { useTheme } from 'next-themes';
 
 const Security = () => {
+  const { theme } = useTheme();
+
   return (
     <section id='Security' className='relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32'>
       <TitleSection
@@ -34,14 +38,18 @@ const Security = () => {
       </div>
       <ResponsiveSecurity />
       <motion.div
-            className='absolute top-50 lg:top-0 xl:top-0 left-0 w-full h-full -z-10'
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-          >
-            <Background  className='w-full object-center'/>
-        </motion.div>
+        className='absolute top-0 left-0 w-full h-full -z-10'
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        {theme === 'dark' ? (
+          <BackgroundDark className='w-full object-center' />
+        ) : (
+          <BackgroundLight className='w-full scale-150 md:scale-100 object-center' />
+        )}
+      </motion.div>
     </section>
   );
 };

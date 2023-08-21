@@ -9,16 +9,15 @@ import { Pagination } from 'swiper/modules';
 const Responsive = () => {
   const [selectedPartner, setSelectedPartner] = useState<IPartnerData>(partnerData[0]);
   return (
-    <div className='w-full block lg:hidden mt-10'>
+    <div className='w-full block md:hidden'>
       {/* @ts-ignore */}
       <Swiper pagination={{
           dynamicBullets: true,
         }}
         modules={[Pagination]}
-        className='shadow-lg'
       >
         {partnerData.map((item, idx) => (
-          <SwiperSlide className='w-full p-5 rounded-lg' key={idx}>
+          <SwiperSlide className='w-full py-5 rounded-lg' key={idx}>
             <div className='w-full'>
               <PreImage
                 src={item.logo}
@@ -31,8 +30,8 @@ const Responsive = () => {
               />
             </div>
             <div
-              className='w-full pt-5 flex flex-col justify-between items-center gap-5'
-              style={{ borderTop: '1px solid #555' }}
+              className='w-full py-5 flex flex-col justify-between items-center gap-5'
+              style={{ borderTop: '1px solid #fff' }}
             >
               <div className='w-full flex flex-col justify-start items-start gap-3'>
                 <p className='font-medium text-2xl'>{item.name}</p>

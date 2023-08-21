@@ -33,7 +33,7 @@ const ResponsiveContent = ({ item }: Props) => {
         }}
       >
         <p className='text-sm md:text-base'>{item.description}</p>
-        <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <BtnCommon cls='border-orange-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );
