@@ -22,6 +22,6 @@
       "@/mocks/*": ["./src/shared/mock/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/shared/components/common/editor/EditorTools.js", "src/shared/components/common/editor/index.tsx", "src/shared/components/common/editor/customTools/Media.js"],
   "exclude": ["node_modules"]
 }

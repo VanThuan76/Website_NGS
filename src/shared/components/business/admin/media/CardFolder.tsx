@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useState } from 'react';
+import { Dispatch, SetStateAction, useState } from 'react';
 
 import FormFolder from './FormFolder';
 import TriggerDialogForm from './TriggerDialogForm';
@@ -8,19 +8,24 @@ import EditIcon from '@/components/icon/EditIcon';
 import FolderIcon from '@/components/icon/FolderIcon';
 import { IFolderMedia } from '@/mocks/admin/media';
 import { Edit } from 'lucide-react';
+import classNames from 'classnames';
+import useMediaModal from '@/hooks/useMediaModal';
 
 interface Props {
   data: IFolderMedia;
+  active?: boolean;
+  onClick?: (e: IFolderMedia) => void;
+  viewMode: 'mutation' | 'view'
 }
-const CardFolder = ({ data }: Props) => {
-  const router = useRouter();
-  const [isHovered, setIsHovered] = useState(false);
+const CardFolder = ({ data, viewMode, active, onClick }: Props) => {
+  // const router = useRouter();
 
   return (
     <div
-      className='relative flex w-full cursor-pointer items-center justify-between gap-3 rounded-md bg-primary-foreground px-4 shadow-lg border'
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
+      className={classNames('relative group flex w-full cursor-pointer items-center justify-between gap-3 rounded-md bg-primary-foreground p-2 md:p-4 shadow-lg border ', {
+        'bg-blue-500 text-white': active
+      })}
+      onClick={() => onClick && onClick(data)}
     >
       <div className='relative rounded-md bg-blue-400 p-6 dark:bg-blue-600'>
         <FolderIcon className='absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 transform' />
@@ -29,25 +34,31 @@ const CardFolder = ({ data }: Props) => {
         <h3>{data.title.length > 12 ? data.title.substring(0, 12) + '...' : data.title}</h3>
         <p>{data.imageCount} images</p>
       </div>
-      <TriggerDialogForm
-        titleDialog='Tạo thư mục'
-        trigger={
-          <Edit size={18} className={`absolute right-5 top-3 z-40 cursor-pointer text-xl ${isHovered ? 'block' : 'hidden'}`} />
-        }
-        form={
-          <FormFolder
-            onSubmit={function (value: Partial<any>): void {
-              throw new Error('Function not implemented.');
+      {
+        viewMode === 'mutation' &&
+        <>
+          <TriggerDialogForm
+            titleDialog='Tạo thư mục'
+            trigger={
+              <Edit size={18} className={`absolute right-5 top-3 z-40 cursor-pointer text-xl group-hover:block hidden`} />
+            }
+            form={
+              <FormFolder
+                onSubmit={function (value: Partial<any>): void {
+                  throw new Error('Function not implemented.');
+                }}
+              />
+            }
+          />
+          <EyeIcon
+            className={`absolute right-5 top-9 z-40 cursor-pointer text-xl group-hover:block hidden`}
+            onClick={() => {
+              // router.push(`/admin/media/folder/${data.id}`);
             }}
           />
-        }
-      />
-      <EyeIcon
-        className={`absolute right-5 top-9 z-40 cursor-pointer text-xl ${isHovered ? 'block' : 'hidden'}`}
-        onClick={() => {
-          router.push(`/admin/media/folder/${data.id}`);
-        }}
-      />
+        </>
+
+      }
     </div>
   );
 };

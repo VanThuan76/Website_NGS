@@ -14,6 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/common/ui/select';
+import { Input } from '../ui/input';
 
 interface DataTablePaginationProps<TData> {
   table: Table<TData>;

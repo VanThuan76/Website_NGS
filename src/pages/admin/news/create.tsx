@@ -22,7 +22,7 @@ export function CreateNews({ }: Props) {
         <section className='w-full'>
             <div className='flex justify-between mb-6'>
                 <div className='text-2xl font-bold'>Create News</div>
-                <Button onClick={() => router.push('/news')}><ListBulletIcon className='mr-2' />List News</Button>
+                <Button onClick={() => router.push('/admin/news')}><ListBulletIcon className='mr-2' />List News</Button>
             </div>
             <FormNews onSubmit={onSubmit} isLoading={createNews.isLoading} onBack={() => router.push('/news')} />
 
