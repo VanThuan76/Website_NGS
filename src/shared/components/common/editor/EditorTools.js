@@ -23,10 +23,8 @@ export const EDITOR_JS_TOOLS = {
   warning: Warning,
   code: Code,
   linkTool: LinkTool,
-  image:{
-    class: Image,
-  },
-  media : Media,
+  image: Image,
+  media: Media,
   raw: Raw,
   header: Header,
   quote: Quote,

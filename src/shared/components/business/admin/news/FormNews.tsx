@@ -13,6 +13,8 @@ import { z } from 'zod';
 import TriggerDialogForm from '../media/TriggerDialogForm';
 import InputEditor from '@/components/common/form/InputEditor';
 import EditorBlock from '@/components/common/editor';
+import useWarnIfUnsavedChanges from '@/hooks/useWarnIfUnsavedChanges';
+import _ from 'lodash'
 
 type Props = {
   onSubmit: (value: Partial<IAdminNews>) => void;
@@ -40,7 +42,6 @@ export default function FormNews({ onSubmit, isLoading, defaultValue, onBack }: 
     if (defaultValue) {
       for (const [key, value] of Object.entries(defaultValue)) {
         form.setValue(key as any, value, {
-          // shouldValidate: true,
           shouldDirty: true,
         });
       }
@@ -53,6 +54,8 @@ export default function FormNews({ onSubmit, isLoading, defaultValue, onBack }: 
     console.log(form);
     //setIsSlug(slug)
   };
+
+  useWarnIfUnsavedChanges(form.formState.isDirty)
   return (
     <Form {...form}>
       <form

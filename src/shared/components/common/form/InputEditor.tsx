@@ -150,19 +150,23 @@ export default function InputEditor({ fieldName, form, label, placeHolder }: Pro
                 name={fieldName}
                 render={({ field }) => (
                     <FormItem className='text-start'>
-                        {label && <FormLabel className='flex justify-between'> <span>{label}</span>  <Dialog>
-                            <DialogTrigger asChild>
-                                <Button variant="outline"><EyeIcon size={16} className='mr-2' /> Preview</Button>
-                            </DialogTrigger>
-                            <DialogContent className="sm:max-w-[1080px]">
-                                <EditorPreview data={JSON.parse(form.getValues()[fieldName] || "{}")} />
-                            </DialogContent>
-                        </Dialog></FormLabel>}
+                        {label && <FormLabel className='flex justify-between'> <span>{label}</span>
+                            <Dialog>
+                                <DialogTrigger asChild>
+                                    <Button variant="outline"><EyeIcon size={16} className='mr-2' /> Preview</Button>
+                                </DialogTrigger>
+                                <DialogContent className="sm:max-w-[1080px]">
+                                    <EditorPreview data={JSON.parse(form.getValues()[fieldName] || "{}")} />
+                                </DialogContent>
+                            </Dialog>
+                        </FormLabel>}
                         <FormControl >
-                            <EditorBlock holder='editor-container' onChange={value => {
-                                console.log(value)
-                                form.setValue(fieldName, JSON.stringify(value))
-                            }} data={defaultValue} />
+                            <EditorBlock holder='editor-container'
+                                onChange={value => {
+                                    console.log(value)
+                                    form.setValue(fieldName, JSON.stringify(value), { shouldDirty: true })
+                                }} data={defaultValue}
+                            />
                         </FormControl>
                         <FormMessage />
                     </FormItem>

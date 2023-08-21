@@ -17,7 +17,6 @@ type Props = {
 const EditorBlock = ({ data, onChange, holder }: Props) => {
     //add a reference to editor
     const ref = useRef<EditorJS>();
-    const mediaRef = useRef<HTMLDivElement>(null)
     //initialize editorjs
     useEffect(() => {
         //initialize editor if we don't have a reference
@@ -47,17 +46,6 @@ const EditorBlock = ({ data, onChange, holder }: Props) => {
 
     return <>
         <div id={holder} className="border rounded-lg" />
-        <TriggerDialogForm
-            titleDialog='Trình ảnh'
-            className='xl:min-w-[1080px] lg:min-w-[1080px]'
-            trigger={
-                <div className='dark:bg-white dark:text-black h-9 px-4 py-2 justify-center items-center border-2 border-slate-300 rounded-lg hidden'
-                 ref={mediaRef} id="media-trigger">
-                    Tải ảnh
-                </div>
-            }
-            form={<Media viewMode='view' />}
-        />
     </>;
 };
 
