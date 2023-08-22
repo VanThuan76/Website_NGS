@@ -5,8 +5,9 @@ import { Button } from '../ui/button'
 import { CalendarIcon } from 'lucide-react'
 import { Calendar } from '../ui/calendar'
 import { cn } from '@/utils/tailwind/functions'
-import { format } from 'date-fns'
 import { UseFormReturn } from 'react-hook-form'
+import dayjs from 'dayjs'
+import { TIME_FORMAT_READ } from '@/utils/constants/settings'
 
 type Props = {
     form: UseFormReturn<any>
@@ -34,7 +35,7 @@ export default function InputDatePicker({ fieldName, form, label, placeHolder }:
                                     )}
                                 >
                                     {field.value ? (
-                                        format(field.value, "PPP")
+                                         dayjs(field.value).format(TIME_FORMAT_READ)
                                     ) : (
                                         <span>{placeHolder} </span>
                                     )}
