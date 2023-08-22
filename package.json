@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "build:test": "env-cmd -f .env.test yarn build",
+    "build:sat": "env-cmd -f .env.sat yarn build",
+    "build:uat": "env-cmd -f .env.uat yarn build",
     "start": "next start",
     "lint": "next lint"
   },
