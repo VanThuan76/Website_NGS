@@ -1,5 +1,6 @@
 import appSlice from './appSlice'
 import pageEditorSlice from './pageEditorSlice'
+import roleSlice from './roleSlice'
 import { configureStore } from '@reduxjs/toolkit'
 import { enableMapSet } from 'immer'
 
@@ -9,6 +10,7 @@ export const store = configureStore({
     reducer: {
         appSlice: appSlice,
         pageEditorSlice: pageEditorSlice,
+        roleSlice: roleSlice
     }
 })
 
