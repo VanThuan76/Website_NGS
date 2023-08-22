@@ -13,7 +13,7 @@ import { Horizontalbar } from './HorizontalBar/HorizontalBar';
 import { APP_MENU } from '@/utils/constants/menu';
 import AccountSetting from '@/components/business/admin/AccountSetting';
 import { MENULAYOUT } from '@/utils/constants/settings';
-import { PreImage } from '@/components/common/PreImage';
+import { PreImage } from '@/components/common/customization/PreImage';
 import classNames from 'classnames';
 import { useAppSelector } from '@/hooks/useRedux';
 

@@ -1,24 +1,25 @@
 import Head from 'next/head';
-import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import Banner from '@/components/business/website/home/banner';
-import NextGenerationSolution from '@/components/business/website/home/nextGenerationSolution';
-import WhyUs from '@/components/business/website/home/whyUs';
-import Testimonial from '@/components/business/website/home/testimonial';
-import Service from '@/components/business/website/home/service';
-import Event from '@/components/business/website/home/event';
-import News from '@/components/business/website/home/news';
-import Partner from '@/components/business/website/home/partner';
-import Security from '@/components/business/website/home/security';
-import AboutUs from '@/components/business/website/home/aboutUs';
 import dynamic from 'next/dynamic';
-import ConnectUs from '@/components/business/website/home/connectUs';
-import CaseStudy from '@/components/business/website/home/caseStudy';
-import Price from '@/components/business/website/home/price';
+import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 
-import { NGSDataGSL } from '@/mocks/website/nextGenerationSolution';
-import { bannerData } from '@/mocks/website/banner';
+import Banner from '@/components/business/website/HO/HO_banner';
+import HomeSolution from '@/components/business/website/HO/HO_solution';
+import HomeWhyUs from '@/components/business/website/HO/HO_whyUs';
+import HomeTestimonial from '@/components/business/website/HO/HO_testimonial';
+import HomeService from '@/components/business/website/HO/HO_service';
+import HomeEvent from '@/components/business/website/HO/HO_event';
+import HomeNews from '@/components/business/website/HO/HO_news';
+import HomePartner from '@/components/business/website/HO/HO_partner';
+import HomeSecurity from '@/components/business/website/HO/HO_security';
+import HomeAboutUs from '@/components/business/website/HO/HO_aboutUs';
+import ConnectUs from '@/components/business/website/HO/HO_connectUs';
+import HomeCaseStudy from '@/components/business/website/HO/HO_caseStudy';
+import HomePrice from '@/components/business/website/HO/HO_price';
 
-const ScrollRevealWrapper = dynamic(() => import('src/shared/components/common/ScrollRevealWrapper'), { ssr: false });
+import { NGSDataGSL } from '@/mocks/website/HO/nextGenerationSolution';
+import { bannerData } from '@/mocks/website/HO/banner';
+
+const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), { ssr: false });
 export function Home() {
   return (
     <>
@@ -31,37 +32,37 @@ export function Home() {
         <Banner data={bannerData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
-        <NextGenerationSolution data={NGSDataGSL}/>
+        <HomeSolution data={NGSDataGSL} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'top', distance: '30px', duration: 1000 }}>
-        <Service />
+        <HomeService />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <Security />
+        <HomeSecurity />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-          <Price />
+        <HomePrice />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <AboutUs />
+        <HomeAboutUs />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUs />
+        <HomeWhyUs />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <Event />
+        <HomeEvent />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <News />
+        <HomeNews />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <Partner />
+        <HomePartner />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <Testimonial />
+        <HomeTestimonial />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <CaseStudy />
+        <HomeCaseStudy />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ConnectUs />

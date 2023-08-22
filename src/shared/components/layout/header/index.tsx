@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { Menu } from 'lucide-react';
 
 import { fakeMenu } from 'src/shared/mock/menu';
-import { PreImage } from '@/components/common/PreImage';
+import { PreImage } from '@/components/common/customization/PreImage';
 import ThemeModeToggle from '@/components/common/ToggleThemeMode';
 import LanguageSwitch from '@/components/common/LanguageSwitch';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';

@@ -24,8 +24,8 @@ import Media from 'src/pages/admin/media';
 import { setActiveLang, setData } from 'src/shared/stores/pageEditorSlice';
 import { ChevronDown, PlusCircleIcon, RotateCcw, ZoomIn, ZoomOut } from 'lucide-react';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/common/ui/collapsible';
-import Banner from '../../website/home/banner';
-import NextGenerationSolution from '../../website/home/nextGenerationSolution';
+import Banner from '../../website/HO/HO_banner';
+import NextGenerationSolution from '../../website/HO/HO_solution';
 
 type Props = {};
 

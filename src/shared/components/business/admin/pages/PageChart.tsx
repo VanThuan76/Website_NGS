@@ -8,7 +8,7 @@ import { pageAdminData } from '@/mocks/admin/page';
 import { Card } from '@/components/common/ui/card';
 import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger, DropdownMenuItem } from '@/components/common/ui/dropdown-menu';
 import { fakeMenu } from '@/mocks/menu';
-import { PreImage } from '@/components/common/PreImage';
+import { PreImage } from '@/components/common/customization/PreImage';
 
 
 type Props = {}
