@@ -8,8 +8,8 @@ const Folder = () => {
     <section className='w-full'>
     <Header />
     <div className='my-12 grid w-full grid-cols-1 items-start justify-start gap-10 border-b-2 pb-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
-      {imageMedia.map(item => {
-        return <CardImage data={item} />;
+      {imageMedia.map( item => {
+        return <CardImage data={item} key={item.url} viewMode="mutation"/>;
       })}
     </div>
     </section>

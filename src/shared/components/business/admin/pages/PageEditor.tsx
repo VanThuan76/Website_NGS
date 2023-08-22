@@ -139,7 +139,7 @@ export default function PageEditor({ }: Props) {
                             Tải ảnh
                           </div>
                         }
-                        form={<Media />}
+                        form={<Media viewMode='view' />}
                       />
                     </FormItem>
                   </div>

@@ -18,8 +18,9 @@ const ResponsiveContent = ({ title, items }: Props) => {
       <div className='flex justify-start items-start gap-4 md:gap-8'>
         <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl'>{title}</h1>
       </div>
-      {items.map((item: string) => (
+      {items.map((item: string, index: number) => (
         <motion.div
+          key={index}
           className='flex-col justify-start items-start'
           initial={{ opacity: 0, height: 0 }}
           animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
