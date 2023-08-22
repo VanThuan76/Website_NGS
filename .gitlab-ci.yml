@@ -11,7 +11,7 @@ build_dev:
     - pwd
     - docker stop web-ngs-landing-test || true && docker rm web-ngs-landing-test || true
     - docker build -t web-ngs-landing-test:v1.0 -f Dockerfile.dev . 
-    - docker run -d --restart=always -it -p 8084:3000 --name web-ngs-landing-test web-ngs-landing-test:v1.0
+    - docker run -d --restart=always -it -p 8099:3000 --name web-ngs-landing-test web-ngs-landing-test:v1.0
     - echo 'build done!'
 
   only:
