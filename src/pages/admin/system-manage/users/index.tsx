@@ -141,6 +141,7 @@ const UserManage = () => {
         </div>
         <DataTable 
           data={data as any || [] } 
+          //@ts-ignore
           columns={columnUsers} 
           tableName={TABLE_NAME} 
           {...tableConfig}
