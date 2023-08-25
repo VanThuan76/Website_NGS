@@ -21,13 +21,13 @@ const HomeSolutionCard = ({ title, description, className }: Props) => {
         }
       : {
           backgroundColor: isHovered ? '' : '#fff',
-          color: isHovered ? '#000' : '',
+          color: isHovered ? '#fff' : '',
         };
 
   return (
     <motion.div
       className={`flex flex-col justify-start items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
-      style={{ border: '1px solid #222442' }}
+      style={{ borderRight: `1px solid ${theme === 'dark' ? '#222442' : '#F96619'}` }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
@@ -75,7 +75,7 @@ const HomeSolutionCard = ({ title, description, className }: Props) => {
       </div>
       <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
         <motion.p className={`text-sm md:text-base xl:text-xl ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
-        <IconLineDirection color={theme !== 'dark'? "#000" : "#fff"} />
+        <IconLineDirection color={theme !== 'dark'? "#fff" : "#fff"} />
       </div>
     </motion.div>
   );

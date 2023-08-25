@@ -2,7 +2,7 @@ import { ITestimonial } from '@/mocks/website/HO/testimonial';
 import { PreImage } from '@/components/common/customization/PreImage';
 
 export interface Props {
-  data: ITestimonial;
+  data: Partial<ITestimonial>;
 }
 const HomeTestimonialContent = ({ data }: Props) => {
   return (
@@ -10,7 +10,7 @@ const HomeTestimonialContent = ({ data }: Props) => {
       <div className='flex flex-col justify-start items-start gap-5'>
         <h1>{data.description}</h1>
         <div className='w-full flex justify-start items-center gap-3'>
-          <PreImage src={data.image} width={50} height={50} alt={'event'} className='w-full rounded-full' />
+          <PreImage src={data.image as string} width={50} height={50} alt={'event'} className='w-full rounded-full' />
           <div className='flex flex-col justify-start items-start opacity-80 text-sm'>
             <p>{data.name}</p>
             <p>{data.position}</p>

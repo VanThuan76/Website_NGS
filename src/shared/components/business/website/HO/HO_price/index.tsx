@@ -11,7 +11,7 @@ const HomePrice = () => {
         background: `linear-gradient(180deg, rgba(248, 133, 80, 0.3) -9.34%, rgba(255, 255, 255, 0.3) 129.73%)`,
       }}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center py-4 md:py-8 lg:py-16 xl:py-24'>
+      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center pt-16 pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <div className='w-full flex flex-col justify-start items-start gap-3'>
           <h1 className='text-3xl lg:text-4xl'>Tiên phong đào tạo thực hành</h1>
           <p>

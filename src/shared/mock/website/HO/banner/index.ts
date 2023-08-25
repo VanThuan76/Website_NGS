@@ -1,22 +1,22 @@
 export const bannerData = [
     {
-        title: "Công nghệ bảo mật hệ thống bán vé VNA",
+        title: "We are committed to",
         description:
-            "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+            "DELIVER AN OUTSTANDING CUSTOMER EXPERIENCE IN ADDITION TO PERFECT PRODUCTS",
         image:
             "https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg",
     },
     {
-        title: "Bộ máy Marketting",
+        title: "We are committed to",
         description:
-            "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+            "EMPOWER SUCCESS FOR OUR CUSTOMERS AND PARTNERS",
         image:
             "https://vanhoadoisong.vn/wp-content/uploads/2022/10/51-background-hinh-nen-powerpoint-ve-marketing-full-hd-thumbnail.jpg",
     },
     {
-        title: "Công nghệ bảo mật thông tin",
+        title: "We are committed to",
         description:
-            "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+            "DIGITAL TRANSFORMATION IS NOT ABOUT TECHNOLOGY BUT PEOPLE ",
         image:
             "https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg",
     },

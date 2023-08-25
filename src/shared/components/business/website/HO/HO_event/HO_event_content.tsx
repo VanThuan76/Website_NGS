@@ -3,7 +3,7 @@ import IconSchedule from '@/components/icon/HO/event/IconSchedule';
 import { IEvent } from '@/mocks/website/HO/event';
 import { useTheme } from 'next-themes';
 interface Props {
-  event: IEvent;
+  event: Partial<IEvent>;
 }
 const HomeEventContent = ({ event }: Props) => {
   const {theme} = useTheme();

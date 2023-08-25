@@ -1,11 +1,14 @@
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import YNGYourNextGenBanner from '@/components/business/website/YNG/YNG_YourNextGen/YNG_YourNextGen_banner';
 import { YNG_YourNextGen_banner } from '@/mocks/website/YNG/YNG_YourNextGen/banner';
+import YNGYourNextGenBanner from '@/components/business/website/YNG/YNG_YourNextGen/YNG_YourNextGen_banner';
 import YNGYourNextGenSolution from '@/components/business/website/YNG/YNG_YourNextGen/YNG_YourNextGen_solution';
+import YNGYourNextGenPartner from '@/components/business/website/YNG/YNG_YourNextGen/YNG_YourNextGen_partner';
 
-const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), { ssr: false });
+const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
+  ssr: false,
+});
 const YourNextGen = () => {
   return (
     <>
@@ -19,6 +22,9 @@ const YourNextGen = () => {
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <YNGYourNextGenSolution />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <YNGYourNextGenPartner />
       </ScrollRevealWrapper>
     </>
   );

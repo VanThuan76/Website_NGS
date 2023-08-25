@@ -5,7 +5,7 @@ import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
 interface Props {
-  item: IWhyUsData;
+  item: Partial<IWhyUsData>;
 }
 
 const HomeWhyUsResponsive = ({ item }: Props) => {

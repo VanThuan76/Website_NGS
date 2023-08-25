@@ -1,15 +1,16 @@
 import IconFirst from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconFirst";
 import IconLast from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconLast";
 import IconMid from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconMid";
-import { IWhyUsData, WhyUsData } from "@/mocks/website/HO/whyUs";
+import { IWhyUsData } from "@/mocks/website/HO/whyUs";
 import { motion } from "framer-motion";
 
 interface Props {
   setSelectedIcon: any;
-  selectedIcon: IWhyUsData;
+  data: Partial<IWhyUsData>[];
+  selectedIcon: Partial<IWhyUsData>;
 }
 
-const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon }: Props) => {
+const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
   const iconFirstVariants = {
     active: {
       color: "#7F569B",
@@ -50,7 +51,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon }: Props) => {
       >
         <IconFirst
           className="w-[100px] xl:w-[200px]"
-          onClick={() => setSelectedIcon(WhyUsData[0] as IWhyUsData)}
+          onClick={() => setSelectedIcon(data[0])}
         />
       </motion.div>
       <motion.div
@@ -63,7 +64,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon }: Props) => {
           animate={{
             color: selectedIcon?.key === 2 ? "#2D77B4" : "#27293F",
           }}
-          onClick={() => setSelectedIcon(WhyUsData[1] as IWhyUsData)}
+          onClick={() => setSelectedIcon(data[1])}
         >
           <IconMid className="w-[250px] xl:w-[350px]" open={true} />
         </motion.div>
@@ -74,7 +75,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon }: Props) => {
         variants={iconLastVariants}
         className="absolute bottom-[8px] xl:bottom-[28px] left-[158px] xl:left-[108px]"
       >
-        <IconLast className="w-[350px] xl:w-[500px]" open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(WhyUsData[2] as IWhyUsData)} />
+        <IconLast className="w-[350px] xl:w-[500px]" open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(data[2])} />
       </motion.div>
     </div>
   );

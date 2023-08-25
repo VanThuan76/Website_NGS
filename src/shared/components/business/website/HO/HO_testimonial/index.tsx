@@ -3,13 +3,18 @@ import { useState } from 'react';
 import HomeTestimonialContent from './HO_testimonial_home';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
-import { ITestimonial, testimonialData } from '@/mocks/website/HO/testimonial';
+import { ITestimonial } from '@/mocks/website/HO/testimonial';
 
-const HomeTestimonial = () => {
-  const [isHovered, setIsHovered] = useState<ITestimonial>(testimonialData[0] as ITestimonial);
+type Props = {
+  data: Partial<ITestimonial>[]
+  className?: string
+}
+
+const HomeTestimonial = ({data, className}: Props) => {
+  const [isHovered, setIsHovered] = useState<Partial<ITestimonial>>(data[0] as ITestimonial);
 
   return (
-    <section id="Testimonial" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40'>
+    <section id="Testimonial" className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}>
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row justify-start items-start gap-5'>
         <div className='w-full lg:w-1/2 flex flex-col justify-start items-start'>
           <TitleSection
@@ -22,7 +27,7 @@ const HomeTestimonial = () => {
         </div>
         <div className='lg:mt-10 w-full max-h-[700px] overflow-hidden overflow-y-scroll flex flex-col lg:flex-row justify-start items-start gap-5'>
           <div className='pt-6 lg:pt-12 flex flex-col justify-start items-start gap-5 lg:gap-10'>
-            {testimonialData.map((item, idx) => {
+            {data.map((item, idx) => {
               return (
                 <div
                   key={idx}
@@ -36,7 +41,7 @@ const HomeTestimonial = () => {
             })}
           </div>
           <div className='flex flex-col justify-start items-start gap-5 lg:gap-10'>
-            {testimonialData.map((item, idx) => {
+            {data.map((item, idx) => {
               return (
                 <div
                   key={idx}

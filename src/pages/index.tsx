@@ -2,7 +2,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 
-import Banner from '@/components/business/website/HO/HO_banner';
+import HomeBanner from '@/components/business/website/HO/HO_banner';
 import HomeSolution from '@/components/business/website/HO/HO_solution';
 import HomeWhyUs from '@/components/business/website/HO/HO_whyUs';
 import HomeTestimonial from '@/components/business/website/HO/HO_testimonial';
@@ -17,7 +17,13 @@ import HomeCaseStudy from '@/components/business/website/HO/HO_caseStudy';
 import HomePrice from '@/components/business/website/HO/HO_price';
 
 import { NGSDataGSL } from '@/mocks/website/HO/nextGenerationSolution';
-import { bannerData } from '@/mocks/website/HO/banner';
+import { WhyUsData } from '@/mocks/website/HO/whyUs';
+import { eventData } from '@/mocks/website/HO/event';
+import { newsData } from '@/mocks/website/HO/news';
+import { partnerData } from '@/mocks/website/HO/partner';
+import { securityData } from '@/mocks/website/HO/security';
+import { testimonialData } from '@/mocks/website/HO/testimonial';
+import { pageAdminEditorData, pageSectionData } from '@/mocks/admin/page';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), { ssr: false });
 export function Home() {
@@ -29,16 +35,16 @@ export function Home() {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <Banner data={bannerData} />
+        <HomeBanner data={pageSectionData.HO_banner} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
-        <HomeSolution data={NGSDataGSL} />
+        <HomeSolution section={pageAdminEditorData.filter(item => item.order === 3)[0]} data={NGSDataGSL} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'top', distance: '30px', duration: 1000 }}>
         <HomeService />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeSecurity />
+        <HomeSecurity data={securityData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <HomePrice />
@@ -47,19 +53,19 @@ export function Home() {
         <HomeAboutUs />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeWhyUs />
+        <HomeWhyUs data={WhyUsData}/>
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeEvent />
+        <HomeEvent data={eventData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeNews />
+        <HomeNews data={newsData}/>
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomePartner />
+        <HomePartner data={partnerData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeTestimonial />
+        <HomeTestimonial data={testimonialData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <HomeCaseStudy />

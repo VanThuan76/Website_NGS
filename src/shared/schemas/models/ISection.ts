@@ -14,13 +14,13 @@ export const fakeData = [{
     "name": "Banner",
     "description": "Junonia genoveua",
     "order": 1,
-    "code": "HO_1"
+    "code": "HO_banner"
 }, {
     "id": 2,
     "name": "Người NGS",
     "description": "Meles meles",
     "order": 2,
-    "code": "HO_2"
+    "code": "HO_solution"
 }, {
     "id": 3,
     "name": "Tin tức",

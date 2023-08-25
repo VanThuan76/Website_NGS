@@ -1,20 +1,27 @@
 import { motion } from 'framer-motion';
+import { useTheme } from 'next-themes';
+
+import { ISection, SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import TitleSection from '@/components/common/customization/TitleSection';
-import Background from '@/components/icon/HO/nextGenerationSolution/Background';
 import HomeSolutionCard from './HO_solution_card';
-import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
+import BackgroundDark from '@/components/icon/HO/solution/BackgroundDark';
+import BackgroundLight from '@/components/icon/HO/solution/BackgroundLight';
 
 type Props = {
-  data: Partial<SectionData>[]
-}
-const HomeSolution = ({ data }: Props) => {
+  section: Partial<ISection>;
+  data: Partial<SectionData>[];
+  className?: string;
+};
+const HomeSolution = ({ section, data, className }: Props) => {
+  const { theme } = useTheme();
+
   return (
-    <section id="Solution" className='pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40'>
+    <section id='Solution' className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}>
       <TitleSection
-        title='Giải pháp'
-        description='Cung cấp các giải pháp số cho doanh nghiệp của bạn'
+        title={section.name as string}
+        description={section.description as string}
         findMore={true}
-        className="w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3"
+        className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto min-h-[550px] lg:min-h-[350px] grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden'>
         {data.map((item, idx) => (
@@ -26,9 +33,17 @@ const HomeSolution = ({ data }: Props) => {
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
             >
-              <Background />
+              {theme === 'dark' ? (
+                <BackgroundDark />
+              ) : (
+                <BackgroundLight />
+              )}
             </motion.div>
-            <HomeSolutionCard className={'absolute top-0 left-0 w-full h-full'} title={item.title || ''} description={item.description || ''} />
+            <HomeSolutionCard
+              className={'absolute top-0 left-0 w-full h-full'}
+              title={item.title || ''}
+              description={item.description || ''}
+            />
           </div>
         ))}
       </div>

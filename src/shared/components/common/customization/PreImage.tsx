@@ -18,7 +18,7 @@ export function PreImage({ src, layer, ...rest }: Props) {
             style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
             {...rest}
           />
-          {layer && <div style={rest.style} className={`${rest.className} ${backgroundLayer} absolute top-0 left-0 w-full h-full opacity-30`}></div>}
+          {layer && <div style={rest.style} className={`${rest.className} bg-black absolute top-0 left-0 w-full h-full opacity-50 blur-lg`}></div>}
         </div>
       ) : (
         <div>

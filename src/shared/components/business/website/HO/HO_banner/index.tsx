@@ -3,20 +3,16 @@ import { useEffect, useState } from 'react';
 
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import { PreImage } from '@/components/common/customization/PreImage';
-import Border from '@/components/icon/HO/banner/Border';
 import ContentBanner from './ContentBanner';
-import { useTheme } from 'next-themes';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 
 
 interface Props {
   data: Partial<SectionData>[];
 }
-const Banner = ({ data }: Props) => {
+const HomeBanner = ({ data }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data[0] as SectionData);
-  const { theme } = useTheme();
-
-  const colorBorder = theme === "dark" ? "#141523" : "#fff"
+  
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -61,8 +57,8 @@ const Banner = ({ data }: Props) => {
   }, []);
 
   return (
-    <section id="Home" className='block py-8'>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden dark:text-white'>
+    <section id="Home" className='block'>
+      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <ContentBanner selectedTab={selectedTab && selectedTab} />
           <AnimatePresence mode='wait'>
@@ -73,7 +69,6 @@ const Banner = ({ data }: Props) => {
               transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
               className='relative w-full flex-shrink-0 snap-start'
             >
-              <Border color={colorBorder} className='absolute top-12 z-30' />
               <PreImage
                 //@ts-ignore
                 src={selectedTab && selectedTab.image}
@@ -111,4 +106,4 @@ const Banner = ({ data }: Props) => {
   );
 };
 
-export default Banner;
+export default HomeBanner;

@@ -43,9 +43,9 @@ export const eventData = [
 ];
 export interface IEvent {
     title: string,
-    channel: string,
     description: string
-    address: string
-    time: string
     image: string
+    address: string
+    channel: string,
+    time: string
 }

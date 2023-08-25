@@ -8,17 +8,19 @@ import { Pagination } from 'swiper/modules';
 
 import HomeEventContent from './HO_event_content';
 import TitleSection from '@/components/common/customization/TitleSection';
-import { eventData, IEvent } from '@/mocks/website/HO/event';
+import { IEvent } from '@/mocks/website/HO/event';
 import { PreImage } from '@/components/common/customization/PreImage';
 
-const HomeEvent = () => {
-  const [selectedTab, setSelectedTab] = useState<IEvent>(eventData[0] as IEvent);
-
-
+type Props = {
+  data: Partial<IEvent>[]
+  className?: string
+}
+const HomeEvent = ({data, className}: Props) => {
+  const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data[0]);
   return (
     <section
       id='Event'
-      className='w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40'
+      className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
         <TitleSection
@@ -32,7 +34,7 @@ const HomeEvent = () => {
           <Swiper pagination={{
           dynamicBullets: true,
         }} modules={[Pagination]} className="shadow-lg" >
-            {eventData.map((item, idx) => (
+            {data.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
                 <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
                 <HomeEventContent event={item} />
@@ -42,7 +44,7 @@ const HomeEvent = () => {
         </div>
         <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
           <AnimatePresence>
-            {eventData.map((item, idx) => {
+            {data.map((item, idx) => {
               return (
                 <motion.div
                   key={idx}
@@ -96,5 +98,4 @@ const HomeEvent = () => {
     </section>
   );
 };
-
 export default HomeEvent;

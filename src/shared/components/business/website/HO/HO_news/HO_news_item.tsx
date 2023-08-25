@@ -1,7 +1,7 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import { INews } from '@/mocks/website/HO/news';
 interface Props {
-  data: INews;
+  data: Partial<INews>;
 }
 const HomeNewsItem = ({ data }: Props) => {
   return (
