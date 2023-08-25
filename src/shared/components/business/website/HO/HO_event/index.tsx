@@ -70,13 +70,13 @@ const HomeEvent = ({data, className}: Props) => {
                   >
                     {item === selectedTab ? (
                       <div className='w-full h-full flex flex-col rounded-lg'>
-                        <PreImage alt='Event' src={item.image} width={1980} height={600} className='rounded-lg' />
+                        <PreImage alt='Event' src={item.image!} width={1980} height={600} className='rounded-lg' />
                         <HomeEventContent event={item} />
                       </div>
                     ) : (
                       <PreImage
                         alt='Event'
-                        src={item.image}
+                        src={item.image!}
                         width={1980}
                         height={600}
                         className='object-cover rounded-lg'
