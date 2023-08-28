@@ -63,7 +63,7 @@ const HomeWhyUs = ({data, className}: Props) => {
                   <SwiperSlide className='max-w-[250px]' key={idx}>
                     <PreImage
                       key={idx}
-                      src={item.logo}
+                      src={item.image}
                       height={200}
                       width={400}
                       layer={false}
