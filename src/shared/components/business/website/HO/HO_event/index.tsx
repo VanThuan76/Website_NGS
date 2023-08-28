@@ -36,7 +36,10 @@ const HomeEvent = ({data, className}: Props) => {
         }} modules={[Pagination]} className="shadow-lg" >
             {data.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
-                <PreImage alt='Event' src={item.image} width={650} height={600} className='rounded-lg' />
+                <PreImage alt='Event'
+                          //@ts-ignore
+                          src={item.image}
+                          width={650} height={600} className='rounded-lg' />
                 <HomeEventContent event={item} />
               </SwiperSlide>
             ))}

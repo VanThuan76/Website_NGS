@@ -21,7 +21,7 @@ const HomePartnerResponsive = () => {
           <SwiperSlide className='w-full py-5 rounded-lg' key={idx}>
             <div className='w-full'>
               <PreImage
-                src={item.logo}
+                src={item.image!}
                 height={100}
                 width={600}
                 layer={false}
@@ -35,10 +35,10 @@ const HomePartnerResponsive = () => {
               style={{ borderTop: '1px solid #fff' }}
             >
               <div className='w-full flex flex-col justify-start items-start gap-3'>
-                <p className='font-medium text-2xl'>{item.name}</p>
+                <p className='font-medium text-2xl'>{item.title}</p>
                 <p className='font-thin text-sm'>{item.rank}</p>
               </div>
-              <p>{item.des}</p>
+              <p>{item.description}</p>
             </div>
           </SwiperSlide>
         ))}
