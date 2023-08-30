@@ -5,13 +5,14 @@ import InitBasicAnimation from '@/components/common/customization/InitBasicAnima
 import { PreImage } from '@/components/common/customization/PreImage';
 import ContentBanner from './ContentBanner';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 
 interface Props {
-  data: Partial<SectionData>[];
+  data: Partial<IBaseSectionComponent>;
 }
 const HomeBanner = ({ data }: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data[0] as SectionData);
+  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data.components![0]);
   
   const contentAnimated = {
     active: {
@@ -30,15 +31,15 @@ const HomeBanner = ({ data }: Props) => {
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab): SectionData | any => {
-      const nextIndex = data.indexOf(prevTab) + 1;
-      return nextIndex < data.length ? data[nextIndex] : data[0];
+    setSelectedTab((prevTab) => {
+      const nextIndex = data.components!.indexOf(prevTab as any) + 1;
+      return nextIndex < data.components!.length ? data.components![nextIndex] : data.components![0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab): SectionData | any => {
-      const prevIndex = data.indexOf(prevTab) - 1;
-      return prevIndex >= 0 ? data[prevIndex] : data[data.length - 1];
+    setSelectedTab((prevTab) => {
+      const prevIndex = data.components!.indexOf(prevTab as any) - 1;
+      return prevIndex >= 0 ? data.components![prevIndex] : data.components![data.components!.length - 1];
     });
   };
 
@@ -84,7 +85,7 @@ const HomeBanner = ({ data }: Props) => {
         <InitBasicAnimation className='absolute bottom-10 left-10 z-40'>
           <div className='flex items-center justify-between gap-5'>
             <ul className='hidden md:flex items-center justify-between gap-5'>
-              {data.map((item, idx) => (
+              {data.components!.map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'

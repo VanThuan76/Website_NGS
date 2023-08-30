@@ -1,4 +1,4 @@
-export const YNG_YourNextGen_solution = [
+export const YNG_ERP_solution = [
     {
         title: "Ứng dụng cho Website",
         des: "We set the right processes and methodologies to boost innovation labs and digital product discoveries.",

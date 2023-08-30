@@ -11,10 +11,6 @@ type EDITORSTATE = {
   currentSection: Partial<ISection>;
   activeLang: string;
   data: Record<string, Record<string, Partial<SectionData>[]>>;
-  // {
-  //     vi: Record<string, Partial<SectionData>[]>,
-  //     en: Record<string, Partial<SectionData>[]>,
-  // }
 };
 
 const initialState: EDITORSTATE = {

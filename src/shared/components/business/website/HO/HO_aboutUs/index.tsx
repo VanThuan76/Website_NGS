@@ -36,6 +36,7 @@ const HomeAboutUs = () => {
         <div className='w-1/2 p-5 flex flex-col justify-start items-start'>
           <TitleSection
             title='Về chúng tôi'
+            name="ss"
             description='Sự tin tưởng của khách hàng là động lực của chúng tôi'
             findMore={true}
             className='w-full flex flex-col justify-start items-start'
@@ -61,3 +62,4 @@ const HomeAboutUs = () => {
 };
 
 export default HomeAboutUs;
+1

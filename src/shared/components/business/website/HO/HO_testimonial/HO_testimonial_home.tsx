@@ -1,8 +1,8 @@
-import { ITestimonial } from '@/mocks/website/HO/testimonial';
 import { PreImage } from '@/components/common/customization/PreImage';
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 
 export interface Props {
-  data: Partial<ITestimonial>;
+  data: IComponents
 }
 const HomeTestimonialContent = ({ data }: Props) => {
   return (

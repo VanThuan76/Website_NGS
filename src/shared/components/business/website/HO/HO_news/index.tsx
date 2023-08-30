@@ -1,10 +1,10 @@
 import HomeNewsItem from './HO_news_item';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { PreImage } from '@/components/common/customization/PreImage';
-import { INews } from '@/mocks/website/HO/news';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
-  data: Partial<INews>[]
+  data: Partial<IBaseSectionComponent>;
   className?: string
 }
 const HomeNews = ({data, className}: Props) => {
@@ -15,7 +15,8 @@ const HomeNews = ({data, className}: Props) => {
     >
         <TitleSection
           title='Tin tức'
-          description='Gặp gỡ chuyên gia từ NGS và khám phá cách phát triển doanh nghiệp của bạn.'
+          name={data.section!.name as string}
+        description={data.section!.description as string}
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
@@ -31,16 +32,16 @@ const HomeNews = ({data, className}: Props) => {
             />
             <div className='mt-10 px-5 w-full flex flex-col justify-between items-start gap-3'>
               <div className='w-full flex justify-between items-center'>
-                <p className='text-orange-500'>{data[0].category}</p>
-                <p className='text-sm text-slate-500'>{data[0].createAt}</p>
+                <p className='text-orange-500'>{data.components![0].category}</p>
+                <p className='text-sm text-slate-500'>{data.components![0].createAt}</p>
               </div>
-              <h2 className='text-2xl'>{data[0].title}</h2>
-              <p className='text-sm text-slatse-500'>{data[0].description}</p>
-              <p className='w-full text-end text-sm text-slate-400'>{data[0].author}</p>
+              <h2 className='text-2xl'>{data.components![0].title}</h2>
+              <p className='text-sm text-slatse-500'>{data.components![0].description}</p>
+              <p className='w-full text-end text-sm text-slate-400'>{data.components![0].author}</p>
             </div>
           </div>
           <div className='w-full grid grid-rows-2 gap-5'>
-            {data.slice(0, 2).map((item, idx) => (
+            {data.components!.slice(0, 2).map((item, idx) => (
               <HomeNewsItem key={idx} data={item} />
             ))}
           </div>

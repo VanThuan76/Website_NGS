@@ -38,9 +38,9 @@ const ServiceSection = ({ item, idx }: Props) => {
         <p className='hidden md:block text-sm md:text-base'>{item.des}</p>
         <p className='block md:hidden text-sm md:text-base'>
           {item.des.length > 100 ? `${item.des.substring(0, 80)}...` : item.des}
-        </p>{' '}
+        </p>
         {/* //Responsive */}
-        <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );

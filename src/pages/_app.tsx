@@ -16,7 +16,6 @@ import ErrorBoundary from "@/components/layout/layoutAdmin/ErrorBoudary";
 import { useAppSelector } from "@/hooks/useRedux";
 import useRouterChange from "@/hooks/useRouterChange";
 import { JellyTriangle } from "@uiball/loaders";
-import { useRouter } from "next/router";
 
 const interText = Bai_Jamjuree({ subsets: ["vietnamese"], display: 'swap', weight: ["200", "300", "400", "500", "600", "700"] })
 
@@ -48,7 +47,7 @@ const ConfigLayout = ({
       <div className='bg-foreground/20 bg-opacity-70 absolute z-[9999] w-screen h-screen flex justify-center flex-col gap-2 items-center'>
         <JellyTriangle color='#016390' />
       </div>}
-    <NextThemesProvider attribute="class" defaultTheme="system" enableSystem>
+    <NextThemesProvider attribute="class" defaultTheme="light" enableSystem>
       {getLayout(children)}
     </NextThemesProvider>
   </main>

@@ -10,13 +10,14 @@ import HomeEventContent from './HO_event_content';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { IEvent } from '@/mocks/website/HO/event';
 import { PreImage } from '@/components/common/customization/PreImage';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
-  data: Partial<IEvent>[]
+  data: Partial<IBaseSectionComponent>;
   className?: string
 }
 const HomeEvent = ({data, className}: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data[0]);
+  const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data.components![0]);
   return (
     <section
       id='Event'
@@ -25,7 +26,8 @@ const HomeEvent = ({data, className}: Props) => {
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
         <TitleSection
           title='Sự kiện'
-          description='Gặp gỡ chuyên gia từ NGS và khám phá cách phát triển doanh nghiệp của bạn.'
+          name={data.section!.name as string}
+        description={data.section!.description as string}
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
@@ -34,7 +36,7 @@ const HomeEvent = ({data, className}: Props) => {
           <Swiper pagination={{
           dynamicBullets: true,
         }} modules={[Pagination]} className="shadow-lg" >
-            {data.map((item, idx) => (
+            {data.components!.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
                 <PreImage alt='Event'
                           //@ts-ignore
@@ -47,7 +49,7 @@ const HomeEvent = ({data, className}: Props) => {
         </div>
         <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
           <AnimatePresence>
-            {data.map((item, idx) => {
+            {data.components!.map((item, idx) => {
               return (
                 <motion.div
                   key={idx}

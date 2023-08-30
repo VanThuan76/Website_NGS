@@ -1,0 +1,1 @@
+export const ERPPartnerData = ["/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg"]

@@ -8,14 +8,15 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IPartnerData } from '@/mocks/website/HO/partner';
 import { Pagination } from 'swiper/modules';
 import { useTheme } from 'next-themes';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
-  data: Partial<IPartnerData>[]
+  data: Partial<IBaseSectionComponent>
   className?: string
 }
 
 const HomePartner = ({data, className}: Props) => {
-  const [selectedPartner, setSelectedPartner] = useState<Partial<IPartnerData>>(data[0]);
+  const [selectedPartner, setSelectedPartner] = useState<Partial<IPartnerData>>(data.components![0]);
   const { theme } = useTheme();
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
   return (
@@ -27,7 +28,7 @@ const HomePartner = ({data, className}: Props) => {
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper slidesPerView={4} spaceBetween={50} modules={[Pagination]} className='w-full'>
-            {data.map((item, idx) => (
+            {data.components!.map((item, idx) => (
               <SwiperSlide className='max-w-[250px]' key={idx}>
                 <PreImage
                   src={item.image as string}
@@ -45,7 +46,7 @@ const HomePartner = ({data, className}: Props) => {
           </Swiper>
         </div>
         <div className='w-full mt-5 hidden md:block'>
-          {data.map((item, idx) => (
+          {data.components!.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
                 <div

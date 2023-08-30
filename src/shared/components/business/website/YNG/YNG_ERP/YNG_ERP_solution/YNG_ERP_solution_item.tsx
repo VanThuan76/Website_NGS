@@ -1,12 +1,12 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
-import YNG_IconArrowRight from '@/components/icon/YNG/YNG_YourNextGen/YNG_YourNextGen_solution/YNG_IconArrowRight';
-import { IYNGYourNextGenSolution } from '@/mocks/website/YNG/YNG_YourNextGen/solution';
+import YNG_IconArrowRight from '@/components/icon/YNG/YNG_ERP/YNG_ERP_solution/YNG_IconArrowRight';
+import { IYNGYourNextGenSolution } from '@/mocks/website/YNG/YNG_ERP/solution';
 
 interface Props {
   item: IYNGYourNextGenSolution;
   className: string
 }
-const YNGYourNextGenSolutionItem = ({ item, className }: Props) => {
+const YNGERPSolutionItem = ({ item, className }: Props) => {
   return (
     <div className={`w-full flex flex-col lg:flex-row justify-between items-center gap-4 py-4 md:py-8 lg:py-16 xl:py-24 px-4 md:px-16 lg:px-24 ${className}`}>
       <div className='w-full flex flex-col justify-start items-start'>
@@ -26,4 +26,4 @@ const YNGYourNextGenSolutionItem = ({ item, className }: Props) => {
   );
 };
 
-export default YNGYourNextGenSolutionItem;
+export default YNGERPSolutionItem;

@@ -1,3 +1,4 @@
+import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import IconLineDirection from '@/components/icon/IconLineDirection';
 import { motion } from 'framer-motion';
@@ -13,6 +14,7 @@ interface Props {
 const HomeSolutionCard = ({ title, description, className }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const animateTheme =
     theme === 'dark'
       ? {
@@ -74,7 +76,7 @@ const HomeSolutionCard = ({ title, description, className }: Props) => {
         )}
       </div>
       <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
-        <motion.p className={`text-sm md:text-base xl:text-xl ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
+        <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
         <IconLineDirection color={theme !== 'dark'? "#fff" : "#fff"} />
       </div>
     </motion.div>

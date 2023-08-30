@@ -1,4 +1,4 @@
-export const YNG_YourNextGen_banner = [
+export const YNG_ERP_banner = [
     {
         title: "Chúng ta cùng nhau định hình tương lai kỹ thuật số",
         description:

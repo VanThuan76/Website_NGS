@@ -21,25 +21,27 @@ function getCurrentcy(locale: string | undefined) {
 
 const useTrans = () => {
     const router = useRouter();
-    const { locale, pathname, query, asPath } = router;
-    const [lang, setLang] = useState(locale);
+    const { pathname, query, asPath } = router;
+    const langQueryParam = Array.isArray(router.query.lang) ? router.query.lang[0] : router.query.lang;
+    const [lang, setLang] = useState(langQueryParam || 'vi');
     const [currentcy, setCurrentcy] = useState('VND')
 
+    const trans = getTrans(lang);
 
-    const trans = getTrans(locale);
-
-    const changeLanguage = useCallback((lang: 'vi' | 'en') => {
-        router.push({ pathname, query }, asPath, { locale: lang });
-        setLang(lang);
-        setCurrentcy(getCurrentcy(locale))
-    }, [router, pathname, query, asPath, locale])
+    const changeLanguage = useCallback((newLang: 'vi' | 'en') => {
+        const newPath = `${pathname}?lang=${newLang}`;
+        router.push(newPath, asPath, { locale: newLang });  
+        setLang(newLang);
+        setCurrentcy(getCurrentcy(newLang));
+    }, [router, pathname, asPath])
 
     useEffect(() => {
-        setLang(locale || 'vi');
-        setCurrentcy(getCurrentcy(locale))
-    }, [router, locale]);
+        setLang(langQueryParam || 'vi');
+        setCurrentcy(getCurrentcy(langQueryParam || 'vi'));
+    }, [langQueryParam]);
 
     return { trans, lang, changeLanguage, currentcy };
 };
+
 
 export default useTrans;

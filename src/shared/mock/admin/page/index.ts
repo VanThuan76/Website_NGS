@@ -93,21 +93,21 @@ export const pageSectionData = {
             description:
                 "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
             image:
-                "https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg",
+                "/images/background_1.png",
         },
         {
             title: "Bộ máy Marketting",
             description:
                 "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
             image:
-                "https://vanhoadoisong.vn/wp-content/uploads/2022/10/51-background-hinh-nen-powerpoint-ve-marketing-full-hd-thumbnail.jpg",
+                "/images/background_2.png",
         },
         {
             title: "Công nghệ bảo mật thông tin",
             description:
                 "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
             image:
-                "https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg",
+                "/images/background_3.png",
         },
     ],
     "HO_solution": [

@@ -30,7 +30,7 @@ interface Props {
   selectedTab: Partial<SectionData>;
 }
 
-const YNGYourNextGenBannerContent = ({ selectedTab }: Props) => {
+const ERPBannerContent = ({ selectedTab }: Props) => {
   return (
     <InitBasicAnimation className='absolute min-h-screen w-2/3 flex flex-col justify-center items-center gap-10 leading-[90%] lg:left-0 lg:px-12 lg:items-start z-40'>
       <div className='text-left text-3xl lg:text-6xl'>
@@ -53,4 +53,4 @@ const YNGYourNextGenBannerContent = ({ selectedTab }: Props) => {
   );
 };
 
-export default YNGYourNextGenBannerContent;
+export default ERPBannerContent;

@@ -46,7 +46,7 @@ const ContentBanner = ({ selectedTab }: Props) => {
           </motion.span>
         </AnimatePresence>
       </div>
-      <div className='w-[50%] text-2xl lg:text-5xl uppercase text-white font-semibold leading-[56px]'>
+      <div className='w-[70%] text-2xl lg:text-5xl uppercase text-white font-semibold'>
         {selectedTab ? selectedTab.description : ''}
       </div>
       <BtnCommon title='Đăng ký ngay' cls='!px-6 bg-[#fff] border-none !text-orange-500 !rounded-sm' />

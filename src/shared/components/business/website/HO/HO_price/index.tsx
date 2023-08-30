@@ -18,7 +18,7 @@ const HomePrice = () => {
             Trường Cao Đẳng An ninh mạng iSPACE là đơn vị tiên phong trong đào tạo thực hành từ năm 2008 theo tiêu chí
             tuyển sinh đi liền tuyển dụng.
           </p>
-          <BtnCommon title='Xem giá chi tiết' cls='bg-orange-500 border-none !text-white' />
+          <BtnCommon title='Xem giá chi tiết' cls='border-orange-500' />
         </div>
         <PreImage src={priceData.image} height={100} width={1400} layer={false} alt={'Price'} className='w-full rounded-lg' />
       </div>

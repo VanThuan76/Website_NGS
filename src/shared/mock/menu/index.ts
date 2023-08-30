@@ -1,7 +1,7 @@
 export const fakeMenu = [
-    "Giải pháp tiên phong",
-    "Dịch vụ xuất sắc",
-    "Bảo mật tin cậy",
-    "Cơ hội gia nhập",
-    "Về chúng tôi",
+    "Tương lai tiên phong",
+    "Chuyển đổi số",
+    "Bảo mật kinh doanh",
+    "Trung tâm tài năng",
+    "Khơi nguồn thành công",
 ];

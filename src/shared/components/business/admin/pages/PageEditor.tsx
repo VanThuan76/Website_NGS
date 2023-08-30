@@ -40,22 +40,22 @@ export default function PageEditor({}: Props) {
   const dispatch = useDispatch();
   const RenderComponent = () => {
     switch (activeSectionCode) {
-      case 'HO_banner':
-        return <HomeBanner data={data[activeLang][activeSectionCode]} />;
-      case 'HO_solution':
-        return <HomeSolution className='!m-0 !p-0' section={currentSection as Partial<ISection>} data={data[activeLang][activeSectionCode]} />;
-      case 'HO_security':
-        return <HomeSecurity className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
-      case 'HO_whyUs':
-        return <HomeWhyUs className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
-      case 'HO_event':
-        return <HomeEvent className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
-      case 'HO_news':
-        return <HomeNews className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
-      case 'HO_partner':
-        return <HomePartner className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
-      case 'HO_testimonial':
-        return <HomeTestimonial className='!m-0 !p-0' data={data[activeLang][activeSectionCode]} />;
+      // case 'HO_banner':
+      //   return <HomeBanner data={data["vi"][activeSectionCode]} />;
+      // case 'HO_solution':
+      //   return <HomeSolution className='!m-0 !p-0' section={currentSection as Partial<ISection>} data={data["vi"][activeSectionCode]} />;
+      // case 'HO_security':
+      //   return <HomeSecurity className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
+      // case 'HO_whyUs':
+      //   return <HomeWhyUs className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
+      // case 'HO_event':
+      //   return <HomeEvent className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
+      // case 'HO_news':
+      //   return <HomeNews className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
+      // case 'HO_partner':
+      //   return <HomePartner className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
+      // case 'HO_testimonial':
+      //   return <HomeTestimonial className='!m-0 !p-0' data={data["vi"][activeSectionCode]} />;
       default:
         return <div>Section not found</div>;
         break;

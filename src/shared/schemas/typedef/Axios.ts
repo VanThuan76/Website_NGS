@@ -17,6 +17,7 @@ class Axios {
             this.api.interceptors.request.use(
                 (config) => {
                     const accessToken = this.getAccessToken();
+
                     if (accessToken) {
                         config.headers.Authorization = `Bearer ${accessToken}`;
                     }
@@ -153,5 +154,9 @@ class Axios {
 }
 
 
-export const axiosInstance = new Axios(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001', false);
-export const axiosInstanceNoAuth = new Axios(process.env.NEXT_PUBLIC_API_URL || 'http://localhost:3001', true);
+export const axiosInstance = new Axios(process.env.NEXT_PUBLIC_DEV_API_URL || 'http://localhost:3001', false);
+export const axiosInstanceNoAuth = new Axios(process.env.NEXT_PUBLIC_DEV_API_URL || 'http://localhost:3001', true);
+export const axiosInstanceUMS = new Axios(process.env.NEXT_PUBLIC_DEV_UMS_API_URL || 'http://localhost:3001', true);
+export const axiosInstanceUMSNoAuth = new Axios(process.env.NEXT_PUBLIC_DEV_UMS_API_URL || 'http://localhost:3001', true);
+
+

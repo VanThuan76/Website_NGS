@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { Menu } from 'lucide-react';
+import { ChevronUp, Menu } from 'lucide-react';
 
 import { fakeMenu } from 'src/shared/mock/menu';
 import { PreImage } from '@/components/common/customization/PreImage';
@@ -11,14 +11,14 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet'
 
 import { HambugerMenu } from './HambugerMenu';
 import { Button } from '@/components/common/ui/button';
-
+import NavigationMenuMain from './NavigationMenu';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > 150 && !isScrolled) {
+      if (scrollTop > 10 && !isScrolled) {
         setIsScrolled(true);
       } else if (scrollTop === 0 && isScrolled) {
         setIsScrolled(false);
@@ -38,19 +38,13 @@ const Header = () => {
       transition={{ duration: 0.3 }}
       className={`w-full top-0 z-50 flex justify-between items-center gap-5 px-5 md:px-10 transition ${
         isScrolled
-          ? 'sticky light:text-black border-b-[1px] border-opacity-50 border-black-300 inset-0 bg-opacity-10 backdrop-filter backdrop-blur duration-500 ease-in-out light:bg-[#141523]'
+          ? 'sticky light:text-black border-b-[1px] border-opacity-50 border-black-300 duration-500 ease-in-out bg-[#fff] dark:bg-[#141523]'
           : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
       }`}
     >
       <div className='flex justify-around items-center'>
         <PreImage height={100} width={100} src={'/logo.svg'} alt={'Logo'} layer={false} />
-        <ul className='justify-center items-center gap-10 hidden lg:flex xl:flex ml-10 dark:text-white'>
-          {fakeMenu.map((item, idx) => (
-            <Link href={'#'} key={idx}>
-              <li>{item}</li>
-            </Link>
-          ))}
-        </ul>
+        <NavigationMenuMain fakeMenu={fakeMenu} />
       </div>
       <div className='absolute right-5 flex justify-center items-center gap-2'>
         <div

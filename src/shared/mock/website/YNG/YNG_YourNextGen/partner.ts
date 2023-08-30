@@ -1,1 +1,0 @@
-export const YNGYourNextGenPartnerData = ["/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg", "/partner2.svg"]

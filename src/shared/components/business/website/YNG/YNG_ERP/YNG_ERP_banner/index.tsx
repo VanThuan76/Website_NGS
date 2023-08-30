@@ -2,7 +2,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { useTheme } from 'next-themes';
 
-import YNGYourNextGenBannerContent from './YNG_YourNextGen_banner_content';
+import ERPBannerContent from './YNG_ERP_banner_content';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import Border from '@/components/icon/HO/banner/Border';
 import { PreImage } from '@/components/common/customization/PreImage';
@@ -11,7 +11,7 @@ import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 interface Props {
   data: Partial<SectionData>[];
 }
-const YNGYourNextGenBanner = ({ data }: Props) => {
+const ERPBanner = ({ data }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data[0] as SectionData);
   const { theme } = useTheme();
 
@@ -63,7 +63,7 @@ const YNGYourNextGenBanner = ({ data }: Props) => {
     <section id="Home" className='block py-8'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden dark:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
-          <YNGYourNextGenBannerContent selectedTab={selectedTab && selectedTab} />
+          <ERPBannerContent selectedTab={selectedTab && selectedTab} />
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
@@ -110,4 +110,4 @@ const YNGYourNextGenBanner = ({ data }: Props) => {
   );
 };
 
-export default YNGYourNextGenBanner;
+export default ERPBanner;

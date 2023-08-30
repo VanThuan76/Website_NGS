@@ -12,13 +12,14 @@ import { IWhyUsData } from '@/mocks/website/HO/whyUs';
 import { partnerData } from '@/mocks/website/HO/partner';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
-  data: Partial<IWhyUsData>[]
+  data: Partial<IBaseSectionComponent>;
   className?: string
 }
 const HomeWhyUs = ({data, className}: Props) => {
-  const [selectedIcon, setSelectedIcon] = useState<Partial<IWhyUsData>>(data[0]);
+  const [selectedIcon, setSelectedIcon] = useState<Partial<IWhyUsData>>(data.components![0]);
   return (
     <>
       <section
@@ -30,29 +31,30 @@ const HomeWhyUs = ({data, className}: Props) => {
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection
                 title='Điều gì tạo nên NGS'
-                description='Tại sao nên chọn đồng hành cùng chúng tôi!'
+                name={data.section!.name as string}
+                description={data.section!.description as string}
                 findMore={false}
                 className='w-[80%]'
               />
               {/* //Content - Responsive Mobile */}
               <div className='flex md:hidden w-full lg:w-1/2 xl:w-1/2 flex-col justify-center items-center'>
-                {data.map((item, idx) => {
+                {data.components!.map((item, idx) => {
                   return <HomeWhyUsResponsive key={idx} item={item} />;
                 })}
               </div>
               {/* //HomeWhyUsIcon - Responsive Tablet */}
               <div className='hidden md:block lg:hidden w-full z-40 float-right'>
-                <HomeWhyUsIcon data={data} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
-                <HomeWhyUsContent data={data} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
+                <HomeWhyUsIcon data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
+                <HomeWhyUsContent data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
               </div>
               {/* //HomeWhyUsIcon - Responsive Desktop */}
               <div className='hidden lg:block w-full mt-5'>
-                <HomeWhyUsContent data={data} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
+                <HomeWhyUsContent data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
               </div>
             </div>
 
             <div className='hidden lg:block w-full z-40 float-right'>
-              <HomeWhyUsIcon data={data} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
+              <HomeWhyUsIcon data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
             </div>
           </div>
           <div className='w-full min-h-[200px] flex flex-col justify-center items-center lg:mt-20'>
