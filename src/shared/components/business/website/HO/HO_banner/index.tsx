@@ -12,7 +12,10 @@ interface Props {
   data: Partial<IBaseSectionComponent>;
 }
 const HomeBanner = ({ data }: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data.components![0]);
+  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>|undefined >(()=> {
+    if(data.components && data.components.length > 0 ) return data.components[0]
+    else return undefined
+  });
   
   const contentAnimated = {
     active: {
@@ -56,7 +59,7 @@ const HomeBanner = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
-
+  if(!selectedTab) return <></>
   return (
     <section id="Home" className='block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
@@ -85,7 +88,7 @@ const HomeBanner = ({ data }: Props) => {
         <InitBasicAnimation className='absolute bottom-10 left-10 z-40'>
           <div className='flex items-center justify-between gap-5'>
             <ul className='hidden md:flex items-center justify-between gap-5'>
-              {data.components!.map((item, idx) => (
+              {(data.components||[]).map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'

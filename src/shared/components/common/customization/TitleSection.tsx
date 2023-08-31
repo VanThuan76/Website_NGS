@@ -5,7 +5,7 @@ interface Props {
   findMore: boolean;
   className?: string
 }
-const TitleSection = (data: Props) => {
+const TitleSection = (data: Partial<Props>) => {
   return (
     <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-3 mt-5'>
       <p className='text-2xl xl:text-3xl text-orange-500'>{data.title}</p>

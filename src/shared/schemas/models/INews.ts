@@ -49,15 +49,21 @@ export const useCreateNews = (onSuccessHandle?: () => void) => {
     const queryClient = useQueryClient()
     const { toast } = useToast()
     return useMutation({
-        mutationFn: (News: Partial<IAdminNews>) => axiosInstance.post('/news/create', News),
+        mutationFn: (News: Partial<IAdminNews>) => axiosInstance.post('/articles/create', News),
         onSuccess: () => {
             queryClient.invalidateQueries({ queryKey: [QUERY_KEY] })
             if (onSuccessHandle) onSuccessHandle()
             toast({
                 variant: 'success',
-                title: "Tạo News thành công",
+                title: "Tạo articles thành công",
             })
         },
+        onError : ()=>{
+            toast({
+                variant: 'destructive',
+                title: "Tạo articles thất bại",
+            })
+        }
     })
 }
 

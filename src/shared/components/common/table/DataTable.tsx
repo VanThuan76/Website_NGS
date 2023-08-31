@@ -89,7 +89,7 @@ function DataTable<TData, TValue>({
     }, [pageIndex, pageSize, isClientPagination, table])
 
     return <div className="">
-        {/* <DataTableHeader table={table} /> */}
+         <DataTableHeader table={table} />
         <div className="rounded-md border w-full">
             <Table >
                 <TableHeader >

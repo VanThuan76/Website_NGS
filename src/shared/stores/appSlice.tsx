@@ -3,20 +3,23 @@ import { createSlice } from '@reduxjs/toolkit';
 import { deleteCookie, getCookie } from 'cookies-next';
 import { IUser } from '../schemas/models/IUser';
 import { APP_SAVE_KEY } from '../utils/constants';
+import {ISetting, PageSetting} from "../schemas/models/ISetting";
 
 
-type APPSTATE = {
+type APP_STATE = {
     user: IUser | undefined,
     isLogined: boolean,
     isCollapseMenu: boolean,
     isRouteLoading: boolean,
+    setting : PageSetting
 }
 
-const initialState: APPSTATE = {
+const initialState: APP_STATE = {
     user: undefined,
     isLogined: false,
     isCollapseMenu: false,
-    isRouteLoading: false
+    isRouteLoading: false,
+    setting : {}
 }
 
 const user: IUser = JSON.parse(getCookie(APP_SAVE_KEY.USER_DATA) as string || '{}')
@@ -42,11 +45,14 @@ export const appSlice = createSlice({
         },
         setLoading: (state, action: PayloadAction<boolean>) => {
             state.isRouteLoading = action.payload
+        },
+        configuePage : (state , action : PayloadAction<{page : string , config : ISetting}>)=>{
+            state.setting = {...state.setting , [action.payload.page] : action.payload.config}
         }
       
 
     }
 }
 )
-export const { login, logout, toggleMenu, setLoading } = appSlice.actions
+export const {configuePage, login, logout, toggleMenu, setLoading } = appSlice.actions
 export default appSlice.reducer

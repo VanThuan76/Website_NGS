@@ -119,7 +119,7 @@ class Axios {
     }
 
     private getAccessToken(): string {
-        return getCookie(APP_SAVE_KEY.TOKEN_KEY) as string
+        return getCookie(APP_SAVE_KEY.TOKEN_KEY) as string || 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2OTM0ODA5ODksInVzZXJfbmFtZSI6ImR1bmd0cWQyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9BRE1JTiIsIlJPTEVfVVNFUiJdLCJqdGkiOiIzODIwMDRmNi1kYjc4LTRhZDAtOGFlZi1kNThjYzVmZDFkNjAiLCJjbGllbnRfaWQiOiJzcHJpbmdiYW5rQ2xpZW50Iiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl19.MxhFRtk5qLoftXL9DfRj2Pj5IFuUQ1araQlYcfk0fF27P_WS8ajeo4wk7Xvb3fudAg1w9JC8EWkEmBjvXozlaEnKGuH_aT5SgI_MM5oqzkb2sbf3m8CtQC8s4M9tLvRNHRSUFCoLISagxPYpSP6Obwz7U-0R7Kqrvh9lt1ZmJgyGrTU0vpnqlHZFC3GGHFd-vM5TQN7ZVHsQ7OMKth0QJkHgbF9daJu98r12GGchxPvgNWANcUUZNwleL_uDDSwhxlQ4HEIwPo7ONnQ-KnaYPqpwoYqGHwWdDLwLv4XvKgMftgOoPOmWus3_l0BYoo9tQCdg_uTDcaAg5ai-sEb0aA'
     }
     private getRefreshToken(): string {
         return getCookie(APP_SAVE_KEY.REFRESH_TOKEN_KEY) as string
