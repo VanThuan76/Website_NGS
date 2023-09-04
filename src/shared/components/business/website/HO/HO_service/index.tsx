@@ -1,18 +1,19 @@
+import React from 'react';
 import { AnimatePresence } from 'framer-motion';
-import ServiceSection from './ServiceSection';
-import TitleSection from '@/components/common/customization/TitleSection';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import TitleSection from '@/components/common/customization/TitleSection';
+import ServiceSection from './ServiceSection';
+
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 const HomeService = ({ data, className }: Props) => {
-  if(!data.components || !data.section) return <></>
-
+  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   return (
-    <section id='Service' className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}>
+    <section id={data.section.code} className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}>
       <TitleSection
         title='Dịch vụ'
         name={data.section!.name as string}
@@ -29,11 +30,11 @@ const HomeService = ({ data, className }: Props) => {
           </div>
         </AnimatePresence>
         <PreImage
-          src={'/images/HO_service_bg.png'}
+          src={data.components[0].image}
           height={500}
           width={500}
           layer={false}
-          alt={'Service'}
+          alt={data.components[0].title}
           className='hidden lg:block xl:block relative rounded-lg'
         />
       </div>

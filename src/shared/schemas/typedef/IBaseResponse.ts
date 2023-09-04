@@ -8,9 +8,3 @@ export interface IBaseResponseWithCount<T> {
     totalPages: number,
     totalElements: number,
 }
-export interface IBaseAmadeusResponse<T> {
-    meta: {
-        count: number
-    },
-    data: T
-}

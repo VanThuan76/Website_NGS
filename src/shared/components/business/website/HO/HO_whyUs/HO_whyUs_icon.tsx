@@ -1,13 +1,13 @@
+import { motion } from "framer-motion";
+import { IComponents } from "src/shared/schemas/typedef/IComponents";
 import IconFirst from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconFirst";
 import IconLast from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconLast";
 import IconMid from "@/components/icon/HO/whyUs/iconLogoWhyUs/iconMid";
-import { IWhyUsData } from "@/mocks/website/HO/whyUs";
-import { motion } from "framer-motion";
 
 interface Props {
+  data: Partial<IComponents>[];
+  selectedIcon: Partial<IComponents>;
   setSelectedIcon: any;
-  data: Partial<IWhyUsData>[];
-  selectedIcon: Partial<IWhyUsData>;
 }
 
 const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
@@ -45,7 +45,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
     <div className="relative z-50 min-h-[400px] lg:min-h-[500px] cursor-pointer">
       <motion.div
         initial="inactive"
-        animate={selectedIcon?.key === 1 ? "active" : "inactive"}
+        animate={selectedIcon?.code === "HO_whyUs_1" ? "active" : "inactive"}
         variants={iconFirstVariants}
         className="absolute bottom-0 left-[138px] xl:left-20 z-40"
       >
@@ -56,13 +56,13 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       </motion.div>
       <motion.div
         initial="inactive"
-        animate={selectedIcon?.key === 2 ? "active" : "inactive"}
+        animate={selectedIcon?.code === "HO_whyUs_2" ? "active" : "inactive"}
         variants={iconLastVariants}
         className="absolute bottom-0 left-[178px] xl:left-[148px] z-30"
       >
         <motion.div
           animate={{
-            color: selectedIcon?.key === 2 ? "#2D77B4" : "#27293F",
+            color: selectedIcon?.code === "HO_whyUs_2" ? "#2D77B4" : "#27293F",
           }}
           onClick={() => setSelectedIcon(data[1])}
         >
@@ -71,11 +71,11 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       </motion.div>
       <motion.div
         initial="inactive"
-        animate={selectedIcon?.key === 3 ? "active" : "inactive"}
+        animate={selectedIcon?.code === "HO_whyUs_3" ? "active" : "inactive"}
         variants={iconLastVariants}
         className="absolute bottom-[8px] xl:bottom-[28px] left-[158px] xl:left-[108px]"
       >
-        <IconLast className="w-[350px] xl:w-[500px]" open={selectedIcon?.key === 3} onClick={() => setSelectedIcon(data[2])} />
+        <IconLast className="w-[350px] xl:w-[500px]" open={selectedIcon?.code === "HO_whyUs_3"} onClick={() => setSelectedIcon(data[2])} />
       </motion.div>
     </div>
   );

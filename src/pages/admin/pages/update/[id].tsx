@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ChevronLeft } from 'lucide-react';
 import { useDispatch } from 'react-redux';
 import { useAppSelector } from '@/hooks/useRedux';
@@ -18,11 +18,14 @@ import PageEditor from '@/components/business/admin/pages/PageEditor';
 import TablePageRequest from '@/components/business/admin/pages/TablePageRequest';
 import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
 
-import { setActiveSection } from 'src/shared/stores/pageEditorSlice';
+import { initData, setActiveSection } from 'src/shared/stores/pageEditorSlice';
 import { ISection } from 'src/shared/schemas/typedef/ISection';
 import { useRouter } from 'next/router';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { IDetailPageById } from 'src/shared/schemas/typedef/IPage';
+import { renderHomeContent } from '@/utils/fetchServerSide/renderHomeContent';
+import { APP_SAVE_KEY } from '@/utils/constants';
+import { getCookie } from 'cookies-next';
 
 type Props = {
   informationPage: IDetailPageById,
@@ -30,15 +33,15 @@ type Props = {
 };
 
 export function EditPage({ informationPage, sections }: Props) {
-  const { pageName, activeSectionCode } = useAppSelector(state => state.pageEditorSlice);
+  const { activeSectionCode } = useAppSelector(state => state.pageEditorSlice);
   const router = useRouter();
   const dispatch = useDispatch();
   return (
     <section className='w-full'>
       <div className='flex justify-between'>
         <div className='space-y-0.5'>
-          <h2 className='text-2xl font-bold tracking-tight'>Chỉnh sửa {informationPage.name}</h2>
-          <p className='text-muted-foreground'>Lần sửa gần nhất: {informationPage.updatedDate}</p>
+          <h2 className='text-2xl font-bold tracking-tight'>Chỉnh sửa {informationPage && informationPage.name}</h2>
+          <p className='text-muted-foreground'>Lần sửa gần nhất: {informationPage && informationPage.updatedDate}</p>
         </div>
         <Button onClick={() => router.push('/admin/pages')}>
           <ChevronLeft /> Quay trở lại

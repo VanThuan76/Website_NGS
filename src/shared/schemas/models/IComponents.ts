@@ -3,6 +3,7 @@ import { UseQueryOptions, useMutation, useQuery, useQueryClient } from "@tanstac
 import { IBaseResponse } from "../typedef/IBaseResponse";
 import { axiosInstanceNoAuth } from '../typedef/Axios';
 import { IComponentById, IComponents, IComponentsCreate } from "../typedef/IComponents";
+import { IBaseSectionComponent } from "../typedef/IBaseSectionComponent";
 const QUERY_KEY = 'Components'
 
 export const useGetListComponents = ({ options }: { options: Partial<UseQueryOptions> }) => {
@@ -29,6 +30,16 @@ export const useGetDetailComponentsByCode = ({ code, options }: { code: React.Ke
     return useQuery({
         queryKey: [QUERY_KEY],
         queryFn: () => axiosInstanceNoAuth.get<IBaseResponse<IComponents[]>>(`/components/get-by-code?code=${code}`),
+        select(data) {
+            return data.data
+        },
+        enabled: options.enabled
+    })
+}
+export const useGetDetailComponentsBySectionCode = ({ code, language, options }: { code: React.Key, language:string, options: Partial<UseQueryOptions> }) => {
+    return useQuery({
+        queryKey: [QUERY_KEY],
+        queryFn: () => axiosInstanceNoAuth.get<IBaseResponse<IBaseSectionComponent>>(`/components/get-by-section-code?language=${language}&code=${code}`),
         select(data) {
             return data.data
         },

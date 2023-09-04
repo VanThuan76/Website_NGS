@@ -16,6 +16,7 @@ const ERPPartner = () => {
         <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 p-2'>
           {ERPPartnerData.map((item, idx) => (
             <div
+              key={idx}
               className={`relative max-w-[310px] h-full rounded-lg shadow-md overflow-hidden`}
             >
               <PreImage

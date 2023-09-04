@@ -1,17 +1,17 @@
-import BtnCommon from '@/components/common/customization/BtnCommon';
-import { PreImage } from '@/components/common/customization/PreImage';
-import IconLineDirection from '@/components/icon/IconLineDirection';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
-
+import { PreImage } from '@/components/common/customization/PreImage';
+import BtnCommon from '@/components/common/customization/BtnCommon';
+import IconLineDirection from '@/components/icon/IconLineDirection';
 interface Props {
   title: string;
   description: string;
+  image: string
   className: string;
 }
 
-const HomeSolutionCard = ({ title, description, className }: Props) => {
+const HomeSolutionCard = ({ title, description,image, className }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
@@ -25,11 +25,9 @@ const HomeSolutionCard = ({ title, description, className }: Props) => {
           backgroundColor: isHovered ? '' : '#fff',
           color: isHovered ? '#fff' : '',
         };
-
   return (
     <motion.div
       className={`flex flex-col justify-start items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
-      style={{ borderRight: `1px solid ${theme === 'dark' ? '#222442' : '#F96619'}` }}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
@@ -39,7 +37,7 @@ const HomeSolutionCard = ({ title, description, className }: Props) => {
       }}
     >
       <PreImage
-        src='https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg'
+        src={image}
         width={50}
         height={50}
         alt='solution'

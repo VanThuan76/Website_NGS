@@ -1,11 +1,11 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 
-import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import { PreImage } from '@/components/common/customization/PreImage';
-import ContentBanner from './ContentBanner';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import ContentBanner from './ContentBanner';
 
 
 interface Props {

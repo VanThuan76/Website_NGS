@@ -1,22 +1,24 @@
+import React from 'react';
 import HomeNewsItem from './HO_news_item';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { PreImage } from '@/components/common/customization/PreImage';
-import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import { IWebsiteNews } from 'src/shared/schemas/models/INews';
 
 type Props = {
-  data: Partial<IBaseSectionComponent>;
+  data: Partial<IWebsiteNews>;
   className?: string
 }
 const HomeNews = ({data, className}: Props) => {
+  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   return (
     <section
-      id='News'
+      id={data.section.code}
       className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
     >
         <TitleSection
           title='Tin tức'
           name={data.section!.name as string}
-        description={data.section!.description as string}
+          description={data.section!.description as string}
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
@@ -32,12 +34,12 @@ const HomeNews = ({data, className}: Props) => {
             />
             <div className='mt-10 px-5 w-full flex flex-col justify-between items-start gap-3'>
               <div className='w-full flex justify-between items-center'>
-                <p className='text-orange-500'>{data.components![0].category}</p>
-                <p className='text-sm text-slate-500'>{data.components![0].createAt}</p>
+                <p className='text-orange-500'>{data.author}</p>
+                <p className='text-sm text-slate-500'>{data.components![0].code}</p>
               </div>
-              <h2 className='text-2xl'>{data.components![0].title}</h2>
-              <p className='text-sm text-slatse-500'>{data.components![0].description}</p>
-              <p className='w-full text-end text-sm text-slate-400'>{data.components![0].author}</p>
+              <h2 className='text-2xl'>{data.title}</h2>
+              <p className='text-sm text-slatse-500'>{data.description}</p>
+              <p className='w-full text-end text-sm text-slate-400'>{data.author}</p>
             </div>
           </div>
           <div className='w-full grid grid-rows-2 gap-5'>

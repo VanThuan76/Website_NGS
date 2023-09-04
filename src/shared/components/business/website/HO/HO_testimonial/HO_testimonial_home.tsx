@@ -12,8 +12,8 @@ const HomeTestimonialContent = ({ data }: Props) => {
         <div className='w-full flex justify-start items-center gap-3'>
           <PreImage src={data.image as string} width={50} height={50} alt={'event'} className='w-full rounded-full' />
           <div className='flex flex-col justify-start items-start opacity-80 text-sm'>
-            <p>{data.name}</p>
-            <p>{data.position}</p>
+            <p>{data.title}</p>
+            <p>{data.description}</p>
           </div>
         </div>
       </div>

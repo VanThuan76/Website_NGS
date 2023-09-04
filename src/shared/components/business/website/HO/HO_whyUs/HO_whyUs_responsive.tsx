@@ -1,11 +1,10 @@
-import BtnCommon from '@/components/common/customization/BtnCommon';
-import { IWhyUsData } from '@/mocks/website/HO/whyUs';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
-
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import BtnCommon from '@/components/common/customization/BtnCommon';
 interface Props {
-  item: Partial<IWhyUsData>;
+  item: Partial<IComponents>;
 }
 
 const HomeWhyUsResponsive = ({ item }: Props) => {

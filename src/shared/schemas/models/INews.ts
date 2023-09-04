@@ -1,22 +1,28 @@
-// import { toast } from 'react-toastify';
-import { useToast } from "@/components/common/ui/use-toast";
 import usePagination from "@/hooks/usePagination";
-import { UseQueryOptions, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { axiosInstance } from "../typedef/Axios";
-import { IBaseModel } from "../typedef/IBaseModel";
+import { UseQueryOptions, useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
+import { useToast } from "@/components/common/ui/use-toast";
 import { IBaseResponse, IBaseResponseWithCount } from "../typedef/IBaseResponse";
+import { IBaseModel } from "../typedef/IBaseModel";
 import { Filter } from "../typedef/ISearchParams";
+import { IBaseSectionComponent } from "../typedef/IBaseSectionComponent";
 
 const QUERY_KEY = 'getListNews'
 
+export interface IWebsiteNews extends IBaseSectionComponent {
+    title: string;
+    description: string;
+    content: string;
+    image: string;
+    author: string;
+    slug: string;
+}
 export interface IAdminNews extends IBaseModel {
     title: string;
     description: string;
     content: string;
     image: string;
     author: string;
-    // isActive: boolean;
-    // isDelete: boolean;
     slug: string;
 }
 

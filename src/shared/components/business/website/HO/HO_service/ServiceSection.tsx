@@ -1,8 +1,7 @@
-import BtnCommon from '@/components/common/customization/BtnCommon';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
-
+import BtnCommon from '@/components/common/customization/BtnCommon';
 interface Props {
   item: any;
   idx: number;
@@ -34,12 +33,12 @@ const ServiceSection = ({ item, idx }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        {/* //Responsive */}
+        {/* <--Responsive */}
         <p className='hidden md:block text-sm md:text-base'>{item.des}</p>
         <p className='block md:hidden text-sm md:text-base'>
           {item.des.length > 100 ? `${item.des.substring(0, 80)}...` : item.des}
         </p>
-        {/* //Responsive */}
+        {/* Responsive--> */}
         <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>

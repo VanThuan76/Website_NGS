@@ -5,7 +5,6 @@ import { pageAdminEditorData, pageSectionData } from '@/mocks/admin/page';
 import { ISection } from '../schemas/typedef/ISectionData';
 
 type EDITORSTATE = {
-  pageName: string | undefined;
   sections: ISection[];
   activeSectionCode: string | undefined;
   currentSection: Partial<ISection>;
@@ -14,19 +13,18 @@ type EDITORSTATE = {
 };
 
 const initialState: EDITORSTATE = {
-  pageName: 'HomePage',
   activeLang: 'vi',
   currentSection: pageAdminEditorData[0],
   sections: pageAdminEditorData,
-  activeSectionCode: 'HO_banner',
-  data: { vi: pageSectionData, en: {} },
+  activeSectionCode: '',
+  data: { vi: {}, en: {} },
 };
 export const editorState = createSlice({
   name: 'editorState',
   initialState,
   reducers: {
-    initData: (state, action: PayloadAction<EDITORSTATE>) => {
-      state = action.payload;
+    initData: (state, action: PayloadAction<any>) => {
+      state.data = action.payload;
     },
     setActiveSection: (state, action: PayloadAction<string>) => {
       state.activeSectionCode = action.payload;

@@ -49,7 +49,7 @@ const PageChart: React.FC<Props> = ({ menuPageTree }) => {
                 label={<Label data={menuPageTree[0]} />}
                 nodePadding='10px'
             >
-                {menuPageTree.slice(1, menuPageTree.length).map(item => {
+                {menuPageTree && menuPageTree.slice(1, menuPageTree.length).map(item => {
                     return <TreeNode key={item.id} label={<Label data={item} />} />;
                 })}
             </Tree>

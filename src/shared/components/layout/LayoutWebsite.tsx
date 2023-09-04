@@ -4,7 +4,6 @@ import { useState } from 'react';
 import Footer from './footer';
 import Header from './header';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
-import { sectionHomeData } from '@/mocks/website/HO/banner';
 import { Link } from 'react-scroll';
 interface Props {
   children: React.ReactNode;

@@ -1,11 +1,11 @@
-import BtnCommon from '@/components/common/customization/BtnCommon';
-import { IWhyUsData } from '@/mocks/website/HO/whyUs';
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import BtnCommon from '@/components/common/customization/BtnCommon';
 interface Props {
   setSelectedIcon: any;
-  data: Partial<IWhyUsData>[];
-  selectedIcon: Partial<IWhyUsData>;
+  data: Partial<IComponents>[];
+  selectedIcon: Partial<IComponents>;
 }
 const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
   const {theme} = useTheme();
@@ -36,7 +36,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               initial='inactive'
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
-              onClick={() => setSelectedIcon(item as IWhyUsData)}
+              onClick={() => setSelectedIcon(item)}
               className={`w-full lg:w-auto text-center px-5 pb-3 border-b-2 cursor-pointer ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}

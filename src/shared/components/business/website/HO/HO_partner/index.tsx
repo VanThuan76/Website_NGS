@@ -1,14 +1,13 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-import HomePartnerResponsive from './HO_partner_responsive';
-import { PreImage } from '@/components/common/customization/PreImage';
-import { IPartnerData } from '@/mocks/website/HO/partner';
 import { Pagination } from 'swiper/modules';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import { PreImage } from '@/components/common/customization/PreImage';
+import HomePartnerResponsive from './HO_partner_responsive';
 
 type Props = {
   data: Partial<IBaseSectionComponent>
@@ -16,12 +15,13 @@ type Props = {
 }
 
 const HomePartner = ({data, className}: Props) => {
-  const [selectedPartner, setSelectedPartner] = useState<Partial<IPartnerData>>(data.components![0]);
   const { theme } = useTheme();
+  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>>(data.components![0]);
+  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
   return (
     <section
-      id='Partner'
+      id={data.section.code}
       className={`bg-[#F06426] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
@@ -35,7 +35,7 @@ const HomePartner = ({data, className}: Props) => {
                   height={200}
                   width={1080}
                   layer={false}
-                  alt={'Service'}
+                  alt={item.title}
                   className={`relative rounded-lg cursor-pointer ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-30'
                   }`}
@@ -55,9 +55,9 @@ const HomePartner = ({data, className}: Props) => {
                 >
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <p className='font-medium text-2xl'>{item.title}</p>
-                    <p className='font-thin text-sm'>{item.rank}</p>
+                    <p className='font-thin text-sm'>{item.description}</p>
                   </div>
-                  <p className='w-full lg:w-1/2'>{item.description}</p>
+                  <p className='w-full lg:w-1/2'>{item.content}</p>
                 </div>
               ) : (
                 <></>
@@ -65,7 +65,9 @@ const HomePartner = ({data, className}: Props) => {
             </div>
           ))}
         </div>
+        {/* <-- Home Partner Responsive */}
         <HomePartnerResponsive />
+        {/* Home Partner Responsive --> */}
       </div>
     </section>
   );

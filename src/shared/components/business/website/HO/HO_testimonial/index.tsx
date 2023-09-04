@@ -1,11 +1,9 @@
 import { useState } from 'react';
-
-import HomeTestimonialContent from './HO_testimonial_home';
-import BtnCommon from '@/components/common/customization/BtnCommon';
-import TitleSection from '@/components/common/customization/TitleSection';
-import { ITestimonial } from '@/mocks/website/HO/testimonial';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import BtnCommon from '@/components/common/customization/BtnCommon';
+import TitleSection from '@/components/common/customization/TitleSection';
+import HomeTestimonialContent from './HO_testimonial_home';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -13,7 +11,7 @@ type Props = {
 }
 
 const HomeTestimonial = ({data, className}: Props) => {
-  const [isHovered, setIsHovered] = useState<Partial<ITestimonial>>(data.components![0]);
+  const [isHovered, setIsHovered] = useState<Partial<IComponents>>(data.components![0]);
 
   return (
     <section id="Testimonial" className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}>
