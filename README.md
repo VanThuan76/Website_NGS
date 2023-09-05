@@ -1,38 +1,61 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DOcument Guide
 
-## Getting Started
+## Before code
 
-First, run the development server:
+1. Nodejs 16+
+2. Yarn
+3. Enable tsLint, prettier in your edior. (Notice setting prettier file path refer to <b>.prettierrc</b>)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+## Techstack
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- next 13 page router
+- frame-motion
+- radix/shadui
+- redux
+- react-query
+- tailwind-css
 
-You can start editing the page by modifying `pages/[slug].tsx`. The page auto-updates as you edit the file.
+## Run
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- install lib: `yarn install`
+- start dev: `yarn dev`
+- format code : `yarn format`
+- check lint : `yarn lint`
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Tổ chức code :
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- pages : trang web (Lưu ý các trang page,section,component được tổ chức theo mã định danh(khác mã code thuần) -> thống nhất để dễ hiểu)
+- shared :
+  - components :
+    - business : các component theo nghiệp vụ
+    - common : các component dùng chung
+    - core : các component như table , form (lúc đầu định build nhưng vì thời gian nên dùng của antd)
+    - icons : icon export từ figma về thành file svg
+    - layout : Page Layout
+  - hooks : các custom hook , còn lại sử dụng từ thư viện use-hook
+  - mocks : để mockup dữ liệu sử dụng json-server
+  - schema:
+    - models : định nghĩa type các đối tượng, và các service (api call)
+    - typeDef : Kiểu dữ liệu cơ sở
+  - stores: quản lý state
+  - utils:
+    - contants : hằng số
+    - functions : hàm tiện ích
+- styles : các file style
+- public :
+  - locales : đa ngôn ngữ
 
-## Learn More
+## Git flow
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- name convention:
+  - Tính năng : feature/devname-featureName (Ví dụ feature/sypv-booking)
+  - Bug : fix/devname-featureName
+  - Refactor: refactor/devname-featureName
+- Create new Branch:
+  - Git fetch origin
+  - git checkout -b new-local-branch origin/develop
+- Before create merge
+  - Git fetch origin
+  - Git rebase origin/develop then do rebase flow
+  - Git push -f
+  - Don't commit .env file
