@@ -29,7 +29,7 @@ export interface IAdminNews extends IBaseModel {
 export const useGetListNews = (defaultFilter?: Filter[]) => {
     return usePagination<IBaseResponse<IBaseResponseWithCount<IAdminNews[]>>>({
         queryKey: [QUERY_KEY],
-        apiFn: (params) => axiosInstance.post<IBaseResponse<IBaseResponseWithCount<IAdminNews[]>>>('/news/search', { ...params }),
+        apiFn: (params) => axiosInstance.post<IBaseResponse<IBaseResponseWithCount<IAdminNews[]>>>('/articles/search', { ...params }),
         defaultParams: {
             page: 0,
             size: 10,

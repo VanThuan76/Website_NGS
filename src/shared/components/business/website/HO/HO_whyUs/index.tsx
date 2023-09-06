@@ -17,11 +17,14 @@ type Props = {
   className?: string
 }
 const HomeWhyUs = ({data, className}: Props) => {
-  const [selectedIcon, setSelectedIcon] = useState<Partial<IComponents>>(data.components![0]);
-  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
+  const [selectedIcon, setSelectedIcon] = useState<Partial<IComponents>|undefined >(()=> {
+    if(data.components && data.components.length > 0 ) return data.components[0]
+    else return undefined
+  });
+  if(!selectedIcon) return <React.Fragment></React.Fragment>
   return (
       <section
-        id={data.section.code}
+        id={data && data.section && data.section.code}
         className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
       >
         <div className='max-w-[1440px] w-full mx-auto my-auto'>

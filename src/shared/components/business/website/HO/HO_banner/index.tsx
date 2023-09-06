@@ -1,10 +1,11 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import MouseScroll from '@/components/icon/HO/banner/MouseScroll';
 import ContentBanner from './ContentBanner';
 
 
@@ -59,12 +60,13 @@ const HomeBanner = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
-  if(!selectedTab) return <></>
+  if(!selectedTab) return <React.Fragment></React.Fragment>
   return (
-    <section id="Home" className='block'>
+    <section id={data && data.section && data.section.code} className='block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
-          <ContentBanner selectedTab={selectedTab && selectedTab} />
+          <ContentBanner selectedTab={selectedTab} />
+          <MouseScroll className='absolute right-10 bottom-10 z-30 hidden lg:block' />
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
@@ -74,13 +76,12 @@ const HomeBanner = ({ data }: Props) => {
               className='relative w-full flex-shrink-0 snap-start'
             >
               <PreImage
-                //@ts-ignore
-                src={selectedTab && selectedTab.image}
+                src={selectedTab.image as string}
                 height={1080}
                 width={1980}
                 layer={true}
                 alt={'Banner'}
-                className='rounded-lg'
+                className='w-full object-cover'
               />
             </motion.div>
           </AnimatePresence>

@@ -2,10 +2,6 @@ export async function renderHomeContent(language: string, token: string | undefi
   try {
     const getDetailPageById = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/1`, {
       method: 'GET',
-      headers: {
-        Authorization: `Bearer ${token}`,
-        'Content-Type': 'application/json',
-      },
       cache: 'default',
     });
     const pageData = await getDetailPageById.json();
@@ -24,13 +20,9 @@ export async function renderHomeContent(language: string, token: string | undefi
     const getListComponentBySectionCode = sectionCodes.map(async code => {
       try {
         const response = await fetch(
-          `${process.env.NEXT_PUBLIC_DEV_API_URL}/components/get-by-section-code?language=${language}&code=${code}`,
+          `${process.env.NEXT_PUBLIC_DEV_API_URL}/components/get-by-section-code/${language}/${code}`,
           {
             method: 'GET',
-            headers: {
-              Authorization: `Bearer ${token}`,
-              'Content-Type': 'application/json',
-            },
             cache: 'default',
           },
         );

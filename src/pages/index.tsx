@@ -1,3 +1,4 @@
+import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
@@ -46,7 +47,7 @@ export function HomePage({
   HO_testimonialData,
 }: Props) {
   return (
-    <>
+    <React.Fragment>
       <Head>
         <title>{pageData.name}</title>
         <meta name='description' content={pageData.description} />
@@ -101,7 +102,7 @@ export function HomePage({
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <ConnectUs />
       </ScrollRevealWrapper>
-    </>
+    </React.Fragment>
   );
 }
 

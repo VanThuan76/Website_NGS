@@ -1,17 +1,14 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
-import { ChevronUp, Menu } from 'lucide-react';
-
-import { fakeMenu } from 'src/shared/mock/menu';
+import { Menu } from 'lucide-react';
 import { PreImage } from '@/components/common/customization/PreImage';
 import ThemeModeToggle from '@/components/common/ToggleThemeMode';
 import LanguageSwitch from '@/components/common/LanguageSwitch';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';
+import NavigationMenuMain from './NavigationMenuMain';
+import { fakeMenu } from 'src/shared/mock/menu';
 
-import { HambugerMenu } from './HambugerMenu';
-import { Button } from '@/components/common/ui/button';
-import NavigationMenuMain from './NavigationMenu';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -33,8 +30,8 @@ const Header = () => {
 
   return (
     <motion.section
-      initial={{ height: '100px' }}
-      animate={{ height: isScrolled ? '80px' : '100px' }}
+      initial={{ height: '85px' }}
+      animate={{ height: isScrolled ? '80px' : '85px' }}
       transition={{ duration: 0.3 }}
       className={`w-full top-0 z-50 flex justify-between items-center gap-5 px-5 md:px-10 transition ${
         isScrolled
@@ -43,8 +40,10 @@ const Header = () => {
       }`}
     >
       <div className='flex justify-around items-center'>
-        <PreImage height={100} width={100} src={'/logo.svg'} alt={'Logo'} layer={false} />
-        <NavigationMenuMain fakeMenu={fakeMenu} />
+        <PreImage height={100} width={100} src='/logo.svg' alt='Logo' layer={false} />
+        <div className='hidden lg:block'>
+          <NavigationMenuMain fakeMenu={fakeMenu} />
+        </div>
       </div>
       <div className='absolute right-5 flex justify-center items-center gap-2'>
         <div
@@ -75,6 +74,10 @@ const Header = () => {
           </ul>
         </div>
         <div className='flex gap-8 items-center'>
+          <div className='hidden lg:flex gap-8 items-center'>
+          <ThemeModeToggle />
+          <LanguageSwitch />
+          </div>
           <div className='lg:hidden xl:hidden'>
             <Sheet>
               <SheetTrigger asChild>
@@ -82,20 +85,17 @@ const Header = () => {
                   <Menu />
                 </div>
               </SheetTrigger>
-              <SheetContent className='w-[200px]' side={'left'}>
+              <SheetContent className='w-[70%] cursor-pointer' side={'right'}>
                 <div>
-                  {fakeMenu.map((item, idx) => (
+                  {fakeMenu.map((mainMenu, idx) => (
                     <Link href={'#'} key={idx}>
-                      <li>{item}</li>
+                      <li>{mainMenu.title}</li>
                     </Link>
                   ))}
                 </div>
               </SheetContent>
             </Sheet>
           </div>
-
-          <ThemeModeToggle />
-          <LanguageSwitch />
           <button className='dark:text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>
             Liên hệ
           </button>

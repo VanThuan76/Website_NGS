@@ -22,6 +22,11 @@ export const APP_MENU: MenuItem[] = [
     Icon: <Newspaper className='mr-2 h-5 w-5' />,
   },
   {
+    title: 'Event',
+    href: '/admin/event',
+    Icon: <Newspaper className='mr-2 h-5 w-5' />,
+  },
+  {
     title: 'Media',
     href: '/admin/media',
     Icon: <Newspaper className='mr-2 h-5 w-5' />,

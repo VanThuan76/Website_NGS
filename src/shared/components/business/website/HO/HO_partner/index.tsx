@@ -16,9 +16,13 @@ type Props = {
 
 const HomePartner = ({data, className}: Props) => {
   const { theme } = useTheme();
-  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>>(data.components![0]);
+  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>|undefined >(()=> {
+    if(data.components && data.components.length > 0 ) return data.components[0]
+    else return undefined
+  });
   if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
+  if(!selectedPartner) return <></>
   return (
     <section
       id={data.section.code}

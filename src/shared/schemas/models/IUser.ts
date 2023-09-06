@@ -38,7 +38,7 @@ export const useLogin = () => {
           title: "Đăng nhập thành công",
           description: "Chào mừng bạn đăng nhập vào hệ thống",
         })
-        router.push('/')
+        router.push('/admin')
   
       },
       onError(error, variables, context) {
