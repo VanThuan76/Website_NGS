@@ -273,6 +273,7 @@ export const fakeMenu = [
 ]
 export interface IMenu {
     id: number;
+    path?: string;
     title: string;
     menuChild: IMenuChild2[];
 }
@@ -280,7 +281,7 @@ export interface IMenu {
 export interface IMenuChild2 {
     title: string;
     path: string;
-    menuChild: IMenuChild3[][];
+    menuChild: IMenuChild3[];
 }
 
 export interface IMenuChild3 {
