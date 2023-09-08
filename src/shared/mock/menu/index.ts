@@ -4,12 +4,12 @@ export const fakeMenu = [
         title: "Tương lai tiên phong",
         menuChild: [
             {
-                title: "Digital Consulting",
-                path: "",
+                title: "ERP",
+                path: "/erp",
                 menuChild: []
             },
             {
-                title: "Digital Transformation Implementation",
+                title: "CRM",
                 path: "",
                 menuChild: [
                     {

@@ -1,22 +1,27 @@
+import { mergeCommonData, IBaseResponseSectionComponent } from './mergeApi';
+
 export async function renderHomeContent(language: string, token: string | undefined) {
   try {
+    const sectionCodes = [
+      'PG001SE00001',
+      'PG001SE00002',
+      'PG001SE00003',
+      'PG001SE00004',
+      'PG001SE00005',
+      'PG001SE00006',
+      'PG001SE00007',
+      'PG001SE00008',
+      'PG001SE00009',
+      'PG001SE000010',
+      'PG001SE000011',
+      'PG001SE000012',
+      'PG001SE000013',
+    ];
     const getDetailPageById = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/1`, {
       method: 'GET',
       cache: 'default',
     });
-    const pageData = await getDetailPageById.json();
-    const sectionCodes = [
-      'HO_banner',
-      'HO_solution',
-      'HO_service',
-      'HO_security',
-      'HO_aboutUs',
-      'HO_whyUs',
-      'HO_event',
-      'HO_news',
-      'HO_partner',
-      'HO_testimonial',
-    ];
+    const homePageData = await getDetailPageById.json();
     const getListComponentBySectionCode = sectionCodes.map(async code => {
       try {
         const response = await fetch(
@@ -26,7 +31,6 @@ export async function renderHomeContent(language: string, token: string | undefi
             cache: 'default',
           },
         );
-
         const data = await response.json();
         return data;
       } catch (error) {
@@ -34,49 +38,57 @@ export async function renderHomeContent(language: string, token: string | undefi
         return null;
       }
     });
-
     const [
-      HO_bannerData,
-      HO_solutionData,
-      HO_serviceData,
-      HO_securityData,
-      HO_aboutUsData,
-      HO_whyUsData,
-      HO_eventData,
-      HO_newsData,
-      HO_partnerData,
-      HO_testimonialData,
+      HO_BannerData,
+      HO_SolutionData,
+      HO_ServiceData,
+      HO_SecurityData,
+      HO_PioneeringData,
+      HO_AboutUsData,
+      HO_WhyUsData,
+      COMMON_SectionEventData,
+      COMMON_SectionNewsData,
+      HO_PartnerData,
+      HO_TestimonialData,
     ] = await Promise.all(getListComponentBySectionCode);
+    const COMMON_NewsData: IBaseResponseSectionComponent | any = await mergeCommonData('/articles/get-top-latest-news', COMMON_SectionNewsData);
+    // const COMMON_EventData: IBaseResponseSectionComponent | any = await mergeCommonData('/events/get-top-latest-events', COMMON_SectionEventData);
+    const COMMON_EventData: IBaseResponseSectionComponent | any = []
+    // const HO_EcosystemData = []
     return {
       props: {
-        pageData,
-        HO_solutionData,
-        HO_serviceData,
-        HO_bannerData,
-        HO_securityData,
-        HO_aboutUsData,
-        HO_whyUsData,
-        HO_eventData,
-        HO_newsData,
-        HO_partnerData,
-        HO_testimonialData,
+        homePageData,
+        HO_SolutionData,
+        HO_ServiceData,
+        HO_BannerData,
+        HO_SecurityData,
+        HO_PioneeringData,
+        HO_AboutUsData,
+        HO_WhyUsData,
+        // HO_EcosystemData,
+        COMMON_EventData,
+        COMMON_NewsData,
+        HO_PartnerData,
+        HO_TestimonialData,
       },
     };
   } catch (error) {
     console.error('Error fetching data:', error);
     return {
       props: {
-        pageData: {},
-        HO_solutionData: [],
-        HO_bannerData: [],
-        HO_serviceData: [],
-        HO_securityData: [],
-        HO_aboutUsData: [],
-        HO_whyUsData: [],
-        HO_eventData: [],
-        HO_newsData: [],
-        HO_partnerData: [],
-        HO_testimonialData: [],
+        homePageData: {},
+        HO_SolutionData: [],
+        HO_BannerData: [],
+        HO_ServiceData: [],
+        HO_SecurityData: [],
+        HO_PioneeringData: [],
+        HO_AboutUsData: [],
+        HO_WhyUsData: [],
+        HO_EcosystemData: [],
+        COMMON_EventData: [],
+        COMMON_NewsData: [],
+        HO_PartnerData: [],
+        HO_TestimonialData: [],
       },
     };
   }

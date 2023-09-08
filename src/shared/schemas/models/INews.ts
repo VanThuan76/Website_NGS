@@ -10,12 +10,17 @@ import { IBaseSectionComponent } from "../typedef/IBaseSectionComponent";
 const QUERY_KEY = 'getListNews'
 
 export interface IWebsiteNews extends IBaseSectionComponent {
+    id: number;
     title: string;
     description: string;
     content: string;
     image: string;
-    author: string;
     slug: string;
+    author: string;
+    createdDate: string;
+    updatedDate: string;
+    categoryId: number;
+    categoryName: string;
 }
 export interface IAdminNews extends IBaseModel {
     title: string;
@@ -25,7 +30,6 @@ export interface IAdminNews extends IBaseModel {
     author: string;
     slug: string;
 }
-
 export const useGetListNews = (defaultFilter?: Filter[]) => {
     return usePagination<IBaseResponse<IBaseResponseWithCount<IAdminNews[]>>>({
         queryKey: [QUERY_KEY],
@@ -64,7 +68,7 @@ export const useCreateNews = (onSuccessHandle?: () => void) => {
                 title: "Tạo articles thành công",
             })
         },
-        onError : ()=>{
+        onError: () => {
             toast({
                 variant: 'destructive',
                 title: "Tạo articles thất bại",

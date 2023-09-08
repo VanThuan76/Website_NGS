@@ -41,7 +41,7 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
                 </SheetContent>
               </Sheet>
             </div>
-            <Link href='/' className='items-center space-x-2 flex'>
+            <Link href='/admin/pages' className='items-center space-x-2 flex'>
               <PreImage src='/logo.svg' width={100} height={50} alt='Logo' />
               <span className='font-bold text-2xl sm:inline-block'>{process.env.NEXT_PUBLIC_APP_NAME}</span>
             </Link>

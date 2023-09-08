@@ -17,9 +17,19 @@ export const APP_MENU: MenuItem[] = [
     Icon: <LayoutGrid className='mr-2 h-5 w-5' />,
   },
   {
-    title: 'News',
-    href: '/admin/news',
-    Icon: <Newspaper className='mr-2 h-5 w-5' />,
+    title: 'News Manage',
+    href: '/admin/news-manage',
+    Icon: <LayoutGrid className='mr-2 h-5 w-5' />,
+    chidren: [
+      {
+        title: 'News',
+        href: '/admin/news-manage/news',
+      }, 
+      {
+        title: 'Category',
+        href: '/admin/news-manage/category',
+      },
+    ],
   },
   {
     title: 'Event',

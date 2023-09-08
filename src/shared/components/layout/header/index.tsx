@@ -8,9 +8,11 @@ import LanguageSwitch from '@/components/common/LanguageSwitch';
 import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';
 import NavigationMenuMain from './NavigationMenuMain';
 import { fakeMenu } from 'src/shared/mock/menu';
+import { useRouter } from 'next/router';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const router = useRouter()
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -40,7 +42,7 @@ const Header = () => {
       }`}
     >
       <div className='flex justify-around items-center'>
-        <PreImage height={100} width={100} src='/logo.svg' alt='Logo' layer={false} />
+        <PreImage height={100} width={100} src='/logo.svg' alt='Logo' layer={false} onClick={() => router.push("/")} className="cursor-pointer"/>
         <div className='hidden lg:block'>
           <NavigationMenuMain fakeMenu={fakeMenu} />
         </div>

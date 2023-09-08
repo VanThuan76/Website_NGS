@@ -3,8 +3,6 @@ import Header from '@/components/business/admin/media/Header';
 import CardFolder from '@/components/business/admin/media/CardFolder';
 import CardImage from '@/components/business/admin/media/CardImage';
 import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
-import { useState } from 'react';
-import useMediaModal from '@/hooks/useMediaModal';
 import Pagination from '@/components/common/ui/pagination';
 
 type Props = {

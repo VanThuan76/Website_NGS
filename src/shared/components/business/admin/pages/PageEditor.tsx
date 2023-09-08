@@ -24,14 +24,15 @@ import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/component
 import { useGetDetailComponentsBySectionCode } from 'src/shared/schemas/models/IComponents';
 
 import TriggerDialogForm from '../media/TriggerDialogForm';
-import HomeBanner from '../../website/HO/HO_banner';
-import HomeSolution from '../../website/HO/HO_solution';
-import HomeWhyUs from '../../website/HO/HO_whyUs';
-import HomeEvent from '../../website/HO/HO_event';
-import HomeNews from '../../website/HO/HO_news';
-import HomePartner from '../../website/HO/HO_partner';
-import HomeSecurity from '../../website/HO/HO_security';
-import HomeTestimonial from '../../website/HO/HO_testimonial';
+import HomeBannerSection from '../../website/HO/HO_Banner_Section';
+import HomeSolutionSection from '../../website/HO/HO_Solution_Section';
+import HomeWhyUsSection from '../../website/HO/HO_WhyUs_Section';
+import HomeEventSection from '../../website/HO/HO_Event_Section';
+import HomeSecuritySection from '../../website/HO/HO_Security_Section';
+import HomeTestimonialSection from '../../website/HO/HO_Testimonial_Section';
+import HomeCaseStudySection from '../../website/HO/HO_CaseStudy_Section';
+import NewsSection from '../../website/All_Common/News_Section';
+import PartnerSection from '../../website/All_Common/Partner_Section';
 
 type Props = {};
 
@@ -49,22 +50,24 @@ export default function PageEditor({}: Props) {
   if(!data) return <></>
   const RenderComponent = () => {
     switch (activeSectionCode) {
-      case 'HO_banner':
-        return <HomeBanner data={data} />;
-      case 'HO_solution':
-        return <HomeSolution className='!m-0 !p-0' data={data} />;
+      case 'PG001SE00001':
+        return <HomeBannerSection data={data} />;
+      case 'PG001SE00002':
+        return <HomeSolutionSection className='!m-0 !p-0' data={data} />;
       case 'HO_security':
-        return <HomeSecurity className='!m-0 !p-0' data={data} />;
+        return <HomeSecuritySection className='!m-0 !p-0' data={data} />;
       case 'HO_whyUs':
-        return <HomeWhyUs className='!m-0 !p-0' data={data} />;
+        return <HomeWhyUsSection className='!m-0 !p-0' data={data} />;
       case 'HO_event':
-        return <HomeEvent className='!m-0 !p-0' data={data} />;
-      case 'HO_news':
-        return <HomeNews className='!m-0 !p-0' data={data} />;
+        return <HomeEventSection className='!m-0 !p-0' data={data} />;
+      // case 'HO_news':
+      //   return <NewsSection className='!m-0 !p-0' data={data} />;
       case 'HO_partner':
-        return <HomePartner className='!m-0 !p-0' data={data} />;
+        return <PartnerSection className='!m-0 !p-0' data={data} />;
       case 'HO_testimonial':
-        return <HomeTestimonial className='!m-0 !p-0' data={data} />;
+        return <HomeTestimonialSection className='!m-0 !p-0' data={data} />;
+      case 'HO_caseStudy':
+        return <HomeCaseStudySection className='!m-0 !p-0' data={data} />;
       default:
         return <div>Section not found</div>;
         break;
