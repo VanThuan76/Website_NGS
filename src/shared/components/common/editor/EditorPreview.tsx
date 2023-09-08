@@ -1,23 +1,32 @@
 import React from 'react'
-import Blocks, { DataProp } from 'editorjs-blocks-react-renderer';
+import Blocks, {ConfigProp, DataProp} from 'editorjs-blocks-react-renderer';
+import {SimpleImageRenderer} from "@/components/common/editor/customRenders/SimpleImageRender";
+import {HeaderRender} from "@/components/common/editor/customRenders/HeaderRender";
+import {CodeRender} from "@/components/common/editor/customRenders/CodeRender";
 
 type Props = {
     data: DataProp
 }
 
 
-const CssConfig = {
-    code: {
-        className: "language-js"
-    },
+const CssConfig: ConfigProp = {
+    // code: {
+    //     className: "language-js"
+    // },
     delimiter: {
         className: "border border-2 w-16 mx-auto"
     },
     embed: {
         className: "border-0"
     },
-    header: {
-        className: "font-bold"
+
+    simpleImage: {
+        className: "w-full max-w-screen-md",
+        actionsClassNames: {
+            stretched: "w-full h-80 object-cover",
+            withBorder: "border border-2",
+            withBackground: "p-2",
+        }
     },
     image: {
         className: "w-full max-w-screen-md",
@@ -41,11 +50,20 @@ const CssConfig = {
     },
     table: {
         className: "table-auto"
-    }
+    },
+
 }
 
+
+
+
+const renderers  = {
+    simpleImage : SimpleImageRenderer,
+    header : HeaderRender,
+    code : CodeRender
+}
 export default function EditorPreview({ data }: Props) {
     return (
-        <Blocks data={data} config={CssConfig} />
+        <Blocks renderers={renderers} data={data} config={CssConfig}  />
     )
 }
