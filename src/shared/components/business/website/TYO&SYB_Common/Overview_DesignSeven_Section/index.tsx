@@ -1,6 +1,5 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
-import BorderStyleSevenLight from '@/components/icon/TYO&SYB_Common/BorderStyleSevenLight';
 import React from 'react';
 
 type Props = {
@@ -28,14 +27,14 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
             <div
               key={idx}
               style={{border: "1px solid #FC5E03" }}
-              className='relative w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg'
+              className='absolute top-0 w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg'
             >
               <PreImage
                 src={item.image}
                 width={70}
                 height={70}
                 alt={item.title}
-                className='absolute top-0 rounded-lg'
+                className='rounded-lg'
               />
               <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>
