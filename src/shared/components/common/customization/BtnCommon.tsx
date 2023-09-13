@@ -23,7 +23,7 @@ const BtnCommon = ({ cls, colorSvg, title }: Props) => {
       <p className="text-xs md:text-sm">{title}</p>
       <IconLineDirection color={colorSvg} />
       <motion.div
-        className="absolute left-0 top-0 h-full w-[30%] rounded-full"
+        className="absolute left-0 top-0 h-full w-[30%]"
         variants={buttonVariants}
         transition={{
           duration: 0.3,

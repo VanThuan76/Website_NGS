@@ -1,3 +1,4 @@
+import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
@@ -17,6 +18,7 @@ import ServiceDesignFourSection from '@/components/business/website/TYO&SYB_Comm
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
+import { TYOBanner1 } from '@/mocks/website/TYO/new';
 import {
   TYOchallenge1,
   TYOchallenge2,
@@ -59,6 +61,8 @@ const Component = () => {
       <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3} />
       <ServiceDesignFourSection title='Our Service & Solution' data={TYOService4} />
       <PartnerDesignOneSection data={TYOPartner1} />
+      {/* <PartnerDesignTwoSection /> */}
+      <BannerDesignOneSection title="Chuyển đổi số" data={TYOBanner1}/>
     </>
   );
 };
