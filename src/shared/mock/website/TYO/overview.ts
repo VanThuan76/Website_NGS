@@ -70,7 +70,7 @@ export const TYOOverview2 = {
 export const TYOOverview3 = {
     section: {
         id: 1,
-        name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+        name: 'Tổng quan về ngân hàng lõi thế hệ mới',
         code: "TY12323",
         image: "",
         description: "Nền công nghiệp 4.0 yêu cầu các tổ chức tối ưu hóa hiệu suất song song với việc triển khai trải nghiệm khách hàng tuyệt vời. Quản lý Quy trình Kinh doanh - BPM là phương pháp phổ biến, được áp dụng nhằm mô hình hóa, phân tích, đo lường, cải tiến, tối ưu hóa và tự động hóa các quy trình kinh doanh trong hoạt động của công ty. Tối ưu hóa quy trình kinh doanh - BPO là một trong những phần quan trọng nhất trong hoạt động quản lý quy trình kinh doanh, nhằm mang lại hiệu quả và giá trị cho doanh nghiệp."
@@ -317,7 +317,7 @@ export const TYOOverview9 = {
 export const TYOchallenge1 = {
     section: {
         id: 1,
-        name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+        name: 'Tổng quan về ngân hàng lõi thế hệ mới',
         code: "TY1232323454",
         image: "",
         description: ""
@@ -690,3 +690,147 @@ export const TYOPartner1 = {
     },
     components: []
 }
+
+
+export const TYO_CB_Section2 = {
+    section: {
+        id: 1,
+        name: 'Tổng quan về ngân hàng lõi thế hệ mới',
+        code: "TPG003.6SE00002",
+        image: "",
+        description: "Ngân hàng lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh."
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00002CN000001",
+            title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
+            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại. Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp. NGS cung cấp các dịch vụ ngân hàng chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược ngân hàng kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi kinh doanh ngân hàng cho tổ chức tín dụng của bạn",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+export const TYO_CB_Section3 = {
+    section: {
+        id: 1,
+        name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+        code: "TPG003.6SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00003CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYO_CB_Section4 = {
+    section: {
+        id: 1,
+        name: 'Dịch vụ chúng tôi cung cấp.',
+        code: "TPG003.6SE00004",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00004CN000001",
+            title: "Thấu hiểu và nắm bắt các mục tiêu và thách thức trong kinh doanh ngân hàng của khách hàng là doanh nghiệp ngân hàng",
+            description: "tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải, chẳng hạn như sản phẩm, dịch vụ và quy trình lỗi thời, khả năng công nghệ hạn chế hoặc kỳ vọng của khách hàng thay đổi. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi ngân hàng thế hệ mới",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.6SE00004CN000001",
+            title: "Đánh giá hiện trạng của tổ chức",
+            description: "Có tính đến các số liệu kinh doanh chính mà bạn đã xác định, tiến hành đánh giá kỹ lưỡng về mức độ trưởng thành và khả năng kỹ thuật số của tổ chức bạn. Đánh giá cơ sở hạ tầng công nghệ, hệ thống quản lý dữ liệu, quy trình vận hành và nguồn nhân tài hiện có của bạn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        },
+    
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.6SE00004CN000001",
+            title: "Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi ngân hàng thế hệ mới",
+            description: "Sử dụng công nghệ số hướng tới dịch vụ nhằm tạo ra quy trình kinh doanh, văn hóa và trải nghiệm mới cho khách hàng. Xác định giải pháp cốt lõi ngân hàng thế hệ mới nào có ROI tốt nhất; tạo điều kiện thuận lợi cho các hoạt động ưu tiên dẫn đến lộ trình hành động. Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật vững chắc để phát triển và thực hiện, phù hợp với lộ trình kỹ thuật số",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        },
+        
+    ]
+}
+export const TYO_CI_Section2 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+        code: "TPG0037SE00002",
+        image: "/images/background_2.png",
+        description: "Bảo hiểm lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh. Chúng tôi cung cấp các dịch vụ bảo hiểm chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược bảo hiểm kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi bảo hiểm cho tổ chức của bạn."
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.7SE00002CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Các cuộc tấn công hiện đại có thông tin đầy đủ về các biện pháp phòng thủ có sự thích ứng với mọi trường hợp để trốn tránh các biện pháp bảo mật tự động hiện có.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },]
+    }
+    export const TYO_CI_Section3 = {
+        section: {
+            id: 3,
+            name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+            code: "TPG0037SE00002",
+            image: "/images/background_2.png",
+            description: ""
+    
+        },
+        components: [
+            {
+                id: 1,
+                language: 'vi',
+                code: "PG003.7SE00002CN000001",
+                title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
+                description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
+                slug: "",
+                content: "",
+                image: "/images/TYO_BIsection3.png",
+                video: "",
+                thumbnail: ""
+            },]
+        }
