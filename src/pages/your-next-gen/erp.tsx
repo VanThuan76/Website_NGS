@@ -20,21 +20,11 @@ const ERPPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper>
         <YNGERPBannerSection data={YNG_ERP_banner} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
         <YNGERPIntroductionSection />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
         <YNGERPCustomerSection />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
         <YNGBackSolution />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
         <YNGPilotSubrice />
-      </ScrollRevealWrapper>
     </React.Fragment>
   );
 };

@@ -22,7 +22,7 @@ const YNGCommonPilotSubriceForm = () => {
   return (
     <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md'>
       <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full mt-4'>
+        <form onSubmit={handleSubmit} className='w-full mt-4 p-4'>
           <div className='w-full mb-4'>
             <label htmlFor='fullName' className='block mb-1'>
               Họ và tên của bạn?

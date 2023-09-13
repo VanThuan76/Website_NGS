@@ -32,7 +32,7 @@ interface Props {
 
 const YNGERPBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='absolute min-h-screen w-2/3 flex flex-col justify-center items-center gap-10 leading-[90%] lg:left-0 lg:px-12 lg:items-start z-40'>
+    <InitBasicAnimation className='min-h-screen w-full flex flex-col justify-center items-center gap-10 leading-[90%] lg:px-12 lg:items-start z-40'>
       <div className='text-left text-3xl lg:text-6xl'>
         <h1 className='inline-block pr-2 text-3xl lg:text-6xl'>Cải tiến</h1>
         <AnimatePresence mode='wait'>
@@ -48,7 +48,7 @@ const YNGERPBannerContent = ({ selectedTab }: Props) => {
         </AnimatePresence>
       </div>
       <motion.div className='w-[80%] text-sm lg:text-lg mt-5'>{selectedTab ? selectedTab.description : ''}</motion.div>
-      <BtnCommon title='Đăng ký ngay' colorSvg={'#fff'} />
+      <BtnCommon title='Đăng ký ngay' cls='!px-6 bg-orange-500 border-none !text-white !rounded-sm' />
     </InitBasicAnimation>
   );
 };

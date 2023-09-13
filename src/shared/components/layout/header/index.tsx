@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Menu } from 'lucide-react';
 import { PreImage } from '@/components/common/customization/PreImage';
-import ThemeModeToggle from '@/components/common/ToggleThemeMode';
-import LanguageSwitch from '@/components/common/LanguageSwitch';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';
-import NavigationMenuMain from './NavigationMenuMain';
 import { fakeMenu } from 'src/shared/mock/menu';
 import { useRouter } from 'next/router';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet';
+import ThemeModeToggle from '@/components/common/ToggleThemeMode';
+import LanguageSwitch from '@/components/common/LanguageSwitch';
+import NavigationMenuMain from './NavigationMenuMain';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);

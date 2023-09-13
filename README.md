@@ -3,8 +3,9 @@
 ## Before code
 
 1. Nodejs 16+
-2. Yarn
+2. Yarn or npm
 3. Enable tsLint, prettier in your edior. (Notice setting prettier file path refer to <b>.prettierrc</b>)
+4. Git clone <url>
 
 ## Techstack
 
@@ -13,7 +14,7 @@
 - radix/shadui
 - redux
 - react-query
-- tailwind-css
+- tailwind-css (khái niệm mobile first, làm mobile đầu tiên)
 
 ## Run
 
@@ -22,6 +23,9 @@
 - format code : `yarn format`
 - check lint : `yarn lint`
 
+- install lib: `npm install`
+- start dev: `npm run dev`
+
 ## Tổ chức code :
 
 - pages : trang web (Lưu ý các trang page,section,component được tổ chức theo mã định danh(khác mã code thuần) -> thống nhất để dễ hiểu)
@@ -29,11 +33,15 @@
   - components :
     - business : các component theo nghiệp vụ
     - common : các component dùng chung
-    - core : các component như table , form (lúc đầu định build nhưng vì thời gian nên dùng của antd)
+<<<<<<< Updated upstream
+    - core : các component như table , form 
+=======
+    - core : các component như table , form
+>>>>>>> Stashed changes
     - icons : icon export từ figma về thành file svg
     - layout : Page Layout
   - hooks : các custom hook , còn lại sử dụng từ thư viện use-hook
-  - mocks : để mockup dữ liệu sử dụng json-server
+  - mocks : để mockup dữ liệu fake
   - schema:
     - models : định nghĩa type các đối tượng, và các service (api call)
     - typeDef : Kiểu dữ liệu cơ sở
@@ -59,3 +67,12 @@
   - Git rebase origin/develop then do rebase flow
   - Git push -f
   - Don't commit .env file
+
+## Khái niệm landing page
+- Page: page trong landing page là một trang web độc lập
+- Section: section là một khu vực hoặc khối nội dung trên trang
+- Component: component theo ngữ cảnh dùng reactJs là những file có thể tái sử dụng lại giữa các sections(ví dụ button,...)
+
+## Lưu ý với website NGS
+- Các folder, file được đặt tên theo ký tự(ngắn) của trang page/ đã được định nghĩa sẵn trong figma
+- Tổ chức page, section, component rõ ràng để tránh bị trùng lắp

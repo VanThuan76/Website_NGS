@@ -1,7 +1,7 @@
-export const ERPIntroductionData = {
+export const YNGIntroduction = {
     sections: {
-        name: 'Những đơn vị đã cùng đồng hành với NGS',
-        title: "",
+        name: 'Find my spot',
+        title: "How a leading global franchise development company scaled faster with the help of CRM",
         description: ""
     },
     components: [

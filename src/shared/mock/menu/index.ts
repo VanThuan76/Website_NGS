@@ -1,7 +1,7 @@
 export const fakeMenu = [
     {
         id: 1,
-        title: "Tương lai tiên phong",
+        title: "Giải pháp tiên phong",
         menuChild: [
             {
                 title: "ERP",
@@ -76,7 +76,7 @@ export const fakeMenu = [
     },
     {
         id: 2,
-        title: "Chuyển đổi số",
+        title: "Dịch vụ xuất sắc",
         path: "",
         menuChild: [
             {
@@ -125,7 +125,7 @@ export const fakeMenu = [
     },
     {
         id: 3,
-        title: "Bảo mật kinh doanh",
+        title: "Bảo mật xuất sắc",
         path: "",
         menuChild: [
             {
@@ -174,100 +174,9 @@ export const fakeMenu = [
     },
     {
         id: 4,
-        title: "Trung tâm tài năng",
+        title: "Về chúng tôi",
         path: "",
         menuChild: [
-            {
-                title: "Digital Consulting",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            },
-            {
-                title: "Digital Foundation",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            }
-        ]
-    },
-    {
-        id: 5,
-        title: "Khơi nguồn thành công",
-        path: "",
-        menuChild: [
-            {
-                title: "Digital Consulting",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            },
-            {
-                title: "Digital Foundation",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            }
         ]
     }
 ]

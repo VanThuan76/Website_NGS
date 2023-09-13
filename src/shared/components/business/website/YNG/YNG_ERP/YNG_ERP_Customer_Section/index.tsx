@@ -14,7 +14,7 @@ const YNGERPCustomerSection = () => {
         className='w-full flex flex-col justify-start items-start'
       />
       <div className='max-w-[1440px] w-full my-auto flex flex-col justify-between items-center gap-5 mt-10 mx-auto'>
-        <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-2 p-2'>
+        <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-4 p-2'>
           {ERPCustomerData.components.map((item, idx) => (
             <div key={idx} className={`relative max-w-[310px] h-full rounded-lg shadow-md overflow-hidden`}>
               <PreImage
