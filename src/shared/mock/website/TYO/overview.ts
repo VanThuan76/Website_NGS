@@ -326,7 +326,7 @@ export const TYOchallenge1 = {
         {
             id: 1,
             language: 'vi',
-            code: "PG003SE00003CN000001",
+            code: "CPN12312",
             title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
             description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại. Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
             slug: "",
@@ -334,7 +334,7 @@ export const TYOchallenge1 = {
             image: "/images/background_1.png",
             video: "",
             thumbnail: ""
-        },
+        }
     ]
 }
 export const TYOchallenge2 = {
@@ -679,6 +679,80 @@ export const TYOService4 = {
         },
     ]
 }
+
+export const TYO_DSP_Section3 = {
+    section: {
+        id: 3,
+        name: 'Những thách thức trong thời đại công nghệ số',
+        code: "PG003.1SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.1SE00003CN000001",
+            title: "“ Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh. ”",
+            description: "Nhu cầu của khách hàng và thị trường đang thay đổi nhanh hơn bao giờ hết, đòi hỏi doanh nghiệp phải nhanh chóng điều chỉnh chiến lược, sản phẩm, dịch vụ để duy trì tính cạnh tranh. Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh. // NGS hiểu rằng việc phát triển một chiến lược chuyển đổi số rõ ràng, phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một trong những thách thức lớn nhất, đặc biệt khi doanh nghiệp không được nhận thức đầy đủ và đúng đắn về quá trình chuyển đổi số.",
+            slug: "",
+            content: "",
+            image: "/images/PG003.1SE00003CN000001.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYO_DSP_Section4 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG003.1SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.1SE00004CN000001",
+            title: "Hiểu rõ mục tiêu kinh doanh và thách thức trong một thế giới luôn biến đổi",
+            description: "NGS sẽ tiến hành phỏng vấn các cấp quản lý, tổ chức các buổi làm việc, khảo sát và nghiên cứu để xác định các thách thức cụ thể mà tổ chức của bạn đang đối mặt, chẳng hạn như quy trình lạc hậu, khả năng công nghệ hạn chế hoặc sự thay đổi mong đợi của khách hàng. Những hiểu biết về các khía cạnh này sẽ là nền tảng để xây dựng chiến lược biến đổi kỹ thuật số cho doanh nghiệp của bạn.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.1SE00004CN000002",
+            title: "Đánh giá hiện trạng của tổ chức",
+            description: "Dựa trên các chỉ số chính đã được xác định, NGS sẽ tiến hành đánh giá kỹ lưỡng mức độ trưởng thành và khả năng kỹ thuật số của doanh nghiệp. Đồng thời, chúng tôi cũng đánh giá cơ sở hạ tầng công nghệ, hệ thống quản lý dữ liệu, quy trình vận hành và nguồn nhân lực hiện có của doanh nghiệp.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.1SE00004CN000003",
+            title: "Xây dựng một chiến lược chuyển đổi số thành công thông qua",
+            description: "* Sử dụng các công nghệ số để tạo ra các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng mới. * Xác định những giải pháp mang lại lợi nhuận tốt nhất; tạo điều kiện thuận lợi cho các hoạt động được ưu tiên dẫn đến lộ trình hành động. * Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật mạnh mẽ để phát triển và thực hiện lộ trình kỹ thuật số.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
 export const TYOPartner1 = {
     section: {
         id: 1,
@@ -689,4 +763,113 @@ export const TYOPartner1 = {
 
     },
     components: []
+}
+
+export const TYO_CDP_Section2 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về CDP - Customer Data Platform',
+        code: "PG003.2SE00002",
+        image: "",
+        description: "CDP đã tồn tại hơn một thập kỷ nhưng bắt đầu trở nên phổ biến vào năm 2016 khi các doanh nghiệp B2C tập trung cao độ  xử lý khối lượng lớn dữ liệu giao dịch, nhân khẩu học và hành vi. CDP được triển khai và áp dụng nhanh chóng, rộng rãi đối với tất cả các ngành, điển hình như Bán lẻ, Nhà hàng, Du lịch & Khách sạn, Truyền thông & Giải trí. // Giải pháp CDP thông thường bao gồm cơ sở dữ liệu khách hàng, tự động hóa tiếp thị, quản lý chiến dịch đa kênh và quản lý tương tác theo thời gian thực. CDP sẽ cần cho Doanh nghiệp khi cần cơ sở dữ liệu tiếp thị gắn với dữ liệu cấp người dùng. Để hiểu rõ nhất về giải pháp này, NGS đã phân tích và xem xét một số thách thức cơ bản trong tiếp thị đã dẫn đến sự nổi bật của CDP."
+
+    },
+    components: []
+}
+
+export const TYO_CDP_Section3 = {
+    section: {
+        id: 3,
+        name: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+        code: "PG003.2SE00003",
+        image: "/images/PG003.2SE00003.png",
+        description: "Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng."
+    },
+    components: [
+    ]
+}
+
+export const TYO_CDP_Section4 = {
+    section: {
+        id: 4,
+        name: 'Các bước thực hiện dịch vụ chúng tôi cung cấp',
+        code: "PG003.2SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.2SE00004CN000001",
+            title: "Kết nối dữ liệu khách hàng",
+            description: "CDP giúp kết nối tất cả dữ liệu khách hàng từ các nguồn khác nhau vào một nơi duy nhất. Điều này bao gồm việc kết hợp các ID khách hàng từ các phiên bản CRM khác nhau và liên kết các cơ sở dữ liệu không chia sẻ truyền thống như đám mây tiếp thị, phần mềm dịch vụ khách hàng và công cụ thương mại điện tử.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.2SE00004CN000002",
+            title: "Đối chiếu danh tính khách hàng",
+            description: "CDP so sánh các thông tin danh tính mà công ty đã có về khách hàng, chẳng hạn như email và số điện thoại di động, với những thông tin khách hàng trước đó đã được công ty biết trước khi chia sẻ dữ liệu với các công ty khác. Điều này giúp xác định và liên kết các tương tác của khách hàng từ các kênh khác nhau, như email và trang web, thành một hồ sơ duy nhất.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.2SE00004CN000003",
+            title: "Cung cấp dữ liệu thời gian thực",
+            description: "Sau khi CDP tạo ra hồ sơ thống nhất về khách hàng, nó cần cung cấp dữ liệu này theo thời gian thực để các công ty có thể cung cấp trải nghiệm cá nhân hóa. Điều này đòi hỏi kết nối dữ liệu khách hàng với các hệ thống khác nhau như công cụ gửi email, nền tảng e-commerce và hệ thống quản lý nội dung.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_CDP_Section6 = {
+    section: {
+        id: 6,
+        name: 'Đồng hành cùng chúng tôi',
+        code: "PG003.2SE00005",
+        image: "/images/PG003.2SE00005.png",
+        description: "NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế."
+
+    },
+    components: []
+}
+
+export const TYO_CRM_Section2 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về CRM - Customer Relationship Management',
+        code: "PG003.3SE00003",
+        image: "",
+        description: "CRM là viết tắt của quản lý quan hệ khách hàng. Đó là công nghệ được bất kỳ loại hình doanh nghiệp hoặc tổ chức nào, dù lớn hay nhỏ, sử dụng để quản lý và hỗ trợ các mối quan hệ khách hàng. CRM giúp các tổ chức xây dựng và phát triển mối quan hệ trong toàn bộ vòng đời của khách hàng, bao gồm tiếp thị, bán hàng, thương mại, dịch vụ và CNTT. Nó được sử dụng bởi các công ty B2C trong lĩnh vực hàng tiêu dùng và bán lẻ cũng như các tổ chức B2B trong lĩnh vực công nghệ cao, sản xuất, dịch vụ tài chính, chăm sóc sức khỏe... // Hệ thống CRM cho phép doanh nghiệp quản lý mối quan hệ khách hàng và khách hàng tiềm năng bằng dữ liệu. Bạn có thể lưu trữ, theo dõi và phân tích thông tin khách hàng và khách hàng tiềm năng ở cùng một hệ thống, bao gồm thông tin liên hệ và tài khoản, cơ hội bán hàng, trường hợp dịch vụ và chiến dịch tiếp thị. Với dữ liệu lưu trữ tập trung ở nền tảng, các tổ chức có được bức tranh hoàn chỉnh về khách hàng và khách hàng tiềm năng mà các nhóm trong công ty có thể chia sẻ và phân tích theo thời gian thực."
+
+    },
+    components: []
+}
+
+export const TYO_CRM_Section3 = {
+    section: {
+        id: 3,
+        name: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+        code: "PG003.3SE00003",
+        image: "/images/PG003.3SE00003.png",
+        description: "Một số thách thức doanh nghiệp thường gặp khi triển khai CRM: // * Chi phí đầu tư triển khai và vận hành // * Khả năng tích hợp với các hệ thống khác của doanh nghiệp, không liên kết chặt chẽ với các quy trình kinh doanh của doanh nghiệp // * Không thân thiện đối với người dùng // * Không xác định được mục tiêu rõ ràng // * Một số thách thức doanh nghiệp thường gặp khi triển khai CRM: // * Chi phí đầu tư triển khai và vận hành..."
+    },
+    components: [
+    ]
 }
