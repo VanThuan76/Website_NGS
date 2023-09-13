@@ -755,7 +755,7 @@ export const TYOOverview2_PG3_10 = {
 
 export const TYOOverview4_PG3_10 = {
     section: {
-        id: 1,
+        id: 3,
         name: 'Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề',
         code: "PG003.10SE00003",
         image: "",
@@ -804,7 +804,7 @@ export const TYOOverview4_PG3_10 = {
 
 export const TYOchallenge2_PG3_10 = {
     section: {
-        id: 1,
+        id: 4,
         name: 'NGS giúp doanh nghiệp kiến tạo trải nghiệm nhân lực vượt trội',
         code: "PG003.10SE00004",
         image: "",
@@ -853,7 +853,7 @@ export const TYOchallenge2_PG3_10 = {
 
 export const TYOchallenge2_PG3_14 = {
     section: {
-        id: 1,
+        id: 4,
         name: 'NGS giúp doanh nghiệp kiến tạo trải nghiệm nhân lực vượt trội',
         code: "PG003.14SE00004",
         image: "",
@@ -926,7 +926,7 @@ export const TYOchallenge2_PG3_14 = {
 
 export const TYOService1_PG3_10 = {
     section: {
-        id: 1,
+        id: 5,
         name: 'Dịch vụ của chúng tôi',
         code: "PG003.10SE00005",
         image: "",
@@ -1022,7 +1022,7 @@ export const TYOService1_PG3_10 = {
 
 export const TYOClientStories2_PG3_10 = {
     section: {
-        id: 1,
+        id: 8,
         name: 'Những khách hàng đã hài lòng',
         code: "PG003.10SE00008",
         image: "",
@@ -1117,7 +1117,7 @@ export const TYOPartner1 = {
 
 export const TYOPartner1_PG3_10 = {
     section: {
-        id: 1,
+        id: 7,
         name: 'Đồng hành cùng chúng tôi',
         code: "PG003.10SE00007",
         image: "/images/TYO_SAP.png",
@@ -1129,7 +1129,7 @@ export const TYOPartner1_PG3_10 = {
 
 export const TYOOverview1_PG3_11 = {
     section: {
-        id: 1,
+        id: 2,
         name: 'Tổng quan về quản lý chuỗi cung ứng',
         code: "PG003.11SE00002",
         image: "",
@@ -1139,9 +1139,21 @@ export const TYOOverview1_PG3_11 = {
     components: []
 }
 
+export const TYOOverview1_PG3_15 = {
+    section: {
+        id: 2,
+        name: '',
+        code: "PG003.15SE00002",
+        image: "",
+        description: "NGS giúp quản lý toàn bộ doanh nghiệp của bạn bằng một giải pháp ERP tích hợp tất cả các tính năng trên một hệ thống với giá cạnh tranh – từ kế toán và tài chính, mua hàng, tồn kho, bán hàng và quan hệ khách hàng đến báo cáo và phân tích."
+
+    },
+    components: []
+}
+
 export const TYOOverview4_PG3_11 = {
     section: {
-        id: 1,
+        id: 3,
         name: 'Xây dựng chuỗi cung ứng để chống chọi với các thay đổi',
         code: "PG003.11SE00003",
         image: "",
@@ -1265,7 +1277,7 @@ export const TYOchallenge2_PG3_11 = {
 
 export const TYOService1_PG3_11 = {
     section: {
-        id: 1,
+        id: 5,
         name: 'Dịch vụ của chúng tôi',
         code: "PG003.11SE00005",
         image: "",
@@ -1349,7 +1361,7 @@ export const TYOService1_PG3_11 = {
 
 export const TYOClientStories2_PG3_11 = {
     section: {
-        id: 1,
+        id: 7,
         name: 'Những khách hàng đã hài lòng',
         code: "PG003.11SE00007",
         image: "",
@@ -1433,7 +1445,7 @@ export const TYOClientStories2_PG3_11 = {
 
 export const TYOService1_PG3_12 = {
     section: {
-        id: 1,
+        id: 4,
         name: 'Dịch vụ của chúng tôi',
         code: "PG003.12SE00004",
         image: "",
@@ -1529,7 +1541,7 @@ export const TYOService1_PG3_12 = {
 
 export const TYOClientStories2_PG3_12 = {
     section: {
-        id: 1,
+        id: 7,
         name: 'Những khách hàng đã hài lòng',
         code: "PG003.12SE00007",
         image: "",
@@ -1577,7 +1589,7 @@ export const TYOClientStories2_PG3_12 = {
 
 export const TYOOverview3_PG3_13 = {
     section: {
-        id: 1,
+        id: 2,
         name: 'Tổng quan về quản lý chi tiêu',
         code: "PG003.13SE00002",
         image: "",
@@ -1589,7 +1601,7 @@ export const TYOOverview3_PG3_13 = {
 
 export const TYOOverview3_PG3_14 = {
     section: {
-        id: 1,
+        id: 2,
         name: 'Quản lý Trải nghiệm Nhân lực (HXM) : Sự phát triển hơn của phần mềm Quản trị nguồn nhân lực ',
         code: "PG003.14SE00002",
         image: "",
@@ -1601,7 +1613,7 @@ export const TYOOverview3_PG3_14 = {
 
 export const TYOOverview4_PG3_13 = {
     section: {
-        id: 1,
+        id: 2,
         name: 'Tăng cường khả năng kiểm soát và khả năng phục hồi kinh doanh',
         code: "PG003.13SE00002",
         image: "",
@@ -1650,7 +1662,7 @@ export const TYOOverview4_PG3_13 = {
 
 export const TYOchallenge3_PG3_13 = {
     section: {
-        id: 1,
+        id: 3,
         name: 'Tối ưu cho quá trình quản lý chi tiêu của doanh nghiệp',
         code: "PG003.13SE00003",
         image: "/images/TYO_page_3.13.png",
@@ -1660,9 +1672,21 @@ export const TYOchallenge3_PG3_13 = {
     ]
 }
 
+export const TYOchallenge3_PG3_15 = {
+    section: {
+        id: 3,
+        name: 'Bộ giải pháp của NGS dành cho doanh nghiệp SME giúp:',
+        code: "PG003.15SE00003",
+        image: "/images/TYO_page3_15_sec3.png",
+        description: "1. Cải thiện tỷ suất lợi nhuận, giảm sai sót và thúc đẩy việc ra quyết định có lợi hơn với bộ công cụ hoàn chỉnh để hợp lý hóa các hoạt động tài chính.2. Giám sát toàn bộ quy trình bán hàng và vòng đời khách hàng hiệu quả hơn – từ liên hệ ban đầu đến lần bán hàng cuối cùng, dịch vụ sau bán hàng và hỗ trợ.3. Tối ưu hóa các hoạt động mua hàng và kiểm soát chi phí bằng cách quản lý toàn bộ chu trình đặt hàng đến thanh toán bao gồm biên nhận, hóa đơn, hoàn trả và thanh toán.4. Tạo báo cáo kịp thời và chính xác dựa trên dữ liệu toàn công ty bằng các công cụ phân tích và báo cáo.5. Trao quyền cho nhân viên của bạn để đưa ra quyết định thông minh, tự tin nhanh hơn bằng cách nắm bắt tất cả thông tin quan trọng và cung cấp thông tin đó ngay lập tức trên toàn công ty.6. Tận dụng các chức năng mở rộng dành riêng cho doanh nghiệp của bạn, các biện pháp thực hành tốt nhất và quy trình bằng các công cụ được thiết kế cho các doanh nghiệp vừa và nhỏ.7. Với các ứng dụng dành cho thiết bị di động, bạn có thể truy cập ngay vào thông tin phù hợp nhất để giúp bạn điều hành doanh nghiệp của mình từ mọi nơi, mọi lúc."
+    },
+    components: [
+    ]
+}
+
 export const TYOService1_PG3_13 = {
     section: {
-        id: 1,
+        id: 4,
         name: 'Dịch vụ của chúng tôi',
         code: "PG003.13SE00004",
         image: "",
@@ -1758,7 +1782,7 @@ export const TYOService1_PG3_13 = {
 
 export const TYOService1_PG3_14 = {
     section: {
-        id: 1,
+        id: 3,
         name: 'Dịch vụ của chúng tôi',
         code: "PG003.14SE00003",
         image: "",
@@ -1830,6 +1854,515 @@ export const TYOService1_PG3_14 = {
             language: 'vi',
             code: "PG003.14SE00003CN000006",
             title: "Chi phí công tác và chi phí hoạt động doanh nghiệp",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const TYOService1_PG3_15 = {
+    section: {
+        id: 1,
+        name: 'Dịch vụ của chúng tôi',
+        code: "PG003.15SE00004",
+        image: "",
+        description: "Chúng tôi tự hào về những dịch vụ giúp hoạch định tài nguyên của doanh nghiệp"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.15SE00004CN000001",
+            title: "Quản lý tài chính",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.15SE00004CN000002",
+            title: "Bán hàng và quản lý khách hàng",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG003.15SE00004CN000003",
+            title: "Kiểm soát mua hàng và tồn kho",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.15SE00004CN000004",
+            title: "Kế hoạch sản xuất",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.15SE00004CN000005",
+            title: "Kinh doanh thông minh",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.15SE00004CN000006",
+            title: "Phân tích và báo cáo",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const TYOService1_PG3_16 = {
+    section: {
+        id: 3,
+        name: 'Dịch vụ của chúng tôi',
+        code: "PG003.16SE00003",
+        image: "",
+        description: "Chúng tôi tự hào về những dịch vụ giúp hoạch định tài nguyên của doanh nghiệp"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.16SE00003CN000001",
+            title: "Lập kế hoạch tài chính: Đưa ra phân tích tức thì về kế hoạch và thực tế trong một giải pháp tích hợp",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.16SE00003CN000002",
+            title: "Lập kế hoạch chuỗi cung ứng: Tăng cường khả năng phục hồi của chuỗi cung ứng",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG003.16SE00003CN000003",
+            title: "Lập kế hoạch nguồn lực: Thay đổi cách làm việc trở nên tốt hơn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.16SE00003CN000004",
+            title: "Lập kế hoạch bán hàng: Tối đa hóa doanh thu và tăng chỉ tiêu bán hàng",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const TYOOverview4_PG3_16 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về lập kế hoạch và phân tích mở rộng (xP&A)',
+        code: "PG003.16SE00002",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.16SE00002CN000001",
+            title: "Lập kế hoạch để giành chiến thắng với kế hoạch và phân tích mở rộng",
+            description: "Lập kế hoạch và phân tích mở rộng (xP&A) giúp bạn tập hợp con người và kế hoạch của mình lại với nhau để tăng tính linh hoạt và hiệu suất, bất kể sự kiện nào diễn ra. NGS hỗ trợ xP&A với sự tích hợp mượt mà giữa các gói dịch vụ và ứng dụng của bạn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.16SE00002CN000002",
+            title: "Lập kế hoạch sát với mục tiêu dựa trên dữ liệu đáng tin cậy",
+            description: "Tăng tính linh hoạt và chính xác trong việc xử lý các dữ liệu động trong bối cảnh quy trình kinh doanh thay đổi nhanh chóng.Đẩy nhanh quá trình triển khai bằng các phương pháp tối ưu nhất và được đóng gói sẵn các chức năng cần thiết phù hợp với ngành kinh doanh của bạn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.16SE00002CN000003",
+            title: "Chuyển đổi kế hoạch trong toàn tổ chức",
+            description: "Tạo các kế hoạch phù hợp và tích hợp chặt chẽ với ứng dụng ERP và các ứng dụng khác.Tăng cường hợp tác giữa các nhóm làm việc",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.16SE00002CN000004",
+            title: "Thúc đẩy đưa ra các quyết định linh hoạt bằng cách kết hợp lập kế hoạch và phân tích",
+            description: "Chuyển đổi nhanh chóng từ hiểu biết sâu sắc sang hành động bằng sự tích hợp giữa lập kế hoạch và phân tích.Tự động tạo kế hoạch từ các dự đoán và mô phỏng các kịch bản để có kết quả tốt hơn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOchallenge2_PG3_16 = {
+    section: {
+        id: 3,
+        name: 'NGS giúp doanh nghiệp kiến tạo trải nghiệm nhân lực vượt trội',
+        code: "PG003.16SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.16SE00003CN000001",
+            title: "Đưa ra phân tích",
+            description: "Đưa ra phân tích",
+            slug: "",
+            content: "Đưa ra phân tích tức thì về kế hoạch và thực tế trong một giải pháp tích hợp",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.16SE00003CN000002",
+            title: "Tăng cường khả năng phục hồi",
+            description: "Tăng cường khả năng phục hồi",
+            slug: "",
+            content: "Tăng cường khả năng phục hồi của chuỗi cung ứng",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.16SE00003CN000003",
+            title: "Thay đổi công việc",
+            description: "Thay đổi công việc",
+            slug: "",
+            content: "Thay đổi công việc trở nên tốt hơn",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.16SE00003CN000004",
+            title: "Doanh thu và chỉ tiêu bán hàng",
+            description: "Doanh thu và chỉ tiêu bán hàng",
+            slug: "",
+            content: "Tối đa hóa doanh thu và tăng chỉ tiêu bán hàng",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.16SE00003CN000005",
+            title: "Bảo trì dịch vụ",
+            description: "Bộ giải pháp hàng không",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYOOverview7_PG3_17 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về Phân tích dữ liệu',
+        code: "PG003.17SE00002CN000005",
+        image: "",
+        description: "Đưa ra được mục tiêu dữ liệu và giải pháp thu thập và phân tích dữ liệu. Đánh giá các giải pháp dữ liệu và phân tích đang được sử dụng."
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.17SE00002CN000001",
+            title: "Kết nối các quy trình của bạn",
+            description: "Loại bỏ các rào cản trong quy trình, dự đoán sự gián đoạn và tạo các vòng phản hồi để cải thiện hiệu suất kinh doanh, tăng tốc độ đổi mới và vận hành tính bền vững.",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.17SE00002CN000002",
+            title: "Kết nối các quy trình của bạn",
+            description: "Loại bỏ các rào cản trong quy trình, dự đoán sự gián đoạn và tạo các vòng phản hồi để cải thiện hiệu suất kinh doanh, tăng tốc độ đổi mới và vận hành tính bền vững.",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.17SE00002CN000003",
+            title: "Kết nối các quy trình của bạn",
+            description: "Loại bỏ các rào cản trong quy trình, dự đoán sự gián đoạn và tạo các vòng phản hồi để cải thiện hiệu suất kinh doanh, tăng tốc độ đổi mới và vận hành tính bền vững.",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.17SE00002CN000004",
+            title: "Kết nối các quy trình của bạn",
+            description: "Loại bỏ các rào cản trong quy trình, dự đoán sự gián đoạn và tạo các vòng phản hồi để cải thiện hiệu suất kinh doanh, tăng tốc độ đổi mới và vận hành tính bền vững.",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.17SE00002CN000005",
+            title: "Kết nối các quy trình của bạn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.17SE00002CN000006",
+            title: "Kết nối các quy trình của bạn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOchallenge2_PG3_17 = {
+    section: {
+        id: 3,
+        name: 'NGS giúp doanh nghiệp kiến tạo trải nghiệm nhân lực vượt trội',
+        code: "PG003.16SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.16SE00003CN000001",
+            title: "Phân tích kinh doanh",
+            description: "Phân tích kinh doanh",
+            slug: "",
+            content: "Tiến hành Phân tích các dữ liệu kinh doanh và Vận hành cùng lúc để có thể đưa ra các thông tin, phản hồi và gợi ý quyết định chính xác trong nhiều ngữ cảnh",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.17SE00003CN000002",
+            title: "Kế hoạch doanh nghiệp",
+            description: "Kế hoạch doanh nghiệp",
+            slug: "",
+            content: "Đưa việc lập kế hoạch doanh nghiệp lên một tầm cao mới bằng cách kết nối tất cả mọi người và các kế hoạch.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.17SE00003CN000003",
+            title: "Giải pháp dữ liệu",
+            description: "Giải pháp dữ liệu",
+            slug: "",
+            content: "Cung cấp mục đích cho dữ liệu bằng các giải pháp dữ liệu và phân tích của chúng tôi.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.17SE00003CN000004",
+            title: "Kết nối quy trình",
+            description: "Kết nối quy trình",
+            slug: "",
+            content: "Kết nối và tự động hóa các quy trình của bạn trên toàn doanh nghiệp.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+        ,
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.17SE00003CN000005",
+            title: "Ứng dụng AI",
+            description: "Ứng dụng AI",
+            slug: "",
+            content: "Đưa trí tuệ nhân tạo vào ứng dụng của bạn theo cách có thể mở rộng và có trách nhiệm.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYOService1_PG3_17 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ của chúng tôi',
+        code: "PG003.17SE00004",
+        image: "",
+        description: "Chúng tôi tự hào về những dịch vụ giúp hoạch định tài nguyên của doanh nghiệp"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.17SE00004CN000001",
+            title: "Đám mây phân tích",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.17SE00004CN000002",
+            title: "Đám mây cơ sở dữ liệu",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG003.17SE00004CN000003",
+            title: "Đám mây kho dữ liệu",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.17SE00004CN000004",
+            title: "Đám mây thông minh dữ liệu",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.17SE00004CN000005",
+            title: "Quản trị dữ liệu tổng thể",
             description: "",
             slug: "",
             content: "",

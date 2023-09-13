@@ -17,7 +17,7 @@ const FMPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Enterprise Resource Planning</title>
+        <title>Financial Management</title>
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
