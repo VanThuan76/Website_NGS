@@ -21,7 +21,6 @@ import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Co
 import OverviewDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
-import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ServiceDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFive_Section';
 import ServiceDesignFourSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFour_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
@@ -89,7 +88,7 @@ const Component = () => {
       <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3} />
       <ServiceDesignFourSection title='Our Service & Solution' data={TYOService4} />
       <ServiceDesignFiveSection title='Our Service & Solution' data={TYOService5} />
-      <PartnerDesignTwoSection data={TYOPartner2} />
+      <PartnerDesignOneSection data={TYOPartner2} />
       <PartnerDesignOneSection data={TYOPartner1} />
       <PartnerDesignThreeSection data={TYOPartner3} />
       <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1} />
