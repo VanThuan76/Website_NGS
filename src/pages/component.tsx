@@ -66,7 +66,6 @@ const Component = () => {
       <PartnerDesignTwoSection data={TYOPartner2}/>
       <PartnerDesignOneSection data={TYOPartner1} />
       <PartnerDesignThreeSection data={TYOPartner3}/>
-      <BannerDesignOneSection title="Chuyển đổi số" data={TYOBanner1}/>
       <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1}/>
     </>
   );
