@@ -5,8 +5,7 @@ const nextConfig = {
   reactStrictMode: true,
   i18n,
   images: {
-    domains: ["khoinguonsangtao.vn", "media.istockphoto.com" ,"vanhoadoisong.vn", "c4.wallpaperflare.com", "digital-dialogues.net"],
+    domains: ["172.16.50.206", "khoinguonsangtao.vn", "media.istockphoto.com" ,"vanhoadoisong.vn", "c4.wallpaperflare.com", "digital-dialogues.net"],
   },
 }
-
 module.exports = nextConfig

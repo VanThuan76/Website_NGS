@@ -353,3 +353,18 @@ p {
     opacity: 0;
   }
 }
+::-webkit-scrollbar-thumb {
+  background-color: #FBA979; /* Color of the thumb */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Style the track on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #FBA979; /* Color on hover */
+}
+.service-designthree-section-with-scrollbar {
+  /* Scrollbar styles */
+  overflow-y: scroll; /* Enable vertical scrollbar */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: orange #FBA979 !important; /* Firefox */
+}
