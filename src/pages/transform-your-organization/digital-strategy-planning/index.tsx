@@ -3,10 +3,9 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYO_DSP_Section3, TYO_DSP_Section4 } from '@/mocks/website/TYO/overview';
+import { TYO_DSP_Banner, TYO_DSP_Section3, TYO_DSP_Section4 } from '@/mocks/website/TYO/overview';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import { TYO_DSP_Banner } from '@/mocks/website/TYO/new';
 
 
 const DSPPage = () => {
