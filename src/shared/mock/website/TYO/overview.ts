@@ -1216,3 +1216,27 @@ export const TYO_CRM_Banner = {
     },
     components: []
 }
+
+export const TYO_CC_Banner = {
+    section: {
+        id: 1,
+        name: 'NDUC Contact Center - Hành trình nâng cao trải nghiệm khách hàng cho doanh nghiệp!',
+        code: "PG003.4SE00001",
+        image: "/images/PG003.4SE00001.png",
+        description: "Bạn đã sẵn sàng bắt đầu hành trình Chuyển đổi số chưa?"
+
+    },
+    components: []
+}
+
+export const TYO_AMS_Banner = {
+    section: {
+        id: 1,
+        name: 'Ngân hàng lõi thế hệ mới lấy khách hàng và đại lý làm trung tâm',
+        code: "PG003.18SE00001",
+        image: "/images/PG003.18SE00001.png",
+        description: "Bạn đã sẵn sàng bắt đầu hành trình với giải pháp Ngân hàng lõi thế hệ mới hướng tới Phần mềm dưới dạng dịch vụ chưa?"
+
+    },
+    components: []
+}
