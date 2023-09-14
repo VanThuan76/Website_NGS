@@ -4,10 +4,12 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import { TYOClientStories2_Secure, TYOOverview1, TYOOverview1_PG4_1, TYOService3, TYOService3_PG4_1, TYOchallenge1 } from '@/mocks/website/TYO/overview';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import { TYOBanner1, TYOBanner1_PG4_1, } from '@/mocks/website/TYO/new';
+import { TYOBanner1, TYOBanner1_PG4_1, TYOPartner2_PG4_1, TYOWhyUs1_PG4_1, } from '@/mocks/website/TYO/new';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
+import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const SOCPage = () => {
   return (
@@ -20,6 +22,8 @@ const SOCPage = () => {
       <BannerDesignOneSection title="Bảo mật xuất sắc" data={TYOBanner1_PG4_1}/>
       <OverviewDesignOneSection title='Tổng quan' data={TYOOverview1_PG4_1} />
       <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3_PG4_1} />
+      <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1_PG4_1}/>
+      <PartnerDesignTwoSection data={TYOPartner2_PG4_1}/>
       <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_Secure} />
 
 
