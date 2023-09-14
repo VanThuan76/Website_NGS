@@ -14,11 +14,14 @@ import OverviewDesignSixSection from '@/components/business/website/TYO&SYB_Comm
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import OverviewDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
+import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ServiceDesignFourSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFour_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
-import { TYOBanner1 } from '@/mocks/website/TYO/new';
+import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
+import { TYOBanner1, TYOclientStories1, TYOOverview5, TYOPartner2, TYOPartner3, TYOWhyUs1 } from '@/mocks/website/TYO/new';
 import {
   TYOchallenge1,
   TYOchallenge2,
@@ -46,7 +49,7 @@ const Component = () => {
       <OverviewDesignTwoSection title='Tổng quan' data={TYOOverview2} />
       <OverviewDesignThreeSection title='Tổng quan' data={TYOOverview3} />
       <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4} />
-      {/* <OverviewDesignFiveSection title='Tổng quan' data={TYOOverview4}/> */}
+      <OverviewDesignFiveSection title='Tổng quan' data={TYOOverview5}/>
       <OverviewDesignSixSection title='Tổng quan' data={TYOOverview6} />
       <OverviewDesignSevenSection title='Tổng quan' data={TYOOverview7} />
       <OverviewDesignEightSection title='Tổng quan' data={TYOOverview8} />
@@ -54,15 +57,17 @@ const Component = () => {
       <ChallengeDesignTwoSection title='Thách thức' data={TYOchallenge2} />
       <ChallengeDesignOneSection title='Thách thức' data={TYOchallenge1} />
       <ChallengeDesignThreeSection title='Thách thức' data={TYOchallenge3} />
-      {/* <ClientStoriesDesignOneSection title='' data={TYOclientStories1} /> */}
       <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2} />
+      <ClientStoriesDesignOneSection title='' data={TYOclientStories1} />
       <ServiceDesignOneSection title='' data={TYOService1} />
       <ServiceDesignTwoSetion title='Our Service & Solution' data={TYOService2} />
       <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3} />
       <ServiceDesignFourSection title='Our Service & Solution' data={TYOService4} />
+      <PartnerDesignTwoSection data={TYOPartner2}/>
       <PartnerDesignOneSection data={TYOPartner1} />
-      {/* <PartnerDesignTwoSection /> */}
+      <PartnerDesignThreeSection data={TYOPartner3}/>
       <BannerDesignOneSection title="Chuyển đổi số" data={TYOBanner1}/>
+      <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1}/>
     </>
   );
 };
