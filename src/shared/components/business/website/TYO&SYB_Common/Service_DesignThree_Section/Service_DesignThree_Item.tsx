@@ -6,7 +6,7 @@ type Props = {
 };
 const ServiceDesignThreeItem = ({ data }: Props) => {
   return (
-    <div className='flex flex-col justify-start items-start'>
+    <div className='flex flex-col justify-start items-start border-2 border-orange-500 p-2 rounded-lg'>
       <h1 className='text-2xl md:text-4xl font-semibold text-orange-500'>{data.title}</h1>
       <p className='font-thin mt-5'>{data.description}</p>
     </div>
