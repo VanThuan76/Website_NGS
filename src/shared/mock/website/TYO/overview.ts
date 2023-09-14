@@ -690,3 +690,294 @@ export const TYOPartner1 = {
     },
     components: []
 }
+
+export const TYOOverview1_PG4_1 = {
+    section: {
+        id: 2,
+        name: 'Trung tâm điều hành an ninh mạng (SOC) là giải pháp giám sát, phát hiện sự cố nhằm ngăn chặn mọi mối đe dọa an ninh mạng, giải quyết những tồn tại trong hệ thống khi chỉ tập trung sử dụng các thiết bị an ninh mạng.',
+        code: "PG0004SE00002",
+        image: "",
+        description: ""
+
+    },
+    components: []
+}
+
+export const TYOOverview1_PG4_2 = {
+    section: {
+        id: 2,
+        name: 'Kiểm thử xâm nhập (Pentest), là một phương pháp đánh giá an ninh mạng có mục đích nhằm xác định và khai thác một cách an toàn các lỗ hổng trong hệ thống máy tính, ứng dụng và trang web.',
+        code: "PG0004_2SE00002",
+        image: "",
+        description: ""
+
+    },
+    components: []
+}
+
+
+export const TYOService3_PG4_1 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0004SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004SE00004CN000001",
+            title: "Tư vấn và triển khai mô hình Hybrid",
+            description: "NGS tư vấn và hỗ trợ triển khai mô hình Hybrid dành cho các doanh nghiệp đã có hệ thống SIEM hoặc được NGS cung cấp hệ thống SIEM. Về khách hàng: NGS đưa ra quy định áp dụng trên SIEM. Hỗ trợ nhiều mô hình triển khai, SIEM có thể được đặt tại địa điểm của Khách hàng hoặc NCS SOC.Về NGS: Tích hợp NGS back-bond. Quản lý hồ sơ khách hàng và cung cấp cảnh báo cho khách hàng thông qua SOAR & TI.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004SE00004CN000002",
+            title: "Vận hành SOC như một dịch vụ",
+            description: "NGS cung cấp dịch vụ xây dựng mô hình SOC bao gồm SIEM & SOAR.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOClientStories2_Secure = {
+    section: {
+        id: 7,
+        name: 'Những khách hàng đã hài lòng',
+        code: "PG0004SE00008",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004SE00008CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pvgas.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004SE00008CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pv.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0004SE00008CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_lpbank.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG0004SE00008CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_bidv.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG0004SE00008CN000005",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pvcfc.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG0004SE00008CN000006",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_petro_biendong.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOchallenge3_PG4_2 = {
+    section: {
+        id: 3,
+        name: 'Pentesting đảm bảo các cuộc tấn công nâng cao với khoảng thời gian ngắn, chi phí thấp hơn',
+        code: "PG0004_2SE00002",
+        image: "/images/SECURE_challenge3.png",
+        description: "Doanh nghiệp của bạn cần đến sự bảo mật nhất là khi: Thực hiện những sửa đổi đáng kể đối với cơ sở hạ tầng; Giới thiệu sản phẩm và dịch vụ mới; ... Tuy nhiên, chi phí thực hiện bảo mật hệ thống cấp cao như SOC cao so với các doanh nghiệp vừa và nhỏ chính vì thế dịch vụ kiểm thử xâm nhập hệ thống/ứng dụng xuất hiện. Pentesting đảm bảo các cuộc tấn công nâng cao của các chuyên gia bảo mật với khoảng thời gian ngắn, chi phí thấp hơn SOC mà vẫn đảm bảo hiệu quả. "
+    },
+    components: [
+    ]
+}
+
+export const TYOService3_PG4_2 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0004_2SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000001",
+            title: "Kiểm thử hệ thống mạng, hệ thống máy chủ",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên môi trường mạng.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000002",
+            title: "Kiểm thử hệ thống mạng",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các máy chủ.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000003",
+            title: "Kiểm thử ứng dụng Web Application",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Web.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000004",
+            title: "Kiểm thử ứng dụng Mobile App",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000005",
+            title: "Kiểm thử hệ thống ATM",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000006",
+            title: "Kiểm thử hệ thống ATM",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOOverview6_PG4_3 = {
+    section: {
+        id: 2,
+        name: 'Dịch vụ đánh giá xâm nhập hệ thống',
+        code: "PG0004_3SE00002",
+        image: "/images/SEC_banner2_page4_3.png",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_3SE00002CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Các cuộc tấn công hiện đại có thông tin đầy đủ về các biện pháp phòng thủ có sự thích ứng với mọi trường hợp để trốn tránh các biện pháp bảo mật tự động hiện có.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_3SE00002CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Nếu không bị phát hiện, những kiểu tấn công này có thể tồn tại trong doanh nghiệp của bạn trong thời gian dài. Việc thực hiện đánh giá sự xâm nhập được chứng minh là một phương pháp có giá trị để đánh giá mức độ đầy đủ của các cơ chế phát hiện và ngăn chặn nó",
+            image: "",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_3SE00002CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Đánh giá này hỗ trợ phát hiện các hoạt động tấn công trong quá khứ và đang diễn ra, tạo điều kiện thuận lợi cho việc thực hiện các biện pháp đối phó hiệu quả nhất. NGS luôn tự tin đồng hành cùng doanh nghiệp của bạn trên con đường bảo vệ hệ thống.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
