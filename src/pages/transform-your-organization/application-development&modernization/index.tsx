@@ -9,7 +9,7 @@ import YNGPilotSubrice from '@/components/business/website/YNG/YNG_Common/YNG_Co
 import YNGERPCustomerSection from '@/components/business/website/YNG/YNG_ERP/YNG_ERP_Customer_Section';
 import { YNG_ERP_banner } from '@/mocks/website/YNG/YNG_ERP/banner';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYOOverview1, TYOOverview6, TYO_ADM_Section1, TYO_ADM_Section2, TYO_ADM_Section3, TYO_ADM_Section4, TYO_CB_Section1, TYO_CB_Section2, TYO_CB_Section3, TYO_CB_Section4} from '@/mocks/website/TYO/overview';
+import { TYOOverview1, TYOOverview6, TYO_ADM_Section1, TYO_ADM_Section2, TYO_ADM_Section3, TYO_ADM_Section4, TYO_ADM_Section6, TYO_CB_Section1, TYO_CB_Section2, TYO_CB_Section3, TYO_CB_Section4} from '@/mocks/website/TYO/overview';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import OverviewDesignSixSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSix_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
@@ -17,6 +17,7 @@ import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
+import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -33,7 +34,7 @@ const ERPPage = () => {
       <OverviewDesignThreeSection title='Tổng quan' data={TYO_ADM_Section2} />
       <OverviewDesignFourSection title='Lợi ích' data={TYO_ADM_Section3} />
       <ServiceDesignThreeSection title='Dịch vụ' data={TYO_ADM_Section4} />
-      
+      <ClientStoriesDesignTwoSection title='Client stories' data ={TYO_ADM_Section6} /> 
     </React.Fragment>
   );
 };

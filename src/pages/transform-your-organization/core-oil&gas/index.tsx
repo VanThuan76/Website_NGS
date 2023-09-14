@@ -19,6 +19,7 @@ import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Com
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
+import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -35,6 +36,7 @@ const ERPPage = () => {
       <OverviewDesignOneSection title='Tổng quan' data={TYO_CG_Section2} />
       <ChallengeDesignThreeSection title='Lợi ích mang lại' data={TYO_CG_Section3} />
       <ServiceDesignTwoSetion title='Dịch vụ' data={TYO_CG_Section4} />
+      
     </React.Fragment>
   );
 };

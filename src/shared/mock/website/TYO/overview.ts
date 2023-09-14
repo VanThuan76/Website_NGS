@@ -763,7 +763,7 @@ export const TYO_CB_Section3 = {
 
 export const TYO_CB_Section4 = {
     section: {
-        id: 1,
+        id: 4,
         name: 'Dịch vụ chúng tôi cung cấp.',
         code: "TPG003.6SE00004",
         image: "",
@@ -810,6 +810,155 @@ export const TYO_CB_Section4 = {
         
     ]
 }
+export const TYO_CB_Section6 = {
+    section: {
+        id: 6,
+        name: 'NGS đồng hành cùng những đối tác tuyệt vời',
+        code: "TPG003.6SE00006",
+        image: "",
+        description: "Đối tác của chúng tôi là những nhà cung cấp giải pháp ngân hàng lõi hoặc có xếp hạng về ứng dụng giải pháp hàng đầu thế giới (FIS Global, Temenos), với đánh giá từ tổ chức uy tín như Gartner, Forrester, hoặc am hiểu sâu sắc thị trường và có nhiều khách hàng lớn (Intellect, SAP, Finastra) trong cùng lĩnh vực và quy mô tại Việt Nam"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00006CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_forrester.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.6SE00006CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_fis.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.6SE00006CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_temenos.png",
+            video: "",
+            thumbnail: ""
+        },        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.6SE00006CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_garner.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+        id: 5,
+        language: 'vi',
+        code: "PG003.6SE00006CN000004",
+        title: "",
+        description: "",
+        slug: "",
+        content: "",
+        image: "/images/logo_intellect.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 6,
+        language: 'vi',
+        code: "PG003.6SE00006CN000006",
+        title: "",
+        description: "",
+        slug: "",
+        content: "",
+        image: "/images/logo_finastra.png",
+        video: "",
+        thumbnail: ""
+    },
+    ]
+}
+export const TYO_CB_Section7 = {
+    section: {
+        id: 7,
+        name: 'Những khách hàng đã hài lòng',
+        code: "TPG003.6SE00007",
+        image: "",
+        description: "FIS Global, Temenos, Intellect, Finastra... cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng, cũng như số lượng khách hàng hiện hữu, gia tăng doanh thu và lợi nhuận, và đồng thời gia tăng số lượng khách hàng tiềm năng tại BIDV, VPBank, Techcombank..., và sắp tới tại các doanh nghiệp là ngân hàng lớn khác"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00007CN000001",
+            title: "",
+            description: "",
+            content: "",
+            image: "/images/logo_techcombank.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00007CN000001",
+            title: "",
+            description: "",
+            content: "",
+            image: "/images/logo_BIDV.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00007CN000001",
+            title: "",
+            description: "",
+            content: "",
+            image: "/images/logo_VPBank.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+export const TYO_CI_Section1 = {
+    section: {
+        id: 1,
+        name: 'Bảo hiểm cốt lõi thế hệ mới vẫn lấy khách hàng và đại lý làm trung tâm',
+        code: "TPG003.7SE00001",
+        image: "/images/TYO_CIsection1.png",
+        description: " Bạn đã sẵn sàng bắt đầu hành trình với giải pháp Bảo hiểm lõi thế hệ mới hướng tới Phần mềm dưới dạng dịch vụ chưa?"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.7SE00001CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },]
+    }
 export const TYO_CI_Section2 = {
     section: {
         id: 2,
@@ -851,7 +1000,7 @@ export const TYO_CI_Section2 = {
                 description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
                 slug: "",
                 content: "",
-                image: "/images/TYO_BIsection3.png",
+                image: "/images/TYO_CIsection3.png",
                 video: "",
                 thumbnail: ""
             },]
@@ -861,7 +1010,7 @@ export const TYO_CI_Section2 = {
                 id: 4,
                 name: 'How we work',
                 code: "TPG003.7SE00004",
-                image: "/images/TYO_BIsection4.png",
+                image: "/images/TYO_CIsection4.png",
                 description: "Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:"
         
             },
@@ -905,6 +1054,29 @@ export const TYO_CI_Section2 = {
                     thumbnail: ""
             }]
             }
+            export const TYO_CI_Section7 = {
+                section: {
+                    id: 7,
+                    name: '',
+                    code: "TPG003.7SE00007",
+                    image: "",
+                    description: ""
+            
+                },
+                components: [
+                    {
+                        id: 1,
+                        language: 'vi',
+                        code: "PG003.7SE00007CN000001",
+                        title: "Những khách hàng đã hài lòng",
+                        description: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng ",
+                        slug: "",
+                        content: "",
+                        image: "/images/TYO_CIsection7.png",
+                        video: "",
+                        thumbnail: ""
+                    },]
+                }
             export const TYO_CA_Section1 = {
                 section: {
                     id: 1,
@@ -1162,6 +1334,29 @@ export const TYO_CI_Section2 = {
                                                 thumbnail: ""
                                             },]
                                         }
+                                        export const TYO_CA_Section8 = {
+                                            section: {
+                                                id: 7,
+                                                name: '',
+                                                code: "TPG003.7SE00007",
+                                                image: "",
+                                                description: ""
+                                        
+                                            },
+                                            components: [
+                                                {
+                                                    id: 1,
+                                                    language: 'vi',
+                                                    code: "PG003.7SE00007CN000001",
+                                                    title: "Những khách hàng đã hài lòng",
+                                                    description: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng ",
+                                                    slug: "",
+                                                    content: "",
+                                                    image: "/images/TYO_CIsection7.png",
+                                                    video: "",
+                                                    thumbnail: ""
+                                                },]
+                                            }
                                         
                                         export const TYO_CG_Section3 = {
                                                 section: {
@@ -1244,7 +1439,8 @@ export const TYO_CI_Section2 = {
                                                             video: "",
                                                             thumbnail: ""
                                                         },]
-                                                    }    
+                                                    }   
+                                                   
                                                     export const TYO_ADM_Section1 = {
                                                         section: {
                                                             id: 1,
@@ -1398,4 +1594,48 @@ export const TYO_CI_Section2 = {
                                                             },
                                                         
                                                         ]
-                                                    }      
+                                                    } 
+                                                    export const TYO_ADM_Section6 = {
+                                                        section: {
+                                                            id: 7,
+                                                            name: 'Những khách hàng đã hài lòng',
+                                                            code: "TPG003.6SE00007",
+                                                            image: "",
+                                                            description: "FIS Global, Temenos, Intellect, Finastra... cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng, cũng như số lượng khách hàng hiện hữu, gia tăng doanh thu và lợi nhuận, và đồng thời gia tăng số lượng khách hàng tiềm năng tại BIDV, VPBank, Techcombank..., và sắp tới tại các doanh nghiệp là ngân hàng lớn khác"
+                                                        },
+                                                        components: [
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.6SE00007CN000001",
+                                                                title: "",
+                                                                description: "",
+                                                                content: "",
+                                                                image: "/images/logo_techcombank.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.6SE00007CN000001",
+                                                                title: "",
+                                                                description: "",
+                                                                content: "",
+                                                                image: "/images/logo_BIDV.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.6SE00007CN000001",
+                                                                title: "",
+                                                                description: "",
+                                                                content: "",
+                                                                image: "/images/logo_VPBank.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            }
+                                                        ]
+                                                    } 
