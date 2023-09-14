@@ -22,20 +22,15 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
           <h1 className='w-[70%] text-2xl md:text-4xl font-semibold text-center'>{data.section.name}</h1>
           <p className='text-center mt-5'>{data.section.description}</p>
         </div>
-        <div className='w-full h-full grid grid-cols-3 justify-between items-center gap-5 mt-5'>
+        <div className='relative w-full h-full grid grid-cols-3 justify-between items-center gap-5 mt-16'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              style={{border: "1px solid #FC5E03" }}
-              className='absolute top-0 w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg'
+              className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg'
             >
-              <PreImage
-                src={item.image}
-                width={70}
-                height={70}
-                alt={item.title}
-                className='rounded-lg'
-              />
+              <div className='absolute -top-10 w-full h-full'>
+                <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
+              </div>
               <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>
             </div>

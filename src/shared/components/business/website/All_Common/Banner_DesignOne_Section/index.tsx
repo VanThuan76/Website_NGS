@@ -30,7 +30,7 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
               width={1980}
               layer={true}
               alt={data.section.name}
-              className='w-full object-cover'
+              className='w-full object-center'
             />
           </div>
         </div>
