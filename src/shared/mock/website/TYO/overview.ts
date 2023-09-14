@@ -873,3 +873,316 @@ export const TYO_CRM_Section3 = {
     components: [
     ]
 }
+
+export const TYO_CRM_Section6 = {
+    section: {
+        id: 6,
+        name: 'Đồng hành cùng chúng tôi',
+        code: "PG003.2SE00005",
+        image: "/images/PG003.2SE00005.png",
+        description: "NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế."
+
+    },
+    components: []
+}
+
+export const TYO_CC_Section2 = {
+    section: {
+        id: 2,
+        name: 'NDUC Contact Center - Giải pháp toàn diện cho doanh nghiệp.',
+        code: "PG003.4SE00002",
+        image: "",
+        description: "NDUC Contact Center là một giải pháp toàn diện của NGS, giúp xử lý tất cả các nghiệp vụ liên quan đến khách hàng qua nhiều kênh khác nhau như cuộc gọi thoại, SMS, email, Facebook, Zalo, Live chat ... // NDUC Contact Center là một hệ thống đồng bộ các kênh liên lạc, giúp Doanh nghiệp có thể cung cấp một dịch vụ liền mạch, thể hiện được hình ảnh thương hiệu nhất quán đồng thời nâng cao trải nghiệm Khách hàng."
+
+    },
+    components: []
+}
+
+export const TYO_CC_Section3 = {
+    section: {
+        id: 3,
+        name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+        code: "PG003.4SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.4SE00003CN000001",
+            title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
+            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại // Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
+            slug: "",
+            content: "",
+            image: "/images/PG003.4SE00003CN000001.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYO_CC_Section4 = {
+    section: {
+        id: 4,
+        name: 'Our products and solution',
+        code: "PG003.4SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.4SE00004CN000001",
+            title: "NDUC Call Center",
+            description: "Hệ thống tổng đài ảo thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.4SE00004CN000002",
+            title: "NDUC CRM",
+            description: "Hệ thống tổng đài ảo thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG003.4SE00004CN000003",
+            title: "NDUC Integration",
+            description: "Hệ thống tổng đài ảo thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.4SE00004CN000004",
+            title: "NDUC Integration",
+            description: "Hệ thống tổng đài ảo thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_AMS_Section2 = {
+    section: {
+        id: 2,
+        name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+        code: "PG003.18SE00002",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.18SE00002CN000001",
+            title: "Dịch vụ hỗ trợ vận hành công nghệ thông tin",
+            description: "Dịch vụ hỗ trợ vận hành hạ tầng hệ thống CNTT bao gồm các hoạt động về hỗ trợ vận hành máy chủ, thiết bị lưu trữ, thiết bị mạng; các hệ thống bảo mật, phần mềm Middleware (Web Server, Application Server…); môi trường ảo hóa và điện toán đám mây; các hệ thống Cơ sở dữ liệu và sao lưu an toàn dữ liệu.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.18SE00002CN000002",
+            title: "Dịch vụ hạ tầng  công nghệ thông tin doanh nghiệp",
+            description: "Nhằm đáp ứng nhu cầu thực tế của doanh nghiệp trong việc đầu tư hạ tầng công nghệ thông tin cho nhân viên đồng thời đáp ứng các yêu cầu thực tế về bảo mật và kinh phí đầu tư cũng như chi phí vận hành doanh nghiệp.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.18SE00002CN000003",
+            title: "Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin",
+            description: "cung cấp toàn diện các giải pháp quản trị cơ sở hạ tầng CNTT, cho phép giám sát hiệu suất, phát hiện và khắc phục nhanh chóng các sự cố xảy ra.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_AMS_Section3 = {
+    section: {
+        id: 3,
+        name: 'Luôn kiến tạo lợi ích vì doanh nghiệp',
+        code: "PG003.18SE00003",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.18SE00003CN000001",
+            title: "Giao tiếp khó khăn giữa các đội nhóm",
+            description: "Giao tiếp khó khăn giữa các đội nhóm",
+            slug: "",
+            content: "Thách thức đầu tiên doanh nghiệp phải đối mặt khi triển khai vận hành là việc phối hợp khó khăn giữa các nhóm. Cấu trúc khép kín của các doanh nghiệp ngăn cản sự hợp tác giữa các nhóm. Thông thường, các nhóm gặp khó khăn trong việc theo dõi các hoạt động như ai đã thực hiện những thay đổi gì.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.18SE00003CN000002",
+            title: "Kiểm soát phiên bản thủ công tốn thời gian",
+            description: "Kiểm soát phiên bản thủ công tốn thời gian",
+            slug: "",
+            content: "Việc bảo trì các ứng dụng và phần mềm hiện có là rất quan trọng để đảm bảo hiệu suất. Các phiên bản mới nhất của ứng dụng thường ngăn ngừa lỗi tốt hơn và việc kiểm tra phiên bản mới nhất đòi hỏi nhiều nỗ lực thủ công.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.18SE00003CN000002",
+            title: "Các bước thủ công gây ra nhiều sai sót và chậm trễ",
+            description: "Các bước thủ công gây ra nhiều sai sót và chậm trễ",
+            slug: "",
+            content: "Quá trình quản lý ứng dụng có nhiều khối lượng công việc thủ công. Những phạm vi này bao gồm từ sửa lỗi đến kiểm tra thủ công và triển khai ứng dụng cũng như cập nhật giấy phép. Những loại nhiệm vụ thủ công, lặp đi lặp lại như vậy có thể làm giảm hiệu quả của quy trình kinh doanh và gây ra sự chậm trễ.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.18SE00003CN000002",
+            title: "Thiếu khả năng hiển thị tiến độ dự án",
+            description: "Thiếu khả năng hiển thị tiến độ dự án",
+            slug: "",
+            content: "Một trong những vấn đề lớn nhất gặp phải trong quản lý ứng dụng là thiếu khả năng hiển thị trong quá trình quản lý và phát hành ứng dụng. Ví dụ: người dùng và nhà phát triển gặp khó khăn trong việc tìm hiểu tiến độ của các ứng dụng được xây dựng nội bộ và điều này tạo ra sự mơ hồ về thời gian hoàn thành và phân phối dự án.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
+
+export const TYO_AMS_Section4 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG003.18SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.18SE00004CN000001",
+            title: "Dịch vụ hỗ trợ vận hành công nghệ thông tin",
+            description: "* Dịch vụ cung cấp nhân sự IT Onsite/IT Helpdesk // * Dịch vụ hỗ trợ IT Service Desk 24/7 // * Dịch vụ bảo trì bảo dưỡng hệ thống công nghệ thông tin",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.18SE00004CN000002",
+            title: "Dịch vụ hạ tầng  công nghệ thông tin doanh nghiệp",
+            description: "* Dịch vụ hỗ trợ kỹ thuật hạ tầng Công nghệ thông tin // * Dịch vụ giám sát hạ tầng Công nghệ thông tin // * Dịch vụ hệ thống – hạ tầng Công nghệ thông tin",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.18SE00004CN000003",
+            title: "Dịch vụ quản trị ủy quyền hệ thống công nghệ thông tin",
+            description: "* Dịch vụ quản trị ủy quyền hệ thống hạ tầng Công nghệ thông tin // * Dịch vụ quản trị ủy quyền hệ thống ứng dụng // * Dịch vụ ủy quyền hệ thống Cloud",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_AMS_Section6 = {
+    section: {
+        id: 6,
+        name: 'Những khách hàng đã hài lòng',
+        code: "PG003.18SE00006",
+        image: "",
+        description: "FIS Global, Temenos, Intellect, Finastra... cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng, cũng như số lượng khách hàng hiện hữu, gia tăng doanh thu và lợi nhuận, và đồng thời gia tăng số lượng khách hàng tiềm năng tại BIDV, VPBank, Techcombank..., và sắp tới tại các doanh nghiệp là ngân hàng lớn khác"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.18SE00006CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_tech.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.18SE00006CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_bidv.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG003.18SE00006CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_vpbank.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}

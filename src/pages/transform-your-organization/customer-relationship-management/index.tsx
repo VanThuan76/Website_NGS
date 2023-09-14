@@ -3,7 +3,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYOPartner1, TYO_CDP_Section2, TYO_CDP_Section3, TYO_CDP_Section4, TYO_CDP_Section6, TYO_CRM_Section2, TYO_CRM_Section3 } from '@/mocks/website/TYO/overview';
+import { TYO_CDP_Section6, TYO_CRM_Section2, TYO_CRM_Section3, TYO_CRM_Section6 } from '@/mocks/website/TYO/overview';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
@@ -23,6 +23,7 @@ const CRMPage = () => {
       <BannerDesignOneSection title="Chuyển đổi số" data={TYO_CRM_Banner}/>
       <OverviewDesignThreeSection title='Tổng quan' data={TYO_CRM_Section2} />
       <ChallengeDesignThreeSection title='Thách thức' data={TYO_CRM_Section3} />
+      <PartnerDesignOneSection data={TYO_CRM_Section6} />
     </React.Fragment>
   );
 };
