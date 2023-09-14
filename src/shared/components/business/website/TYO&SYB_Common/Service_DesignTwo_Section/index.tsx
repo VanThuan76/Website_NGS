@@ -92,6 +92,7 @@ const ServiceDesignTwoSetion = ({ title, data, className }: Props) => {
                         className='object-cover rounded-lg'
                       />
                     )}
+                    <div className='absolute left-5 top-5 text-xl md:text-2xl text-white'>0{idx + 1}</div>
                     {item !== selectedTab ? (
                       <div className='absolute left-1/2 bottom-0 transform -translate-x-1/2 text-sm text-center text-white'>{item.title}</div>
                     ) : (
