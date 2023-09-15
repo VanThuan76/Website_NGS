@@ -34,7 +34,7 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
               <p>{item.title}</p>
             </div>
           ))}
-          <BtnCommon cls='border-orange-500 bg-white px-2' title='Go Carrer' colorSvg={colorIcon} />
+          <BtnCommon cls='border-orange-500 bg-white px-4' title='Go Carrer' colorSvg={colorIcon} />
         </div>
         <div className='relative w-full flex-shrink-0 snap-start'>
           <PreImage

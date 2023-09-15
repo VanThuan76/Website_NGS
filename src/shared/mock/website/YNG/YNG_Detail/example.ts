@@ -1,0 +1,378 @@
+export const YNGDetailWhyChoose1 = {
+  section: {
+    id: 1,
+    name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+    code: 'TY1232323454',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'Dịch vụ hỗ trợ vận hành công nghệ thông tin',
+      description:
+        'Dịch vụ hỗ trợ vận hành hạ tầng hệ thống CNTT bao gồm các hoạt động về hỗ trợ vận hành máy chủ, thiết bị lưu trữ, thiết bị mạng; các hệ thống bảo mật, phần mềm Middleware (Web Server, Application Server…); môi trường ảo hóa và điện toán đám mây; các hệ thống Cơ sở dữ liệu và sao lưu an toàn dữ liệu.',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'Dịch vụ hỗ trợ vận hành công nghệ thông tin',
+      description:
+        'Dịch vụ hỗ trợ vận hành hạ tầng hệ thống CNTT bao gồm các hoạt động về hỗ trợ vận hành máy chủ, thiết bị lưu trữ, thiết bị mạng; các hệ thống bảo mật, phần mềm Middleware (Web Server, Application Server…); môi trường ảo hóa và điện toán đám mây; các hệ thống Cơ sở dữ liệu và sao lưu an toàn dữ liệu.',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'Dịch vụ hỗ trợ vận hành công nghệ thông tin',
+      description:
+        'Dịch vụ hỗ trợ vận hành hạ tầng hệ thống CNTT bao gồm các hoạt động về hỗ trợ vận hành máy chủ, thiết bị lưu trữ, thiết bị mạng; các hệ thống bảo mật, phần mềm Middleware (Web Server, Application Server…); môi trường ảo hóa và điện toán đám mây; các hệ thống Cơ sở dữ liệu và sao lưu an toàn dữ liệu.',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+  ],
+};
+export const YNGDetailProduct1 = {
+  section: {
+    id: 1,
+    name: '',
+    code: 'TY1232323454',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+      description:
+        'Dịch vụ hỗ trợ vận hành',
+      slug: '',
+      content:
+        'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng.',
+      image: '/images/background_1.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+      description:
+        'Dịch vụ hỗ trợ vận hành',
+      slug: '',
+      content:
+        'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng.',
+      image: '/images/background_1.png',
+      video: '',
+      thumbnail: '',
+    },
+  ],
+};
+export const YNGDetailDirection1 = {
+  section: {
+    id: 1,
+    name: 'Đồng hành cùng chúng tôi',
+    code: "TY12323",
+    image: "",
+    description: "NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế."
+
+  },
+  components: []
+}
+export const YNGCommonCustomer1 = {
+  section: {
+    id: 1,
+    name: 'Những đơn vị đã cùng đồng hành với NGS',
+    title: "",
+    description: "",
+    code: "TY12323",
+    image: ""
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 4,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 5,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 6,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'T',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/partner2.svg',
+      video: '',
+      thumbnail: '',
+    },
+  ]
+}
+export const YNGCommonBackSolution1 = {
+  section: {
+    id: 1,
+    name: 'Ứng dụng cho Bán hàng',
+    title: "",
+    description: "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+    code: "TY12323",
+    image: ""
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Trình xây dựng trang web",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Trình xây dựng trang web",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Trình xây dựng trang web",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 4,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Trình xây dựng trang web",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+  ]
+}
+export const YNGCommonPilotSubrice1 = {
+  section: {
+    id: 1,
+    name: 'Ứng dụng cho Bán hàng',
+    title: "",
+    description: "Doanh nghiệp của bạn cần giải pháp CRM tốt hơn?",
+    code: "TY12323",
+    image: ""
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Công cụ hỗ trợ bán hàng đầy đủ tính năng",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Tối ưu thời gian bán hàng",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Phân bổ & khai thác lead",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 4,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Dữ liệu lead tập trung & check trùng",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 5,
+      language: 'vi',
+      code: 'CPN12312',
+      title: "Trình xây dựng trang web",
+      description: '',
+      slug: '',
+      content: '',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+  ]
+}
+export const YNGCommonIntroduction1 = {
+  section: {
+    id: 1,
+    name: '',
+    code: 'TY1232323454',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: 'How a leading global franchise development company scaled faster with the help of CRM',
+      description: '',
+      slug: '',
+      content: 'Fastest deployment in the market. Highly customizable verticals on demand',
+      image: '/partner.svg',
+      video: '/images/background_1.png',
+      thumbnail: '',
+    },
+  ],
+};
+export const YNGDetailBanner1 = {
+  section: {
+    id: 1,
+    name: '',
+    code: 'TY1232323454',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      slug: '',
+      video: '/images/background_1.png',
+      thumbnail: '',
+      title: "Develop new solution",
+      description: "Chúng ta cùng nhau định hình tương lai kỹ thuật số",
+      content:
+        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+      image:
+        "mockSVG/YNG_YourNextGen_banner.svg",
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      slug: '',
+      video: '/images/background_1.png',
+      thumbnail: '',
+      title: "Develop new solution",
+      description: "Chúng ta cùng nhau định hình tương lai kỹ thuật số",
+      content:
+        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
+      image:
+        "mockSVG/YNG_YourNextGen_banner.svg",
+    },
+  ],
+};

@@ -2,6 +2,7 @@ import BannerDesignOneSection from '@/components/business/website/All_Common/Ban
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import BenefitDesignOneSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignOne_Section';
 import BenefitDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignTwo_Section';
+import CaseStudyDesignOneSection from '@/components/business/website/TYO&SYB_Common/CaseStudy_DesignOne_Section';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
@@ -34,6 +35,7 @@ import {
   TYOBanner1,
   TYOBenefit1,
   TYOBenefit2,
+  TYOCaseStudy1,
   TYOclientStories1,
   TYOClientStories3,
   TYOForm1,
@@ -102,6 +104,7 @@ const Component = () => {
       />
       <BenefitDesignOneSection title='Tổng quan' data={TYOBenefit1} />
       <BenefitDesignTwoSection title='Thách thức' data={TYOBenefit2} />
+      <CaseStudyDesignOneSection title='CaseStudy' data={TYOCaseStudy1}/>
     </>
   );
 };

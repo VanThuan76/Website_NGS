@@ -201,7 +201,7 @@ export const fakeMenu = [
                 menuChild: [
                     {   
                         title: "Feature Solution",
-                        path: "/it-management-service",
+                        path: "/transform-your-organization",
                         menuChild: [
                             {
                                 title: "Application Management Services",

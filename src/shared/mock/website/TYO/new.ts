@@ -1,17 +1,10 @@
-
-
-
-
-
-
 export const TYOOverview5 = {
     section: {
         id: 5,
         name: 'Xây dựng chuỗi cung ứng để chống chọi với các thay đổi',
         code: "TY1232323454",
         image: "/images/Image_OverviewDesignFIveSection.png",
-        description: "Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường."
-
+        description: "Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường. // Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc."
     },
     components: [
     ]
@@ -52,9 +45,6 @@ export const TYOclientStories1 = {
         },
     ]
 }
-
-
-
 export const TYOPartner2 = {
     section: {
         id: 2,
@@ -114,10 +104,6 @@ export const TYOPartner2 = {
         },
     ]
 }
-
-
-
-
 export const TYOPartner3 = {
     section: {
         id: 3,
@@ -177,10 +163,6 @@ export const TYOPartner3 = {
         },
     ]
 }
-
-
-
-
 export const TYOWhyUs1 = {
     section: {
         id: 1,
@@ -264,7 +246,6 @@ export const TYOWhyUs1 = {
         },
     ]
 }
-
 export const TYOForm1 = {
     section: {
         id: 1,
@@ -550,5 +531,16 @@ export const TYOBenefit2 = {
             video: "",
             thumbnail: ""
         },
+    ]
+}
+export const TYOCaseStudy1 = {
+    section: {
+        id: 1,
+        name: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+        code: "TY1232323454",
+        image: "/images/background_1.png",
+        description: "Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng."
+    },
+    components: [
     ]
 }

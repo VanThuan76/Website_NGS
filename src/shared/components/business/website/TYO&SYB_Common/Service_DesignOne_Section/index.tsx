@@ -26,8 +26,8 @@ const ServiceDesignOneSection = ({ title, data, className }: Props) => {
             <BtnCommon title='Dùng thử' />
           </div>
         </div>
-        <ServiceDesignOneItem titleItem='Giải pháp' data={data.components} />
-        <ServiceDesignOneItem titleItem='Dịch vụ và hỗ trợ' data={data.components} />
+        <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === "solution")} />
+        <ServiceDesignOneItem titleItem='Dịch vụ và hỗ trợ' data={data.components.filter(item => item.slug === "service-and-support")} />
       </div>
     </section>
   );

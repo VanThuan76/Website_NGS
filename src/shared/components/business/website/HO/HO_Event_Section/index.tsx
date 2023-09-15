@@ -1,11 +1,10 @@
+import React from 'react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
-
-
 import HOEventContent from './HOEventContent';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { IEvent } from '@/mocks/website/HO/event';
@@ -14,10 +13,14 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
-  className?: string
-}
-const HomeEventSection = ({data, className}: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data.components![0]);
+  className?: string;
+};
+const HomeEventSection = ({ data, className }: Props) => {
+  const [selectedTab, setSelectedTab] = useState<Partial<IEvent> | undefined>(() => {
+    if (data.components && data.components.length > 0) return data.components[0];
+    else return undefined;
+  });
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section
       id='Event'
@@ -27,21 +30,28 @@ const HomeEventSection = ({data, className}: Props) => {
         <TitleSection
           title='Sự kiện'
           name={data.section!.name as string}
-        description={data.section!.description as string}
+          description={data.section!.description as string}
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
         />
         <div className='w-full block lg:hidden'>
           {/* @ts-ignore */}
           <Swiper pagination={{
-          dynamicBullets: true,
-        }} modules={[Pagination]} className="shadow-lg" >
+              dynamicBullets: true,
+            }}
+            modules={[Pagination]}
+            className='shadow-lg'
+          >
             {data.components!.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
-                <PreImage alt='Event'
-                          //@ts-ignore
-                          src={item.image}
-                          width={650} height={600} className='rounded-lg' />
+                <PreImage
+                  alt='Event'
+                  //@ts-ignore
+                  src={item.image}
+                  width={650}
+                  height={600}
+                  className='rounded-lg'
+                />
                 <HOEventContent event={item} />
               </SwiperSlide>
             ))}
@@ -65,8 +75,9 @@ const HomeEventSection = ({data, className}: Props) => {
                     duration: 1,
                     ease: 'easeInOut',
                   }}
-                  className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'
-                    } w-full flex-shrink-0 snap-start cursor-pointer`}
+                  className={`${
+                    item === selectedTab ? 'col-span-3' : 'col-span-1'
+                  } w-full flex-shrink-0 snap-start cursor-pointer`}
                   onClick={() => setSelectedTab(item)}
                 >
                   <motion.div
@@ -98,7 +109,6 @@ const HomeEventSection = ({data, className}: Props) => {
             })}
           </AnimatePresence>
         </div>
-
       </div>
     </section>
   );

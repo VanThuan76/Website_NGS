@@ -1,7 +1,7 @@
-import { YNG_ERP_solution } from '@/mocks/website/YNG/YNG_ERP/solution';
-import YNGERPSolutionSectionItem from './YNG_ERP_Solution_Item';
+import { YNG_ERP_solution } from '@/mocks/website/YNG/YNG_Home/solution';
+import YNGHomeSolutionSectionItem from './YNG_Home_Solution_Item';
 
-const YNGERPSolutionSection = () => {
+const YNGHomeSolutionSection = () => {
   return (
     <section id='YNGERPSolution' className='w-full'>
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
@@ -10,11 +10,11 @@ const YNGERPSolutionSection = () => {
           <h1 className='text-2xl md:text-4xl'>Giải pháp ERP</h1>
         </div>
         {YNG_ERP_solution.map((item, idx) => (
-          <YNGERPSolutionSectionItem key={idx} item={item} className={`${idx % 2 !== 0 ? 'bg-[#F9F9F9]' : ''}`} />
+          <YNGHomeSolutionSectionItem key={idx} item={item} className={`${idx % 2 !== 0 ? 'bg-[#F9F9F9]' : ''}`} />
         ))}
       </div>
     </section>
   );
 };
 
-export default YNGERPSolutionSection;
+export default YNGHomeSolutionSection;

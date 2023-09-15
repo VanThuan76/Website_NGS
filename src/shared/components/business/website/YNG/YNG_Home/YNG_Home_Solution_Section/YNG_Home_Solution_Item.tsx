@@ -1,13 +1,13 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
 import YNG_IconArrowRight from '@/components/icon/YNG/YNG_ERP/YNG_ERP_solution/YNG_IconArrowRight';
-import { IYNGYourNextGenSolution } from '@/mocks/website/YNG/YNG_ERP/solution';
+import { IYNGYourNextGenSolution } from '@/mocks/website/YNG/YNG_Home/solution';
 
 interface Props {
   item: IYNGYourNextGenSolution;
   className: string;
 }
-const YNGERPSolutionSectionItem = ({ item, className }: Props) => {
+const YNGHomeSolutionSectionItem = ({ item, className }: Props) => {
   return (
     <div
       className={`w-full flex flex-col lg:flex-row justify-between items-center gap-4 px-8 py-10 lg:px-14 lg:py-24 ${className}`}
@@ -34,4 +34,4 @@ const YNGERPSolutionSectionItem = ({ item, className }: Props) => {
   );
 };
 
-export default YNGERPSolutionSectionItem;
+export default YNGHomeSolutionSectionItem;

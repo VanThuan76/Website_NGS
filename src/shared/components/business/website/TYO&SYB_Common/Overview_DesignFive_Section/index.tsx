@@ -1,6 +1,7 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import BorderStyleOneLight from '@/components/icon/TYO&SYB_Common/BorderStyleOneLight';
 import ThreeDotIcon from '@/components/icon/TYO&SYB_Common/ThreeDotIcon';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -19,7 +20,14 @@ const OverviewDesignFiveSection = ({ title, data, className }: Props) => {
         <div className='px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-start items-start md:justify-center md:items-center gap-2 z-30'>
           <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
           <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
-          <p className='text-center'>{data.section.description}</p>
+          <div className='flex flex-col justify-center items-center'>
+            {splitTextToArrayByDoubleSlash(data.section.description).map((item: string, idx: number) => (
+              <div key={idx} className='flex flex-col justify-center items-center gap-4 pb-4'>
+                <p className='text-base md:text-lg'>{item}</p>
+                {idx !== splitTextToArrayByDoubleSlash(data.section!.description).length - 1 && <ThreeDotIcon />}
+              </div>
+            ))}
+          </div>
         </div>
         <div className='relative w-full h-auto flex flex-col justify-between items-center gap-5 mt-5'>
           <PreImage

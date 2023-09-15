@@ -73,7 +73,7 @@ export const TYOOverview3 = {
         name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
         code: "TY12323",
         image: "",
-        description: "Nền công nghiệp 4.0 yêu cầu các tổ chức tối ưu hóa hiệu suất song song với việc triển khai trải nghiệm khách hàng tuyệt vời. Quản lý Quy trình Kinh doanh - BPM là phương pháp phổ biến, được áp dụng nhằm mô hình hóa, phân tích, đo lường, cải tiến, tối ưu hóa và tự động hóa các quy trình kinh doanh trong hoạt động của công ty. Tối ưu hóa quy trình kinh doanh - BPO là một trong những phần quan trọng nhất trong hoạt động quản lý quy trình kinh doanh, nhằm mang lại hiệu quả và giá trị cho doanh nghiệp."
+        description: "Nền công nghiệp 4.0 yêu cầu các tổ chức tối ưu hóa hiệu suất song song với việc triển khai trải nghiệm khách hàng tuyệt vời. Quản lý Quy trình Kinh doanh - BPM là phương pháp phổ biến, được áp dụng nhằm mô hình hóa, phân tích, đo lường, cải tiến, tối ưu hóa và tự động hóa các quy trình kinh doanh trong hoạt động của công ty. // Tối ưu hóa quy trình kinh doanh - BPO là một trong những phần quan trọng nhất trong hoạt động quản lý quy trình kinh doanh, nhằm mang lại hiệu quả và giá trị cho doanh nghiệp."
 
     },
     components: []
@@ -471,7 +471,7 @@ export const TYOService1 = {
             code: "CPN12312",
             title: "Tìm nguồn cung ứng và hợp đồng",
             description: "",
-            slug: "",
+            slug: "solution",
             content: "",
             image: "",
             video: "",
@@ -483,7 +483,7 @@ export const TYOService1 = {
             code: "CPN12312",
             title: "Thu mua",
             description: "",
-            slug: "",
+            slug: "solution",
             content: "",
             image: "",
             video: "",
@@ -494,7 +494,7 @@ export const TYOService1 = {
             code: "CPN12312",
             title: "Quản lý hóa đơn và thanh toán",
             description: "",
-            slug: "",
+            slug: "service-and-support",
             content: "",
             image: "",
             video: "",
@@ -506,7 +506,7 @@ export const TYOService1 = {
             code: "CPN12312",
             title: "Quản lý nhà cung ứng",
             description: "",
-            slug: "",
+            slug: "service-and-support",
             content: "",
             image: "",
             video: "",

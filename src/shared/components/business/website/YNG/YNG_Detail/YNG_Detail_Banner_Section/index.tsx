@@ -2,14 +2,19 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
-import YNGERPBannerContent from './YNGERPBannerContent';
+import YNGDetailBannerContent from './YNGDetailBannerContent';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 interface Props {
-  data: Partial<SectionData>[];
+  data: Partial<IBaseSectionComponent>;
+  className?: string
 }
-const YNGERPBannerSection = ({ data }: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>>(data[0] as SectionData);
+const YNGDetailBannerSection = ({ data, className }: Props) => {
+  const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
+    if (data.components && data.components.length > 0) return data.components[0];
+    else return undefined;
+  });
   const contentAnimated = {
     active: {
       borderColor: '#FF8A1E',
@@ -27,15 +32,15 @@ const YNGERPBannerSection = ({ data }: Props) => {
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab): SectionData | any => {
-      const nextIndex = data.indexOf(prevTab) + 1;
-      return nextIndex < data.length ? data[nextIndex] : data[0];
+    setSelectedTab((prevTab) => {
+      const nextIndex = data.components!.indexOf(prevTab as any) + 1;
+      return nextIndex < data.components!.length ? data.components![nextIndex] : data.components![0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab): SectionData | any => {
-      const prevIndex = data.indexOf(prevTab) - 1;
-      return prevIndex >= 0 ? data[prevIndex] : data[data.length - 1];
+    setSelectedTab((prevTab) => {
+      const prevIndex = data.components!.indexOf(prevTab as any) - 1;
+      return prevIndex >= 0 ? data.components![prevIndex] : data.components![data.components!.length - 1];
     });
   };
 
@@ -54,10 +59,10 @@ const YNGERPBannerSection = ({ data }: Props) => {
   }, []);
 
   return (
-    <section id='YNGERPBanner' className='block py-8'>
+    <section id={data && data.section && data.section.code} className={`block py-8 ${className}`}>
       <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[700px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
         <div className='w-full h-full col-span-1 bg-[#FEF6EB]'>
-          <YNGERPBannerContent selectedTab={selectedTab && selectedTab} />
+          <YNGDetailBannerContent selectedTab={selectedTab!} />
         </div>
         <div className='w-full col-span-1'>
           <AnimatePresence mode='wait'>
@@ -71,7 +76,7 @@ const YNGERPBannerSection = ({ data }: Props) => {
               <PreImage
                 //@ts-ignore
                 src={selectedTab && selectedTab.image}
-                height={1080}
+                height={700}
                 width={1980}
                 layer={true}
                 alt={'Banner'}
@@ -83,7 +88,7 @@ const YNGERPBannerSection = ({ data }: Props) => {
         <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10 z-40'>
           <div className='flex items-center justify-between gap-5'>
             <ul className='md:flex items-center justify-between gap-5'>
-              {data.map((item, idx) => (
+              {data.components!.map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'
@@ -106,4 +111,4 @@ const YNGERPBannerSection = ({ data }: Props) => {
   );
 };
 
-export default YNGERPBannerSection;
+export default YNGDetailBannerSection;

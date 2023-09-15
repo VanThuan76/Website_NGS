@@ -23,9 +23,14 @@ const ClientStoriesDesignThreeSection = ({ title, data, className }: Props) => {
         </div>
         <div className='w-full border-t-2 border-orange-500 transform -translate-y-4 z-10'></div>
         <p className='mt-5 text-xs md:text-base text-center text-white'>{data.section.description}</p>
-        <div className='w-full mt-10 grid grid-cols-3 justify-center gap-6'>
+        <div className='w-full mt-10 grid grid-cols-3 justify-center items-center gap-6'>
           {data.components.map((item, idx) => (
-            <div key={idx} className='flex flex-col items-center border-r-2 border-orange-500 mr-12'>
+            <div
+              key={idx}
+              className={`flex flex-col items-center ${
+                data.components && data.components?.length - 1 !== idx && 'border-r-2 border-orange-500 mr-4'
+              } mr-12`}
+            >
               <PreImage
                 src={item.image as string}
                 height={100}

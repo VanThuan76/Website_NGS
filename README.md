@@ -33,11 +33,7 @@
   - components :
     - business : các component theo nghiệp vụ
     - common : các component dùng chung
-<<<<<<< Updated upstream
     - core : các component như table , form 
-=======
-    - core : các component như table , form
->>>>>>> Stashed changes
     - icons : icon export từ figma về thành file svg
     - layout : Page Layout
   - hooks : các custom hook , còn lại sử dụng từ thư viện use-hook
@@ -76,3 +72,5 @@
 ## Lưu ý với website NGS
 - Các folder, file được đặt tên theo ký tự(ngắn) của trang page/ đã được định nghĩa sẵn trong figma
 - Tổ chức page, section, component rõ ràng để tránh bị trùng lắp
+- Chú ý dữ liệu đặc biệt có khoảng cách hoặc cần thể hiện theo figma. Ngăn cách bằng dấu "." hoặc quy ước riêng
+  + Trường content: YNG_Common_Introduction_Section

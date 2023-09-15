@@ -1,21 +1,33 @@
+import React from 'react';
 import { PreImage } from '@/components/common/customization/PreImage';
+import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import TitleSection from '@/components/common/customization/TitleSection';
 import BorderCard from '@/components/icon/HO/security/BorderCard';
-import { ERPCustomerData } from '@/mocks/website/YNG/YNG_ERP/customer';
 
-const YNGERPCustomerSection = () => {
+type Props = {
+  title: string;
+  data: Partial<IBaseSectionComponent>;
+  className?: string;
+};
+
+const YNGCommonCustomerSection = ({ title, data, className }: Props) => {
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
+
   return (
-    <section id='ERPCustomer' className='w-full mb-2 md:mb-12 lg:mb-24 px-8 py-10 lg:px-14 lg:py-24'>
+    <section
+      id={data.section.code}
+      className={`w-full mb-2 md:mb-12 lg:mb-24 px-8 py-10 lg:px-14 lg:py-24 ${className}`}
+    >
       <TitleSection
-        title='Khách hàng'
-        name={ERPCustomerData.sections.name}
-        description={ERPCustomerData.sections.description}
+        title={title}
+        name={data.section.name}
+        description={data.section.description}
         findMore={true}
         className='w-full flex flex-col justify-start items-start'
       />
       <div className='max-w-[1440px] w-full my-auto flex flex-col justify-between items-center gap-5 mt-10 mx-auto'>
         <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-4 p-2'>
-          {ERPCustomerData.components.map((item, idx) => (
+          {data.components.map((item, idx) => (
             <div key={idx} className={`relative max-w-[310px] h-full rounded-lg shadow-md overflow-hidden`}>
               <PreImage
                 key={idx}
@@ -37,4 +49,4 @@ const YNGERPCustomerSection = () => {
   );
 };
 
-export default YNGERPCustomerSection;
+export default YNGCommonCustomerSection;
