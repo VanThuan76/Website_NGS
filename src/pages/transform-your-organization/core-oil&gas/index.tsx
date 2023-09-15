@@ -9,7 +9,7 @@ import YNGPilotSubrice from '@/components/business/website/YNG/YNG_Common/YNG_Co
 import YNGERPCustomerSection from '@/components/business/website/YNG/YNG_ERP/YNG_ERP_Customer_Section';
 import { YNG_ERP_banner } from '@/mocks/website/YNG/YNG_ERP/banner';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYOOverview1, TYOOverview6, TYO_CA_Section1, TYO_CA_Section2, TYO_CA_Section3, TYO_CA_Section4, TYO_CA_Section5, TYO_CB_Section1, TYO_CB_Section2, TYO_CB_Section3, TYO_CB_Section4, TYO_CG_Section1, TYO_CG_Section2, TYO_CG_Section3, TYO_CG_Section4, TYO_CG_Section5, TYO_CG_Section6, TYO_CG_Section7, TYO_CG_Section8} from '@/mocks/website/TYO/overview';
+import { TYOOverview1, TYOOverview6, } from '@/mocks/website/TYO/overview';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import OverviewDesignSixSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSix_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
@@ -24,6 +24,7 @@ import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Com
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
+import { TYO_CG_Section1, TYO_CG_Section2, TYO_CG_Section3, TYO_CG_Section4, TYO_CG_Section5, TYO_CG_Section6, TYO_CG_Section7, TYO_CG_Section8 } from '@/mocks/website/TYO/Trang';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
