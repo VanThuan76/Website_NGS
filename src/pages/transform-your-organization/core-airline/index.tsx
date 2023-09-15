@@ -9,7 +9,7 @@ import YNGPilotSubrice from '@/components/business/website/YNG/YNG_Common/YNG_Co
 import YNGERPCustomerSection from '@/components/business/website/YNG/YNG_ERP/YNG_ERP_Customer_Section';
 import { YNG_ERP_banner } from '@/mocks/website/YNG/YNG_ERP/banner';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYOOverview1, TYOOverview6, TYO_CA_Section1, TYO_CA_Section2, TYO_CA_Section3, TYO_CA_Section4, TYO_CA_Section5, TYO_CA_Section8, TYO_CB_Section1, TYO_CB_Section2, TYO_CB_Section3, TYO_CB_Section4} from '@/mocks/website/TYO/overview';
+import { TYOOverview1, TYOOverview6, TYO_CA_Section1, TYO_CA_Section2, TYO_CA_Section3, TYO_CA_Section4, TYO_CA_Section5, TYO_CA_Section6, TYO_CA_Section7, TYO_CA_Section8, TYO_CA_Section9, TYO_CB_Section1, TYO_CB_Section2, TYO_CB_Section3, TYO_CB_Section4} from '@/mocks/website/TYO/overview';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import OverviewDesignSixSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSix_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
@@ -19,6 +19,9 @@ import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Com
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
+import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
+import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
+import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -36,7 +39,10 @@ const ERPPage = () => {
       <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYO_CA_Section3} />
       <ServiceDesignTwoSetion title='Our Service & Solution' data={TYO_CA_Section4} />
       <ServiceDesignOneSection title='' data={TYO_CA_Section5} />
+      <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CA_Section6}/>
+      <PartnerDesignThreeSection data={TYO_CA_Section7}/>
       <ClientStoriesDesignOneSection title='' data={TYO_CA_Section8} />
+      <FormDesignOneSection title='Dùng thử' data={TYO_CA_Section9}/>
     </React.Fragment>
   );
 };

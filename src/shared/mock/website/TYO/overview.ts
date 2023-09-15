@@ -720,15 +720,15 @@ export const TYO_CB_Section2 = {
         name: 'Tổng quan về ngân hàng lõi thế hệ mới',
         code: "TPG003.6SE00002",
         image: "",
-        description: "Bạn đã sẵn sàng bắt đầu hành trình với giải pháp Ngân hàng lõi thế hệ mới hướng tới Phần mềm dưới dạng dịch vụ chưa?"
+        description: "Ngân hàng lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh//NGS cung cấp các dịch vụ ngân hàng chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược ngân hàng kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi kinh doanh ngân hàng cho tổ chức tín dụng của bạn?"
     },
     components: [
         {
             id: 1,
             language: 'vi',
             code: "PG003.6SE00002CN000001",
-            title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
-            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại. Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp. NGS cung cấp các dịch vụ ngân hàng chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược ngân hàng kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi kinh doanh ngân hàng cho tổ chức tín dụng của bạn",
+            title: "",
+            description: "",
             slug: "",
             content: "",
             image: "/images/background_1.png",
@@ -808,6 +808,53 @@ export const TYO_CB_Section4 = {
             thumbnail: ""
         },
         
+    ]
+}
+export const TYO_CB_Section5 = {
+    section: {
+        id: 5,
+        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+        code: "TPG003.6SE00005",
+        image: "",
+        description: "We are trusted partner for your digital transformation"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00005CN000001",
+            title: "Tập trung vào giá trị",
+            description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn",
+            slug: "",
+            content: "",
+            image: "/images/logo_TYO_CB.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.6SE00005CN000002",
+            title: "Làm việc như một đối tác linh hoạt",
+            description: "Chúng tôi biến đổi bằng cách hành động, mang lại những chiến thắng nhanh chóng chứng minh giá trị từ ban đầu",
+            slug: "",
+            content: "",
+            image: "/images/logo_TYO_CB.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.6SE00005CN000003",
+            title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+            description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+            slug: "",
+            content: "",
+            image: "/images/logo_TYO_CB.png",
+            video: "",
+            thumbnail: ""
+        }
     ]
 }
 export const TYO_CB_Section6 = {
@@ -936,6 +983,29 @@ export const TYO_CB_Section7 = {
         }
     ]
 }
+export const TYO_CB_Section8 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "TPG003.6SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00008CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
+}
 export const TYO_CI_Section1 = {
     section: {
         id: 1,
@@ -982,64 +1052,64 @@ export const TYO_CI_Section2 = {
             thumbnail: ""
         },]
     }
-    export const TYO_CI_Section3 = {
-        section: {
-            id: 3,
-            name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
-            code: "TPG003.7SE00003",
-            image: "/images/background_2.png",
-            description: ""
+ export const TYO_CI_Section3 = {
+     section: {
+         id: 3,
+         name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+         code: "TPG003.7SE00003",
+         image: "/images/background_2.png",
+         escription: ""
     
         },
-        components: [
-            {
-                id: 1,
-                language: 'vi',
-                code: "PG003.7SE00003CN000001",
-                title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
-                description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
-                slug: "",
-                content: "",
-                image: "/images/TYO_CIsection3.png",
-                video: "",
-                thumbnail: ""
+     components: [
+         {
+            d: 1,
+            language: 'vi',
+            code: "PG003.7SE00003CN000001",
+            title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
+            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_CIsection3.png",
+            video: "",
+            thumbnail: ""
             },]
         }
-        export const TYO_CI_Section4 = {
-            section: {
-                id: 4,
-                name: 'How we work',
-                code: "TPG003.7SE00004",
-                image: "/images/TYO_CIsection4.png",
-                description: "Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:"
+export const TYO_CI_Section4 = {
+    section: {
+        id: 4,
+        name: 'How we work',
+        code: "TPG003.7SE00004",
+        image: "/images/TYO_CIsection4.png",
+        description: "Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:"
         
-            },
+        },
             
             
-            components: [
-                {
-                    id: 1,
-                    language: 'vi',
-                    code: "PG003.7SE00004CN000001",
-                    title: "Thấu hiểu và nắm bắt các mục tiêu",
-                    description: "",
-                    slug: "",
-                    content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
-                    image: "",
-                    video: "",
-                    thumbnail: ""
-                },
-                 {
-                        id: 2,
-                        language: 'vi',
-                        code: "PG003.7SE00004CN000002",
-                        title: "Đánh giá trạng thái hiện tại của tổ chức của bạn",
-                        description: "",
-                        slug: "",
-                        content: "",
-                        image: "",
-                        video: "",
-                        thumbnail: ""
+    components: [
+        {
+        id: 1,
+        language: 'vi',
+        code: "PG003.7SE00004CN000001",
+        title: "Thấu hiểu và nắm bắt các mục tiêu",
+        description: "",
+        slug: "",
+        content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+        image: "",
+        video: "",
+        thumbnail: ""
+        },
+        {
+        id: 2,
+        language: 'vi',
+        code: "PG003.7SE00004CN000002",
+        title: "Đánh giá trạng thái hiện tại của tổ chức của bạn",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
                 },
                 {
                     id: 3,
@@ -1054,12 +1124,119 @@ export const TYO_CI_Section2 = {
                     thumbnail: ""
             }]
             }
+            export const TYO_CI_Section5 = {
+                section: {
+                    id: 5,
+                    name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+                    code: "TPG003.6SE00005",
+                    image: "",
+                    description: "We are trusted partner for your digital transformation"
+                },
+                components: [
+                    {
+                        id: 1,
+                        language: 'vi',
+                        code: "PG003.6SE00005CN000001",
+                        title: "Tập trung vào giá trị",
+                        description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_TYO_CB.png",
+                        video: "",
+                        thumbnail: ""
+                    },
+                    {
+                        id: 2,
+                        language: 'vi',
+                        code: "PG003.6SE00005CN000002",
+                        title: "Làm việc như một đối tác linh hoạt",
+                        description: "Chúng tôi biến đổi bằng cách hành động, mang lại những chiến thắng nhanh chóng chứng minh giá trị từ ban đầu",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_TYO_CB.png",
+                        video: "",
+                        thumbnail: ""
+                    },
+                    {
+                        id: 3,
+                        language: 'vi',
+                        code: "PG003.6SE00005CN000003",
+                        title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+                        description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_TYO_CB.png",
+                        video: "",
+                        thumbnail: ""
+                    }
+                ]
+            }
+            export const TYO_CI_Section6 = {
+                section: {
+                    id: 8,
+                    name: 'Đối tác đồng hành cùng NGS',
+                    code: "TPG003.7SE00006",
+                    image: "",
+                    description: "Đối tác của chúng tôi là những nhà cung cấp giải pháp bảo hiểm lõi hoặc có xếp hạng về ứng dụng giải pháp hàng đầu thế giới (Sapiens, eBao), với đánh giá từ tổ chức uy tín như Gartner, Forrester, hoặc am hiểu sâu sắc thị trường và có nhiều khách hàng lớn (Azentio) trong cùng lĩnh vực và quy mô tại Việt Nam"
+                },
+                components: [
+                    {
+                        id: 1,
+                        language: 'vi',
+                        code: "PG003.7SE00006CN000001",
+                        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_sapiens.png",
+                        video: "",
+                        thumbnail: ""
+                    },
+                    {
+                        id: 2,
+                        language: 'vi',
+                        code: "PG003.7SE00006CN000002",
+                        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_ebaotech.png",
+                        video: "",
+                        thumbnail: ""
+                    },
+                    {
+                        id: 3,
+                        language: 'vi',
+                        code: "PG003.7SE00006CN000003",
+                        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_gartner.png",
+                        video: "",
+                        thumbnail: ""
+                    },
+                    {
+                        id: 4,
+                        language: 'vi',
+                        code: "PG003.7SE00006CN000004",
+                        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                        description: "",
+                        slug: "",
+                        content: "",
+                        image: "/images/logo_forrester",
+                        video: "",
+                        thumbnail: ""
+                    }
+        
+                ]
+            }
             export const TYO_CI_Section7 = {
                 section: {
                     id: 7,
-                    name: '',
+                    name: 'Những khách hàng đã hài lòng',
                     code: "TPG003.7SE00007",
-                    image: "",
+                    image: "/images/TYO_CIsection7.png",
                     description: ""
             
                 },
@@ -1068,14 +1245,37 @@ export const TYO_CI_Section2 = {
                         id: 1,
                         language: 'vi',
                         code: "PG003.7SE00007CN000001",
-                        title: "Những khách hàng đã hài lòng",
-                        description: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng ",
+                        title: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng",
+                        description: "Majesco//Nguyễn Anh Huy ",
                         slug: "",
                         content: "",
-                        image: "/images/TYO_CIsection7.png",
+                        image: "/images/icon1.png",
                         video: "",
                         thumbnail: ""
                     },]
+                }
+                export const TYO_CI_Section8 = {
+                    section: {
+                        id: 8,
+                        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+                        code: "TPG003.6SE00008",
+                        image: "",
+                        description: ""
+                    },
+                    components: [
+                        {
+                            id: 1,
+                            language: 'vi',
+                            code: "PG003.6SE00008CN000001",
+                            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                            slug: "",
+                            content: "",
+                            image: "/images/TYO_BCsection3.png",
+                            video: "",
+                            thumbnail: ""
+                        }
+                    ]
                 }
             export const TYO_CA_Section1 = {
                 section: {
@@ -1288,6 +1488,112 @@ export const TYO_CI_Section2 = {
                                         thumbnail: ""
                                     },]
                                 }
+                                export const TYO_CA_Section6 = {
+                                    section: {
+                                        id: 6,
+                                        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+                                        code: "TPG003.8SE00006",
+                                        image: "",
+                                        description: "We are trusted partner for your digital transformation"
+                                    },
+                                    components: [
+                                        {
+                                            id: 1,
+                                            language: 'vi',
+                                            code: "PG003.8SE00006CN000001",
+                                            title: "Tập trung vào giá trị",
+                                            description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_TYO_CB.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        },
+                                        {
+                                            id: 2,
+                                            language: 'vi',
+                                            code: "PG003.8SE00006CN000002",
+                                            title: "Làm việc như một đối tác linh hoạt",
+                                            description: "Chúng tôi biến đổi bằng cách hành động, mang lại những chiến thắng nhanh chóng chứng minh giá trị từ ban đầu",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_TYO_CB.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        },
+                                        {
+                                            id: 3,
+                                            language: 'vi',
+                                            code: "PG003.8SE00006CN000003",
+                                            title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+                                            description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_TYO_CB.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        }
+                                    ]
+                                }
+                                export const TYO_CA_Section7 = {
+                                    section: {
+                                        id: 7,
+                                        name: 'Trang bị công nghệ giải pháp cho ngành dầu khí!',
+                                        code: "TPG003.8SE00007",
+                                        image: "/images/TYO_CGsection1.png",
+                                        description: ""
+                                
+                                    },
+                                    components: [
+                                        {
+                                            id: 1,
+                                            language: 'vi',
+                                            code: "PG003.8SE00007CN000001",
+                                            title: "",
+                                            description: "",
+                                            slug: "",
+                                            content: "",
+                                            image: "",
+                                            video: "",
+                                            thumbnail: "/images/logo_amos.png"
+                                        },
+                                        {
+                                            id: 2,
+                                            language: 'vi',
+                                            code: "PG003.8SE00007CN000002",
+                                            title: "",
+                                            description: "",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_sap.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        },
+                                        {
+                                            id: 3,
+                                            language: 'vi',
+                                            code: "PG003.8SE00007CN000003",
+                                            title: "",
+                                            description: "",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_amadus.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        },
+                                        {
+                                            id: 4,
+                                            language: 'vi',
+                                            code: "PG003.8SE00007CN000004",
+                                            title: "",
+                                            description: "",
+                                            slug: "",
+                                            content: "",
+                                            image: "/images/logo_legstate.png",
+                                            video: "",
+                                            thumbnail: ""
+                                        },]
+                                    }
                                 export const TYO_CG_Section1 = {
                                     section: {
                                         id: 1,
@@ -1337,9 +1643,9 @@ export const TYO_CI_Section2 = {
                                         export const TYO_CA_Section8 = {
                                             section: {
                                                 id: 7,
-                                                name: '',
+                                                name: 'Những khách hàng đã hài lòng',
                                                 code: "TPG003.7SE00007",
-                                                image: "",
+                                                image: "/images/TYO_CIsection7.png",
                                                 description: ""
                                         
                                             },
@@ -1348,11 +1654,11 @@ export const TYO_CI_Section2 = {
                                                     id: 1,
                                                     language: 'vi',
                                                     code: "PG003.7SE00007CN000001",
-                                                    title: "Những khách hàng đã hài lòng",
-                                                    description: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng ",
+                                                    title: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng",
+                                                    description: "Majesco//Nguyễn Anh Huy ",
                                                     slug: "",
                                                     content: "",
-                                                    image: "/images/TYO_CIsection7.png",
+                                                    image: "/images/icon1.png",
                                                     video: "",
                                                     thumbnail: ""
                                                 },]
@@ -1381,6 +1687,29 @@ export const TYO_CI_Section2 = {
                                                         thumbnail: ""
                                                     },]
                                                 }
+                                                export const TYO_CA_Section9 = {
+                                                    section: {
+                                                        id: 8,
+                                                        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+                                                        code: "TPG003.6SE00008",
+                                                        image: "",
+                                                        description: ""
+                                                    },
+                                                    components: [
+                                                        {
+                                                            id: 1,
+                                                            language: 'vi',
+                                                            code: "PG003.6SE00008CN000001",
+                                                            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                                                            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                                                            slug: "",
+                                                            content: "",
+                                                            image: "/images/TYO_BCsection3.png",
+                                                            video: "",
+                                                            thumbnail: ""
+                                                        }
+                                                    ]
+                                                }
                                                 export const TYO_CG_Section4 = {
                                                     section: {
                                                         id: 4,
@@ -1395,8 +1724,8 @@ export const TYO_CI_Section2 = {
                                                             id: 1,
                                                             language: 'vi',
                                                             code: "PG003.9SE00004CN000001",
-                                                            title: "",
-                                                            description: "",
+                                                            title: "Hệ thống quản lý kinh doanh",
+                                                            description: "Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí",
                                                             slug: "",
                                                             content: "",
                                                             image: "",
@@ -1404,10 +1733,10 @@ export const TYO_CI_Section2 = {
                                                             thumbnail: ""
                                                         },
                                                         {
-                                                            id: 1,
+                                                            id: 2,
                                                             language: 'vi',
                                                             code: "PG003.9SE00004CN000002",
-                                                            title: "",
+                                                            title: "Quản lý tài sản thông minh",
                                                             description: "",
                                                             slug: "",
                                                             content: "",
@@ -1416,10 +1745,10 @@ export const TYO_CI_Section2 = {
                                                             thumbnail: ""
                                                         },
                                                         {
-                                                            id: 1,
+                                                            id: 3,
                                                             language: 'vi',
                                                             code: "PG003.9SE00004CN000003",
-                                                            title: "",
+                                                            title: "Mở rộng API RBI cho quản lý Tài sản Thông minh",
                                                             description: "",
                                                             slug: "",
                                                             content: "",
@@ -1428,10 +1757,10 @@ export const TYO_CI_Section2 = {
                                                             thumbnail: ""
                                                         },
                                                         {
-                                                            id: 1,
+                                                            id: 4,
                                                             language: 'vi',
                                                             code: "PG003.9SE00004CN000004",
-                                                            title: "",
+                                                            title: "Giải pháp Connected Depot by Implico tối ưu quản lý các kho dầu khí",
                                                             description: "",
                                                             slug: "",
                                                             content: "",
@@ -1440,7 +1769,135 @@ export const TYO_CI_Section2 = {
                                                             thumbnail: ""
                                                         },]
                                                     }   
-                                                   
+                                                    export const TYO_CG_Section5 = {
+                                                        section: {
+                                                            id: 5,
+                                                            name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+                                                            code: "TPG003.9SE00005",
+                                                            image: "",
+                                                            description: "NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam."
+                                                        },
+                                                        components: [
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.9SE00005CN000001",
+                                                                title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                                                                description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "/images/TYO_BCsection3.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },
+                                                            
+                                                        ]
+                                                    }
+                                                   export const TYO_CG_Section6 = {
+                                                        section: {
+                                                            id: 6,
+                                                            name: 'Đối tác đồng hành cùng NGS',
+                                                            code: "TPG003.8SE00006",
+                                                            image: "/images/TYO_CGsection1.png",
+                                                            description: ""
+                                                    
+                                                        },
+                                                        components: [
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.9SE00006CN000001",
+                                                                title: "",
+                                                                description: "",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "",
+                                                                video: "",
+                                                                thumbnail: "/images/logo_3CX.png"
+                                                            },
+                                                            {
+                                                                id: 2,
+                                                                language: 'vi',
+                                                                code: "PG003.9SE00006CN000002",
+                                                                title: "",
+                                                                description: "",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "/images/logo_odoo.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },
+                                                            {
+                                                                id: 3,
+                                                                language: 'vi',
+                                                                code: "PG003.9SE00006CN000003",
+                                                                title: "",
+                                                                description: "",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "/images/logo_genesys.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },
+                                                            {
+                                                                id: 4,
+                                                                language: 'vi',
+                                                                code: "PG003.9SE00006CN000004",
+                                                                title: "",
+                                                                description: "",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "/images/logo_saleforce.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            },]
+                                                        }
+                                                        export const TYO_CG_Section7 = {
+                                                            section: {
+                                                                id: 7,
+                                                                name: 'Những khách hàng đã hài lòng',
+                                                                code: "TPG003.9SE00007",
+                                                                image: "/images/TYO_CIsection7.png",
+                                                                description: ""
+                                                        
+                                                            },
+                                                            components: [
+                                                                {
+                                                                    id: 1,
+                                                                    language: 'vi',
+                                                                    code: "PG003.9SE00007CN000001",
+                                                                    title: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng",
+                                                                    description: "Majesco//Nguyễn Anh Huy ",
+                                                                    slug: "",
+                                                                    content: "",
+                                                                    image: "/images/icon1.png",
+                                                                    video: "",
+                                                                    thumbnail: ""
+                                                                },]
+                                                            }
+                                                            export const TYO_CG_Section8 = {
+                                                                section: {
+                                                                    id: 8,
+                                                                    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+                                                                    code: "TPG003.9SE00008",
+                                                                    image: "",
+                                                                    description: ""
+                                                                },
+                                                                components: [
+                                                                    {
+                                                                        id: 1,
+                                                                        language: 'vi',
+                                                                        code: "PG003.9SE00008CN000001",
+                                                                        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                                                                        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                                                                        slug: "",
+                                                                        content: "",
+                                                                        image: "/images/TYO_BCsection3.png",
+                                                                        video: "",
+                                                                        thumbnail: ""
+                                                                    }
+                                                                ]
+                                                            }
                                                     export const TYO_ADM_Section1 = {
                                                         section: {
                                                             id: 1,
@@ -1599,7 +2056,7 @@ export const TYO_CI_Section2 = {
                                                         section: {
                                                             id: 7,
                                                             name: 'Những khách hàng đã hài lòng',
-                                                            code: "TPG003.6SE00007",
+                                                            code: "TPG003.19SE00006",
                                                             image: "",
                                                             description: "FIS Global, Temenos, Intellect, Finastra... cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng, cũng như số lượng khách hàng hiện hữu, gia tăng doanh thu và lợi nhuận, và đồng thời gia tăng số lượng khách hàng tiềm năng tại BIDV, VPBank, Techcombank..., và sắp tới tại các doanh nghiệp là ngân hàng lớn khác"
                                                         },
@@ -1607,7 +2064,7 @@ export const TYO_CI_Section2 = {
                                                             {
                                                                 id: 1,
                                                                 language: 'vi',
-                                                                code: "PG003.6SE00007CN000001",
+                                                                code: "PG003.19SE00006CN000001",
                                                                 title: "",
                                                                 description: "",
                                                                 content: "",
@@ -1616,9 +2073,9 @@ export const TYO_CI_Section2 = {
                                                                 thumbnail: ""
                                                             },
                                                             {
-                                                                id: 1,
+                                                                id: 2,
                                                                 language: 'vi',
-                                                                code: "PG003.6SE00007CN000001",
+                                                                code: "PG003.19SE00006CN000003",
                                                                 title: "",
                                                                 description: "",
                                                                 content: "",
@@ -1627,9 +2084,9 @@ export const TYO_CI_Section2 = {
                                                                 thumbnail: ""
                                                             },
                                                             {
-                                                                id: 1,
+                                                                id: 3,
                                                                 language: 'vi',
-                                                                code: "PG003.6SE00007CN000001",
+                                                                code: "PG003.19SE00006CN000003",
                                                                 title: "",
                                                                 description: "",
                                                                 content: "",
@@ -1639,3 +2096,26 @@ export const TYO_CI_Section2 = {
                                                             }
                                                         ]
                                                     } 
+                                                    export const TYO_ADM_Section7 = {
+                                                        section: {
+                                                            id: 7,
+                                                            name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+                                                            code: "TPG003.19SE00007",
+                                                            image: "",
+                                                            description: ""
+                                                        },
+                                                        components: [
+                                                            {
+                                                                id: 1,
+                                                                language: 'vi',
+                                                                code: "PG003.19SE00007CN000001",
+                                                                title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+                                                                description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+                                                                slug: "",
+                                                                content: "",
+                                                                image: "/images/TYO_BCsection3.png",
+                                                                video: "",
+                                                                thumbnail: ""
+                                                            }
+                                                        ]
+                                                    }
