@@ -168,11 +168,11 @@ p {
 }
 @media only screen and (min-width: 600px) {
   .List.one {
-    width: 1000px;
-    grid-template-columns: 0.75fr 1fr;
+    width: 1200px;
+    grid-template-columns: 0.75fr 1.25fr;
   }
   .List.two {
-    width: 1000px;
+    width: 1200px;
     grid-auto-flow: column;
     grid-template-rows: repeat(3, 1fr);
   }

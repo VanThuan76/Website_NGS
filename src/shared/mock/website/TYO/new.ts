@@ -17,6 +17,9 @@ export const TYOBanner1_PG4_1 = {
         code: "PG0004SE00001",
         image: "/images/SECURE_banner_page4_1.png",
         description: "Vệ sỹ số 24/7 của Bạn"
+    },
+    components: []
+}
 export const TYOBanner1_PG3_11 = {
     section: {
         id: 1,
@@ -46,6 +49,9 @@ export const TYOBanner1_PG4_2 = {
         code: "PG0004_2SE00001",
         image: "/images/SECURE_banner_page4_2.png",
         description: "Bảo vệ Tài Sản Số của bạn với dịch vụ Kiểm Thử Xâm Nhập của chúng tôi."
+    },
+    components: []
+}
 export const TYOBanner1_PG3_13 = {
     section: {
         id: 1,
@@ -64,6 +70,9 @@ export const TYOBanner1_PG4_3 = {
         code: "PG0004_3SE00001",
         image: "/images/SECURE_banner_page4_3.png",
         description: "Phát hiện các hành động tấn công đang diễn ra hoặc lịch sử trong hệ thống của bạn."
+    },
+    components: []
+}
 export const TYOBanner1_PG3_14 = {
     section: {
         id: 1,
@@ -98,17 +107,7 @@ export const TYOBanner1_PG3_16 = {
     components: []
 }
 
-export const TYOBanner1_PG3_17 = {
-    section: {
-        id: 1,
-        name: 'Dữ liệu và phân tích',
-        code: "PG0003_17SE00001",
-        image: "/images/background_1.png",
-        description: "Cung cấp mục tiêu và triển khai chiến lược về dữ liệu của doanh nghiệp!"
 
-    },
-    components: []
-}
 
 export const TYOOverview5 = {
     section: {
@@ -810,7 +809,6 @@ export const TYOWhyUs1_PG4_3 = {
     ]
 }
 
-export const TYOForm1 = {
 export const TYOWhyUs1_PG3_10 = {
     section: {
         id: 6,
@@ -1652,4 +1650,7 @@ export const TYOService5 = {
         },
     ]
 }
+export const TYOBanner1 = {
+    sections: {},
+    components: []
 }

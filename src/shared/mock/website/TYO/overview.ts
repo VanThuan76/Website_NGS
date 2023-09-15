@@ -9,7 +9,6 @@ export const TYOOverview1 = {
     },
     components: []
 }
-
 export const TYOOverview2 = {
     section: {
         id: 2,
@@ -693,6 +692,7 @@ export const TYOService4 = {
         },
     ]
 }
+
 export const TYOOverview2_PG3_10 = {
     section: {
         id: 2,
@@ -783,7 +783,6 @@ export const TYOOverview1_PG4_2 = {
     },
     components: []
 }
-
 
 export const TYOService3_PG4_1 = {
     section: {
@@ -930,52 +929,81 @@ export const TYOClientStories2_Secure = {
         name: 'Những khách hàng đã hài lòng',
         code: "PG0004SE00008",
         image: "",
-        description: "",
-        code: "PG003.14SE00004CN000002",
-        title: "Hỗ trợ nhân viên về mọi mặt",
-        description: "Bộ giải pháp hàng không",
-        slug: "",
-        content: "",
-        image: "/images/background_1.png",
-        video: "",
-        thumbnail: ""
-        },
+        description: ""
+
+    },
+    components: [
         {
-            id: 3,
+            id: 1,
             language: 'vi',
-            code: "PG003.14SE00004CN000003",
-            title: "Thích ứng nhanh chóng",
-            description: "Bộ giải pháp hàng không",
+            code: "PG0004SE00008CN000001",
+            title: "",
+            description: "",
             slug: "",
             content: "",
-            image: "/images/background_1.png",
+            image: "/images/SEC_pvgas.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004SE00008CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pv.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0004SE00008CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_lpbank.png",
             video: "",
             thumbnail: ""
         },
         {
             id: 4,
             language: 'vi',
-            code: "PG003.14SE00004CN000004",
-            title: "Đưa ra quyết định thông minh",
-            description: "Bộ giải pháp hàng không",
+            code: "PG0004SE00008CN000004",
+            title: "",
+            description: "",
             slug: "",
             content: "",
-            image: "/images/background_1.png",
+            image: "/images/SEC_bidv.png",
             video: "",
             thumbnail: ""
         },
         {
             id: 5,
             language: 'vi',
-            code: "PG003.14SE00004CN000005",
-            title: "Triển khai các quản lý quy trình",
-            description: "Bộ giải pháp hàng không",
+            code: "PG0004SE00008CN000005",
+            title: "",
+            description: "",
             slug: "",
             content: "",
-            image: "/images/background_1.png",
+            image: "/images/SEC_pvcfc.png",
             video: "",
             thumbnail: ""
-        }
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG0004SE00008CN000006",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_petro_biendong.png",
+            video: "",
+            thumbnail: ""
+        },
     ]
 }
 
@@ -1149,12 +1177,6 @@ export const TYOClientStories2_PG3_10 = {
             slug: "",
             content: "",
             image: "",
-            code: "PG003.10SE00008CN000001",
-            title: "",
-            description: "",
-            slug: "",
-            content: "",
-            image: "/images/TYO_pvgas.png",
             video: "",
             thumbnail: ""
         },
@@ -1208,7 +1230,6 @@ export const TYOClientStories2_PG3_10 = {
             slug: "",
             content: "",
             image: "",
-            code: "PG003.10SE00008CN000004",
             title: "",
             description: "",
             slug: "",
@@ -1318,7 +1339,7 @@ export const TYOOverview4_PG3_11 = {
         name: 'Xây dựng chuỗi cung ứng để chống chọi với các thay đổi',
         code: "PG003.11SE00003",
         image: "",
-        description: "
+        description: ""
     },
     components: [
         {
