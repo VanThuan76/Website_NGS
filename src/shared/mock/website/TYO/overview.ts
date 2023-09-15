@@ -326,7 +326,7 @@ export const TYOchallenge1 = {
         {
             id: 1,
             language: 'vi',
-            code: "PG003SE00003CN000001",
+            code: "CPN12312",
             title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
             description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại. Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
             slug: "",
@@ -334,7 +334,7 @@ export const TYOchallenge1 = {
             image: "/images/background_1.png",
             video: "",
             thumbnail: ""
-        },
+        }
     ]
 }
 export const TYOchallenge2 = {
