@@ -225,7 +225,7 @@ export const TYO_ADM_Section7 = {
 export const TYO_CA_Section1 = {
     section: {
         id: 1,
-        name: 'Chúng tôi hợp tác với đối tác chiến lược hàng đầu trên thế giới để tạo ra trải nghiệm du lịch tốt hơn cho khách hàng!',
+        name: 'Chúng tôi hợp tác với đối tác chiến lược hàng đầu trên thế giới để tạo ra trải nghiệm du lịch tốt hơn cho hành khách!',
         code: "TPG003.8SE00001",
         image: "/images/TYO_CAsection1.png",
         description: ""
