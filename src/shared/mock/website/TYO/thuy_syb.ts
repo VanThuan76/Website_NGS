@@ -174,7 +174,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_fujitsu.png",
+            image: "/images/logo_fujitsu_thuy.png",
             video: "",
             thumbnail: ""
         },
@@ -186,7 +186,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_fis.png",
+            image: "/images/logo_fis_thuy.png",
             video: "",
             thumbnail: ""
         }, {
@@ -197,7 +197,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_microsoft.png",
+            image: "/images/logo_microsoft_thuy.png",
             video: "",
             thumbnail: ""
         },
@@ -209,7 +209,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_vinasoy.png",
+            image: "/images/logo_vinasoy_thuy.png",
             video: "",
             thumbnail: ""
         },
@@ -221,7 +221,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_topica.png",
+            image: "/images/logo_topica_thuy.png",
             video: "",
             thumbnail: ""
         },
@@ -233,7 +233,7 @@ export const SYB_TI_Section6 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/logo_bidv.png",
+            image: "/images/logo_bidv_thuy.png",
             video: "",
             thumbnail: ""
         },
