@@ -23,7 +23,7 @@ const CCPage = () => {
       <BannerDesignTwoSection breadcrumb={["Trang chủ", "Dịch vụ xuất sắc", "Contact Center"]} data={TYO_CC_Banner}/>
       <OverviewDesignThreeSection title='Tổng quan' data={TYO_CC_Section2} />
       <ChallengeDesignOneSection title='Thách thức' data={TYO_CC_Section3} />
-      <ServiceDesignTwoSetion title='Our Service & Solution' data={TYO_CC_Section4} />
+      <ServiceDesignTwoSetion title='Dịch vụ của chúng tôi' data={TYO_CC_Section4} />
       <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CC_Section5}/>
       <PartnerDesignThreeSection data={TYO_CC_Section6}/>
       <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8}/>

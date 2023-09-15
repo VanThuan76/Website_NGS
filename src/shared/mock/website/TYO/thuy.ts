@@ -4,7 +4,7 @@ export const TYO_DSP_Banner = {
         name: 'Thế giới số là thế giới lấy con người làm trung tâm.',
         code: "PG003.1SE00001",
         image: "/images/PG003.1SE00001.png",
-        description: "Bạn đã sẵn sàng bắt đầu hành trình Chuyển đổi số chưa?"
+        description: "Bạn đã sẵn sàng bắt đầu hành trình Chuyển đổi số của mình chưa?"
     },
     components: []
 }
@@ -15,7 +15,7 @@ export const TYO_DSP_Section2 = {
         name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
         code: "PG003.1SE00002",
         image: "/images/Image_OverviewDesignFIveSection.png",
-        description: "Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường. // Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường."
+        description: "Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường. // NGS cung cấp dịch vụ chuyên nghiệp về chuyển đổi số với hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Chiến lược Kỹ thuật số là bước quan trọng đầu tiên để thúc đẩy quá trình chuyển đổi số."
     },
     components: [
     ]
@@ -24,7 +24,7 @@ export const TYO_DSP_Section2 = {
 export const TYO_DSP_Section3 = {
     section: {
         id: 3,
-        name: 'Những thách thức trong thời đại công nghệ số',
+        name: 'Thách thức bạn có thể gặp phải',
         code: "PG003.1SE00003",
         image: "",
         description: ""
@@ -100,7 +100,7 @@ export const TYO_DSP_Section5 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG003.1SE00005",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn:"
     },
     components: [
         {
@@ -108,7 +108,7 @@ export const TYO_DSP_Section5 = {
             language: 'vi',
             code: "PG003.1SE00005CN000001",
             title: "Tập trung vào giá trị",
-            description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn",
+            description: "Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững.",
             slug: "",
             content: "",
             image: "/images/PG003.1SE00004.png",
@@ -132,7 +132,7 @@ export const TYO_DSP_Section5 = {
             language: 'vi',
             code: "PG003.1SE00005CN000003",
             title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
-            description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+            description: "Chúng tôi giúp khách hàng từ chiến lược đến thực thi.",
             slug: "",
             content: "",
             image: "/images/PG003.1SE00004.png",
@@ -253,10 +253,10 @@ export const TYO_CDP_Banner = {
 export const TYO_CDP_Section2 = {
     section: {
         id: 2,
-        name: 'Tổng quan về CDP - Customer Data Platform',
+        name: 'CDP - Customer Data Platform',
         code: "PG003.2SE00002",
         image: "",
-        description: "CDP đã tồn tại hơn một thập kỷ nhưng bắt đầu trở nên phổ biến vào năm 2016 khi các doanh nghiệp B2C tập trung cao độ  xử lý khối lượng lớn dữ liệu giao dịch, nhân khẩu học và hành vi. CDP được triển khai và áp dụng nhanh chóng, rộng rãi đối với tất cả các ngành, điển hình như Bán lẻ, Nhà hàng, Du lịch & Khách sạn, Truyền thông & Giải trí. // Giải pháp CDP thông thường bao gồm cơ sở dữ liệu khách hàng, tự động hóa tiếp thị, quản lý chiến dịch đa kênh và quản lý tương tác theo thời gian thực. CDP sẽ cần cho Doanh nghiệp khi cần cơ sở dữ liệu tiếp thị gắn với dữ liệu cấp người dùng. Để hiểu rõ nhất về giải pháp này, NGS đã phân tích và xem xét một số thách thức cơ bản trong tiếp thị đã dẫn đến sự nổi bật của CDP."
+        description: "Nền tảng dữ liệu khách hàng đã tồn tại hơn một thập kỷ nhưng bắt đầu trở nên phổ biến vào năm 2016 khi các doanh nghiệp B2C tập trung cao độ  xử lý khối lượng lớn dữ liệu giao dịch, nhân khẩu học và hành vi. CDP được triển khai và áp dụng nhanh chóng, rộng rãi đối với tất cả các ngành, điển hình như Bán lẻ, Nhà hàng, Du lịch & Khách sạn, Truyền thông & Giải trí. // Giải pháp CDP thông thường bao gồm cơ sở dữ liệu khách hàng, tự động hóa tiếp thị, quản lý chiến dịch đa kênh và quản lý tương tác theo thời gian thực. CDP sẽ cần cho Doanh nghiệp khi cần cơ sở dữ liệu tiếp thị gắn với dữ liệu cấp người dùng."
 
     },
     components: []
@@ -508,7 +508,7 @@ export const TYO_CRM_Section7 = {
             title: "Head of Design",
             description: "Nguyễn Anh Huy",
             slug: "",
-            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
+            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng,...",
             image: "/images/Ellipse.png",
             video: "",
             thumbnail: ""
@@ -520,7 +520,7 @@ export const TYO_CRM_Section7 = {
             title: "Head of Design",
             description: "Nguyễn Anh Huy",
             slug: "",
-            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
+            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng,...",
             image: "/images/Ellipse.png",
             video: "",
             thumbnail: ""
@@ -565,7 +565,7 @@ export const TYO_CC_Section3 = {
             language: 'vi',
             code: "PG003.4SE00003CN000001",
             title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
-            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại // Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
+            description: "Nền kinh tế thế giới đã chuyển sang giai đoạn cạnh tranh bằng trải nghiệm thay thế cho dịch vụ khách hàng truyền thống. Mọi hoạt động chuyển đổi số đều hướng tới con người ở trung tâm với mục tiêu công nghệ vị nhân sinh. // Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
             slug: "",
             content: "",
             image: "/images/PG003.4SE00003CN000001.png",
@@ -578,7 +578,7 @@ export const TYO_CC_Section3 = {
 export const TYO_CC_Section4 = {
     section: {
         id: 4,
-        name: 'Our products and solution',
+        name: 'NDUC- NGS Digital Unified Communications là giải pháp hoàn chỉnh để kết nối khách hàng bao gồm nhiều cấu phần như:',
         code: "PG003.4SE00004",
         image: "",
         description: ""
@@ -601,8 +601,8 @@ export const TYO_CC_Section4 = {
             id: 2,
             language: 'vi',
             code: "PG003.4SE00004CN000002",
-            title: "NDUC CRM",
-            description: "Hệ thống tổng đài ảo thông minh",
+            title: "NDUC Integration",
+            description: "Phương thức tích hợp đa dạng, đa nền tảng (CRM và Omni Channel), hỗ trợ cả Voice AI và Chatbot",
             slug: "",
             content: "",
             image: "/images/background_1.png",
@@ -612,20 +612,8 @@ export const TYO_CC_Section4 = {
             id: 3,
             language: 'vi',
             code: "PG003.4SE00004CN000003",
-            title: "NDUC Integration",
-            description: "Hệ thống tổng đài ảo thông minh",
-            slug: "",
-            content: "",
-            image: "/images/background_1.png",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 4,
-            language: 'vi',
-            code: "PG003.4SE00004CN000004",
-            title: "NDUC Integration",
-            description: "Hệ thống tổng đài ảo thông minh",
+            title: "NDUC Outsourcing",
+            description: "Bên cạnh giải pháp, với nhiều năm kinh nghiệm triển khai hệ thống chăm sóc khách hàng cho đa dạng khách hàng với nhiều ngành khác nhau, NGS sẵn sàng đồng hành cùng bạn trong việc tư vấn và xây dựng quy trình, cung cấp nhân lực chăm sóc khách hàng chuyên nghiệp bài bản cho doanh nghiệp của bạn.",
             slug: "",
             content: "",
             image: "/images/background_1.png",
@@ -660,7 +648,7 @@ export const TYO_CC_Section6 = {
         {
             id: 1,
             language: 'vi',
-            code: "CPN12312",
+            code: "PG003.4SE00006CN000001",
             title: "Công ty TNHH Fivetran",
             description: "Đối tác hạng đồng",
             slug: "",
@@ -701,6 +689,149 @@ export const TYO_CC_Section6 = {
             slug: "",
             content: "",
             image: "/images/logo_salesforce.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_RF_Banner = {
+    section: {
+        id: 1,
+        name: 'Giải phóng tiềm năng không giới hạn của bạn với Nhân Sự của chúng tôi',
+        code: "PG003.5SE00001",
+        image: "/images/TYO_RF_Banner.png",
+        description: ""
+
+    },
+    components: []
+}
+
+export const TYO_RF_Section2 = {
+    section: {
+        id: 1,
+        name: 'Tổng quan về cho thuê nguồn lực cao cấp',
+        code: "PG003.5SE00002",
+        image: "",
+        description: "Bạn đã sẵn sàng để đưa dự án của mình lên một tầm cao mới? Dịch vụ cung cấp Nhân lực của NGS giúp tăng cường năng lực đội ngũ và thúc đẩy sự thành công của dự án."
+    },
+    components: []
+}
+
+export const TYO_RF_Section3 = {
+    section: {
+        id: 4,
+        name: 'How we work',
+        code: "PG003.5SE00003",
+        image: "/images/background_orange.png",
+        description: "Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.5SE00003CN000001",
+            title: "Cho thuê nhân sự",
+            content: "NGS cung cấp nguồn nhân lực chất lượng cao phù hợp với quy mô dự án của bạn. Với tiêu chí Linh Hoạt - Tốc Độ - Hiệu Quả, dịch vụ này nhằm giúp bạn tăng cường khả năng của đội phát triển của bạn với chi phí cạnh tranh nhất.",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.5SE00003CN000002",
+            title: "Triển khai dự án theo yêu cầu",
+            content: "Với mỗi dự án, chúng tôi luôn đặt mình vào vị trí của bạn. Với các dự án dài hạn, NGS sẽ cung cấp các đội chuyên gia để tiếp nhận yêu cầu, lên kế hoạch và bàn giao những sản phẩm chất lượng trong đúng thời gian.",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.5SE00003CN000003",
+            title: "Trung tâm phát triển phần mềm",
+            content: "Xây dựng đội ngũ phát triển phần mềm của bạn ở nước ngoài nhằm giảm chi phí trong khi vẫn đảm bảo các sản phẩm được bàn giao có chất lượng cao và tích hợp liền mạch với tổ chức của bạn. Chúng tôi hướng đến việc nâng tầm chiến lược, tầm nhìn và doanh nghiệp của bạn.",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYO_RF_Section4 = {
+    section: {
+        id: 5,
+        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+        code: "PG003.5SE00004",
+        image: "",
+        description: "We are trusted partner for your digital transformation"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.5SE00004CN000001",
+            title: "Chuyên gia hàng đầu",
+            description: "Tiếp cận nguồn nhân lực hơn 1000 chuyên gia hàng đầu.",
+            slug: "",
+            content: "",
+            image: "/images/PG004.4SE00005.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.5SE00004CN000002",
+            title: "Kỹ năng đa dạng",
+            description: "Bộ kỹ năng đa dạng đáp ứng các yêu cầu công nghệ khác nhau của dự án.",
+            slug: "",
+            content: "",
+            image: "/images/PG004.4SE00005.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.5SE00004CN000003",
+            title: "Mở rộng quy mô linh hoạt",
+            description: "Dễ dàng điều chỉnh số lượng nhân sự dựa trên nhu cầu của dự án",
+            slug: "",
+            content: "",
+            image: "/images/PG004.4SE00005.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.5SE00004CN000004",
+            title: "Tích hợp nhân sự dễ dàng",
+            description: "Tích hợp liền mạch với đội ngũ hiện tại.",
+            slug: "",
+            content: "",
+            image: "/images/PG004.4SE00005.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.5SE00004CN000005",
+            title: "Chi phí - Hiệu quả",
+            description: "Tối ưu chi phí nhân sự, tăng hiệu quả quản trị nội bộ.",
+            slug: "",
+            content: "",
+            image: "/images/PG004.4SE00005.png",
             video: "",
             thumbnail: ""
         },
