@@ -3160,3 +3160,365 @@ export const TYOClientStories2_Secure = {
         },
     ]
 }
+
+export const TYOForm1_PG3_10 = {
+    section: {
+        id: 9,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_10SE00009",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_11 = {
+    section: {
+        id: 9,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_11SE00009",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_12 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_12SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_13 = {
+    section: {
+        id: 9,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_13SE00009",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_14 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_14SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_15 = {
+    section: {
+        id: 9,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_15SE00009",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOService2_PG3_15 = {
+    section: {
+        id: 5,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0003_15SE00005",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0003_15SE00005CN000001",
+            title: "Hệ thống quản lý kinh doanh",
+            description: "",
+            slug: "",
+            content: "Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0003_15SE00005CN000002",
+            title: "",
+            description: "Quản lý tài sản thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0003_15SE00005CN000003",
+            title: "",
+            description: "Mở rộng API RBI cho quản lý Tài sản Thông minh",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG0003_15SE00005CN000004",
+            title: "",
+            description: "Giải pháp Connected Depot by Implico tối ưu quản lý các kho dầu khí",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOForm1_PG3_16 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_16SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG3_17 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0003_17SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOchallenge3_PG4_1 = {
+    section: {
+        id: 3,
+        name: 'Vận hành một trung tâm an ninh đòi hỏi rất nhiều thứ',
+        code: "PG0004_1SE00003",
+        image: "/images/SEC_4_1_sec3.png",
+        description: " Công ty của bạn muốn đầu tư xây dựng phòng an toàn và mạng lưới đảm bảo để thuận tiện cho chức năng đó, điều này sẽ cần thiết vì dữ liệu bí mật đang được xử lý và thảo luận? Tuy nhiên không phải công ty nào cũng có đủ khả năng để xây dựng hệ thống SOC như vậy, bởi vì khoản đầu tư đơn giản là quá cao so với rủi ro liên quan"
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG4_1 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0004_1SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOForm1_PG4_2 = {
+    section: {
+        id: 9,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0004_2SE00009",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+
+export const TYOService2_PG4_2 = {
+    section: {
+        id: 5,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0004_2SE00005",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_2SE00005CN000001",
+            title: "White box",
+            description: "",
+            slug: "",
+            content: "Đội ngũ an ninh mạng NGS giám sát hệ thống CNTT của bạn 24/7 suốt 365 ngày trong năm nhằm phát hiện sớm sự cố và ngăn chặn kịp thời các nguy cơ có thể xảy ra.",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_2SE00005CN000002",
+            title: "",
+            description: "Black box",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_2SE00005CN000003",
+            title: "",
+            description: "Gray box",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG0004_2SE00005CN000004",
+            title: "",
+            description: "Khai thác các lỗ hổng 0-days",
+            slug: "",
+            content: "",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOService5_PG4_3 = {
+    section: {
+        id: 3,
+        name: 'Dịch vụ của chúng tôi',
+        code: "PG0004_3SE00003",
+        image: "/images/background_1.png",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000001",
+            title: "",
+            content: "Thảo luận với khách hàng về mối quan tâm, mục tiêu và bất kỳ sự cố bảo mật nào",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000002",
+            title: "",
+            content: "Chuẩn bị: Thu thập thông tin về mạng, cơ sở hạ tầng, kiến trúc sư hệ thống và các biện pháp bảo mật hiện tại",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000003",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "- Thu thập dữ liệu: Thu thập nhật ký, sự kiện, dữ liệu lưu lượng- IOC: Phân tích kiểm tra dữ liệu được thu thập cho các dấu hiệu thỏa hiệp đã biết- Điểm cuối và phân tích hệ thống: Kiểm tra các điểm cuối và hệ thống cho các hoạt động nghi ngờ- Điều tra sự cố: Tiến hành điều tra chuyên sâu để xác định sự mở rộng và tác động của các vi phạm- Phân tích: Xác định các lỗ hổng và điểm yếu",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000004",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "Báo cáo: Cung cấp một báo cáo chi tiết tóm tắt các phát hiện",
+            slug: "",
+            description: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOclientStories1_PG4_3 = {
+    section: {
+        id: 7,
+        name: 'Những khách hàng đã hài lòng',
+        code: "PG0004_3SE00007",
+        image: "/images/Rectangle 6668132.png",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000001",
+            title: "Head of Design",
+            description: "Nguyễn Anh Huy",
+            slug: "",
+            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa.Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_3SE00003CN000002",
+            title: "Head of Design",
+            description: "Nguyễn Anh Huy",
+            slug: "",
+            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa.Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.",
+            image: "/mockSVG/HO_SECURITY_icon.svg",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
+export const TYOForm1_PG4_3 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "PG0004_3SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+    ]
+}
+

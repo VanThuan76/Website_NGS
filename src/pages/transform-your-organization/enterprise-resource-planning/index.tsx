@@ -10,9 +10,9 @@ import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import {TYOWhyUs1 } from '@/mocks/website/TYO/new';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import { TYOBanner1_PG3_10, TYOClientStories2_PG3_10, TYOOverview2_PG3_10, TYOOverview4_PG3_10, TYOPartner1_PG3_10, TYOService1_PG3_10, TYOWhyUs1_PG3_10, TYOchallenge2_PG3_10 } from '@/mocks/website/TYO/duong';
+import { TYOBanner1_PG3_10, TYOClientStories2_PG3_10, TYOForm1_PG3_10, TYOOverview2_PG3_10, TYOOverview4_PG3_10, TYOPartner1_PG3_10, TYOService1_PG3_10, TYOWhyUs1_PG3_10, TYOchallenge2_PG3_10 } from '@/mocks/website/TYO/duong';
+import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -33,7 +33,7 @@ const ERPPage = () => {
       <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_10}/>
       <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />
-
+      <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_10} />
 
 
 

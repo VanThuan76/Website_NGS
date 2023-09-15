@@ -12,7 +12,8 @@ import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Co
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
-import { TYOBanner1_PG3_14, TYOOverview3_PG3_14, TYOPartner1_PG3_10, TYOService1_PG3_14, TYOWhyUs1_PG3_14, TYOchallenge2_PG3_14, TYOclientStories1_PG3_14 } from '@/mocks/website/TYO/duong';
+import { TYOBanner1_PG3_14, TYOForm1_PG3_14, TYOOverview3_PG3_14, TYOPartner1_PG3_10, TYOService1_PG3_14, TYOWhyUs1_PG3_14, TYOchallenge2_PG3_14, TYOclientStories1_PG3_14 } from '@/mocks/website/TYO/duong';
+import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -32,6 +33,8 @@ const HCMPage = () => {
       <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_14}/>
       <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       <ClientStoriesDesignOneSection title='' data={TYOclientStories1_PG3_14} />
+      <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_14} />
+
 
     </React.Fragment>
     

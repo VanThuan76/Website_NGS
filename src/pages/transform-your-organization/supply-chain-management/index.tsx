@@ -12,7 +12,8 @@ import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Comm
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
-import { TYOBanner1_PG3_11, TYOClientStories2_PG3_11, TYOOverview1_PG3_11, TYOPartner3_PG3_11, TYOService1_PG3_11, TYOWhyUs1_PG3_11 } from '@/mocks/website/TYO/duong';
+import { TYOBanner1_PG3_11, TYOClientStories2_PG3_11, TYOForm1_PG3_11, TYOOverview1_PG3_11, TYOPartner3_PG3_11, TYOService1_PG3_11, TYOWhyUs1_PG3_11 } from '@/mocks/website/TYO/duong';
+import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -33,7 +34,8 @@ const SCMPage = () => {
       <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_11}/>
       <PartnerDesignThreeSection data={TYOPartner3_PG3_11}/>
       <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_11} />
-
+      <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_11} />
+      
       
     </React.Fragment>
     
