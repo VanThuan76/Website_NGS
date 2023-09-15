@@ -10,6 +10,7 @@ import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import { TYO_AMS_Banner, TYO_AMS_Section2, TYO_AMS_Section3, TYO_AMS_Section4, TYO_AMS_Section5, TYO_AMS_Section6, TYO_DSP_Section8 } from '@/mocks/website/TYO/thuy';
+import { SYB_TI_Section9 } from '@/mocks/website/TYO/thuy_syb';
 
 
 const AMSPage = () => {
@@ -26,7 +27,7 @@ const AMSPage = () => {
       <ServiceDesignThreeSection title='Dịch vụ' data={TYO_AMS_Section4} />
       <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_AMS_Section5}/>
       <ClientStoriesDesignTwoSection title='Client stories' data={TYO_AMS_Section6} />
-      <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8}/>
+      <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9}/>
     </React.Fragment>
   );
 };
