@@ -72,7 +72,6 @@ const Component = () => {
       <PartnerDesignTwoSection data={TYOPartner2}/>
       <PartnerDesignOneSection data={TYOPartner1} />
       <PartnerDesignThreeSection data={TYOPartner3}/>
-      <BannerDesignOneSection title="Chuyển đổi số" data={TYOBanner1}/>
       <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1}/>
       <FormDesignOneSection title='Tổng quan' data={TYOForm1}/>
       <BannerDesignTwoSection breadcrumb={["Trang chủ", "Dịch vụ xuất sắc", "Dịch vụ kiểm thử đăng nhập hệ thống"]} data={TYOBanner1}/>
