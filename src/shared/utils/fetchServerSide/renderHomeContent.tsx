@@ -12,10 +12,9 @@ export async function renderHomeContent(language: string, token: string | undefi
       'PG001SE00007',
       'PG001SE00008',
       'PG001SE00009',
-      'PG001SE000010',
-      'PG001SE000011',
-      'PG001SE000012',
-      'PG001SE000013',
+      'PG001SE00011',
+      'PG001SE00012',
+      'PG001SE00013',
     ];
     const getDetailPageById = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/1`, {
       method: 'GET',
@@ -50,11 +49,10 @@ export async function renderHomeContent(language: string, token: string | undefi
       COMMON_SectionNewsData,
       HO_PartnerData,
       HO_TestimonialData,
+      HO_CaseStudy
     ] = await Promise.all(getListComponentBySectionCode);
     const COMMON_NewsData: IBaseResponseSectionComponent | any = await mergeCommonData('/articles/get-top-latest-news', COMMON_SectionNewsData);
-    // const COMMON_EventData: IBaseResponseSectionComponent | any = await mergeCommonData('/events/get-top-latest-events', COMMON_SectionEventData);
-    const COMMON_EventData: IBaseResponseSectionComponent | any = []
-    // const HO_EcosystemData = []
+    const COMMON_EventData: IBaseResponseSectionComponent | any = await mergeCommonData('/events/get-top-latest-events', COMMON_SectionEventData);
     return {
       props: {
         homePageData,
@@ -65,11 +63,11 @@ export async function renderHomeContent(language: string, token: string | undefi
         HO_PioneeringData,
         HO_AboutUsData,
         HO_WhyUsData,
-        // HO_EcosystemData,
         COMMON_EventData,
         COMMON_NewsData,
         HO_PartnerData,
         HO_TestimonialData,
+        HO_CaseStudy,
       },
     };
   } catch (error) {
@@ -89,6 +87,7 @@ export async function renderHomeContent(language: string, token: string | undefi
         COMMON_NewsData: [],
         HO_PartnerData: [],
         HO_TestimonialData: [],
+        HO_CaseStudy: [],
       },
     };
   }

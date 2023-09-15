@@ -13,6 +13,8 @@ import PartnerSection from '@/components/business/website/All_Common/Partner_Sec
 import ConnectUsSection from '@/components/business/website/All_Common/ConnectUs_Section';
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import HomeTestimonialSection from '@/components/business/website/HO/HO_Testimonial_Section';
+import HomeEventSection from '@/components/business/website/HO/HO_Event_Section';
+import HomeCaseStudySection from '@/components/business/website/HO/HO_CaseStudy_Section';
 import { IDetailPageById } from 'src/shared/schemas/typedef/IPage';
 import { GetServerSideProps } from 'next';
 import { APP_SAVE_KEY } from '@/utils/constants';
@@ -22,21 +24,20 @@ import { renderHomeContent } from '@/utils/fetchServerSide/renderHomeContent';
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
-
 type Props = {
   homePageData: IDetailPageById;
-  HO_SolutionData: IBaseSectionComponent;
   HO_BannerData: IBaseSectionComponent;
+  HO_SolutionData: IBaseSectionComponent;
   HO_ServiceData: IBaseSectionComponent;
   HO_SecurityData: IBaseSectionComponent;
   HO_PioneeringData: IBaseSectionComponent;
   HO_AboutUsData: IBaseSectionComponent;
   HO_WhyUsData: IBaseSectionComponent;
-  // HO_EcosystemData: IBaseSectionComponent;
   COMMON_EventData: IBaseSectionComponent;
   COMMON_NewsData: IBaseSectionComponentNews;
   HO_PartnerData: IBaseSectionComponent;
   HO_TestimonialData: IBaseSectionComponent;
+  HO_CaseStudy: IBaseSectionComponent
 };
 export function HomePage({
   homePageData,
@@ -47,11 +48,11 @@ export function HomePage({
   HO_PioneeringData,
   HO_AboutUsData,
   HO_WhyUsData,
-  // HO_EcosystemData,
   COMMON_EventData,
   COMMON_NewsData,
   HO_PartnerData,
   HO_TestimonialData,
+  HO_CaseStudy,
 }: Props) {
   return (
     <React.Fragment>
@@ -83,7 +84,7 @@ export function HomePage({
         <HomeSecuritySection data={HO_SecurityData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomePioneeringSection />
+        <HomePioneeringSection data={HO_PioneeringData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <HomeAboutUsSection data={HO_AboutUsData} />
@@ -91,9 +92,9 @@ export function HomePage({
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <HomeWhyUsSection data={HO_WhyUsData} />
       </ScrollRevealWrapper>
-      {/* <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <HomeEventSection data={COMMON_EventData} />
-      </ScrollRevealWrapper> */}
+      </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <NewsSection data={COMMON_NewsData} />
       </ScrollRevealWrapper>
@@ -103,9 +104,9 @@ export function HomePage({
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <HomeTestimonialSection data={HO_TestimonialData} />
       </ScrollRevealWrapper>
-      {/* <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeCaseStudySection />
-      </ScrollRevealWrapper> */}
+      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+        <HomeCaseStudySection data={HO_CaseStudy}/>
+      </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <ConnectUsSection />
       </ScrollRevealWrapper>
@@ -128,11 +129,11 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
       HO_PioneeringData,
       HO_AboutUsData,
       HO_WhyUsData,
-      // HO_EcosystemData,
       COMMON_EventData,
       COMMON_NewsData,
       HO_PartnerData,
       HO_TestimonialData,
+      HO_CaseStudy,
     } = shouldRedirect.props;
     return {
       props: {
@@ -142,13 +143,13 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
         HO_ServiceData: HO_ServiceData.data || [],
         HO_SecurityData: HO_SecurityData.data || [],
         HO_PioneeringData: HO_PioneeringData.data || [],
-        // HO_EcosystemData: HO_EcosystemData.data || [],
         HO_AboutUsData: HO_AboutUsData.data || [],
         HO_WhyUsData: HO_WhyUsData.data || [],
         COMMON_EventData: COMMON_EventData.data || [],
         COMMON_NewsData: COMMON_NewsData.data || [],
         HO_PartnerData: HO_PartnerData.data || [],
         HO_TestimonialData: HO_TestimonialData.data || [],
+        HO_CaseStudy: HO_CaseStudy.data || [],
       },
     };
   }
@@ -162,11 +163,11 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
       HO_PioneeringData: [],
       HO_AboutUsData: [],
       HO_WhyUsData: [],
-      // HO_EcosystemData: [],
       COMMON_EventData: [],
       COMMON_NewsData: [],
       HO_PartnerData: [],
       HO_TestimonialData: [],
+      HO_CaseStudy: [],
     },
   };
 };
