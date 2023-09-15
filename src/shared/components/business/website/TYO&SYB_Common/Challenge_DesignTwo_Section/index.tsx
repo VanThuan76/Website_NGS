@@ -20,7 +20,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96 overflow-hidden ${className} bg-[#051C2C]`}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 overflow-hidden ${className} bg-[#051C2C]`}
     >
       <TitleSection
         title={title}

@@ -31,14 +31,19 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper slidesPerView={4} spaceBetween={50} modules={[Pagination]} className='w-full'>
             {data.components!.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px] border-r-2 border-r-slate-300 pr-4' key={idx}>
+              <SwiperSlide
+                className={`max-w-[250px] ${
+                  data.components && data.components?.length - 1 !== idx && 'border-r-2 border-r-slate-300'
+                } pr-4`}
+                key={idx}
+              >
                 <PreImage
                   src={item.image as string}
                   height={150}
                   width={1080}
                   layer={false}
                   alt={item.title}
-                  className={`relative rounded-lg cursor-pointer ${
+                  className={`relative rounded-lg cursor-pointer object-contain ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-30'
                   }`}
                   onClick={() => setSelectedPartner(item)}
@@ -51,9 +56,7 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
           {data.components!.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
-                <div
-                  className='w-full pt-5 flex flex-col lg:flex-row justify-between items-start gap-5'
-                >
+                <div className='w-full pt-5 flex flex-col lg:flex-row justify-between items-start gap-5'>
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <p className='font-medium text-2xl'>{item.title}</p>
                     <p className='font-thin text-sm'>{item.description}</p>

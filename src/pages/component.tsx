@@ -1,5 +1,7 @@
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import BenefitDesignOneSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignOne_Section';
+import BenefitDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignTwo_Section';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
@@ -24,9 +26,14 @@ import ServiceDesignFourSection from '@/components/business/website/TYO&SYB_Comm
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
+import TeamDesignOneSection from '@/components/business/website/TYO&SYB_Common/Team_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
+import WhyUsDesignThreeSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignThree_Section';
+import WhyUsDesignTwoSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignTwo_Section';
 import {
   TYOBanner1,
+  TYOBenefit1,
+  TYOBenefit2,
   TYOclientStories1,
   TYOClientStories3,
   TYOForm1,
@@ -34,6 +41,7 @@ import {
   TYOPartner2,
   TYOPartner3,
   TYOService5,
+  TYOTeam1,
   TYOWhyUs1,
 } from '@/mocks/website/TYO/new';
 import {
@@ -83,12 +91,17 @@ const Component = () => {
       <PartnerDesignOneSection data={TYOPartner1} />
       <PartnerDesignThreeSection data={TYOPartner3} />
       <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1} />
+      <WhyUsDesignTwoSection title='Tổng quan' data={TYOWhyUs1} />
+      <WhyUsDesignThreeSection title='Thách thức' data={TYOchallenge3} />
       <FormDesignOneSection title='Tổng quan' data={TYOForm1} />
+      <TeamDesignOneSection title='Our Service & Solution' data={TYOTeam1} />
       <BannerDesignOneSection data={TYOBanner1} />
       <BannerDesignTwoSection
         breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
         data={TYOBanner1}
       />
+      <BenefitDesignOneSection title='Tổng quan' data={TYOBenefit1} />
+      <BenefitDesignTwoSection title='Thách thức' data={TYOBenefit2} />
     </>
   );
 };

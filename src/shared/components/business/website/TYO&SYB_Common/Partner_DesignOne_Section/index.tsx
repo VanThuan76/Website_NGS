@@ -31,7 +31,7 @@ const PartnerDesignOneSection = ({ title, data, className }: Props) => {
           width={1400}
           layer={false}
           alt={'Price'}
-          className='w-full rounded-lg object-contain'
+          className='w-full object-contain'
         />
       </div>
     </section>

@@ -8,7 +8,6 @@ interface Props extends ImageProps {
 export function PreImage({ src, layer, ...rest }: Props) {
   const {theme} = useTheme();
   const backgroundLayer = theme === "light" ? "bg-white" : "bg-black"
-
   return (
     <div>
       {src ? (

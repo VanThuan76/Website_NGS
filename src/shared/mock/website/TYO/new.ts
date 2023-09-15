@@ -398,3 +398,157 @@ export const TYOBanner1 = {
     sections: {},
     components: []
 }
+export const TYOTeam1 = {
+    section: {
+        id: 4,
+        name: 'How we work',
+        code: "TY1232323454",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "CPN12312",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+            slug: "",
+            description: "Thấu hiểu",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "CPN12312",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+            slug: "",
+            description: "Thấu hiểu",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "CPN12312",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+            slug: "",
+            description: "Thấu hiểu",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "CPN12312",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+            slug: "",
+            description: "Thấu hiểu",
+            image: "/images/background_1.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const TYOBenefit1 = {
+    section: {
+        id: 1,
+        name: 'Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề',
+        code: "PG003SE00004",
+        image: "",
+        description: "Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc"
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003SE00004CN000001",
+            title: "Vận hành theo tiêu chuẩn",
+            description: "Tối đa ",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003SE00004CN000002",
+            title: "Hiện đại hóa quy trình kinh doanh",
+            description: "Đạt được mức tăng trưởng ",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003SE00004CN000003",
+            title: "Giữ quyền kiểm soát",
+            description: "Quản lý tốc độ thay đổi ",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003SE00004CN000003",
+            title: "Giữ quyền kiểm soát",
+            description: "Quản lý tốc độ thay đổi ",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const TYOBenefit2 = {
+    section: {
+        id: 1,
+        name: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+        code: "TY1232323454",
+        image: "/images/background_1.png",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003SE00004CN000001",
+            title: "Vận hành theo tiêu chuẩn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003SE00004CN000001",
+            title: "Vận hành theo tiêu chuẩn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}

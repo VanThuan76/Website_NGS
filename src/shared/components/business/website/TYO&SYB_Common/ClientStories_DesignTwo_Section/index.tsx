@@ -22,16 +22,16 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
           <h1 className='text-2xl md:text-4xl font-semibold text-center text-white'>{data.section.name}</h1>
         </div>
         <div className='w-full border-t-2 border-orange-500 transform -translate-y-4 z-10'></div>
-        <div className='w-full mt-10 grid grid-cols-4 gap-3'>
+        <div className='w-full mt-10 grid grid-cols-6 gap-5'>
           {data.components.map((item, idx) => (
-            <div key={idx} className='border-r-2 border-orange-500 mr-4'>
+            <div key={idx} className={`${data.components && data.components?.length -1 !== idx && "border-r-2 border-orange-500 mr-4"}`}>
               <PreImage
                 src={item.image as string}
                 height={100}
                 width={200}
                 layer={false}
                 alt={item.title}
-                className={`rounded-lg cursor-pointer `}
+                className={`rounded-lg cursor-pointer object-contain`}
               />
             </div>
           ))}
