@@ -1,14 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import { TYOPartner1, TYO_CDP_Section2, TYO_CDP_Section3, TYO_CDP_Section4, TYO_CDP_Section6, TYO_CRM_Banner, TYO_CRM_Section2, TYO_CRM_Section3, TYO_CRM_Section6 } from '@/mocks/website/TYO/overview';
-import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFive_Section';
+import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
+import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
+import { TYO_CRM_Banner, TYO_CRM_Section2, TYO_CRM_Section3, TYO_CRM_Section5, TYO_CRM_Section6, TYO_CRM_Section7, TYO_DSP_Section8 } from '@/mocks/website/TYO/thuy';
 
 
 const CRMPage = () => {
@@ -19,10 +19,13 @@ const CRMPage = () => {
         <meta name='description' content='Customer Relationship Management NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <BannerDesignOneSection title="Chuyển đổi số" data={TYO_CRM_Banner}/>
+      <BannerDesignTwoSection breadcrumb={["Trang chủ", "Bảo mật kinh doanh", "Customer Data Platform"]} data={TYO_CRM_Banner}/>
       <OverviewDesignThreeSection title='Tổng quan' data={TYO_CRM_Section2} />
       <ChallengeDesignThreeSection title='Thách thức' data={TYO_CRM_Section3} />
+      <OverviewDesignFiveSection title='Vì sao nên chọn NGS' data={TYO_CRM_Section5}/>
       <PartnerDesignOneSection data={TYO_CRM_Section6} />
+      <ClientStoriesDesignOneSection title='' data={TYO_CRM_Section7} />
+      <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8}/>
     </React.Fragment>
   );
 };
