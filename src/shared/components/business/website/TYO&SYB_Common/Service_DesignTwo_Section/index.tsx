@@ -15,7 +15,7 @@ type Props = {
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
-const ServiceDesignTwoSetion = ({ title, data, className }: Props) => {
+const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data.components![0]);
   return (
     <section
@@ -108,4 +108,4 @@ const ServiceDesignTwoSetion = ({ title, data, className }: Props) => {
     </section>
   );
 };
-export default ServiceDesignTwoSetion;
+export default ServiceDesignTwoSection;

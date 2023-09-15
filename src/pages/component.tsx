@@ -23,7 +23,7 @@ import ServiceDesignFiveSection from '@/components/business/website/TYO&SYB_Comm
 import ServiceDesignFourSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFour_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
-import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
+import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import {
   TYOBanner1,
@@ -75,7 +75,7 @@ const Component = () => {
       <ClientStoriesDesignOneSection title='' data={TYOclientStories1} />
       <ClientStoriesDesignThreeSection title='Client stories' data={TYOClientStories3} />
       <ServiceDesignOneSection title='' data={TYOService1} />
-      <ServiceDesignTwoSetion title='Our Service & Solution' data={TYOService2} />
+      <ServiceDesignTwoSection title='Our Service & Solution' data={TYOService2} />
       <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3} />
       <ServiceDesignFourSection title='Our Service & Solution' data={TYOService4} />
       <ServiceDesignFiveSection title='Our Service & Solution' data={TYOService5} />
