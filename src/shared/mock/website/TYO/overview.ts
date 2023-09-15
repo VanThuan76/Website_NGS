@@ -9,6 +9,7 @@ export const TYOOverview1 = {
     },
     components: []
 }
+
 export const TYOOverview2 = {
     section: {
         id: 2,
@@ -692,8 +693,6 @@ export const TYOService4 = {
         },
     ]
 }
-
-
 export const TYOOverview2_PG3_10 = {
     section: {
         id: 2,
@@ -703,6 +702,14 @@ export const TYOOverview2_PG3_10 = {
         description: "Cloud ERP do NGS triển khai có thể chuyển đổi dữ liệu và quy trình ERP hiện tại của bạn sang đám mây với ít rủi ro và gián đoạn kinh doanh. Gói phần mềm ERP được thiết kế riêng, dịch vụ chuyển đổi, phân tích nghiệp vụ và kiến thức chuyên môn của các chuyên gia sẽ hướng dẫn doanh nghiệp thiết kế lộ trình phù hợp lên đám mây. Cho dù doanh nghiệp  áp dụng ERP lần đầu hay di chuyển từ hệ thống hiện có sang đám mây đều có thể có được giải pháp mô-đun hoàn chỉnh với khả năng phân tích và AI để đưa doanh nghiệp của bạn phát triển hơn nữa"
 
     },
+    components: []
+}
+
+export const TYOOverview1_PG4_1 = {
+    section: {
+        id: 2,
+        name: 'Trung tâm điều hành an ninh mạng (SOC) là giải pháp giám sát, phát hiện sự cố nhằm ngăn chặn mọi mối đe dọa an ninh mạng, giải quyết những tồn tại trong hệ thống khi chỉ tập trung sử dụng các thiết bị an ninh mạng.',
+        code: "PG0004SE00002",
     components: [
         {
             id: 1,
@@ -751,7 +758,7 @@ export const TYOOverview2_PG3_10 = {
             thumbnail: ""
         },
     ]
-}
+}}
 
 export const TYOOverview4_PG3_10 = {
     section: {
@@ -761,6 +768,30 @@ export const TYOOverview4_PG3_10 = {
         image: "",
         description: ""
 
+    },
+    components: []
+}
+
+export const TYOOverview1_PG4_2 = {
+    section: {
+        id: 2,
+        name: 'Kiểm thử xâm nhập (Pentest), là một phương pháp đánh giá an ninh mạng có mục đích nhằm xác định và khai thác một cách an toàn các lỗ hổng trong hệ thống máy tính, ứng dụng và trang web.',
+        code: "PG0004_2SE00002",
+        image: "",
+        description: ""
+
+    },
+    components: []
+}
+
+
+export const TYOService3_PG4_1 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0004SE00004",
+        image: "",
+        description: ""
     },
     components: [
         {
@@ -863,6 +894,12 @@ export const TYOchallenge2_PG3_14 = {
         {
             id: 1,
             language: 'vi',
+            code: "PG0004SE00004CN000001",
+            title: "Tư vấn và triển khai mô hình Hybrid",
+            description: "NGS tư vấn và hỗ trợ triển khai mô hình Hybrid dành cho các doanh nghiệp đã có hệ thống SIEM hoặc được NGS cung cấp hệ thống SIEM. Về khách hàng: NGS đưa ra quy định áp dụng trên SIEM. Hỗ trợ nhiều mô hình triển khai, SIEM có thể được đặt tại địa điểm của Khách hàng hoặc NCS SOC.Về NGS: Tích hợp NGS back-bond. Quản lý hồ sơ khách hàng và cung cấp cảnh báo cho khách hàng thông qua SOAR & TI.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.14SE00004CN000001",
             title: "Giúp nhân viên làm việc và nỗ lực",
             description: "Giúp nhân viên làm việc và nỗ lực hết mình",
@@ -875,16 +912,34 @@ export const TYOchallenge2_PG3_14 = {
         {
             id: 2,
             language: 'vi',
-            code: "PG003.14SE00004CN000002",
-            title: "Hỗ trợ nhân viên về mọi mặt",
-            description: "Bộ giải pháp hàng không",
+            code: "PG0004SE00004CN000002",
+            title: "Vận hành SOC như một dịch vụ",
+            description: "NGS cung cấp dịch vụ xây dựng mô hình SOC bao gồm SIEM & SOAR.",
             slug: "",
             content: "",
-            image: "/images/background_1.png",
+            image: "",
             video: "",
             thumbnail: ""
-        }
-        ,
+        },
+    ]
+}
+
+export const TYOClientStories2_Secure = {
+    section: {
+        id: 7,
+        name: 'Những khách hàng đã hài lòng',
+        code: "PG0004SE00008",
+        image: "",
+        description: "",
+        code: "PG003.14SE00004CN000002",
+        title: "Hỗ trợ nhân viên về mọi mặt",
+        description: "Bộ giải pháp hàng không",
+        slug: "",
+        content: "",
+        image: "/images/background_1.png",
+        video: "",
+        thumbnail: ""
+        },
         {
             id: 3,
             language: 'vi',
@@ -937,6 +992,12 @@ export const TYOService1_PG3_10 = {
         {
             id: 1,
             language: 'vi',
+            code: "PG0004SE00008CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pvgas.png",
             code: "PG003.10SE00005CN000001",
             title: "Quản lý mua sắm",
             description: "",
@@ -949,6 +1010,12 @@ export const TYOService1_PG3_10 = {
         {
             id: 2,
             language: 'vi',
+            code: "PG0004SE00008CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pv.png",
             code: "PG003.10SE00005CN000002",
             title: "Quản lý sản xuất",
             description: "",
@@ -960,6 +1027,12 @@ export const TYOService1_PG3_10 = {
         }, {
             id: 3,
             language: 'vi',
+            code: "PG0004SE00008CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_lpbank.png",
             code: "PG003.10SE00005CN000003",
             title: "Quản lý bán hàng và phân phối",
             description: "",
@@ -972,6 +1045,12 @@ export const TYOService1_PG3_10 = {
         {
             id: 4,
             language: 'vi',
+            code: "PG0004SE00008CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_bidv.png",
             code: "PG003.10SE00005CN000004",
             title: "Quản lý kho",
             description: "",
@@ -984,6 +1063,12 @@ export const TYOService1_PG3_10 = {
         {
             id: 5,
             language: 'vi',
+            code: "PG0004SE00008CN000005",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_pvcfc.png",
             code: "PG003.10SE00005CN000005",
             title: "Quản lý Bảo trì thiết bị doanh nghiệp",
             description: "",
@@ -996,6 +1081,12 @@ export const TYOService1_PG3_10 = {
         {
             id: 6,
             language: 'vi',
+            code: "PG0004SE00008CN000006",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/SEC_petro_biendong.png",
             code: "PG003.10SE00005CN000006",
             title: "Quản lý dự án",
             description: "",
@@ -1020,6 +1111,25 @@ export const TYOService1_PG3_10 = {
     ]
 }
 
+export const TYOchallenge3_PG4_2 = {
+    section: {
+        id: 3,
+        name: 'Pentesting đảm bảo các cuộc tấn công nâng cao với khoảng thời gian ngắn, chi phí thấp hơn',
+        code: "PG0004_2SE00002",
+        image: "/images/SECURE_challenge3.png",
+        description: "Doanh nghiệp của bạn cần đến sự bảo mật nhất là khi: Thực hiện những sửa đổi đáng kể đối với cơ sở hạ tầng; Giới thiệu sản phẩm và dịch vụ mới; ... Tuy nhiên, chi phí thực hiện bảo mật hệ thống cấp cao như SOC cao so với các doanh nghiệp vừa và nhỏ chính vì thế dịch vụ kiểm thử xâm nhập hệ thống/ứng dụng xuất hiện. Pentesting đảm bảo các cuộc tấn công nâng cao của các chuyên gia bảo mật với khoảng thời gian ngắn, chi phí thấp hơn SOC mà vẫn đảm bảo hiệu quả. "
+    },
+    components: [
+    ]
+}
+
+export const TYOService3_PG4_2 = {
+    section: {
+        id: 4,
+        name: 'Dịch vụ chúng tôi cung cấp',
+        code: "PG0004_2SE00004",
+    }
+}
 export const TYOClientStories2_PG3_10 = {
     section: {
         id: 8,
@@ -1033,6 +1143,12 @@ export const TYOClientStories2_PG3_10 = {
         {
             id: 1,
             language: 'vi',
+            code: "PG0004_2SE00004CN000001",
+            title: "Kiểm thử hệ thống mạng, hệ thống máy chủ",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên môi trường mạng.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.10SE00008CN000001",
             title: "",
             description: "",
@@ -1045,6 +1161,24 @@ export const TYOClientStories2_PG3_10 = {
         {
             id: 2,
             language: 'vi',
+            code: "PG0004_2SE00004CN000002",
+            title: "Kiểm thử hệ thống mạng",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các máy chủ.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_2SE00004CN000003",
+            title: "Kiểm thử ứng dụng Web Application",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Web.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.10SE00008CN000002",
             title: "",
             description: "",
@@ -1068,6 +1202,12 @@ export const TYOClientStories2_PG3_10 = {
         {
             id: 4,
             language: 'vi',
+            code: "PG0004_2SE00004CN000004",
+            title: "Kiểm thử ứng dụng Mobile App",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.10SE00008CN000004",
             title: "",
             description: "",
@@ -1080,6 +1220,12 @@ export const TYOClientStories2_PG3_10 = {
         {
             id: 5,
             language: 'vi',
+            code: "PG0004_2SE00004CN000005",
+            title: "Kiểm thử hệ thống ATM",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.10SE00008CN000005",
             title: "",
             description: "",
@@ -1092,6 +1238,12 @@ export const TYOClientStories2_PG3_10 = {
         {
             id: 6,
             language: 'vi',
+            code: "PG0004_2SE00004CN000006",
+            title: "Kiểm thử hệ thống ATM",
+            description: "Xác định các lỗ hổng bảo mật và thực hiện khai thác lỗi nhằm đánh giá mức độ ảnh hưởng trên các ứng dụng Mobile.",
+            slug: "",
+            content: "",
+            image: "",
             code: "PG003.10SE00008CN000006",
             title: "",
             description: "",
@@ -1102,6 +1254,15 @@ export const TYOClientStories2_PG3_10 = {
             thumbnail: ""
         },
     ]
+}
+
+export const TYOOverview6_PG4_3 = {
+    section: {
+        id: 2,
+        name: 'Dịch vụ đánh giá xâm nhập hệ thống',
+        code: "PG0004_3SE00002",
+        image: "/images/SEC_banner2_page4_3.png",
+    }
 }
 export const TYOPartner1 = {
     section: {
@@ -1157,13 +1318,18 @@ export const TYOOverview4_PG3_11 = {
         name: 'Xây dựng chuỗi cung ứng để chống chọi với các thay đổi',
         code: "PG003.11SE00003",
         image: "",
-        description: ""
-
+        description: "
     },
     components: [
         {
             id: 1,
             language: 'vi',
+            code: "PG0004_3SE00002CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Các cuộc tấn công hiện đại có thông tin đầy đủ về các biện pháp phòng thủ có sự thích ứng với mọi trường hợp để trốn tránh các biện pháp bảo mật tự động hiện có.",
+            image: "",
             code: "PG003.11SE00003CN000001",
             title: "Kết nối các quy trình của bạn",
             description: "Loại bỏ các rào cản trong quy trình, dự đoán sự gián đoạn và tạo các vòng phản hồi để cải thiện hiệu suất kinh doanh, tăng tốc độ đổi mới và vận hành tính bền vững.",
@@ -1176,6 +1342,22 @@ export const TYOOverview4_PG3_11 = {
         {
             id: 2,
             language: 'vi',
+            code: "PG0004_3SE00002CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Nếu không bị phát hiện, những kiểu tấn công này có thể tồn tại trong doanh nghiệp của bạn trong thời gian dài. Việc thực hiện đánh giá sự xâm nhập được chứng minh là một phương pháp có giá trị để đánh giá mức độ đầy đủ của các cơ chế phát hiện và ngăn chặn nó",
+            image: "",
+            video: "",
+            thumbnail: ""
+        }, {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_3SE00002CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "Đánh giá này hỗ trợ phát hiện các hoạt động tấn công trong quá khứ và đang diễn ra, tạo điều kiện thuận lợi cho việc thực hiện các biện pháp đối phó hiệu quả nhất. NGS luôn tự tin đồng hành cùng doanh nghiệp của bạn trên con đường bảo vệ hệ thống.",
             code: "PG003.11SE00003CN000002",
             title: "Ngữ cảnh ra quyết định của bạn",
             description: "Cùng nhau làm việc như một doanh nghiệp, sử dụng AI để đưa ra quyết định chính xác hơn, tránh sai lầm, giảm thiểu rủi ro và đưa tính bền vững vào hoạt động hàng ngày.",
