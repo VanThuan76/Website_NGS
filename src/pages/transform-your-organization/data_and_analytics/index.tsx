@@ -1,21 +1,14 @@
 import React from 'react';
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import {
-  TYOClientStories2_PG3_10,
-  TYOOverview7_PG3_17,
-  TYOService1_PG3_17,
-  TYOchallenge2_PG3_17,
-} from '@/mocks/website/TYO/overview';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import OverviewDesignSevenSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSeven_Section';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import { TYOPartner3_PG3_17, TYOWhyUs1_PG3_17 } from '@/mocks/website/TYO/new';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
-import { TYOBanner1_PG3_17 } from '@/mocks/website/TYO/duong';
+import { TYOBanner1_PG3_17, TYOClientStories2_PG3_10, TYOOverview7_PG3_17, TYOPartner3_PG3_17, TYOService1_PG3_17, TYOWhyUs1_PG3_17, TYOchallenge2_PG3_17 } from '@/mocks/website/TYO/duong';
 
 const DAAPage = () => {
   return (
