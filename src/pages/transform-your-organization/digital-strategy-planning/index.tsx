@@ -9,7 +9,8 @@ import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Com
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import { TYO_DSP_Banner, TYO_DSP_Section2, TYO_DSP_Section3, TYO_DSP_Section4, TYO_DSP_Section5, TYO_DSP_Section6, TYO_DSP_Section8 } from '@/mocks/website/TYO/thuy';
+import { TYO_DSP_Banner, TYO_DSP_Section2, TYO_DSP_Section3, TYO_DSP_Section4, TYO_DSP_Section5, TYO_DSP_Section6, TYO_DSP_Section7, TYO_DSP_Section8 } from '@/mocks/website/TYO/thuy';
+import CaseStudyDesignOneSection from '@/components/business/website/TYO&SYB_Common/CaseStudy_DesignOne_Section';
 
 
 const DSPPage = () => {
@@ -26,6 +27,7 @@ const DSPPage = () => {
       <ServiceDesignThreeSection title='Dịch vụ' data={TYO_DSP_Section4} />
       <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_DSP_Section5}/>
       <PartnerDesignTwoSection data={TYO_DSP_Section6}/>
+      <CaseStudyDesignOneSection title='Client Stories' data={TYO_DSP_Section7}/>
       <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8}/>
     </React.Fragment>
   );
