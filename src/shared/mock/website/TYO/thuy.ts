@@ -226,6 +226,18 @@ export const TYO_DSP_Section6 = {
     ]
 }
 
+export const TYO_DSP_Section7 = {
+    section: {
+        id: 1,
+        name: 'Tầm quan trọng của đánh giá',
+        code: "PG003.1SE00007",
+        image: "/images/casestudy.png",
+        description: "Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng."
+    },
+    components: [
+    ]
+}
+
 export const TYO_DSP_Section8 = {
     section: {
         id: 1,
