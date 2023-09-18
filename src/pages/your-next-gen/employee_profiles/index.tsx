@@ -29,8 +29,8 @@ const EPDetailPage = () => (
     <YNGDetailDirectionSetion data={YNG_EP_Section4} />
     <YNGCommonCustomerSection title='Khách hàng' data={YNG_EP_Section5} />
     <YNGCommonIntroductionSection data={YNG_EP_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_EP_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_EP_Section8} />
+    <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_EP_Section7} />
+    <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_EP_Section8} />
   </React.Fragment>
 );
 

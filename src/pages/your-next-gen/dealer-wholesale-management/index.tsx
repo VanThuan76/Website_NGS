@@ -31,8 +31,8 @@ const DWMDetailPage = () => {
       <YNGDetailDirectionSetion data={YNG_DWM_Section4} />
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_DWM_Section5}/>
       <YNGCommonIntroductionSection data={YNG_DWM_Section6} />
-      <YNGCommonBackSolutionSection title='Back Solution' data={YNG_DWM_Section7}/>
-      <YNGCommonPilotSubriceSection title='Pilot' data={YNG_DWM_Section8}/>
+      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_DWM_Section7}/>
+      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_DWM_Section8}/>
     </React.Fragment>
   );
 };
