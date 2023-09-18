@@ -1,27 +1,15 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import { useTheme } from 'next-themes';
+import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
-import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import { PreImage } from '@/components/common/customization/PreImage';
-
 type Props = {
   title?: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 
-const PartnerDesignTwoSection = ({ data, className }: Props) => {
-  const { theme } = useTheme();
-  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents> | undefined>(() => {
-    if (data.components && data.components.length > 0) return data.components[0];
-    else return undefined;
-  });
+const PartnerDesignTwoSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
-  const colorBorder = theme === 'dark' ? '#555' : '#fff';
+
   return (
     <section
       id={data.section.code}
@@ -45,9 +33,6 @@ const PartnerDesignTwoSection = ({ data, className }: Props) => {
             </div>
           ))}
         </div>
-        {/* <-- Home Partner Responsive */}
-        {/* <PartnerResponsive /> */}
-        {/* Home Partner Responsive --> */}
       </div>
     </section>
   );
