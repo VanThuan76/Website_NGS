@@ -15,7 +15,7 @@ const DAAPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Extended Planning and Analysis</title>
+        <title>Data and Analytics</title>
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
