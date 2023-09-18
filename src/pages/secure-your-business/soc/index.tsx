@@ -11,6 +11,12 @@ import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_C
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import { SYBBanner1_PG4_1, SYBClientStories2_Secure, SYBForm1_PG4_1, SYBOverview1_PG4_1, SYBPartner2_PG4_1, SYBService3_PG4_1, SYBWhyUs1_PG4_1, SYBchallenge3_PG4_1 } from '@/mocks/website/SYB/syb';
 
+import dynamic from 'next/dynamic';
+
+const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
+  ssr: false,
+});
+
 const SOCPage = () => {
   return (
     <React.Fragment>
@@ -19,14 +25,30 @@ const SOCPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <BannerDesignOneSection title="Bảo mật xuất sắc" data={SYBBanner1_PG4_1}/>
-      <OverviewDesignOneSection title='Tổng quan' data={SYBOverview1_PG4_1} />
-      <ChallengeDesignThreeSection title='Thách thức' data={SYBchallenge3_PG4_1} />
-      <ServiceDesignThreeSection title='Dịch vụ' data={SYBService3_PG4_1} />
-      <WhyUsDesignOneSection title='Tổng quan' data={SYBWhyUs1_PG4_1}/>
-      <PartnerDesignTwoSection data={SYBPartner2_PG4_1}/>
-      <ClientStoriesDesignTwoSection title='Client stories' data={SYBClientStories2_Secure} />
-      <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_1} />
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <BannerDesignOneSection title="Bảo mật xuất sắc" data={SYBBanner1_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <OverviewDesignOneSection title='Tổng quan' data={SYBOverview1_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ChallengeDesignThreeSection title='Thách thức' data={SYBchallenge3_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ServiceDesignThreeSection title='Dịch vụ' data={SYBService3_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <WhyUsDesignOneSection title='Tổng quan' data={SYBWhyUs1_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <PartnerDesignTwoSection data={SYBPartner2_PG4_1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ClientStoriesDesignTwoSection title='Client stories' data={SYBClientStories2_Secure} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_1} />
+      </ScrollRevealWrapper>
 
     </React.Fragment>
   );

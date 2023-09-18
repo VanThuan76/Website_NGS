@@ -9,9 +9,9 @@ import YNGDetailDirectionSetion from '@/components/business/website/YNG/YNG_Deta
 import YNGCommonCustomerSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Customer_Section';
 import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_BackSolution_Section';
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
-import { YNGCommonBackSolution1, YNGCommonCustomer1, YNGCommonIntroduction1, YNGCommonPilotSubrice1, YNGDetailBanner1, YNGDetailDirection1, YNGDetailProduct1, YNGDetailWhyChoose1 } from '@/mocks/website/YNG/YNG_Detail/example';
+import { YNGDetailBanner1} from '@/mocks/website/YNG/YNG_Detail/example';
 import YNGDetailBannerSection from '@/components/business/website/YNG/YNG_Detail/YNG_Detail_Banner_Section';
-import { YNG_MNS_Section2, YNG_MNS_Section3, YNG_MNS_Section4, YNG_MNS_Section5, YNG_MNS_Section6, YNG_MNS_Section7, YNG_MNS_Section8 } from '@/mocks/website/TYO/thuy_yng';
+import { YNG_MNS_Section2, YNG_MNS_Section3, YNG_MNS_Section4, YNG_MNS_Section5, YNG_MNS_Section6, YNG_MNS_Section7, YNG_MNS_Section8 } from '@/mocks/website/YNG/yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -24,14 +24,30 @@ const MNSDetailPage = () => {
         <meta name='description' content='Messenger & Lịch biểu NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <YNGDetailBannerSection data={YNGDetailBanner1} />
-      <YNGDetailWhyChooseSection title='Tại sao chọn Messenger & Lịch biểu?' data={YNG_MNS_Section2} />
-      <YNGDetailProductSection data={YNG_MNS_Section3} />
-      <YNGDetailDirectionSetion data={YNG_MNS_Section4} />
-      <YNGCommonCustomerSection title='Khách hàng' data={YNG_MNS_Section5}/>
-      <YNGCommonIntroductionSection data={YNG_MNS_Section6} />
-      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_MNS_Section7}/>
-      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_MNS_Section8}/>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGDetailBannerSection data={YNGDetailBanner1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGDetailWhyChooseSection title='Tại sao chọn Messenger & Lịch biểu?' data={YNG_MNS_Section2} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGDetailProductSection data={YNG_MNS_Section3} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGDetailDirectionSetion data={YNG_MNS_Section4} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonCustomerSection title='Khách hàng' data={YNG_MNS_Section5} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonIntroductionSection data={YNG_MNS_Section6} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_MNS_Section7} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_MNS_Section8} />
+      </ScrollRevealWrapper>
     </React.Fragment>
   );
 };

@@ -10,6 +10,11 @@ import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
+import dynamic from 'next/dynamic';
+
+const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
+  ssr: false,
+});
 
 const TIPage = () => {
   return (
@@ -19,17 +24,33 @@ const TIPage = () => {
         <meta name='description' content='System Integration NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <BannerDesignTwoSection
-        breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
-        data={SYB_SI_Banner}
-      />
-      <OverviewDesignOneSection title='Tổng quan' data={SYB_SI_Section2} />
-      <ChallengeDesignThreeSection title='Thách thức' data={SYB_SI_Section3} />
-      <ServiceDesignOneSection title='Dịch vụ' data={SYB_SI_Section4} />
-      <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5}/>
-      <PartnerDesignThreeSection data={SYB_SI_Section6}/>
-      <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />
-      <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9}/>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
+          data={SYB_SI_Banner}
+        />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <OverviewDesignOneSection title='Tổng quan' data={SYB_SI_Section2} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ChallengeDesignThreeSection title='Thách thức' data={SYB_SI_Section3} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ServiceDesignOneSection title='Dịch vụ' data={SYB_SI_Section4} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <PartnerDesignThreeSection data={SYB_SI_Section6} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
+      </ScrollRevealWrapper>
     </React.Fragment>
   );
 };

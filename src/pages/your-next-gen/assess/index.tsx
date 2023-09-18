@@ -19,7 +19,7 @@ import {
   YNG_Assess_Section6,
   YNG_Assess_Section7,
   YNG_Assess_Section8,
-} from '@/mocks/website/TYO/duong_yng';
+} from '@/mocks/website/YNG/yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -31,14 +31,30 @@ const AssessDetailPage = () => (
       <meta name='description' content='Đánh giá' />
       <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
     </Head>
-    <YNGDetailBannerSection data={YNGDetailBanner1} />
-    <YNGDetailWhyChooseSection title='Tại sao chọn Đánh giá?' data={YNG_Assess_Section2} />
-    <YNGDetailProductSection data={YNG_Assess_Section3} />
-    <YNGDetailDirectionSetion data={YNG_Assess_Section4} />
-    <YNGCommonCustomerSection title='Khách hàng' data={YNG_Assess_Section5} />
-    <YNGCommonIntroductionSection data={YNG_Assess_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_Assess_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_Assess_Section8} />
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGDetailBannerSection data={YNGDetailBanner1} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGDetailWhyChooseSection title='Tại sao chọn Đánh giá?' data={YNG_Assess_Section2} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGDetailProductSection data={YNG_Assess_Section3} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGDetailDirectionSetion data={YNG_Assess_Section4} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGCommonCustomerSection title='Khách hàng' data={YNG_Assess_Section5} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGCommonIntroductionSection data={YNG_Assess_Section6} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGCommonBackSolutionSection title='Back Solution' data={YNG_Assess_Section7} />
+    </ScrollRevealWrapper>
+    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <YNGCommonPilotSubriceSection title='Pilot' data={YNG_Assess_Section8} />
+    </ScrollRevealWrapper>
   </React.Fragment>
 );
 
