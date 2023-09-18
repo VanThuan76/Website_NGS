@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';

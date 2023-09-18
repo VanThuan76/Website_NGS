@@ -9,9 +9,17 @@ import YNGDetailDirectionSetion from '@/components/business/website/YNG/YNG_Deta
 import YNGCommonCustomerSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Customer_Section';
 import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_BackSolution_Section';
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
-import { YNGCommonBackSolution1, YNGCommonCustomer1, YNGCommonIntroduction1, YNGCommonPilotSubrice1, YNGDetailBanner1, YNGDetailDirection1, YNGDetailProduct1, YNGDetailWhyChoose1 } from '@/mocks/website/YNG/YNG_Detail/example';
+import { YNGDetailBanner1 } from '@/mocks/website/YNG/YNG_Detail/example';
 import YNGDetailBannerSection from '@/components/business/website/YNG/YNG_Detail/YNG_Detail_Banner_Section';
-import { YNG_Assess_Section2, YNG_Assess_Section3, YNG_Assess_Section4, YNG_Assess_Section5, YNG_Assess_Section6, YNG_Assess_Section7, YNG_Assess_Section8 } from '@/mocks/website/TYO/duong_yng';
+import {
+  YNG_Assess_Section2,
+  YNG_Assess_Section3,
+  YNG_Assess_Section4,
+  YNG_Assess_Section5,
+  YNG_Assess_Section6,
+  YNG_Assess_Section7,
+  YNG_Assess_Section8,
+} from '@/mocks/website/TYO/duong_yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,

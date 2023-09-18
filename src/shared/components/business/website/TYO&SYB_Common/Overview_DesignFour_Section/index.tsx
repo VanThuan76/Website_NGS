@@ -23,7 +23,7 @@ const OverviewDesignFourSection = ({ title, data, className }: Props) => {
         </div>
         <div className='w-full grid grid-cols-3 gap-24 mt-5'>
           {data.components.map((item, idx) => (
-            <div className='flex flex-col justify-between items-center gap-2'>
+            <div key={idx} className='flex flex-col justify-between items-center gap-2'>
               <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
               <h1 className='text-xl md:text-2xl font-semibold text-center'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>

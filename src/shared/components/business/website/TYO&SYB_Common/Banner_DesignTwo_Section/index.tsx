@@ -20,7 +20,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className }: Props) => {
             <div className='flex flex-col justify-start items-start gap-3'>
               <div className='mb-4 flex justify-start items-start gap-3'>
                 {breadcrumb.map((item: string, idx: number) => (
-                  <div className='flex justify-center items-center'>
+                  <div key={idx} className='flex justify-center items-center'>
                     <p className={`text-sm ${idx === breadcrumb.length - 1 ? 'text-white' : 'text-orange-500'}`}>
                       {item}
                     </p>

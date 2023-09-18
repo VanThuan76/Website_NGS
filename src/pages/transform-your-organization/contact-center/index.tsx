@@ -1,6 +1,5 @@
 import React from 'react';
 import Head from 'next/head';
-import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';

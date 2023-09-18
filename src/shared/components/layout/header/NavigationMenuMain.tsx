@@ -27,7 +27,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
         {fakeMenu.map((mainMenu, idx) => (
           <>
             {mainMenu.menuChild.length === 0 ? (
-              <NavigationMenuItem>
+              <NavigationMenuItem key={idx}>
                 <Link href={mainMenu.path as string} legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>{mainMenu.title}</NavigationMenuLink>
                 </Link>
@@ -61,8 +61,8 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                         <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
                         <div className='w-full flex justify-between items-start gap-5'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
-                            <div className='flex flex-col justify-between items-start'>
-                              <div key={idx} style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400'>
+                            <div key={idx} className='flex flex-col justify-between items-start'>
+                              <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400'>
                                 {menuChild3.title}
                               </div>
                               {menuChild3.menuChild &&

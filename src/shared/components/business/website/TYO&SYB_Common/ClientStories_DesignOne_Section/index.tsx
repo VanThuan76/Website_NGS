@@ -13,11 +13,11 @@ type Props = {
 };
 
 const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
-  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const [selectedTab, setSelectedTab] = useState<Partial<IComponents> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
   });
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const contentAnimated = {
     active: {
       borderColor: '#fff',

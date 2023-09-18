@@ -22,7 +22,7 @@ const OverviewDesignNineSection = ({ title, data, className }: Props) => {
         </div>
         <div className='w-full grid grid-cols-1 justify-start items-start gap-5'>
           {data.components.map((item, idx) => (
-            <div className='w-full flex flex-col justify-start items-start gap-3'>
+            <div key={idx} className='w-full flex flex-col justify-start items-start gap-3'>
               <h1 className='text-xl md:text-2xl font-semibold'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>
             </div>

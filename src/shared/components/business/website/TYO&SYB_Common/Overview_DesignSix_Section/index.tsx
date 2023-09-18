@@ -32,7 +32,7 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
         </div>
         <div className='w-full grid grid-cols-3 gap-5 mt-5'>
           {data.components.map((item, idx) => (
-            <p className='text-xs md:text-base'>{item.content}</p>
+            <p key={idx} className='text-xs md:text-base'>{item.content}</p>
           ))}
         </div>
       </div>
