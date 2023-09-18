@@ -19,7 +19,7 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
             <div className='flex flex-col justify-start items-start gap-3'>
               <p className='text-sm md:text-xl text-orange-500'>{title}</p>
               <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
-              <p className='mt-5 font-thin'>{data.section.description}</p>
+              <p className='mt-5 font-thin text-lg'>{data.section.description}</p>
             </div>
             <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
           </div>

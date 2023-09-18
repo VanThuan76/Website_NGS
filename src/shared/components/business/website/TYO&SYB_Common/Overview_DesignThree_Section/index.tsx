@@ -21,11 +21,11 @@ const OverviewDesignThreeSection = ({ title, data, className }: Props) => {
         <div className='relative w-full flex justify-between items-start gap-10'>
           <div className='w-full flex flex-col justify-start items-start gap-2 z-30'>
             <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-            <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
+            <h1 className='text-2xl md:text-4xl font-medium'>{data.section.name}</h1>
           </div>
-          <div className='w-full flex flex-col justify-center items-center z-30'>
+          <div className='w-full flex flex-col z-30'>
             {splitTextToArrayByDoubleSlash(data.section.description).map((item: string, idx: number) => (
-              <div key={idx} className='flex flex-col justify-center items-center gap-4 pb-4'>
+              <div key={idx} className='flex flex-col gap-4 pb-4'>
                 <p>{item}</p>
               </div>
             ))}
