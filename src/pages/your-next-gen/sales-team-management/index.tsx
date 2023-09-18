@@ -30,8 +30,8 @@ const STMDetailPage = () => {
       <YNGDetailDirectionSetion data={YNG_STM_Section4} />
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_STM_Section5}/>
       <YNGCommonIntroductionSection data={YNG_STM_Section6} />
-      <YNGCommonBackSolutionSection title='Back Solution' data={YNG_STM_Section7}/>
-      <YNGCommonPilotSubriceSection title='Pilot' data={YNG_STM_Section8}/>
+      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_STM_Section7}/>
+      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_STM_Section8}/>
     </React.Fragment>
   );
 };

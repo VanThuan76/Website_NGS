@@ -30,7 +30,7 @@ const PDMDetailPage = () => {
       <YNGDetailDirectionSetion data={YNG_MNS_Section4} />
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_MNS_Section5}/>
       <YNGCommonIntroductionSection data={YNG_MNS_Section6} />
-      <YNGCommonBackSolutionSection title='Back Solution' data={YNG_MNS_Section7}/>
+      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_MNS_Section7}/>
       <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_MNS_Section8}/>
     </React.Fragment>
   );

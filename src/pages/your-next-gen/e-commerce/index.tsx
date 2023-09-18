@@ -29,8 +29,8 @@ const ECOMDetailPage = () => (
     <YNGDetailDirectionSetion data={YNG_ECOM_Section4} />
     <YNGCommonCustomerSection title='Khách hàng' data={YNG_ECOM_Section5} />
     <YNGCommonIntroductionSection data={YNG_ECOM_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_ECOM_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_ECOM_Section8} />
+    <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_ECOM_Section7} />
+    <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_ECOM_Section8} />
   </React.Fragment>
 );
 

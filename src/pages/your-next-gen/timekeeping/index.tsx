@@ -29,8 +29,8 @@ const TimekeepingDetailPage = () => (
     <YNGDetailDirectionSetion data={YNG_Timekeeping_Section4} />
     <YNGCommonCustomerSection title='Khách hàng' data={YNG_Timekeeping_Section5} />
     <YNGCommonIntroductionSection data={YNG_Timekeeping_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_Timekeeping_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_Timekeeping_Section8} />
+    <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_Timekeeping_Section7} />
+    <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_Timekeeping_Section8} />
   </React.Fragment>
 );
 

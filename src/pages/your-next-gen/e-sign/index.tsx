@@ -29,8 +29,8 @@ const ESDetailPage = () => (
     <YNGDetailDirectionSetion data={YNG_ES_Section4} />
     <YNGCommonCustomerSection title='Khách hàng' data={YNG_ES_Section5} />
     <YNGCommonIntroductionSection data={YNG_ES_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_ES_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_ES_Section8} />
+    <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_ES_Section7} />
+    <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_ES_Section8} />
   </React.Fragment>
 );
 

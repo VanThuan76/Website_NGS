@@ -29,8 +29,8 @@ const VODetailPage = () => (
     <YNGDetailDirectionSetion data={YNG_VO_Section4} />
     <YNGCommonCustomerSection title='Khách hàng' data={YNG_VO_Section5} />
     <YNGCommonIntroductionSection data={YNG_VO_Section6} />
-    <YNGCommonBackSolutionSection title='Back Solution' data={YNG_VO_Section7} />
-    <YNGCommonPilotSubriceSection title='Pilot' data={YNG_VO_Section8} />
+    <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_VO_Section7} />
+    <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_VO_Section8} />
   </React.Fragment>
 );
 
