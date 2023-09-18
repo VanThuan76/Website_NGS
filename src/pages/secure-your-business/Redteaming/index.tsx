@@ -19,7 +19,7 @@ import {
   SYB_RT_Section6,
   SYB_RT_Section7,
   SYB_RT_Section8,
-} from '@/mocks/website/TYO/trang_sby';
+} from '@/mocks/website/SYB/syb';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,

@@ -11,6 +11,7 @@ import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB
 import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import { SYBBanner1_PG4_2, SYBForm1_PG4_2, SYBOverview1_PG4_2, SYBPartner3_PG4_2, SYBService2_PG4_2, SYBService3_PG4_2, SYBchallenge3_PG4_2, SYBclientStories1_PG4_2 } from '@/mocks/website/SYB/syb';
+import { SYBWhyUs1_PG4_2 } from '@/mocks/website/TYO/duong';
 
 const PTPage = () => {
   return (

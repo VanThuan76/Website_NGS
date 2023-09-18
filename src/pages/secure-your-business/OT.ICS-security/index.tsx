@@ -18,7 +18,7 @@ import {
   SYB_OIS_Section6,
   SYB_OIS_Section7,
   SYB_OIS_Section8,
-} from '@/mocks/website/TYO/trang_sby';
+} from '@/mocks/website/SYB/syb';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
