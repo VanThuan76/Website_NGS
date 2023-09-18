@@ -7,9 +7,9 @@ import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Com
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
-import { TYOBanner1_PG4_1, TYOClientStories2_Secure, TYOForm1_PG4_1, TYOOverview1_PG4_1, TYOPartner2_PG4_1, TYOService3_PG4_1, TYOWhyUs1_PG4_1, TYOchallenge3_PG4_1 } from '@/mocks/website/TYO/duong';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
+import { SYBBanner1_PG4_1, SYBClientStories2_Secure, SYBForm1_PG4_1, SYBOverview1_PG4_1, SYBPartner2_PG4_1, SYBService3_PG4_1, SYBWhyUs1_PG4_1, SYBchallenge3_PG4_1 } from '@/mocks/website/SYB/syb';
 
 const SOCPage = () => {
   return (
@@ -19,14 +19,14 @@ const SOCPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <BannerDesignOneSection title="Bảo mật xuất sắc" data={TYOBanner1_PG4_1}/>
-      <OverviewDesignOneSection title='Tổng quan' data={TYOOverview1_PG4_1} />
-      <ChallengeDesignThreeSection title='Thách thức' data={TYOchallenge3_PG4_1} />
-      <ServiceDesignThreeSection title='Dịch vụ' data={TYOService3_PG4_1} />
-      <WhyUsDesignOneSection title='Tổng quan' data={TYOWhyUs1_PG4_1}/>
-      <PartnerDesignTwoSection data={TYOPartner2_PG4_1}/>
-      <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_Secure} />
-      <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG4_1} />
+      <BannerDesignOneSection title="Bảo mật xuất sắc" data={SYBBanner1_PG4_1}/>
+      <OverviewDesignOneSection title='Tổng quan' data={SYBOverview1_PG4_1} />
+      <ChallengeDesignThreeSection title='Thách thức' data={SYBchallenge3_PG4_1} />
+      <ServiceDesignThreeSection title='Dịch vụ' data={SYBService3_PG4_1} />
+      <WhyUsDesignOneSection title='Tổng quan' data={SYBWhyUs1_PG4_1}/>
+      <PartnerDesignTwoSection data={SYBPartner2_PG4_1}/>
+      <ClientStoriesDesignTwoSection title='Client stories' data={SYBClientStories2_Secure} />
+      <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_1} />
 
     </React.Fragment>
   );
