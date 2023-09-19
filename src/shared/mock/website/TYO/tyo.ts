@@ -82,6 +82,91 @@ export const TYOOverview7_PG3_17 = {
     ]
 }
 
+export const TYOOverview4_PG3_17 = {
+    section: {
+        id: 2,
+        name: 'Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề',
+        code: "PG003.17SE00002",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.17SE00002CN000001",
+            title: "Tối đa hóa giá trị của dữ liệu để đưa ra quyết định hiệu quả hơn",
+            description: "Đảm bảo sử dụng tất cả các dữ liệu liên quan trong tổ chức của bạn để có cái nhìn toàn diện về cảnh quan kinh doanh. Tích hợp và kết nối các nguồn dữ liệu khác nhau trong tổ chức để cho phép truy cập thông tin từ các hệ thống và bộ phận khác nhau một cách liền mạch. Điều này sẽ cung cấp cái nhìn toàn diện về dữ liệu và giúp ra quyết định tốt hơn.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.17SE00002CN000002",
+            title: "Cung cấp thông tin đáng tin cậy trên nền tảng dữ liệu hiện đại",
+            description: "Đầu tư vào một hạ tầng dữ liệu hiện đại hỗ trợ việc thu thập, lưu trữ, xử lý và phân tích dữ liệu đáng tin cậy. Đảm bảo chất lượng và quản trị dữ liệu để tạo niềm tin vào những thông tin được tạo ra từ dữ liệu  cho doanh nghiệp của bạn. ",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.17SE00002CN000003",
+            title: "Hỗ trợ nhân viên truy cập và phân tích dữ liệu",
+            description: "Thông qua các công cụ tự phục vụ, trong khi duy trì các quy trình quản trị và bảo mật phù hợp. Điều này giúp ra quyết định nhanh hơn và giảm sự phụ thuộc vào đội ngũ IT",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.17SE00002CN000004",
+            title: "Đẩy nhanh quá trình triển khai ",
+            description: "Bằng các phương pháp tối ưu nhất được đóng gói sẵn và phù hợp với doanh nghiệp của bạn.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.17SE00002CN000005",
+            title: "Mở rộng việc lập kế hoạch và phân tích trên toàn doanh nghiệp ",
+            description: "Tạo các kế hoạch phù hợp được tích hợp liền mạch với các ứng dụng doanh nghiệp",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.17SE00002CN000006",
+            title: "Tăng cường sự hợp tác giữa các nhóm",
+            description: "Tăng cường sự hợp tác giữa tất cả các nhóm góp phần vào sự thành công của tổ chức của bạn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
 export const TYOchallenge2_PG3_17 = {
     section: {
         id: 3,
@@ -507,13 +592,50 @@ export const TYOOverview2_PG3_10 = {
 export const TYOOverview4_PG3_10 = {
     section: {
         id: 3,
-        name: 'Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề',
+        name: 'Đưa ra được mục tiêu dữ liệu và giải pháp thu thập và phân tích dữ liệu. Đánh giá các giải pháp dữ liệu và phân tích đang được sử dụng.',
         code: "PG003.10SE00003",
         image: "",
         description: ""
 
     },
-    components: []
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.10SE00003CN000001",
+            title: "Vận hành theo tiêu chuẩn",
+            description: "Tối đa hóa sự khác biệt doanh nghiệp của bạn bằng cách điều chỉnh quy trình kinh doanh theo yêu cầu riêng // Bảo vệ khoản đầu tư của doanh nghiệp và di chuyển lên đám mây theo tốc độ của doanh nghiệp mong muốn",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00003CN000002",
+            title: "Hiện đại hóa quy trình kinh doanh",
+            description: "Đạt được mức tăng trưởng lợi nhuận nhờ các quy trình kinh doanh đã được minh chứng cho ngành // Mang lại sự tăng trưởng xanh bằng trực tiếp cách xây dựng tính bền vững vào doanh nghiệp",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00003CN000003",
+            title: "Giữ quyền kiểm soát",
+            description: "Quản lý tốc độ thay đổi bằng cách triển khai các cải tiến theo dòng thời gian // Chọn cơ sở hạ tầng đám mây dựa trên bối cảnh và mong muốn doanh nghiệp",
+            slug: "",
+            content: "",
+            image: "/images/TYO_sec4.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
 }
 
 export const TYOchallenge2_PG3_10 = {
@@ -1972,6 +2094,18 @@ export const TYOBanner1_PG3_15 = {
         code: "PG0003_15SE00001",
         image: "/images/background_1.png",
         description: "NGS tự hào cung cấp bộ giải pháp cho các công ty vừa và nhỏ, giúp doanh nghiệp thúc đẩy bán hàng, nhanh chóng nhận diện và nắm bắt cơ hội kinh doanh với chi phí hợp lý!"
+
+    },
+    components: []
+}
+
+export const TYOOverview8_PG3_15 = {
+    section: {
+        id: 2,
+        name: 'NGS giúp quản lý toàn bộ doanh nghiệp của bạn bằng một giải pháp ERP tích hợp tất cả các tính năng trên một hệ thống với giá cạnh tranh – từ kế toán và tài chính, mua hàng, tồn kho, bán hàng và quan hệ khách hàng đến báo cáo và phân tích.',
+        code: "PG0003_15SE00002",
+        image: "",
+        description: ""
 
     },
     components: []

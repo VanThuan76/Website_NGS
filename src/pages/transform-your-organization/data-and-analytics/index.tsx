@@ -8,10 +8,11 @@ import OverviewDesignSevenSection from '@/components/business/website/TYO&SYB_Co
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
-import { TYOBanner1_PG3_17, TYOClientStories2_PG3_10, TYOForm1_PG3_17, TYOOverview7_PG3_17, TYOPartner3_PG3_17, TYOService1_PG3_17, TYOWhyUs1_PG3_17, TYOchallenge2_PG3_17 } from '@/mocks/website/TYO/tyo';
+import { TYOBanner1_PG3_17, TYOClientStories2_PG3_10, TYOForm1_PG3_17, TYOOverview4_PG3_17, TYOOverview7_PG3_17, TYOPartner3_PG3_17, TYOService1_PG3_17, TYOWhyUs1_PG3_17, TYOchallenge2_PG3_17 } from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 import dynamic from 'next/dynamic';
+import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -29,7 +30,7 @@ const DAAPage = () => {
         <BannerDesignOneSection title='Dữ liệu và phân tích' data={TYOBanner1_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <OverviewDesignSevenSection title='Tổng quan' data={TYOOverview7_PG3_17} />
+      <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_17} />
