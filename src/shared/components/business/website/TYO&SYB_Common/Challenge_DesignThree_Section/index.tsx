@@ -16,18 +16,21 @@ const ChallengeDesignThreeSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`px-4 md:px-24 lg:px-32 overflow-hidden ${className} bg-[#051C2C]`}
+      className={`md: lg: overflow-hidden ${className} bg-[#051C2C]`}
     >
       <div className='w-full grid grid-cols-2 justify-center items-center gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
+        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 px-20 py-24'>
           <TitleSection
             title={title}
+            className='gap-5 text-2xl font-medium'
+          />
+          <TitleSection
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-start items-start gap-3 text-white'
+            className='w-full flex flex-col justify-start items-start gap-10 text-white'
           />
-          <BtnCommon title='Xem giá chi tiết' cls='border-orange-500' />
+          <BtnCommon title='Đăng ký ngay' cls='border-orange-500' />
         </div>
         <div className='relative w-full flex-shrink-0 snap-start'>
           <PreImage
