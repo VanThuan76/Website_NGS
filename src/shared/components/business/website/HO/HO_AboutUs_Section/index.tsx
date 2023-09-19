@@ -4,7 +4,7 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { useTheme } from 'next-themes';
-import UseLinkRedirect from '@/utils/functions/useLinkRedirect';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;

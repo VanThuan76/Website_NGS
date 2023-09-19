@@ -6,7 +6,7 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import MouseScroll from '@/components/icon/HO/banner/MouseScroll';
 import HOBannerContent from './HOBannerContent';
-import UseLinkRedirect from '@/utils/functions/useLinkRedirect';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 interface Props {
   data: Partial<IBaseSectionComponent>;

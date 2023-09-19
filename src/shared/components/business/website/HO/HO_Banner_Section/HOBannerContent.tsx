@@ -1,8 +1,9 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
-import UseLinkRedirect from '@/utils/functions/useLinkRedirect';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import { AnimatePresence, motion } from 'framer-motion';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+
 const textVariants = {
   initial: {
     opacity: 0,

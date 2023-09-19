@@ -28,15 +28,15 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
     <NavigationMenu className='NavigationMenuRoot'>
       <NavigationMenuList className='NavigationMenuList'>
         {fakeMenu.map((mainMenu, idx) => (
-          <React.Fragment>
+          <div key={idx}>
             {mainMenu.menuChild.length === 0 ? (
-              <NavigationMenuItem key={idx}>
+              <NavigationMenuItem>
                 <Link href={mainMenu.path as string} legacyBehavior passHref>
                   <NavigationMenuLink className={navigationMenuTriggerStyle()}>{mainMenu.title}</NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             ) : (
-              <NavigationMenuItem key={idx} className='cursor-pointer'>
+              <NavigationMenuItem className='cursor-pointer'>
                 <NavigationMenuTrigger
                   style={{color: `${("/" + pathname.split("/")[1]) === mainMenu.path && "#FC5E03"}`}}
                   onMouseMove={() => setSelectedMenuChild3(mainMenu.menuChild[0])}
@@ -108,7 +108,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                 </NavigationMenuContent>
               </NavigationMenuItem>
             )}
-          </React.Fragment>
+          </div>
         ))}
         <NavigationMenuIndicator className='NavigationMenuIndicator'>
           <div className='Arrow' />
