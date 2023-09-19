@@ -41,7 +41,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                       {mainMenu.menuChild.map((menuChild2, idx) => (
                         <motion.div
                           key={idx}
-                          style={{ borderBottom: '1px solid #B7B4AE' }}
+                          style={{ borderBottom: `1px solid #B7B4AE` }}
                           className='w-full flex justify-between items-center cursor-pointer'
                           whileTap={{ borderBottom: '1px solid #FC5E03' }}
                           onClick={() => {

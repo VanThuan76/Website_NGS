@@ -4,9 +4,150 @@ export const fakeMenu = [
         title: "Giải pháp tiên phong",
         menuChild: [
             {
-                title: "ERP",
-                path: "/erp",
-                menuChild: []
+                title: "Giải pháp Quản lý doanh nghiệp",
+                path: "",
+                menuChild: [
+                    {
+                        title: "E-Office",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Messenger & Lịch biểu",
+                                path: "/messenger-and-schedule",
+                                menuChild: []
+                            },
+                            {
+                                title: "Đề xuất & Phê duyệt",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý giao việc",
+                                path: "/assignment-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý tài liệu",
+                                path: "/document-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "E-Learning",
+                                path: "/e-learning",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                    {
+                        title: "Quản lý chuỗi cung ứng",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Quản lý mua hàng",
+                                path: "/purchase-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý kho",
+                                path: "/inventory-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý dự án",
+                                path: "/project-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý sản xuất",
+                                path: "/production-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý chất lượng",
+                                path: "/quality-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Thiết bị và Bảo dưỡng",
+                                path: "",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                    {
+                        title: "Quản lý tài chính",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Kế toán phải thu",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kế toán phải trả",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Tài sản cố định & Công cụ dụng cụ",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kế toán kho",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kế toán tổng hợp",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý ngân sách",
+                                path: "/budget-management",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                ]
+            },
+            {
+                title: "Giải pháp Bán hàng",
+                path: "",
+                menuChild: [
+                    {
+                        title: "Quản lý bán hàng",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Quản lý khuyến mại & báo giá",
+                                path: "/promotion-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý khách hàng",
+                                path: "/customer-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý hợp đồng",
+                                path: "/contract-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Hệ thống POS",
+                                path: "/pos-system",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý đại lý & bán sỉ",
+                                path: "/dealer-wholesale-management",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                ]
             },
             {
                 title: "CRM",
@@ -30,29 +171,7 @@ export const fakeMenu = [
                 ]
             },
             {
-                title: "Digital Foundation",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            }
-            ,
-            {
-                title: "IT Management Service",
+                title: "ERP Connect",
                 path: "",
                 menuChild: [
                     {
@@ -102,7 +221,7 @@ export const fakeMenu = [
                 menuChild: [
                     {
                         title: "Customer Engagement",
-                        path: "/digital-transformation-implementation",
+                        path: "/transform-your-organization",
                         menuChild: [
                             {
                                 title: "Customer Data Platform",
@@ -118,7 +237,7 @@ export const fakeMenu = [
                     },
                     {
                         title: "Business Core Operation",
-                        path: "/digital-transformation-implementation",
+                        path: "/transform-your-organization",
                         menuChild: [
                             {
                                 title: "Core Banking",
@@ -288,7 +407,7 @@ export const fakeMenu = [
     {
         id: 4,
         title: "Về chúng tôi",
-        path: "",
+        path: "/empower-success",
         menuChild: [
         ]
     }

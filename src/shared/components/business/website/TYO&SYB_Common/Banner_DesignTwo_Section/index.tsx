@@ -28,10 +28,10 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className }: Props) => {
                   </div>
                 ))}
               </div>
-              <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
-              <p className='mt-5 font-thin'>{data.section.description}</p>
+              <h1 className='text-2xl md:text-4xl font-[500px]'>{data.section.name}</h1>
+              <p className='mt-5 font-thin leading-7'>{data.section.description}</p>
             </div>
-            <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            <BtnCommon title='Tìm hiểu thêm' cls='bg-white text-orange-500 p-4 rounded-sm' />
           </div>
           <div className='relative w-full flex-shrink-0 snap-start'>
             <PreImage

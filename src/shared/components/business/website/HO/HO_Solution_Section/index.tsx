@@ -18,7 +18,7 @@ const HomeSolutionSection = ({ data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <TitleSection
         title='Giải pháp'
@@ -27,11 +27,11 @@ const HomeSolutionSection = ({ data, className }: Props) => {
         findMore={true}
         className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3'
       />
-      <div className='max-w-[1440px] mx-auto my-auto grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-1'>
+      <div className='max-w-[1440px] mx-auto my-auto py-12 grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-0.5'>
         {data &&
           data.components!.map((item, idx) => (
             <div
-              className='relative max-w-[310px] min-h-[300px] lg:min-h-[350px] rounded-lg overflow-hidden shadow-lg'
+              className='relative max-w-[310px] min-h-[300px] lg:min-h-[350px] rounded-lg shadow-md overflow-hidden'
               key={idx}
             >
               <motion.div

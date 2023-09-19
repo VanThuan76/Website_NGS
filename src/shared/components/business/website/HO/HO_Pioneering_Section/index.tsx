@@ -14,7 +14,7 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`relative w-full my-10 max-h-[470px] md:max-h-[350px] z-30 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`relative w-full my-10 max-h-[470px] md:max-h-[350px] z-30 px-4 md:px-24 ${className}`}
       style={{
         background: `linear-gradient(180deg, rgba(248, 133, 80, 0.3) -9.34%, rgba(255, 255, 255, 0.3) 129.73%)`,
       }}

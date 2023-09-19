@@ -1,6 +1,6 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-
+import { Link } from 'react-scroll';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -8,16 +8,15 @@ import InitBasicAnimation from '@/components/common/customization/InitBasicAnima
 import MouseScroll from '@/components/icon/HO/banner/MouseScroll';
 import HOBannerContent from './HOBannerContent';
 
-
 interface Props {
   data: Partial<IBaseSectionComponent>;
 }
 const HomeBannerSection = ({ data }: Props) => {
-  const [selectedTab, setSelectedTab] = useState<Partial<SectionData>|undefined >(()=> {
-    if(data.components && data.components.length > 0 ) return data.components[0]
-    else return undefined
+  const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
+    if (data.components && data.components.length > 0) return data.components[0];
+    else return undefined;
   });
-  
+
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -35,13 +34,13 @@ const HomeBannerSection = ({ data }: Props) => {
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const nextIndex = data.components!.indexOf(prevTab as any) + 1;
       return nextIndex < data.components!.length ? data.components![nextIndex] : data.components![0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const prevIndex = data.components!.indexOf(prevTab as any) - 1;
       return prevIndex >= 0 ? data.components![prevIndex] : data.components![data.components!.length - 1];
     });
@@ -60,13 +59,22 @@ const HomeBannerSection = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
-  if(!selectedTab) return <React.Fragment></React.Fragment>
+  if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
     <section id={data && data.section && data.section.code} className='block'>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
+      <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <HOBannerContent selectedTab={selectedTab} />
-          <MouseScroll className='absolute right-10 bottom-10 z-30 hidden lg:block' />
+          <Link
+            to={"PG001SE00002"}
+            smooth={true}
+            duration={1000}
+            spy={true}
+            offset={-100}
+            className='lg:text-sm xl:text-base'
+          >
+            <MouseScroll className='absolute right-10 bottom-10 z-30 hidden lg:block' />
+          </Link>
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
@@ -77,7 +85,7 @@ const HomeBannerSection = ({ data }: Props) => {
             >
               <PreImage
                 src={selectedTab.image as string}
-                height={1080}
+                height={760}
                 width={1980}
                 layer={true}
                 alt={'Banner'}
@@ -89,14 +97,15 @@ const HomeBannerSection = ({ data }: Props) => {
         <InitBasicAnimation className='absolute bottom-10 left-10 z-40'>
           <div className='flex items-center justify-between gap-5'>
             <ul className='hidden md:flex items-center justify-between gap-5'>
-              {(data.components||[]).map((item, idx) => (
+              {(data.components || []).map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 ${item === selectedTab ? 'text-white' : 'text-slate-300 '
-                    } cursor-pointer font-medium`}
+                  className={`px-5 pb-3 border-b-4 ${
+                    item === selectedTab ? 'text-white' : 'text-slate-300 '
+                  } cursor-pointer font-medium`}
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.title}`}

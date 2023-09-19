@@ -69,7 +69,6 @@ export const Home_1 = {
     }
 ]
 }
-
 export const Home_2 = {
     section: {
         id: 2,
@@ -347,7 +346,7 @@ export const Home_6 = {
         id: 1,
         language: 'vi',
         code: "HOME0001SE00006CN000001",
-        title: "10+",
+        title: "10",
         description: "Đối tác công nghệ hàng đầu thế giới của chúng tôi",
         slug: "",
         content: "",
@@ -359,7 +358,7 @@ export const Home_6 = {
         id: 2,
         language: 'vi',
         code: "HOME0001SE00006CN000002",
-        title: "200+",
+        title: "200",
         description: "",
         slug: "",
         content: "",
@@ -371,7 +370,7 @@ export const Home_6 = {
         id: 3,
         language: 'vi',
         code: "HOME0001SE00006CN000003",
-        title: "40+",
+        title: "40",
         description: "Doanh nghiệp là khách hàng của chúng tôi",
         slug: "",
         content: "",

@@ -19,8 +19,8 @@ const OverviewDesignOneSection = ({ title, data, className }: Props) => {
       <div className='relative w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
         <div className='flex flex-col justify-start items-start md:justify-center md:items-center gap-2 z-30'>
           <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
-          <p className='text-center mt-5'>{data.section.description}</p>
+          <h1 className='text-2xl md:text-4xl font-medium text-[#29130F]'>{data.section.name}</h1>
+          <p className='text-center mt-5 leading-7'>{data.section.description}</p>
         </div>
         <BorderStyleOneLight className='absolute top-0 z-10' />
       </div>

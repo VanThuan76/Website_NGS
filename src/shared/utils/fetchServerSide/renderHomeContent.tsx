@@ -12,6 +12,7 @@ export async function renderHomeContent(language: string, token: string | undefi
       'PG001SE00007',
       'PG001SE00008',
       'PG001SE00009',
+      'PG001SE00010',
       'PG001SE00011',
       'PG001SE00012',
       'PG001SE00013',

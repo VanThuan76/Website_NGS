@@ -17,10 +17,10 @@ const HomeTestimonialSection = ({ data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row justify-start items-start gap-5'>
-        <div className='w-full lg:w-1/2 flex flex-col justify-start items-start'>
+      <div className='w-full mx-auto my-auto grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-5'>
+        <div className='w-full flex flex-col justify-start items-start'>
           <TitleSection
             title='Lời chứng thực'
             name={data.section!.name as string}

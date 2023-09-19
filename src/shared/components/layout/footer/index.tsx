@@ -6,8 +6,8 @@ import ResponsiveContent from './ResponsiveContent';
 
 const Footer = () => {
   return (
-    <section className='bg-[#141523] text-white font-thin pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40'>
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center p-4 md:p-6 lg:p-12'>
+    <section className='bg-[#141523] text-white font-thin pt-4 md:pt-8 lg:pt-16 pb-3 md:pb-6 lg:pb-12 px-8 md:px-16 lg:px-28'>
+      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center'>
         <div className='w-full flex flex-col md:flex-row gap-4 justify-between items-center md:justify-start mb-4'>
           <div className='flex flex-col justify-start items-start'>
             <PreImage height={200} width={200} src={'/logo.svg'} alt={'Logo'} layer={false} />

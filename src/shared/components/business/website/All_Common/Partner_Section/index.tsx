@@ -15,18 +15,17 @@ type Props = {
 }
 
 const PartnerSection = ({data, className}: Props) => {
+  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const { theme } = useTheme();
   const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>|undefined >(()=> {
     if(data.components && data.components.length > 0 ) return data.components[0]
     else return undefined
   });
-  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
-  if(!selectedPartner) return <></>
   return (
     <section
       id={data.section.code}
-      className={`bg-[#F06426] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`bg-[#F06426] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>

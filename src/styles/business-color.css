@@ -137,8 +137,7 @@ p {
 
 .NavigationMenuViewport {
   position: relative;
-  transform-origin: top center;
-  margin-top: 10px;
+  transform-origin: bottom center;
   width: 100%;
   background-color: white;
   border-radius: 6px;
@@ -162,6 +161,7 @@ p {
 .List {
   display: grid;
   padding: 22px;
+  padding-bottom: 22px;
   margin: 0;
   column-gap: 10px;
   list-style: none;
@@ -262,7 +262,7 @@ p {
 
 .Arrow {
   position: relative;
-  top: 70%;
+  top: 80%;
   background-color: white;
   width: 10px;
   height: 10px;
