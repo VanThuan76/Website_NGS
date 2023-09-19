@@ -31,7 +31,7 @@ const ERPPage = () => {
         <OverviewDesignTwoSection title='Tổng quan' data={TYOOverview2_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <OverviewDesignFourSection title='' data={TYOOverview4_PG3_10} />
+      <OverviewDesignFourSection title='' data={TYOOverview4_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_10} />
