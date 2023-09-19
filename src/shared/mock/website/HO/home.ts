@@ -709,10 +709,10 @@ export const Home_11 = {
 export const Home_12 = {
     section: {
         id: 1,
-        name: 'Khách hàng nói gì về chúng tôi',
-        code: "HOME0001SE00012",
+        name: 'Khách hàng nói về NGS',
+        code: "PG001SE00012",
         image: "",
-        description: "Với khát vọng trở thành người đồng hành trao quyền cho mọi cá nhân và tổ chức, NGS cam kết luôn nỗ lực phát triển những giải pháp công nghệ thông tin tối ưu "
+        description: "Sự tin tưởng của khách hàng là động lực của NGS, chúng tôi luôn cam kết mang đến cho khách hàng trải nghiệm với những sản phẩm hoàn thiện "
     },
     components: [
         {
@@ -769,45 +769,45 @@ export const Home_12 = {
 export const Home_13 = {
     section: {
         id: 1,
-        name: 'Tham khảo các case study thành công và cách phát triển doanh nghiệp của bạn',
-        code: "HOME0001SE00013",
+        name: 'Câu chuyện thành công của NGS',
+        code: "PG001SE00013",
         image: "",
         description: " "
     },
     components: [
         {
-        id: 1,
+        id: 13,
         language: 'vi',
-        code: "HOME0001SE00001CN000013",
+        code: "PG001SE00013CN000001",
         title: "Định hình lại luồng dữ liệu của VietcomBank",
         description: "",
-        slug: "",
+        slug: "dinh-hinh-lai-luong-du-lieu-cua-VCB-41",
         content: "",
-        image: "/images/Homepage13_cpn1.png",
+        image: "/images/HomeSE13CN000001.png",
         video: "",
         thumbnail: ""
     },
     {
-        id: 2,
+        id: 13,
         language: 'vi',
-        code: "HOME0001SE00013CN000002",
+        code: "PG001SE00013CN000002",
         title: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
         description: "",
-        slug: "",
+        slug: "tam-quan-trong-cua-danh-gia-trai-nghiem-khach-hang-42",
         content: "",
-        image: "/images/background_1.png",
+        image: "/images/Home13CN000002.png",
         video: "",
         thumbnail: ""
     },
     {
-        id: 3,
+        id: 13,
         language: 'vi',
-        code: "HOME0001SE00013CN000002",
+        code: "PG001SE00013CN000003",
         title: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
         description: "",
-        slug: "",
+        slug: "tam-quan-trong-cua-danh-gia-trai-nghiem-khach-hang-43",
         content: "",
-        image: "/images/background_2.png",
+        image: "/Home13CN000003.png",
         video: "",
         thumbnail: ""
     },
