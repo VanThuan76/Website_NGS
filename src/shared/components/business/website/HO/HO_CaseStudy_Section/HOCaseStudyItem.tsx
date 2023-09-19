@@ -14,7 +14,7 @@ const HOCaseStudyItem = ({ data }: Props) => {
     <div className='relative w-full flex flex-col justify-between items-center rounded-lg'>
       <div className='w-full'>
         <PreImage
-          src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
+          src={'/images/background_3.png'}
           height={300}
           width={600}
           layer={false}
@@ -26,7 +26,7 @@ const HOCaseStudyItem = ({ data }: Props) => {
         <p className='text-xl'>{data.title}</p>
         <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
           <motion.p className={`text-sm ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
-          <IconLineDirection color={theme !== 'dark' ? '#000' : '#fff'} />
+          <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
         </div>
       </div>
     </div>

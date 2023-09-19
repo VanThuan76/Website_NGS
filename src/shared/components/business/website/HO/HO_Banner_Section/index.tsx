@@ -94,9 +94,9 @@ const HomeBannerSection = ({ data }: Props) => {
             </motion.div>
           </AnimatePresence>
         </div>
-        <InitBasicAnimation className='absolute bottom-10 left-10 z-40'>
-          <div className='flex items-center justify-between gap-5'>
-            <ul className='hidden md:flex items-center justify-between gap-5'>
+        <InitBasicAnimation className='absolute bottom-10 left-10 z-40 pl-20'>
+          <div className='flex items-center justify-between gap-5 text-sm'>
+            <ul className='hidden md:flex items-center justify-between gap-6'>
               {(data.components || []).map((item, idx) => (
                 <motion.li
                   key={idx}
@@ -105,7 +105,7 @@ const HomeBannerSection = ({ data }: Props) => {
                   variants={contentAnimated}
                   className={`px-5 pb-3 border-b-4 ${
                     item === selectedTab ? 'text-white' : 'text-slate-300 '
-                  } cursor-pointer font-medium`}
+                  } cursor-pointer font-normal`}
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.title}`}
