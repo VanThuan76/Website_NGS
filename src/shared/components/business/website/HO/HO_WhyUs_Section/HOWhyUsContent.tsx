@@ -48,11 +48,11 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
         })}
       </motion.div>
       {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
-        <div key={idx} className='flex flex-col justify-center items-center pb-2'>
-          <p className='text-sm lg:text-base mt-5 text-[#C2C0BF]'>{item}</p>
+        <div key={idx} className='flex flex-col justify-center items-center'>
+          <p className='text-sm lg:text-base text-[#C2C0BF]'>{item}</p>
         </div>
       ))}
-      <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+      <BtnCommon cls='mt-5 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
     </div>
   );
 };

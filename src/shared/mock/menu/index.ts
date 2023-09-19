@@ -2,10 +2,11 @@ export const fakeMenu = [
     {
         id: 1,
         title: "Giải pháp tiên phong",
+        path: "/your-next-gen",
         menuChild: [
             {
                 title: "Giải pháp Quản lý doanh nghiệp",
-                path: "",
+                path: "/your-next-gen",
                 menuChild: [
                     {
                         title: "E-Office",
@@ -294,7 +295,7 @@ export const fakeMenu = [
     {
         id: 2,
         title: "Dịch vụ xuất sắc",
-        path: "",
+        path: "/transform-your-organization",
         menuChild: [
             {
                 title: "Digital Consulting",
@@ -302,7 +303,7 @@ export const fakeMenu = [
                 menuChild: [
                     {
                         title: "Feature Solution",
-                        path: "/digital-consulting",
+                        path: "/transform-your-organization",
                         menuChild: [
                             {
                                 title: "Digital Strategy & Planning",
@@ -456,7 +457,7 @@ export const fakeMenu = [
     {
         id: 3,
         title: "Bảo mật xuất sắc",
-        path: "",
+        path: "/secure-your-business",
         menuChild: [
             {
                 title: "",
@@ -537,11 +538,6 @@ export const fakeMenu = [
         ]
     }
 ]
-export const defaultMenu3: IMenuChild3 = {
-    title: "Not found",
-    path: "",
-    menuChild: []
-}
 export interface IMenu {
     id: number;
     path?: string;

@@ -27,7 +27,7 @@ const NewsSection = ({ data, className }: Props) => {
         className='w-full md:w-[80%] flex justify-between items-center gap-3'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto mt-10  grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-6'>
-        <div className='dark:bg-[#1B1D35] flex flex-col justify-between items-center pb-5 rounded-lg shadow-lg'>
+        <div className='dark:bg-[#1B1D35] flex flex-col justify-start items-start pb-5 rounded-lg shadow-lg'>
           <PreImage
             src={data.components[0].image}
             height={275}
@@ -47,7 +47,7 @@ const NewsSection = ({ data, className }: Props) => {
           </div>
           <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
         </div>
-        <div className='w-full grid grid-rows-2 gap-5'>
+        <div className='w-full h-full grid grid-cols-1 gap-5'>
           {data.components!.slice(0, 2).map((item, idx) => (
             <NewsItem key={idx} data={item} />
           ))}

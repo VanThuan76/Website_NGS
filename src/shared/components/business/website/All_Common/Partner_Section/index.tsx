@@ -2,7 +2,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
@@ -25,12 +24,12 @@ const PartnerSection = ({data, className}: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`bg-[#F06426] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 ${className}`}
+      className={`bg-[#fc5e03] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
-          <Swiper slidesPerView={6} spaceBetween={32} modules={[Pagination]} className='w-full'>
+          <Swiper className='w-full'>
             {data.components!.map((item, idx) => (
               <SwiperSlide className='max-w-[250px] p-8' key={idx}>
                 <PreImage
@@ -39,7 +38,7 @@ const PartnerSection = ({data, className}: Props) => {
                   width={100}
                   layer={false}
                   alt={item.title}
-                  className={`relative rounded-lg cursor-pointer ${
+                  className={`relative rounded-lg cursor-pointer object-contain ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-30'
                   }`}
                   onClick={() => setSelectedPartner(item)}

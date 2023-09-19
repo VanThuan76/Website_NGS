@@ -35,19 +35,21 @@ const Header = () => {
       initial={{ height: '85px' }}
       animate={{ height: isScrolled ? '80px' : '85px' }}
       transition={{ duration: 0.3 }}
-      className={`w-full top-0 z-50 flex justify-between items-center gap-5 px-5 md:px-10 transition ${
+      className={`w-full top-0 z-50 flex justify-between items-center gap-5 transition ${
         isScrolled
           ? 'sticky light:text-black border-b-[1px] border-opacity-50 border-black-300 duration-500 ease-in-out bg-[#fff] dark:bg-[#141523]'
           : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
       }`}
     >
-      <div className='flex justify-around items-center'>
+      <div className='w-full flex justify-around items-center'>
+      <div className='absolute left-5 flex justify-center items-center gap-2 z-20'>
         <PreImage height={100} width={100} src='/logo.svg' alt='Logo' layer={false} onClick={() => router.push("/")} className="cursor-pointer"/>
-        <div className='hidden lg:block'>
+        </div>
+        <div className='relative hidden lg:block z-10'>
           <NavigationMenuMain fakeMenu={fakeMenu} />
         </div>
       </div>
-      <div className='absolute right-5 flex justify-center items-center gap-2'>
+      <div className='absolute right-5 flex justify-center items-center gap-2 z-20'>
         <div
           id='dropdown'
           className='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'

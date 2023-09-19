@@ -40,7 +40,7 @@ const HOServiceSection = ({ item, idx }: Props) => {
           {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>
         {/* Responsive--> */}
-        <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <BtnCommon cls='mt-5 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );

@@ -1,55 +1,75 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import UseLinkRedirect from '@/utils/functions/useLinkRedirect';
 import { AnimatePresence, motion } from 'framer-motion';
-import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
-
-export const staggerChildren = {
-  animate: {
-    transition: {
-      delayChildren: 0.4,
-      staggerChildren: 0.1,
-    },
-  },
-};
-
-export const wordAnimation = {
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+const textVariants = {
   initial: {
     opacity: 0,
-    y: -100,
+    scale: 0.8,
   },
   animate: {
     opacity: 1,
-    y: 0,
+    scale: 1,
     transition: {
-      ease: [0.6, 0.01, 0.05, 0.95],
-      duration: 1,
+      ease: 'easeOut',
+      duration: 0.6,
     },
   },
 };
 interface Props {
-  selectedTab: Partial<SectionData>;
+  selectedTab: Partial<IComponents>;
 }
 
 const HOBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='absolute min-h-screen flex flex-col justify-center items-start gap-6 leading-[90%] px-4 lg:py-0 lg:px-12 z-40 w-[698px] !pl-24'>
-      <div className='text-left text-sm lg:text-lg underline text-white'>
+    <InitBasicAnimation className='absolute top-28 max-h-screen w-full flex flex-col justify-center items-start gap-5 pl-4 lg:pl-24 z-40'>
+      <div className='text-left text-sm lg:text-lg underline font-medium text-white'>
         <AnimatePresence mode='wait'>
-          <motion.span variants={staggerChildren} initial='initial' animate='animate'>
+          <motion.div
+            className='text-left text-sm lg:text-lg underline font-medium text-white'
+            variants={textVariants}
+            initial='initial'
+            animate='animate'
+          >
             {selectedTab
               ? selectedTab?.description?.split(' ').map((word, idx) => (
-                  <motion.div key={idx} className='inline-block text-sm md:text-lg lg:text-2xl' variants={word.length > 1 ? wordAnimation : {}}>
-                    <motion.span className='inline-block'>{word + '\u00A0'}</motion.span>
+                  <motion.div
+                    key={idx}
+                    className='inline-block text-sm md:text-lg lg:text-2xl'
+                    variants={{
+                      initial: {
+                        opacity: 0,
+                        y: -10,
+                        rotate: -5,
+                      },
+                      animate: {
+                        opacity: 1,
+                        y: 0,
+                        rotate: 0,
+                        transition: {
+                          ease: 'easeOut',
+                          duration: 0.4,
+                        },
+                      },
+                    }}
+                  >
+                    {word + '\u00A0'}
                   </motion.div>
                 ))
               : ''}
-          </motion.span>
+          </motion.div>
         </AnimatePresence>
       </div>
-      <div className='w-full md:w-[100%] text-2xl lg:text-5xl uppercase text-white font-[500]'>
+      <div
+        style={{ lineHeight: '120%' }}
+        className='w-full md:w-[50%] text-2xl lg:text-5xl uppercase text-white font-medium'
+      >
         {selectedTab ? selectedTab.content : ''}
       </div>
-      <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm' />
+      <UseLinkRedirect sectionCode='ConnectUs'>
+        <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm' />
+      </UseLinkRedirect>
     </InitBasicAnimation>
   );
 };

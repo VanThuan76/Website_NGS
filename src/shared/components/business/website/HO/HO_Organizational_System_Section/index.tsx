@@ -19,7 +19,7 @@ const HOOrganizationalSystemSection = ({ data, className }: Props) => {
       <div className='w-full min-h-[200px] flex flex-col justify-center items-center lg:mt-20'>
         <div className='w-full flex flex-col items-center justify-center'>
           <h2 className='hidden lg:block text-xl xl:text-2xl'>{data.section.name}</h2>
-          <Swiper slidesPerView={3} spaceBetween={42} modules={[Pagination]} className='w-full'>
+          <Swiper className='w-full'>
             {data.components.map((item, idx) => (
               <SwiperSlide className='max-w-[250px] p-8' key={idx}>
                 <PreImage

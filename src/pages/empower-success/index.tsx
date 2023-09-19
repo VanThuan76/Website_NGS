@@ -25,6 +25,7 @@ import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/sch
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
 import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
 import ConnectUsSection from '@/components/business/website/All_Common/ConnectUs_Section';
+import { Home_10, Home_11 } from '@/mocks/website/HO/home';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -63,10 +64,10 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESOrganizationalSystemSection title='Dịch vụ' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <NewsSection data={COMMON_NewsData} />
+        <NewsSection data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <PartnerSection data={COMMON_SectionPartnerData} />
+        <PartnerSection data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <ConnectUsSection />

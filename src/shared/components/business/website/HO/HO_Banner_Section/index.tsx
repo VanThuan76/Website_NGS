@@ -1,12 +1,12 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import MouseScroll from '@/components/icon/HO/banner/MouseScroll';
 import HOBannerContent from './HOBannerContent';
+import UseLinkRedirect from '@/utils/functions/useLinkRedirect';
 
 interface Props {
   data: Partial<IBaseSectionComponent>;
@@ -16,7 +16,7 @@ const HomeBannerSection = ({ data }: Props) => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
   });
-
+  const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<number>(40);
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -61,25 +61,18 @@ const HomeBannerSection = ({ data }: Props) => {
   }, []);
   if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data && data.section && data.section.code} className='block'>
+    <section id={data && data.section && data.section.code} className='pb-10 block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <HOBannerContent selectedTab={selectedTab} />
-          <Link
-            to={"PG001SE00002"}
-            smooth={true}
-            duration={1000}
-            spy={true}
-            offset={-100}
-            className='lg:text-sm xl:text-base'
-          >
+          <UseLinkRedirect sectionCode='PG001SE00002'>
             <MouseScroll className='absolute right-10 bottom-10 z-30 hidden lg:block' />
-          </Link>
+          </UseLinkRedirect>
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
-              initial={{ x: -10, opacity: 0.8 }}
-              animate={{ x: 0, opacity: 1 }}
+              initial={{ opacity: 0.8 }}
+              animate={{ opacity: 1 }}
               transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
               className='relative w-full flex-shrink-0 snap-start'
             >
@@ -94,25 +87,37 @@ const HomeBannerSection = ({ data }: Props) => {
             </motion.div>
           </AnimatePresence>
         </div>
-        <InitBasicAnimation className='absolute bottom-10 left-10 z-40 pl-20'>
-          <div className='flex items-center justify-between gap-5 text-sm'>
-            <ul className='hidden md:flex items-center justify-between gap-6'>
+        <InitBasicAnimation className='absolute bottom-10 pl-4 lg:pl-20 z-40'>
+          <div className='relative w-full flex items-center justify-between gap-3'>
+            <ul className='hidden md:flex items-center justify-between gap-3'>
               {(data.components || []).map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 ${
+                  className={`custom-list-item px-4 pb-3 text-sm font-normal ${
                     item === selectedTab ? 'text-white' : 'text-slate-300 '
-                  } cursor-pointer font-normal`}
-                  onClick={() => setSelectedTab(item)}
+                  } cursor-pointer font-medium`}
+                  onClick={() => {
+                    setIsCalculateWidthTab(
+                      (200 / Number(data && data.components && data.components.length)) * (idx + 1),
+                    );
+                    setSelectedTab(item);
+                  }}
                 >
                   {`${item.title}`}
-                  {item === selectedTab ? <motion.div layoutId='underline' /> : null}
                 </motion.li>
               ))}
             </ul>
+            <motion.div
+              layoutId='underline'
+              className='absolute left-4 w-[200px] bottom-0 border-b-2 border-slate-500 z-20'
+            />
+            <motion.div
+              layoutId='underline'
+              className={`absolute left-4 w-[${isCalculateWidthTab}px] bottom-0 border-b-2 border-white z-30`}
+            />
           </div>
         </InitBasicAnimation>
       </div>

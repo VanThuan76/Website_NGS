@@ -5,15 +5,15 @@ interface Props {
 }
 const NewsItem = ({ data }: Props) => {
   return (
-    <div className='w-full dark:bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg shadow-lg'>
-      <div className='w-full col-span-1'>
+    <div className='w-full h-full dark:bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg shadow-lg'>
+      <div className='w-full h-full col-span-1'>
         <PreImage
           src={data.image as string}
           height={270}
           width={300}
           layer={false}
-          alt={'News'}
-          className='w-full rounded-l-lg object-cover'
+          alt={data.title as string}
+          className='w-full h-full rounded-l-lg object-cover'
         />
       </div>
       <div className='w-full flex flex-col justify-start items-start gap-3 p-5 col-span-2 lg:col-span-1'>

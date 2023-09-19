@@ -2,6 +2,7 @@ import React from 'react';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import { useTheme } from 'next-themes';
 
 type Props = {
   title?: string;
@@ -9,6 +10,8 @@ type Props = {
   className?: string;
 };
 const HomePioneeringSection = ({ title, data, className }: Props) => {
+  const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
@@ -23,7 +26,7 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
         <div className='w-full flex flex-col justify-start items-start gap-3'>
           <h1 className='text-3xl lg:text-4xl'>{data.section.name}</h1>
           <p>{data.section.description}</p>
-          <BtnCommon title='Xem giá chi tiết' cls='border-orange-500' />
+          <BtnCommon cls='mt-3 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
         </div>
         <PreImage
           src={data.section.image}
