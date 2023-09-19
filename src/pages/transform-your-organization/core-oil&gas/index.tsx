@@ -15,10 +15,15 @@ import {
   TYO_CG_Section6,
   TYO_CG_Section7,
   TYO_CG_Section8,
-} from '@/mocks/website/TYO/Trang_tyo';
+} from '@/mocks/website/TYO/tyo';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
+import dynamic from 'next/dynamic';
+
+const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
+  ssr: false,
+});
 
 const CCPage = () => {
   return (
@@ -28,17 +33,33 @@ const CCPage = () => {
         <meta name='description' content='Contact Center NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <BannerDesignTwoSection
-        breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
-        data={TYO_CG_Section1}
-      />
-      <OverviewDesignOneSection title='Tổng quan' data={TYO_CG_Section2} />
-      <ChallengeDesignThreeSection title='Lợi ích mang lại' data={TYO_CG_Section3} />
-      <ServiceDesignTwoSetion title='Dịch vụ' data={TYO_CG_Section4} />
-      <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CG_Section5} />
-      <PartnerDesignThreeSection data={TYO_CG_Section6} />
-      <ClientStoriesDesignOneSection title='' data={TYO_CG_Section7} />
-      <FormDesignOneSection title='Dùng thử' data={TYO_CG_Section8} />
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
+          data={TYO_CG_Section1}
+        />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <OverviewDesignOneSection title='Tổng quan' data={TYO_CG_Section2} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ChallengeDesignThreeSection title='Lợi ích mang lại' data={TYO_CG_Section3} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ServiceDesignTwoSetion title='Dịch vụ' data={TYO_CG_Section4} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CG_Section5} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <PartnerDesignThreeSection data={TYO_CG_Section6} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <ClientStoriesDesignOneSection title='' data={TYO_CG_Section7} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <FormDesignOneSection title='Dùng thử' data={TYO_CG_Section8} />
+      </ScrollRevealWrapper>
     </React.Fragment>
   );
 };

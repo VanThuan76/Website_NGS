@@ -2778,4 +2778,52 @@ export const SYB_OIS_Section8 = {
     ]
 }    
 
+export const SYBWhyUs1_PG4_2 = {
+    section: {
+        id: 6,
+        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+        code: "PG0004_2SE00006",
+        image: "",
+        description: "We are trusted partner for your digital transformation:"
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG0004_2SE00006CN000001",
+            title: "Đánh giá toàn diện",
+            description: "Khám phá các lỗ hổng ẩn trên các hệ thống, ứng dụng và mạng",
+            slug: "",
+            content: "",
+            image: "/images/SEC_sheild.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG0004_2SE00006CN000002",
+            title: "Giải pháp phù hợp",
+            description: "Các phương pháp thử nghiệm được tùy chỉnh phù hợp với nhu cầu bảo mật riêng của bạn.",
+            slug: "",
+            content: "",
+            image: "/images/SEC_star.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG0004_2SE00006CN000003",
+            title: "Phòng thủ chủ động",
+            description: "Đi trước tội phạm mạng một bước bằng cách chủ động củng cố hệ thống của bạn.",
+            slug: "",
+            content: "",
+            image: "/images/SEC_checked2.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+
 
