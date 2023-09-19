@@ -1,0 +1,106 @@
+export const Home_12 = {
+    section: {
+        id: 1,
+        name: 'Khách hàng nói gì về chúng tôi',
+        code: "HOME0001SE00012",
+        image: "",
+        description: "Với khát vọng trở thành người đồng hành trao quyền cho mọi cá nhân và tổ chức, NGS cam kết luôn nỗ lực phát triển những giải pháp công nghệ thông tin tối ưu "
+    },
+    components: [
+        {
+        id: 1,
+        language: 'vi',
+        code: "HOME0001SE00012CN00001",
+        title: "Nguyễn Xuân Minh",
+        description: "CEO",
+        slug: "",
+        content: "Lorem ipsum dolor sit amet consectetur. Malesuada nunc congue dignissim ut hendrerit id et fusce urna. Faucibus tempor viverra at nulla molestie hac. Morbi imperdiet",
+        image: "/images/Homepage12.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 2,
+        language: 'vi',
+        code: "HOME0001SE00012CN000002",
+        title: "Nguyễn Xuân Minh",
+        description: "CEO",
+        slug: "",
+        content: "Lorem ipsum dolor sit amet consectetur. Malesuada nunc congue dignissim ut hendrerit id et fusce urna. Faucibus tempor viverra at nulla molestie hac. Morbi imperdiet vitae scelerisque in gravida purus egestas  entum eget. Maecenas tortor sem vulputate ue cursus pharetra at. Nunc elementum sed pellentesque ipsum nisl ultricies quam aliquam. Ante sodales nibh a egestas nunc tempor dis imperdiet a. Curabitur porttitor c blandit tellus ipsum arcu nec lorem bibendum iaculis aliquam. Neque adipiscing etiam a eget mauris fermentum ullamcorper volutpat id. Egestas gravida porttitor accumsan eu amet sapien nibh. Vel purus nunc lacus aliquam.",
+        image: "/images/Homepage12.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 3,
+        language: 'vi',
+        code: "HOME0001SE00012CN000003",
+        title: "Nguyễn Xuân Minh",
+        description: "CEO",
+        slug: "",
+        content: "Lorem ipsum dolor sit amet consectetur. Malesuada nunc congue dignissim ut hendrerit id et fusce urna. Faucibus tempor viverra at nulla molestie hac. Morbi imperdiet",
+        image: "/images/Homepage12.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 4,
+        language: 'vi',
+        code: "HOME0001SE00012CN000004",
+        title: "Nguyễn Xuân Minh",
+        description: "CEO",
+        slug: "",
+        content: "Lorem ipsum dolor sit amet consectetur. Malesuada nunc congue dignissim ut hendrerit id et fusce urna. Faucibus tempor viverra at nulla molestie hac. Morbi imperdiet vitae scelerisque in gravida purus egestas  entum eget. Maecenas tortor sem vulputate ue cursus pharetra at. Nunc elementum sed pellentesque ipsum nisl ultricies quam aliquam. Ante sodales nibh a egestas nunc tempor dis imperdiet a. Curabitur porttitor c blandit tellus ipsum arcu nec lorem bibendum iaculis aliquam. Neque adipiscing etiam a eget mauris fermentum ullamcorper volutpat id. Egestas gravida porttitor accumsan eu amet sapien nibh. Vel purus nunc lacus aliquam.",
+        image: "/images/Homepage12.png",
+        video: "",
+        thumbnail: ""
+    },
+]
+}
+export const Home_13 = {
+    section: {
+        id: 1,
+        name: 'Tham khảo các case study thành công và cách phát triển doanh nghiệp của bạn',
+        code: "HOME0001SE00013",
+        image: "",
+        description: " "
+    },
+    components: [
+        {
+        id: 1,
+        language: 'vi',
+        code: "HOME0001SE00001CN000013",
+        title: "Định hình lại luồng dữ liệu của VietcomBank",
+        description: "",
+        slug: "",
+        content: "",
+        image: "/images/Homepage13_cpn1.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 2,
+        language: 'vi',
+        code: "HOME0001SE00013CN000002",
+        title: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
+        description: "",
+        slug: "",
+        content: "",
+        image: "/images/background_1.png",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 3,
+        language: 'vi',
+        code: "HOME0001SE00013CN000002",
+        title: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
+        description: "",
+        slug: "",
+        content: "",
+        image: "/images/background_2.png",
+        video: "",
+        thumbnail: ""
+    },
+]
+}
