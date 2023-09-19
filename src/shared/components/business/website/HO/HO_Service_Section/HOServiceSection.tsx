@@ -21,8 +21,8 @@ const HOServiceSection = ({ item, idx }: Props) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div className='flex justify-start items-start gap-4 md:gap-8'>
-        <div className='mb-3 text-xl md:text-2xl'>0{idx + 1}</div>
-        <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl'>{item.title}</h1>
+        <div className='mb-3 text-xl md:text-2xl font-medium'>0{idx + 1}</div>
+        <h1 className='text-md md:text-xl lg:text-2xl xl:text-2xl font-medium'>{item.title}</h1>
       </div>
 
       <motion.div
@@ -35,7 +35,7 @@ const HOServiceSection = ({ item, idx }: Props) => {
         }}
       >
         {/* <--Responsive */}
-        <p className='hidden md:block text-sm md:text-base'>{item.description}</p>
+        <p className='hidden md:block text-sm md:text-base text-[#757575] font-medium'>{item.description}</p>
         <p className='block md:hidden text-sm md:text-base'>
           {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>

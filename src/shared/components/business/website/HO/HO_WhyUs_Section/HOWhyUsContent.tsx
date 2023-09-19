@@ -28,7 +28,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
     },
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start'>
+    <div className='w-full flex flex-col justify-start items-start gap-12'>
       <motion.div className='w-full flex justify-start items-start text-sm lg:text-lg mt-5'>
         {data.map((item, idx) => {
           return (
@@ -38,7 +38,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item)}
-              className={`w-full lg:w-auto text-center px-5 pb-3 border-b-2 cursor-pointer ${
+              className={`w-full lg:w-auto text-center px-5 pb-3 border-b-2 cursor-pointer text-base ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
@@ -48,8 +48,8 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
         })}
       </motion.div>
       {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
-        <div key={idx} className='flex flex-col justify-center items-center gap-2 pb-2'>
-          <p className='text-sm lg:text-lg mt-5 text-[#C2C0BF]'>{item}</p>
+        <div key={idx} className='flex flex-col justify-center items-center pb-2'>
+          <p className='text-sm lg:text-base mt-5 text-[#C2C0BF]'>{item}</p>
         </div>
       ))}
       <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />

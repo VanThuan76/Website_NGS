@@ -4,6 +4,7 @@ export interface SectionData {
   image: string;
   link : string;
   keyword : string;
+  content: string;
 }
 export interface ISection {
   id: number;

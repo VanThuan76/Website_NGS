@@ -19,7 +19,7 @@ const HomeWhyUsSection = ({data, className}: Props) => {
   return (
       <section
         id={data && data.section && data.section.code}
-        className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+        className={`relative md: lg: xl: px-4 md:px-24 ${className}`}
       >
         <div className='max-w-[1440px] w-full mx-auto my-auto'>
           <div className='w-full flex flex-col lg:flex-row justify-between items-center'>

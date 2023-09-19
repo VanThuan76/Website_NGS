@@ -26,7 +26,7 @@ const HomeCaseStudySection = ({ data, className }: Props) => {
           findMore={false}
           className='w-full flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
         />
-        <div className='mt-10 w-full flex flex-col md:flex-row justify-start items-start gap-6'>
+        <div className='mt-10 w-full flex flex-col md:flex-row justify-start items-start gap-6 text-white'>
           <div className='relative w-full md:w-1/2 flex flex-col justify-between items-center rounded-lg'>
             <PreImage
               src={data.components[0].image}
@@ -37,10 +37,10 @@ const HomeCaseStudySection = ({ data, className }: Props) => {
               className='w-full rounded-lg object-cover'
             />
             <div className='absolute bottom-10 left-0 px-5 w-full flex flex-col justify-between items-start'>
-              <p className='text-xl'>{data.components[0].title}</p>
+              <p className='text-4xl'>{data.components[0].title}</p>
               <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
                 <motion.p className={`text-sm ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
-                <IconLineDirection color={theme !== 'dark' ? '#000' : '#fff'} />
+                <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
               </div>
             </div>
           </div>
