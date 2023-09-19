@@ -96,7 +96,7 @@ export const Home_10 = {
             description: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
             slug: "",
             content: "",
-            image: "/images/HOME0001SE00010CN000001.png",
+            image: "/images/HOME0001SE00010CN000002.png",
             actor: "Nguyễn Xuân Minh",
             video: "",
             thumbnail: ""
@@ -110,7 +110,7 @@ export const Home_10 = {
             description: "Tầm quan trọng của đánh giá trải nghiệm khách hàng",
             slug: "",
             content: "",
-            image: "/images/HOME0001SE00010CN000001.png",
+            image: "/images/HOME0001SE00010CN000003.png",
             actor: "Nguyễn Xuân Minh",
             video: "",
             thumbnail: ""
