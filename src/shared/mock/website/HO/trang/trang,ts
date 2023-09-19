@@ -1,0 +1,71 @@
+export const Casetudy = {
+    section: {
+        id: 1,
+        name: 'We are committed to',
+        code: "HOME0001SE00001",
+        image: "/images/HO_Banner.png",
+        description: "DELIVER AN OUTSTANDING CUSTOMER EXPERIENCE IN ADDITION TO PERFECT PRODUCTS "
+    },
+    components: [
+        {
+        id: 1,
+        language: 'vi',
+        code: "HOME0001SE00001CN000001",
+        title: "IT Consulting & Service Provider",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 2,
+        language: 'vi',
+        code: "HOME0001SE00001CN000002",
+        title: "Outstanding Customer Experience",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 3,
+        language: 'vi',
+        code: "HOME0001SE00001CN000002",
+        title: "Digital Tranformation",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 4,
+        language: 'vi',
+        code: "HOME0001SE00001CN000002",
+        title: "Empower Success",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
+    },
+    {
+        id: 5,
+        language: 'vi',
+        code: "HOME0001SE00001CN000002",
+        title: "IT Consulting & Service Provider",
+        description: "",
+        slug: "",
+        content: "",
+        image: "",
+        video: "",
+        thumbnail: ""
+    }
+]
+}
