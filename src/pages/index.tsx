@@ -20,7 +20,8 @@ import { GetServerSideProps } from 'next';
 import { APP_SAVE_KEY } from '@/utils/constants';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderHomeContent } from '@/utils/fetchServerSide/renderHomeContent';
-import { Home_11, Home_12, Home_13, Home_2, Home_3, Home_4, Home_5, Home_6, Home_7, Home_8, Home_9 } from '@/mocks/website/HO/home';
+import { Home_1, Home_10, Home_11, Home_12, Home_13, Home_2, Home_3, Home_4, Home_5, Home_6, Home_7, Home_8, Home_9 } from '@/mocks/website/HO/home';
+import HOOrganizationalSystemSection from '@/components/business/website/HO/HO_Organizational_System_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -73,7 +74,7 @@ export function HomePage({
         <meta name='twitter:image' content={homePageData.image} />
       </Head>
       <ScrollRevealWrapper>
-        <HomeBannerSection data={HO_BannerData} />
+        <HomeBannerSection data={Home_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <HomeSolutionSection data={Home_2} />
@@ -94,10 +95,13 @@ export function HomePage({
         <HomeWhyUsSection data={Home_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+        <HOOrganizationalSystemSection data={Home_8} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <HomeEventSection data={Home_9} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <NewsSection data={COMMON_NewsData} />
+        <NewsSection data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <PartnerSection data={Home_11} />

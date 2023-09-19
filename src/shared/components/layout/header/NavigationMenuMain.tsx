@@ -21,6 +21,8 @@ type Props = {
 const NavigationMenuMain = ({ fakeMenu }: Props) => {
   const [isClick, setIsClick] = useState(false);
   const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(fakeMenu[0].menuChild[0]);
+  const menuSecureYourBusiness = fakeMenu.find(mainMenu => mainMenu.id === 3);
+  console.log(menuSecureYourBusiness)
   return (
     <NavigationMenu className='NavigationMenuRoot'>
       <NavigationMenuList className='NavigationMenuList'>
@@ -38,28 +40,35 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                 <NavigationMenuContent className='NavigationMenuContent'>
                   <div className='List one grid grid-cols-2 gap-10' onMouseLeave={() => setIsClick(false)}>
                     <div className='w-full flex flex-col justify-start items-start gap-5 border-r-2 border-r-slate-200 px-8'>
-                      {mainMenu.menuChild.map((menuChild2, idx) => (
-                        <motion.div
-                          key={idx}
-                          style={{ borderBottom: `1px solid #B7B4AE` }}
-                          className='w-full flex justify-between items-center cursor-pointer'
-                          whileTap={{ borderBottom: '1px solid #FC5E03' }}
-                          onClick={() => {
-                            setIsClick(true);
-                            setSelectedMenuChild3(menuChild2);
-                          }}
-                          onMouseEnter={() => setSelectedMenuChild3(menuChild2)}
-                          onMouseLeave={() => !isClick && setSelectedMenuChild3(defaultMenu3)}
-                        >
-                          <p>{menuChild2.title}</p>
-                          <IconLineDirection scale={0} color='#FC5E03' />
-                        </motion.div>
-                      ))}
+                      {mainMenu.menuChild.map((menuChild2, idx) => {
+                        return (
+                          <div key={idx}>
+                            {menuChild2.title !== '' ? (
+                              <motion.div
+                                style={{ borderBottom: `1px solid #B7B4AE` }}
+                                className='w-full flex justify-between items-center cursor-pointer'
+                                whileTap={{ borderBottom: '1px solid #FC5E03' }}
+                                onClick={() => {
+                                  setIsClick(true);
+                                  setSelectedMenuChild3(menuChild2);
+                                }}
+                                onMouseEnter={() => setSelectedMenuChild3(menuChild2)}
+                                onMouseLeave={() => !isClick && setSelectedMenuChild3(defaultMenu3)}
+                              >
+                                <p>{menuChild2.title}</p>
+                                <IconLineDirection scale={0} color='#FC5E03' />
+                              </motion.div>
+                            ) : (
+                              <p>We connect students to employers through real work projects.</p>
+                            )}
+                          </div>
+                        );
+                      })}
                     </div>
                     {selectedMenuChild3 ? (
                       <div className='w-full flex flex-col justify-start items-start gap-8 px-8'>
                         <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
-                        <div className='w-full flex justify-between items-start gap-5'>
+                        <div className='w-full flex justify-start items-start gap-10'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
                             <div key={idx} className='flex flex-col justify-between items-start'>
                               <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400'>
@@ -76,8 +85,33 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                         </div>
                       </div>
                     ) : (
-                      <React.Fragment></React.Fragment>
+                      <></>
                     )}
+                    {/* {!isClick && menuSecureYourBusiness ? (
+                      <div className='w-full flex flex-col justify-start items-start gap-8 px-8'>
+                        <h1 className='font-semibold text-2xl'>{menuSecureYourBusiness.title}</h1>
+                        <div className='w-full flex justify-start items-start gap-10'>
+                          {menuSecureYourBusiness.menuChild.map((menuChild3, idx) => (
+                            <div key={idx} className='flex flex-col justify-between items-start'>
+                              <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400'>
+                                {menuChild3.title}
+                              </div>
+                              {menuSecureYourBusiness.menuChild &&
+                                menuSecureYourBusiness.menuChild.map((menuChild4, idx) => (
+                                  <NavigationMenuLink
+                                    key={idx}
+                                    href={`${menuSecureYourBusiness.path}${menuChild4.path}`}
+                                  >
+                                    {menuChild4.title}
+                                  </NavigationMenuLink>
+                                ))}
+                            </div>
+                          ))}
+                        </div>
+                      </div>
+                    ) : (
+                      <></>
+                    )} */}
                   </div>
                 </NavigationMenuContent>
               </NavigationMenuItem>

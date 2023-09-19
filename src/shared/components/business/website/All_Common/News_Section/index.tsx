@@ -29,7 +29,7 @@ const NewsSection = ({ data, className }: Props) => {
       <div className='max-w-[1440px] w-full mx-auto my-auto mt-10  grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-6'>
         <div className='dark:bg-[#1B1D35] flex flex-col justify-between items-center pb-5 rounded-lg shadow-lg'>
           <PreImage
-            src={'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg'}
+            src={data.components[0].image}
             height={275}
             width={1980}
             layer={false}
@@ -39,7 +39,7 @@ const NewsSection = ({ data, className }: Props) => {
           <div className='mt-10 px-5 w-full flex flex-col justify-between items-start gap-3'>
             <div className='w-full flex justify-between items-center'>
               <p className='text-orange-500'>{data.components[0].categoryName}</p>
-              <p className='text-sm text-slate-500'>{data.components[0].id}</p>
+              <p className='text-sm text-slate-500'>{data.components[0].createdDate}</p>
             </div>
             <h2 className='text-2xl'>{data.components[0].title}</h2>
             <p className='text-sm text-slatse-500'>{data.components[0].description}</p>

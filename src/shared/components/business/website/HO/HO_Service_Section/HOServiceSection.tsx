@@ -35,9 +35,9 @@ const HOServiceSection = ({ item, idx }: Props) => {
         }}
       >
         {/* <--Responsive */}
-        <p className='hidden md:block text-sm md:text-base'>{item.content}</p>
+        <p className='hidden md:block text-sm md:text-base'>{item.description}</p>
         <p className='block md:hidden text-sm md:text-base'>
-          {item.content.length > 100 ? `${item.content.substring(0, 80)}...` : item.content}
+          {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>
         {/* Responsive--> */}
         <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />

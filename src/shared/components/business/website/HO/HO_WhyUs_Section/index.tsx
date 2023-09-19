@@ -1,16 +1,10 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
 import React, { useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import TitleSection from '@/components/common/customization/TitleSection';
 import HomeWhyUsIcon from './HOWhyUsIcon';
 import HomeWhyUsContent from './HOWhyUsContent';
 import HomeWhyUsResponsive from './HOWhyUsResponsive';
-import { partnerData } from '@/mocks/website/HO/partner';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -58,26 +52,6 @@ const HomeWhyUsSection = ({data, className}: Props) => {
             </div>
             <div className='hidden lg:block w-full z-40 float-right'>
               <HomeWhyUsIcon data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
-            </div>
-          </div>
-          <div className='w-full min-h-[200px] flex flex-col justify-center items-center lg:mt-20'>
-            <div className='w-full flex flex-col items-center justify-center'>
-              <h2 className='hidden lg:block text-xl xl:text-2xl'>Hệ sinh thái của chúng tôi</h2>
-              <Swiper slidesPerView={3} spaceBetween={10} modules={[Pagination]} className='w-full'>
-                {partnerData.map((item, idx) => (
-                  <SwiperSlide className='max-w-[250px]' key={idx}>
-                    <PreImage
-                      key={idx}
-                      src={item.image}
-                      height={200}
-                      width={400}
-                      layer={false}
-                      alt={'WhyUs'}
-                      className='w-full h-full rounded-lg'
-                    />
-                  </SwiperSlide>
-                ))}
-              </Swiper>
             </div>
           </div>
         </div>

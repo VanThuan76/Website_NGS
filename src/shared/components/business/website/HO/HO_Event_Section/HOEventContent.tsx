@@ -4,13 +4,14 @@ import { IEvent } from '@/mocks/website/HO/event';
 import { useTheme } from 'next-themes';
 interface Props {
   event: Partial<IEvent>;
+  className?: string
 }
-const HOEventContent = ({ event }: Props) => {
+const HOEventContent = ({ event, className }: Props) => {
   const {theme} = useTheme();
   const colorIcon = theme !== "dark" ? "#000" : "#fff"
 
   return (
-    <div className='absolute bottom-0 right-0 w-full h-1/2 dark:bg-[#1B1D35] bg-white p-5 flex flex-col justify-between items-start gap-3 rounded-b-lg'>
+    <div className={`absolute bottom-0 right-0 w-full h-1/2 dark:bg-[#1B1D35] bg-white p-5 flex flex-col justify-between items-start gap-3 rounded-b-lg ${className}`}>
       <div className='flex flex-col justify-start items-start'>
         <h2 className='text-base md:text-xl lg:text-2xl'>{event.title}</h2>
         <p className='pl-5 text-orange-400'>

@@ -23,7 +23,7 @@ const HomeEventSection = ({ data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section
-      id='Event'
+      id={data.section.code}
       className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
@@ -42,11 +42,10 @@ const HomeEventSection = ({ data, className }: Props) => {
             modules={[Pagination]}
             className='shadow-lg'
           >
-            {data.components!.map((item, idx) => (
+            {data.components.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
                 <PreImage
-                  alt='Event'
-                  //@ts-ignore
+                  alt={item.title}
                   src={item.image}
                   width={650}
                   height={600}
@@ -85,9 +84,9 @@ const HomeEventSection = ({ data, className }: Props) => {
                     className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
                   >
                     {item === selectedTab ? (
-                      <div className='w-full h-full flex flex-col rounded-lg'>
-                        <PreImage alt='Event' src={item.image!} width={1980} height={600} className='rounded-lg' />
-                        <HOEventContent event={item} />
+                      <div className='w-full h-full grid grid-cols-1 justify-between items-start rounded-lg overflow-hidden'>
+                        <PreImage alt='Event' src={item.image!} width={750} height={390} className='w-full rounded-lg object-fill' />
+                        <HOEventContent className='relative' event={item} />
                       </div>
                     ) : (
                       <PreImage
@@ -99,7 +98,7 @@ const HomeEventSection = ({ data, className }: Props) => {
                       />
                     )}
                     {item !== selectedTab ? (
-                      <div className='absolute bottom-0 font-bold text-sm text-center'>{item.description}</div>
+                      <div className='absolute bottom-0 font-semibold text-sm text-center text-slate-100'>{item.description}</div>
                     ) : (
                       ''
                     )}

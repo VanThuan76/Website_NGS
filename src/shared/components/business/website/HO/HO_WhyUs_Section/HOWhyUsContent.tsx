@@ -2,18 +2,19 @@ import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 interface Props {
   setSelectedIcon: any;
   data: Partial<IComponents>[];
   selectedIcon: Partial<IComponents>;
 }
 const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
-  const {theme} = useTheme();
-  const colorIcon = theme !== "dark" ? "#F06426" : "#fff"
+  const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const contentAnimated = {
     active: {
-      borderColor:  theme === "dark" ? '#723AD4' :"#F06426" ,
-      color: theme === "dark" ? '#fff'  : "#000",
+      borderColor: theme === 'dark' ? '#723AD4' : '#F06426',
+      color: theme === 'dark' ? '#fff' : '#000',
       opacity: 1,
       transition: {
         duration: 0.3,
@@ -46,9 +47,11 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
           );
         })}
       </motion.div>
-      <motion.div className='text-sm lg:text-lg mt-10 text-[#C2C0BF]'>
-        {selectedIcon ? selectedIcon.description : ''}
-      </motion.div>
+      {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
+        <div key={idx} className='flex flex-col justify-center items-center gap-2 pb-2'>
+          <p className='text-sm lg:text-lg mt-5 text-[#C2C0BF]'>{item}</p>
+        </div>
+      ))}
       <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
     </div>
   );

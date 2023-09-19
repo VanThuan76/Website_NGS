@@ -15,12 +15,12 @@ type Props = {
 }
 
 const PartnerSection = ({data, className}: Props) => {
-  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const { theme } = useTheme();
   const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>|undefined >(()=> {
     if(data.components && data.components.length > 0 ) return data.components[0]
     else return undefined
   });
+  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
   return (
     <section
@@ -30,13 +30,13 @@ const PartnerSection = ({data, className}: Props) => {
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
-          <Swiper slidesPerView={4} spaceBetween={50} modules={[Pagination]} className='w-full'>
+          <Swiper slidesPerView={6} spaceBetween={32} modules={[Pagination]} className='w-full'>
             {data.components!.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px]' key={idx}>
+              <SwiperSlide className='max-w-[250px] p-8' key={idx}>
                 <PreImage
                   src={item.image as string}
-                  height={200}
-                  width={1080}
+                  height={100}
+                  width={100}
                   layer={false}
                   alt={item.title}
                   className={`relative rounded-lg cursor-pointer ${

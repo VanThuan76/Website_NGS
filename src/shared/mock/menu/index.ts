@@ -147,48 +147,146 @@ export const fakeMenu = [
                             },
                         ]
                     },
+                    {
+                        title: "Chăm sóc khách hàng",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "CRM - Quản lý quan hệ khách hàng",
+                                path: "/crm-customer-relationship-management",
+                                menuChild: []
+                            },
+                            {
+                                title: "Helpdesk - Chăm sóc sau bán",
+                                path: "/helpdesk-after-sale-care",
+                                menuChild: []
+                            },
+                            {
+                                title: "Bảo trì & Bảo hành",
+                                path: "/maintenance-warranty",
+                                menuChild: []
+                            },
+                            {
+                                title: "Khảo sát khách hàng",
+                                path: "/customer-surveys",
+                                menuChild: []
+                            },
+                        ]
+                    },
                 ]
             },
             {
-                title: "CRM",
+                title: "Giải pháp Quản lý nhân sự",
                 path: "",
                 menuChild: [
                     {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Tuyển dụng & Gia nhập",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Tuyển dụng",
+                                path: "/recruit",
+                                menuChild: []
+                            },
+                            {
+                                title: "Hồ sơ nhân viên",
+                                path: "/employee_profiles",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản lý hợp đồng",
+                                path: "/qlhd",
+                                menuChild: []
+                            },
+                            {
+                                title: "Sơ đồ tổ chức",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quy trình gia nhập",
+                                path: "",
+                                menuChild: []
+                            },
+                        ]
                     },
                     {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Chấm công & Tính lương",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Chấm công",
+                                path: "/timekeeping",
+                                menuChild: []
+                            },
+                            {
+                                title: "Nghỉ phép & Tăng ca",
+                                path: "/vacation-overtime",
+                                menuChild: []
+                            },
+                            {
+                                title: "Đánh giá",
+                                path: "/assess",
+                                menuChild: []
+                            },
+                            {
+                                title: "Tính lương",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Thuế & Bảo hiểm",
+                                path: "",
+                                menuChild: []
+                            },
+                        ]
                     },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
                 ]
             },
             {
-                title: "ERP Connect",
+                title: "Giải pháp Kết nối",
                 path: "",
                 menuChild: [
                     {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Kết nối vận hành",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Kết nối ngân hàng",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kết nối tuyển dụng",
+                                path: "",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kết nối E-Learning",
+                                menuChild: []
+                            },
+                        ]
                     },
                     {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Kết nối tiện ích",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Chữ ký số",
+                                path: "/e-sign",
+                                menuChild: []
+                            },
+                            {
+                                title: "Sàn TMĐT",
+                                path: "/e-commerce",
+                                menuChild: []
+                            },
+                            {
+                                title: "Đơn vị vận chuyển",
+                                menuChild: []
+                            }
+                        ]
                     },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
                 ]
             }
         ]
@@ -202,7 +300,7 @@ export const fakeMenu = [
                 title: "Digital Consulting",
                 path: "",
                 menuChild: [
-                    {   
+                    {
                         title: "Feature Solution",
                         path: "/digital-consulting",
                         menuChild: [
@@ -318,7 +416,7 @@ export const fakeMenu = [
                 title: "IT Management Service",
                 path: "",
                 menuChild: [
-                    {   
+                    {
                         title: "Feature Solution",
                         path: "/transform-your-organization",
                         menuChild: [
@@ -335,7 +433,7 @@ export const fakeMenu = [
                 title: "IT Service",
                 path: "",
                 menuChild: [
-                    {   
+                    {
                         title: "Feature Solution",
                         path: "/it-service",
                         menuChild: [
@@ -361,47 +459,74 @@ export const fakeMenu = [
         path: "",
         menuChild: [
             {
-                title: "Digital Consulting",
+                title: "",
                 path: "",
                 menuChild: [
                     {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Feature Solution",
+                        path: "/secure-your-business",
+                        menuChild: [
+                            {
+                                title: "SOC",
+                                path: "/soc",
+                                menuChild: []
+                            },
+                            {
+                                title: "Penetration Testing",
+                                path: "/penetration-testing",
+                                menuChild: []
+                            },
+                            {
+                                title: "Red Teaming",
+                                path: "/red-teaming",
+                                menuChild: []
+                            },
+                        ]
                     },
                     {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Feature Solution",
+                        path: "/secure-your-business",
+                        menuChild: [
+                            {
+                                title: "Malware Analysis",
+                                path: "/malware-analysis",
+                                menuChild: []
+                            },
+                            {
+                                title: "Incident Response",
+                                path: "/incident-response",
+                                menuChild: []
+                            },
+                            {
+                                title: "Compromise Assessment",
+                                path: "/compromise-assessment",
+                                menuChild: []
+                            },
+                        ]
                     },
                     {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
+                        title: "Feature Solution",
+                        path: "/secure-your-business",
+                        menuChild: [
+                            {
+                                title: "Threat Inteligence",
+                                path: "/threat-inteligence",
+                                menuChild: []
+                            },
+                            {
+                                title: "System Intergration",
+                                path: "/system-intergration",
+                                menuChild: []
+                            },
+                            {
+                                title: "OT/ICS Security",
+                                path: "/OT.ICS-security",
+                                menuChild: []
+                            },
+                        ]
                     }
                 ]
             },
-            {
-                title: "Digital Foundation",
-                path: "",
-                menuChild: [
-                    {
-                        title: "Infrastructure as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "Data as a Service",
-                        path: "/service",
-                        menuChild: []
-                    },
-                    {
-                        title: "System Migration Service",
-                        path: "/service",
-                        menuChild: []
-                    }
-                ]
-            }
         ]
     },
     {
@@ -412,7 +537,7 @@ export const fakeMenu = [
         ]
     }
 ]
-export const defaultMenu3:IMenuChild3  = {
+export const defaultMenu3: IMenuChild3 = {
     title: "Not found",
     path: "",
     menuChild: []
@@ -427,7 +552,7 @@ export interface IMenu {
 export interface IMenuChild2 {
     title: string;
     path: string;
-    menuChild: IMenuChild3[];
+    menuChild: IMenuChild3[] | any[];
 }
 
 export interface IMenuChild3 {
