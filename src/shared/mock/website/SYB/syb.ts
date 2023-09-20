@@ -371,7 +371,7 @@ export const SYBBanner1_PG4_3 = {
         id: 1,
         name: 'DỊCH VỤ ĐÁNH GIÁ XÂM NHẬP HỆ THỐNG',
         code: "PG0004_3SE00001",
-        image: "/images/SECURE_banner_page4_3.png",
+        image: "/images/PG4_3_banner.png",
         description: "Phát hiện các hành động tấn công đang diễn ra hoặc lịch sử trong hệ thống của bạn."
     },
     components: []
@@ -380,10 +380,11 @@ export const SYBBanner1_PG4_3 = {
 export const SYBOverview6_PG4_3 = {
     section: {
         id: 2,
-        name: 'Dịch vụ đánh giá xâm nhập hệ thống',
+        name: 'TTổng quan về quản lý chuỗi cung ứng',
         code: "PG0004_3SE00002",
-        image: "/images/SEC_banner2_page4_3.png",
-        description: "NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế."
+        image: "",
+        description: "Việc thực hiện đánh giá sự xâm nhập được chứng minh là một phương pháp có giá trị để đánh giá mức độ đầy đủ của các cơ chế phát hiện và ngăn chặn nó. Đánh giá này hỗ trợ phát hiện các hoạt động tấn công trong quá khứ và đang diễn ra, tạo điều kiện thuận lợi cho việc thực hiện các biện pháp đối phó hiệu quả nhất. NGS luôn tự tin đồng hành cùng doanh nghiệp của bạn trên con đường bảo vệ hệ thống."
+
     },
     components: []
 }
