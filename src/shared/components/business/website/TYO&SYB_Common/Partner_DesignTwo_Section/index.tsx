@@ -15,7 +15,7 @@ const PartnerDesignTwoSection = ({ title, data, className }: Props) => {
       id={data.section.code}
       className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96 overflow-hidden bg-[#FC5E03] ${className} `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
+      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-cente shrink-0'>
         <div className='flex flex-col justify-center items-center gap-2'>
           <h1 className='text-2xl md:text-4xl font-semibold text-center text-white'>{data.section.name}</h1>
         </div>

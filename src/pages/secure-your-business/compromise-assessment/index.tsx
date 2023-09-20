@@ -10,6 +10,8 @@ import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import { SYBBanner1_PG4_3, SYBForm1_PG4_3, SYBOverview6_PG4_3, SYBPartner2_PG4_3, SYBService5_PG4_3, SYBWhyUs1_PG4_3, SYBclientStories1_PG4_3 } from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
+import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
+import { TYOOverview1 } from '@/mocks/website/TYO/overview';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -27,7 +29,7 @@ const SOCPage = () => {
         <BannerDesignOneSection title="Develop new solution" data={SYBBanner1_PG4_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
-        <OverviewDesignSixSection title='Tổng quan' data={SYBOverview6_PG4_3} />
+      <OverviewDesignOneSection title='Tổng quan' data={SYBOverview6_PG4_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ServiceDesignFiveSection title='NGS triển khai' data={SYBService5_PG4_3} />

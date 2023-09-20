@@ -42,25 +42,25 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <meta name='description' content='EmpowerSuccess NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <EmpowerSuccessBannerSection data={ESBannerData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ESVisionSection data={ESVisionData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ESMissionSection data={ESMissionData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ESCoreValueSection />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <TeamDesignOneSection title='' data={TYOTeam1} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ESEnvironment data={ESEnvironmentData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <ESOrganizationalSystemSection title='Dịch vụ' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>

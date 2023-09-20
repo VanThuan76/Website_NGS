@@ -73,7 +73,7 @@ export function HomePage({
         <meta name='twitter:description' content={homePageData.description} />
         <meta name='twitter:image' content={homePageData.image} />
       </Head>
-      <ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
         <HomeBannerSection data={Home_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>

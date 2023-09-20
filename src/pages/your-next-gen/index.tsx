@@ -21,12 +21,24 @@ const ERPPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-        <YNGHomeBannerSection data={YNGDetailBanner1}  />
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGHomeBannerSection data={YNGDetailBanner1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGHomeSolutionSection />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGCommonCustomerSection title='Khach hang' data={YNGCommonCustomer1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGCommonIntroductionSection data={YNGCommonIntroduction1} />
-        <YNGCommonBackSolutionSection title='Back Solution' data={YNGCommonBackSolution1}/>
-        <YNGCommonPilotSubriceSection title='Pilot' data={YNGCommonPilotSubrice1}/>
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonBackSolutionSection title='Back Solution' data={YNGCommonBackSolution1} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+        <YNGCommonPilotSubriceSection title='Pilot' data={YNGCommonPilotSubrice1} />
+      </ScrollRevealWrapper>
     </React.Fragment>
   );
 };
