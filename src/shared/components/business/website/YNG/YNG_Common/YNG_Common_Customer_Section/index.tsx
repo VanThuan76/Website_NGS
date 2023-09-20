@@ -16,16 +16,16 @@ const YNGCommonCustomerSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`w-full mb-2 md:mb-12 lg:mb-24 px-8 py-10 lg:px-14 lg:py-24 ${className}`}
+      className={`w-full mb-2 md:mb-12 lg:px-24 lg:py-20 ${className}`}
     >
       <TitleSection
         title={title}
         name={data.section.name}
         description={data.section.description}
         findMore={true}
-        className='w-full flex flex-col justify-start items-start'
+        className='w-full flex flex-col justify-start items-start !gap-16 !mb-0'
       />
-      <div className='max-w-[1440px] w-full my-auto flex flex-col justify-between items-center gap-5 mt-10 mx-auto'>
+      <div className='max-w-[1440px] w-full flex flex-col justify-between items-center'>
         <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-4 p-2'>
           {data.components.map((item, idx) => (
             <div key={idx} className={`relative max-w-[310px] h-full rounded-lg shadow-md overflow-hidden`}>

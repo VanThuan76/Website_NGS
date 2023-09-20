@@ -10,7 +10,7 @@ interface Props {
 const YNGHomeSolutionSectionItem = ({ item, className }: Props) => {
   return (
     <div
-      className={`w-full flex flex-col lg:flex-row justify-between items-center gap-4 px-8 py-10 lg:px-14 lg:py-24 ${className}`}
+      className={`w-full flex flex-col lg:flex-row justify-between items-center gap-4 px-8 py-10 lg:px-24 lg:py-14 ${className}`}
     >
       <div className='w-full flex flex-col justify-start items-start'>
         <TitleSection
@@ -20,12 +20,11 @@ const YNGHomeSolutionSectionItem = ({ item, className }: Props) => {
           findMore={true}
           className='w-full flex flex-col justify-start items-start'
         />
-        <BtnCommon title='Khám phá ngay' cls='bg-orange-500 border-none !text-white p-4' />
       </div>
       <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-start items-start gap-6'>
         {item.solutions.map((solution, idx) => (
           <div key={idx} className='flex justify-between items-center pb-4 border-b-2 border-slate-300'>
-            <p className='text-base md:text-lg'>{solution}</p>
+            <p className='text-sm font-normal'>{solution}</p>
             <YNG_IconArrowRight />
           </div>
         ))}
