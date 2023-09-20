@@ -9,6 +9,7 @@ import YNGCommonCustomerSection from '@/components/business/website/YNG/YNG_Comm
 import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_BackSolution_Section';
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
 import { YNGCommonBackSolution1, YNGCommonCustomer1, YNGCommonIntroduction1, YNGCommonPilotSubrice1, YNGDetailBanner1 } from '@/mocks/website/YNG/YNG_Detail/example';
+import { YNG_DWM_Section5, YNG_DWM_Section6, YNG_DWM_Section7, YNG_DWM_Section8 } from '@/mocks/website/YNG/yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -17,16 +18,16 @@ const ERPPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>YNG_ERP NGS</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>Giải pháp Quản lý doanh nghiệp NGS</title>
+        <meta name='description' content='Giải pháp Quản lý doanh nghiệp NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
         <YNGHomeBannerSection data={YNGDetailBanner1}  />
         <YNGHomeSolutionSection />
-        <YNGCommonCustomerSection title='Khach hang' data={YNGCommonCustomer1} />
-        <YNGCommonIntroductionSection data={YNGCommonIntroduction1} />
-        <YNGCommonBackSolutionSection title='Back Solution' data={YNGCommonBackSolution1}/>
-        <YNGCommonPilotSubriceSection title='Pilot' data={YNGCommonPilotSubrice1}/>
+        <YNGCommonCustomerSection title='Khách hàng' data={YNG_DWM_Section5} />
+        <YNGCommonIntroductionSection data={YNG_DWM_Section6} />
+        <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_DWM_Section7}/>
+        <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_DWM_Section8}/>
     </React.Fragment>
   );
 };
