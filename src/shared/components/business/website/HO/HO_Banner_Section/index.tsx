@@ -12,12 +12,11 @@ interface Props {
   data: Partial<IBaseSectionComponent>;
 }
 const HomeBannerSection = ({ data }: Props) => {
+  const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<number>(40);
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
   });
-  const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<number>(40);
-  if (!selectedTab) return <React.Fragment></React.Fragment>;
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -60,6 +59,7 @@ const HomeBannerSection = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
+  if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
     <section id={data && data.section && data.section.code} className='pb-10 block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
