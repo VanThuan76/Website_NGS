@@ -3,6 +3,8 @@ import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 interface Props {
   item: IComponents;
   idx: number;
@@ -40,7 +42,9 @@ const HOServiceSection = ({ item, idx }: Props) => {
           {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>
         {/* Responsive--> */}
-        <BtnCommon cls='mt-5 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+        </UseLinkRouter>
       </motion.div>
     </div>
   );

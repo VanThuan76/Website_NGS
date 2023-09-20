@@ -1,6 +1,8 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { AnimatePresence, motion } from 'framer-motion';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 
@@ -68,9 +70,9 @@ const HOBannerContent = ({ selectedTab }: Props) => {
       >
         {selectedTab ? selectedTab.content : ''}
       </div>
-      <UseLinkRedirect sectionCode='ConnectUs'>
+      <UseLinkRouter url={URLS_SYSTEM.ES}>
         <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm' />
-      </UseLinkRedirect>
+      </UseLinkRouter>
     </InitBasicAnimation>
   );
 };

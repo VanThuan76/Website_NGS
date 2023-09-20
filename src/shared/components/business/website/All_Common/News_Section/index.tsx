@@ -5,6 +5,8 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { useTheme } from 'next-themes';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 
 type Props = {
   data: Partial<IBaseSectionComponentNews>;
@@ -45,7 +47,9 @@ const NewsSection = ({ data, className }: Props) => {
             <p className='text-sm text-slatse-500'>{data.components[0].description}</p>
             <p className='w-full text-end text-sm text-slate-400'>{data.components[0].author}</p>
           </div>
-          <BtnCommon cls='border-orange-400 dark:border-slate-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+          <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+            <BtnCommon hover={false} title='Tìm hiểu thêm' cls='border-orange-400 dark:border-slate-400' colorSvg={colorIcon} />
+          </UseLinkRouter>
         </div>
         <div className='w-full h-full grid grid-cols-1 gap-5'>
           {data.components!.slice(0, 2).map((item, idx) => (

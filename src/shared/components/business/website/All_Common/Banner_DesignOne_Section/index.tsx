@@ -2,6 +2,8 @@ import React from 'react';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 
 type Props = {
   title?: string;
@@ -21,7 +23,9 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
               <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
               <p className='mt-5 font-thin text-lg'>{data.section.description}</p>
             </div>
-            <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            <UseLinkRouter url={URLS_SYSTEM.ES}>
+              <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            </UseLinkRouter>
           </div>
           <div className='relative w-full flex-shrink-0 snap-start'>
             <PreImage

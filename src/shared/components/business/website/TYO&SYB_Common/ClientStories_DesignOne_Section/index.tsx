@@ -1,6 +1,8 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -59,7 +61,9 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
                     <p className='font-thin'>{item.description}</p>
                   </div>
                 </div>
-                <BtnCommon title='All clients stories' cls='border-orange-500' />
+                <UseLinkRouter url={URLS_SYSTEM.ES}>
+                  <BtnCommon title='All clients stories' cls='border-orange-500' />
+                </UseLinkRouter>
               </div>
             ))}
           </div>

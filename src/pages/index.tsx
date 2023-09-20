@@ -60,6 +60,7 @@ export function HomePage({
     <React.Fragment>
       <Head>
         <title>{homePageData.name}</title>
+        <link rel="icon" href="/logo.svg" sizes="any" />
         <meta name='description' content={homePageData.description} />
         <meta name='keywords' content={homePageData.seo} />
         <meta name='robots' content='index, follow' />

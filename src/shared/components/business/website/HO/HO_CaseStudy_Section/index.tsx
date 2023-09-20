@@ -7,22 +7,23 @@ import IconLineDirection from '@/components/icon/IconLineDirection';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import React from 'react';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 const HomeCaseStudySection = ({ data, className }: Props) => {
-  const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id='CaseStudy' className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section id={data.section.code} className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
       <div className='max-w-[1440px] w-full mx-auto my-auto'>
         <TitleSection
-          title='Casestudy'
-          description='Tham khảo các casestudy thành công và cách phát triển doanh nghiệp của bạn.'
+          title={data.section.name}
+          description={data.section.description}
           findMore={false}
           className='w-full flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
         />
@@ -38,10 +39,12 @@ const HomeCaseStudySection = ({ data, className }: Props) => {
             />
             <div className='absolute bottom-10 left-0 px-5 w-full flex flex-col justify-between items-start'>
               <p className='text-4xl'>{data.components[0].title}</p>
-              <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
-                <motion.p className={`text-sm ${isHovered ? 'underline' : 'none'}`}>Tìm hiểu thêm</motion.p>
-                <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
-              </div>
+              <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+                <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
+                  <motion.p className='text-sm'>Tìm hiểu thêm</motion.p>
+                  <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
+                </div>
+              </UseLinkRouter>
             </div>
           </div>
           <div className='w-full md:w-1/2 grid grid-rows-2 gap-5'>

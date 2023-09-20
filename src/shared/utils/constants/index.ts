@@ -11,3 +11,7 @@ export const SCREENTYPE = {
     TABLET: 'lg',
     DESKTOP: 'xl',
 }
+export const URLS_SYSTEM = {
+    ES: "/empower-success",
+    NOTFOUND: "/404",
+}

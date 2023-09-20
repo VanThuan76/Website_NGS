@@ -23,16 +23,16 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`px-6 py-5 md:py-10 lg:py-20 md:px-12 lg:px-24 ${className}`}
     >
       <TitleSection
         title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3'
+        className='mb-5 w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3'
       />
-      <div className='max-w-[1440px] mx-auto my-auto grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-1'>
+      <div className='max-w-[1440px] mx-auto my-auto grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 bg-transparent overflow-hidden gap-1'>
         {data &&
           data.components.map((item, idx) => (
             <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[350px] rounded-lg overflow-hidden' key={idx}>

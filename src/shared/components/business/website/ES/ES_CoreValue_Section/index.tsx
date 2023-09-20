@@ -8,11 +8,12 @@ const ESCoreValueSection = ({ className }: Props) => {
   return (
     <section
       id='ESCOREVALUE'
-      className={`relative w-full h-[1105px] px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`relative w-full h-[1105px] flex flex-col justify-center items-center ${className}`}
     >
-      <SectionCoreValue className='absolute bottom-0 -left-20 object-cover' />
+      <SectionCoreValue className='object-cover' />
     </section>
   );
 };
+
 
 export default ESCoreValueSection;

@@ -5,6 +5,8 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import IconCheckSuccess from '@/components/icon/TYO&SYB_Common/IconCheckSuccess';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
   title: string;
@@ -34,7 +36,9 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
               <p>{item.title}</p>
             </div>
           ))}
-          <BtnCommon cls='border-orange-500 bg-white px-4' title='Go Carrer' colorSvg={colorIcon} />
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
+          </UseLinkRouter>
         </div>
         <div className='relative w-full flex-shrink-0 snap-start'>
           <PreImage

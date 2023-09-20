@@ -3,6 +3,8 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { useTheme } from 'next-themes';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
   title?: string;
@@ -26,7 +28,9 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
         <div className='w-full flex flex-col justify-start items-start gap-3'>
           <h1 className='text-3xl lg:text-4xl'>{data.section.name}</h1>
           <p>{data.section.description}</p>
-          <BtnCommon cls='mt-3 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+          </UseLinkRouter>
         </div>
         <PreImage
           src={data.section.image}

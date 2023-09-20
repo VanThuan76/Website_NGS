@@ -3,6 +3,8 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { ChevronRight } from 'lucide-react';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
   breadcrumb: string[];
@@ -31,7 +33,9 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className }: Props) => {
               <h1 className='text-2xl md:text-4xl font-[500px]'>{data.section.name}</h1>
               <p className='mt-5 font-thin leading-7'>{data.section.description}</p>
             </div>
-            <BtnCommon title='Tìm hiểu thêm' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            <UseLinkRouter url={URLS_SYSTEM.ES}>
+              <BtnCommon title='Đăng ký ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            </UseLinkRouter>
           </div>
           <div className='relative w-full flex-shrink-0 snap-start'>
             <PreImage

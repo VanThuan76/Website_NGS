@@ -1,5 +1,7 @@
 import { useTheme } from 'next-themes';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 interface Props {
   content: string;
   className: string;
@@ -14,7 +16,9 @@ const TeamDesignOneItem = ({ content, className }: Props) => {
     >
       <div className='w-full h-[80%] lg:h-full flex flex-col justify-between items-start gap-5'>
         <p className='text-sm md:text-base'>{content}</p>
-        <BtnCommon cls='border-orange-500 bg-white px-2' title='Go Carrer' colorSvg={colorIcon} />
+        <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon cls='border-orange-500 bg-white px-2' title='Go Carrer' colorSvg={colorIcon} />
+          </UseLinkRouter>
       </div>
     </div>
   );

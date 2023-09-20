@@ -1,9 +1,15 @@
+import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { useTheme } from 'next-themes';
 import { IWebsiteNews } from 'src/shared/schemas/models/INews';
 interface Props {
   data: Partial<IWebsiteNews>;
 }
 const NewsItem = ({ data }: Props) => {
+  const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   return (
     <div className='w-full h-full dark:bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg shadow-lg'>
       <div className='w-full h-full col-span-1'>
@@ -25,6 +31,9 @@ const NewsItem = ({ data }: Props) => {
         <h2 className='text-lg lg:text-xl'>{data.title}</h2>
         <p className='block lg:hidden text-sm text-slate-500'>{data.description}</p>
         <p className='text-sm text-slate-400'>{data.author}</p>
+        <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+          <BtnCommon hover={false} title='Tìm hiểu thêm' cls='!p-0 border-orange-400 dark:border-slate-400' colorSvg={colorIcon} />
+        </UseLinkRouter>
       </div>
     </div>
   );

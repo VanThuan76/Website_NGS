@@ -21,9 +21,9 @@ type Props = {
   fakeMenu: IMenu[];
 };
 const NavigationMenuMain = ({ fakeMenu }: Props) => {
-  const {pathname} = useRouter()
+  const { pathname } = useRouter();
   const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(fakeMenu[0].menuChild[0]);
-  const [trigger, setTrigger] = useState<number>(NaN)
+  const [trigger, setTrigger] = useState<number>(NaN);
   return (
     <NavigationMenu className='NavigationMenuRoot'>
       <NavigationMenuList className='NavigationMenuList'>
@@ -32,13 +32,18 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
             {mainMenu.menuChild.length === 0 ? (
               <NavigationMenuItem>
                 <Link href={mainMenu.path as string} legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>{mainMenu.title}</NavigationMenuLink>
+                  <NavigationMenuLink
+                    style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}` }}
+                    className={navigationMenuTriggerStyle()}
+                  >
+                    {mainMenu.title}
+                  </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
             ) : (
               <NavigationMenuItem className='cursor-pointer'>
                 <NavigationMenuTrigger
-                  style={{color: `${("/" + pathname.split("/")[1]) === mainMenu.path && "#FC5E03"}`}}
+                  style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}` }}
                   onMouseMove={() => setSelectedMenuChild3(mainMenu.menuChild[0])}
                   className='NavigationMenuTrigger'
                 >
@@ -53,9 +58,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                             {menuChild2.title !== '' ? (
                               <motion.div
                                 style={{
-                                  borderBottom: `${
-                                    trigger === idx ? '1px solid #FC5E03' : '1px solid #B7B4AE'
-                                  }`,
+                                  borderBottom: `${trigger === idx ? '1px solid #FC5E03' : '1px solid #B7B4AE'}`,
                                 }}
                                 className='w-full flex justify-between items-start cursor-pointer'
                                 whileHover={{
@@ -64,13 +67,13 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                                   x: 10,
                                 }}
                                 onMouseEnter={() => {
-                                  setTrigger(idx)
-                                  setSelectedMenuChild3(menuChild2)
+                                  setTrigger(idx);
+                                  setSelectedMenuChild3(menuChild2);
                                 }}
                                 onMouseOver={() => setTrigger(NaN)}
                               >
-                                  <p>{menuChild2.title}</p>
-                                  {selectedMenuChild3 === menuChild2 && <IconLineDirection scale={0} color='#FC5E03' />}
+                                <p>{menuChild2.title}</p>
+                                {selectedMenuChild3 === menuChild2 && <IconLineDirection scale={0} color='#FC5E03' />}
                               </motion.div>
                             ) : (
                               <div className='w-full flex flex-col justify-start items-start'>

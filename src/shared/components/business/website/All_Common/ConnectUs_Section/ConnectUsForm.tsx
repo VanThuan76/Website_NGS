@@ -1,10 +1,12 @@
 import IconLineDirection from '@/components/icon/IconLineDirection';
+import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
 export interface Props {
   connectUsData: any[];
 }
 const ConnectUsForm = ({ connectUsData }: Props) => {
+  const { theme } = useTheme();
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
@@ -73,10 +75,10 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
 
           <button
             type='submit'
-            className={`bg-[#fff] text-black relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 hover:bg-[#c1c0c0] hover:ease-in-out hover:transition rounded-lg`}
+            className={`bg-[#fff] text-orange-500 relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 hover:bg-[#c1c0c0] hover:ease-in-out hover:transition rounded-full`}
           >
             <p className='text-sm'>Đăng ký</p>
-            <IconLineDirection color='#000' />
+            <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
           </button>
         </form>
       </div>

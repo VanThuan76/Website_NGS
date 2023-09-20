@@ -3,6 +3,8 @@ import { useTheme } from 'next-themes';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 interface Props {
   setSelectedIcon: any;
   data: Partial<IComponents>[];
@@ -52,7 +54,9 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
           <p className='text-sm lg:text-base text-[#C2C0BF]'>{item}</p>
         </div>
       ))}
-      <BtnCommon cls='mt-5 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+      <UseLinkRouter url={URLS_SYSTEM.ES}>
+        <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+      </UseLinkRouter>
     </div>
   );
 };

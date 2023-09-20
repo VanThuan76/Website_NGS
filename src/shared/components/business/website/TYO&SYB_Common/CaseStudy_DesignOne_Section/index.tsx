@@ -1,6 +1,8 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { useTheme } from 'next-themes';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -30,7 +32,9 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
             findMore={true}
             className='w-full flex flex-col justify-end items-end gap-3 text-end'
           />
-          <BtnCommon cls='border-orange-500 bg-white px-4' title='Next' colorSvg={colorIcon} />
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
+          </UseLinkRouter>
         </div>
         <div className='relative w-full flex-shrink-0 snap-start'>
           <PreImage

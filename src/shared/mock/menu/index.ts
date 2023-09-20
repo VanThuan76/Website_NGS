@@ -146,6 +146,11 @@ export const fakeMenu = [
                                 path: "/dealer-wholesale-management",
                                 menuChild: []
                             },
+                            {
+                                title: "Quản lý đội nhóm kinh doanh",
+                                path: "/sales-team-management",
+                                menuChild: []
+                            },
                         ]
                     },
                     {
@@ -382,11 +387,6 @@ export const fakeMenu = [
                             {
                                 title: "Spend Management",
                                 path: "/spend-management",
-                                menuChild: []
-                            },
-                            {
-                                title: "Core Banking",
-                                path: "/core-banking",
                                 menuChild: []
                             },
                             {

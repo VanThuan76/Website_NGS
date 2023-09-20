@@ -25,10 +25,10 @@ const HomeSolutionSection = ({ data, className }: Props) => {
         findMore={true}
         className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
       />
-      <div className='w-full mx-auto my-auto py-12 grid grid-cols-2 lg:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-2'>
+      <div className='max-w-[1440px] mx-auto py-12 grid grid-cols-2 lg:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-2'>
         {data &&
           data.components.map((item, idx) => (
-            <div className="border-card-solution-home" key={idx}>
+            <div className=" max-w-[310px] min-h-[300px] lg:min-h-[350px] border-card-solution-home" key={idx}>
               <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[350px] rounded-lg overflow-hidden'>
                 <motion.div
                   className='absolute top-0 left-0 w-full h-full'

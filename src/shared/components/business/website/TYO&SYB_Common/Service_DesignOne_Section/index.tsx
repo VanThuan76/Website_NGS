@@ -1,4 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import ServiceDesignOneItem from './Service_DesignOne_Item';
@@ -23,11 +25,16 @@ const ServiceDesignOneSection = ({ title, data, className }: Props) => {
           </div>
           <div className='flex flex-col justify-start items-start gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>
-            <BtnCommon title='Dùng thử' />
+            <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+              <BtnCommon title='Dùng thử' />
+            </UseLinkRouter>
           </div>
         </div>
-        <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === "solution")} />
-        <ServiceDesignOneItem titleItem='Dịch vụ và hỗ trợ' data={data.components.filter(item => item.slug === "service-and-support")} />
+        <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === 'solution')} />
+        <ServiceDesignOneItem
+          titleItem='Dịch vụ và hỗ trợ'
+          data={data.components.filter(item => item.slug === 'service-and-support')}
+        />
       </div>
     </section>
   );

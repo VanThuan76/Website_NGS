@@ -4,7 +4,8 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
 import { useTheme } from 'next-themes';
-import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -17,7 +18,7 @@ const HomeAboutUsSection = ({ data, className }: Props) => {
 
   return (
     <section id={data.section.code} className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 mt-[120px] ${className}`}>
-      <div className='mb-20 w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-20'>
+      <div className='mb-20 w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-20 '>
         <div className='w-full'>
           <PreImage
             src={data.section.image}
@@ -36,9 +37,9 @@ const HomeAboutUsSection = ({ data, className }: Props) => {
             findMore={true}
             className='w-full flex flex-col justify-start items-start'
           />
-          <UseLinkRedirect sectionCode='ConnectUs'>
-            <BtnCommon cls='mt-3 w-[170px] border border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
-          </UseLinkRedirect>
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+          </UseLinkRouter>
         </div>
       </div>
       <div className='w-full flex flex-col lg:flex-row justify-center items-start gap-5 mt-16 bg-transparent overflow-hidden'>

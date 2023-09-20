@@ -1,4 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import ServiceDesignThreeItem from './Service_DesignThree_Item';
@@ -32,7 +34,9 @@ const ServiceDesignThreeSection = ({ title, data, className }: Props) => {
           </div>
           <div className='mt-10 flex flex-col justify-end items-end gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>
-            <BtnCommon title='Dùng thử' />
+            <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+              <BtnCommon title='Dùng thử' />
+            </UseLinkRouter>
           </div>
         </div>
       </div>

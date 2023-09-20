@@ -17,6 +17,7 @@ const HomeBannerSection = ({ data }: Props) => {
     else return undefined;
   });
   const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<number>(40);
+  if (!selectedTab) return <React.Fragment></React.Fragment>;
   const contentAnimated = {
     active: {
       borderColor: '#fff',
@@ -59,21 +60,27 @@ const HomeBannerSection = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
-  if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
     <section id={data && data.section && data.section.code} className='pb-10 block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <HOBannerContent selectedTab={selectedTab} />
           <UseLinkRedirect sectionCode='PG001SE00002'>
-            <MouseScroll className='absolute right-10 bottom-10 z-30 hidden lg:block' />
+            <motion.div
+              animate={{ y: 10 }}
+              transition={{ duration: 2, repeat: Infinity, delay: 1, repeatDelay: 1 }}
+              className='absolute right-10 bottom-10 z-30'
+            >
+              <MouseScroll className='hidden lg:block' />
+            </motion.div>
           </UseLinkRedirect>
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
-              initial={{ opacity: 0.8 }}
+              initial={{ opacity: 0.75 }}
               animate={{ opacity: 1 }}
-              transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
+              exit={{ opacity: 0.75 }}
+              transition={{ duration: 0.25 }}
               className='relative w-full flex-shrink-0 snap-start'
             >
               <PreImage
@@ -81,7 +88,7 @@ const HomeBannerSection = ({ data }: Props) => {
                 height={760}
                 width={1980}
                 layer={true}
-                alt={'Banner'}
+                alt={selectedTab.title as string}
                 className='w-full object-cover'
               />
             </motion.div>
@@ -103,7 +110,9 @@ const HomeBannerSection = ({ data }: Props) => {
                     setIsCalculateWidthTab(
                       (200 / Number(data && data.components && data.components.length)) * (idx + 1),
                     );
-                    setSelectedTab(item);
+                    setTimeout(() => {
+                      setSelectedTab(item);
+                    }, 0);
                   }}
                 >
                   {`${item.title}`}
