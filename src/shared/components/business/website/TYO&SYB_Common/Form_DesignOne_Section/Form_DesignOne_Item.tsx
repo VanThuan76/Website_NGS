@@ -28,7 +28,7 @@ const FormDesignOneItem = () => {
         <form onSubmit={handleSubmit} className='w-full mt-4 p-4'>
           <div className='w-full mb-4'>
             <label htmlFor='fullName' className='block mb-1'>
-              Họ và tên của bạn?
+              Họ và tên của bạn
             </label>
             <input
               type='text'
@@ -39,33 +39,7 @@ const FormDesignOneItem = () => {
               required
             />
           </div>
-          <div className='w-full mb-4'>
-            <label htmlFor='product' className='block mb-1'>
-              Sản phẩm bạn quan tâm
-            </label>
-            <input
-              type='text'
-              id='product'
-              value={product}
-              onChange={e => setFullName(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b rounded'
-              required
-            />
-          </div>
           <div className='w-full grid grid-cols-2 gap-4 mb-4'>
-            <div className='w-full'>
-              <label htmlFor='phoneNumber' className='block mb-1'>
-                Số điện thoại:
-              </label>
-              <input
-                type='tel'
-                id='phoneNumber'
-                value={phoneNumber}
-                onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
-                required
-              />
-            </div>
             <div className='w-full'>
               <label htmlFor='email' className='block mb-1'>
                 Email*
@@ -73,6 +47,19 @@ const FormDesignOneItem = () => {
               <input
                 type='text'
                 id='email'
+                value={phoneNumber}
+                onChange={e => setPhoneNumber(e.target.value)}
+                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                required
+              />
+            </div>
+            <div className='w-full'>
+              <label htmlFor='phoneNumber' className='block mb-1'>
+                Số điện thoại:
+              </label>
+              <input
+                type='tel'
+                id='phoneNumber'
                 value={phoneNumber}
                 onChange={e => setPhoneNumber(e.target.value)}
                 className='w-full bg-transparent px-3 py-2 border-b rounded'
@@ -140,7 +127,7 @@ const FormDesignOneItem = () => {
           <button
             style={{ border: '1px solid #FC5F04' }}
             type='submit'
-            className={`bg-[#fff] text-orange-500 relative flex justify-center items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 hover:border-2 hover:ease-in-out hover:transition rounded-full`}
+            className={`bg-[#fff] text-orange-500 relative flex justify-center items-center gap-3 text-left py-2 px-4 cursor-pointer mt-3 hover:border-2 hover:ease-in-out hover:transition rounded-full`}
           >
             <p className='text-sm'>Đăng ký ngay</p>
             <IconLineDirection color='#FC5F04' />

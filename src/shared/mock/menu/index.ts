@@ -303,7 +303,7 @@ export const fakeMenu = [
         path: "/transform-your-organization",
         menuChild: [
             {
-                title: "Digital Consulting",
+                title: "Tư vấn dịch vụ số",
                 path: "",
                 menuChild: [
                     {
@@ -311,7 +311,7 @@ export const fakeMenu = [
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Digital Strategy & Planning",
+                                title: "Chiến lược chuyển đổi số",
                                 path: "/digital-strategy-planning",
                                 menuChild: []
                             },
@@ -320,92 +320,92 @@ export const fakeMenu = [
                 ]
             },
             {
-                title: "Digital Transformation Implementation",
+                title: "Dịch vụ chuyển đổi số",
                 path: "",
                 menuChild: [
                     {
-                        title: "Customer Engagement",
+                        title: "Dịch vụ chuyển đổi số",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Customer Data Platform",
+                                title: "Nền tảng dữ liệu khách hàng",
                                 path: "/customer-data-platform",
                                 menuChild: []
                             },
                             {
-                                title: "Customer Relationship Management",
+                                title: "Quản trị quan hệ khách hàng",
                                 path: "/customer-relationship-management",
                                 menuChild: []
                             },
                         ]
                     },
                     {
-                        title: "Business Core Operation",
+                        title: "Dịch vụ CNTT cốt lõi",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Core Banking",
+                                title: "Hệ thống ngân hàng lõi",
                                 path: "/core-banking",
                                 menuChild: []
                             },
                             {
-                                title: "Core Insurance",
+                                title: "Hệ thống bảo hiểm lõi",
                                 path: "/core-insurance",
                                 menuChild: []
                             },
                             {
-                                title: "Core Airline",
+                                title: "Hệ thống hàng không lõi",
                                 path: "/core-airline",
                                 menuChild: []
                             },
                             {
-                                title: "Core Oil & Gas",
+                                title: "Hệ thống dầu khí lõi",
                                 path: "/core-oil-gas",
                                 menuChild: []
                             },
                         ]
                     },
                     {
-                        title: "ERP management",
+                        title: "Giải pháp quản trị doanh nghiệp",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Enterprise Resource Planning",
+                                title: "Lập kế hoạch nguồn lực doanh nghiệp",
                                 path: "/enterprise-resource-planning",
                                 menuChild: []
                             },
                             {
-                                title: "Supply Chain Management",
+                                title: "Quản lý chuỗi cung ứng ",
                                 path: "/supply-chain-management",
                                 menuChild: []
                             },
                             {
-                                title: "Financial Management",
+                                title: "Quản lý tài chính",
                                 path: "/financial-management",
                                 menuChild: []
                             },
                             {
-                                title: "Spend Management",
+                                title: "Quản lý chi phí",
                                 path: "/spend-management",
                                 menuChild: []
                             },
                             {
-                                title: "Human Capital Management",
+                                title: "Quản lý vốn Nguồn lực",
                                 path: "/human-capital-management",
                                 menuChild: []
                             },
                             {
-                                title: "Small and Midsize Enterprises",
+                                title: "Giải pháp cho doanh nghiệp vừa và nhỏ",
                                 path: "/small-and-midsize-enterprises",
                                 menuChild: []
                             },
                             {
-                                title: "Extended Planning and Analysis",
+                                title: "Lập kế hoạch và phân tích",
                                 path: "/extended-planning-and-analysis",
                                 menuChild: []
                             },
                             {
-                                title: "Data and Analytics",
+                                title: "Phân tích dữ liệu quản trị",
                                 path: "/data-and-analysis",
                                 menuChild: []
                             },
@@ -414,7 +414,7 @@ export const fakeMenu = [
                 ]
             },
             {
-                title: "IT Management Service",
+                title: "Dịch vụ quản trị công nghệ thông tin",
                 path: "",
                 menuChild: [
                     {
@@ -422,7 +422,7 @@ export const fakeMenu = [
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Application Management Services",
+                                title: "Dịch vụ quản trị ứng dụng",
                                 path: "/application-management-services",
                                 menuChild: []
                             },
@@ -431,7 +431,7 @@ export const fakeMenu = [
                 ]
             },
             {
-                title: "IT Service",
+                title: "Dịch vụ công nghệ thông tin",
                 path: "",
                 menuChild: [
                     {
@@ -439,12 +439,12 @@ export const fakeMenu = [
                         path: "/it-service",
                         menuChild: [
                             {
-                                title: "Application development & modernization",
+                                title: "Dịch vụ phát triển Ứng dụng",
                                 path: "/application-development-modernization",
                                 menuChild: []
                             },
                             {
-                                title: "Resource Fulfillment by competencies",
+                                title: "Dịch vụ cung ứng nguồn lực trọn gói ",
                                 path: "/resource-fulfillment-by-competencies",
                                 menuChild: []
                             },

@@ -30,11 +30,11 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
           <div className='relative w-full flex-shrink-0 snap-start'>
             <PreImage
               src={data.section.image}
-              height={1080}
+              height={760}
               width={1980}
               layer={true}
               alt={data.section.name}
-              className='w-full object-center'
+              className='w-full object-cover'
             />
           </div>
         </div>

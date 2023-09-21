@@ -17,7 +17,7 @@ const ServiceDesignThreeSection = ({ title, data, className }: Props) => {
   return (
     <section id={data.section.code} className={`pb-4 px-4 md:p-24 lg:px-32 overflow-hidden ${className}  `}>
       <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start gap-10'>
-        <div className='lg:mt-10 w-full max-h-[500px] pr-4 overflow-hidden overflow-y-scroll flex flex-col justify-start items-start gap-10 service-designthree-section-with-scrollbar'>
+        <div className='lg:mt-10 w-full max-h-[700px] pr-4 overflow-hidden flex flex-col justify-start items-start gap-10 service-designthree-section-with-scrollbar'>
           {data.components.map((item, idx) => {
             return (
               <div key={idx} className='w-full flex-shrink-0 snap-start cursor-pointer'>

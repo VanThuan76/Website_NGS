@@ -21,16 +21,16 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`px-4 md:px-24 lg:px-32 py-4 md:py-12 lg:py-24 overflow-hidden bg-[#051C2C] ${className}`}
+      className={`px-4 md:px-24 py-4 md:py-12 lg:py-24 overflow-hidden bg-[#051C2C] ${className}`}
     >
       <div className='w-full grid grid-cols-2 justify-center items-center gap-5 text-white'>
-        <div className='cols-span-1 w-full flex flex-col justify-end items-end gap-10'>
+        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-10'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-end items-end gap-3 text-end'
+            className='w-full flex flex-col justify-start items-start gap-3'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />

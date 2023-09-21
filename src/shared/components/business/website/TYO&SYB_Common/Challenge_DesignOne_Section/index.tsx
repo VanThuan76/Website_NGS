@@ -1,5 +1,6 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -24,23 +25,32 @@ const ChallengeDesignOneSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full flex flex-col justify-start items-start gap-3'
       />
-        {data.components.map((item, idx) => (
-          <div key={idx} className='w-full grid grid-cols-2 gap-10 justify-between items-center p-4 bg-[#F9F4EE] rounded-lg'>
-            <div className='relative w-full mt-5 flex-shrink-0 snap-start -translate-x-8'>
-              <PreImage
-                src={item.image}
-                width={1980}
-                height={360}
-                alt={item.title}
-                className='w-full object-cover rounded-lg'
-              />
-            </div>
-            <div className='w-full flex flex-col justify-start items-start gap-3'>
-              <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
-              <p className='text-xs md:text-base'>{item.description}</p>
+      {data.components.map((item, idx) => (
+        <div
+          key={idx}
+          className='w-full grid grid-cols-2 gap-10 justify-between items-center p-4 bg-[#F9F4EE] rounded-lg'
+        >
+          <div className='relative w-full mt-5 flex-shrink-0 snap-start -translate-x-8'>
+            <PreImage
+              src={item.image}
+              width={1980}
+              height={360}
+              alt={item.title}
+              className='w-full object-cover rounded-lg'
+            />
+          </div>
+          <div className='w-full flex flex-col justify-start items-start gap-3'>
+            <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
+            <div className='flex flex-col justify-center items-center gap-2'>
+              {splitTextToArrayByDoubleSlash(item.description).map((item: string, idx: number) => (
+                <p key={idx} className='text-xs md:text-base'>
+                  {item}
+                </p>
+              ))}
             </div>
           </div>
-        ))}
+        </div>
+      ))}
     </section>
   );
 };

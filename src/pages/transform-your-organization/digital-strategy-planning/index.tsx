@@ -11,6 +11,8 @@ import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/F
 import { TYO_DSP_Banner, TYO_DSP_Section2, TYO_DSP_Section3, TYO_DSP_Section4, TYO_DSP_Section5, TYO_DSP_Section6, TYO_DSP_Section7, TYO_DSP_Section8 } from '@/mocks/website/TYO/tyo';
 import CaseStudyDesignOneSection from '@/components/business/website/TYO&SYB_Common/CaseStudy_DesignOne_Section';
 import dynamic from 'next/dynamic';
+import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
+import { Home_11 } from '@/mocks/website/HO/home';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -39,8 +41,8 @@ const DSPPage = () => {
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_DSP_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <PartnerDesignTwoSection data={TYO_DSP_Section6} />
+      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+        <PartnerSection data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <CaseStudyDesignOneSection title='Client Stories' data={TYO_DSP_Section7} />
