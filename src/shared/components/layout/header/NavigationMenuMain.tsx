@@ -78,7 +78,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                             ) : (
                               <div className='w-full flex flex-col justify-start items-start'>
                                 <SecureMenuIcon />
-                                <p className='text-2xl'>We connect students to employers through real work projects.</p>
+                                <p className='text-2xl'>Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7 chuyên nghiệp</p>
                               </div>
                             )}
                           </div>
@@ -90,13 +90,13 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                         <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
                         <div className='w-full flex justify-start items-start gap-10'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
-                            <div key={idx} className='flex flex-col justify-between items-start'>
+                            <div key={idx} className='max-w-[230px] flex flex-col justify-between items-start'>
                               <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400'>
                                 {menuChild3.title}
                               </div>
                               {menuChild3.menuChild &&
                                 menuChild3.menuChild.map((menuChild4, idx) => (
-                                  <NavigationMenuLink key={idx} href={`${menuChild3.path}${menuChild4.path}`}>
+                                  <NavigationMenuLink style={{ borderTop: `${menuChild3.title === "" && idx === 0 && '1px solid #B7B4AE'}` }} key={idx} href={`${menuChild3.path}${menuChild4.path}`}>
                                     {menuChild4.title}
                                   </NavigationMenuLink>
                                 ))}

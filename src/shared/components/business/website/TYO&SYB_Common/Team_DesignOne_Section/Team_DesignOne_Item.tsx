@@ -12,14 +12,12 @@ const TeamDesignOneItem = ({ content, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   return (
     <div
-      className={`flex flex-col justify-start items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
+      className={`w-full h-full flex flex-col justify-between items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
     >
-      <div className='w-full h-[80%] lg:h-full flex flex-col justify-between items-start gap-5'>
-        <p className='text-sm md:text-base'>{content}</p>
+        <p className='text-sm md:text-base'>{content.length > 300 ? `${content.substring(0, 250)}...` : content}</p>
         <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon cls='border-orange-500 bg-white px-2' title='Go Carrer' colorSvg={colorIcon} />
-          </UseLinkRouter>
-      </div>
+        </UseLinkRouter>
     </div>
   );
 };

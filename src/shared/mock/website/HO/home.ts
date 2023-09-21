@@ -14,7 +14,7 @@ export const Home_1 = {
             title: "IT Consulting & Service Provider",
             description: "Chúng tôi là",
             slug: "it-consulting-&-service-provider-1",
-            content: "NGS - CUNG CẤP TOÀN DIỆN DỊCH VỤ & TƯ VẤN CÔNG NGHỆ THÔNG TIN",
+            content: "NGS - ĐƠN VỊ CUNG CẤP DỊCH VỤ// TƯ VẤN CÔNG NGHỆ THÔNG TIN VÀ CHUYỂN ĐỔI SỐ// TOÀN DIỆN.",
             image: "/images/HO_Banner.png",
             video: "",
             thumbnail: ""
@@ -73,7 +73,7 @@ export const Home_1 = {
 export const Home_2 = {
     section: {
         id: 2,
-        name: 'Hiện đại hóa hệ thống vận hành cho doanh nghiệp vừa và nhỏ trên cùng một nền tảng',
+        name: 'HIỆN ĐẠI HÓA HỆ THỐNG VẬN HÀNH// CHO DOANH NGHIỆP VỪA VÀ NHỎ //TRÊN CÙNG MỘT NỀN TẢNG.',
         code: "PG001SE00002",
         image: "",
         description: "Một hệ thống công nghệ thông tin hiệu quả làm xương sống cho hoạt động vận hành là mong đợi của bất kỳ doanh nghiệp nào. NGS xây dựng hệ sinh thái phần mềm hỗ trợ cho doanh nghiệp quản trị dọc hành trình một cách linh hoạt, thuận tiện và hệ thống báo cáo hữu ích. NGS hiểu rằng, ngoài phần mềm thì hệ thống tri thức, tài liệu, biểu mẫu chuẩn quản trị quốc tế sẽ giúp ích rất nhiều cho khách hàng"

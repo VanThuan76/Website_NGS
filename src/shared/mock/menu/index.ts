@@ -9,11 +9,11 @@ export const fakeMenu = [
                 path: "/your-next-gen",
                 menuChild: [
                     {
-                        title: "E-Office",
+                        title: "Văn phòng điện tử",
                         path: "/your-next-gen",
                         menuChild: [
                             {
-                                title: "Messenger & Lịch biểu",
+                                title: "Tin nhắn & Lịch biểu",
                                 path: "/messenger-and-schedule",
                                 menuChild: []
                             },
@@ -33,7 +33,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "E-Learning",
+                                title: "Đào tạo trực tuyến",
                                 path: "/e-learning",
                                 menuChild: []
                             },
@@ -90,7 +90,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Tài sản cố định & Công cụ dụng cụ",
+                                title: "Tài sản cố định & Công cụ, Dụng cụ",
                                 path: "",
                                 menuChild: []
                             },
@@ -231,7 +231,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Đánh giá",
+                                title: "Đánh giá hiệu suất",
                                 path: "/assess",
                                 menuChild: []
                             },
@@ -307,7 +307,7 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Feature Solution",
+                        title: "",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
@@ -418,7 +418,7 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Feature Solution",
+                        title: "",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
@@ -435,7 +435,7 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Feature Solution",
+                        title: "",
                         path: "/it-service",
                         menuChild: [
                             {
@@ -464,63 +464,63 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Feature Solution",
+                        title: "Tấn công",
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "SOC",
+                                title: "Dịch vụ Đánh giá xâm nhập hệ thống",
                                 path: "/soc",
                                 menuChild: []
                             },
                             {
-                                title: "Penetration Testing",
+                                title: "Dịch vụ Kiểm thử xâm nhập hệ thống/ứng dụng",
                                 path: "/penetration-testing",
                                 menuChild: []
                             },
                             {
-                                title: "Red Teaming",
+                                title: "Dịch vụ Kiểm thử tấn công xâm nhập chuyên sâu",
                                 path: "/red-teaming",
                                 menuChild: []
                             },
                         ]
                     },
                     {
-                        title: "Feature Solution",
+                        title: "Vận hành - Thiết kế",
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "Malware Analysis",
-                                path: "/malware-analysis",
-                                menuChild: []
-                            },
-                            {
-                                title: "Incident Response",
+                                title: "Dịch vụ Triển khai tích hợp giải pháp an toàn thông tin",
                                 path: "/incident-response",
                                 menuChild: []
                             },
                             {
-                                title: "Compromise Assessment",
+                                title: "Giải pháp dịch vụ an ninh mạng công nghiệp",
                                 path: "/compromise-assessment",
                                 menuChild: []
                             },
+                            {
+                                title: "Dịch vụ giám sát, vận hành an ninh",
+                                path: "/system-intergration",
+                                menuChild: []
+                            }
                         ]
                     },
                     {
-                        title: "Feature Solution",
+                        title: "Phòng thủ",
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "Threat Inteligence",
+                                title: "Dịch vụ Thông tin tình báo an ninh mạng",
                                 path: "/threat-inteligence",
                                 menuChild: []
                             },
                             {
-                                title: "System Intergration",
-                                path: "/system-intergration",
+                                title: "Dịch vụ Rà soát phân tích, gỡ bỏ mã độc",
+                                path: "/malware-analysis",
                                 menuChild: []
                             },
                             {
-                                title: "OT/ICS Security",
+                                title: "Dịch vụ Ứng cứu sự cố",
                                 path: "/OT.ICS-security",
                                 menuChild: []
                             },

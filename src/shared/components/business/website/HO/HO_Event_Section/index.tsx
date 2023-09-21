@@ -71,13 +71,14 @@ const HomeEventSection = ({ data, className }: Props) => {
                     transform: item === selectedTab ? 'translateX(0)' : 'translateX(-10px)',
                   }}
                   transition={{
-                    duration: 1,
+                    duration: 1.5,
                     ease: 'easeInOut',
                   }}
                   className={`${
                     item === selectedTab ? 'col-span-3' : 'col-span-1'
                   } w-full flex-shrink-0 snap-start cursor-pointer`}
                   onClick={() => setSelectedTab(item)}
+                  onMouseEnter={() => setSelectedTab(item)}
                 >
                   <motion.div
                     layout
@@ -85,7 +86,7 @@ const HomeEventSection = ({ data, className }: Props) => {
                   >
                     {item === selectedTab ? (
                       <div className='w-full h-full grid grid-cols-1 justify-between items-start rounded-lg overflow-hidden'>
-                        <PreImage alt='Event' src={item.image!} width={750} height={390} className='w-full rounded-lg object-fill' />
+                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full rounded-lg object-contain' />
                         <HOEventContent className='relative' event={item} />
                       </div>
                     ) : (

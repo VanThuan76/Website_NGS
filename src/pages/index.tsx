@@ -59,7 +59,8 @@ export function HomePage({
   return (
     <React.Fragment>
       <Head>
-        <title>{homePageData.name}</title>
+        {/* <title>{homePageData.name}</title> */}
+        <title>Trang chủ - NGS | Chuyển đổi số toàn diện</title>
         <link rel="icon" href="/logo.svg" sizes="any" />
         <meta name='description' content={homePageData.description} />
         <meta name='keywords' content={homePageData.seo} />

@@ -3,6 +3,7 @@ import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { PreImage } from '@/components/common/customization/PreImage';
 interface Props {
   item: IComponents;
   idx: number;
@@ -22,11 +23,21 @@ const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
     >
       <div className='flex justify-start items-start gap-4 md:gap-8'>
         <div className='mb-3 text-xl md:text-2xl'>0{idx + 1}</div>
-        <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl'>{item.title}</h1>
+        <div className='flex flex-col justify-start items-start gap-2'>
+          <h1 className='text-sm text-slate-500'>{item.title}</h1>
+          <PreImage
+          src={item.image}
+          height={35}
+          width={120}
+          layer={false}
+          alt={item.title}
+          className='w-full h-full object-contain'
+        />
+        </div>
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start pl-10 md:pl-20'
+        className='flex-col justify-center items-start pl-6 md:pl-14'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{
@@ -35,12 +46,12 @@ const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
         }}
       >
         {/* <--Responsive */}
-        <p className='hidden md:block text-sm md:text-base'>{item.content}</p>
+        <p className='hidden md:block text-sm md:text-base'>{item.description}</p>
         <p className='block md:hidden text-sm md:text-base'>
-          {item.content.length > 100 ? `${item.content.substring(0, 80)}...` : item.content}
+          {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>
         {/* Responsive--> */}
-        <BtnCommon cls='border-orange-500' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
       </motion.div>
     </div>
   );

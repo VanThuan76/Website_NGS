@@ -28,8 +28,8 @@ const HOSolutionCard = ({ id, title, description, image, className }: Props) => 
   return (
     <motion.div
       className={`flex flex-col justify-start items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
-      onHoverStart={() => setIsHovered(true)}
-      onHoverEnd={() => setIsHovered(false)}
+      onHoverStart={() => id !== 1 && setIsHovered(true)}
+      onHoverEnd={() => id !== 1 && setIsHovered(false)}
       animate={animateTheme}
       transition={{
         duration: 0.5,

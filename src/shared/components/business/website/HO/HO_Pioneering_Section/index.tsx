@@ -32,14 +32,16 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
-        <PreImage
-          src={data.section.image}
-          height={100}
-          width={1400}
-          layer={false}
-          alt={'Price'}
-          className='w-full object-contain'
-        />
+        <div className='w-full'>
+          <PreImage
+            src={data.section.image}
+            height={100}
+            width={600}
+            layer={false}
+            alt={data.section.name}
+            className='w-full object-contain'
+          />
+        </div>
       </div>
     </section>
   );

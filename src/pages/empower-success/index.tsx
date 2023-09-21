@@ -9,6 +9,9 @@ import ESCoreValueSection from '@/components/business/website/ES/ES_CoreValue_Se
 import TeamDesignOneSection from '@/components/business/website/TYO&SYB_Common/Team_DesignOne_Section';
 import ESEnvironment from '@/components/business/website/ES/ES_Environment_Section';
 import ESOrganizationalSystemSection from '@/components/business/website/ES/ES_Organizational_System_Section';
+import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
+import ConnectUsSection from '@/components/business/website/All_Common/ConnectUs_Section';
+import ESPeopleSection from '@/components/business/website/ES/ES_People_Section';
 import { GetServerSideProps } from 'next';
 import { renderNewsContent } from '@/utils/fetchServerSide/renderNewsContent';
 import { APP_SAVE_KEY } from '@/utils/constants';
@@ -18,13 +21,13 @@ import {
   ESEnvironmentData,
   ESMissionData,
   ESOrganizationalSystemData,
+  ESPeopleData,
+  ESTeamData,
   ESVisionData,
 } from '@/mocks/website/ES/es';
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
-import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
-import ConnectUsSection from '@/components/business/website/All_Common/ConnectUs_Section';
 import { Home_10, Home_11 } from '@/mocks/website/HO/home';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
@@ -55,7 +58,10 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESCoreValueSection />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <TeamDesignOneSection title='' data={TYOTeam1} />
+        <ESPeopleSection title='Con người NGS' data={ESPeopleData} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <TeamDesignOneSection title='' data={ESTeamData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESEnvironment data={ESEnvironmentData} />

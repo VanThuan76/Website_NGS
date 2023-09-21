@@ -19,7 +19,7 @@ const HomeServiceSection = ({ data, className }: Props) => {
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
+        className='flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
       />
       <div className='max-w-[1440px] w-full h-full mx-auto my-auto mt-10 flex items-start justify-between lg:gap-10 xl:gap-10 overflow-hidden'>
         <AnimatePresence>

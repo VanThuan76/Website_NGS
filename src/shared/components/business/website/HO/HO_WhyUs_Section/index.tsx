@@ -22,7 +22,7 @@ const HomeWhyUsSection = ({data, className}: Props) => {
         className={`relative md: lg: xl: px-4 md:px-24 ${className}`}
       >
         <div className='max-w-[1440px] w-full mx-auto my-auto'>
-          <div className='w-full flex flex-col lg:flex-row justify-between items-center'>
+          <div className='w-full flex flex-col lg:flex-row'>
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection
                 title='Điều gì tạo nên NGS'
@@ -44,6 +44,7 @@ const HomeWhyUsSection = ({data, className}: Props) => {
                 <HomeWhyUsContent data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />
               </div>
               {/* HomeWhyUsIcon Responsive Tablet --> */}
+
               {/* <-- HomeWhyUsIcon Responsive Desktop */}
               <div className='hidden lg:block w-full mt-5'>
                 <HomeWhyUsContent data={data.components!} selectedIcon={selectedIcon && selectedIcon} setSelectedIcon={setSelectedIcon} />

@@ -65,28 +65,39 @@ export const ESMissionData = {
         },
     ]
 }
-export const ESHumanData = {
+export const ESPeopleData = {
     section: {
         id: 1,
-        name: 'Con người NGS',
+        name: 'Lãnh đạo NGS',
         code: "ES12312",
         image: "",
-        description: "Lãnh đạo NGS"
+        description: ""
     },
     components: [
         {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Nguyễn Vũ Hoàng An",
-            description: " CEO",
+            title: "Phạm Thế Trường",
+            description: "CEO",
             slug: "",
             content: "NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình.",
             image: "",
             video: "",
             thumbnail: ""
         },
-       
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00002CN000001",
+            title: "Nguyễn Vũ Hoàng An",
+            description: "CEO",
+            slug: "",
+            content: "NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
     ]
 }
 export const ESTeamData = {
@@ -106,7 +117,7 @@ export const ESTeamData = {
             description: "Phó TGĐ NGS Holding Chủ tịch NGS Consulting",
             slug: "",
             content: "Sau 20 năm làm việc cho các tổ chức công nghệ đa quốc gia hàng đầu với các chức vụ cấp cao tại Oracle, SAP, Microsoft, ông Trường gia nhập NGS với khát khao xây dựng một công ty kiểu mới có năng lực công nghệ mạnh và văn hóa chuyên nghiệp - hướng khách hàng.",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -118,7 +129,7 @@ export const ESTeamData = {
             description: "Phó TGĐ NGS Holding Phó TGĐ NGS Consulting",
             slug: "",
             content: "Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Thúy Hằng gia nhập NGS và xây dựng lên NGS Consulting với mục tiêu trở thành công ty tư vấn chuyển đổi số hàng đầu tại Việt Nam.",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -130,7 +141,7 @@ export const ESTeamData = {
             description: "Giám đốc Công nghệ NGS Consulting",
             slug: "",
             content: "Sau hơn 25 năm làm việc cho các tập đoàn công nghệ hàng đầu thế giới như Oracle, SAP.. .hay tập đoàn lớn tại Việt Nam như Vingroup, ông Nguyễn Quang Khải gia nhập NGS với vai trò xây dựng năng lực công nghệ. Với kinh nghiệm , triển khai và tư vấn giải pháp đa ngành từ Hàng không, FMCG, Logistics.... cho các tập đoàn, doanh nghiệp lớn tại Việt Nam, APAC, Bắc Mỹ ông Khải đang góp phần rất lớn trong việc xây dựng đội ngũ kiến trúc sư giải pháp, chuyên gia công nghệ các cấp cho NGS.",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -142,7 +153,7 @@ export const ESTeamData = {
             description: "Tổng Giám đốc NCS",
             slug: "",
             content: "",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -154,7 +165,7 @@ export const ESTeamData = {
             description: "Giám đốc Công nghệ NCS",
             slug: "",
             content: "Ông Vũ Ngọc Sơn được biết đến là chuyên gia An ninh mạng hàng đầu của Việt Nam trong mảng phòng chống mã độc. Trước khi gia nhập NGS, ông giữ vai Trong thời kỳ làm việc ở Bkav, ông Sơn đã tham gia nhiều sự kiện an ninh mạng lớn trong nước cũng như quốc tế như: phát hiện và công bố lỗ hổng trong công nghệ nhận dạng khuôn mặt trên máy tính xách tay Toshiba, Lenovo, Asus…, xác định được nguồn gốc cuộc tấn công vào hàng loạt website của cơ quan chính phủ Mỹ, Hàn Quốc, bao gồm cả website của Tổng thống Hàn Quốc...",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -165,8 +176,8 @@ export const ESTeamData = {
             title: "Bà TRẦN THỊ LƯU",
             description: "Giám đốc Triển khai NGS Consulting",
             slug: "",
-            content: "hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Lưu hiện gia nhập NGS Consulting từ những ngày đầu tiên và trở thành giám đốc triển khai của công ty. Với vị trí CDO, bà Lưu và cộng sự tại NGS luôn mang lại cho khách hàng sự an tâm trong khi thực hiện dự án bằng quy trình, kỷ luật dự án và sự hiểu biết sâu sắc về nghiệp vụ cũng như giải pháp.",
-            image: "",
+            content: "Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Lưu hiện gia nhập NGS Consulting từ những ngày đầu tiên và trở thành giám đốc triển khai của công ty. Với vị trí CDO, bà Lưu và cộng sự tại NGS luôn mang lại cho khách hàng sự an tâm trong khi thực hiện dự án bằng quy trình, kỷ luật dự án và sự hiểu biết sâu sắc về nghiệp vụ cũng như giải pháp.",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -178,7 +189,7 @@ export const ESTeamData = {
             description: "Giám đốc các Dự án Chiến lược",
             slug: "",
             content: "",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -190,7 +201,7 @@ export const ESTeamData = {
             description: "Giám đốc tư vấn giải pháp doanh nghiệp - Công ty NGS Consulting",
             slug: "",
             content: "Với kinh nghiệm 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, đồng thời từng giữ các vị trí quản trị cấp cao tại các doanh nghiệp Công nghệ Thông tin lớn, bà Hằng Thu gia nhập NGS với vai trò giám đốc tư vấn giải pháp doanh nghiệp. Bà Hằng Thu và cộng sự tại NGS luôn nỗ lực để hiểu rõ về mục tiêu chuyển đổi và các vấn đề hiện tại của khách hàng, từ đó đưa ra giải pháp và kế hoạch chuyển đổi toàn diện nhất bằng kinh nghiệm tư vấn đa lĩnh vực nhiều năm.",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -202,7 +213,7 @@ export const ESTeamData = {
             description: "Giám đốc tư vấn giải pháp Tài chính - Ngân hàng - Công ty NGS Consulting",
             slug: "",
             content: "Ông Nguyễn Đức Bảng được biết đến là một chuyên gia tư vấn hàng đầu trong lĩnh vực Tài chính Ngân hàng với hơn 13 năm kinh nghiệm trong lĩnh vực giải pháp Tài chính ngân hàng tại Việt Nam. Trong đó ông Bảng có hơn 8 năm kinh nghiệm về kiến trúc giải pháp, quản lý dự án tại Intellect Design Arena Ltd, một trong những công ty hàng đầu về giải pháp cho Ngân hàng & Tài chính. Ông Bảng cũng đồng hành trong nhiều dự án triển khai tại các Ngân hàng cùng Tecapro IT, Temenos Polaris, IBM... Ông Bảng và các cộng sự tại NGS luôn nỗ lực để hiểu rõ về mục tiêu chuyển đổi và các vấn đề hiện tại của tổ chức tài chính, từ đó đưa ra giải pháp chuyển đổi toàn diện nhất bằng kinh nghiệm tư vấn chuyên sâu trong lĩnh vực Tài chính Ngân hàng.",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -214,7 +225,7 @@ export const ESTeamData = {
             description: "Phó Giám đốc Kỹ thuật - NCS",
             slug: "",
             content: "",
-            image: "",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },
@@ -223,10 +234,10 @@ export const ESTeamData = {
             language: 'vi',
             code: "PG003.10SE00002CN000011",
             title: " Bà Lã Thị Thùy Linh",
-            description: "Với hơn 15 năm kinh nghiệm tư vấn triển khai giải pháp quản trị doanh nghiệp ERP/CRM/Supply Chain Management với nền tảng của các hãng Microsoft, SAP, Infor, Salesforce... bà Lã Thị Thùy Linh đã có những am hiểu về đặc thù vận hành, quản trị theo các ngành nghề của khách hàng. Do vậy, đã có các cơ hội tham gia tư vấn chuyển đổi số cho các Doanh nghiệp, xây dựng chiến lược, định hướng và lộ trình ứng dụng CNTT vào hoạt động của DN đó, giúp mang lại các giá trị thông qua việc đầu tư, ứng dụng và triển khai các dự án công nghệ phù hợp, đúng thời điểm cho các Khách hàng. Gia nhập NGS, bà Linh mong muốn sẽ đồng hành cùng các khách hàng trong quá trình chuyển đổi số, bằng các giải pháp CRM hàng đầu trên thế giới, giúp doanh nghiệp triển khai chiến lược hướng khách hàng làm trọng tâm.",
+            description: "",
             slug: "",
-            content: "",
-            image: "",
+            content: "Với hơn 15 năm kinh nghiệm tư vấn triển khai giải pháp quản trị doanh nghiệp ERP/CRM/Supply Chain Management với nền tảng của các hãng Microsoft, SAP, Infor, Salesforce... bà Lã Thị Thùy Linh đã có những am hiểu về đặc thù vận hành, quản trị theo các ngành nghề của khách hàng. Do vậy, đã có các cơ hội tham gia tư vấn chuyển đổi số cho các Doanh nghiệp, xây dựng chiến lược, định hướng và lộ trình ứng dụng CNTT vào hoạt động của DN đó, giúp mang lại các giá trị thông qua việc đầu tư, ứng dụng và triển khai các dự án công nghệ phù hợp, đúng thời điểm cho các Khách hàng. Gia nhập NGS, bà Linh mong muốn sẽ đồng hành cùng các khách hàng trong quá trình chuyển đổi số, bằng các giải pháp CRM hàng đầu trên thế giới, giúp doanh nghiệp triển khai chiến lược hướng khách hàng làm trọng tâm.",
+            image: "/images/SYB_MAsection3.png",
             video: "",
             thumbnail: ""
         },

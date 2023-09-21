@@ -23,7 +23,7 @@ const HomeSolutionSection = ({ data, className }: Props) => {
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
+        className='flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
       />
       <div className='max-w-[1440px] mx-auto py-12 grid grid-cols-2 lg:grid-cols-4 mt-10 bg-transparent overflow-hidden gap-2'>
         {data &&

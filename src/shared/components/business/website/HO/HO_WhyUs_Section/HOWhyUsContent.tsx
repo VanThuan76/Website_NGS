@@ -40,20 +40,28 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item)}
-              className={`w-full lg:w-auto text-center px-5 pb-3 border-b-2 cursor-pointer text-base ${
+              className={`w-full px-5 pb-3 border-b-2 cursor-pointer ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
-              {item.title}
+              <div className='flex flex-col justify-start items-start text-center'>
+                {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
+                  <p key={idx} className='text-base '>
+                    {item}
+                  </p>
+                ))}
+              </div>
             </motion.div>
           );
         })}
       </motion.div>
-      {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
-        <div key={idx} className='flex flex-col justify-center items-center'>
-          <p className='text-sm lg:text-base text-[#C2C0BF]'>{item}</p>
-        </div>
-      ))}
+      <div className='flex flex-col justify-center items-center'>
+        {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
+          <p key={idx} className='text-sm lg:text-base text-[#C2C0BF]'>
+            {item}
+          </p>
+        ))}
+      </div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
         <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
       </UseLinkRouter>

@@ -1,7 +1,7 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
-import React, { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import React, { useState } from 'react';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
@@ -30,7 +30,7 @@ const PartnerSection = ({data, className}: Props) => {
         <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper className='w-full'>
-            {data.components!.map((item, idx) => (
+            {data.components.map((item, idx) => (
               <SwiperSlide className='max-w-[250px] p-8' key={idx}>
                 <PreImage
                   src={item.image as string}
@@ -48,7 +48,7 @@ const PartnerSection = ({data, className}: Props) => {
           </Swiper>
         </div>
         <div className='w-full mt-5 hidden md:block'>
-          {data.components!.map((item, idx) => (
+          {data.components.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
                 <div

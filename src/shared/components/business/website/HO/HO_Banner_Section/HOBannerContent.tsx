@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import { URLS_SYSTEM } from '@/utils/constants';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -64,11 +65,16 @@ const HOBannerContent = ({ selectedTab }: Props) => {
           </motion.div>
         </AnimatePresence>
       </div>
-      <div
-        style={{ lineHeight: '120%' }}
-        className='w-full md:w-[50%] text-2xl lg:text-5xl uppercase text-white font-medium'
-      >
-        {selectedTab ? selectedTab.content : ''}
+      <div className='flex flex-col justify-start items-start'>
+        {splitTextToArrayByDoubleSlash(selectedTab.content || '').map((item: string, idx: number) => (
+          <div
+            key={idx}
+            style={{ lineHeight: '120%' }}
+            className='text-2xl lg:text-5xl uppercase text-white font-medium'
+          >
+            {item}
+          </div>
+        ))}
       </div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
         <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm' />

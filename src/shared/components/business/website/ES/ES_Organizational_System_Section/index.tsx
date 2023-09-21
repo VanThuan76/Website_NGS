@@ -28,17 +28,17 @@ const ESOrganizationalSystemSection = ({ title, data, className }: Props) => {
         <AnimatePresence>
           <div className='w-full lg:w-1/2 flex flex-col justify-center items-center'>
             {data &&
-              data.components!.map((item, idx) => {
+              data.components.map((item, idx) => {
                 return <ESOrganizationalSystemItem key={idx} item={item} idx={idx} />;
               })}
           </div>
         </AnimatePresence>
         <PreImage
-          src={data.components[0].image}
+          src={data.section.image}
           height={500}
           width={500}
           layer={false}
-          alt={data.components[0].title}
+          alt={data.section.name}
           className='hidden lg:block xl:block relative rounded-lg'
         />
       </div>
