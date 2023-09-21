@@ -1,1 +1,1 @@
-export const connectUsData = ["Giải pháp công nghệ", "Chuyển đổi số", "Bảo mật thông tin", "Tin tức mới", "Workshop", "Sự kiện sắp tới"]
+export const connectUsData = ["Giải pháp tiên phong", "Dịch vụ xuất sắc", "Bảo mật xuất sắc", "Cơ hội ra nhập", "Đào tạo", "Workshop/Event"]

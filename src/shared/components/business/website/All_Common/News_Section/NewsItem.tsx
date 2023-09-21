@@ -25,14 +25,14 @@ const NewsItem = ({ data }: Props) => {
       <div className='w-full flex flex-col justify-start items-start gap-3 p-5 col-span-2 lg:col-span-1'>
         <div className='w-full flex flex-col justify-start items-start lg:flex-row lg:justify-between lg:items-center'>
           <p className='text-orange-500'>{data.categoryName}</p>
-          <p className='hidden lg:block text-sm text-slate-500'>{data.createdDate}</p> 
+          <p className='hidden lg:block text-sm text-slate-500'>{data.createdDate}</p>
         </div>
 
         <h2 className='text-lg lg:text-xl'>{data.title}</h2>
         <p className='block lg:hidden text-sm text-slate-500'>{data.description}</p>
         <p className='text-sm text-slate-400'>{data.author}</p>
         <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-          <BtnCommon hover={false} title='Tìm hiểu thêm' cls='!p-0 border-orange-400 dark:border-slate-400' colorSvg={colorIcon} />
+          <BtnCommon title='Tìm hiểu thêm' cls='border border-orange-500' colorSvg={colorIcon} />
         </UseLinkRouter>
       </div>
     </div>

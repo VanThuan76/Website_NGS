@@ -34,8 +34,8 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
             return (
               <div
                 key={idx}
-                className={`text-center p-2 rounded-full border-2 ${
-                  isSelected ? 'border-blue-500' : 'border-slate-400'
+                className={`text-center p-2 rounded-full border ${
+                  isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
                 }`}
                 onClick={() => handleItemClick(item)}
               >

@@ -46,10 +46,10 @@ const NewsSection = ({ data, className }: Props) => {
             <h2 className='text-2xl'>{data.components[0].title}</h2>
             <p className='text-sm text-slatse-500'>{data.components[0].description}</p>
             <p className='w-full text-end text-sm text-slate-400'>{data.components[0].author}</p>
-          </div>
           <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-            <BtnCommon hover={false} title='Tìm hiểu thêm' cls='border-orange-400 dark:border-slate-400' colorSvg={colorIcon} />
+            <BtnCommon title='Tìm hiểu thêm' cls='w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
+          </div>
         </div>
         <div className='w-full h-full grid grid-cols-1 gap-5'>
           {data.components!.slice(0, 2).map((item, idx) => (
