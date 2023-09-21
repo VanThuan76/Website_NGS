@@ -1,10 +1,9 @@
-import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
 import YNG_IconArrowRight from '@/components/icon/YNG/YNG_ERP/YNG_ERP_solution/YNG_IconArrowRight';
-import { IYNGYourNextGenSolution } from '@/mocks/website/YNG/YNG_Home/solution';
+import { IYourNextGen } from '@/mocks/website/YNG/YNG_Home/solution';
 
 interface Props {
-  item: IYNGYourNextGenSolution;
+  item: IYourNextGen;
   className: string;
 }
 const YNGHomeSolutionSectionItem = ({ item, className }: Props) => {
@@ -15,7 +14,7 @@ const YNGHomeSolutionSectionItem = ({ item, className }: Props) => {
       <div className='w-full flex flex-col justify-start items-start'>
         <TitleSection
           title=''
-          name={item.name}
+          name={item.title}
           description={item.description}
           findMore={true}
           className='w-full flex flex-col justify-start items-start'
