@@ -27,15 +27,15 @@ const ScrollRevealWrapper = dynamic(() => import('@/components/common/customizat
 const AssessDetailPage = () => (
   <React.Fragment>
     <Head>
-      <title>Đánh giá</title>
-      <meta name='description' content='Đánh giá' />
+      <title>Đánh giá hiệu suất NGS</title>
+      <meta name='description' content='Đánh giá hiệu suất NGS' />
       <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
     </Head>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
       <YNGDetailBannerSection data={YNGDetailBanner1} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-      <YNGDetailWhyChooseSection title='Tại sao chọn Đánh giá?' data={YNG_Assess_Section2} />
+      <YNGDetailWhyChooseSection title='Tại sao chọn Đánh giá hiệu suất?' data={YNG_Assess_Section2} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
       <YNGDetailProductSection data={YNG_Assess_Section3} />
@@ -50,10 +50,10 @@ const AssessDetailPage = () => (
       <YNGCommonIntroductionSection data={YNG_Assess_Section6} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-      <YNGCommonBackSolutionSection title='Back Solution' data={YNG_Assess_Section7} />
+      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_Assess_Section7} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-      <YNGCommonPilotSubriceSection title='Pilot' data={YNG_Assess_Section8} />
+      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_Assess_Section8} />
     </ScrollRevealWrapper>
   </React.Fragment>
 );

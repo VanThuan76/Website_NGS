@@ -20,15 +20,15 @@ const ELDetailPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>E-Learning NGS</title>
-        <meta name='description' content='E-Learning NGS' />
+        <title>Đào tạo trực tuyến NGS</title>
+        <meta name='description' content='Đào tạo trực tuyến NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGDetailBannerSection data={YNGDetailBanner1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <YNGDetailWhyChooseSection title='Tại sao chọn E-Learning?' data={YNG_EL_Section2} />
+        <YNGDetailWhyChooseSection title='Tại sao chọn Đào tạo trực tuyến?' data={YNG_EL_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGDetailProductSection data={YNG_EL_Section3} />

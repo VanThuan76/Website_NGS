@@ -6112,7 +6112,7 @@
         id: 1,
         language: 'vi',
         code: 'PG002.3.8SE00003CN000001',
-        title: 'Đánh giá',
+        title: 'Đánh giá hiệu suất',
         description:
           'Xây dựng cách thức đánh giá phù hợp',
         slug: '',
@@ -6126,7 +6126,7 @@
         id: 2,
         language: 'vi',
         code: 'PG002.3.8SE00003CN000002',
-        title: 'Đánh giá',
+        title: 'Đánh giá hiệu suất',
         description:
           'Thiết kế khảo sát của riêng bạn',
         slug: '',
@@ -6140,7 +6140,7 @@
         id: 3,
         language: 'vi',
         code: 'PG002.3.8SE00003CN000003',
-        title: 'Đánh giá',
+        title: 'Đánh giá hiệu suất',
         description:
           'Tự động hóa quá trình đánh giá',
         slug: '',
@@ -7770,7 +7770,7 @@
       id: 1,
       language: 'vi',
       code: 'PG002.1.1SE00003CN000001',
-      title: 'Messenger & Lịch biểu',
+      title: 'Tin nhắn & Lịch biểu',
       description:
         'Theo dõi một chuỗi thảo luận',
       slug: '',
@@ -7784,7 +7784,7 @@
       id: 2,
       language: 'vi',
       code: 'PG002.1.1SE00003CN000002',
-      title: 'Messenger & Lịch biểu',
+      title: 'Tin nhắn & Lịch biểu',
       description:
         'Thông báo và phản hồi',
       slug: '',
@@ -7798,7 +7798,7 @@
       id: 3,
       language: 'vi',
       code: 'PG002.1.1SE00003CN000003',
-      title: 'Messenger & Lịch biểu',
+      title: 'Tin nhắn & Lịch biểu',
       description:
         'Cuộc họp Online',
       slug: '',
@@ -8532,7 +8532,7 @@
       id: 1,
       language: 'vi',
       code: 'PG002.1.5SE00003CN000001',
-      title: 'E-Learning',
+      title: 'Đào tạo trực tuyến',
       description:
         'Công nghệ đa nền tảng',
       slug: '',
@@ -8546,7 +8546,7 @@
       id: 2,
       language: 'vi',
       code: 'PG002.1.5SE00003CN000002',
-      title: 'E-Learning',
+      title: 'Đào tạo trực tuyến',
       description:
         'Thời gian triển khai nhanh chóng',
       slug: '',
@@ -8560,7 +8560,7 @@
       id: 3,
       language: 'vi',
       code: 'PG002.1.5SE00003CN000003',
-      title: 'E-Learning',
+      title: 'Đào tạo trực tuyến',
       description:
         'Mức độ bảo mật tài liệu cao',
       slug: '',

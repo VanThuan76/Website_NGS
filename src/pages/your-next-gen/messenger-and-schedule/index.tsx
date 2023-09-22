@@ -20,15 +20,15 @@ const MNSDetailPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Messenger & Lịch biểu NGS</title>
-        <meta name='description' content='Messenger & Lịch biểu NGS' />
+        <title>Tin nhắn & Lịch biểu NGS</title>
+        <meta name='description' content='Tin nhắn & Lịch biểu NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGDetailBannerSection data={YNGDetailBanner1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <YNGDetailWhyChooseSection title='Tại sao chọn Messenger & Lịch biểu?' data={YNG_MNS_Section2} />
+        <YNGDetailWhyChooseSection title='Tại sao chọn Tin nhắn & Lịch biểu?' data={YNG_MNS_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <YNGDetailProductSection data={YNG_MNS_Section3} />

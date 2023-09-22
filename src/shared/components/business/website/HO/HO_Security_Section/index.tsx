@@ -22,7 +22,7 @@ const HomeSecuritySection = ({ data, className }: Props) => {
       className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <TitleSection
-        title='Bảo mật'
+        title='Bảo mật toàn diện'
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
