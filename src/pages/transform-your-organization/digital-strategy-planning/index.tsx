@@ -48,7 +48,7 @@ const DSPPage = () => {
         <CaseStudyDesignOneSection title='Client Stories' data={TYO_DSP_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
+        <FormDesignOneSection title='Kết nối với NGS' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

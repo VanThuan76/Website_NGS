@@ -3271,10 +3271,10 @@ export const TYO_DSP_Banner = {
 export const TYO_DSP_Section2 = {
     section: {
         id: 2,
-        name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+        name: '',
         code: "PG003.1SE00002",
         image: "/images/Image_OverviewDesignFIveSection.png",
-        description: "Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường. // NGS cung cấp dịch vụ chuyên nghiệp về chuyển đổi số với hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Chiến lược Kỹ thuật số là bước quan trọng đầu tiên để thúc đẩy quá trình chuyển đổi số."
+        description: "- Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường.// - NGS cung cấp dịch vụ chuyên nghiệp về Chuyển đổi số với hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Chiến lược Kỹ thuật số là bước quan trọng đầu tiên để thúc đẩy quá trình Chuyển đổi số."
     },
     components: [
     ]
@@ -3293,8 +3293,8 @@ export const TYO_DSP_Section3 = {
             id: 1,
             language: 'vi',
             code: "PG003.1SE00003CN000001",
-            title: "“ Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh. ”",
-            description: "Nhu cầu của khách hàng và thị trường đang thay đổi nhanh hơn bao giờ hết, đòi hỏi doanh nghiệp phải nhanh chóng điều chỉnh chiến lược, sản phẩm, dịch vụ để duy trì tính cạnh tranh. Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh. // NGS hiểu rằng việc phát triển một chiến lược chuyển đổi số rõ ràng, phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một trong những thách thức lớn nhất, đặc biệt khi doanh nghiệp không được nhận thức đầy đủ và đúng đắn về quá trình chuyển đổi số.",
+            title: "“Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh.”",
+            description: "Nhu cầu của khách hàng và thị trường đang thay đổi nhanh hơn bao giờ hết, đòi hỏi doanh nghiệp phải nhanh chóng điều chỉnh chiến lược, sản phẩm, dịch vụ để duy trì tính cạnh tranh. Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh.// NGS hiểu rằng việc phát triển một chiến lược chuyển đổi số rõ ràng, phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một trong những thách thức lớn nhất, đặc biệt khi doanh nghiệp không được nhận thức đầy đủ và đúng đắn về quá trình chuyển đổi số.",
             slug: "",
             content: "",
             image: "/images/PG003.1SE00003CN000001.png",
@@ -3307,10 +3307,10 @@ export const TYO_DSP_Section3 = {
 export const TYO_DSP_Section4 = {
     section: {
         id: 4,
-        name: 'Dịch vụ chúng tôi cung cấp',
+        name: '',
         code: "PG003.1SE00004",
         image: "",
-        description: ""
+        description: "Với đội ngũ chuyên gia giàu kinh nghiệm, NGS sẽ đồng hành cùng doanh nghiệp trong quá trình xây dựng chiến lược và đưa ra lộ trình chuyển đổi số, bao gồm: "
 
     },
     components: [
@@ -3318,8 +3318,8 @@ export const TYO_DSP_Section4 = {
             id: 1,
             language: 'vi',
             code: "PG003.1SE00004CN000001",
-            title: "Hiểu rõ mục tiêu kinh doanh và thách thức trong một thế giới luôn biến đổi",
-            description: "NGS sẽ tiến hành phỏng vấn các cấp quản lý, tổ chức các buổi làm việc, khảo sát và nghiên cứu để xác định các thách thức cụ thể mà tổ chức của bạn đang đối mặt, chẳng hạn như quy trình lạc hậu, khả năng công nghệ hạn chế hoặc sự thay đổi mong đợi của khách hàng. Những hiểu biết về các khía cạnh này sẽ là nền tảng để xây dựng chiến lược biến đổi kỹ thuật số cho doanh nghiệp của bạn.",
+            title: "",
+            description: "Bước 1: Giúp doanh nghiệp hiểu rõ mục tiêu kinh doanh và thách thức trong một thế giới luôn biến đổi.",
             slug: "",
             content: "",
             image: "",
@@ -3330,8 +3330,8 @@ export const TYO_DSP_Section4 = {
             id: 2,
             language: 'vi',
             code: "PG003.1SE00004CN000002",
-            title: "Đánh giá hiện trạng của tổ chức",
-            description: "Dựa trên các chỉ số chính đã được xác định, NGS sẽ tiến hành đánh giá kỹ lưỡng mức độ trưởng thành và khả năng kỹ thuật số của doanh nghiệp. Đồng thời, chúng tôi cũng đánh giá cơ sở hạ tầng công nghệ, hệ thống quản lý dữ liệu, quy trình vận hành và nguồn nhân lực hiện có của doanh nghiệp.",
+            title: "",
+            description: "Bước 2: Đánh giá hiện trạng của tổ chức.",
             slug: "",
             content: "",
             image: "",
@@ -3342,8 +3342,8 @@ export const TYO_DSP_Section4 = {
             id: 3,
             language: 'vi',
             code: "PG003.1SE00004CN000003",
-            title: "Xây dựng một chiến lược chuyển đổi số thành công thông qua",
-            description: "* Sử dụng các công nghệ số để tạo ra các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng mới. * Xác định những giải pháp mang lại lợi nhuận tốt nhất; tạo điều kiện thuận lợi cho các hoạt động được ưu tiên dẫn đến lộ trình hành động. * Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật mạnh mẽ để phát triển và thực hiện lộ trình kỹ thuật số.",
+            title: "",
+            description: "Bước 3: Xây dựng một chiến lược chuyển đổi số thành công.",
             slug: "",
             content: "",
             image: "",
@@ -3356,7 +3356,7 @@ export const TYO_DSP_Section4 = {
 export const TYO_DSP_Section5 = {
     section: {
         id: 5,
-        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+        name: '',
         code: "PG003.1SE00005",
         image: "",
         description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn:"
@@ -3390,7 +3390,7 @@ export const TYO_DSP_Section5 = {
             id: 3,
             language: 'vi',
             code: "PG003.1SE00005CN000003",
-            title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+            title: "Chuyên môn toàn diện về chuyển đổi số",
             description: "Chúng tôi giúp khách hàng từ chiến lược đến thực thi.",
             slug: "",
             content: "",
@@ -3500,7 +3500,7 @@ export const TYO_DSP_Section7 = {
 export const TYO_DSP_Section8 = {
     section: {
         id: 1,
-        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên',
         code: "PG003.1SE00008",
         image: "",
         description: ""

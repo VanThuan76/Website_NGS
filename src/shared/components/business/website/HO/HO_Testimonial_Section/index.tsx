@@ -29,7 +29,7 @@ const HomeTestimonialSection = ({ data, className }: Props) => {
             className='w-full flex flex-col justify-start items-start gap-3'
           />
           <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-            <BtnCommon title='Đọc thêm' cls='mt-3 w-[140px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-full border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
         <div className='w-full col-span-2 max-h-[700px] overflow-hidden overflow-y-scroll flex flex-col lg:flex-row lg:mt-10 justify-center items-start gap-5'>

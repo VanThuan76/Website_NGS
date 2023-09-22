@@ -19,7 +19,7 @@ const HomeSolutionSection = ({ data, className }: Props) => {
   return (
     <section id={data.section.code} className={`pb-4 md:pb-8 lg:pb-10 xl:pb-24 px-4 md:px-24 ${className}`}>
       <TitleSection
-        title='Giải pháp'
+        title='GIẢI PHÁP TIÊN PHONG'
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
