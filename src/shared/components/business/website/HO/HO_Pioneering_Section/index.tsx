@@ -19,14 +19,14 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`relative w-full my-10 max-h-[470px] md:max-h-[350px] z-30 px-4 md:px-24 ${className}`}
+      className={`relative w-full my-10 z-30 px-4 md:px-24 ${className}`}
       style={{
         background: `linear-gradient(180deg, rgba(248, 133, 80, 0.3) -9.34%, rgba(255, 255, 255, 0.3) 129.73%)`,
       }}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center pt-16 pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
+      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center py-14'>
         <div className='w-full flex flex-col justify-start items-start gap-3'>
-          <h1 className='text-3xl lg:text-4xl'>{data.section.name}</h1>
+          <h1 className='text-2xl lg:text-4xl font-medium'>{data.section.name}</h1>
           <p>{data.section.description}</p>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
@@ -35,7 +35,7 @@ const HomePioneeringSection = ({ title, data, className }: Props) => {
         <div className='w-full'>
           <PreImage
             src={data.section.image}
-            height={100}
+            height={150}
             width={600}
             layer={false}
             alt={data.section.name}

@@ -34,7 +34,7 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
             return (
               <div
                 key={idx}
-                className={`text-center p-2 rounded-full border ${
+                className={`text-center p-2 rounded-full border cursor-pointer ${
                   isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
                 }`}
                 onClick={() => handleItemClick(item)}

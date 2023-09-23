@@ -20,7 +20,7 @@ const HOOrganizationalSystemSection = ({ data, className }: Props) => {
           <h2 className='hidden lg:block text-xl xl:text-2xl'>{data.section.name}</h2>
           <Swiper className='w-full'>
             {data.components.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px] max-h-[100px] p-8' key={idx}>
+              <SwiperSlide className='max-w-[250px] max-h-[120px] p-8' key={idx}>
                 <PreImage
                   key={idx}
                   src={item.image}
@@ -28,7 +28,7 @@ const HOOrganizationalSystemSection = ({ data, className }: Props) => {
                   width={250}
                   layer={false}
                   alt={item.title}
-                  className='w-full h-full object-contain'
+                  className='w-full h-full object-contain object-top'
                 />
               </SwiperSlide>
             ))}

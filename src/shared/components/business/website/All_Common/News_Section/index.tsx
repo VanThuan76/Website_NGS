@@ -52,7 +52,7 @@ const NewsSection = ({ data, className }: Props) => {
           </div>
         </div>
         <div className='w-full h-full grid grid-cols-1 gap-5'>
-          {data.components!.slice(0, 2).map((item, idx) => (
+          {data.components.slice(1, 3).map((item, idx) => (
             <NewsItem key={idx} data={item} />
           ))}
         </div>

@@ -28,7 +28,7 @@ const HOServiceSection = ({ item, idx }: Props) => {
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start pl-10 md:pl-20'
+        className='flex-col justify-center items-start pl-10 md:pl-16'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{

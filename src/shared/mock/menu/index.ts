@@ -469,7 +469,7 @@ export const fakeMenu = [
                         menuChild: [
                             {
                                 title: "Dịch vụ Đánh giá xâm nhập hệ thống",
-                                path: "/soc",
+                                path: "/compromise-assessment",
                                 menuChild: []
                             },
                             {
@@ -490,17 +490,17 @@ export const fakeMenu = [
                         menuChild: [
                             {
                                 title: "Dịch vụ Triển khai tích hợp giải pháp an toàn thông tin",
-                                path: "/incident-response",
+                                path: "/system-integration",
                                 menuChild: []
                             },
                             {
                                 title: "Giải pháp dịch vụ an ninh mạng công nghiệp",
-                                path: "/compromise-assessment",
+                                path: "/OT.ICS-security",
                                 menuChild: []
                             },
                             {
                                 title: "Dịch vụ giám sát, vận hành an ninh",
-                                path: "/system-intergration",
+                                path: "/soc",
                                 menuChild: []
                             }
                         ]
@@ -511,7 +511,7 @@ export const fakeMenu = [
                         menuChild: [
                             {
                                 title: "Dịch vụ Thông tin tình báo an ninh mạng",
-                                path: "/threat-inteligence",
+                                path: "/threat-intelligence",
                                 menuChild: []
                             },
                             {
@@ -521,7 +521,7 @@ export const fakeMenu = [
                             },
                             {
                                 title: "Dịch vụ Ứng cứu sự cố",
-                                path: "/OT.ICS-security",
+                                path: "/incident-response",
                                 menuChild: []
                             },
                         ]

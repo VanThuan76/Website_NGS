@@ -63,7 +63,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
         ))}
       </div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
-        <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+        <BtnCommon title='Tìm hiểu thêm' cls='w-[170px] border border-orange-500' colorSvg={colorIcon} />
       </UseLinkRouter>
     </div>
   );

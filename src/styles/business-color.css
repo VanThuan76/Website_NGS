@@ -168,7 +168,7 @@ p {
 @media only screen and (min-width: 600px) {
   .List.one {
     width: 2000px;
-    grid-template-columns: 0.5fr 1.5fr;
+    grid-template-columns: 0.35fr 1.65fr;
   }
   .List.two {
     width: 2000px;
@@ -379,4 +379,7 @@ p {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #e2e1e1, rgba(0, 0, 0, 0)) 1 100%;
 }
-
+.border-card-security-home{
+  border: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;
+}

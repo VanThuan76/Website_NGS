@@ -9,10 +9,11 @@ import { Sheet, SheetContent, SheetTrigger } from '@/components/common/ui/sheet'
 import ThemeModeToggle from '@/components/common/ToggleThemeMode';
 import LanguageSwitch from '@/components/common/LanguageSwitch';
 import NavigationMenuMain from './NavigationMenuMain';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const router = useRouter()
+  const router = useRouter();
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
@@ -42,8 +43,16 @@ const Header = () => {
       }`}
     >
       <div className='w-full flex justify-around items-center'>
-      <div className='absolute left-5 flex justify-center items-center gap-2 z-20'>
-        <PreImage height={100} width={100} src='/logo.svg' alt='Logo' layer={false} onClick={() => router.push("/")} className="cursor-pointer"/>
+        <div className='absolute left-5 flex justify-center items-center gap-2 z-20'>
+          <PreImage
+            height={100}
+            width={100}
+            src='/logo.svg'
+            alt='Logo'
+            layer={false}
+            onClick={() => router.push('/')}
+            className='cursor-pointer'
+          />
         </div>
         <div className='relative hidden lg:block z-10'>
           <NavigationMenuMain fakeMenu={fakeMenu} />
@@ -79,8 +88,8 @@ const Header = () => {
         </div>
         <div className='flex gap-8 items-center'>
           <div className='hidden lg:flex gap-8 items-center'>
-          <ThemeModeToggle />
-          <LanguageSwitch />
+            <ThemeModeToggle />
+            <LanguageSwitch />
           </div>
           <div className='lg:hidden xl:hidden'>
             <Sheet>
@@ -100,9 +109,11 @@ const Header = () => {
               </SheetContent>
             </Sheet>
           </div>
-          <button className='dark:text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>
-            Liên hệ
-          </button>
+          <UseLinkRedirect sectionCode='ConnectUs'>
+            <button className='dark:text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>
+              Liên hệ
+            </button>
+          </UseLinkRedirect>
         </div>
       </div>
     </motion.section>

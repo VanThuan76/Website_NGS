@@ -58,7 +58,7 @@ const HomeEventSection = ({ data, className }: Props) => {
         </div>
         <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
           <AnimatePresence>
-            {data.components!.map((item, idx) => {
+            {data.components.map((item, idx) => {
               return (
                 <motion.div
                   key={idx}
@@ -86,16 +86,16 @@ const HomeEventSection = ({ data, className }: Props) => {
                   >
                     {item === selectedTab ? (
                       <div className='w-full h-full grid grid-cols-1 justify-between items-start rounded-lg overflow-hidden'>
-                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full rounded-lg object-contain' />
+                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full object-contain object-top rounded-lg' />
                         <HOEventContent className='relative' event={item} />
                       </div>
                     ) : (
                       <PreImage
-                        alt='Event'
-                        src={item.image!}
-                        width={1980}
+                        alt={item.title}
+                        src={item.image}
+                        width={250}
                         height={600}
-                        className='object-cover rounded-lg'
+                        className='rounded-lg object-cover'
                       />
                     )}
                     {item !== selectedTab ? (

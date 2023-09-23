@@ -8,6 +8,6 @@ export const footerContactData = {
   email: "ngs.com.vn"
 }
 export const footerServiceData = ["Giải pháp tiên phong", "Dịch vụ xuất sắc", "Bảo mật toàn diện"]
-export const footerCompanyData = ["Cơ hội gia nhậpr", "Tin tức NGS", "Về NGS"]
+export const footerCompanyData = ["Cơ hội gia nhập", "Tin tức NGS", "Về NGS"]
 export const footerSupportData = ["Điều khoản sử dụng", "Chính sách cookie", "Sitemap"]
 export const footerEcosystemData = []
