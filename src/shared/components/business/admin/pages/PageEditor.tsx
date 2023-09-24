@@ -53,13 +53,13 @@ export default function PageEditor({}: Props) {
       case 'PG001SE00001':
         return <HomeBannerSection data={data} />;
       case 'PG001SE00002':
-        return <HomeSolutionSection className='!m-0 !p-0' data={data} />;
+        return <HomeSolutionSection title='' className='!m-0 !p-0' data={data} />;
       case 'HO_security':
-        return <HomeSecuritySection className='!m-0 !p-0' data={data} />;
+        return <HomeSecuritySection title='' className='!m-0 !p-0' data={data} />;
       case 'HO_whyUs':
-        return <HomeWhyUsSection className='!m-0 !p-0' data={data} />;
+        return <HomeWhyUsSection title='' className='!m-0 !p-0' data={data} />;
       case 'HO_event':
-        return <HomeEventSection className='!m-0 !p-0' data={data} />;
+        return <HomeEventSection title='' className='!m-0 !p-0' data={data} />;
       // case 'HO_news':
       //   return <NewsSection className='!m-0 !p-0' data={data} />;
       case 'HO_partner':

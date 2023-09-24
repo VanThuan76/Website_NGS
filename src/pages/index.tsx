@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
@@ -78,43 +78,43 @@ export function HomePage({
       <ScrollRevealWrapper>
         <HomeBannerSection data={Home_1} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
-        <HomeSolutionSection data={Home_2} />
+      <ScrollRevealWrapper>
+        <HomeSolutionSection title='GIẢI PHÁP TIÊN PHONG' data={Home_2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'top', distance: '30px', duration: 1000 }}>
-        <HomeServiceSection data={Home_3} />
+      <ScrollRevealWrapper>
+        <HomeServiceSection title='DỊCH VỤ XUẤT SẮC' data={Home_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeSecuritySection data={Home_4} />
+      <ScrollRevealWrapper>
+        <HomeSecuritySection title='Bảo mật toàn diện' data={Home_4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <HomePioneeringSection data={Home_5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeAboutUsSection data={Home_6} />
+      <ScrollRevealWrapper>
+        <HomeAboutUsSection title='Về chúng tôi' data={Home_6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeWhyUsSection data={Home_7} />
+      <ScrollRevealWrapper>
+        <HomeWhyUsSection title='Điều gì tạo nên NGS' data={Home_7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <HOOrganizationalSystemSection data={Home_8} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <HomeEventSection data={Home_9} />
+      <ScrollRevealWrapper>
+        <HomeEventSection title='Sự kiện' data={Home_9} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <NewsSection data={Home_10 as unknown as IBaseSectionComponentNews} />
+      <ScrollRevealWrapper>
+        <NewsSection title='Tin tức' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <PartnerSection data={Home_11} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <HomeTestimonialSection data={Home_12} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <HomeCaseStudySection data={Home_13}/>
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <ConnectUsSection />
       </ScrollRevealWrapper>
     </React.Fragment>

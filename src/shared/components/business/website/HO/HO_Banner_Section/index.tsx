@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
-import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
@@ -13,7 +12,8 @@ interface Props {
 }
 const HomeBannerSection = ({ data }: Props) => {
   const [direction, setDirection] = useState<number>(0);
-  const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<number>(40);
+  const [isCalculateWidthTab, setIsCalculateWidthTab] = useState<string>('w-[40px]');
+  const [idxTab, setIdxTab] = useState(1)
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
@@ -88,6 +88,11 @@ const HomeBannerSection = ({ data }: Props) => {
       document.body.removeEventListener('keydown', handleKeyDown);
     };
   }, []);
+  useEffect(() => {
+    setIsCalculateWidthTab(
+      `w-[${(200 / Number(data && data.components && data.components.length)) * (idxTab + 1)}px]`,
+    );
+  }, [data, idxTab]);
   if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
     <section id={data && data.section && data.section.code} className='pb-10 block'>
@@ -95,13 +100,9 @@ const HomeBannerSection = ({ data }: Props) => {
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <HOBannerContent selectedTab={selectedTab} />
           <UseLinkRedirect sectionCode='PG001SE00002'>
-            <motion.div
-              animate={{ y: 10 }}
-              transition={{ duration: 2, repeat: Infinity, delay: 1, repeatDelay: 1 }}
-              className='absolute right-10 bottom-10 z-30'
-            >
-              <MouseScroll className='hidden lg:block' />
-            </motion.div>
+            <div className='animate-bounce absolute right-10 bottom-10 z-30 hidden lg:block'>
+              <MouseScroll />
+            </div>
           </UseLinkRedirect>
           <div className='mx-auto w-[100vw] h-[100vh] relative overflow-hidden'>
             <AnimatePresence initial={false} custom={direction}>
@@ -132,9 +133,7 @@ const HomeBannerSection = ({ data }: Props) => {
                     item === selectedTab ? 'text-white' : 'text-slate-300 '
                   } cursor-pointer font-medium`}
                   onClick={() => {
-                    setIsCalculateWidthTab(
-                      (200 / Number(data && data.components && data.components.length)) * (idx + 1),
-                    );
+                    setIdxTab(idx)
                     setTimeout(() => {
                       setSelectedTab(item);
                     }, 0);
@@ -150,7 +149,7 @@ const HomeBannerSection = ({ data }: Props) => {
             />
             <motion.div
               layoutId='underline'
-              className={`absolute left-4 w-[${isCalculateWidthTab}px] bottom-0 border-b-2 border-white z-30`}
+              className={`absolute left-4 ${isCalculateWidthTab} bottom-0 border-b-2 border-white z-30`}
             />
           </div>
         </InitBasicAnimation>

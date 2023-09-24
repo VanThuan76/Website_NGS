@@ -10,4 +10,25 @@ export const footerContactData = {
 export const footerServiceData = ["Giải pháp tiên phong", "Dịch vụ xuất sắc", "Bảo mật toàn diện"]
 export const footerCompanyData = ["Cơ hội gia nhập", "Tin tức NGS", "Về NGS"]
 export const footerSupportData = ["Điều khoản sử dụng", "Chính sách cookie", "Sitemap"]
-export const footerEcosystemData = []
+export const footerEcosystemData = [
+  {
+    name: 'NGSC',
+    link: 'https://ngsc.vn/vi/'
+  },
+  {
+    name: 'NCS',
+    link: 'https://ncsgroup.vn/'
+  },
+  {
+    name: 'Entrust',
+    link: '/'
+  },
+  {
+    name: 'NGSCD',
+    link: '/'
+  },
+  {
+    name: 'iSPACE',
+    link: 'https://ispace.edu.vn/'
+  }
+]

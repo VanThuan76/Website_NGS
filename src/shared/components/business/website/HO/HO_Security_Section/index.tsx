@@ -1,5 +1,5 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from 'react';
+import { motion, useAnimation, useInView } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import TitleSection from '@/components/common/customization/TitleSection';
@@ -9,20 +9,26 @@ import HOSecurityCard from './HOSecurityCard';
 import HOSecurityResponsive from './HOSecurityResponsive';
 
 type Props = {
+  title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 
-const HomeSecuritySection = ({ data, className }: Props) => {
+const HomeSecuritySection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
-  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
+  const ref = useRef<HTMLElement>(null);
+  const isInView = useInView(ref, { once: true });
+  const sectionControls = useAnimation();
+  useEffect(() => {
+    if (isInView) {
+      sectionControls.start('visible');
+    }
+  }, [isInView]);
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section
-      id={data.section.code}
-      className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
-    >
+    <section ref={ref} id={data.section.code} className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
       <TitleSection
-        title='Bảo mật toàn diện'
+        title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
@@ -31,23 +37,43 @@ const HomeSecuritySection = ({ data, className }: Props) => {
       <div className='max-w-[1440px] w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
         <div className='grid grid-cols-2 justify-end items-end gap-2 md:gap-3'>
           {data.components.slice(0, 2).map((item, idx) => (
-            <HOSecurityCard key={idx} title={item.title} description={item.description} image={item.image} className='col-span-1' />
+            <HOSecurityCard
+              key={idx}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              sectionControls={sectionControls}
+              idx={idx}
+            />
           ))}
         </div>
-
         <div className='grid grid-cols-3 justify-end items-end gap-2 md:gap-3'>
           {data.components.slice(2, 5).map((item, idx) => (
-            <HOSecurityCard key={idx} title={item.title} description={item.description} image={item.image}  className='col-span-1' />
+            <HOSecurityCard
+              key={idx}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              sectionControls={sectionControls}
+              idx={idx}
+            />
           ))}
         </div>
         <div className='grid grid-cols-4 justify-end items-end gap-2 md:gap-3'>
           {data.components.slice(5, 9).map((item, idx) => (
-            <HOSecurityCard key={idx} title={item.title} description={item.description} image={item.image}  className='col-span-1' />
+            <HOSecurityCard
+              key={idx}
+              title={item.title}
+              description={item.description}
+              image={item.image}
+              sectionControls={sectionControls}
+              idx={idx}
+            />
           ))}
         </div>
       </div>
       {/* <-- Responsive */}
-      <HOSecurityResponsive data={data} />
+      <HOSecurityResponsive data={data}  sectionControls={sectionControls}/>
       {/* Responsive --> */}
       <motion.div
         className='absolute top-0 left-0 w-full h-full -z-10'

@@ -9,10 +9,11 @@ import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 
 type Props = {
+  title: string
   data: Partial<IBaseSectionComponentNews>;
   className?: string;
 };
-const NewsSection = ({ data, className }: Props) => {
+const NewsSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
@@ -22,9 +23,9 @@ const NewsSection = ({ data, className }: Props) => {
       className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <TitleSection
-        title='Tin tức'
-        name={data.section!.name as string}
-        description={data.section!.description as string}
+        title={title}
+        name={data.section.name as string}
+        description={data.section.description as string}
         findMore={false}
         className='w-full md:w-[80%] flex justify-between items-center gap-3'
       />
@@ -36,7 +37,7 @@ const NewsSection = ({ data, className }: Props) => {
             width={1980}
             layer={false}
             alt={'News'}
-            className='w-full relative rounded-t-lg object-cover'
+            className='w-full h-full relative rounded-t-lg object-cover'
           />
           <div className='mt-10 px-5 w-full flex flex-col justify-between items-start gap-3'>
             <div className='w-full flex justify-between items-center'>

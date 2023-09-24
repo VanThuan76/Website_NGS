@@ -383,3 +383,13 @@ p {
   border: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;
 }
+.border-overview-designSeven-section{
+  border: 1px solid var(--Linear-Orange, #FC5E03);
+}
+.font-custom {
+  font-feature-settings: 'clig' off, 'liga' off;
+}
+
+.blur-image {
+  filter: blur(2px);
+}

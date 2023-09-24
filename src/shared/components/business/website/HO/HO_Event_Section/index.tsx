@@ -12,10 +12,11 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
+  title: string
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
-const HomeEventSection = ({ data, className }: Props) => {
+const HomeEventSection = ({ title, data, className }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<IEvent> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
@@ -28,8 +29,8 @@ const HomeEventSection = ({ data, className }: Props) => {
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
         <TitleSection
-          title='Sự kiện'
-          name={data.section!.name as string}
+          title={title}
+          name={data.section.name as string}
           description={data.section!.description as string}
           findMore={false}
           className='w-full md:w-[80%] flex justify-between items-center gap-3'
@@ -86,7 +87,7 @@ const HomeEventSection = ({ data, className }: Props) => {
                   >
                     {item === selectedTab ? (
                       <div className='w-full h-full grid grid-cols-1 justify-between items-start rounded-lg overflow-hidden'>
-                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full object-contain object-top rounded-lg' />
+                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full h-full object-cover rounded-lg' />
                         <HOEventContent className='relative' event={item} />
                       </div>
                     ) : (

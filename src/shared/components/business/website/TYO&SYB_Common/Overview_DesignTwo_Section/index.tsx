@@ -1,3 +1,4 @@
+import TitleSection from '@/components/common/customization/TitleSection';
 import BorderStyleTwoLight from '@/components/icon/TYO&SYB_Common/BorderStyleTwoLight';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -14,14 +15,16 @@ const OverviewDesignTwoSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96 overflow-hidden ${className}  `}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
     >
       <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start'>
-        <div className='flex flex-col justify-start items-start gap-2'>
-          <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
-          <p className='mt-5'>{data.section.description}</p>
-        </div>
+        <TitleSection
+          title={title}
+          name={data.section.name as string}
+          description={data.section.description as string}
+          findMore={true}
+          className='flex flex-col justify-start items-start gap-2'
+        />
         <div className='max-w-[360px] grid grid-cols-2 gap-14 justify-self-end align-self-end'>
           {data.components.map((item, idx) => {
             let rotationAngle = (360 / data.components!.length) * idx;

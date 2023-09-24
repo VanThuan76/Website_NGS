@@ -26,7 +26,7 @@ export const Home_1 = {
             title: "Trust Partner",
             description: "Chúng tôi tự hào là",
             slug: "trust-partner-2",
-            content: "ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ LỚN NHẤT TRÊN THẾ GIỚI",
+            content: "ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ// LỚN NHẤT TRÊN THẾ GIỚI",
             image: "/images/HO_Banner.png",
             video: "",
             thumbnail: ""

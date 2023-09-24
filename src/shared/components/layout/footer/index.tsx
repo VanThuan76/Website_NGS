@@ -1,6 +1,13 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import IconLocation from '@/components/icon/HO/event/IconLocation';
-import { footerCompanyData, footerContactData, footerServiceData, footerSupportData } from '@/mocks/footer';
+import {
+  footerCompanyData,
+  footerContactData,
+  footerEcosystemData,
+  footerServiceData,
+  footerSupportData,
+} from '@/mocks/footer';
+import Link from 'next/link';
 import InforFooter from './info';
 import ResponsiveContent from './ResponsiveContent';
 
@@ -42,13 +49,14 @@ const Footer = () => {
         <div className='w-full flex flex-col md:flex-row justify-start items-start md:justify-between md:items-center border-t-2 py-5'>
           <div className='flex justify-between items-center gap-3 mb-2'>
             <IconLocation />
-            <p>International (EN)</p>
+            <p>International (VI)</p>
           </div>
-          <ul className='grid grid-cols-1 md:grid-cols-2 justify-start items-start gap-3'>
-            <li>Risk & Violation Reporting</li>
-            <li>Legal Notice</li>
-            <li>Terms & Conditions</li>
-            <li>Data Protection Policy</li>
+          <ul className='flex flex-col lg:flex-row justify-start items-start gap-3'>
+            {footerEcosystemData.map((item, idx) => (
+              <Link href={item.link} key={idx} target='_blank'>
+                <li>{item.name}</li>
+              </Link>
+            ))}
           </ul>
         </div>
       </div>

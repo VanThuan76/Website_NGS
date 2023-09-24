@@ -7,15 +7,13 @@ import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
-  title?: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
-const HomePioneeringSection = ({ title, data, className }: Props) => {
+const HomePioneeringSection = ({ data, className }: Props) => {
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
-
   return (
     <section
       id={data.section.code}

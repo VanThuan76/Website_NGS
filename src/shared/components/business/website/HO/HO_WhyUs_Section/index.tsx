@@ -7,10 +7,11 @@ import HomeWhyUsContent from './HOWhyUsContent';
 import HomeWhyUsResponsive from './HOWhyUsResponsive';
 
 type Props = {
+  title: string
   data: Partial<IBaseSectionComponent>;
   className?: string
 }
-const HomeWhyUsSection = ({data, className}: Props) => {
+const HomeWhyUsSection = ({title, data, className}: Props) => {
   const [selectedIcon, setSelectedIcon] = useState<Partial<IComponents>|undefined >(()=> {
     if(data.components && data.components.length > 0 ) return data.components[0]
     else return undefined
@@ -25,7 +26,7 @@ const HomeWhyUsSection = ({data, className}: Props) => {
           <div className='w-full flex flex-col lg:flex-row'>
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection
-                title='Điều gì tạo nên NGS'
+                title={title}
                 name={data.section!.name as string}
                 description={data.section!.description as string}
                 findMore={false}

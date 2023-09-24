@@ -1,6 +1,7 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import React from 'react';
+import TitleSection from '@/components/common/customization/TitleSection';
 
 type Props = {
   title: string;
@@ -14,20 +15,19 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 overflow-hidden flex ${className}  `}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden flex ${className}  `}
     >
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center gap-12'>
-        <div className='flex flex-col justify-start items-start md:justify-center md:items-center gap-2'>
-          <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='w-[70%] text-2xl md:text-4xl font-semibold text-center'>{data.section.name}</h1>
-          <p className='text-center mt-5'>{data.section.description}</p>
-        </div>
-        <div className='relative w-full h-full grid grid-cols-3 justify-between items-center gap-5 mt-16'>
+        <TitleSection
+          title={title}
+          name={data.section.name as string}
+          description={data.section.description as string}
+          findMore={true}
+          className='text-center w-full flex flex-col justify-start items-start md:justify-center md:items-center gap-2'
+        />
+        <div className='relative w-full h-full grid grid-cols-3 justify-between items-center gap-5 -mt-6'>
           {data.components.map((item, idx) => (
-            <div
-              key={idx}
-              className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg'
-            >
+            <div key={idx} className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg border-overview-designSeven-section'>
               <div className='absolute -top-10 w-full h-full'>
                 <PreImage src={item.image} width={60} height={60} alt={item.title} className='rounded-lg' />
               </div>

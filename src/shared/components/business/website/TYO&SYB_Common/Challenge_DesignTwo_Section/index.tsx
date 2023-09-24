@@ -17,40 +17,42 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
   });
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section
-      id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 overflow-hidden ${className} bg-[#051C2C]`}
-    >
+    <section id={data.section.code} className={`p-4 md:p-24 overflow-hidden ${className} bg-[#051C2C]`}>
       <TitleSection
         title={title}
-        name={data.section!.name as string}
-        description={data.section!.description as string}
+        name={data.section.name as string}
+        description={data.section.description as string}
         findMore={true}
         className='w-full flex flex-col justify-center items-center gap-3 text-white mb-5'
       />
-      <div className='relative w-full min-h-[450px]'>
+      <div
+        className='relative w-full min-h-[450px]'
+        style={{
+          background: `linear-gradient(90deg, #051C2C 32.24%, rgba(5, 28, 44, 0.00) 68.65%), lightgray 247.461px -16.325px / 70.829% 108.857% no-repeat`,
+        }}
+      >
         {data.components.map((item, idx) => (
-          <div key={idx} className='w-full grid grid-cols-3 justify-start items-start gap-10'>
+          <div key={idx} className='w-full grid grid-cols-3 justify-start items-start gap-10 text-white'>
             <div
               onClick={() => setSelectedTab(data && data.components && data.components[idx])}
               className={`w-full cols-span-1 cursor-pointer ${selectedTab === item ? 'bg-[#FC5E03]' : 'bg-[#242D3C]'}`}
             >
-              <div className='p-4'>{item.title}</div>
+              <div className='p-6'>{item.title}</div>
             </div>
             <div className='w-full cols-span-2'>
               <div className='absolute top-0'>
-                <div className='relative w-full flex-shrink-0 snap-start'>
-                  <div className='absolute top-1/2 left-1/3 transform -translate-x-1/3 -translate-y-1/2 z-30 text-white'>
-                    <p>{selectedTab?.id}.</p>
-                    <h1 className='text-xl md:text-2xl font-semibold'>{selectedTab?.description}</h1>
-                    <p className='text-sm md:text-base'>{selectedTab?.content}</p>
+                <div className='relative w-full h-full flex-shrink-0 snap-start'>
+                  <div className='absolute h-full flex flex-col justify-center items-start gap-4 top-1/2 left-1/3 transform -translate-x-[40%] -translate-y-1/2 z-30 text-white'>
+                    <p className='text-orange-500 text-3xl'>{selectedTab?.id}.</p>
+                      <h1 className='text-xl md:text-2xl font-semibold'>{selectedTab?.description}</h1>
+                      <p className='mt-5 pt-2 text-sm md:text-base'>{selectedTab?.content}</p>
                   </div>
                   <PreImage
                     src={selectedTab?.image || ''}
                     width={1980}
-                    height={360}
+                    height={450}
                     alt={item.title}
-                    className='w-full object-cover'
+                    className='w-full h-full object-cover blur-image'
                   />
                 </div>
               </div>
