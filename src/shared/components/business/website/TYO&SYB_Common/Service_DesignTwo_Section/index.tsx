@@ -9,34 +9,34 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import ServiceDesignTwoItem from './Service_DesignTwo_Item';
 import TitleSection from '@/components/common/customization/TitleSection';
+import React from 'react';
 
 type Props = {
-  title: string
+  title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<IEvent>>(data.components![0]);
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
+
   return (
     <section
       id='Event'
-      className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 xl:px-40 ${className}`}
+      className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
         <TitleSection
           title={title}
-          name={data.section!.name as string}
-          description={data.section!.description as string}
+          name={data.section.name as string}
+          description={data.section.description as string}
           findMore={false}
           className='w-full flex justify-center items-center gap-3'
         />
         <div className='w-full block lg:hidden'>
           {/* @ts-ignore */}
-          <Swiper pagination={{ dynamicBullets: true }}
-            modules={[Pagination]}
-            className='shadow-lg'
-          >
-            {data.components!.map((item, idx) => (
+          <Swiper pagination={{ dynamicBullets: true }} modules={[Pagination]} className='shadow-lg'>
+            {data.components.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
                 <PreImage
                   alt='Event'
@@ -94,7 +94,9 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                     )}
                     <div className='absolute left-5 top-5 text-xl md:text-2xl text-white'>0{idx + 1}</div>
                     {item !== selectedTab ? (
-                      <div className='absolute left-1/2 bottom-0 transform -translate-x-1/2 text-sm text-center text-white'>{item.title}</div>
+                      <div className='absolute left-1/2 bottom-0 transform -translate-x-1/2 text-sm text-center text-white'>
+                        {item.title}
+                      </div>
                     ) : (
                       ''
                     )}

@@ -15,7 +15,6 @@ import ESPeopleSection from '@/components/business/website/ES/ES_People_Section'
 import { GetServerSideProps } from 'next';
 import { renderNewsContent } from '@/utils/fetchServerSide/renderNewsContent';
 import { APP_SAVE_KEY } from '@/utils/constants';
-import { TYOTeam1 } from '@/mocks/website/TYO/new';
 import {
   ESBannerData,
   ESEnvironmentData,
@@ -41,8 +40,8 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
   return (
     <React.Fragment>
       <Head>
-        <title>EmpowerSuccess NGS</title>
-        <meta name='description' content='EmpowerSuccess NGS' />
+        <title>Về chúng tôi NGS</title>
+        <meta name='description' content='Về chúng tôi NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
@@ -58,7 +57,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESCoreValueSection />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESPeopleSection title='Con người NGS' data={ESPeopleData} />
+        <ESPeopleSection title='CON NGƯỜI NGS' data={ESPeopleData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <TeamDesignOneSection title='' data={ESTeamData} />
@@ -67,13 +66,13 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESEnvironment data={ESEnvironmentData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESOrganizationalSystemSection title='Dịch vụ' data={ESOrganizationalSystemData} />
+        <ESOrganizationalSystemSection title='HỆ SINH THÁI NGS' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <NewsSection title='Tin tức' data={Home_10 as unknown as IBaseSectionComponentNews} />
+        <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <PartnerSection data={Home_11} />
+        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
         <ConnectUsSection />

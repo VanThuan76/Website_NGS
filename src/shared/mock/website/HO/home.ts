@@ -445,7 +445,7 @@ export const Home_7 = {
 export const Home_8 = {
     section: {
         id: 8,
-        name: 'Hệ sinh thái của chúng tôi',
+        name: 'HỆ SINH THÁI CỦA CHÚNG TÔI',
         code: "PG001SE00008",
         image: "",
         description: ""
@@ -799,7 +799,7 @@ export const Home_12 = {
 export const Home_13 = {
     section: {
         id: 1,
-        name: 'Câu chuyện thành công của NGS',
+        name: 'CÂU CHUYỆN THÀNH CÔNG CỦA NGS',
         code: "PG001SE00013",
         image: "",
         description: " "

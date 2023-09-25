@@ -8,11 +8,12 @@ import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
 
 type Props = {
+  title: string
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 
-const HomeTestimonialSection = ({ data, className }: Props) => {
+const HomeTestimonialSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
@@ -22,7 +23,7 @@ const HomeTestimonialSection = ({ data, className }: Props) => {
       <div className='max-w-[1440px] mx-auto my-auto grid grid-cols-1 lg:grid-cols-3 justify-between items-start gap-10'>
         <div className='w-full col-span-1 flex flex-col justify-start items-start'>
           <TitleSection
-            title='Lời chứng thực'
+            title={title}
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}

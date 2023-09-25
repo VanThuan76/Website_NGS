@@ -15,3 +15,6 @@ export const URLS_SYSTEM = {
     ES: "/empower-success",
     NOTFOUND: "/404",
 }
+export const URLS_EXTERNAL = {
+    ISPACE_EDU: "https://ispace.edu.vn/"
+}

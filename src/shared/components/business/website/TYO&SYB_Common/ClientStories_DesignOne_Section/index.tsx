@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import QuoteIcon from '@/components/icon/TYO&SYB_Common/QuoteIcon';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { motion } from 'framer-motion';
@@ -37,7 +38,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`px-4 md:px-24 lg:px-32 overflow-hidden ${className} bg-[#051C2C]`}>
+    <section id={data.section.code} className={`px-4 md:px-24 overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='relative w-full grid grid-cols-2 justify-center items-center gap-5'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
           <TitleSection
@@ -45,8 +46,9 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-start items-start gap-3 font-bold text-orange-500'
+            className='w-full font-bold text-orange-500'
           />
+          <QuoteIcon />
           <div className='relative w-full min-h-[350px]'>
             {data.components.map((item, idx) => (
               <div
@@ -61,12 +63,12 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
                     <p className='font-thin'>{item.description}</p>
                   </div>
                 </div>
-                <UseLinkRouter url={URLS_SYSTEM.ES}>
-                  <BtnCommon title='All clients stories' cls='border-orange-500' />
-                </UseLinkRouter>
               </div>
             ))}
           </div>
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon title='All clients stories' cls='absolute bottom-24 left-0 border border-orange-500 !bg-none' />
+          </UseLinkRouter>
           <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (
               <motion.li
@@ -90,7 +92,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
           width={1980}
           height={500}
           alt={data.section.name}
-          className='w-full h-full object-cover'
+          className='w-full h-full object-cover rounded-lg'
         />
       </div>
     </section>

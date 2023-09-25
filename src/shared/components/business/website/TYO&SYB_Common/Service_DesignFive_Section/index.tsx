@@ -17,10 +17,10 @@ const ServiceDesignFiveSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`px-4 md:px-24 lg:px-32 overflow-hidden ${className}`}
+      className={`px-4 md:px-24 overflow-hidden ${className}`}
     >
-      <div className='w-full grid grid-cols-2 justify-start items-start gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
+      <div className='w-full grid grid-cols-2 justify-start items-start gap-36'>
+        <div className='w-full flex flex-col justify-start items-start gap-3'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
@@ -28,18 +28,17 @@ const ServiceDesignFiveSection = ({ title, data, className }: Props) => {
             findMore={true}
             className='w-full flex flex-col justify-start items-start gap-3'
           />
-           <div className='w-full max-h-[600px] flex flex-col justify-center items-center'>
+           <div className='w-full flex flex-col justify-center items-center -mt-14'>
             {data && data.components!.map((item, idx) => {
               return <ServiceDesignFiveItem key={idx} item={item} idx={idx} />;
             })}
           </div>
-          <BtnCommon title='Đăng ký ngay' cls='text-white bg-orange-500 p-4' />
         </div>
-        <div className='relative w-full h-full flex-shrink-0 snap-start'>
+        <div className='relative w-full h-full'>
           <PreImage
             src={data.section.image}
             width={1980}
-            height={704}
+            height={840}
             alt={data.section.name}
             className='w-full h-full object-cover'
           />

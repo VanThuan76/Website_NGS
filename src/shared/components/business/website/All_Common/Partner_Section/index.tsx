@@ -9,11 +9,12 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import PartnerResponsive from './PartnerResponsive';
 
 type Props = {
+  title: string
   data: Partial<IBaseSectionComponent>
   className?: string
 }
 
-const PartnerSection = ({data, className}: Props) => {
+const PartnerSection = ({title, data, className}: Props) => {
   const { theme } = useTheme();
   const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>|undefined >(()=> {
     if(data.components && data.components.length > 0 ) return data.components[0]
@@ -27,7 +28,7 @@ const PartnerSection = ({data, className}: Props) => {
       className={`bg-[#fc5e03] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
-        <h1 className='mt-5 pt-10 text-3xl'>Đối tác đồng hành cùng NGSD</h1>
+        <h1 className='mt-5 pt-10 text-3xl'>{title}</h1>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper className='w-full'>
             {data.components.map((item, idx) => (

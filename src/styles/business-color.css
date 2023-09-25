@@ -362,19 +362,28 @@ p {
   background-color: #FBA979; /* Color on hover */
 }
 .service-designthree-section-with-scrollbar {
-  /* Scrollbar styles */
-  overflow-y: scroll; /* Enable vertical scrollbar */
+  direction: rtl;
+  overflow: auto;
+  overflow-y: scroll;
   overscroll-behavior-y: contain;
-  scrollbar-width: thin; /* Firefox */
-  scrollbar-color: orange #FBA979 !important; /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: orange #FBA979 !important;
 }
-.border-card-solution-home
+.border-card-solution-home,
+.border-clientStories-designTwo-section,
+.border-clientStories-designThree-section
 {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;
 }
+.border-card-whyUs-designTwo-section{
+  border-left: 1px solid transparent;
+  border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;
+}
 .border-card-aboutUs-home,
-.border-card-mission-es
+.border-card-mission-es,
+.border-card-partner-designThree-section,
+.border-card-benefit-designOne-section
 {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #e2e1e1, rgba(0, 0, 0, 0)) 1 100%;
@@ -389,7 +398,6 @@ p {
 .font-custom {
   font-feature-settings: 'clig' off, 'liga' off;
 }
-
 .blur-image {
   filter: blur(2px);
 }

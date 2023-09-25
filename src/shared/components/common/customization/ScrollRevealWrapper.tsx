@@ -33,7 +33,7 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
       >
         {children}
       </motion.div>
-      <motion.div
+      {/* <motion.div
         variants={{
           hidden: { left: 0 },
           visible: { left: '100%' },
@@ -51,7 +51,7 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
           backdropFilter: 'blur(10px)',
           zIndex: 40
         }}
-      ></motion.div>
+      ></motion.div> */}
     </main>
   );
 };

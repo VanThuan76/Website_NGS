@@ -19,7 +19,7 @@ export const fakeMenu = [
                             },
                             {
                                 title: "Đề xuất & Phê duyệt",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
@@ -70,7 +70,7 @@ export const fakeMenu = [
                             },
                             {
                                 title: "Thiết bị và Bảo dưỡng",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                         ]
@@ -81,27 +81,27 @@ export const fakeMenu = [
                         menuChild: [
                             {
                                 title: "Kế toán phải thu",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Kế toán phải trả",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Tài sản cố định & Công cụ, Dụng cụ",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Kế toán kho",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Kế toán tổng hợp",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
@@ -158,7 +158,7 @@ export const fakeMenu = [
                         path: "/your-next-gen",
                         menuChild: [
                             {
-                                title: "CRM - Quản lý quan hệ khách hàng",
+                                title: "Quản lý quan hệ khách hàng",
                                 path: "/crm-customer-relationship-management",
                                 menuChild: []
                             },
@@ -186,6 +186,22 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
+                        title: "Phát triển tổ chức & Cá nhân",
+                        path: "/your-next-gen",
+                        menuChild: [
+                            {
+                                title: "Sơ đồ tổ chức",
+                                path: "/404",
+                                menuChild: []
+                            },
+                            {
+                                title: "Đánh giá hiệu suất",
+                                path: "/assess",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                    {
                         title: "Tuyển dụng & Gia nhập",
                         path: "/your-next-gen",
                         menuChild: [
@@ -194,6 +210,17 @@ export const fakeMenu = [
                                 path: "/recruit",
                                 menuChild: []
                             },
+                            {
+                                title: "Quy trình gia nhập",
+                                path: "/404",
+                                menuChild: []
+                            },
+                        ]
+                    },
+                    {
+                        title: "Vận hành dịch vụ nhân sự",
+                        path: "/your-next-gen",
+                        menuChild: [
                             {
                                 title: "Hồ sơ nhân viên",
                                 path: "/employee_profiles",
@@ -205,22 +232,6 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Sơ đồ tổ chức",
-                                path: "",
-                                menuChild: []
-                            },
-                            {
-                                title: "Quy trình gia nhập",
-                                path: "",
-                                menuChild: []
-                            },
-                        ]
-                    },
-                    {
-                        title: "Chấm công & Tính lương",
-                        path: "/your-next-gen",
-                        menuChild: [
-                            {
                                 title: "Chấm công",
                                 path: "/timekeeping",
                                 menuChild: []
@@ -230,19 +241,15 @@ export const fakeMenu = [
                                 path: "/vacation-overtime",
                                 menuChild: []
                             },
-                            {
-                                title: "Đánh giá hiệu suất",
-                                path: "/assess",
-                                menuChild: []
-                            },
+                           
                             {
                                 title: "Tính lương",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Thuế & Bảo hiểm",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                         ]
@@ -259,16 +266,17 @@ export const fakeMenu = [
                         menuChild: [
                             {
                                 title: "Kết nối ngân hàng",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
                                 title: "Kết nối tuyển dụng",
-                                path: "",
+                                path: "/404",
                                 menuChild: []
                             },
                             {
-                                title: "Kết nối E-Learning",
+                                title: "Kết nối Đào tạo trực tuyến",
+                                path: "/404",
                                 menuChild: []
                             },
                         ]
@@ -283,12 +291,13 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Sàn TMĐT",
+                                title: "Sàn Thương mại Điện tử",
                                 path: "/e-commerce",
                                 menuChild: []
                             },
                             {
                                 title: "Đơn vị vận chuyển",
+                                path: "/404",
                                 menuChild: []
                             }
                         ]
@@ -315,6 +324,11 @@ export const fakeMenu = [
                                 path: "/digital-strategy-planning",
                                 menuChild: []
                             },
+                            {
+                                title: "Tối ưu hóa quy trình kinh doanh",
+                                path: "/404",
+                                menuChild: []
+                            },
                         ]
                     },
                 ]
@@ -324,7 +338,7 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Dịch vụ chuyển đổi số",
+                        title: "Phát triển kinh doanh",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
@@ -337,29 +351,44 @@ export const fakeMenu = [
                                 path: "/customer-relationship-management",
                                 menuChild: []
                             },
+                            {
+                                title: "Trung tâm liên lạc khách hàng (Tổng đài chăm sóc khách hàng)",
+                                path: "/contact-center",
+                                menuChild: []
+                            },
+                            {
+                                title: "Quản trị trải nghiệm khách hàng",
+                                path: "/404",
+                                menuChild: [] 
+                            },
+                            {
+                                title: "Nền tảng Marketing số",
+                                path: "/404",
+                                menuChild: [] 
+                            }
                         ]
                     },
                     {
-                        title: "Dịch vụ CNTT cốt lõi",
+                        title: "Hệ thống CNTT lõi",
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Hệ thống ngân hàng lõi",
+                                title: "Ngành ngân hàng",
                                 path: "/core-banking",
                                 menuChild: []
                             },
                             {
-                                title: "Hệ thống bảo hiểm lõi",
+                                title: "Ngành Bảo hiểm",
                                 path: "/core-insurance",
                                 menuChild: []
                             },
                             {
-                                title: "Hệ thống hàng không lõi",
+                                title: "Ngành Hàng không",
                                 path: "/core-airline",
                                 menuChild: []
                             },
                             {
-                                title: "Hệ thống dầu khí lõi",
+                                title: "Ngành Dầu khí",
                                 path: "/core-oil-gas",
                                 menuChild: []
                             },
@@ -375,7 +404,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Quản lý chuỗi cung ứng ",
+                                title: "Quản lý chuỗi cung ứng",
                                 path: "/supply-chain-management",
                                 menuChild: []
                             },
@@ -414,6 +443,33 @@ export const fakeMenu = [
                 ]
             },
             {
+                title: "Nền tảng số",
+                path: "",
+                menuChild: [
+                    {
+                        title: "",
+                        path: "/transform-your-organization",
+                        menuChild: [
+                            {
+                                title: "Dịch vụ Hạ tầng",
+                                path: "/404",
+                                menuChild: []
+                            },
+                            {
+                                title: "Dịch vụ Dữ liệu",
+                                path: "/404",
+                                menuChild: []
+                            },
+                            {
+                                title: "Chuyển đổi nền tảng",
+                                path: "/404",
+                                menuChild: []
+                            }
+                        ]
+                    },
+                ]
+            },
+            {
                 title: "Dịch vụ quản trị công nghệ thông tin",
                 path: "",
                 menuChild: [
@@ -424,6 +480,11 @@ export const fakeMenu = [
                             {
                                 title: "Dịch vụ quản trị ứng dụng",
                                 path: "/application-management-services",
+                                menuChild: []
+                            },
+                            {
+                                title: "Dịch vụ Quản trị Hệ thống",
+                                path: "/404",
                                 menuChild: []
                             },
                         ]
@@ -444,7 +505,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Dịch vụ cung ứng nguồn lực trọn gói ",
+                                title: "Dịch vụ cung ứng nguồn lực trọn gói",
                                 path: "/resource-fulfillment-by-competencies",
                                 menuChild: []
                             },
@@ -456,7 +517,7 @@ export const fakeMenu = [
     },
     {
         id: 3,
-        title: "Bảo mật xuất sắc",
+        title: "Bảo mật toàn diện",
         path: "/secure-your-business",
         menuChild: [
             {
@@ -464,33 +525,12 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "Tấn công",
+                        title: "Dịch vụ Vận hành - Thiết kế",
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "Dịch vụ Đánh giá xâm nhập hệ thống",
-                                path: "/compromise-assessment",
-                                menuChild: []
-                            },
-                            {
-                                title: "Dịch vụ Kiểm thử xâm nhập hệ thống/ứng dụng",
-                                path: "/penetration-testing",
-                                menuChild: []
-                            },
-                            {
-                                title: "Dịch vụ Kiểm thử tấn công xâm nhập chuyên sâu",
-                                path: "/red-teaming",
-                                menuChild: []
-                            },
-                        ]
-                    },
-                    {
-                        title: "Vận hành - Thiết kế",
-                        path: "/secure-your-business",
-                        menuChild: [
-                            {
-                                title: "Dịch vụ Triển khai tích hợp giải pháp an toàn thông tin",
-                                path: "/system-integration",
+                                title: "Giám sát, vận hành an ninh",
+                                path: "/soc",
                                 menuChild: []
                             },
                             {
@@ -499,31 +539,52 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Dịch vụ giám sát, vận hành an ninh",
-                                path: "/soc",
+                                title: "Triển khai tích hợp giải pháp an toàn thông tin",
+                                path: "/system-integration",
                                 menuChild: []
                             }
                         ]
                     },
                     {
-                        title: "Phòng thủ",
+                        title: "Dịch vụ Tấn công",
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "Dịch vụ Thông tin tình báo an ninh mạng",
+                                title: "Kiểm thử xâm nhập hệ thống ứng dụng",
+                                path: "/penetration-testing",
+                                menuChild: []
+                            },
+                            {
+                                title: "Kiểm thử tấn công xâm nhập chuyên sâu",
+                                path: "/red-teaming",
+                                menuChild: []
+                            },
+                            {
+                                title: "Đánh giá xâm nhập hệ thống",
+                                path: "/compromise-assessment",
+                                menuChild: []
+                            }
+                        ]
+                    },
+                    {
+                        title: "Dịch vụ Phòng thủ",
+                        path: "/secure-your-business",
+                        menuChild: [
+                            {
+                                title: "Thông tin tình báo an ninh mạng",
                                 path: "/threat-intelligence",
                                 menuChild: []
                             },
                             {
-                                title: "Dịch vụ Rà soát phân tích, gỡ bỏ mã độc",
-                                path: "/malware-analysis",
-                                menuChild: []
-                            },
-                            {
-                                title: "Dịch vụ Ứng cứu sự cố",
+                                title: "Ứng cứu sự cố",
                                 path: "/incident-response",
                                 menuChild: []
                             },
+                            {
+                                title: "Rà soát phân tích, gỡ bỏ mã độc",
+                                path: "/malware-analysis",
+                                menuChild: []
+                            }
                         ]
                     }
                 ]

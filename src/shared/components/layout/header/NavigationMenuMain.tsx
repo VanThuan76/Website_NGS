@@ -93,7 +93,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
                         <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
                         <div className='w-full flex justify-start items-start gap-10'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
-                            <div key={idx} className='max-w-[240px] flex flex-col justify-start items-start gap-2'>
+                            <div key={idx} className='max-w-[260px] flex flex-col justify-start items-start gap-2'>
                               {menuChild3.title !== '' && (
                                 <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400 pb-4'>
                                   {menuChild3.title}

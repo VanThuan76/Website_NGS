@@ -63,9 +63,9 @@ export default function PageEditor({}: Props) {
       // case 'HO_news':
       //   return <NewsSection className='!m-0 !p-0' data={data} />;
       case 'HO_partner':
-        return <PartnerSection className='!m-0 !p-0' data={data} />;
+        return <PartnerSection className='!m-0 !p-0' data={data} title={''} />;
       case 'HO_testimonial':
-        return <HomeTestimonialSection className='!m-0 !p-0' data={data} />;
+        return <HomeTestimonialSection className='!m-0 !p-0' data={data} title={''} />;
       case 'HO_caseStudy':
         return <HomeCaseStudySection className='!m-0 !p-0' data={data} />;
       default:

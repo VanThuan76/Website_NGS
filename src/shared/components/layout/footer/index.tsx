@@ -7,31 +7,53 @@ import {
   footerServiceData,
   footerSupportData,
 } from '@/mocks/footer';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import Link from 'next/link';
 import InforFooter from './info';
 import ResponsiveContent from './ResponsiveContent';
 
 const Footer = () => {
   return (
-    <section className='bg-[#141523] text-white font-thin pt-4 md:pt-8 lg:pt-16 pb-3 md:pb-6 lg:pb-12 px-8 md:px-16 lg:px-28'>
+    <section className='bg-[#141523] text-white font-thin pb-4 md:pb-8 lg:pb-10 px-4 md:px-24'>
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center'>
         <div className='w-full grid grid-cols-2 gap-4 justify-between items-center md:justify-start mb-4'>
-          <div className='w-[80%] flex flex-col justify-start items-start gap-2'>
+          <div className='w-[85%] flex flex-col justify-start items-start gap-2'>
             <PreImage height={200} width={200} src={'/logo.svg'} alt={'Logo'} layer={false} />
-            <p>{footerContactData.name}</p>
-            <p>Địa chỉ: {footerContactData.address}</p>
-            <p>VP Giao dịch: {footerContactData.transactionOffices}</p>
-            <p>Chi nhánh HCM: {footerContactData.branch_HCM}</p>
-            <div className='flex flex-col justify-start items-start'>
-              <p>Số điện thoại:</p>
+            <p className='font-medium'>{footerContactData.name}</p>
+            <div className='space-x-2'>
+              <p className='font-normal'>Địa chỉ:</p>
+              <div className='flex flex-col justify-start items-start text-center'>
+                {splitTextToArrayByDoubleSlash(footerContactData.address || '').map((item: string, idx: number) => (
+                  <p key={idx}>{item}</p>
+                ))}
+              </div>
+            </div>
+            <div className='space-x-2'>
+              <p className='font-normal'>VP Giao dịch:</p>
+              <div className='flex flex-col justify-start items-start text-center'>
+                {splitTextToArrayByDoubleSlash(footerContactData.transactionOffices || '').map((item: string, idx: number) => (
+                  <p key={idx}>{item}</p>
+                ))}
+              </div>
+            </div>
+            <div className='space-x-2'>
+              <p className='font-normal'>Chi nhánh HCM:</p>
+              <div className='flex flex-col justify-start items-start text-center'>
+                {splitTextToArrayByDoubleSlash(footerContactData.branch_HCM || '').map((item: string, idx: number) => (
+                  <p key={idx}>{item}</p>
+                ))}
+              </div>
+            </div>
+            <div className='flex flex-col justify-start items-start space-x-2'>
+              <p className='font-normal'>Số điện thoại:</p>
               <ul className='flex flex-col justify-start items-start'>
                 {footerContactData.phone.map((item, idx) => (
-                  <li key={idx}>- {item}</li>
+                  <li key={idx}>{item}</li>
                 ))}
               </ul>
             </div>
-            <p>Email: {footerContactData.email}</p>
-            <p>FAX: {footerContactData.fax}</p>
+            <p className='font-normal'>Email: {footerContactData.email}</p>
+            <p className='font-normal'>FAX: {footerContactData.fax}</p>
           </div>
           {/* ->>Content - Responsive Mobile AND Tablet */}
           <div className='w-full md:w-1/2 flex lg:hidden flex-col justify-center items-center'>

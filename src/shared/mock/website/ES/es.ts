@@ -11,7 +11,7 @@ export const ESBannerData = {
 export const ESVisionData = {
     section: {
         id: 1,
-        name: 'Tầm nhìn',
+        name: 'TẦM NHÌN',
         code: "ES12312",
         image: "",
         description: "“NGS khao khát trở thành tập đoàn công nghệ hàng đầu Việt Nam và khu vực, để cung cấp các giải pháp, dịch vụ công nghệ thông tin chuẩn quốc tế và nỗ lực nghiên cứu phát triển các sản phẩm, ứng dụng thế hệ mới, đồng hành với quá trình chuyển đổi số của khách hàng."
@@ -21,7 +21,7 @@ export const ESVisionData = {
 export const ESMissionData = {
     section: {
         id: 1,
-        name: 'Sứ Mệnh',
+        name: 'SỨ MỆNH',
         code: "ES12312",
         image: "",
         description: "NGS cam kết trở thành một tổ chức đáng tin cậy trong mắt đối tác, nhà cung cấp dịch vụ xuất sắc trong mắt khách hàng và là nơi làm việc tốt nhất trong mắt nhân viên và cộng sự để góp phần đưa Việt Nam trở thành điểm đến của nền công nghệ thông tin thế giới."
@@ -247,7 +247,7 @@ export const ESTeamData = {
 export const ESEnvironmentData = {
     section: {
         id: 1,
-        name: 'Môi trường làm việc truyền cảm hứng với lãnh đạo có tâm, có tầm.',
+        name: 'MÔI TRƯỜNG NGS',
         code: "ES12312",
         image: "",
         description: "Được làm việc với lãnh đạo giỏi và tận tâm đó là may mắn mà không phải bất cứ ai cũng có. Tại NGS bạn sẽ thấy mình trưởng thành lên mỗi ngày khi bạn nhận được những câu hỏi rất hóc búa từ lãnh đạo, hoặc những bàn tay đưa ra khi bạn gặp khó khăn từ sếp. //Lãnh đạo NGS có nhiều năm hoặc tập ở nước ngoài hoặc làm việc tại các tổ chức hàng đầu thế giới như Microsft, Oracle, SAP … Một số anh chị lãnh đạo khác đều đã từng giữ các vị trí lãnh đạo tại các doanh nghiệp công nghệ thông tin Việt Nam hàng đầu. Với khát khao xây dựng một tổ chức kiểu mới, linh hoạt, sáng tạo và hiệu quả, họ gia nhập NGS mang theo trong mình tư duy quản trị hiện đại, chuyên nghiệp, và sự linh hoạt cũng như tinh thần khát khao chinh phục.//NGS mong rằng, tinh thần này sẽ luôn được duy trì ở các thế hệ tiếp theo và đó chính là bạn, các cộng sự tài năng của chúng tôi."

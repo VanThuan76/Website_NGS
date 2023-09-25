@@ -21,7 +21,7 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`px-4 md:px-24 py-4 md:py-12 lg:py-24 overflow-hidden bg-[#051C2C] ${className}`}
+      className={`px-4 md:px-24 py-4 md:py-12  overflow-hidden bg-[#051C2C] ${className}`}
     >
       <div className='w-full grid grid-cols-2 justify-center items-center gap-5 text-white'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-10'>

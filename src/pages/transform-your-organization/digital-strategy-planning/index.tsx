@@ -42,7 +42,7 @@ const DSPPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_DSP_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
-        <PartnerSection data={Home_11} />
+        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
         <CaseStudyDesignOneSection title='Client Stories' data={TYO_DSP_Section7} />

@@ -85,31 +85,31 @@ export function HomePage({
         <HomeServiceSection title='DỊCH VỤ XUẤT SẮC' data={Home_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeSecuritySection title='Bảo mật toàn diện' data={Home_4} />
+        <HomeSecuritySection title='BẢO MẬT TOÀN DIỆN' data={Home_4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <HomePioneeringSection data={Home_5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeAboutUsSection title='Về chúng tôi' data={Home_6} />
+        <HomeAboutUsSection title='VỀ CHÚNG TÔI' data={Home_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeWhyUsSection title='Điều gì tạo nên NGS' data={Home_7} />
+        <HomeWhyUsSection title='ĐIỀU GÌ TẠO NÊN NGS' data={Home_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <HOOrganizationalSystemSection data={Home_8} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeEventSection title='Sự kiện' data={Home_9} />
+        <HomeEventSection title='SỰ KIỆN' data={Home_9} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <NewsSection title='Tin tức' data={Home_10 as unknown as IBaseSectionComponentNews} />
+        <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerSection data={Home_11} />
+        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <HomeTestimonialSection data={Home_12} />
+        <HomeTestimonialSection title='KHÁCH HÀNG' data={Home_12} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <HomeCaseStudySection data={Home_13}/>

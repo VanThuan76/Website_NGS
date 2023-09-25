@@ -20,24 +20,24 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
 
   return (
-    <section id={data.section.code} className={`px-4 md:px-24 lg:px-32 overflow-hidden ${className} bg-[#051C2C]`}>
+    <section id={data.section.code} className={`overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='w-full grid grid-cols-2 justify-center items-center gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 text-white'>
+        <div className='w-full px-4 md:px-24 flex flex-col justify-start items-start gap-8 text-white'>
           <TitleSection
             title={title}
-            name={data.section!.name as string}
-            description={data.section!.description as string}
+            name={data.section.name as string}
+            description={data.section.description as string}
             findMore={true}
             className='w-full flex flex-col justify-start items-start gap-3'
           />
           {data.components.map((item, idx) => (
-            <div key={idx} className='flex justify-start items-start gap-5'>
+            <div key={idx} className='flex justify-start items-start gap-3'>
               <IconCheckSuccess />
               <p>{item.title}</p>
             </div>
           ))}
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
+            <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
         <div className='relative w-full flex-shrink-0 snap-start'>

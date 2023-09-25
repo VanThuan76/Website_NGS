@@ -46,7 +46,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
             >
               <div className='flex flex-col justify-start items-start text-center'>
                 {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
-                  <p key={idx} className='text-base '>
+                  <p key={idx} className='text-base hover:text-slate-800'>
                     {item}
                   </p>
                 ))}

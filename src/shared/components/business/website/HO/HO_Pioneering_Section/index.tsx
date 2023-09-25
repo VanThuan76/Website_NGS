@@ -3,8 +3,8 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { useTheme } from 'next-themes';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
-import { URLS_SYSTEM } from '@/utils/constants';
+import { URLS_EXTERNAL } from '@/utils/constants';
+import UseNextLink from '@/utils/functions/UseNextLink';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -26,9 +26,9 @@ const HomePioneeringSection = ({ data, className }: Props) => {
         <div className='w-full flex flex-col justify-start items-start gap-3'>
           <h1 className='text-2xl lg:text-4xl font-medium'>{data.section.name}</h1>
           <p>{data.section.description}</p>
-          <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <UseNextLink path={URLS_EXTERNAL.ISPACE_EDU}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
-          </UseLinkRouter>
+          </UseNextLink>
         </div>
         <div className='w-full'>
           <PreImage
