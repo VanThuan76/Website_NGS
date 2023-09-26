@@ -25,7 +25,7 @@ const FormDesignOneItem = () => {
   return (
     <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md'>
       <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full mt-4 p-4'>
+        <form onSubmit={handleSubmit} className='w-full mt-4 p-8 text-[#A6A6A6]'>
           <div className='w-full mb-4'>
             <label htmlFor='fullName' className='block mb-1'>
               Họ và tên của bạn
@@ -120,18 +120,18 @@ const FormDesignOneItem = () => {
             </div>
           </div>
           <div className='w-full flex flex-col justify-center items-center'>
-          <p className='text-center'>
-            Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách
-            thức và đạt được thành công đáng kể
-          </p>
-          <button
-            style={{ border: '1px solid #FC5F04' }}
-            type='submit'
-            className={`bg-[#fff] text-orange-500 relative flex justify-center items-center gap-3 text-left py-2 px-4 cursor-pointer mt-3 hover:border-2 hover:ease-in-out hover:transition rounded-full`}
-          >
-            <p className='text-sm'>Đăng ký ngay</p>
-            <IconLineDirection color='#FC5F04' />
-          </button>
+            <p className='text-center'>
+              Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua
+              thách thức và đạt được thành công đáng kể
+            </p>
+            <button
+              style={{ border: '1px solid #FC5F04' }}
+              type='submit'
+              className={`bg-[#fff] text-orange-500 relative flex justify-center items-center gap-3 text-left py-2 px-4 cursor-pointer mt-3 hover:border-2 hover:ease-in-out hover:transition rounded-full`}
+            >
+              <p className='text-sm'>Đăng ký ngay</p>
+              <IconLineDirection color='#FC5F04' />
+            </button>
           </div>
         </form>
       </div>
