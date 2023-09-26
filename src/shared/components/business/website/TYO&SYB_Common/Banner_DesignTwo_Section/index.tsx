@@ -3,8 +3,7 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { ChevronRight } from 'lucide-react';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
-import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 type Props = {
   breadcrumb: string[];
@@ -18,9 +17,9 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className }: Props) => {
     <section id={data.section.code} className={`relative w-full${className}`}>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
-          <div className='absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[50%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
+          <div className='absolute top-1/2 left-1/4 transform -translate-x-[30%] -translate-y-1/2 w-[60%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
             <div className='flex flex-col justify-start items-start gap-3'>
-              <div className='mb-4 flex justify-start items-start gap-3'>
+              <div className='mb-4 flex justify-center items-center gap-3'>
                 {breadcrumb.map((item: string, idx: number) => (
                   <div key={idx} className='flex justify-center items-center gap-2'>
                     <p className={`text-sm ${idx === breadcrumb.length - 1 ? 'text-white' : 'text-orange-500'}`}>
@@ -30,12 +29,24 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className }: Props) => {
                   </div>
                 ))}
               </div>
-              <h1 className='text-2xl md:text-4xl font-[500px]'>{data.section.name}</h1>
-              <p className='mt-5 font-thin leading-7'>{data.section.description}</p>
+              <div className='w-full flex flex-col justify-start items-start'>
+                {data.section.name.split('//').map((word, idx) => (
+                  <h1 className='text-3xl md:text-5xl font-semibold' key={idx}>
+                    {word}
+                  </h1>
+                ))}
+              </div>
+              <div className='mt-5 w-full flex flex-col justify-start items-start'>
+                {data.section.description.split('//').map((word, idx) => (
+                  <p className='font-normal leading-7' key={idx}>
+                    {word}
+                  </p>
+                ))}
+              </div>
             </div>
-            <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <UseLinkRedirect sectionCode='PG003.1SE00008'>
               <BtnCommon title='Đăng ký ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
-            </UseLinkRouter>
+            </UseLinkRedirect>
           </div>
           <div className='mx-auto w-[100vw] h-[100vh] relative overflow-hidden'>
             <PreImage

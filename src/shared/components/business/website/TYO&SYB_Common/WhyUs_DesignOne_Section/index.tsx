@@ -1,5 +1,6 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -26,9 +27,15 @@ const WhyUsDesignOneSection = ({ title, data, className }: Props) => {
           {data.components.map((item, idx) => (
             <div key={idx} className='w-full h-full flex justify-start items-start px-4 py-6 gap-2 rounded-lg'>
               <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
-              <div className='w-full flex flex-col justify-start items-start gap-3'>
-                <h1 className='text-xl md:text-3xl text-center font-medium'>{item.title}</h1>
-                <p className='text-xs md:text-lg font-normal'>{item.description}</p>
+              <div className='w-full flex flex-col justify-start items-start gap-3 mt-2'>
+                <h1 className='text-xl md:text-3xl font-medium'>{item.title}</h1>
+                <div className='w-full flex flex-col justify-start items-start gap-2'>
+                  {splitTextToArrayByDoubleSlash(item.description || '').map((item: string, idx: number) => (
+                    <p key={idx} className='text-xs md:text-lg font-normal'>
+                      {item}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
           ))}

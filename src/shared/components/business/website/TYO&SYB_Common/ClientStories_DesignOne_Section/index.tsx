@@ -40,7 +40,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section id={data.section.code} className={`px-4 md:px-24 overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='relative w-full grid grid-cols-2 justify-center items-center gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
+        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 py-20'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
@@ -49,13 +49,19 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             className='w-full font-bold text-orange-500'
           />
           <QuoteIcon />
-          <div className='relative w-full min-h-[350px]'>
+          <div className='relative w-full min-h-[450px]'>
             {data.components.map((item, idx) => (
               <div
                 key={idx}
                 className='absolute top-0 w-full flex flex-col justify-start items-start gap-10 text-white'
               >
-                <h2 className='text-xl'>{item.content}</h2>
+                <div className='max-h-[200px] pr-4 clientStories-designOne-section-with-scrollbar flex flex-col gap-2'>
+                  {item.content.split('//').map((word, idx) => (
+                    <p className='text-lg md:text-2xl' key={idx}>
+                      {word}
+                    </p>
+                  ))}
+                </div>
                 <div className='flex justify-center items-center gap-5'>
                   <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
                   <div className='flex flex-col justify-start items-start'>
@@ -69,7 +75,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='All clients stories' cls='absolute bottom-24 left-0 border border-orange-500 !bg-none' />
           </UseLinkRouter>
-          <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
+          {/* <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (
               <motion.li
                 key={idx}
@@ -85,12 +91,12 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
                 {item === selectedTab ? <motion.div layoutId='underline' /> : null}
               </motion.li>
             ))}
-          </ul>
+          </ul> */}
         </div>
         <PreImage
           src={data.section.image}
           width={1980}
-          height={500}
+          height={550}
           alt={data.section.name}
           className='w-full h-full object-cover rounded-lg'
         />

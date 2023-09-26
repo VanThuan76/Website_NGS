@@ -15,7 +15,7 @@ const ESOrganizationalSystemSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 lg:px-32 ${className}`}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <TitleSection
         title={title}
@@ -35,11 +35,11 @@ const ESOrganizationalSystemSection = ({ title, data, className }: Props) => {
         </AnimatePresence>
         <PreImage
           src={data.section.image}
-          height={500}
+          height={550}
           width={500}
           layer={false}
           alt={data.section.name}
-          className='hidden lg:block xl:block relative rounded-lg'
+          className='hidden lg:block xl:block w-full h-full my-auto relative rounded-lg'
         />
       </div>
     </section>

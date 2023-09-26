@@ -20,12 +20,11 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`bg-[#FC5E03] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 p-4 md:p-24 ${className}`}
+      className={`bg-[#FC5E03] dark:bg-[#7d4aeb] text-white p-4 md:p-24 ${className}`}
     >
       <div className='max-w-[1440px] h-full mx-auto my-auto flex flex-col justify-start items-start gap-10 pb-4 md:pb-8 lg:pb-16'>
         <div className='mt-10 w-[50%] flex flex-col justify-start items-start gap-5'>
           <h1 className='text-2xl md:text-4xl font-medium'>{data.section.name}</h1>
-          <p className='text-base md:text-xl font-normal'>{data.section.description}</p>
         </div>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper className='w-full'>

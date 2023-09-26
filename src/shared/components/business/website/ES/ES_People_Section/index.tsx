@@ -37,7 +37,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`px-4 md:px-24 lg:px-32 overflow-hidden ${className}`}>
+    <section id={data.section.code} className={`px-4 md:px-24 overflow-hidden ${className}`}>
       <TitleSection
         title={title}
         name={data.section!.name as string}

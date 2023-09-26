@@ -369,9 +369,27 @@ p {
   scrollbar-width: thin;
   scrollbar-color: orange #FBA979 !important;
 }
+.challenge-designThree-section-with-scrollbar {
+  max-height: 450px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-width: thin;
+  scrollbar-color: orange #FBA979 !important;
+  background-color: #051C2C !important;
+}
+.clientStories-designOne-section-with-scrollbar {
+  max-height: 200px;
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scrollbar-width: thin;
+  scrollbar-color: orange #FBA979 !important;
+  background-color: #051C2C !important;
+}
+
 .border-card-solution-home,
 .border-clientStories-designTwo-section,
-.border-clientStories-designThree-section
+.border-clientStories-designThree-section,
+.border-card-client-es
 {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;
@@ -383,7 +401,8 @@ p {
 .border-card-aboutUs-home,
 .border-card-mission-es,
 .border-card-partner-designThree-section,
-.border-card-benefit-designOne-section
+.border-card-benefit-designOne-section,
+.border-card-partner-designTwo-section
 {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #e2e1e1, rgba(0, 0, 0, 0)) 1 100%;

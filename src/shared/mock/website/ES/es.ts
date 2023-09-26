@@ -1,10 +1,10 @@
 export const ESBannerData = {
     section: {
         id: 1,
-        name: 'Chúng tôi nỗ lực để trở thành nhà cung cấp dịch vụ công nghệ thông tin và chuyển đổi số toàn diện, hỗ trợ cho các khách hàng vượt qua được các khó khăn của môi trường kinh doanh bất định bằng ba thế mạnh của chúng tôi: Năng lực công nghệ vượt trội, văn hóa doanh nghiệp linh hoạt và sáng tạo, trải nghiệm khách hàng xuất sắc.',
+        name: 'Chúng tôi nỗ lực để trở thành nhà cung cấp dịch vụ công nghệ thông tin và chuyển đổi số toàn diện',
         code: "ES12312",
-        image: "mockSVG/YNG_YourNextGen_banner.svg",
-        description: ""
+        image: "/images/ESBanner.png",
+        description: "Hỗ trợ cho các khách hàng vượt qua được các khó khăn của môi trường kinh doanh bất định bằng ba thế mạnh của chúng tôi: Năng lực công nghệ vượt trội, văn hóa doanh nghiệp linh hoạt và sáng tạo, trải nghiệm khách hàng xuất sắc."
     },
     components: []
 }
@@ -14,7 +14,7 @@ export const ESVisionData = {
         name: 'TẦM NHÌN',
         code: "ES12312",
         image: "",
-        description: "“NGS khao khát trở thành tập đoàn công nghệ hàng đầu Việt Nam và khu vực, để cung cấp các giải pháp, dịch vụ công nghệ thông tin chuẩn quốc tế và nỗ lực nghiên cứu phát triển các sản phẩm, ứng dụng thế hệ mới, đồng hành với quá trình chuyển đổi số của khách hàng."
+        description: "NGS khao khát trở thành// tập đoàn công nghệ hàng đầu// Việt Nam và khu vực, để cung cấp các //giải pháp, dịch vụ// công nghệ thông tin //chuẩn quốc tế// và nỗ lực nghiên cứu phát triển các sản phẩm, ứng dụng thế hệ mới, đồng hành với //quá trình chuyển đổi số// của khách hàng."
     },
     components: []
 }
@@ -24,14 +24,14 @@ export const ESMissionData = {
         name: 'SỨ MỆNH',
         code: "ES12312",
         image: "",
-        description: "NGS cam kết trở thành một tổ chức đáng tin cậy trong mắt đối tác, nhà cung cấp dịch vụ xuất sắc trong mắt khách hàng và là nơi làm việc tốt nhất trong mắt nhân viên và cộng sự để góp phần đưa Việt Nam trở thành điểm đến của nền công nghệ thông tin thế giới."
+        description: "NGS cam kết trở thành một //tổ chức đáng tin cậy// trong mắt đối tác, nhà cung cấp //dịch vụ xuất sắc// trong mắt khách hàng và là //nơi làm việc tốt nhất// trong mắt nhân viên và cộng sự để góp phần đưa Việt Nam trở thành điểm đến của nền công nghệ thông tin thế giới."
     },
     components: [
         {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "15",
+            title: "+15",
             description: "năm hình thành và phát triển",
             slug: "",
             content: "",
@@ -43,7 +43,7 @@ export const ESMissionData = {
             id: 2,
             language: 'vi',
             code: "PG003.10SE00002CN000002",
-            title: "1000",
+            title: "+1000",
             description: "chuyên gia công nghệ",
             slug: "",
             content: "",
@@ -55,10 +55,22 @@ export const ESMissionData = {
             id: 3,
             language: 'vi',
             code: "PG003.10SE00002CN000003",
-            title: "200",
-            description: "",
+            title: "+200",
+            description: "khách hàng và đối tác",
             slug: "",
-            content: "khách hàng và đối tác",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00002CN000003",
+            title: "+50",
+            description: "đối tác công nghệ toàn cầu",
+            slug: "",
+            content: "",
             image: "",
             video: "",
             thumbnail: ""
@@ -76,18 +88,6 @@ export const ESPeopleData = {
     components: [
         {
             id: 1,
-            language: 'vi',
-            code: "PG003.10SE00002CN000001",
-            title: "Phạm Thế Trường",
-            description: "CEO",
-            slug: "",
-            content: "NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình.",
-            image: "",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 2,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "Nguyễn Vũ Hoàng An",
@@ -241,23 +241,72 @@ export const ESTeamData = {
             video: "",
             thumbnail: ""
         },
-       
+
     ]
 }
 export const ESEnvironmentData = {
     section: {
         id: 1,
-        name: 'MÔI TRƯỜNG NGS',
+        name: 'Môi trường làm việc truyền cảm hứng với lãnh đạo có tâm, có tầm.',
         code: "ES12312",
         image: "",
         description: "Được làm việc với lãnh đạo giỏi và tận tâm đó là may mắn mà không phải bất cứ ai cũng có. Tại NGS bạn sẽ thấy mình trưởng thành lên mỗi ngày khi bạn nhận được những câu hỏi rất hóc búa từ lãnh đạo, hoặc những bàn tay đưa ra khi bạn gặp khó khăn từ sếp. //Lãnh đạo NGS có nhiều năm hoặc tập ở nước ngoài hoặc làm việc tại các tổ chức hàng đầu thế giới như Microsft, Oracle, SAP … Một số anh chị lãnh đạo khác đều đã từng giữ các vị trí lãnh đạo tại các doanh nghiệp công nghệ thông tin Việt Nam hàng đầu. Với khát khao xây dựng một tổ chức kiểu mới, linh hoạt, sáng tạo và hiệu quả, họ gia nhập NGS mang theo trong mình tư duy quản trị hiện đại, chuyên nghiệp, và sự linh hoạt cũng như tinh thần khát khao chinh phục.//NGS mong rằng, tinh thần này sẽ luôn được duy trì ở các thế hệ tiếp theo và đó chính là bạn, các cộng sự tài năng của chúng tôi."
     },
-    components: []
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.10SE00002CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/ESEnvironment01.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00002CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/ESEnvironment02.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00002CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/ESEnvironment03.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.10SE00002CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/ESEnvironment04.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
 }
 export const ESOrganizationalSystemData = {
     section: {
         id: 1,
-        name: 'Các công ty thành viên của NGS',
+        name: 'Hệ sinh thái của chúng tôi',
         code: "ES12312",
         image: "/images/ESOrganizationalSystem.png",
         description: "Với định hướng trở thành tập đoàn công nghệ và triển khai dịch vụ chuyển đổi số xuất sắc, NGS Holding đã và đang tiếp tục mở rộng hệ sinh thái sản phẩm dịch vụ thông qua sự phát triển của các đơn vị thành viên. Đồng thời khách hàng vẫn luôn có thể kết nối với bất kỳ dịch vụ nào thông qua NGS holding"
@@ -267,8 +316,8 @@ export const ESOrganizationalSystemData = {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Technology Security",
-            description: "NGS (Next-Generation Solutions) là NGS nỗ lực trở thành doanh nghiệp hàng đầu Việt Nam, cung cấp các giải pháp; dịch vụ thông",
+            title: "Công ty Cổ phần Tư Vấn Công Nghệ NGS - NGS Consulting",
+            description: "NGSC được định vị là công ty cung cấp dịch vụ công nghệ thông tin toàn diện cho khách hàng. Với đội ngũ chuyên gia thiết kế, tư vấn giải pháp, triển khai, và vận hành hệ thống công nghệ thông tin đa lĩnh vực, NGSC hoàn toàn tự tin đồng hành với khách hàng trong quá trình chuyển đổi tổ chức",
             slug: "",
             content: "",
             image: "/images/ESOrganizationalSystem1.png",
@@ -279,8 +328,8 @@ export const ESOrganizationalSystemData = {
             id: 2,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Technology Security",
-            description: "",
+            title: "TNHH NGS Công dân số",
+            description: "NGSDC được xây dựng với mong muốn mang lại cuộc sống thuận tiện cho các công dân thế hệ mới thông qua việc cung cấp các giải pháp số kết nối giữa người dân và chính quyền một cách thuận tiện nhất.",
             slug: "",
             content: "",
             image: "/images/ESOrganizationalSystem2.png",
@@ -291,8 +340,8 @@ export const ESOrganizationalSystemData = {
             id: 3,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Education",
-            description: "",
+            title: "Trường cao đẳng An ninh mạng ISPACE",
+            description: "Trường Cao đẳng an ninh mạng ISPACE là đơn vị tiên phong trong đào tạo thực hành từ năm 2008 theo tiêu chí tuyển sinh đi liền tuyển dụng với 3 chuyên ngành đào tạo đầy hứa hẹn An ninh mạng, Phát triển phần mềm và Thiết kế đồ họa.",
             slug: "",
             content: "",
             image: "/images/ESOrganizationalSystem3.png",
@@ -303,8 +352,8 @@ export const ESOrganizationalSystemData = {
             id: 4,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Consulting",
-            description: "",
+            title: "Entrust",
+            description: "Entrust Consulting là công ty chuyên gia về triển khai hệ thống quản trị cho các doanh nghiệp vừa và nhỏ tại Việt Nam.",
             slug: "",
             content: "",
             image: "/images/ESOrganizationalSystem4.png",
@@ -315,8 +364,8 @@ export const ESOrganizationalSystemData = {
             id: 5,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Security",
-            description: "",
+            title: "Công ty Cổ phần Tư Vấn Công Nghệ NGS",
+            description: "NCS là thuộc top các công ty hàng đầu về dịch vụ an ninh an toàn thông tin bao gồm từ tư vấn, đánh giá bảo mật, triển khai và vận hành hệ thống an ninh mạng.",
             slug: "",
             content: "",
             image: "/images/ESOrganizationalSystem5.png",
@@ -325,20 +374,20 @@ export const ESOrganizationalSystemData = {
         },
     ]
 }
-export const ESClient1Data = {
+export const ESClientData = {
     section: {
         id: 1,
-        name: 'Khách hàng',
+        name: 'Những đơn vị đã cùng đồng hành với NGS',
         code: "ES12312",
         image: "",
-        description: "Những đơn vị đã cùng đồng hành với NGS"
+        description: ""
     },
     components: [
         {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Những đơn vị đã cùng đồng hành với NGS",
+            title: "Khách hàng khối Nhà nước",
             description: "",
             slug: "",
             content: "",
@@ -406,19 +455,8 @@ export const ESClient1Data = {
             video: "",
             thumbnail: ""
         },
-    ]
-}
-export const ESClient2Data = {
-    section: {
-        id: 1,
-        name: 'Khách hàng',
-        code: "ES12312",
-        image: "",
-        description: "Những đơn vị đã cùng đồng hành với NGS"
-    },
-    components: [
         {
-            id: 1,
+            id: 7,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "Khách hàng khối Ngân hàng",
@@ -430,7 +468,7 @@ export const ESClient2Data = {
             thumbnail: ""
         },
         {
-            id: 2,
+            id: 8,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -442,7 +480,7 @@ export const ESClient2Data = {
             thumbnail: ""
         },
         {
-            id: 3,
+            id: 9,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -454,7 +492,7 @@ export const ESClient2Data = {
             thumbnail: ""
         },
         {
-            id: 4,
+            id: 10,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -466,7 +504,7 @@ export const ESClient2Data = {
             thumbnail: ""
         },
         {
-            id: 5,
+            id: 11,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -478,7 +516,7 @@ export const ESClient2Data = {
             thumbnail: ""
         },
         {
-            id: 6,
+            id: 12,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -489,19 +527,8 @@ export const ESClient2Data = {
             video: "",
             thumbnail: ""
         },
-    ]
-}
-export const ESClient3Data = {
-    section: {
-        id: 1,
-        name: 'Khách hàng',
-        code: "ES12312",
-        image: "",
-        description: "Những đơn vị đã cùng đồng hành với NGS"
-    },
-    components: [
         {
-            id: 1,
+            id: 13,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "Khách hàng khối doanh nghiệp",
@@ -513,7 +540,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 2,
+            id: 14,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -525,7 +552,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 3,
+            id: 15,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -537,7 +564,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 4,
+            id: 16,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -549,7 +576,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 5,
+            id: 17,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -561,7 +588,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 6,
+            id: 18,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -573,7 +600,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 7,
+            id: 19,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -585,7 +612,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 8,
+            id: 20,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -597,7 +624,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 9,
+            id: 21,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -609,7 +636,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 10,
+            id: 22,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -621,7 +648,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 11,
+            id: 23,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",
@@ -633,7 +660,7 @@ export const ESClient3Data = {
             thumbnail: ""
         },
         {
-            id: 12,
+            id: 24,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
             title: "",

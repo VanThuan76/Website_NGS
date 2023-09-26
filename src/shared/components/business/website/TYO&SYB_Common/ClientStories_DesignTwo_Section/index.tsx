@@ -18,7 +18,7 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
     >
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
         <div className='flex flex-col justify-center items-center gap-2 z-20 bg-[#051C2C]'>
-          <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
+          <p className='mb-3 text-sm md:text-2xl text-orange-500'>{title}</p>
           <h1 className='w-full flex flex-col text-2xl md:text-4xl font-medium text-white'>{data.section.name}</h1>
         </div>
         <div className='w-full border-t border-orange-500 transform -translate-y-4 z-10'></div>

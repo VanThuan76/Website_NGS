@@ -14,11 +14,12 @@ type Props = {
 
 const ServiceDesignOneSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
-
+  const checkSolution = data.components.find(item => item.slug === 'solution');
+  const checkServiceAndSupport = data.components.find(item => item.slug === 'service-and-support');
   return (
     <section id={data.section.code} className={`pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
-      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-4 justify-between items-start gap-10'>
-        <div className='w-full h-full col-span-2 flex flex-col justify-between items-start'>
+      <div className={`w-full mx-auto my-auto mt-10 grid ${!checkSolution || !checkServiceAndSupport ? "grid-cols-3" : "grid-cols-4"} justify-start items-start gap-10`}>
+        <div className='w-full h-full col-span-2 flex flex-col justify-start items-start'>
           <TitleSection
             title={title}
             name={data.section.name as string}
@@ -33,11 +34,15 @@ const ServiceDesignOneSection = ({ title, data, className }: Props) => {
             </UseLinkRouter>
           </div>
         </div>
-        <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === 'solution')} />
-        <ServiceDesignOneItem
-          titleItem='Dịch vụ và hỗ trợ'
-          data={data.components.filter(item => item.slug === 'service-and-support')}
-        />
+        {checkSolution && (
+          <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === 'solution')} />
+        )}
+        {checkServiceAndSupport && (
+          <ServiceDesignOneItem
+            titleItem='Dịch vụ và hỗ trợ'
+            data={data.components.filter(item => item.slug === 'service-and-support')}
+          />
+        )}
       </div>
     </section>
   );

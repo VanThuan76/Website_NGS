@@ -26,30 +26,30 @@ const CCPage = () => {
         <meta name='description' content='Contact Center NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Ngành Ngân hàng']}
           data={TYO_CB_Section1} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <OverviewDesignOneSection title='Tổng quan' data={TYO_CB_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ChallengeDesignOneSection title='Thách thức' data={TYO_CB_Section3} />
+      <ScrollRevealWrapper>
+        <ChallengeDesignOneSection title='Thách thức của bạn' data={TYO_CB_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ServiceDesignThreeSection title='Dịch vụ' data={TYO_CB_Section4} />
+      <ScrollRevealWrapper>
+        <ServiceDesignThreeSection title='Dịch vụ của chúng tôi' sub='Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi ngân hàng thế hệ mới' data={TYO_CB_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CB_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <PartnerDesignTwoSection title='' data={TYO_CB_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ClientStoriesDesignThreeSection title="Client stories" data={TYO_CB_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <FormDesignOneSection title='Dùng thử' data={TYO_CB_Section8} />
       </ScrollRevealWrapper>
 

@@ -1,3 +1,4 @@
+import HightLightText from '@/utils/functions/HightLightText';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -11,15 +12,15 @@ const ESVisionSection = ({ data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`relative w-full max-h-[470px] md:max-h-[350px] z-30 px-4 md:px-12 lg:px-24 ${className}`}
+      className={`relative w-full z-30 pb-4 md:pb-8 lg:pb-10 xl:pb-24 p-4 md:p-24 ${className}`}
       style={{
-        background: `linear-gradient(180deg, rgba(248, 133, 80, 0.3) -9.34%, rgba(255, 255, 255, 0.3) 129.73%)`,
+        background: `radial-gradient(50% 50% at 50% 50%, rgba(255, 186, 141, 0.35) 0%, rgba(255, 255, 255, 0.00) 100%)`,
       }}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center px-6 py-5 md:px-12 md:py-10 lg:px-24 lg:py-20'>
+      <div className='max-w-[1440px] mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center'>
         <div className='w-full flex flex-col justify-center items-center gap-3'>
           <h1 className='text-orange-500'>{data.section.name}</h1>
-          <p className='text-3xl lg:text-4xl text-center'>{data.section.description}</p>
+          <HightLightText originalText={data.section.description} className='text-3xl lg:text-4xl text-center' />
         </div>
       </div>
     </section>

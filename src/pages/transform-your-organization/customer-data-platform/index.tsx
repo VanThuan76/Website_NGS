@@ -10,7 +10,17 @@ import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Com
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import { TYO_CDP_Banner, TYO_CDP_Section2, TYO_CDP_Section3, TYO_CDP_Section4, TYO_CDP_Section5, TYO_CDP_Section6, TYO_CDP_Section7, TYO_CDP_Section8, TYO_DSP_Section8 } from '@/mocks/website/TYO/tyo';
+import {
+  TYO_CDP_Banner,
+  TYO_CDP_Section2,
+  TYO_CDP_Section3,
+  TYO_CDP_Section4,
+  TYO_CDP_Section5,
+  TYO_CDP_Section6,
+  TYO_CDP_Section7,
+  TYO_CDP_Section8,
+  TYO_DSP_Section8,
+} from '@/mocks/website/TYO/tyo';
 import dynamic from 'next/dynamic';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
@@ -25,31 +35,34 @@ const CDPPage = () => {
         <meta name='description' content='Customer Data Platform NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <BannerDesignTwoSection breadcrumb={["Trang chủ", "Bảo mật kinh doanh", "Customer Data Platform"]} data={TYO_CDP_Banner} />
+      <ScrollRevealWrapper>
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Bảo mật kinh doanh', 'Nền tảng dữ liệu khách hàng']}
+          data={TYO_CDP_Banner}
+        />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <OverviewDesignThreeSection title='Tổng quan' data={TYO_CDP_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ChallengeDesignThreeSection title='Thách thức' data={TYO_CDP_Section3} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ServiceDesignThreeSection title='Dịch vụ' data={TYO_CDP_Section4} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <OverviewDesignFiveSection title='Vì sao nên chọn NGS' data={TYO_CDP_Section5} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <PartnerDesignOneSection data={TYO_CDP_Section6} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tác dụng của CDP' data={TYO_CDP_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
+        <ChallengeDesignThreeSection title='Thách thức của bạn' data={TYO_CDP_Section3} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <ServiceDesignThreeSection title='Dịch vụ của chúng tôi' data={TYO_CDP_Section4} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CDP_Section5} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <PartnerDesignOneSection data={TYO_CDP_Section6} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={TYO_CDP_Section8} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

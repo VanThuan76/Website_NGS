@@ -39,7 +39,7 @@ const TitleSection = (data: Partial<Props>) => {
   };
   return (
     <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-4 mt-5'>
-      {title && (
+      {data.title && title && (
         <p className={`text-sm md:text-2xl !text-orange-500 ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
@@ -50,7 +50,7 @@ const TitleSection = (data: Partial<Props>) => {
           </motion.div>
         </p>
       )}
-      <div className={`w-full gap-[40px] ${data.className}`}>
+      <div className={`w-full gap-[20px] ${data.className}`}>
         <div className='w-full flex flex-col'>
           <motion.div variants={container} className='flex flex-col gap-2' initial='hidden' animate='visible'>
             {data.name?.split('//').map((word, idx) => (

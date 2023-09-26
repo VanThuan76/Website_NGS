@@ -28,8 +28,14 @@ const OverviewDesignFourSection = ({ title, data, className }: Props) => {
           {data.components.map((item, idx) => (
             <div key={idx} className='flex flex-col justify-start items-center gap-3'>
               <PreImage src={item.image} width={60} height={60} alt={item.title} className='mt-auto rounded-lg' />
-              <h1 className='text-xl md:text-2xl font-semibold text-center w-72'>{item.title}</h1>
-              <p className='my-auto text-center text-xs md:text-base w-72'>{item.description}</p>
+              <h1 className='text-xl md:text-2xl font-semibold text-center'>{item.title}</h1>
+              <div className='flex flex-col gap-2'>
+                {item.description.split('//').map((word, idx) => (
+                  <p className='my-auto text-center text-xs md:text-base' key={idx}>
+                    {word}
+                  </p>
+                ))}
+              </div>
             </div>
           ))}
         </div>

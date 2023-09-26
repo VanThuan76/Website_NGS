@@ -28,7 +28,7 @@ const ChallengeDesignOneSection = ({ title, data, className }: Props) => {
       {data.components.map((item, idx) => (
         <div
           key={idx}
-          className='w-full grid grid-cols-2 gap-10 justify-between items-center px-6 bg-[#F9F4EE] rounded-lg -mt-6'
+          className='max-w-[1440px] grid grid-cols-2 gap-10 justify-between items-center px-12 bg-[#F9F4EE] rounded-lg -mt-6'
         >
           <div className='relative w-full mt-5 flex-shrink-0 snap-start -translate-x-16'>
             <PreImage
@@ -40,7 +40,7 @@ const ChallengeDesignOneSection = ({ title, data, className }: Props) => {
             />
           </div>
           <div className='w-full flex flex-col justify-start items-start gap-3'>
-            <h1 className='text-xl md:text-2xl text-orange-500'>{item.title}</h1>
+            <h1 className='text-xl md:text-3xl text-orange-500 font-semibold'>{item.title}</h1>
             <div className='flex flex-col justify-center items-center gap-2'>
               {splitTextToArrayByDoubleSlash(item.description).map((item: string, idx: number) => (
                 <p key={idx} className='text-xs md:text-base'>

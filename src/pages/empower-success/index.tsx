@@ -17,6 +17,7 @@ import { renderNewsContent } from '@/utils/fetchServerSide/renderNewsContent';
 import { APP_SAVE_KEY } from '@/utils/constants';
 import {
   ESBannerData,
+  ESClientData,
   ESEnvironmentData,
   ESMissionData,
   ESOrganizationalSystemData,
@@ -27,7 +28,9 @@ import {
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
-import { Home_10, Home_11 } from '@/mocks/website/HO/home';
+import { Home_10, Home_11, Home_12 } from '@/mocks/website/HO/home';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import ESClientSection from '@/components/business/website/ES/ES_Client_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -45,7 +48,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <EmpowerSuccessBannerSection data={ESBannerData} />
+        <BannerDesignTwoSection breadcrumb={['Trang chủ', 'Về chúng tôi']} data={ESBannerData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESVisionSection data={ESVisionData} />
@@ -68,13 +71,16 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
       <ScrollRevealWrapper>
         <ESOrganizationalSystemSection title='HỆ SINH THÁI NGS' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'bottom', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
+        <ESClientSection title='Khách hàng' data={ESClientData} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
         <ConnectUsSection />
       </ScrollRevealWrapper>
     </React.Fragment>

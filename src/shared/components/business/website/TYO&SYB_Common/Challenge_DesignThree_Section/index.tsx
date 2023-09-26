@@ -1,6 +1,5 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
-import TitleSection from '@/components/common/customization/TitleSection';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import React from 'react';
@@ -19,13 +18,23 @@ const ChallengeDesignThreeSection = ({ title, data, className }: Props) => {
     <section id={data.section.code} className={`overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='w-full grid grid-cols-2 justify-center items-center gap-5'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 px-20 py-24'>
-          <TitleSection title={title} className='gap-5 text-2xl font-medium' />
-          <TitleSection
-            name={data.section!.name as string}
-            description={data.section!.description as string}
-            findMore={true}
-            className='w-full flex flex-col justify-start items-start gap-10 text-white'
-          />
+          <p className='text-sm md:text-2xl text-orange-500 font-medium'>{title}</p>
+          <div className='w-full flex flex-col justify-start items-start gap-12'>
+            <div className='flex flex-col gap-2'>
+              {data.section.name.split('//').map((word, idx) => (
+                <p className='text-white mr-[10px] w-full flex flex-col text-2xl md:text-4xl font-medium' key={idx}>
+                  {word}
+                </p>
+              ))}
+            </div>
+            <div className='max-h-[450px] pr-4 challenge-designThree-section-with-scrollbar flex flex-col gap-2'>
+              {data.section.description.split('//').map((word, idx) => (
+                <p className='text-sm md:text-base font-medium not-italic text-[#757575] dark:text-[#C2C0BF]' key={idx}>
+                  {word}
+                </p>
+              ))}
+            </div>
+          </div>
           <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
             <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none cursor-pointer' />
           </UseLinkRouter>

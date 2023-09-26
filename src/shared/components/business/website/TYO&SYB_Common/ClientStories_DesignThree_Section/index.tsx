@@ -14,10 +14,10 @@ const ClientStoriesDesignThreeSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden bg-[#2B2B2B] ${className} `}
+      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden bg-[#051C2C] ${className} `}
     >
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
-        <div className='flex flex-col justify-center items-center gap-2 z-20 bg-[#2B2B2B]'>
+        <div className='flex flex-col justify-center items-center gap-2 z-20 bg-[#051C2C]'>
           <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
           <h1 className='w-full flex flex-col text-2xl md:text-4xl font-medium text-white'>{data.section.name}</h1>
         </div>
