@@ -53,7 +53,7 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
         </div>
         <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
           <AnimatePresence>
-            {data.components!.map((item, idx) => {
+            {data.components.map((item, idx) => {
               return (
                 <motion.div
                   key={idx}
@@ -80,7 +80,7 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                   >
                     {item === selectedTab ? (
                       <div className='w-full h-full flex flex-col rounded-lg'>
-                        <PreImage alt='Event' src={item.image!} width={1980} height={600} className='rounded-lg' />
+                        <PreImage alt='Event' src={item.image!} width={1980} height={600} className='rounded-lg  border border-orange-400' />
                         <ServiceDesignTwoItem data={item} />
                       </div>
                     ) : (

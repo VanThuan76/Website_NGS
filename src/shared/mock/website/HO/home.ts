@@ -205,7 +205,7 @@ export const Home_3 = {
 export const Home_4 = {
     section: {
         id: 4,
-        name: 'BẢO VỆ TOÀN VẸN HỆ THỐNG CÔNG NGHỆ THÔNG TIN CỦA BẠN BẰNG DỊCH VỤ AN NINH MẠNG 24/7 CHUYÊN NGHIỆP',
+        name: 'BẢO VỆ TOÀN VẸN HỆ THỐNG //CÔNG NGHỆ THÔNG TIN CỦA BẠN //BẰNG DỊCH VỤ AN NINH MẠNG 24/7 CHUYÊN NGHIỆP',
         code: "PG001SE00004",
         image: "",
         description: "Các rủi ro về an ninh mạng có thể gây ra hậu quả nghiêm trọng đến bí mật kinh doanh, vận hành hay trách nhiệm pháp lý của tổ chức. Việc khắc phục các sự số an ninh mạng đòi hỏi lực lượng chuyên gia bảo mật cao cấp và quy trình chuyên nghiệp. Chúng tôi sẵn sàng đồng hành và bảo vệ hệ thống chuyển đổi số của khách hàng với dịch vụ An ninh mạng toàn diện và an toàn."

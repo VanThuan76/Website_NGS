@@ -2,7 +2,6 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import EmpowerSuccessBannerSection from '@/components/business/website/ES/ES_Banner_Section';
 import ESVisionSection from '@/components/business/website/ES/ES_Vision_Section';
 import ESMissionSection from '@/components/business/website/ES/ES_Mission_Section';
 import ESCoreValueSection from '@/components/business/website/ES/ES_CoreValue_Section';
@@ -18,8 +17,10 @@ import { APP_SAVE_KEY } from '@/utils/constants';
 import {
   ESBannerData,
   ESClientData,
+  ESCoreValueData,
   ESEnvironmentData,
   ESMissionData,
+  ESNewsAndEventData,
   ESOrganizationalSystemData,
   ESPeopleData,
   ESTeamData,
@@ -28,7 +29,7 @@ import {
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
-import { Home_10, Home_11, Home_12 } from '@/mocks/website/HO/home';
+import { Home_11, } from '@/mocks/website/HO/home';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import ESClientSection from '@/components/business/website/ES/ES_Client_Section';
 
@@ -48,7 +49,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignTwoSection breadcrumb={['Trang chủ', 'Về chúng tôi']} data={ESBannerData} />
+        <BannerDesignTwoSection sectionCodeLink={"ConnectUs"} breadcrumb={['Trang chủ', 'Về chúng tôi']} data={ESBannerData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESVisionSection data={ESVisionData} />
@@ -57,7 +58,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESMissionSection data={ESMissionData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESCoreValueSection />
+        <ESCoreValueSection sectionCodeLink={"ConnectUs"} title='Giá trị cốt lõi' data={ESCoreValueData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESPeopleSection title='CON NGƯỜI NGS' data={ESPeopleData} />
@@ -72,13 +73,13 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESOrganizationalSystemSection title='HỆ SINH THÁI NGS' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
+        <NewsSection title='TIN TỨC VÀ SỰ KIỆN' data={ESNewsAndEventData as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESClientSection title='Khách hàng' data={ESClientData} />
+        <ESClientSection title='KHÁCH HÀNG' data={ESClientData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ConnectUsSection />

@@ -1,7 +1,7 @@
 export const SYBBanner1_PG4_1 = {
     section: {
         id: 1,
-        name: 'Dịch vụ giám sát, vận hành an ninh mạng',
+        name: 'DỊCH VỤ GIÁM SÁT // VẬN HÀNH AN NINH MẠNG',
         code: "PG0004SE00001",
         image: "/images/SECURE_banner_page4_1.png",
         description: "Vệ sỹ số 24/7 của Bạn"
@@ -133,7 +133,7 @@ export const SYBWhyUs1_PG4_1 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG0004_1SE00005",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: "Vệ sỹ số 24/7 của bạn"
     },
     components: [
         {
@@ -190,7 +190,7 @@ export const SYBWhyUs1_PG4_1 = {
 export const SYBPartner2_PG4_1 = {
     section: {
         id: 6,
-        name: 'Những khách hàng đã hài lòng',
+        name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS"',
         code: "PG0004_1SE00006",
         image: "",
         description: ""
@@ -2416,10 +2416,10 @@ export const SYB_RT_Section8 = {
 export const SYB_OIS_Section1 = {
     section: {
         id: 1,
-        name: 'Dịch vụ kiểm thử tấn công xâm nhập chuyên sâu hạ tầng Công nghệ thông tin',
+        name: 'GIẢI PHÁP DỊCH VỤ AN NINH MẠNG // CÔNG NGHIỆP',
         code: "TPG004.9SE00001",
         image: "/images/SYB_OIS_Section1.png",
-        description: "Giải phóng sức mạnh bằng phòng thủ chủ động"
+        description: "Chúng tôi bảo vệ cơ sở hạ tầng quan trọng và quy trình công nghiệp của bạn."
     },
     components: [
         {
@@ -2439,7 +2439,7 @@ export const SYB_OIS_Section1 = {
 export const SYB_OIS_Section2 = {
     section: {
         id: 2,
-        name: 'Tổng quan về kiểm thử tấn công xâm nhập chuyên sâu hạ tầng Công nghệ thông tin',
+        name: 'An ninh mạng Công nghiệp (OT/ICS)',
         code: "TPG004.9SE00002",
         image: "",
         description: "Theo nghiên cứu của Strategy Analytics, phần lớn các tổ chức (75%) coi bảo mật ICS là ưu tiên hàng đầu. ICS giúp các doanh nghiệp công nghiệp biết trạng thái bảo mật thực sự của môi trường của mình và có thể tiến hành quản lý bảo mật hiệu quả trên quy mô lớn. Hệ thống an ninh mạng công nghiệp sẽ ngày càng tăng cường hiệu quả, hoàn thiện và giúp bạn quản lý được từ thông tin đến thời gian cho doanh nghiệp."
@@ -2688,7 +2688,7 @@ export const SYB_OIS_Section7 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/SYB_MA_Section7PVGas.png",
+            image: "/images/SEC_pvgas.png",
             video: "",
             thumbnail: ""
         },
@@ -2700,7 +2700,7 @@ export const SYB_OIS_Section7 = {
             description: "",
             slug: "",
             content: "",
-            image: "/images/SYB_MA_Section7_petroVN.png",
+            image: "/images/SEC_pv.png",
             video: "",
             thumbnail: ""
         },
@@ -2712,7 +2712,7 @@ export const SYB_OIS_Section7 = {
             description: "",
             slug: "",
             content: "",
-            image: "",
+            image: "/images/SEC_lpbank.png",
             video: "",
             thumbnail: ""
         },
@@ -2736,7 +2736,7 @@ export const SYB_OIS_Section7 = {
             description: "",
             slug: "",
             content: "",
-            image: "",
+            image: "/images/SEC_pvcfc.png",
             video: "",
             thumbnail: ""
         },

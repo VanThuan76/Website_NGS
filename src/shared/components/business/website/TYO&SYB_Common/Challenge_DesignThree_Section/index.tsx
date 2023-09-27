@@ -1,7 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
-import { URLS_SYSTEM } from '@/utils/constants';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -9,9 +8,10 @@ type Props = {
   title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
+  sectionCodeLink?: string;
 };
 
-const ChallengeDesignThreeSection = ({ title, data, className }: Props) => {
+const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
@@ -35,9 +35,9 @@ const ChallengeDesignThreeSection = ({ title, data, className }: Props) => {
               ))}
             </div>
           </div>
-          <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-            <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none cursor-pointer' />
-          </UseLinkRouter>
+          <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
+            <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none' />
+          </UseLinkRedirect>
         </div>
         <div className='relative w-full h-full flex-shrink-0 snap-start'>
           <PreImage

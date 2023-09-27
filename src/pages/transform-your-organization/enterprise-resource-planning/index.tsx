@@ -50,7 +50,7 @@ const ERPPage = () => {
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='' data={TYOService1_PG3_10} />
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_10} />
@@ -59,10 +59,10 @@ const ERPPage = () => {
         <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />
+        <ClientStoriesDesignTwoSection title='Những khách hàng đã hài lòng' data={TYOClientStories2_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_10} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_10} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

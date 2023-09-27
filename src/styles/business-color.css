@@ -389,7 +389,8 @@ p {
 .border-card-solution-home,
 .border-clientStories-designTwo-section,
 .border-clientStories-designThree-section,
-.border-card-client-es
+.border-card-client-es,
+.border-card-overview-designFour-section
 {
   border-right: 1px solid transparent;
   border-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #F06426, rgba(0, 0, 0, 0)) 1 100%;

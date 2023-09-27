@@ -1,7 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
-import { URLS_SYSTEM } from '@/utils/constants';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import ServiceDesignOneItem from './Service_DesignOne_Item';
@@ -10,15 +9,20 @@ type Props = {
   title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
+  sectionCodeLink?: string;
 };
 
-const ServiceDesignOneSection = ({ title, data, className }: Props) => {
+const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const checkSolution = data.components.find(item => item.slug === 'solution');
   const checkServiceAndSupport = data.components.find(item => item.slug === 'service-and-support');
   return (
     <section id={data.section.code} className={`pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
-      <div className={`w-full mx-auto my-auto mt-10 grid ${!checkSolution || !checkServiceAndSupport ? "grid-cols-3" : "grid-cols-4"} justify-start items-start gap-10`}>
+      <div
+        className={`w-full mx-auto my-auto mt-10 grid ${
+          !checkSolution || !checkServiceAndSupport ? 'grid-cols-3' : 'grid-cols-4'
+        } justify-start items-start gap-10`}
+      >
         <div className='w-full h-full col-span-2 flex flex-col justify-start items-start'>
           <TitleSection
             title={title}
@@ -29,9 +33,10 @@ const ServiceDesignOneSection = ({ title, data, className }: Props) => {
           />
           <div className='flex flex-col justify-start items-start gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>
-            <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+
+            <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
               <BtnCommon title='Dùng thử' cls='border border-orange-500' />
-            </UseLinkRouter>
+            </UseLinkRedirect>
           </div>
         </div>
         {checkSolution && (

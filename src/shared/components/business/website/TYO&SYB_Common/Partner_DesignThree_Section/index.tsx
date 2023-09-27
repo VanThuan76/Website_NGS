@@ -20,7 +20,7 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`bg-[#FC5E03] dark:bg-[#7d4aeb] text-white p-4 md:p-24 ${className}`}
+      className={`bg-[#FC5E03] dark:bg-[#7d4aeb] text-white px-4 md:px-24 ${className}`}
     >
       <div className='max-w-[1440px] h-full mx-auto my-auto flex flex-col justify-start items-start gap-10 pb-4 md:pb-8 lg:pb-16'>
         <div className='mt-10 w-[50%] flex flex-col justify-start items-start gap-5'>
@@ -28,7 +28,7 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
         </div>
         <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
           <Swiper className='w-full'>
-            {data.components!.map((item, idx) => (
+            {data.components.map((item, idx) => (
               <SwiperSlide
                 className={`max-w-[250px] ${
                   data.components && data.components?.length - 1 !== idx && 'border-card-partner-designThree-section mr-8 pr-8'
@@ -51,7 +51,7 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
           </Swiper>
         </div>
         <div className='w-full mt-5 hidden md:block'>
-          {data.components!.map((item, idx) => (
+          {data.components.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
                 <div className='w-full pt-5 flex flex-col lg:flex-row justify-between items-start gap-5'>

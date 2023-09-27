@@ -6,11 +6,11 @@ import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Com
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import { TYOBanner1_PG3_14, TYOForm1_PG3_14, TYOOverview3_PG3_14, TYOPartner1_PG3_10, TYOService1_PG3_14, TYOWhyUs1_PG3_14, TYOchallenge2_PG3_14, TYOclientStories1_PG3_14 } from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -23,29 +23,32 @@ const HCMPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <BannerDesignOneSection title="Quản trị nguồn nhân lực" data={TYOBanner1_PG3_14} />
+      <ScrollRevealWrapper>
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Quản trị nguồn nhân lực']}
+          data={TYOBanner1_PG3_14}
+        />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <OverviewDesignThreeSection title='Tổng quan' data={TYOOverview3_PG3_14} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_14} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ServiceDesignOneSection title='' data={TYOService1_PG3_14} />
+      <ScrollRevealWrapper>
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_14} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_14} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={TYOclientStories1_PG3_14} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_14} />
+      <ScrollRevealWrapper>
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_14} />
       </ScrollRevealWrapper>
 
 

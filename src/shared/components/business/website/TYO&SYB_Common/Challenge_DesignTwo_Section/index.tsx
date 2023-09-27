@@ -1,5 +1,6 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import React, { useState } from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
@@ -23,7 +24,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='w-full flex flex-col justify-center items-center gap-3 text-white mb-5'
+        className='text-center w-full flex flex-col justify-center items-center gap-3 text-white mb-5'
       />
       <div
         className='relative w-full min-h-[450px]'
@@ -44,8 +45,14 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
                 <div className='relative w-full h-full flex-shrink-0 snap-start'>
                   <div className='absolute h-full flex flex-col justify-center items-start gap-4 top-1/2 left-1/3 transform -translate-x-[40%] -translate-y-1/2 z-30 text-white'>
                     <p className='text-orange-500 text-3xl'>{selectedTab?.id}.</p>
-                      <h1 className='text-xl md:text-2xl font-semibold'>{selectedTab?.description}</h1>
-                      <p className='mt-5 pt-2 text-sm md:text-base'>{selectedTab?.content}</p>
+                    <h1 className='text-xl md:text-2xl font-semibold'>{selectedTab?.description}</h1>
+                    <div className='w-full flex flex-col justify-start items-start'>
+                      {splitTextToArrayByDoubleSlash(selectedTab?.content || '').map((item: string, idx: number) => (
+                        <p key={idx} className='mt-5 pt-2 text-sm md:text-base'>
+                          {item}
+                        </p>
+                      ))}
+                    </div>
                   </div>
                   <PreImage
                     src={selectedTab?.image || ''}

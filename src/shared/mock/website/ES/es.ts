@@ -18,6 +18,16 @@ export const ESVisionData = {
     },
     components: []
 }
+export const ESCoreValueData = {
+    section: {
+        id: 1,
+        name: 'TÂM - TÍN - TÔN - HOÀ - CHUYÊN - SÁNG',
+        code: "ES12312",
+        image: "",
+        description: ""
+    },
+    components: []
+}
 export const ESMissionData = {
     section: {
         id: 1,
@@ -90,10 +100,34 @@ export const ESPeopleData = {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Nguyễn Vũ Hoàng An",
-            description: "CEO",
+            title: "Ông Nguyễn Vũ Hoàng An",
+            description: "TGĐ NGS Holding",
             slug: "",
             content: "NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00002CN000002",
+            title: "Ông Phạm Thế Trường",
+            description: "Phó TGĐ NGS Holding & Chủ tịch NGS Consulting",
+            slug: "",
+            content: "Sau 20 năm làm việc cho các tổ chức công nghệ đa quốc gia hàng đầu với các chức vụ cấp cao tại Oracle, SAP, Microsoft, ông Trường gia nhập NGS với khát khao xây dựng một công ty kiểu mới có năng lực công nghệ mạnh và văn hóa chuyên nghiệp - hướng khách hàng.",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00002CN000003",
+            title: "Bà Nguyễn Thị Thúy Hằng",
+            description: "Phó TGĐ NGS Holding & Phó TGĐ NGS Consulting",
+            slug: "",
+            content: "Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Thúy Hằng gia nhập NGS và xây dựng lên NGS Consulting với mục tiêu trở thành công ty tư vấn chuyển đổi số hàng đầu tại Việt Nam.",
             image: "",
             video: "",
             thumbnail: ""
@@ -113,30 +147,6 @@ export const ESTeamData = {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: " Ông PHẠM THẾ TRƯỜNG",
-            description: "Phó TGĐ NGS Holding Chủ tịch NGS Consulting",
-            slug: "",
-            content: "Sau 20 năm làm việc cho các tổ chức công nghệ đa quốc gia hàng đầu với các chức vụ cấp cao tại Oracle, SAP, Microsoft, ông Trường gia nhập NGS với khát khao xây dựng một công ty kiểu mới có năng lực công nghệ mạnh và văn hóa chuyên nghiệp - hướng khách hàng.",
-            image: "/images/SYB_MAsection3.png",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 2,
-            language: 'vi',
-            code: "PG003.10SE00002CN000002",
-            title: "Bà NGUYỄN THỊ THÚY HẰNG",
-            description: "Phó TGĐ NGS Holding Phó TGĐ NGS Consulting",
-            slug: "",
-            content: "Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Thúy Hằng gia nhập NGS và xây dựng lên NGS Consulting với mục tiêu trở thành công ty tư vấn chuyển đổi số hàng đầu tại Việt Nam.",
-            image: "/images/SYB_MAsection3.png",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 3,
-            language: 'vi',
-            code: "PG003.10SE00002CN000003",
             title: "Ông NGUYỄN QUANG KHẢI",
             description: "Giám đốc Công nghệ NGS Consulting",
             slug: "",
@@ -146,9 +156,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 4,
+            id: 2,
             language: 'vi',
-            code: "PG003.10SE00002CN000004",
+            code: "PG003.10SE00002CN000002",
             title: " Ông VŨ DUY HIỀN",
             description: "Tổng Giám đốc NCS",
             slug: "",
@@ -158,9 +168,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 5,
+            id: 3,
             language: 'vi',
-            code: "PG003.10SE00002CN000005",
+            code: "PG003.10SE00002CN000003",
             title: " Ông VŨ NGỌC SƠN",
             description: "Giám đốc Công nghệ NCS",
             slug: "",
@@ -170,9 +180,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 6,
+            id: 4,
             language: 'vi',
-            code: "PG003.10SE00002CN000006",
+            code: "PG003.10SE00002CN000004",
             title: "Bà TRẦN THỊ LƯU",
             description: "Giám đốc Triển khai NGS Consulting",
             slug: "",
@@ -182,9 +192,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 7,
+            id: 5,
             language: 'vi',
-            code: "PG003.10SE00002CN000007",
+            code: "PG003.10SE00002CN000005",
             title: " Ông NGUYỄN QUANG HẢI",
             description: "Giám đốc các Dự án Chiến lược",
             slug: "",
@@ -194,9 +204,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 8,
+            id: 6,
             language: 'vi',
-            code: "PG003.10SE00002CN000008",
+            code: "PG003.10SE00002CN000006",
             title: "Bà NGUYỄN HẰNG THU",
             description: "Giám đốc tư vấn giải pháp doanh nghiệp - Công ty NGS Consulting",
             slug: "",
@@ -206,9 +216,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 9,
+            id: 7,
             language: 'vi',
-            code: "PG003.10SE00002CN000009",
+            code: "PG003.10SE00002CN000007",
             title: " Ông Nguyễn Đức Bảng",
             description: "Giám đốc tư vấn giải pháp Tài chính - Ngân hàng - Công ty NGS Consulting",
             slug: "",
@@ -218,9 +228,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 10,
+            id: 8,
             language: 'vi',
-            code: "PG003.10SE00002CN0000010",
+            code: "PG003.10SE00002CN000008",
             title: " Ông BÙI XUÂN QUANG",
             description: "Phó Giám đốc Kỹ thuật - NCS",
             slug: "",
@@ -230,9 +240,9 @@ export const ESTeamData = {
             thumbnail: ""
         },
         {
-            id: 11,
+            id: 9,
             language: 'vi',
-            code: "PG003.10SE00002CN000011",
+            code: "PG003.10SE00002CN00009",
             title: " Bà Lã Thị Thùy Linh",
             description: "",
             slug: "",
@@ -377,7 +387,7 @@ export const ESOrganizationalSystemData = {
 export const ESClientData = {
     section: {
         id: 1,
-        name: 'Những đơn vị đã cùng đồng hành với NGS',
+        name: 'Những đơn vị đã hài lòng với Sản phẩm - Dịch vụ NGS',
         code: "ES12312",
         image: "",
         description: ""
@@ -387,7 +397,7 @@ export const ESClientData = {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Khách hàng khối Nhà nước",
+            title: "Khối Nhà nước",
             description: "",
             slug: "",
             content: "",
@@ -459,7 +469,7 @@ export const ESClientData = {
             id: 7,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Khách hàng khối Ngân hàng",
+            title: "Khối Tài chính - Ngân hàng",
             description: "",
             slug: "",
             content: "",
@@ -531,7 +541,7 @@ export const ESClientData = {
             id: 13,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "Khách hàng khối doanh nghiệp",
+            title: "Khối doanh nghiệp",
             description: "",
             slug: "",
             content: "",
@@ -668,6 +678,69 @@ export const ESClientData = {
             slug: "",
             content: "",
             image: "/images/ESClient3_12.png",
+            video: "",
+            thumbnail: ""
+        },
+    ]
+}
+export const ESNewsAndEventData = {
+    section: {
+        id: 10,
+        name: 'Gặp gỡ các chuyên gia từ NGS và khám phá //cách chuyển đổi doanh nghiệp của bạn',
+        code: "PG001SE00010",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG001SE00010CN000001",
+            title: "Công nghệ Tầm quan trọng của đánh giá trải nghiệm khách hàng",
+            description: "Tầm quan trọng của đánh giá trải nghiệm khách hàng Cập nhật tin tức mới nhất từ NGS, khám phá thông tin về giải pháp công nghệ, thị trường thế giới và môi trường của NGS, Cập nhật kiến thức về xu thế sử dụng, hành vi khách hàng. Nhận thức sự quan trọng của trải nghiệm người dùng.",
+            content: "",
+            image: "/images/HOME0001SE00010CN000001.png",
+            slug: "",
+            author: "Nguyễn Xuân Minh",
+            createdDate: "14, July 2023",
+            updatedDate: "14, July 2023",
+            categoryId: 0,
+            categoryName: "Công nghệ",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG001SE00010CN000002",
+            title: "Công nghệ Tầm quan trọng của đánh giá trải nghiệm khách hàng",
+            description: "Tầm quan trọng của đánh giá trải nghiệm khách hàng Cập nhật tin tức mới nhất từ NGS, khám phá thông tin về giải pháp công nghệ, thị trường thế giới và môi trường của NGS, Cập nhật kiến thức về xu thế sử dụng, hành vi khách hàng. Nhận thức sự quan trọng của trải nghiệm người dùng.",
+            content: "",
+            image: "/images/HOME0001SE00010CN000002.png",
+            slug: "",
+            author: "Nguyễn Xuân Minh",
+            createdDate: "14, July 2024",
+            updatedDate: "14, July 2023",
+            categoryId: 0,
+            categoryName: "Công nghệ",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG001SE00010CN000003",
+            title: "Công nghệ Tầm quan trọng của đánh giá trải nghiệm khách hàng",
+            description: "Tầm quan trọng của đánh giá trải nghiệm khách hàng Cập nhật tin tức mới nhất từ NGS, khám phá thông tin về giải pháp công nghệ, thị trường thế giới và môi trường của NGS, Cập nhật kiến thức về xu thế sử dụng, hành vi khách hàng. Nhận thức sự quan trọng của trải nghiệm người dùng.",
+            content: "",
+            image: "/images/HOME0001SE00010CN000003.png",
+            slug: "",
+            author: "Nguyễn Xuân Minh",
+            createdDate: "14, July 2025",
+            updatedDate: "14, July 2023",
+            categoryId: 0,
+            categoryName: "Công nghệ",
             video: "",
             thumbnail: ""
         },

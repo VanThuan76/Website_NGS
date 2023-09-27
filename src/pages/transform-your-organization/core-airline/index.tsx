@@ -6,13 +6,13 @@ import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import { TYO_CA_Section2, TYO_CA_Section3, TYO_CA_Section4, TYO_CA_Section5, TYO_CA_Section6, TYO_CA_Section7, TYO_CA_Section8, TYO_CA_Section9, TYO_CB_Section1 } from '@/mocks/website/TYO/tyo';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
-import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 
 import dynamic from 'next/dynamic';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
+import WhyUsDesignThreeSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignThree_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -45,7 +45,7 @@ const CCPage = () => {
         <ServiceDesignOneSection title='' data={TYO_CA_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CA_Section6} />
+        <WhyUsDesignThreeSection title='Tại sao chọn NGS' data={TYO_CA_Section6}/>
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <PartnerDesignTwoSection title='' data={TYO_CA_Section7} />
@@ -54,7 +54,7 @@ const CCPage = () => {
         <ClientStoriesDesignOneSection title='' data={TYO_CA_Section8} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_CA_Section9} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_CA_Section9} />
       </ScrollRevealWrapper>
 
     </React.Fragment>

@@ -37,7 +37,8 @@ const CDPPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật kinh doanh', 'Nền tảng dữ liệu khách hàng']}
+          sectionCodeLink='FormCTA'
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Nền tảng dữ liệu khách hàng']}
           data={TYO_CDP_Banner}
         />
       </ScrollRevealWrapper>
@@ -48,10 +49,10 @@ const CDPPage = () => {
         <WhyUsDesignOneSection title='Tác dụng của CDP' data={TYO_CDP_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection title='Thách thức của bạn' data={TYO_CDP_Section3} />
+        <ChallengeDesignThreeSection sectionCodeLink='FormCTA' title='Thách thức của bạn' data={TYO_CDP_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection title='Dịch vụ của chúng tôi' data={TYO_CDP_Section4} />
+        <ServiceDesignThreeSection sectionCodeLink='FormCTA' title='Dịch vụ của chúng tôi' data={TYO_CDP_Section4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CDP_Section5} />
@@ -63,7 +64,7 @@ const CDPPage = () => {
         <ClientStoriesDesignOneSection title='' data={TYO_CDP_Section8} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

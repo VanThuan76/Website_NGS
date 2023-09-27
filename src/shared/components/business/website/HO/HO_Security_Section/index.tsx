@@ -32,7 +32,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-3'
+        className='flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
         <div className='grid grid-cols-2 justify-end items-end gap-2 md:gap-3'>

@@ -583,16 +583,65 @@ export const TYOOverview2_PG3_10 = {
         name: 'Tổng quan về hoạch định tài nguyên doanh nghiệp',
         code: "PG003.10SE00002",
         image: "",
-        description: "Cloud ERP do NGS triển khai có thể chuyển đổi dữ liệu và quy trình ERP hiện tại của bạn sang đám mây với ít rủi ro và gián đoạn kinh doanh. Gói phần mềm ERP được thiết kế riêng, dịch vụ chuyển đổi, phân tích nghiệp vụ và kiến thức chuyên môn của các chuyên gia sẽ hướng dẫn doanh nghiệp thiết kế lộ trình phù hợp lên đám mây. Cho dù doanh nghiệp  áp dụng ERP lần đầu hay di chuyển từ hệ thống hiện có sang đám mây đều có thể có được giải pháp mô-đun hoàn chỉnh với khả năng phân tích và AI để đưa doanh nghiệp của bạn phát triển hơn nữa- Tự động hóa quy trình kinh doanh trong toàn bộ hoạt động của doanh nghiệp- Tạo ra các mô hình kinh doanh sáng tạo ở quy mô toàn cầu- Phát triển lợi nhuận của bạn bằng các phương pháp phù hợp và tốt nhất dành riêng cho từng ngành cụ thể - Áp dụng chiến lược cốt lõi rõ ràng để tối ưu hóa chất lượng ERP trên nền tảng đám mây Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề - Vận hành theo tiêu  Tối đa hóa sự khác biệt doanh nghiệp của bạn bằng cách điều chỉnh quy trình kinh doanh theo yêu cầu riêng Bảo vệ khoản đầu tư của doanh nghiệp và di chuyển lên đám mây theo tốc độ của doanh nghiệp mong muốn- Hiện đại hóa quy trình kinh doanh Đạt được mức tăng trưởng lợi nhuận nhờ các quy trình kinh doanh đã được minh chứng cho ngành Mang lại sự tăng trưởng xanh bằng trực tiếp cách xây dựng tính bền vững vào doanh nghiệp - Giữ quyền kiểm soát Quản lý tốc độ thay đổi bằng cách triển khai các cải tiến theo dòng thời gian Chọn cơ sở hạ tầng đám mây dựa trên bối cảnh và mong muốn doanh nghiệp"
+        description: "Cloud ERP do NGS triển khai có thể chuyển đổi dữ liệu và quy trình ERP hiện tại của bạn sang đám mây với ít rủi ro và gián đoạn kinh doanh. Gói phần mềm ERP được thiết kế riêng, dịch vụ chuyển đổi, phân tích nghiệp vụ và kiến thức chuyên môn của các chuyên gia sẽ hướng dẫn doanh nghiệp thiết kế lộ trình phù hợp lên đám mây. //Cho dù doanh nghiệp  áp dụng ERP lần đầu hay di chuyển từ hệ thống hiện có sang đám mây đều có thể có được giải pháp mô-đun hoàn chỉnh với khả năng phân tích và AI để đưa doanh nghiệp của bạn phát triển hơn nữa"
 
     },
-    components: []
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.10SE00002CN000001",
+            title: "",
+            content: "Tự động hóa quy trình kinh doanh trong toàn bộ hoạt động của doanh nghiệp",
+            description: "",
+            slug: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00002CN000002",
+            title: "",
+            content: "Tạo ra các mô hình kinh doanh sáng tạo ở quy mô toàn cầu",
+            description: "",
+            slug: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00002CN000003",
+            title: "",
+            content: "Phát triển lợi nhuận của bạn bằng các phương pháp phù hợp và tốt nhất dành riêng cho từng ngành cụ thể",
+            description: "",
+            slug: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.10SE00002CN000004",
+            title: "",
+            content: "Áp dụng chiến lược cốt lõi rõ ràng để tối ưu hóa chất lượng ERP trên nền tảng đám mây",
+            description: "",
+            slug: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+    ]
 }
 
 export const TYOOverview4_PG3_10 = {
     section: {
         id: 3,
-        name: 'Đưa ra được mục tiêu dữ liệu và giải pháp thu thập và phân tích dữ liệu. Đánh giá các giải pháp dữ liệu và phân tích đang được sử dụng.',
+        name: 'Giải pháp ERP của NGS được điều chỉnh để phù hợp với sự chuyển đổi đặc thù ngành nghề',
         code: "PG003.10SE00003",
         image: "",
         description: ""
@@ -894,7 +943,7 @@ export const TYOWhyUs1_PG3_10 = {
 export const TYOPartner1_PG3_10 = {
     section: {
         id: 7,
-        name: 'Đối tác của NGS đồng hành cùng chúng tôi',
+        name: 'Đối tác đồng hành cùng NGS',
         code: "PG003.10SE00007",
         image: "/images/TYO_SAP.png",
         description: ""
@@ -961,7 +1010,7 @@ export const TYOOverview4_PG3_16 = {
             video: "",
             thumbnail: ""
         },
-        
+
         {
             id: 4,
             language: 'vi',
@@ -1156,7 +1205,7 @@ export const TYOService1_PG3_16 = {
             image: "",
             video: "",
             thumbnail: ""
-        }, 
+        },
         {
             id: 9,
             language: 'vi',
@@ -1667,9 +1716,9 @@ export const TYOWhyUs1_PG3_12 = {
 export const TYOClientStories2_PG3_12 = {
     section: {
         id: 7,
-        name: 'Những khách hàng đã hài lòng',
+        name: 'Cung cấp cái nhìn toàn diện về hành trình khách hàng',
         code: "PG003.12SE00007",
-        image: "",
+        image: "/images/CoreVavlueFinancial.png",
         description: ""
 
     },
@@ -1677,35 +1726,12 @@ export const TYOClientStories2_PG3_12 = {
         {
             id: 1,
             language: 'vi',
-            code: "PG003.11SE00007CN000001",
-            title: "",
-            description: "",
+            code: "PG003.12SE00004CN000001",
+            title: "Head of Design",
+            description: "Nguyễn Anh Huy",
             slug: "",
-            content: "",
-            image: "/images/TYO_techcombank.png",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 2,
-            language: 'vi',
-            code: "PG003.11SE00007CN000002",
-            title: "",
-            description: "",
-            slug: "",
-            content: "",
-            image: "/images/TYO_bidv.png",
-            video: "",
-            thumbnail: ""
-        }, {
-            id: 3,
-            language: 'vi',
-            code: "PG003.11SE00007CN000003",
-            title: "",
-            description: "",
-            slug: "",
-            content: "",
-            image: "/images/TYO_vpbank.png",
+            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
+            image: "",
             video: "",
             thumbnail: ""
         },
@@ -1726,7 +1752,7 @@ export const TYOBanner1_PG3_14 = {
 export const TYOOverview3_PG3_14 = {
     section: {
         id: 2,
-        name: 'Quản lý Trải nghiệm Nhân lực (HXM) : Sự phát triển hơn của phần mềm Quản trị nguồn nhân lực ',
+        name: 'Quản lý Trải nghiệm Nhân lực (HXM) Sự phát triển hơn của phần mềm Quản trị nguồn nhân lực ',
         code: "PG003.14SE00002",
         image: "",
         description: "Mọi thứ về công việc đang thay đổi chính vì thế quản lý nguồn nhân lực truyền thống không còn đáp ứng đủ cho việc quản lý con người và công việc. Với Bộ Quản lý Trải nghiệm Nhân lực (HXM), NGS sẽ giúp doanh nghiệp thực sự đặt con người là trung tâm - là giá trị cốt lõi, giúp tạo ra những trải nghiệm thúc đẩy lợi thế cạnh tranh thực sự. // HXM Suite cung cấp các giải pháp dựa trên đám mây, chẳng hạn như hệ thống quản lý nguồn nhân lực (HRMS), kết nối quản lý nhân sự lõi và quản lý tiền lương, quản lý nhân tài, quản lý hiệu suất bán hàng, phân tích con người và lập kế hoạch nguồn lực để giúp thúc đẩy doanh nghiệp của bạn phát triển.  HXM Suite cho phép bạn đặt con người của mình làm trung tâm của mọi việc – với các giải pháp được thiết kế để đáp ứng nhu cầu cá nhân của họ."
@@ -1748,11 +1774,11 @@ export const TYOchallenge2_PG3_14 = {
             id: 1,
             language: 'vi',
             code: "PG003.14SE00004CN000001",
-            title: "",
+            title: "Giúp nhân viên làm việc và nỗ lực hết mình",
             description: "Giúp nhân viên làm việc và nỗ lực hết mình",
             slug: "",
             content: "Giúp nhân sự dễ dàng tiếp cận những gì họ cần tại nơi làm việc, lắng nghe phản hồi, tận dụng tối đa lợi ích của họ và giúp họ gắn kết với những trải nghiệm đặc biệt cho nhân viên.",
-            image: "/images/TYO_page14_chal.png",
+            image: "/images/CoreValueHumanCapital.png",
             video: "",
             thumbnail: ""
         },
@@ -1760,23 +1786,11 @@ export const TYOchallenge2_PG3_14 = {
             id: 2,
             language: 'vi',
             code: "PG0004SE00004CN000002",
-            title: "",
-            description: "Hỗ trợ nhân viên những thứ họ cần trong khi làm việc bất cư nơi đâu và bất cứ cách nào với các giải pháp toàn cầu về quản lý nhân sự lõi, tính lương, theo dõi thời gian, quản trị lợi ích, cung cấp dịch vụ nhân sự, v.v.",
+            title: "Hỗ trợ nhân viên những thứ họ cần",
+            description: "Hỗ trợ nhân viên những thứ họ cần",
             slug: "",
-            content: "",
-            image: "",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 5,
-            language: 'vi',
-            code: "PG0004SE00004CN000005",
-            title: "",
-            description: "Thích ứng nhanh chóng để giải quyết mọi khoảng trống về kỹ năng bằng phần mềm mạnh mẽ để thu thập thông tin nhân tài, tuyển dụng, giới thiệu, hiệu suất, đãi ngộ, học tập, kế thừa và phát triển.",
-            slug: "",
-            content: "",
-            image: "",
+            content: "Hỗ trợ nhân viên những thứ họ cần trong khi làm việc bất cư nơi đâu và bất cứ cách nào với các giải pháp toàn cầu về quản lý nhân sự lõi, tính lương, theo dõi thời gian, quản trị lợi ích, cung cấp dịch vụ nhân sự, v.v.",
+            image: "/images/CoreValueHumanCapital.png",
             video: "",
             thumbnail: ""
         },
@@ -1784,11 +1798,11 @@ export const TYOchallenge2_PG3_14 = {
             id: 3,
             language: 'vi',
             code: "PG0004SE00004CN000003",
-            title: "",
-            description: "Đưa ra quyết định thông minh hơn nhanh hơn bằng cách sử dụng thông tin chi tiết dựa trên dữ liệu trong mọi quy trình nhân sự và sử dụng các công cụ phân tích con người và lập kế hoạch nguồn lực để cải thiện hiệu suất trên toàn công ty.",
+            title: "Đưa ra quyết định thông minh",
+            description: "Đưa ra quyết định thông minh",
             slug: "",
-            content: "",
-            image: "",
+            content: "Đưa ra quyết định thông minh hơn nhanh hơn bằng cách sử dụng thông tin chi tiết dựa trên dữ liệu trong mọi quy trình nhân sự và sử dụng các công cụ phân tích con người và lập kế hoạch nguồn lực để cải thiện hiệu suất trên toàn công ty.",
+            image: "/images/CoreValueHumanCapital.png",
             video: "",
             thumbnail: ""
         },
@@ -1796,11 +1810,23 @@ export const TYOchallenge2_PG3_14 = {
             id: 4,
             language: 'vi',
             code: "PG0004SE00004CN000004",
-            title: "",
-            description: "Triển khai các quản lý quy trình về khuyến khích một cách linh hoạt và kết nối nhằm thúc đẩy đội ngũ bán hàng đồng thời nâng cao hiệu quả hoạt động và tối đa hóa kết quả kinh doanh.",
+            title: "Triển khai các quản lý quy trình",
+            description: "Triển khai các quản lý quy trình",
             slug: "",
-            content: "",
-            image: "",
+            content: "Triển khai các quản lý quy trình về khuyến khích một cách linh hoạt và kết nối nhằm thúc đẩy đội ngũ bán hàng đồng thời nâng cao hiệu quả hoạt động và tối đa hóa kết quả kinh doanh.",
+            image: "/images/CoreValueHumanCapital.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG0004SE00004CN000005",
+            title: "Thích ứng nhanh chóng",
+            description: "Thích ứng nhanh chóng",
+            slug: "",
+            content: "Thích ứng nhanh chóng để giải quyết mọi khoảng trống về kỹ năng bằng phần mềm mạnh mẽ để thu thập thông tin nhân tài, tuyển dụng, giới thiệu, hiệu suất, đãi ngộ, học tập, kế thừa và phát triển.",
+            image: "/images/CoreValueHumanCapital.png",
             video: "",
             thumbnail: ""
         },
@@ -1880,9 +1906,9 @@ export const TYOService1_PG3_14 = {
             id: 6,
             language: 'vi',
             code: "PG003.14SE00003CN000006",
-            title: "Chi phí công tác và chi phí hoạt động doanh nghiệp",
+            title: "Dịch vụ tư vấn",
             description: "",
-            slug: "solution",
+            slug: "service-and-support",
             content: "",
             image: "",
             video: "",
@@ -1892,7 +1918,7 @@ export const TYOService1_PG3_14 = {
             id: 7,
             language: 'vi',
             code: "PG003.14SE00003CN000007",
-            title: "Dịch vụ tư vấn",
+            title: "Dịch vụ triển khai",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -1904,7 +1930,7 @@ export const TYOService1_PG3_14 = {
             id: 8,
             language: 'vi',
             code: "PG003.14SE00003CN000008",
-            title: "Dịch vụ triển khai",
+            title: "Dịch vụ di chuyển dữ liệu",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -1916,7 +1942,7 @@ export const TYOService1_PG3_14 = {
             id: 9,
             language: 'vi',
             code: "PG003.14SE00003CN000009",
-            title: "Dịch vụ di chuyển dữ liệu",
+            title: "Dịch vụ quản lý dự án tổ chức",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -1928,18 +1954,6 @@ export const TYOService1_PG3_14 = {
             id: 10,
             language: 'vi',
             code: "PG003.14SE00003CN000010",
-            title: "Dịch vụ quản lý dự án tổ chức",
-            description: "",
-            slug: "service-and-support",
-            content: "",
-            image: "",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 11,
-            language: 'vi',
-            code: "PG003.14SE00003CN000011",
             title: "Dịch vụ quản trị",
             description: "",
             slug: "service-and-support",
@@ -1957,7 +1971,7 @@ export const TYOWhyUs1_PG3_14 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG003.13SE00006",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: ""
     },
     components: [
         {
@@ -2021,18 +2035,6 @@ export const TYOclientStories1_PG3_14 = {
             video: "",
             thumbnail: ""
         },
-        {
-            id: 2,
-            language: 'vi',
-            code: "PG0003_14SE00007CN000002",
-            title: "Head of Design",
-            description: "Nguyễn Anh Huy",
-            slug: "",
-            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
-            image: "/mockSVG/HO_SECURITY_icon.svg",
-            video: "",
-            thumbnail: ""
-        },
     ]
 }
 
@@ -2078,9 +2080,93 @@ export const TYOchallenge3_PG3_15 = {
         name: 'Bộ giải pháp của NGS dành cho doanh nghiệp SME giúp:',
         code: "PG003.15SE00003",
         image: "/images/TYO_page3_15_sec3.png",
-        description: "1. Cải thiện tỷ suất lợi nhuận, giảm sai sót và thúc đẩy việc ra quyết định có lợi hơn với bộ công cụ hoàn chỉnh để hợp lý hóa các hoạt động tài chính.2. Giám sát toàn bộ quy trình bán hàng và vòng đời khách hàng hiệu quả hơn – từ liên hệ ban đầu đến lần bán hàng cuối cùng, dịch vụ sau bán hàng và hỗ trợ.3. Tối ưu hóa các hoạt động mua hàng và kiểm soát chi phí bằng cách quản lý toàn bộ chu trình đặt hàng đến thanh toán bao gồm biên nhận, hóa đơn, hoàn trả và thanh toán.4. Tạo báo cáo kịp thời và chính xác dựa trên dữ liệu toàn công ty bằng các công cụ phân tích và báo cáo.5. Trao quyền cho nhân viên của bạn để đưa ra quyết định thông minh, tự tin nhanh hơn bằng cách nắm bắt tất cả thông tin quan trọng và cung cấp thông tin đó ngay lập tức trên toàn công ty.6. Tận dụng các chức năng mở rộng dành riêng cho doanh nghiệp của bạn, các biện pháp thực hành tốt nhất và quy trình bằng các công cụ được thiết kế cho các doanh nghiệp vừa và nhỏ.7. Với các ứng dụng dành cho thiết bị di động, bạn có thể truy cập ngay vào thông tin phù hợp nhất để giúp bạn điều hành doanh nghiệp của mình từ mọi nơi, mọi lúc."
+        description: ""
     },
     components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.15SE00003CN000001",
+            title: "Cải thiện tỷ suất lợi nhuận, giảm sai sót và thúc đẩy việc ra quyết định có lợi hơn với bộ công cụ hoàn chỉnh để hợp lý hóa các hoạt động tài chính",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.15SE00003CN000002",
+            title: "Giám sát toàn bộ quy trình bán hàng và vòng đời khách hàng hiệu quả hơn – từ liên hệ ban đầu đến lần bán hàng cuối cùng, dịch vụ sau bán hàng và hỗ trợ",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.15SE00003CN000003",
+            title: "Tối ưu hóa các hoạt động mua hàng và kiểm soát chi phí bằng cách quản lý toàn bộ chu trình đặt hàng đến thanh toán bao gồm biên nhận, hóa đơn, hoàn trả và thanh toán",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.15SE00003CN000004",
+            title: "Tạo báo cáo kịp thời và chính xác dựa trên dữ liệu toàn công ty bằng các công cụ phân tích và báo cáo",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.15SE00003CN000005",
+            title: "Trao quyền cho nhân viên của bạn để đưa ra quyết định thông minh, tự tin nhanh hơn bằng cách nắm bắt tất cả thông tin quan trọng và cung cấp thông tin đó ngay lập tức trên toàn công ty",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.15SE00003CN000006",
+            title: "Tận dụng các chức năng mở rộng dành riêng cho doanh nghiệp của bạn, các biện pháp thực hành tốt nhất và quy trình bằng các công cụ được thiết kế cho các doanh nghiệp vừa và nhỏ",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 7,
+            language: 'vi',
+            code: "PG003.15SE00003CN000007",
+            title: "Với các ứng dụng dành cho thiết bị di động, bạn có thể truy cập ngay vào thông tin phù hợp nhất để giúp bạn điều hành doanh nghiệp của mình từ mọi nơi, mọi lúc",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
     ]
 }
 
@@ -2234,7 +2320,7 @@ export const TYOWhyUs1_PG3_15 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG003.15SE00006",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: ""
     },
     components: [
         {
@@ -2290,10 +2376,10 @@ export const TYOPartner3_PG3_15 = {
             id: 1,
             language: 'vi',
             code: "PG003.15SE00007CN000001",
-            title: "Công ty TNHH Fivetran",
-            description: "Đối tác hạng đồng",
+            title: "",
+            description: "",
             slug: "",
-            content: "Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn",
+            content: "",
             image: "/images/3CX.png",
             video: "",
             thumbnail: ""
@@ -2358,25 +2444,13 @@ export const TYOclientStories1_PG3_15 = {
             video: "",
             thumbnail: ""
         },
-        {
-            id: 2,
-            language: 'vi',
-            code: "PG0003_13SE00008CN000002",
-            title: "Head of Design",
-            description: "Nguyễn Anh Huy",
-            slug: "",
-            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
-            image: "/mockSVG/HO_SECURITY_icon.svg",
-            video: "",
-            thumbnail: ""
-        },
     ]
 }
 
 export const TYOBanner1_PG3_13 = {
     section: {
         id: 1,
-        name: 'Kiểm soát tốt hơn, mang lại giá trị lớn hơn và tiết kiệm nhiều hơn',
+        name: 'Quản lý chi tiêu',
         code: "PG0003_13SE00001",
         image: "/images/background_1.png",
         description: "Tự động hóa quy trình chi tiêu và chủ động quản lý nhiều khoản chi tiêu hơn để kiểm soát tốt hơn, mang lại giá trị lớn hơn và tiết kiệm nhiều hơn"
@@ -2384,24 +2458,10 @@ export const TYOBanner1_PG3_13 = {
     },
     components: []
 }
-
-
-// export const TYOOverview3_PG3_13 = {
-//     section: {
-//         id: 2,
-//         name: 'Quản lý tất cả các nguồn chi tiêu để tăng cường khả năng kiểm soát và khả năng phục hồi kinh doanh. Giải pháp của NGS giúp tối ưu hóa hoạt động mua sắm trực tiếp và gián tiếp, chi phí công tác và chi phí cho hoạt động kinh doanh, cũng như chi tiêu cho lực lượng lao động và các dịch vụ bên ngoài để có cái nhìn sâu sắc hơn về các vấn đề, kiểm soát và tiết kiệm tốt hơn.',
-//         code: "PG003.13SE00002",
-//         image: "",
-//         description: "Phát triển sự hiểu biết sâu sắc hơn về chi tiêu Đạt được cái nhìn thống nhất về chi tiêu trong công ty của bạn qua đó có thể giảm chi phí, giảm thiểu rủi ro, cải thiện sự hợp tác và đảm bảo mọi quyết định chi tiêu đều phù hợp với chiến lược kinh doanh, giúp thúc đẩy doanh nghiệp của bạn phát triển.Đạt được sự tích hợp quy trình kinh doanh đầu cuối Triển khai các quy trình quản lý chi tiêu liền mạch trong từng danh mục chi tiêu, được tích hợp với các hệ thống phụ trợ, quy trình thanh toán và đối tác của bạn để mang lại khả năng hiển thị, kiểm soát và tiết kiệm tối ưu.Lựa chọn giải pháp mạnh mẽ cho ngày hôm nay và cả tương lai Giải quyết các vấn đề kinh doanh bằng cách thu thập, phân tích và chia sẻ dữ liệu chi tiêu để đạt được mục tiêu tiết kiệm và lợi nhuận ròng nhanh chóng bằng các giải pháp dẫn đầu thị trường, giải pháp của chúng tôi còn giúp doanh nghiệp có thể mở rộng quy mô và phát triển cùng công ty của bạn hôm nay cũng như mọi nơi trong tương lai."
-
-//     },
-//     components: []
-// }
-
 export const TYOOverview4_PG3_13 = {
     section: {
         id: 2,
-        name: 'Tăng cường khả năng kiểm soát và khả năng phục hồi kinh doanh',
+        name: 'Với mỗi doanh nghiệp khả năng kiểm soát chi tiêu là năng lực quan trọng để tạo ra lợi nhuận mong muốn. //Giải pháp Quản lý chi tiêu - Spend Management của NGS giúp tối ưu hóa hoạt động mua sắm trực tiếp và gián tiếp, chi phí công tác và chi phí cho hoạt động kinh doanh, cũng như chi tiêu cho lực lượng lao động và các dịch vụ bên ngoài để có cái nhìn sâu sắc hơn về các vấn đề, kiểm soát và tiết kiệm tốt hơn... ',
         code: "PG003.13SE00002",
         image: "",
         description: ""
@@ -2453,9 +2513,81 @@ export const TYOchallenge3_PG3_13 = {
         name: 'Giải pháp do NGS cung cấp có thể tối ưu cho quá trình quản lý chi tiêu của doanh nghiệp, lợi ích mà các doanh nghiệp có được thông qua giải pháp này là: ',
         code: "PG003.13SE00003",
         image: "/images/TYO_page_3.13.png",
-        description: "- Tối ưu hóa chi phí, quản lý rủi ro và đảm bảo khoản tiết kiệm mà bạn thương lượng được hiện thực hóa bằng các giải pháp tìm nguồn cung ứng chiến lược.- Tái tạo trải nghiệm mua hàng bằng cách kết nối các danh mục chi tiêu và tăng cường hợp tác với nhà cung cấp để thúc đẩy công việc nhanh hơn và chi tiêu tốt hơn.- Tự động hóa quy trình thanh toán của bạn để giúp cắt giảm chi phí và rủi ro, đồng thời biến hóa đơn của bạn thành tài sản chiến lược.- Quản lý vòng đời, hiệu suất và rủi ro ở một nơi để có được sản phẩm phù hợp từ đúng nhà cung cấp vào đúng thời điểm.- Thúc đẩy kết quả kinh doanh tốt hơn bằng một nền tảng duy nhất để tìm kiếm, gắn kết và quản lý lực lượng lao động bên ngoài toàn cầu của bạn.- Kết nối quản lý chi phí công tác, chi phí hoạt động kinh doanh và hóa đơn để có cái nhìn tổng thể và kiểm soát tốt hơn.- Giải quyết các thách thức quản lý chi tiêu chi tiết bằng một phần mềm tích hợp cho toàn bộ quy trình chi tiêu từ nguồn cung cấp đến thanh toán."
+        description: ""
     },
     components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.13SE00003CN000001",
+            title: "Tối ưu hóa chi phí đồng thời quản lý rủi ro và đảm bảo khoản tiết kiệm mà bạn thương lượng được hiện thực hóa bằng các giải pháp tìm nguồn cung ứng chiến lược.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.13SE00003CN000002",
+            title: "Tái tạo trải nghiệm mua hàng bằng cách kết nối các danh mục chi tiêu và tăng cường hợp tác với nhà cung cấp để thúc đẩy công việc nhanh hơn và chi tiêu tốt hơn.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.13SE00003CN000003",
+            title: "Quy trình thanh toán tự động giúp cắt giảm chi phí và rủi ro, đồng thời biến hóa đơn của bạn thành tài sản chiến lược.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.13SE00003CN000004",
+            title: "Quản lý vòng đời, hiệu suất và rủi ro ở một nơi để có được sản phẩm phù hợp từ đúng nhà cung cấp vào đúng thời điểm. Giải quyết các thách thức quản lý chi tiêu chi tiết bằng một phần mềm tích hợp cho toàn bộ quy trình chi tiêu từ nguồn cung cấp đến thanh toán.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 5,
+            language: 'vi',
+            code: "PG003.13SE00003CN000005",
+            title: "Thúc đẩy kết quả kinh doanh tốt hơn bằng một nền tảng duy nhất để tìm kiếm, gắn kết và quản lý lực lượng lao động bên ngoài toàn cầu của bạn.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.13SE00003CN000006",
+            title: "Kết nối quản lý chi phí công tác, chi phí hoạt động kinh doanh và hóa đơn để có cái nhìn tổng thể và kiểm soát tốt hơn.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
     ]
 }
 
@@ -2485,7 +2617,7 @@ export const TYOService1_PG3_13 = {
             id: 2,
             language: 'vi',
             code: "PG003.13SE00004CN000002",
-            title: "Thu mua",
+            title: "Thu mua/mua sắm",
             description: "",
             slug: "solution",
             content: "",
@@ -2543,10 +2675,10 @@ export const TYOService1_PG3_13 = {
         {
             id: 7,
             language: 'vi',
-            code: "PG003.13SE00004CN000007",
-            title: "Chi phí công tác và chi phí hoạt động doanh nghiệp",
+            code: "PG003.13SE00003CN000007",
+            title: "Dịch vụ tư vấn",
             description: "",
-            slug: "solution",
+            slug: "service-and-support",
             content: "",
             image: "",
             video: "",
@@ -2556,7 +2688,7 @@ export const TYOService1_PG3_13 = {
             id: 8,
             language: 'vi',
             code: "PG003.13SE00003CN000008",
-            title: "Dịch vụ tư vấn",
+            title: "Dịch vụ triển khai",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -2567,8 +2699,8 @@ export const TYOService1_PG3_13 = {
         {
             id: 9,
             language: 'vi',
-            code: "PG003.13SE00003CN000009",
-            title: "Dịch vụ triển khai",
+            code: "PG003.13SE00003CN00009",
+            title: "Dịch vụ di chuyển dữ liệu",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -2580,7 +2712,7 @@ export const TYOService1_PG3_13 = {
             id: 10,
             language: 'vi',
             code: "PG003.13SE00003CN000010",
-            title: "Dịch vụ di chuyển dữ liệu",
+            title: "Dịch vụ quản lý dự án tổ chức",
             description: "",
             slug: "service-and-support",
             content: "",
@@ -2592,18 +2724,6 @@ export const TYOService1_PG3_13 = {
             id: 11,
             language: 'vi',
             code: "PG003.13SE00003CN000011",
-            title: "Dịch vụ quản lý dự án tổ chức",
-            description: "",
-            slug: "service-and-support",
-            content: "",
-            image: "",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 12,
-            language: 'vi',
-            code: "PG003.13SE00003CN000012",
             title: "Dịch vụ quản trị",
             description: "",
             slug: "service-and-support",
@@ -2621,7 +2741,7 @@ export const TYOWhyUs1_PG3_13 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG003.13SE00006",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: ""
     },
     components: [
         {
@@ -2629,7 +2749,7 @@ export const TYOWhyUs1_PG3_13 = {
             language: 'vi',
             code: "PG003.13SE00006CN000001",
             title: "Dịch vụ tốt nhất & chuyên biệt",
-            description: "Dịch vụ tốt nhất & chuyên biệt: NGS có các chuyên gia tư vấn và giàu kinh nghiệm triển khai cho nhiều doanh nghiệp thuộc các lĩnh vực, ngành nghề khác nhau, đặc biệt là SAP tại Việt Nam. NGS đã xây dựng các gói sản phẩm riêng biệt đảm bảo triển khai nhanh chóng, dễ sử dụng.",
+            description: "Dịch vụ tốt nhất & chuyên biệt: NGS có các chuyên gia tư vấn và giàu kinh nghiệm triển khai cho nhiều doanh nghiệp thuộc các lĩnh vực, ngành nghề khác nhau, đặc biệt là SAP tại Việt Nam. NGS đã xây dựng các gói sản phẩm riêng biệt đảm bảo triển khai nhanh chóng, dễ sử dụng",
             slug: "",
             content: "",
             image: "/images/TYO_sec4.png",
@@ -2680,18 +2800,6 @@ export const TYOclientStories1_PG3_13 = {
             description: "Nguyễn Anh Huy",
             slug: "",
             content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa.Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.",
-            image: "/mockSVG/HO_SECURITY_icon.svg",
-            video: "",
-            thumbnail: ""
-        },
-        {
-            id: 2,
-            language: 'vi',
-            code: "PG0003_13SE00008CN000002",
-            title: "Head of Design",
-            description: "Nguyễn Anh Huy",
-            slug: "",
-            content: "Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp",
             image: "/mockSVG/HO_SECURITY_icon.svg",
             video: "",
             thumbnail: ""
@@ -2788,7 +2896,7 @@ export const TYOchallenge1_PG3_11 = {
             description: "Dẫn đầu trong đổi mới ngành",
             slug: "",
             content: "Dẫn đầu trong đổi mới ngành để đạt được mức tăng trưởng doanh thu, lợi nhuận và phát triển bền vững",
-            image: "/images/background_1.png",
+            image: "/images/CoreValueSupplyChain.png",
             video: "",
             thumbnail: ""
         },
@@ -2800,7 +2908,7 @@ export const TYOchallenge1_PG3_11 = {
             description: "Không ngừng cải tiến",
             slug: "",
             content: "Không ngừng cải tiến để tối ưu hóa quy trình kinh doanh trong bối cảnh những hành vi liên tục thay đổi ",
-            image: "/images/background_1.png",
+            image: "/images/CoreValueSupplyChain.png",
             video: "",
             thumbnail: ""
         }
@@ -2813,7 +2921,7 @@ export const TYOchallenge1_PG3_11 = {
             description: "Tính năng tích hợp bảo mật",
             slug: "",
             content: "Tin tưởng vào việc chuyển sang đám mây với tính năng tích hợp bảo mật tập trung vào việc bảo vệ doanh nghiệp của bạn",
-            image: "/images/background_1.png",
+            image: "/images/CoreValueSupplyChain.png",
             video: "",
             thumbnail: ""
         }
@@ -4214,10 +4322,10 @@ export const TYO_RF_Section4 = {
 export const TYO_AMS_Banner = {
     section: {
         id: 1,
-        name: 'Ngân hàng lõi thế hệ mới lấy khách hàng và đại lý làm trung tâm',
+        name: 'Đổi mới dịch vụ, nâng cao hiệu quả hoạt động',
         code: "PG003.18SE00001",
         image: "/images/PG003.18SE00001.png",
-        description: "Bạn đã sẵn sàng bắt đầu hành trình với giải pháp Ngân hàng lõi thế hệ mới hướng tới Phần mềm dưới dạng dịch vụ chưa?"
+        description: "Tối ưu chi phí, tối ưu nguồn lực, đẩy mạnh sáng tạo"
 
     },
     components: []
@@ -4236,7 +4344,7 @@ export const TYO_AMS_Section2 = {
             id: 1,
             language: 'vi',
             code: "PG003.18SE00002CN000001",
-            title: "Dịch vụ hỗ trợ vận hành công nghệ thông tin",
+            title: "DỊCH VỤ HỖ TRỢ VẬN HÀNH CNTT",
             description: "Dịch vụ hỗ trợ vận hành hạ tầng hệ thống CNTT bao gồm các hoạt động về hỗ trợ vận hành máy chủ, thiết bị lưu trữ, thiết bị mạng; các hệ thống bảo mật, phần mềm Middleware (Web Server, Application Server…); môi trường ảo hóa và điện toán đám mây; các hệ thống Cơ sở dữ liệu và sao lưu an toàn dữ liệu.",
             slug: "",
             content: "",
@@ -4248,7 +4356,7 @@ export const TYO_AMS_Section2 = {
             id: 2,
             language: 'vi',
             code: "PG003.18SE00002CN000002",
-            title: "Dịch vụ hạ tầng  công nghệ thông tin doanh nghiệp",
+            title: "DỊCH VỤ HẠ TẦNG CNTT DOANH NGHIỆP",
             description: "Nhằm đáp ứng nhu cầu thực tế của doanh nghiệp trong việc đầu tư hạ tầng công nghệ thông tin cho nhân viên đồng thời đáp ứng các yêu cầu thực tế về bảo mật và kinh phí đầu tư cũng như chi phí vận hành doanh nghiệp.",
             slug: "",
             content: "",
@@ -4260,7 +4368,7 @@ export const TYO_AMS_Section2 = {
             id: 3,
             language: 'vi',
             code: "PG003.18SE00002CN000003",
-            title: "Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin",
+            title: "DỊCH VỤ QUẢN TRỊ ỦY QUYỀN HỆ THỐNG CNTT",
             description: "cung cấp toàn diện các giải pháp quản trị cơ sở hạ tầng CNTT, cho phép giám sát hiệu suất, phát hiện và khắc phục nhanh chóng các sự cố xảy ra.",
             slug: "",
             content: "",
@@ -4274,7 +4382,7 @@ export const TYO_AMS_Section2 = {
 export const TYO_AMS_Section3 = {
     section: {
         id: 3,
-        name: 'Luôn kiến tạo lợi ích vì doanh nghiệp',
+        name: 'Khi triển khai vận hành, doanh nghiệp thường gặp phải // những thách thức phổ biến',
         code: "PG003.18SE00003",
         image: "",
         description: ""
@@ -4334,7 +4442,7 @@ export const TYO_AMS_Section3 = {
 export const TYO_AMS_Section4 = {
     section: {
         id: 4,
-        name: 'Dịch vụ chúng tôi cung cấp',
+        name: 'Dịch vụ của chúng tôi',
         code: "PG003.18SE00004",
         image: "",
         description: ""
@@ -4345,8 +4453,8 @@ export const TYO_AMS_Section4 = {
             id: 1,
             language: 'vi',
             code: "PG003.18SE00004CN000001",
-            title: "Dịch vụ hỗ trợ vận hành công nghệ thông tin",
-            description: "* Dịch vụ cung cấp nhân sự IT Onsite/IT Helpdesk // * Dịch vụ hỗ trợ IT Service Desk 24/7 // * Dịch vụ bảo trì bảo dưỡng hệ thống công nghệ thông tin",
+            title: "DỊCH VỤ HỖ TRỢ VẬN HÀNH CNTT",
+            description: "Dịch vụ cung cấp nhân sự IT Onsite/IT Helpdesk // Dịch vụ hỗ trợ IT Service Desk 24/7 // Dịch vụ bảo trì bảo dưỡng hệ thống CNTT",
             slug: "",
             content: "",
             image: "",
@@ -4357,8 +4465,8 @@ export const TYO_AMS_Section4 = {
             id: 2,
             language: 'vi',
             code: "PG003.18SE00004CN000002",
-            title: "Dịch vụ hạ tầng  công nghệ thông tin doanh nghiệp",
-            description: "* Dịch vụ hỗ trợ kỹ thuật hạ tầng Công nghệ thông tin // * Dịch vụ giám sát hạ tầng Công nghệ thông tin // * Dịch vụ hệ thống – hạ tầng Công nghệ thông tin",
+            title: "DỊCH VỤ HẠ TẦNG CNTT DOANH NGHIỆP",
+            description: "Dịch vụ hỗ trợ kỹ thuật hạ tầng CNTT // Dịch vụ giám sát hạ tầng CNTT // Dịch vụ hệ thống – hạ tầng CNTT",
             slug: "",
             content: "",
             image: "",
@@ -4369,8 +4477,8 @@ export const TYO_AMS_Section4 = {
             id: 3,
             language: 'vi',
             code: "PG003.18SE00004CN000003",
-            title: "Dịch vụ quản trị ủy quyền hệ thống công nghệ thông tin",
-            description: "* Dịch vụ quản trị ủy quyền hệ thống hạ tầng Công nghệ thông tin // * Dịch vụ quản trị ủy quyền hệ thống ứng dụng // * Dịch vụ ủy quyền hệ thống Cloud",
+            title: "DỊCH VỤ QUẢN TRỊ ỦY QUYỀN HỆ THỐNG CNTT",
+            description: "Dịch vụ quản trị ủy quyền hệ thống hạ tầng CNTT // Dịch vụ quản trị ủy quyền hệ thống ứng dụng // Dịch vụ quản trị ủy quyền hệ thống Cloud",
             slug: "",
             content: "",
             image: "",
@@ -4386,7 +4494,7 @@ export const TYO_AMS_Section5 = {
         name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
         code: "PG003.18SE00005",
         image: "",
-        description: "We are trusted partner for your digital transformation"
+        description: ""
     },
     components: [
         {
@@ -4394,7 +4502,7 @@ export const TYO_AMS_Section5 = {
             language: 'vi',
             code: "PG003.18SE00005CN000001",
             title: "Giá trị Dịch vụ cho Doanh nghiệp",
-            description: "* Tối ưu chi phí // * Nâng cao hiệu suất // * Giảm thiểu rủi ro",
+            description: "Tối ưu chi phí // Nâng cao hiệu suất // Giảm thiểu rủi ro",
             slug: "",
             content: "",
             image: "/images/PG003.1SE00004.png",
@@ -4405,7 +4513,7 @@ export const TYO_AMS_Section5 = {
             id: 2,
             language: 'vi',
             code: "PG003.18SE00005CN000002",
-            title: "Làm việc như một đối tác linh hoạt",
+            title: "Năng lực cung cấp dịch vụ",
             description: "Chúng tôi biến đổi bằng cách hành động, mang lại những chiến thắng nhanh chóng chứng minh giá trị từ ban đầu",
             slug: "",
             content: "",
@@ -4417,8 +4525,8 @@ export const TYO_AMS_Section5 = {
             id: 3,
             language: 'vi',
             code: "PG003.18SE00005CN000003",
-            title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
-            description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
+            title: "NGUỒN LỰC ĐA KỸ NĂNG",
+            description: "Quản trị phù hợp // Dịch vụ chuyên nghiệp",
             slug: "",
             content: "",
             image: "/images/PG003.1SE00004.png",
@@ -4431,7 +4539,7 @@ export const TYO_AMS_Section5 = {
 export const TYO_AMS_Section6 = {
     section: {
         id: 6,
-        name: 'Những khách hàng đã hài lòng',
+        name: '',
         code: "PG003.18SE00006",
         image: "",
         description: "FIS Global, Temenos, Intellect, Finastra... cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng, cũng như số lượng khách hàng hiện hữu, gia tăng doanh thu và lợi nhuận, và đồng thời gia tăng số lượng khách hàng tiềm năng tại BIDV, VPBank, Techcombank..., và sắp tới tại các doanh nghiệp là ngân hàng lớn khác"
@@ -4578,7 +4686,7 @@ export const TYO_CB_Section4 = {
             video: "",
             thumbnail: ""
         },
-    
+
         {
             id: 3,
             language: 'vi',
@@ -4591,7 +4699,7 @@ export const TYO_CB_Section4 = {
             video: "",
             thumbnail: ""
         },
-        
+
     ]
 }
 export const TYO_CB_Section5 = {
@@ -4685,7 +4793,7 @@ export const TYO_CB_Section6 = {
             image: "/images/logo_temenos.png",
             video: "",
             thumbnail: ""
-        },        {
+        }, {
             id: 4,
             language: 'vi',
             code: "PG003.6SE00006CN000004",
@@ -4698,29 +4806,29 @@ export const TYO_CB_Section6 = {
             thumbnail: ""
         },
         {
-        id: 5,
-        language: 'vi',
-        code: "PG003.6SE00006CN000004",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/logo_intellect.png",
-        video: "",
-        thumbnail: ""
-    },
-    {
-        id: 6,
-        language: 'vi',
-        code: "PG003.6SE00006CN000006",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/logo_finastra.png",
-        video: "",
-        thumbnail: ""
-    },
+            id: 5,
+            language: 'vi',
+            code: "PG003.6SE00006CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_intellect.png",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 6,
+            language: 'vi',
+            code: "PG003.6SE00006CN000006",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_finastra.png",
+            video: "",
+            thumbnail: ""
+        },
     ]
 }
 export const TYO_CB_Section7 = {
@@ -4838,18 +4946,18 @@ export const TYO_CI_Section2 = {
             video: "",
             thumbnail: ""
         },]
-    }
- export const TYO_CI_Section3 = {
-     section: {
-         id: 3,
-         name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
-         code: "TPG003.7SE00003",
-         image: "/images/background_2.png",
-         description: ""
-    
-        },
-     components: [
-         {
+}
+export const TYO_CI_Section3 = {
+    section: {
+        id: 3,
+        name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+        code: "TPG003.7SE00003",
+        image: "/images/background_2.png",
+        description: ""
+
+    },
+    components: [
+        {
             id: 1,
             language: 'vi',
             code: "PG003.7SE00003CN000001",
@@ -4860,7 +4968,7 @@ export const TYO_CI_Section2 = {
             image: "/images/TYO_CIsection3.png",
             video: "",
             thumbnail: ""
-            },]
+        },]
 }
 export const TYO_CI_Section4 = {
     section: {
@@ -4869,46 +4977,46 @@ export const TYO_CI_Section4 = {
         code: "TPG003.7SE00004",
         image: "/images/TYO_CIsection4.png",
         description: "Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:"
-        
-        },
-            
-            
+
+    },
+
+
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.7SE00004CN000001",
-        title: "Thấu hiểu và nắm bắt các mục tiêu",
-        description: "",
-        slug: "",
-        content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 1,
+            language: 'vi',
+            code: "PG003.7SE00004CN000001",
+            title: "Thấu hiểu và nắm bắt các mục tiêu",
+            description: "",
+            slug: "",
+            content: "Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.",
+            image: "",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 2,
-        language: 'vi',
-        code: "PG003.7SE00004CN000002",
-        title: "Đánh giá trạng thái hiện tại của tổ chức của bạn",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 2,
+            language: 'vi',
+            code: "PG003.7SE00004CN000002",
+            title: "Đánh giá trạng thái hiện tại của tổ chức của bạn",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 3,
-        language: 'vi',
-        code: "PG003.7SE00004CN000001",
-        title: "Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi bảo hiểm thế hệ mới",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 3,
+            language: 'vi',
+            code: "PG003.7SE00004CN000001",
+            title: "Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi bảo hiểm thế hệ mới",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         }]
 }
 export const TYO_CI_Section5 = {
@@ -5040,29 +5148,29 @@ export const TYO_CI_Section7 = {
             video: "",
             thumbnail: ""
         },]
-    }
+}
 export const TYO_CI_Section8 = {
     section: {
-         id: 8,
+        id: 8,
         name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
         code: "TPG003.6SE00008",
         image: "",
         description: ""
-        },
+    },
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.6SE00008CN000001",
-        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
-        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
-        slug: "",
-        content: "",
-        image: "/images/TYO_BCsection3.png",
-        video: "",
-        thumbnail: ""
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00008CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
         }
-        ]
+    ]
 }
 export const TYO_CA_Section1 = {
     section: {
@@ -5086,148 +5194,148 @@ export const TYO_CA_Section1 = {
             video: "",
             thumbnail: ""
         },]
-    }
+}
 export const TYO_CA_Section2 = {
-        section: {
-            id: 2,
-            name: 'NGS là đối tác tin cậy của các hãng hàng không trên thế giới.',
-            code: "TPG003.8SE00002",
-            image: "/images/TYO_CAsection1.png",
-            description: "Ngành hàng không là một trong những ngành đi tiên phong trong chuyển đổi số để đến với kỷ nguyên 5.0 - công nghệ vị nhân sinh, nơi con người là trung tâm của bất kỳ hoạt động công nghệ thông tin nào.  Khách hàng của ngành hàng không sẽ ngày càng đòi hỏi cao hơn về các trải nhiệm trong suốt hành trình của mình, từ đó đòi hỏi các hãng hàng không phải thay đổi nhanh, liên tục để mang lại các trải nghiệm xuất sắc. Một hệ thống công nghệ thông tin hướng tới quản trị hiệu quả, linh hoạt toàn bộ chuỗi hoạt động của hãng hàng không và từ đó nâng cao trải nghiêm cho hành khách là mục tiêu mà NGS muốn hướng tới trong quá trình đồng hành và cung cấp dịch vụ tư vấn triển khai công nghệ thông tin cốt lõi cho ngành hàng không."
-    
-        },
-        components: [
-            {
-                id: 1,
-                language: 'vi',
-                code: "PG003.8SE00002CN000001",
-                title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
-                description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
-                slug: "",
-                content: "",
-                image: "/images/TYO_BIsection3.png",
-                video: "",
-                thumbnail: ""
-            },]
-        }
+    section: {
+        id: 2,
+        name: 'NGS là đối tác tin cậy của các hãng hàng không trên thế giới.',
+        code: "TPG003.8SE00002",
+        image: "/images/TYO_CAsection1.png",
+        description: "Ngành hàng không là một trong những ngành đi tiên phong trong chuyển đổi số để đến với kỷ nguyên 5.0 - công nghệ vị nhân sinh, nơi con người là trung tâm của bất kỳ hoạt động công nghệ thông tin nào.  Khách hàng của ngành hàng không sẽ ngày càng đòi hỏi cao hơn về các trải nhiệm trong suốt hành trình của mình, từ đó đòi hỏi các hãng hàng không phải thay đổi nhanh, liên tục để mang lại các trải nghiệm xuất sắc. Một hệ thống công nghệ thông tin hướng tới quản trị hiệu quả, linh hoạt toàn bộ chuỗi hoạt động của hãng hàng không và từ đó nâng cao trải nghiêm cho hành khách là mục tiêu mà NGS muốn hướng tới trong quá trình đồng hành và cung cấp dịch vụ tư vấn triển khai công nghệ thông tin cốt lõi cho ngành hàng không."
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.8SE00002CN000001",
+            title: "“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.",
+            description: "Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BIsection3.png",
+            video: "",
+            thumbnail: ""
+        },]
+}
 export const TYO_CA_Section3 = {
     section: {
         id: 3,
         name: 'Luôn kiến tạo lợi ích vì doanh nghiệp',
         code: "TPG003.8SE00003",
-        image: "/images/TYO_CAsection1.png",
+        image: "/images/BgCoreValueAirline.png",
         description: ""
-            
+
     },
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.8SE00003CN000001",
-        title: "Bộ giải pháp hàng không.",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/TYO_CAsection3.png",
-        video: "",
-        thumbnail: ""
+            id: 1,
+            language: 'vi',
+            code: "PG003.8SE00003CN000001",
+            title: "Bộ giải pháp hàng không.",
+            description: "Bộ giải pháp hàng không.",
+            slug: "",
+            content: "Bộ giải pháp hàng không giúp hợp lý hóa và loại bỏ sự phức tạp trong các hoạt động vận hành cho các hãng hàng không có thể tập trung vào việc quản lý và phát triển hoạt động kinh doanh, đổi mới và mang lại trải nghiệm tuyệt vời cho du khách. //Hơn thế nữa, NGS và các đối tác chiến lược tham vọng tạo trải nghiệm tốt hơn cho khách du lịch bằng việc đơn giản quá trình chọn và đặt chuyến bay trở nên nhanh chóng và dễ dàng.",
+            image: "/images/BgCoreValueAirline.png",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 2,
-        language: 'vi',
-        code: "PG003.8SE00003CN000002",
-        title: "Công nghệ sân bay",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 2,
+            language: 'vi',
+            code: "PG003.8SE00003CN000002",
+            title: "Công nghệ sân bay",
+            description: "Công nghệ sân bay",
+            slug: "",
+            content: "Công nghệ sân bay giúp cho các hoạt động tại sân bay trở nên linh hoạt và tăng khả năng thích ứng để ứng phó với các tình huống thay đổi. Với các chuyến bay, hành khách và hành lý cần quản lý, nhân sự của sân bay có thể nắm rõ từng hoạt động đang diễn ra và đưa ra quyết định sáng suốt nhờ thông tin theo thời gian thực được chia sẻ giữa các đối tác bay và hệ thống sân bay.",
+            image: "/images/BgCoreValueAirline.png",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 3,
-        language: 'vi',
-        code: "PG003.8SE00003CN000004",
-        title: "Mẫu kinh doanh khối văn phòng",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
-         },
+            id: 3,
+            language: 'vi',
+            code: "PG003.8SE00003CN000004",
+            title: "Mẫu kinh doanh khối văn phòng",
+            description: "Mẫu kinh doanh khối văn phòng",
+            slug: "",
+            content: "Cung cấp các mẫu kinh doanh dành cho khối văn phòng hỗ trợ các hãng hàng không bao gồm nhiều giải pháp được cấu hình sẵn, đã trải qua tham khảo toàn diện, sẵn sàng hoạt động nhằm hỗ trợ các yêu cầu của doanh nghiệp tại khối văn phòng. Nó được cung cấp các nội dung kinh doanh, công cụ nhằm tăng tốc và dịch vụ hỗ trợ có liên quan, giúp khách hàng của các hãng hàng bay giảm chi phí, rủi ro và đẩy nhanh việc áp dụng trong các hoạt động khám phá, thăm dò và hiện thực hóa dự án.",
+            image: "/images/BgCoreValueAirline.png",
+            video: "",
+            thumbnail: ""
+        },
         {
-        id: 4,
-        language: 'vi',
-        code: "PG003.8SE00003CN000004",
-        title: "Nhu cầu quản lý",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 4,
+            language: 'vi',
+            code: "PG003.8SE00003CN000004",
+            title: "Nhu cầu quản lý",
+            description: "Nhu cầu quản lý",
+            slug: "",
+            content: "Quản lý các nhu cầu bảo trì, kỹ thuật và hậu cần cũng như đảm bảo hãng hàng không tuân thủ hệ thống quy định hàng không phức tạp.",
+            image: "/images/BgCoreValueAirline.png",
+            video: "",
+            thumbnail: ""
         },]
-        }
+}
 export const TYO_CA_Section4 = {
-      section: {
-                    id: 4,
-                    name: 'Our products and solution',
-                    code: "TPG003.8SE00004",
-                    image: "",
-                    description: ""
-            
-                },
-                components: [
-                    {
-                        id: 1,
-                        language: 'vi',
-                        code: "PG003.8SE00004CN000001",
-                        title: "Hàng không",
-                        description: "Trao quyền cho các hãng hàng không để tối đa hóa tiềm năng kinh doanh của họ: + Dịch vụ và phụ trợ cho hãng hàng không + Định giá, nhóm giá vé, + Đặt chỗ, đặt chỗ thông minh+ Kiểm soát khởi hành+ Khách hàng+ Quản lý chuyến bay+ Hàng tồn kho",
-                        slug: "",
-                        content: "",
-                        image: "",
-                        video: "",
-                        thumbnail: ""
-                    },
-                    {
-                        id: 2,
-                        language: 'vi',
-                        code: "PG003.8SE00004CN000002",
-                        title: "Sân bay",
-                        description: "+ Giải pháp hành khách và hành lý+ Hệ thống quản lý sân bay+ Giải pháp cho nhân viên mặt đất",
-                        slug: "",
-                        content: "",
-                        image: "",
-                        video: "",
-                        thumbnail: ""
-                    },
-                    {
-                        id: 3,
-                        language: 'vi',
-                        code: "PG003.8SE00004CN000003",
-                        title: "Khối hỗ trợ của hãng hàng không",
-                        description: "+ Quản lý chi tiêu + Đảm bảo các quy trình quản lý tiền mặt, ngân quỹ và kế toán theo thời gian thực trong toàn tập đoàn, bằng cách cho phép tự động hóa quy trình từ đầu đến cuối và hợp nhất theo thời gian thực của nhiều hệ thống phụ trợ.Có được thông tin chung về Nhân sự và Tài chính để hỗ trợ các quyết định kinh doanh thông minh và quản lý hiệu suất tốt hơn để có lợi thế cạnh tranh rõ ràngGiải pháp cho các hãng hàng không thuộc mọi quy mô và loại hình từ các công ty khởi nghiệp đến các tổ chức cấp một (bao gồm các tập đoàn hàng không), các tổ chức bảo trì làm việc cho các hãng hàng không cụ thể, các nhà cung cấp MRO độc lập ở mọi quy mô",
-                        slug: "",
-                        content: "",
-                        image: "",
-                        video: "",
-                        thumbnail: ""
-                    },
-                    {
-                        id: 4,
-                        language: 'vi',
-                        code: "PG003.8SE00004CN000004",
-                        title: "Dịch vụ và hỗ trợ",
-                        description: "- Dịch vụ tư vấn- Dịch vụ triển khai - Chuyển đổi dữ liệu- Quản lý dự án- Bảo trì, vận hành ",
-                        slug: "",
-                        content: "",
-                        image: "",
-                        video: "",
-                        thumbnail: ""
-                    },]
- }
+    section: {
+        id: 4,
+        name: 'Our products and solution',
+        code: "TPG003.8SE00004",
+        image: "",
+        description: ""
+
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.8SE00004CN000001",
+            title: "Hàng không",
+            description: "Trao quyền cho các hãng hàng không để tối đa hóa tiềm năng kinh doanh của họ: + Dịch vụ và phụ trợ cho hãng hàng không + Định giá, nhóm giá vé, + Đặt chỗ, đặt chỗ thông minh+ Kiểm soát khởi hành+ Khách hàng+ Quản lý chuyến bay+ Hàng tồn kho",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.8SE00004CN000002",
+            title: "Sân bay",
+            description: "+ Giải pháp hành khách và hành lý+ Hệ thống quản lý sân bay+ Giải pháp cho nhân viên mặt đất",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.8SE00004CN000003",
+            title: "Khối hỗ trợ của hãng hàng không",
+            description: "+ Quản lý chi tiêu + Đảm bảo các quy trình quản lý tiền mặt, ngân quỹ và kế toán theo thời gian thực trong toàn tập đoàn, bằng cách cho phép tự động hóa quy trình từ đầu đến cuối và hợp nhất theo thời gian thực của nhiều hệ thống phụ trợ.Có được thông tin chung về Nhân sự và Tài chính để hỗ trợ các quyết định kinh doanh thông minh và quản lý hiệu suất tốt hơn để có lợi thế cạnh tranh rõ ràngGiải pháp cho các hãng hàng không thuộc mọi quy mô và loại hình từ các công ty khởi nghiệp đến các tổ chức cấp một (bao gồm các tập đoàn hàng không), các tổ chức bảo trì làm việc cho các hãng hàng không cụ thể, các nhà cung cấp MRO độc lập ở mọi quy mô",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 4,
+            language: 'vi',
+            code: "PG003.8SE00004CN000004",
+            title: "Dịch vụ và hỗ trợ",
+            description: "- Dịch vụ tư vấn- Dịch vụ triển khai - Chuyển đổi dữ liệu- Quản lý dự án- Bảo trì, vận hành ",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },]
+}
 export const TYO_CA_Section5 = {
     section: {
         id: 5,
@@ -5301,51 +5409,15 @@ export const TYO_CA_Section5 = {
     ]
 }
 export const TYO_CA_Section6 = {
-        section: {
-            id: 6,
-            name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
-            code: "TPG003.8SE00006",
-            image: "",
-            description: "NGS tự hào là đối tác triển khai của các hãng hàng đầu trên thế giới nhằm cung cấp sức mạnh công nghệ cho ngành hàng không, cho phép các hãng hàng không thực sự tạo ra sự khác biệt trong trải nghiệm cho khách hàng của mình. //Các đối tác của NGS liên tục nghiên cứu chuyên sâu, với niềm đam mê về ngàng hàng không, để có thể cung cấp nền tảng kết nối hệ sinh thái hàng không với quan điểm độc đáo đúng trọng tâm của ngành, hướng tới sự kết nối và trải nghiệm, thiết kế lại các hãng hàng không và hoạt động du lịch của ngày mai."
-        },
-        components: [
-            {
-                id: 1,
-                language: 'vi',
-                code: "PG003.8SE00006CN000001",
-                title: "Tập trung vào giá trị",
-                description: "NGS tự tin là đối tác đáng tin cậy cho quá trình chuyển đổi số của bạn",
-                slug: "",
-                content: "",
-                image: "/images/logo_TYO_CB.png",
-                video: "",
-                thumbnail: ""
-            },
-            {
-                id: 2,
-                language: 'vi',
-                code: "PG003.8SE00006CN000002",
-                title: "Làm việc như một đối tác linh hoạt",
-                description: "Chúng tôi biến đổi bằng cách hành động, mang lại những chiến thắng nhanh chóng chứng minh giá trị từ ban đầu",
-                slug: "",
-                content: "",
-                image: "/images/logo_TYO_CB.png",
-                video: "",
-                thumbnail: ""
-            },
-            {
-                id: 3,
-                language: 'vi',
-                code: "PG003.8SE00006CN000003",
-                title: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
-                description: "Chuyên môn toàn diện về chuyển đổi kỹ thuật số",
-                slug: "",
-                content: "",
-                image: "/images/logo_TYO_CB.png",
-                video: "",
-                thumbnail: ""
-            }
-        ]
+    section: {
+        id: 6,
+        name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
+        code: "TPG003.8SE00006",
+        image: "/images/WhyUsCoreAirline.png",
+        description: "NGS tự hào là đối tác triển khai của các hãng hàng đầu trên thế giới nhằm cung cấp sức mạnh công nghệ cho ngành hàng không, cho phép các hãng hàng không thực sự tạo ra sự khác biệt trong trải nghiệm cho khách hàng của mình. //Các đối tác của NGS liên tục nghiên cứu chuyên sâu, với niềm đam mê về ngàng hàng không, để có thể cung cấp nền tảng kết nối hệ sinh thái hàng không với quan điểm độc đáo đúng trọng tâm của ngành, hướng tới sự kết nối và trải nghiệm, thiết kế lại các hãng hàng không và hoạt động du lịch của ngày mai."
+    },
+    components: [
+    ]
 }
 export const TYO_CA_Section7 = {
     section: {
@@ -5369,7 +5441,7 @@ export const TYO_CA_Section7 = {
             video: "",
             thumbnail: ""
         },
-       
+
         {
             id: 2,
             language: 'vi',
@@ -5421,37 +5493,37 @@ export const TYO_CA_Section8 = {
             id: 1,
             language: 'vi',
             code: "PG003.7SE00007CN000001",
-            title: "Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng",
-            description: "Majesco//Nguyễn Anh Huy ",
+            title: "Majesco",
+            description: "Nguyễn Anh Huy ",
             slug: "",
-            content: "",
-            image: "/images/icon1.png",
+            content: 'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa. Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.',
+            image: "",
             video: "",
             thumbnail: ""
         },]
-    }
-    export const TYO_CA_Section9 = {
-        section: {
-            id: 8,
-            name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
-            code: "TPG003.6SE00008",
-            image: "",
-            description: ""
-        },
-        components: [
-            {
-                id: 1,
-                language: 'vi',
-                code: "PG003.6SE00008CN000001",
-                title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
-                description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
-                slug: "",
-                content: "",
-                image: "/images/TYO_BCsection3.png",
-                video: "",
-                thumbnail: ""
-            }
-        ]
+}
+export const TYO_CA_Section9 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "TPG003.6SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.6SE00008CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
 }
 export const TYO_CG_Section1 = {
     section: {
@@ -5460,23 +5532,23 @@ export const TYO_CG_Section1 = {
         code: "TPG003.9SE00001",
         image: "/images/TYO_CGsection1.png",
         description: ""
-                                            
-        },
+
+    },
     components: [
-         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.9SE00001CN000001",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00001CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },]
-        }
-                                               
+}
+
 export const TYO_CG_Section2 = {
     section: {
         id: 2,
@@ -5484,46 +5556,46 @@ export const TYO_CG_Section2 = {
         code: "TPG003.9SE00002",
         image: "",
         description: "NGS thực hiện đơn giản hóa và tiêu chuẩn hóa các quy trình để hỗ trợ đổi mới trong lĩnh vực dầu khí bằng các dịch vụ đám mây thông minh. Chúng tôi giải quyết các nhu cầu cụ thể của ngành dầu khí nhằm đạt được sự chuyển đổi hiệu quả về mặt chi phí, tăng trưởng bền vững, tạo ra trải nghiệm vượt trội cho khách hàng. Hiển thị đầy đủ thông tin về cung, cầu và tài chính theo thời gian thực ở mọi nơi."
-        },
+    },
     components: [
         {
-        id: 2,
-        language: 'vi',
-        code: "PG003.9SE00002CN000001",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 2,
+            language: 'vi',
+            code: "PG003.9SE00002CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },]
-        }
-                                                   
-                                                    
+}
+
+
 export const TYO_CG_Section3 = {
     section: {
         id: 3,
         name: 'Các giải pháp ngành của chúng tôi giúp',
         code: "TPG003.9SE00003",
         image: "/images/TYO_CGsection3.png",
-        description:"- Cơ hội M&A mới trong ngành dầu khí- Tăng cường tỷ lệ năng lượng tái tạo trong hỗn hợp năng lượng- Lập kế hoạch vốn tuân thủ- Chuyển đổi số trong ngành Dầu khí"
-        },
+        description: "- Cơ hội M&A mới trong ngành dầu khí- Tăng cường tỷ lệ năng lượng tái tạo trong hỗn hợp năng lượng- Lập kế hoạch vốn tuân thủ- Chuyển đổi số trong ngành Dầu khí"
+    },
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.9SE00003CN000001",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/TYO_CGsection3.png",
-        video: "",
-        thumbnail: ""
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00003CN000001",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/TYO_CGsection3.png",
+            video: "",
+            thumbnail: ""
         },]
 }
-                                                            
+
 export const TYO_CG_Section4 = {
     section: {
         id: 4,
@@ -5531,57 +5603,57 @@ export const TYO_CG_Section4 = {
         code: "TPG003.9SE00004",
         image: "",
         description: "  "
-        },
+    },
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.9SE00004CN000001",
-        title: "Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí. ",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00004CN000001",
+            title: "Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí. ",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 2,
-        language: 'vi',
-        code: "PG003.9SE00004CN000002",
-        title: "Quản lý tài sản thông minh",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 2,
+            language: 'vi',
+            code: "PG003.9SE00004CN000002",
+            title: "Quản lý tài sản thông minh",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 3,
-        language: 'vi',
-        code: "PG003.9SE00004CN000003",
-        title: "Mở rộng API RBI cho quản lý Tài sản Thông minh",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 3,
+            language: 'vi',
+            code: "PG003.9SE00004CN000003",
+            title: "Mở rộng API RBI cho quản lý Tài sản Thông minh",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 4,
-        language: 'vi',
-        code: "PG003.9SE00004CN000004",
-        title: "Giải pháp Connected Depot by Implico tối ưu quản lý các kho dầu khí NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam.",
-        description: "",
-        slug: "",
-        content: "",
-        image: "",
-        video: "",
-        thumbnail: ""
+            id: 4,
+            language: 'vi',
+            code: "PG003.9SE00004CN000004",
+            title: "Giải pháp Connected Depot by Implico tối ưu quản lý các kho dầu khí NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam.",
+            description: "",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
         },]
-        }   
+}
 export const TYO_CG_Section5 = {
     section: {
         id: 5,
@@ -5589,21 +5661,21 @@ export const TYO_CG_Section5 = {
         code: "TPG003.9SE00005",
         image: "",
         description: "NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam."
-        },
+    },
     components: [
-         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.9SE00005CN000001",
-        title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
-        description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
-        slug: "",
-        content: "",
-        image: "/images/TYO_BCsection3.png",
-        video: "",
-        thumbnail: ""
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00005CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
         },
-        ]
+    ]
 }
 export const TYO_CG_Section6 = {
     section: {
@@ -5615,55 +5687,55 @@ export const TYO_CG_Section6 = {
     },
     components: [
         {
-        id: 1,
-        language: 'vi',
-        code: "PG003.9SE00006CN000001",
-        title: "Công ty TNHH Fivetran",
-        description: "Đối tác hạng đồng",
-        slug: "",
-        content: "Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn",
-        image: "",
-        video: "",
-        thumbnail: "/images/logo_3CX.png"
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00006CN000001",
+            title: "Công ty TNHH Fivetran",
+            description: "Đối tác hạng đồng",
+            slug: "",
+            content: "Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn",
+            image: "",
+            video: "",
+            thumbnail: "/images/logo_3CX.png"
         },
         {
-        id: 2,
-        language: 'vi',
-        code: "PG003.9SE00006CN000002",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/logo_odoo.png",
-        video: "",
-        thumbnail: ""
+            id: 2,
+            language: 'vi',
+            code: "PG003.9SE00006CN000002",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_odoo.png",
+            video: "",
+            thumbnail: ""
         },
         {
-         id: 3,
-        language: 'vi',
-        code: "PG003.9SE00006CN000003",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/logo_genesys.png",
-        video: "",
-        thumbnail: ""
+            id: 3,
+            language: 'vi',
+            code: "PG003.9SE00006CN000003",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_genesys.png",
+            video: "",
+            thumbnail: ""
         },
         {
-        id: 4,
-        language: 'vi',
-        code: "PG003.9SE00006CN000004",
-        title: "",
-        description: "",
-        slug: "",
-        content: "",
-        image: "/images/logo_saleforce.png",
-        video: "",
-        thumbnail: ""
+            id: 4,
+            language: 'vi',
+            code: "PG003.9SE00006CN000004",
+            title: "",
+            description: "",
+            slug: "",
+            content: "",
+            image: "/images/logo_saleforce.png",
+            video: "",
+            thumbnail: ""
         },]
- }
- export const TYO_CG_Section7 = {
+}
+export const TYO_CG_Section7 = {
     section: {
         id: 7,
         name: 'Những khách hàng đã hài lòng',
@@ -5685,29 +5757,29 @@ export const TYO_CG_Section6 = {
             video: "",
             thumbnail: ""
         },]
-    }
-    export const TYO_CG_Section8 = {
-        section: {
-            id: 8,
-            name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
-            code: "TPG003.9SE00008",
-            image: "",
-            description: ""
-        },
-        components: [
-            {
-                id: 1,
-                language: 'vi',
-                code: "PG003.9SE00008CN000001",
-                title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
-                description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
-                slug: "",
-                content: "",
-                image: "/images/TYO_BCsection3.png",
-                video: "",
-                thumbnail: ""
-            }
-        ]
+}
+export const TYO_CG_Section8 = {
+    section: {
+        id: 8,
+        name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+        code: "TPG003.9SE00008",
+        image: "",
+        description: ""
+    },
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.9SE00008CN000001",
+            title: "“Doanh nghiệp ngân hàng trong thời đại mới”.",
+            description: "Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.",
+            slug: "",
+            content: "",
+            image: "/images/TYO_BCsection3.png",
+            video: "",
+            thumbnail: ""
+        }
+    ]
 }
 export const TYO_ADM_Section1 = {
     section: {
@@ -5731,7 +5803,7 @@ export const TYO_ADM_Section1 = {
             thumbnail: ""
         }
     ]
-}      
+}
 export const TYO_ADM_Section2 = {
     section: {
         id: 2,
@@ -5754,14 +5826,14 @@ export const TYO_ADM_Section2 = {
             thumbnail: ""
         }
     ]
-}  
+}
 export const TYO_ADM_Section3 = {
     section: {
         id: 3,
         name: 'Lợi ích của việc Phát triển ứng dụng & hiện đại hóa',
         code: "TPG003.19SE00003",
         image: "",
-        description:" "
+        description: " "
     },
     components: [
         {
@@ -5814,14 +5886,14 @@ export const TYO_ADM_Section3 = {
         }
 
     ]
-}      
+}
 export const TYO_ADM_Section4 = {
     section: {
         id: 4,
         name: 'Dịch vụ chúng tôi cung cấp',
         code: "TPG003.19SE00004",
         image: "",
-        description:"Transform your business with successful strategy "
+        description: "Transform your business with successful strategy "
     },
     components: [
         {
@@ -5860,9 +5932,9 @@ export const TYO_ADM_Section4 = {
             video: "",
             thumbnail: ""
         },
-    
+
     ]
-} 
+}
 export const TYO_ADM_Section5 = {
     section: {
         id: 2,
@@ -5934,7 +6006,7 @@ export const TYO_ADM_Section5 = {
         },
 
     ]
-}  
+}
 export const TYO_ADM_Section6 = {
     section: {
         id: 7,
@@ -5981,7 +6053,7 @@ export const TYO_ADM_Section6 = {
             thumbnail: ""
         }
     ]
-} 
+}
 export const TYO_ADM_Section7 = {
     section: {
         id: 7,
@@ -6004,5 +6076,5 @@ export const TYO_ADM_Section7 = {
             thumbnail: ""
         }
     ]
-}    
+}
 

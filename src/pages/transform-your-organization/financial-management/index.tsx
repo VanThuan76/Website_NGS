@@ -11,6 +11,7 @@ import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/F
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignNineSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignNine_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
+import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -25,7 +26,7 @@ const FMPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Giải pháp tiên phong', 'Quản lý tài chính']}
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Quản lý tài chính']}
           data={TYOBanner1_PG3_12}
         />
       </ScrollRevealWrapper>
@@ -36,7 +37,7 @@ const FMPage = () => {
         <ChallengeDesignThreeSection title='Giá trị mang lại' data={TYOchallenge2_PG3_12} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='' data={TYOService1_PG3_12} />
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_12} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_12} />
@@ -45,10 +46,10 @@ const FMPage = () => {
         <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_12} />
+        <ClientStoriesDesignOneSection title='' data={TYOClientStories2_PG3_12} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_12} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_12} />
       </ScrollRevealWrapper>
 
 

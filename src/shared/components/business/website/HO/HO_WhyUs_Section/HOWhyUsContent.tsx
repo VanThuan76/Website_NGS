@@ -24,8 +24,8 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       },
     },
     inactive: {
-      borderColor: '#C2C0BF',
-      color: '#C2C0BF',
+      borderColor: 'rgb(100 116 139)',
+      color: 'rgb(100 116 139)',
       opacity: 0.8,
     },
   };
@@ -57,7 +57,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       </motion.div>
       <div className='flex flex-col justify-center items-center'>
         {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
-          <p key={idx} className='text-sm lg:text-base text-[#C2C0BF]'>
+          <p key={idx} className='text-sm lg:text-base text-slate-500'>
             {item}
           </p>
         ))}

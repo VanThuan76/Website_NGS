@@ -38,7 +38,7 @@ const CCPage = () => {
         <ChallengeDesignOneSection title='Thách thức của bạn' data={TYO_CB_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection title='Dịch vụ của chúng tôi' sub='Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi ngân hàng thế hệ mới' data={TYO_CB_Section4} />
+        <ServiceDesignThreeSection sectionCodeLink='FormCTA' title='Dịch vụ của chúng tôi' sub='Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi ngân hàng thế hệ mới' data={TYO_CB_Section4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CB_Section5} />
@@ -50,7 +50,7 @@ const CCPage = () => {
         <ClientStoriesDesignThreeSection title="Client stories" data={TYO_CB_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_CB_Section8} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_CB_Section8} />
       </ScrollRevealWrapper>
 
     </React.Fragment>

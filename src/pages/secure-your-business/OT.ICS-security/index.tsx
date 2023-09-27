@@ -35,29 +35,29 @@ const ERPPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <BannerDesignTwoSection
-        breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
+        breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Giải pháp dịch vụ an ninh mạng công nghiệp']}
         data={SYB_OIS_Section1}
       />
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <OverviewDesignOneSection title='Tổng quan' data={SYB_OIS_Section2} />
+      <ScrollRevealWrapper>
+        <OverviewDesignOneSection title='TỔNG QUAN' data={SYB_OIS_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ChallengeDesignOneSection title='Thách thức' data={SYB_OIS_Section3} />
+      <ScrollRevealWrapper>
+        <ChallengeDesignOneSection title='THÁCH THỨC CỦA BẠN' data={SYB_OIS_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ServiceDesignOneSection title='Dịch vụ' data={SYB_OIS_Section4} />
+      <ScrollRevealWrapper>
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={SYB_OIS_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_OIS_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <PartnerDesignTwoSection data={SYB_OIS_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_OIS_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <FormDesignOneSection title='Dùng thử' data={SYB_OIS_Section8} />
+      <ScrollRevealWrapper>
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYB_OIS_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

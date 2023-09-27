@@ -27,7 +27,7 @@ const NewsSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={false}
-        className='w-full md:w-[80%] flex justify-between items-center gap-3'
+        className='w-full flex justify-start items-start'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto mt-10  grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-6'>
         <div className='dark:bg-[#1B1D35] flex flex-col justify-start items-start pb-5 rounded-lg shadow-lg'>

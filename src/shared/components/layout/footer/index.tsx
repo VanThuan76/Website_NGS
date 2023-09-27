@@ -17,12 +17,12 @@ const Footer = () => {
     <section className='bg-[#141523] text-white font-thin pb-4 md:pb-8 lg:pb-10 px-4 md:px-24'>
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center'>
         <div className='w-full grid grid-cols-2 gap-4 justify-between items-center md:justify-start mb-4'>
-          <div className='w-[85%] flex flex-col justify-start items-start gap-2'>
+          <div className='w-[95%] flex flex-col justify-start items-start gap-2'>
             <PreImage height={200} width={200} src={'/logo.svg'} alt={'Logo'} layer={false} />
             <p className='font-medium'>{footerContactData.name}</p>
             <div className='space-x-2'>
               <p className='font-normal'>Địa chỉ:</p>
-              <div className='flex flex-col justify-start items-start text-center'>
+              <div className='flex flex-col justify-start items-start'>
                 {splitTextToArrayByDoubleSlash(footerContactData.address || '').map((item: string, idx: number) => (
                   <p key={idx}>{item}</p>
                 ))}
@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className='space-x-2'>
               <p className='font-normal'>VP Giao dịch:</p>
-              <div className='flex flex-col justify-start items-start text-center'>
+              <div className='flex flex-col justify-start items-start'>
                 {splitTextToArrayByDoubleSlash(footerContactData.transactionOffices || '').map((item: string, idx: number) => (
                   <p key={idx}>{item}</p>
                 ))}
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <div className='space-x-2'>
               <p className='font-normal'>Chi nhánh HCM:</p>
-              <div className='flex flex-col justify-start items-start text-center'>
+              <div className='flex flex-col justify-start items-start'>
                 {splitTextToArrayByDoubleSlash(footerContactData.branch_HCM || '').map((item: string, idx: number) => (
                   <p key={idx}>{item}</p>
                 ))}
@@ -52,8 +52,8 @@ const Footer = () => {
                 ))}
               </ul>
             </div>
-            <p className='font-normal'>Email: {footerContactData.email}</p>
             <p className='font-normal'>FAX: {footerContactData.fax}</p>
+            <p className='font-normal'>Email: {footerContactData.email}</p>
           </div>
           {/* ->>Content - Responsive Mobile AND Tablet */}
           <div className='w-full md:w-1/2 flex lg:hidden flex-col justify-center items-center'>

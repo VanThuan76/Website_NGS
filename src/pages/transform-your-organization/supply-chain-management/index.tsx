@@ -26,7 +26,7 @@ const SCMPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật kinh doanh', 'Quản lý chuỗi cung ứng']}
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Quản lý chuỗi cung ứng']}
           data={TYOBanner1_PG3_11}
         />
       </ScrollRevealWrapper>
@@ -37,7 +37,7 @@ const SCMPage = () => {
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge1_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='' data={TYOService1_PG3_11} />
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_11} />
@@ -46,10 +46,10 @@ const SCMPage = () => {
         <PartnerDesignThreeSection data={TYOPartner3_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_11} />
+        <ClientStoriesDesignTwoSection title='Những khách hàng đã hài lòng' data={TYOClientStories2_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_11} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_11} />
       </ScrollRevealWrapper>
 
 

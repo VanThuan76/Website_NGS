@@ -35,7 +35,7 @@ const CustomerRelationshipManagementPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật kinh doanh', 'Quản trị quan hệ khách hàng']}
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Quản trị quan hệ khách hàng']}
           data={TYO_CRM_Banner}
         />
       </ScrollRevealWrapper>
@@ -43,10 +43,10 @@ const CustomerRelationshipManagementPage = () => {
         <OverviewDesignThreeSection title='Tổng quan' data={TYO_CRM_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection title='Thách thức của bạn' data={TYO_CRM_Section3} />\
+        <ChallengeDesignThreeSection title='Thách thức của bạn' data={TYO_CRM_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='Dịch vụ của chúng tôi' data={TYO_CRM_Section4} />
+        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ của chúng tôi' data={TYO_CRM_Section4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CRM_Section5} />
@@ -58,7 +58,7 @@ const CustomerRelationshipManagementPage = () => {
         <ClientStoriesDesignOneSection title='' data={TYO_CRM_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

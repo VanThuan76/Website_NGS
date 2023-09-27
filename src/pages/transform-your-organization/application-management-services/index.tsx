@@ -25,26 +25,26 @@ const AMSPage = () => {
         <meta name='description' content='Application Management Services NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <BannerDesignOneSection title="Ngân hàng lõi" data={TYO_AMS_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <OverviewDesignNineSection title='Tổng quan' data={TYO_AMS_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ChallengeDesignTwoSection title='Thách thức' data={TYO_AMS_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <ServiceDesignThreeSection title='Dịch vụ' data={TYO_AMS_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_AMS_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYO_AMS_Section6} />
+      <ScrollRevealWrapper>
+        <ClientStoriesDesignTwoSection title='Những khách hàng đã hài lòng' data={TYO_AMS_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
+      <ScrollRevealWrapper>
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

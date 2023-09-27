@@ -13,13 +13,19 @@ type Props = {
 const BannerDesignOneSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`relative w-full ${className}`}>
+    <section id={data.section.code} className={`relative mb-10 w-full ${className}`}>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
         <div className='relative w-full mx-auto flex justify-start items-start'>
           <div className='absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[50%] flex flex-col justify-start items-start gap-6 z-30 text-white'>
             <div className='flex flex-col justify-start items-start gap-6'>
-              <p className='text-sm md:text-xl text-orange-500'>{title}</p>
-              <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
+              <p className='text-sm md:text-xl text-[#FC5E03]'>{title}</p>
+              <div className='w-full flex flex-col justify-start items-start'>
+                {data.section.name.split('//').map((word, idx) => (
+                  <h1 className='text-5xl font-semibold' key={idx}>
+                    {word}
+                  </h1>
+                ))}
+              </div>
               <p className='mt-5 font-thin text-lg'>{data.section.description}</p>
               <UseLinkRouter url={URLS_SYSTEM.ES}>
                 <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />

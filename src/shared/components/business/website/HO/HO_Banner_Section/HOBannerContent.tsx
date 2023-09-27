@@ -1,7 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import { URLS_SYSTEM } from '@/utils/constants';
-import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { AnimatePresence, motion } from 'framer-motion';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';

@@ -36,7 +36,7 @@ const DSPPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Giải pháp tiên phong', 'Chuyển đổi số']}
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Chuyển đổi số']}
           data={TYO_DSP_Banner}
         />
       </ScrollRevealWrapper>
@@ -47,7 +47,7 @@ const DSPPage = () => {
         <ChallengeDesignOneSection title='Thách thức của bạn' data={TYO_DSP_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection title='Dịch vụ của chúng tôi' data={TYO_DSP_Section4} />
+        <ServiceDesignThreeSection sectionCodeLink='FormCTA' title='Dịch vụ của chúng tôi' data={TYO_DSP_Section4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_DSP_Section5} />
@@ -56,10 +56,10 @@ const DSPPage = () => {
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <CaseStudyDesignOneSection title='Client Stories' data={TYO_DSP_Section7} />
+        <CaseStudyDesignOneSection title='NHỮNG KHÁCH HÀNG ĐÃ HÀI LÒNG' data={TYO_DSP_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={TYO_DSP_Section8} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

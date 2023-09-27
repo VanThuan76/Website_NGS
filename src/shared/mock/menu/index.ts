@@ -373,7 +373,7 @@ export const fakeMenu = [
                         path: "/transform-your-organization",
                         menuChild: [
                             {
-                                title: "Ngành ngân hàng",
+                                title: "Ngành Ngân hàng",
                                 path: "/core-banking",
                                 menuChild: []
                             },
@@ -389,7 +389,7 @@ export const fakeMenu = [
                             },
                             {
                                 title: "Ngành Dầu khí",
-                                path: "/core-oil-gas",
+                                path: "/core-oil&gas",
                                 menuChild: []
                             },
                         ]
@@ -497,11 +497,11 @@ export const fakeMenu = [
                 menuChild: [
                     {
                         title: "",
-                        path: "/it-service",
+                        path: "/transform-your-organization",
                         menuChild: [
                             {
                                 title: "Dịch vụ phát triển Ứng dụng",
-                                path: "/application-development-modernization",
+                                path: "/application-development&modernization",
                                 menuChild: []
                             },
                             {

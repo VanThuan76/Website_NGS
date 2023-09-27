@@ -5,7 +5,7 @@ export const footerContactData = {
   branch_HCM: "Tầng 1&4 tòa nhà Đô Thành, 81 Cao Thắng, P3// Quận 3, TP Hồ Chí Minh",
   phone: ["HN: - (+84) 24 66758482", "HCM: - (+84) 28 6654 3950"],
   fax: "(+84) 24 39844989",
-  email: "ngs.com.vn"
+  email: "info@ngs.vn"
 }
 export const footerServiceData = ["Giải pháp tiên phong", "Dịch vụ xuất sắc", "Bảo mật toàn diện"]
 export const footerCompanyData = ["Cơ hội gia nhập", "Tin tức NGS", "Về NGS"]

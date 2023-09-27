@@ -39,7 +39,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   };
   return (
     <motion.div
-      className={`flex flex-col justify-start items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
+      className={`flex flex-col justify-start items-start p-2 px-[10px] cursor-pointer overflow-hidden border-collapse ${className}`}
       onHoverStart={() => id !== 1 && setIsHovered(true)}
       onHoverEnd={() => id !== 1 && setIsHovered(false)}
       animate={animateTheme}
@@ -48,7 +48,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
         ease: 'easeInOut',
       }}
     >
-      <PreImage src={image} width={50} height={50} alt={title} className='mb-4 md:mb-6 rounded-lg' />
+      <PreImage src={image} width={56} height={56} alt={title} className='mb-4 md:mb-6 rounded-lg' />
       <motion.div
         className={`w-full h-[80%] lg:h-full flex flex-col gap-2`}
         initial='start'
@@ -61,7 +61,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
       >
         <div className='col-span-2 w-full flex flex-col justify-start items-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
-            <h1 key={idx} className='text-base md:text-2xl lg:text-3xl font-medium'>
+            <h1 key={idx} className='text-2xl md:text-4xl font-medium leading-10'>
               {item}
             </h1>
           ))}

@@ -40,7 +40,7 @@ const TitleSection = (data: Partial<Props>) => {
   return (
     <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-4 mt-5'>
       {data.title && title && (
-        <p className={`text-sm md:text-2xl !text-orange-500 ${data.className}`}>
+        <p className={`text-sm md:text-2xl !text-[#FC5E03] ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
               <motion.span variants={child} className='mr-[10px]' key={idx}>
@@ -52,7 +52,7 @@ const TitleSection = (data: Partial<Props>) => {
       )}
       <div className={`w-full gap-[20px] ${data.className}`}>
         <div className='w-full flex flex-col'>
-          <motion.div variants={container} className='flex flex-col gap-2' initial='hidden' animate='visible'>
+          <motion.div variants={container} className='flex flex-col' initial='hidden' animate='visible'>
             {data.name?.split('//').map((word, idx) => (
               <motion.span
                 variants={child}
@@ -70,7 +70,7 @@ const TitleSection = (data: Partial<Props>) => {
               {data.description?.split('//').map((word, idx) => (
                 <motion.span
                   variants={child}
-                  className='col-span-1 text-sm md:text-base font-medium not-italic text-[#757575] dark:text-[#C2C0BF]'
+                  className='col-span-1 text-sm md:text-base font-medium not-italic text-slate-500 dark:text-[#C2C0BF]'
                   key={idx}
                 >
                   {word}

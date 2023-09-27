@@ -54,7 +54,7 @@ const Header = () => {
             className='cursor-pointer'
           />
         </div>
-        <div className='relative hidden lg:block z-10'>
+        <div className='relative hidden lg:block z-10 text-[#1C1C1C]'>
           <NavigationMenuMain fakeMenu={fakeMenu} />
         </div>
       </div>
