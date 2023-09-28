@@ -62,7 +62,7 @@ export function HomePage({
         {/* <title>{homePageData.name}</title> */}
         <title>Trang chủ - NGS | Chuyển đổi số toàn diện</title>
         <link rel="icon" href="/logo.svg" sizes="any" />
-        <meta name='description' content={homePageData.description} />
+        {/* <meta name='description' content={homePageData.description} />
         <meta name='keywords' content={homePageData.seo} />
         <meta name='robots' content='index, follow' />
         <meta property='og:title' content={homePageData.name} />
@@ -73,7 +73,7 @@ export function HomePage({
         <meta name='twitter:card' content='summary_large_image' />
         <meta name='twitter:title' content={homePageData.name} />
         <meta name='twitter:description' content={homePageData.description} />
-        <meta name='twitter:image' content={homePageData.image} />
+        <meta name='twitter:image' content={homePageData.image} /> */}
       </Head>
       <ScrollRevealWrapper>
         <HomeBannerSection data={Home_1} />
@@ -121,63 +121,63 @@ export function HomePage({
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ctx => {
-  const { query } = ctx;
-  const { lang } = query;
-  const initLang = lang === undefined ? 'vi' : lang;
-  const shouldRedirect = await renderHomeContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
-  if (shouldRedirect) {
-    const {
-      homePageData,
-      HO_SolutionData,
-      HO_BannerData,
-      HO_ServiceData,
-      HO_SecurityData,
-      HO_PioneeringData,
-      HO_AboutUsData,
-      HO_WhyUsData,
-      COMMON_EventData,
-      COMMON_NewsData,
-      HO_PartnerData,
-      HO_TestimonialData,
-      HO_CaseStudy,
-    } = shouldRedirect.props;
-    return {
-      props: {
-        homePageData: homePageData.data || {},
-        HO_SolutionData: HO_SolutionData.data || [],
-        HO_BannerData: HO_BannerData.data || [],
-        HO_ServiceData: HO_ServiceData.data || [],
-        HO_SecurityData: HO_SecurityData.data || [],
-        HO_PioneeringData: HO_PioneeringData.data || [],
-        HO_AboutUsData: HO_AboutUsData.data || [],
-        HO_WhyUsData: HO_WhyUsData.data || [],
-        COMMON_EventData: COMMON_EventData.data || [],
-        COMMON_NewsData: COMMON_NewsData.data || [],
-        HO_PartnerData: HO_PartnerData.data || [],
-        HO_TestimonialData: HO_TestimonialData.data || [],
-        HO_CaseStudy: HO_CaseStudy.data || [],
-      },
-    };
-  }
-  return {
-    props: {
-      homePageData: {},
-      HO_SolutionData: [],
-      HO_BannerData: [],
-      HO_ServiceData: [],
-      HO_SecurityData: [],
-      HO_PioneeringData: [],
-      HO_AboutUsData: [],
-      HO_WhyUsData: [],
-      COMMON_EventData: [],
-      COMMON_NewsData: [],
-      HO_PartnerData: [],
-      HO_TestimonialData: [],
-      HO_CaseStudy: [],
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async ctx => {
+//   const { query } = ctx;
+//   const { lang } = query;
+//   const initLang = lang === undefined ? 'vi' : lang;
+//   const shouldRedirect = await renderHomeContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
+//   if (shouldRedirect) {
+//     const {
+//       homePageData,
+//       HO_SolutionData,
+//       HO_BannerData,
+//       HO_ServiceData,
+//       HO_SecurityData,
+//       HO_PioneeringData,
+//       HO_AboutUsData,
+//       HO_WhyUsData,
+//       COMMON_EventData,
+//       COMMON_NewsData,
+//       HO_PartnerData,
+//       HO_TestimonialData,
+//       HO_CaseStudy,
+//     } = shouldRedirect.props;
+//     return {
+//       props: {
+//         homePageData: homePageData.data || {},
+//         HO_SolutionData: HO_SolutionData.data || [],
+//         HO_BannerData: HO_BannerData.data || [],
+//         HO_ServiceData: HO_ServiceData.data || [],
+//         HO_SecurityData: HO_SecurityData.data || [],
+//         HO_PioneeringData: HO_PioneeringData.data || [],
+//         HO_AboutUsData: HO_AboutUsData.data || [],
+//         HO_WhyUsData: HO_WhyUsData.data || [],
+//         COMMON_EventData: COMMON_EventData.data || [],
+//         COMMON_NewsData: COMMON_NewsData.data || [],
+//         HO_PartnerData: HO_PartnerData.data || [],
+//         HO_TestimonialData: HO_TestimonialData.data || [],
+//         HO_CaseStudy: HO_CaseStudy.data || [],
+//       },
+//     };
+//   }
+//   return {
+//     props: {
+//       homePageData: {},
+//       HO_SolutionData: [],
+//       HO_BannerData: [],
+//       HO_ServiceData: [],
+//       HO_SecurityData: [],
+//       HO_PioneeringData: [],
+//       HO_AboutUsData: [],
+//       HO_WhyUsData: [],
+//       COMMON_EventData: [],
+//       COMMON_NewsData: [],
+//       HO_PartnerData: [],
+//       HO_TestimonialData: [],
+//       HO_CaseStudy: [],
+//     },
+//   };
+// };
 
 HomePage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
 export default HomePage;

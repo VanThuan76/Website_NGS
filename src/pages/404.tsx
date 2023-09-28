@@ -6,25 +6,27 @@ const Img404 = '/404.svg';
 
 export default function Page404() {
   useEffect(() => {
-    const ScrollReview = import('scrollreveal').then(module => {
-      console.log(module);
-      const sr = module.default({
-        distance: '60px',
-        duration: 2800,
-        reset: false,
-      });
-      sr.reveal(`.animate_top`, {
-        origin: 'top',
-        interval: 100,
-      });
-      sr.reveal(`.animate_left`, {
-        origin: 'left',
-        interval: 100,
-      });
-      sr.reveal(`.animate_right`, {
-        origin: 'right',
-        interval: 100,
-      });
+    import('scrollreveal').then(module => {
+      const ScrollReveal = module.default;
+      if (ScrollReveal) {
+        const sr = ScrollReveal({
+          distance: '60px',
+          duration: 2800,
+          reset: false,
+        });
+        sr.reveal(`.animate_top`, {
+          origin: 'top',
+          interval: 100,
+        });
+        sr.reveal(`.animate_left`, {
+          origin: 'left',
+          interval: 100,
+        });
+        sr.reveal(`.animate_right`, {
+          origin: 'right',
+          interval: 100,
+        });
+      }
     });
   }, []);
 

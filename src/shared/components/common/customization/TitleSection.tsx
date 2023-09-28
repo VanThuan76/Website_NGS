@@ -40,7 +40,7 @@ const TitleSection = (data: Partial<Props>) => {
   return (
     <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-4 mt-5'>
       {data.title && title && (
-        <p className={`text-sm md:text-2xl !text-[#FC5E03] ${data.className}`}>
+        <p className={`text-sm md:text-2xl !text-[#FC5E03] text-center ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
               <motion.span variants={child} className='mr-[10px]' key={idx}>
@@ -50,14 +50,14 @@ const TitleSection = (data: Partial<Props>) => {
           </motion.div>
         </p>
       )}
-      <div className={`w-full gap-[20px] ${data.className}`}>
-        <div className='w-full flex flex-col'>
+      <div className={`w-full grid grid-cols-12 gap-[80px] ${data.className}`}>
+        <div className='col-span-7 w-full flex flex-col'>
           <motion.div variants={container} className='flex flex-col' initial='hidden' animate='visible'>
             {data.name?.split('//').map((word, idx) => (
               <motion.span
                 variants={child}
                 className={`mr-[10px] flex flex-col text-[40px] text-[#29130F] font-medium ${data.className}`}
-                style={{lineHeight: "48px"}}
+                style={{lineHeight: "48px", letterSpacing: -1}}
                 key={idx}
               >
                 {word}
@@ -66,7 +66,7 @@ const TitleSection = (data: Partial<Props>) => {
           </motion.div>
         </div>
         {data.findMore ? (
-          <div className={`w-[550px] flex flex-col justify-start items-start mb-10 ${data.className}`}>
+          <div className={`col-span-5 w-full flex flex-col justify-start items-start mb-10 ${data.className}`}>
             <motion.div variants={container} className='flex flex-col gap-2' initial='hidden' animate='visible'>
               {data.description?.split('//').map((word, idx) => (
                 <motion.span

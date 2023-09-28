@@ -39,7 +39,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   };
   return (
     <motion.div
-      className={`flex flex-col justify-start items-start p-2 px-[10px] cursor-pointer overflow-hidden border-collapse ${className}`}
+      className={`flex flex-col justify-start items-start py-[16px] px-[16px] cursor-pointer overflow-hidden border-collapse ${className}`}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
@@ -48,9 +48,9 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
         ease: 'easeInOut',
       }}
     >
-      <PreImage src={image} width={56} height={56} alt={title} className='mb-4 md:mb-6 rounded-lg' />
+      <PreImage src={image} width={56} height={56} alt={title} className='mb-4 rounded-lg' />
       <motion.div
-        className={`w-full h-[80%] lg:h-full flex flex-col justify-start items-start gap-4`}
+        className={`w-full flex flex-col justify-start items-start gap-4`}
         initial='start'
         animate={isHovered ? 'end' : 'start'}
         variants={containerVariants}
@@ -59,14 +59,14 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
           ease: 'easeInOut',
         }}
       >
-        <div className='w-full h-[120px] flex flex-col justify-start items-start'>
+        <div className='w-full h-[60px] flex flex-col justify-start items-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
-            <h1 key={idx} className='text-[32px] font-medium leading-10'>
+            <h1 key={idx} className='text-[24px] font-medium leading-8'>
               {item}
             </h1>
           ))}
         </div>
-        <p className='pb-6 text-sm md:text-base'>{description}</p>
+        <p className='pb-6 text-sm'>{description}</p>
       </motion.div>
       {isHovered && (
           <motion.div
@@ -79,7 +79,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
             }}
           >
             <UseLinkRouter url={url}>
-              <BtnCommon cls='h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+              <BtnCommon cls='mt-6 h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]' title='Tìm hiểu thêm' colorSvg={colorIcon} />
             </UseLinkRouter>
           </motion.div>
         )}

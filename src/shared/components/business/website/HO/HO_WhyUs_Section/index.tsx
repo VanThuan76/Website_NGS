@@ -23,7 +23,7 @@ const HomeWhyUsSection = ({title, data, className}: Props) => {
         className={`relative md: lg: xl: px-4 md:px-24 ${className}`}
       >
         <div className='max-w-[1440px] w-full mx-auto my-auto'>
-          <div className='w-full flex flex-col lg:flex-row'>
+          <div className='w-full grid grid-cols-2'>
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection
                 title={title}

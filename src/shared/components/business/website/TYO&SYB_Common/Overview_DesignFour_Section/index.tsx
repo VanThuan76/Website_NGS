@@ -22,7 +22,7 @@ const OverviewDesignFourSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='text-center w-full flex flex-col justify-center items-center'
+          className='w-full grid-cols-7 col-span-7 text-center'
         />
         <div className='w-full grid grid-cols-3 gap-8 -mt-12'>
           {data.components.map((item, idx) => (

@@ -23,7 +23,7 @@ const OverviewDesignTwoSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='flex flex-col justify-start items-start gap-2'
+          className='w-full grid-cols-7 col-span-7 !text-left'
         />
         <div className='max-w-[360px] grid grid-cols-2 gap-14 justify-self-end align-self-end'>
           {data.components.map((item, idx) => {

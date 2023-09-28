@@ -24,7 +24,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='text-center w-full flex flex-col justify-center items-center gap-3 text-white mb-5'
+        className='w-full grid-cols-7 col-span-7 text-center text-white mb-5'
       />
       <div
         className='relative w-full min-h-[450px]'

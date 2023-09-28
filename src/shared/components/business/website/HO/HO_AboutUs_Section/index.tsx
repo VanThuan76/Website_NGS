@@ -49,7 +49,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             name={data.section.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-start items-start'
+            className='w-full grid-cols-7 col-span-7'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />

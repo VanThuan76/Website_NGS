@@ -17,7 +17,7 @@ const OverviewDesignFiveSection = ({ title, data, className }: Props) => {
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
         <div className='px-4 md:px-24 lg:px-32 xl:px-52 2xl:px-96 flex flex-col justify-start items-start md:justify-center md:items-center gap-2 z-30'>
           <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='text-2xl md:text-4xl font-medium text-[#1C1C1C]'>{data.section.name}</h1>
+          <h1 className='text-2xl md:text-4xl font-medium text-[#1C1C1C] text-center'>{data.section.name}</h1>
           <div className='flex flex-col justify-center items-center'>
             {splitTextToArrayByDoubleSlash(data.section.description).map((item: string, idx: number) => (
               <div key={idx} className='flex flex-col justify-center items-center gap-4 pb-4'>

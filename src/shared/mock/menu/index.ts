@@ -316,7 +316,7 @@ export const fakeMenu = [
                 path: "",
                 menuChild: [
                     {
-                        title: "",
+                        title: "Giải pháp tính năng",
                         path: "/transform-your-organization",
                         menuChild: [
                             {

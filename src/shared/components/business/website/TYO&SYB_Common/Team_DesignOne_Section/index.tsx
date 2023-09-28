@@ -31,7 +31,7 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='mb-5'
+          className='w-full grid-cols-7 col-span-7 text-center !gap-0'
         />
         <Swiper className='w-full'>
           {data.components.map((item, idx) => (

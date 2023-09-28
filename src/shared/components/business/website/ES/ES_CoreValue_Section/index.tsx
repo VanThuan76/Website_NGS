@@ -28,7 +28,7 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='w-full flex flex-col justify-center items-center gap-3'
+        className='w-full grid-cols-7 col-span-7 text-center'
       />
       <SectionCoreValue className='object-cover' />
       <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>

@@ -30,7 +30,7 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-start items-start gap-3'
+            className='w-full !text-left text-white'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />

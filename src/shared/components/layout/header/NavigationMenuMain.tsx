@@ -23,8 +23,8 @@ type Props = {
 };
 const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
   const { pathname } = useRouter();
+  // TODO: Fix menu by parent_id
   const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(fakeMenu[0].menuChild[0]);
-  const [trigger, setTrigger] = useState<number>(NaN);
   return (
     <NavigationMenu className='NavigationMenuRoot'>
       <NavigationMenuList className='NavigationMenuList'>
@@ -34,7 +34,10 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
               <NavigationMenuItem>
                 <Link href={mainMenu.path as string} legacyBehavior passHref>
                   <NavigationMenuLink
-                    style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}`, backgroundColor: "transparent" }}
+                    style={{
+                      color: `${'/' + pathname.split('/')[1] === mainMenu.path ? '#FC5E03' : ''}`,
+                      backgroundColor: 'transparent',
+                    }}
                     className={navigationMenuTriggerStyle()}
                   >
                     {mainMenu.title}
@@ -44,7 +47,10 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
             ) : (
               <NavigationMenuItem className='cursor-pointer'>
                 <NavigationMenuTrigger
-                  style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}`, backgroundColor: "transparent" }}
+                  style={{
+                    color: `${'/' + pathname.split('/')[1] === mainMenu.path ? '#FC5E03' : ''}`,
+                    backgroundColor: 'transparent',
+                  }}
                   onMouseMove={() => setSelectedMenuChild3(mainMenu.menuChild[0])}
                   className='NavigationMenuTrigger'
                 >
@@ -52,34 +58,36 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className='NavigationMenuContent'>
                   <div className='List one gap-10'>
-                    <div className='w-full flex flex-col justify-start items-start gap-5 border-r-2 border-r-slate-200 px-8'>
+                    <div className='w-full flex flex-col justify-start items-start gap-5 border-r-2 border-r-slate-200 px-8 pt-4'>
                       {mainMenu.menuChild.map((menuChild2, idx) => {
                         return (
                           <div className='w-full' key={idx}>
                             {menuChild2.title !== '' ? (
                               <motion.div
                                 style={{
-                                  borderBottom: `${trigger === idx ? '1px solid #FC5E03' : '1px solid #B7B4AE'}`,
+                                  borderBottom: '1px solid #E8E8E8',
                                 }}
-                                className='w-full flex justify-between items-start cursor-pointer'
+                                className='relative w-full flex justify-between items-start cursor-pointer pb-6'
                                 whileHover={{
                                   borderBottom: '1px solid #FC5E03',
                                   color: '#000',
                                   x: 10,
                                 }}
-                                onMouseEnter={() => {
-                                  setTrigger(idx);
-                                  setSelectedMenuChild3(menuChild2);
-                                }}
-                                onMouseOver={() => setTrigger(NaN)}
+                                onMouseEnter={() => setSelectedMenuChild3(menuChild2)}
                               >
                                 <p>{menuChild2.title}</p>
+                                {selectedMenuChild3 === menuChild2 && (
+                                  <div
+                                    className='absolute bottom-0 w-full h-[1px]'
+                                    style={{ borderBottom: '1px solid #FC5E03' }}
+                                  ></div>
+                                )}
                                 {selectedMenuChild3 === menuChild2 && <IconLineDirection scale={0} color='#FC5E03' />}
                               </motion.div>
                             ) : (
                               <div className='w-full flex flex-col justify-start items-start'>
                                 <SecureMenuIcon />
-                                <p className='text-2xl'>
+                                <p className='text-2xl text-[#a6a6a6]'>
                                   Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7
                                   chuyên nghiệp
                                 </p>
@@ -90,21 +98,27 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                       })}
                     </div>
                     {selectedMenuChild3 ? (
-                      <div className='w-full flex flex-col justify-start items-start gap-8 px-8'>
+                      <div className='w-full flex flex-col justify-start items-start gap-8 px-8 pt-4 pb-6'>
                         <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
-                        <div className='w-full flex justify-start items-start gap-10'>
+                        <div className='w-full flex justify-start items-start gap-6'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
-                            <div key={idx} className='max-w-[260px] flex flex-col justify-start items-start gap-2'>
+                            <div key={idx} className='w-[277px] flex flex-col justify-start items-start gap-5'>
                               {menuChild3.title !== '' && (
-                                <div style={{ borderBottom: '1px solid #B7B4AE' }} className='text-slate-400 pb-4'>
+                                <div
+                                  style={{ borderBottom: '1px solid #E8E8E8' }}
+                                  className='w-full text-[#a6a6a6] pb-4'
+                                >
                                   {menuChild3.title}
                                 </div>
                               )}
                               {menuChild3.menuChild &&
                                 menuChild3.menuChild.map((menuChild4, idx) => (
                                   <NavigationMenuLink
+                                    className={`text-[14px] ${
+                                      '/' + pathname.split('/')[2] === menuChild4.path ? 'text-[#FC5E03]' : ''
+                                    }`}
                                     style={{
-                                      borderTop: `${menuChild3.title === '' && idx === 0 ? '1px solid #B7B4AE' : ''}`,
+                                      borderTop: `${menuChild3.title === '' && idx === 0 ? '1px solid #E8E8E8' : ''}`,
                                     }}
                                     key={idx}
                                     href={`${menuChild3.path}${menuChild4.path}`}

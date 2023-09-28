@@ -25,11 +25,11 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
       animate={sectionControls}
       initial='hidden'
       transition={{ duration: 0.7, delay: idx * 0.7 }}
-      style={{ borderBottom: '1px solid #555' }}
+      style={{ borderBottom: '1px solid #5A5A5A' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='flex justify-start items-start gap-4 md:gap-8'>
+      <div className='flex justify-start items-start gap-4 md:gap-8 text-[#29130F]'>
         <div className='mb-3 text-xl md:text-2xl font-medium'>0{idx + 1}</div>
         <h1 className='text-md md:text-xl lg:text-2xl xl:text-2xl font-medium'>{item.title}</h1>
       </div>

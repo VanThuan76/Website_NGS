@@ -24,7 +24,7 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='text-center w-full flex flex-col justify-start items-start md:justify-center md:items-center gap-2'
+          className='w-full grid-cols-7 col-span-7 text-center'
         />
         <div className='relative w-full -mt-12 flex-shrink-0 snap-start'>
           <PreImage

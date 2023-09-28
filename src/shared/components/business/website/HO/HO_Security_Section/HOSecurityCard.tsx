@@ -7,12 +7,13 @@ interface Props {
   image: string;
   sectionControls: AnimationControls;
   idx: number;
+  className?: string;
 }
-const HOSecurityCard = ({ title, description, image, sectionControls, idx }: Props) => {
+const HOSecurityCard = ({ title, description, image, sectionControls, idx, className }: Props) => {
   const [isHovered, setIsHovered] = useState<number | undefined>();
   return (
     <motion.div
-      className='border-card-security-home relative max-w-[300px] h-full p-3 flex flex-col justify-start items-center dark:bg-[#222442] rounded-lg shadow-md overflow-hidden col-span-1 cursor-pointer'
+      className={`border-card-security-home relative max-w-[304px] h-[202px] p-2 flex flex-col justify-center items-center bg-white dark:bg-[#222442] rounded-lg shadow-sm overflow-hidden col-span-1 cursor-pointer ${className}`}
       variants={{
         hidden: { opacity: 0, translateX: -50, translateY: -50 },
         visible: { opacity: 1, translateX: 0, translateY: 0 },
@@ -23,12 +24,15 @@ const HOSecurityCard = ({ title, description, image, sectionControls, idx }: Pro
       onMouseEnter={() => setIsHovered(idx)}
       onMouseLeave={() => setIsHovered(undefined)}
     >
-      <PreImage src={image as string} width={72} height={72} alt={title} />
-      <p className='text-center font-semibold'>{title}</p>
+      <div className='flex flex-col justify-center items-center gap-3'>
+        <PreImage src={image as string} width={72} height={72} alt={title} />
+        <p className='text-center font-semibold'>{title}</p>
+      </div>
       <motion.p
-        className='hidden mt-2'
+        className='max-w-[304px] p-2 absolute top-0 bg-[#e5e5e5] z-30'
+        style={{ overflowY: 'hidden' }}
         initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: isHovered === idx ? 1 : 0, height: isHovered === idx ? 'auto' : 0 }}
+        animate={{ opacity: isHovered === idx ? 1 : 0, height: isHovered === idx ? '202px' : 0 }}
         transition={{
           duration: 0.5,
           ease: 'easeInOut',

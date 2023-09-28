@@ -35,13 +35,13 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
+        className='flex flex-col lg:flex-row justify-start items-start gap-8'
       />
-      <div className='max-w-[1440px] mx-auto grid grid-cols-2 lg:grid-cols-4 bg-transparent overflow-hidden gap-2'>
+      <div className='max-w-[1440px] mt-20 mx-auto grid grid-cols-2 lg:grid-cols-4 bg-transparent overflow-hidden gap-2'>
         {data &&
           data.components.map((item, idx) => (
             <motion.div 
-              className="max-w-[310px] min-h-[300px] lg:min-h-[400px] border-card-solution-home" 
+              className="max-w-[310px] min-h-[300px] lg:min-h-[345px] border-card-solution-home pr-2" 
               key={idx}
               variants={{
                 hidden: {opacity:0, translateX: -50},
@@ -51,9 +51,9 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
               animate={sectionControls}
               transition={{duration: 0.7, delay: idx * 0.7}}
             >
-              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[400px] rounded-lg overflow-hidden'>
+              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[345px] rounded-lg overflow-hidden'>
                 <motion.div
-                 className='absolute top-0 left-0 w-full h-full'
+                 className='absolute top-0 left-0 w-full min-h-[300px] lg:min-h-[345px]'
                  variants={animationVariants}
                  initial='hidden'
                  animate='visible'

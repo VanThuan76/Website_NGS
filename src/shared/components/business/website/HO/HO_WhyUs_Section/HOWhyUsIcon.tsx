@@ -21,7 +21,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       },
     },
     inactive: {
-      color: "#27293F",
+      color: "#D3D1D0",
       opacity: 0.8,
     },
   };
@@ -36,7 +36,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       },
     },
     inactive: {
-      color: "#27293F",
+      color: "#D3D1D0",
       opacity: 0.8,
     },
   };
@@ -62,7 +62,7 @@ const HomeWhyUsIcon = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       >
         <motion.div
           animate={{
-            color: selectedIcon?.code === "PG001SE00007CN000002" ? "#2D77B4" : "#27293F",
+            color: selectedIcon?.code === "PG001SE00007CN000002" ? "#2D77B4" : "#D3D1D0",
           }}
           onClick={() => setSelectedIcon(data[1])}
         >

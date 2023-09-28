@@ -387,7 +387,7 @@ export const ESOrganizationalSystemData = {
 export const ESClientData = {
     section: {
         id: 1,
-        name: 'Những đơn vị đã hài lòng với Sản phẩm - Dịch vụ NGS',
+        name: 'Những đơn vị đã hài lòng với //Sản phẩm - Dịch vụ NGS',
         code: "ES12312",
         image: "",
         description: ""
@@ -686,7 +686,7 @@ export const ESClientData = {
 export const ESNewsAndEventData = {
     section: {
         id: 10,
-        name: 'Gặp gỡ các chuyên gia từ NGS và khám phá //cách chuyển đổi doanh nghiệp của bạn',
+        name: 'Gặp gỡ các chuyên gia từ NGS và khám phá cách chuyển đổi doanh nghiệp của bạn',
         code: "PG001SE00010",
         image: "",
         description: ""

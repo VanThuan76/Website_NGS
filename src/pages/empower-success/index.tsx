@@ -88,35 +88,35 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async ctx => {
-  const { query } = ctx;
-  const { lang } = query;
-  const initLang = lang === undefined ? 'vi' : lang;
-  const fetchNewsContent = await renderNewsContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
-  const fetchPartnerContent = await renderPartnerContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
-  if (fetchNewsContent) {
-    const { COMMON_NewsData } = fetchNewsContent.props;
-    return {
-      props: {
-        COMMON_NewsData: COMMON_NewsData.data || [],
-      },
-    };
-  }
-  if (fetchPartnerContent) {
-    const { COMMON_SectionPartnerData } = fetchPartnerContent.props;
-    return {
-      props: {
-        COMMON_NewsData: COMMON_SectionPartnerData.data || [],
-      },
-    };
-  }
-  return {
-    props: {
-      COMMON_NewsData: [],
-      COMMON_SectionPartnerData: [],
-    },
-  };
-};
+// export const getServerSideProps: GetServerSideProps = async ctx => {
+//   const { query } = ctx;
+//   const { lang } = query;
+//   const initLang = lang === undefined ? 'vi' : lang;
+//   const fetchNewsContent = await renderNewsContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
+//   const fetchPartnerContent = await renderPartnerContent(initLang as string, ctx.req.cookies[APP_SAVE_KEY.TOKEN_KEY]);
+//   if (fetchNewsContent) {
+//     const { COMMON_NewsData } = fetchNewsContent.props;
+//     return {
+//       props: {
+//         COMMON_NewsData: COMMON_NewsData.data || [],
+//       },
+//     };
+//   }
+//   if (fetchPartnerContent) {
+//     const { COMMON_SectionPartnerData } = fetchPartnerContent.props;
+//     return {
+//       props: {
+//         COMMON_NewsData: COMMON_SectionPartnerData.data || [],
+//       },
+//     };
+//   }
+//   return {
+//     props: {
+//       COMMON_NewsData: [],
+//       COMMON_SectionPartnerData: [],
+//     },
+//   };
+// };
 
 EmpowerSuccessPage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
 export default EmpowerSuccessPage;

@@ -1,26 +1,28 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import React, { useState } from 'react';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import { PreImage } from '@/components/common/customization/PreImage';
 import PartnerResponsive from './PartnerResponsive';
-
 type Props = {
-  title: string
-  data: Partial<IBaseSectionComponent>
-  className?: string
-}
+  title: string;
+  data: Partial<IBaseSectionComponent>;
+  className?: string;
+};
 
-const PartnerSection = ({title, data, className}: Props) => {
+const PartnerSection = ({ title, data, className }: Props) => {
+
   const { theme } = useTheme();
-  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents>|undefined >(()=> {
-    if(data.components && data.components.length > 0 ) return data.components[0]
-    else return undefined
+  const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents> | undefined>(() => {
+    if (data.components && data.components.length > 0) return data.components[0];
+    else return undefined;
   });
-  if(!data || !data.components || !data.section) return <React.Fragment></React.Fragment>
+  if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const colorBorder = theme === 'dark' ? '#555' : '#fff';
   return (
     <section
@@ -29,10 +31,22 @@ const PartnerSection = ({title, data, className}: Props) => {
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>{title}</h1>
-        <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
-          <Swiper className='w-full'>
+        <div className='w-full mt-20 hidden md:flex items-start justify-between gap-5'>
+          <Swiper
+            className='mySwiper'
+            modules={[Autoplay, Pagination, Navigation]}
+            slidesPerView={6}
+            spaceBetween={50}
+            centeredSlides={true}
+            navigation={false}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            loop
+          >
             {data.components.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px] p-8' key={idx}>
+              <SwiperSlide className='max-w-[250px]' key={idx}>
                 <PreImage
                   src={item.image as string}
                   height={100}

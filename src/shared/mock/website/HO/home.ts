@@ -73,7 +73,7 @@ export const Home_1 = {
 export const Home_2 = {
     section: {
         id: 2,
-        name: 'HIỆN ĐẠI HÓA HỆ THỐNG VẬN HÀNH// CHO DOANH NGHIỆP VỪA VÀ NHỎ //TRÊN CÙNG MỘT NỀN TẢNG.',
+        name: 'Hiện đại hoá hệ thống vận hành // cho doanh nghiệp vừa và nhỏ // trên cùng một nền tảng',
         code: "PG001SE00002",
         image: "",
         description: "NGS tiên phong xây dựng Hệ sinh thái phần mềm toàn diện hỗ trợ cho doanh nghiệp vừa và nhỏ quản trị một cách linh hoạt và thuận tiện, đồng thời hệ thống báo cáo chính xác sẽ hỗ trợ hữu ích cho việc ra quyết định kinh doanh. NGS tin rằng những tri thức, tài liệu, biểu mẫu, ... chuẩn quốc tế đi kèm sẽ giúp ích rất nhiều cho khách hàng trong khi sử dụng."
@@ -83,7 +83,7 @@ export const Home_2 = {
             id: 1,
             language: 'vi',
             code: "PG001SE00002CN000001",
-            title: "Giải pháp// Quản lý doanh nghiệp",
+            title: "Giải pháp Quản lý doanh nghiệp",
             description: "Sức mạnh của một tổ chức và tiềm năng tạo ra doanh thu phụ thuộc nhiều vào chất lượng quản lý doanh nghiệp",
             slug: "/your-next-gen/ERP",
             content: "",
@@ -95,7 +95,7 @@ export const Home_2 = {
             id: 2,
             language: 'vi',
             code: "PG001SE00002CN000002",
-            title: "Giải pháp// Bán hàng",
+            title: "Giải pháp Bán hàng",
             description: "Kiểm soát hoạt động bán hàng, tối đa doanh thu và lợi nhuận, cung cấp sự hài lòng cao nhất đến khách hàng",
             slug: "/your-next-gen/Sale",
             content: "",
@@ -107,7 +107,7 @@ export const Home_2 = {
             id: 3,
             language: 'vi',
             code: "PG001SE00002CN000003",
-            title: "Giải pháp// Quản lý nhân sự",
+            title: "Giải pháp Quản lý nhân sự",
             description: "Tối ưu hoá quản lý nhân sự, giảm thiểu thời gian và tăng hiệu quả công việc",
             slug: "/your-next-gen/HRM",
             content: "",
@@ -119,7 +119,7 @@ export const Home_2 = {
             id: 4,
             language: 'vi',
             code: "PG001SE00002CN000004",
-            title: "Giải pháp// Kết nối",
+            title: "Giải pháp Kết nối",
             description: "Tích hợp tạo lập cuộc sống dễ dàng chỉ với một cú nhấp chuột",
             slug: "/your-next-gen/Connect",
             content: "",
@@ -133,7 +133,7 @@ export const Home_2 = {
 export const Home_3 = {
     section: {
         id: 3,
-        name: 'CẬP NHẬT PHIÊN BẢN 5.0 CHO TỔ CHỨC CỦA BẠN BẰNG DỊCH VỤ CÔNG NGHỆ THÔNG TIN TỔNG THỂ',
+        name: 'Cập nhật phiên bản 5.0 cho tổ chứ của bạn bằng dịch vụ công nghệ thông tin tổng thể',
         code: "PG001SE00003",
         image: "/images/PG001SE00003CN000001.png",
         description: "NGS cam kết đồng hành cùng quá trình đó với mọi tổ chức bằng đội ngũ chuyên gia tư vấn hàng đầu, thiết kế, triển khai, và vận hành giải pháp chuyên nghiệp. Bên cạnh đó chúng tôi mang đến sự hiểu biết sâu sắc về đặc thù của ngành để hỗ trợ tốt nhất cho khách hàng."
@@ -205,7 +205,7 @@ export const Home_3 = {
 export const Home_4 = {
     section: {
         id: 4,
-        name: 'BẢO VỆ TOÀN VẸN HỆ THỐNG //CÔNG NGHỆ THÔNG TIN CỦA BẠN //BẰNG DỊCH VỤ AN NINH MẠNG 24/7 //CHUYÊN NGHIỆP',
+        name: 'Bảo vệ toàn vẹn hệ thống // công nghệ thông tin của bạn bằng dịch vụ an ninh mạng 24/7 chuyên nghiệp',
         code: "PG001SE00004",
         image: "",
         description: "Các rủi ro về an ninh mạng có thể gây ra hậu quả nghiêm trọng đến bí mật kinh doanh, vận hành hay trách nhiệm pháp lý của tổ chức. Việc khắc phục các sự số an ninh mạng đòi hỏi lực lượng chuyên gia bảo mật cao cấp và quy trình chuyên nghiệp. Chúng tôi sẵn sàng đồng hành và bảo vệ hệ thống chuyển đổi số của khách hàng với dịch vụ An ninh mạng toàn diện và an toàn."

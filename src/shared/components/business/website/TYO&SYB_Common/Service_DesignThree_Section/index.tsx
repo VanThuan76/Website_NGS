@@ -35,7 +35,7 @@ const ServiceDesignThreeSection = ({ title,sub, data, className, sectionCodeLink
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-end items-end gap-3 text-right'
+            className='w-full grid-cols-7 col-span-7 justify-end items-end text-right'
           />
           <div className='mt-10 flex flex-col justify-end items-end gap-3'>
             <p className='text-right'>{sub ? sub : ""}</p>
