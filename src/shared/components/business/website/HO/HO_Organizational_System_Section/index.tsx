@@ -1,7 +1,4 @@
-import 'swiper/css';
-import 'swiper/css/pagination';
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 type Props = {
@@ -17,22 +14,22 @@ const HOOrganizationalSystemSection = ({ data, className }: Props) => {
     >
       <div className='w-full min-h-[200px] flex flex-col justify-center items-center lg:mt-20'>
         <div className='w-full flex flex-col items-center justify-center'>
-          <h2 className='hidden lg:block text-xl xl:text-2xl'>{data.section.name}</h2>
-          <Swiper className='w-full'>
+          <h2 className='hidden lg:block text-sm md:text-2xl !text-[#FC5E03]'>{data.section.name}</h2>
+          <div className='mt-6 w-full flex justify-between items-center gap-6'>
             {data.components.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px] max-h-[120px] p-8' key={idx}>
+              <div className='max-w-[250px] max-h-[120px]' key={idx}>
                 <PreImage
                   key={idx}
                   src={item.image}
-                  height={100}
-                  width={250}
+                  height={55}
+                  width={132}
                   layer={false}
                   alt={item.title}
                   className='w-full h-full object-contain object-top'
                 />
-              </SwiperSlide>
+              </div>
             ))}
-          </Swiper>
+          </div>
         </div>
       </div>
     </section>

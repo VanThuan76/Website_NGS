@@ -17,7 +17,7 @@ import { useAppSelector } from "@/hooks/useRedux";
 import useRouterChange from "@/hooks/useRouterChange";
 import { JellyTriangle } from "@uiball/loaders";
 
-const interText = Bai_Jamjuree({ subsets: ["vietnamese"], display: 'swap', weight: ["200", "300", "400", "500", "600", "700"] })
+const interText = Bai_Jamjuree({ subsets: ["vietnamese"], style:"normal", display: 'swap', weight: ["200", "300", "400", "500", "600", "700"] })
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => React.ReactNode;

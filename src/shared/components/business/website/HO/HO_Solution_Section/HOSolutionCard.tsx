@@ -15,7 +15,7 @@ interface Props {
 }
 
 const HOSolutionCard = ({ id, title, description, image, url, className }: Props) => {
-  const [isHovered, setIsHovered] = useState(id === 1 ? true : false);
+  const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const animateTheme =
@@ -40,8 +40,8 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   return (
     <motion.div
       className={`flex flex-col justify-start items-start p-2 px-[10px] cursor-pointer overflow-hidden border-collapse ${className}`}
-      onHoverStart={() => id !== 1 && setIsHovered(true)}
-      onHoverEnd={() => id !== 1 && setIsHovered(false)}
+      onHoverStart={() => setIsHovered(true)}
+      onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
       transition={{
         duration: 0.5,
@@ -50,7 +50,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
     >
       <PreImage src={image} width={56} height={56} alt={title} className='mb-4 md:mb-6 rounded-lg' />
       <motion.div
-        className={`w-full h-[80%] lg:h-full flex flex-col gap-2`}
+        className={`w-full h-[80%] lg:h-full flex flex-col justify-start items-start gap-4`}
         initial='start'
         animate={isHovered ? 'end' : 'start'}
         variants={containerVariants}
@@ -59,15 +59,14 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
           ease: 'easeInOut',
         }}
       >
-        <div className='col-span-2 w-full flex flex-col justify-start items-start'>
+        <div className='w-full h-[120px] flex flex-col justify-start items-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
-            <h1 key={idx} className='text-2xl md:text-4xl font-medium leading-10'>
+            <h1 key={idx} className='text-[32px] font-medium leading-10'>
               {item}
             </h1>
           ))}
         </div>
         <p className='pb-6 text-sm md:text-base'>{description}</p>
-
       </motion.div>
       {isHovered && (
           <motion.div
@@ -80,7 +79,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
             }}
           >
             <UseLinkRouter url={url}>
-              <BtnCommon cls='border-orange-500 bg-white cursor-pointer' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+              <BtnCommon cls='h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]' title='Tìm hiểu thêm' colorSvg={colorIcon} />
             </UseLinkRouter>
           </motion.div>
         )}

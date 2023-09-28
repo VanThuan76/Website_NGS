@@ -19,8 +19,9 @@ import { useRouter } from 'next/router';
 
 type Props = {
   fakeMenu: IMenu[];
+  className?: string;
 };
-const NavigationMenuMain = ({ fakeMenu }: Props) => {
+const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
   const { pathname } = useRouter();
   const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(fakeMenu[0].menuChild[0]);
   const [trigger, setTrigger] = useState<number>(NaN);
@@ -33,7 +34,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
               <NavigationMenuItem>
                 <Link href={mainMenu.path as string} legacyBehavior passHref>
                   <NavigationMenuLink
-                    style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}` }}
+                    style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}`, backgroundColor: "transparent" }}
                     className={navigationMenuTriggerStyle()}
                   >
                     {mainMenu.title}
@@ -43,7 +44,7 @@ const NavigationMenuMain = ({ fakeMenu }: Props) => {
             ) : (
               <NavigationMenuItem className='cursor-pointer'>
                 <NavigationMenuTrigger
-                  style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}` }}
+                  style={{ color: `${'/' + pathname.split('/')[1] === mainMenu.path && '#FC5E03'}`, backgroundColor: "transparent" }}
                   onMouseMove={() => setSelectedMenuChild3(mainMenu.menuChild[0])}
                   className='NavigationMenuTrigger'
                 >

@@ -55,7 +55,7 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
               id='fullName'
               value={fullName}
               onChange={e => setFullName(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b rounded'
+              className='w-full bg-transparent px-3 py-2 border-b focus:outline-none'
               required
             />
           </div>
@@ -68,16 +68,16 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
               id='phoneNumber'
               value={phoneNumber}
               onChange={e => setPhoneNumber(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b rounded'
+              className='w-full bg-transparent px-3 py-2 border-b focus:outline-none'
               required
             />
           </div>
 
           <button
             type='submit'
-            className={`bg-[#fff] text-orange-500 relative flex justify-between items-center gap-3 text-left py-4 px-4 cursor-pointer mt-3 hover:bg-[#c1c0c0] hover:ease-in-out hover:transition rounded-full`}
+            className={`bg-[#fff] text-orange-500 relative flex justify-between items-center gap-3 text-left pl-[16px] pr-[12px] py-[18px] cursor-pointer mt-3 hover:bg-[#efeeee] hover:ease-in-out hover:transition rounded-[12px]`}
           >
-            <p className='text-sm'>Đăng ký</p>
+            <p className='text-sm'>Kết nối với NGS</p>
             <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
           </button>
         </form>

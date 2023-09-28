@@ -36,11 +36,11 @@ const PartnerSection = ({title, data, className}: Props) => {
                 <PreImage
                   src={item.image as string}
                   height={100}
-                  width={100}
+                  width={150}
                   layer={false}
                   alt={item.title}
-                  className={`relative rounded-lg cursor-pointer object-contain ${
-                    item === selectedPartner ? 'opacity-100' : ' opacity-30'
+                  className={`relative w-full h-full rounded-lg cursor-pointer object-contain ${
+                    item === selectedPartner ? 'opacity-100' : ' opacity-80'
                   }`}
                   onClick={() => setSelectedPartner(item)}
                 />
@@ -58,7 +58,7 @@ const PartnerSection = ({title, data, className}: Props) => {
                 >
                   <div className='w-full flex flex-col justify-start items-start gap-3'>
                     <p className='font-medium text-2xl'>{item.title}</p>
-                    <p className='font-thin text-sm'>{item.description}</p>
+                    <p className='text-sm'>{item.description}</p>
                   </div>
                   <p className='w-full lg:w-1/2'>{item.content}</p>
                 </div>

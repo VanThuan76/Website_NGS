@@ -41,7 +41,7 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
         {data &&
           data.components.map((item, idx) => (
             <motion.div 
-              className="max-w-[310px] min-h-[300px] lg:min-h-[350px] border-card-solution-home" 
+              className="max-w-[310px] min-h-[300px] lg:min-h-[400px] border-card-solution-home" 
               key={idx}
               variants={{
                 hidden: {opacity:0, translateX: -50},
@@ -51,7 +51,7 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
               animate={sectionControls}
               transition={{duration: 0.7, delay: idx * 0.7}}
             >
-              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[380px] rounded-lg overflow-hidden'>
+              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[400px] rounded-lg overflow-hidden'>
                 <motion.div
                  className='absolute top-0 left-0 w-full h-full'
                  variants={animationVariants}

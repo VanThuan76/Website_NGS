@@ -50,7 +50,6 @@ p {
 .NavigationMenuList {
   display: flex;
   justify-content: center;
-  background-color: white;
   padding: 4px;
   border-radius: 6px;
   list-style: none;
@@ -138,7 +137,6 @@ p {
   position: relative;
   transform-origin: bottom center;
   width: 100%;
-  background-color: white;
   border-radius: 6px;
   overflow: hidden;
   box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px, hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
@@ -262,7 +260,6 @@ p {
 .Arrow {
   position: relative;
   top: 80%;
-  background-color: white;
   width: 10px;
   height: 10px;
   transform: rotate(45deg);

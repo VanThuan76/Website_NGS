@@ -12,7 +12,7 @@ const ConnectUsSection = () => {
         <div className='w-full lg:w-[50%] flex flex-col justify-between items-start gap-5 text-white'>
           <h1 className='text-3xl lg:text-4xl'>Kết nối với NGS</h1>
           <p className='text-lg lg:text-xl'>
-            Hãy cho chúng tôi biết về nhu cầu của bạn, chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm nhất!
+            Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên
           </p>
           {theme === 'dark' ? (
             <IconConnectUsDark className='hidden lg:block' />

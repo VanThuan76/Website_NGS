@@ -55,7 +55,14 @@ const Header = () => {
           />
         </div>
         <div className='relative hidden lg:block z-10 text-[#1C1C1C]'>
-          <NavigationMenuMain fakeMenu={fakeMenu} />
+          <NavigationMenuMain
+            className={`w-full top-0 z-50 gap-5 transition ${
+              isScrolled
+                ? 'sticky light:text-black border-opacity-50 border-black-300 duration-500 ease-in-out bg-[#fff] dark:bg-[#141523]'
+                : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
+            }`}
+            fakeMenu={fakeMenu}
+          />
         </div>
       </div>
       <div className='absolute right-5 flex justify-center items-center gap-2 z-20'>
@@ -87,10 +94,10 @@ const Header = () => {
           </ul>
         </div>
         <div className='flex gap-8 items-center'>
-          <div className='hidden lg:flex gap-8 items-center'>
+          {/* <div className='hidden lg:flex gap-8 items-center'>
             <ThemeModeToggle />
             <LanguageSwitch />
-          </div>
+          </div> */}
           <div className='lg:hidden xl:hidden'>
             <Sheet>
               <SheetTrigger asChild>

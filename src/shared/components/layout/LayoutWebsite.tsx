@@ -7,7 +7,7 @@ const LayoutWebsite = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main className='max-w-[1440px] min-h-screen dark:bg-[#141523]'>{children}</main>
+      <main className='min-h-screen dark:bg-[#141523]'>{children}</main>
       <Footer />
     </>
   );

@@ -99,12 +99,12 @@ export function HomePage({
       <ScrollRevealWrapper>
         <HOOrganizationalSystemSection data={Home_8} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      {/* <ScrollRevealWrapper>
         <HomeEventSection title='SỰ KIỆN' data={Home_9} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
-      </ScrollRevealWrapper>
+      </ScrollRevealWrapper> */}
       <ScrollRevealWrapper>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>

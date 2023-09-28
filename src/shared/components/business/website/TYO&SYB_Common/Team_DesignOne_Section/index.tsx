@@ -11,6 +11,7 @@ import BackgroundLight from '@/components/icon/HO/solution/BackgroundLight';
 import TeamDesignOneItem from './Team_DesignOne_Item';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import BackgroundTeam from '@/components/icon/ES/BackgroundTeam';
 
 type Props = {
   title: string;
@@ -34,34 +35,29 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
         />
         <Swiper className='w-full'>
           {data.components.map((item, idx) => (
-            <SwiperSlide className='max-w-[310px] p-2' key={idx}>
-              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[350px] rounded-lg overflow-hidden'>
-                <motion.div
-                  className='absolute top-0 left-0 w-full h-full'
-                  initial={{ display: 'hidden' }}
-                  animate={{ display: hoveredItem === item ? 'block' : 'hidden' }}
-                  transition={{ duration: 0.5, ease: 'easeInOut' }}
-                >
-                  {theme === 'dark' ? <BackgroundDark /> : <BackgroundLight />}
-                </motion.div>
+            <SwiperSlide className='max-w-[292px] p-2' key={idx}>
+              <div
+                className='relative max-w-[292px] min-h-[300px] lg:min-h-[365px] rounded-lg overflow-hidden'
+                onMouseEnter={() => setHoveredItem(item)}
+                onMouseLeave={() => setHoveredItem(undefined)}
+              >
                 {hoveredItem === item ? (
-                  <TeamDesignOneItem content={item.content || ''} className='absolute top-0 left-0 w-full' />
+                  <TeamDesignOneItem content={item.content || ''} className='absolute top-0 left-0 w-full bg-black text-white transition ease-in-out duration-100 opacity-90' />
                 ) : (
-                  <React.Fragment>
+                  <div className='relative w-full h-full'>
                     <PreImage
                       src={item.image}
                       width={1980}
                       height={350}
                       alt={title}
                       className='w-full h-full rounded-lg object-cover'
-                      onMouseEnter={() => setHoveredItem(item)}
-                      onMouseLeave={() => setHoveredItem(undefined)}
                     />
-                    <div className='absolute left-5 bottom-5 flex flex-col justify-start items-start text-white gap-2'>
+                    <div className='absolute left-5 bottom-5 flex flex-col justify-start items-start text-white gap-2 z-20'>
                       <p>{item.title}</p>
                       <p>{item.description}</p>
                     </div>
-                  </React.Fragment>
+                    <BackgroundTeam className='absolute -bottom-5 w-full h-full z-10' />
+                  </div>
                 )}
               </div>
             </SwiperSlide>
