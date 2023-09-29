@@ -7,10 +7,11 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 import YNGHomeBannerContent from './YNGHomeBannerContent';
 
 interface Props {
+  title: string
   data: Partial<IBaseSectionComponent>;
-  className?: string
+  className?: string;
 }
-const YNGHomeBannerSection = ({ data, className }: Props) => {
+const YNGHomeBannerSection = ({ title, data, className }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
@@ -32,13 +33,13 @@ const YNGHomeBannerSection = ({ data, className }: Props) => {
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const nextIndex = data.components!.indexOf(prevTab as any) + 1;
       return nextIndex < data.components!.length ? data.components![nextIndex] : data.components![0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const prevIndex = data.components!.indexOf(prevTab as any) - 1;
       return prevIndex >= 0 ? data.components![prevIndex] : data.components![data.components!.length - 1];
     });
@@ -59,10 +60,10 @@ const YNGHomeBannerSection = ({ data, className }: Props) => {
   }, []);
 
   return (
-    <section id={data && data.section && data.section.code} className={`block py-8 ${className}`}>
-      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[700px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
+    <section id={data && data.section && data.section.code} className={`block pb-10 ${className}`}>
+      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[600px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
         <div className='w-full h-full col-span-1 bg-[#FEF6EB]'>
-          <YNGHomeBannerContent selectedTab={selectedTab!} />
+          <YNGHomeBannerContent title={title} selectedTab={selectedTab!} />
         </div>
         <div className='w-full col-span-1'>
           <AnimatePresence mode='wait'>
@@ -74,13 +75,12 @@ const YNGHomeBannerSection = ({ data, className }: Props) => {
               className='w-full flex-shrink-0 snap-start'
             >
               <PreImage
-                //@ts-ignore
-                src={selectedTab && selectedTab.image}
+                src='/images/BannerYNG.png'
                 height={700}
                 width={1980}
                 layer={true}
-                alt={'Banner'}
-                className='rounded-lg'
+                alt='BannerYNG'
+                className='w-full h-full object-cover rounded-lg'
               />
             </motion.div>
           </AnimatePresence>

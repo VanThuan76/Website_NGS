@@ -23,7 +23,7 @@ const YNGCommonCustomerSection = ({ title, data, className }: Props) => {
         name={data.section.name}
         description={data.section.description}
         findMore={true}
-        className='w-full flex flex-col justify-start items-start !gap-16 !mb-0'
+        className='w-full grid col-span-7 !gap-0 !text-left'
       />
       <div className='max-w-[1440px] w-full flex flex-col justify-between items-center'>
         <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-4 p-2'>

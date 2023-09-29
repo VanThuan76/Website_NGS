@@ -52,7 +52,7 @@ interface Props {
 
 const HOBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='absolute top-28 max-h-screen w-full flex flex-col justify-center items-start gap-5 pl-4 lg:pl-24 z-40 font-custom'>
+    <InitBasicAnimation className='absolute top-28 w-full flex flex-col justify-center items-start gap-5 pl-4 lg:pl-24 z-40 font-custom'>
       <div className='text-left text-sm lg:text-lg underline font-medium text-white'>
         <AnimatePresence mode='wait'>
           <motion.div

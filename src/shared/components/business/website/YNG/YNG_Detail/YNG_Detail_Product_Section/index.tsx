@@ -17,7 +17,7 @@ const YNGDetailProductSection = ({ data, className }: Props) => {
         {data.components.map((item, idx) => (
           <div
             key={idx}
-            className={`w-full grid grid-cols-2 justify-start items-start gap-5 px-8 py-10 lg:px-14 lg:py-24 ${idx % 2 !== 0 ? 'bg-[#F9F9F9]' : ''}`}
+            className={`w-full grid grid-cols-2 justify-start items-start gap-10 py-4 md:py-8 lg:py-10 xl:py-24 px-4 md:px-24 ${idx % 2 !== 0 ? 'bg-[#F9F9F9]' : ''}`}
           >
             <div className='cols-span-1 w-full max-h-[500px] flex flex-col justify-between items-start gap-10'>
               <div>

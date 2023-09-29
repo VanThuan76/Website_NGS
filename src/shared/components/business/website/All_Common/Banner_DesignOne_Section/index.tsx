@@ -14,7 +14,7 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`relative mb-10 w-full ${className}`}>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
+      <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <div className='relative w-full mx-auto flex justify-start items-start'>
           <div className='absolute top-1/2 left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[50%] flex flex-col justify-start items-start gap-6 z-30 text-white'>
             <div className='flex flex-col justify-start items-start gap-6'>
@@ -39,7 +39,7 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
               width={1980}
               layer={true}
               alt={data.section.name}
-              className='w-full h-full object-cover object-center'
+              className='w-full h-full object-cover'
             />
           </div>
         </div>

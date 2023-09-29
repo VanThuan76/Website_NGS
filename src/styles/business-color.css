@@ -418,3 +418,17 @@ p {
 .blur-image {
   filter: blur(2px);
 }
+.line-animation-banner {
+  --progress: 0;
+  --max-width: 100%;
+  position: absolute;
+  left: 16px;
+  bottom: 0;
+  z-index: 30;
+  width: var(--progress);
+  max-width: var(--max-width);
+  height: 1px;
+  background-color: #F5F5F5;
+  fill: none;
+  stroke-dasharray: 125.6;
+}

@@ -13,7 +13,7 @@ const YNGDetailWhyChooseSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`relativew-full mb-4 md:mb-12 lg:mb-24 px-8 py-10 lg:px-14 lg:py-24 ${className}  `}
+      className={`relative w-full pb-4 md:pb-8 lg:pb-10 xl:pb-24 px-4 md:px-24 ${className}  `}
     >
       <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
       <div className='mt-5 w-full grid grid-cols-2 justify-between items-start gap-10'>

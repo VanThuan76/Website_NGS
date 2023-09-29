@@ -45,9 +45,9 @@ const Header = () => {
       <div className='w-full flex justify-around items-center'>
         <div className='absolute left-5 flex justify-center items-center gap-2 z-20'>
           <PreImage
-            height={100}
-            width={100}
-            src='/logo.svg'
+            height={150}
+            width={250}
+            src='/logo.png'
             alt='Logo'
             layer={false}
             onClick={() => router.push('/')}

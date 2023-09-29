@@ -16,7 +16,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
 
   return (
     <section id={data.section.code} className={`relative mb-10 w-full${className}`}>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[700px] flex overflow-hidden light:text-white'>
+      <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <div className='absolute top-1/2 left-1/4 transform -translate-x-[30%] -translate-y-1/2 w-[60%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
             <div className='flex flex-col justify-start items-start gap-3'>
@@ -56,7 +56,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
               width={1980}
               layer={true}
               alt={data.section.name}
-              className='w-full h-full object-cover object-center'
+              className='w-full h-full object-cover'
             />
           </div>
         </div>

@@ -15,7 +15,7 @@ export const Home_1 = {
             description: "Chúng tôi là",
             slug: "it-consulting-&-service-provider-1",
             content: "NGS - ĐƠN VỊ CUNG CẤP DỊCH VỤ// TƯ VẤN CÔNG NGHỆ THÔNG TIN VÀ// CHUYỂN ĐỔI SỐ TOÀN DIỆN.",
-            image: "/images/HO_Banner.png",
+            image: "/images/background_1.png",
             video: "",
             thumbnail: ""
         },
@@ -27,7 +27,7 @@ export const Home_1 = {
             description: "Chúng tôi tự hào là",
             slug: "trust-partner-2",
             content: "ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ// LỚN NHẤT TRÊN THẾ GIỚI",
-            image: "/images/HO_Banner.png",
+            image: "/images/background_2.png",
             video: "",
             thumbnail: ""
         },
@@ -39,7 +39,7 @@ export const Home_1 = {
             description: "Chúng tôi cam kết",
             slug: "outstanding-customer-experience-3",
             content: "MANG ĐẾN CHO KHÁCH HÀNG// TRẢI NGHIỆM TỐT NHẤT// CÙNG NHỮNG SẢN PHẨM HOÀN THIỆN.",
-            image: "/images/HO_Banner.png",
+            image: "/images/background_3.png",
             video: "",
             thumbnail: ""
         },
@@ -51,7 +51,7 @@ export const Home_1 = {
             description: "Chúng tôi tin",
             slug: "digital-transformation-4",
             content: "CHUYỂN ĐỔI SỐ KHÔNG CHỈ LÀ CÔNG NGHỆ// MÀ LÀ CON NGƯỜI.",
-            image: "/images/HO_Banner.png",
+            image: "/images/background_4.png",
             video: "",
             thumbnail: ""
         },
@@ -63,7 +63,7 @@ export const Home_1 = {
             description: "Chúng tôi khao khát",
             slug: "empower-success-5",
             content: "ĐỒNG HÀNH TRONG HÀNH TRÌNH PHÁT TRIỂN// VÀ THÀNH CÔNG CỦA KHÁCH HÀNG.",
-            image: "/images/HO_Banner.png",
+            image: "/images/background_5.png",
             video: "",
             thumbnail: ""
         }

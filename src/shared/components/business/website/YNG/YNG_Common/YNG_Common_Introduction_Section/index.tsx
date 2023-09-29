@@ -33,7 +33,7 @@ const YNGCommonIntroductionSection = ({ data, className }: Props) => {
                 />
                 <p className='text-sm md:text-[32px] leading-[40px]'>{item.title}</p>
               </div>
-              <div className='flex flex-col justify-start items-start'>
+              <div className='flex flex-col gap-2 justify-start items-start'>
                 {splitTextToArrayByDot(item.content).map((item: string, idx: number) => (
                   <div key={idx} className='flex justify-start items-start gap-[18px]'>
                     <YNG_IconCheck />

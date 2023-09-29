@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
-  const isCollapseMenu = useAppSelector(state => state.appSlice.isCollapseMenu)
+  const isCollapseMenu = useAppSelector(state => state.appSlice.isCollapseMenu);
   return (
     <>
       <header className='w-full sticky top-0 z-40  border-b bg-background'>
@@ -42,7 +42,7 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
               </Sheet>
             </div>
             <Link href='/admin/pages' className='items-center space-x-2 flex'>
-              <PreImage src='/logo.svg' width={100} height={50} alt='Logo' />
+              <PreImage src='/logo.png' height={150} width={200} alt='Logo' />
               <span className='font-bold text-2xl sm:inline-block'>{process.env.NEXT_PUBLIC_APP_NAME}</span>
             </Link>
             {MENULAYOUT === 'horizontal' && <Horizontalbar menus={APP_MENU} />}
@@ -59,9 +59,12 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
       {MENULAYOUT === 'vertical' && (
         <div className='mt-0 flex gap-4 w-full shrink-0'>
           <aside
-            className={classNames('min-w-[200px] w-[200px]  lg:block md:block xl:block hidden flex-col bg-primary-foreground/5 py-4 px-2 sticky top-[65px] h-[calc(100vh_-_65px)] overflow-y-auto transition-[width] ease-linear', {
-              'min-w-[50px] w-[50px]': isCollapseMenu
-            })}
+            className={classNames(
+              'min-w-[200px] w-[200px]  lg:block md:block xl:block hidden flex-col bg-primary-foreground/5 py-4 px-2 sticky top-[65px] h-[calc(100vh_-_65px)] overflow-y-auto transition-[width] ease-linear',
+              {
+                'min-w-[50px] w-[50px]': isCollapseMenu,
+              },
+            )}
           >
             <SidebarNav menus={APP_MENU} />
           </aside>

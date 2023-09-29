@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
@@ -8,7 +8,7 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 
 interface Props {
   data: Partial<IBaseSectionComponent>;
-  className?: string
+  className?: string;
 }
 const YNGDetailBannerSection = ({ data, className }: Props) => {
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
@@ -17,8 +17,8 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
   });
   const contentAnimated = {
     active: {
-      borderColor: '#FF8A1E',
-      color: '#FF8A1E',
+      borderColor: '#FFFFFFB2',
+      color: '#FFFFFFB2',
       opacity: 1,
       transition: {
         duration: 0.3,
@@ -26,19 +26,19 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
       },
     },
     inactive: {
-      borderColor: '#C2C0BF',
-      color: '#C2C0BF',
-      opacity: 0.8,
+      borderColor: '#FFFFFFB2',
+      color: '#FFFFFFB2',
+      opacity: 0.7,
     },
   };
   const handleNext = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const nextIndex = data.components!.indexOf(prevTab as any) + 1;
       return nextIndex < data.components!.length ? data.components![nextIndex] : data.components![0];
     });
   };
   const handlePrev = () => {
-    setSelectedTab((prevTab) => {
+    setSelectedTab(prevTab => {
       const prevIndex = data.components!.indexOf(prevTab as any) - 1;
       return prevIndex >= 0 ? data.components![prevIndex] : data.components![data.components!.length - 1];
     });
@@ -59,33 +59,22 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
   }, []);
 
   return (
-    <section id={data && data.section && data.section.code} className={`block py-8 ${className}`}>
-      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[700px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
-        <div className='w-full h-full col-span-1 bg-[#FEF6EB]'>
+    <section id={data && data.section && data.section.code} className={`block pb-10 ${className}`}>
+      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[600px] overflow-hidden dark:text-white'>
+        <div className='w-full h-full bg-[#FC5E03]'>
           <YNGDetailBannerContent selectedTab={selectedTab!} />
         </div>
-        <div className='w-full col-span-1'>
-          <AnimatePresence mode='wait'>
-            <motion.div
-              key={selectedTab ? selectedTab.title : 'empty'}
-              initial={{ x: -10, opacity: 0.8 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
-              className='w-full flex-shrink-0 snap-start'
-            >
-              <PreImage
-                //@ts-ignore
-                src={selectedTab && selectedTab.image}
-                height={700}
-                width={1980}
-                layer={true}
-                alt={'Banner'}
-                className='rounded-lg'
-              />
-            </motion.div>
-          </AnimatePresence>
+        <div className='absolute -top-52 right-0 w-1/3 h-full'>
+          <PreImage
+            src='/images/BannerDetailYNG.png'
+            height={1145}
+            width={745}
+            layer={false}
+            alt="BannerDetailYNG"
+            className='w-full h-full object-cover rounded-lg'
+          />
         </div>
-        <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10 z-40'>
+        <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10'>
           <div className='flex items-center justify-between gap-5'>
             <ul className='md:flex items-center justify-between gap-5'>
               {data.components!.map((item, idx) => (
@@ -94,9 +83,7 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 ${
-                    item === selectedTab ? 'text-orange-500' : 'text-orange-500'
-                  } cursor-pointer font-medium`}
+                  className='px-5 pb-3 border-b-2 cursor-pointer font-medium'
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.title}`}

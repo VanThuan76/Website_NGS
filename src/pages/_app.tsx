@@ -44,7 +44,7 @@ const ConfigLayout = ({
   return <main className={interText.className}>
     {/* TODO change theme */}
     {isRouteLoading &&
-      <div className='bg-foreground/20 bg-opacity-70 absolute z-[9999] w-screen h-screen flex justify-center flex-col gap-2 items-center'>
+      <div className='bg-foreground/20 bg-opacity-70 absolute z-[9999] w-screen min-h-screen flex justify-center flex-col gap-2 items-center'>
         <JellyTriangle color='#016390' />
       </div>}
     <NextThemesProvider attribute="class" defaultTheme="light" enableSystem>

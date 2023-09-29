@@ -351,28 +351,26 @@ export const YNGDetailBanner1 = {
       language: 'vi',
       code: 'CPN12312',
       slug: '',
-      video: '/images/background_1.png',
+      video: '',
       thumbnail: '',
-      title: "Develop new solution",
-      description: "Chúng ta cùng nhau định hình tương lai kỹ thuật số",
+      title: "Dự án thành công",
+      description: "Giám sát và vận hành // an ninh mạng (SOC)",
       content:
-        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
-      image:
-        "mockSVG/YNG_YourNextGen_banner.svg",
+        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng",
+      image: ""
     },
     {
       id: 2,
       language: 'vi',
       code: 'CPN12312',
       slug: '',
-      video: '/images/background_1.png',
+      video: '',
       thumbnail: '',
-      title: "Develop new solution",
-      description: "Chúng ta cùng nhau định hình tương lai kỹ thuật số",
+      title: "Dự án thành công",
+      description: "Giám sát, vận hành an ninh mạng (SOC)",
       content:
-        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
-      image:
-        "mockSVG/YNG_YourNextGen_banner.svg",
+        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng",
+      image: ""
     },
   ],
 };
