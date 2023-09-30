@@ -111,7 +111,7 @@ export const YNG_Home_Solution_HRM = {
             image: '',
             video: '',
             thumbnail: '',
-            solutions: ["Sơ đồ tổ chức", "Quản trị hiệu suất"]
+            solutions: ["Sơ đồ tổ chức", "Đánh giá hiệu suất"]
         },
         {
             id: 2,
