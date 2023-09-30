@@ -1,3 +1,41 @@
+export const YNG_DWM_Banner = {
+  section: {
+    id: 1,
+    name: '',
+    code: 'PG002.4.5SE00001',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'PG002.4.5SE00001CN000001',
+      slug: '',
+      video: '',
+      thumbnail: '',
+      title: "Dự án thành công",
+      description: "Quản lý đại lý & bán sỉ",
+      content:
+        "Chỉ khi có phần mềm quản lý đại lý & bán sỉ hợp lý, công việc của cửa hàng mới có thể hoạt động một cách ổn định, mang đến hiệu quả cao.",
+      image: "/images/dealer-wholesale-management.jpg"
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'PG002.4.5SE00001CN000002',
+      slug: '',
+      video: '',
+      thumbnail: '',
+      title: "Dự án thành công",
+      description: "Quản lý đại lý & bán sỉ",
+      content:
+        "Chỉ khi có phần mềm quản lý đại lý & bán sỉ hợp lý, công việc của cửa hàng mới có thể hoạt động một cách ổn định, mang đến hiệu quả cao.",
+      image: "/images/dealer-wholesale-management.jpg"
+    },
+  ],
+};
+  
   export const YNG_DWM_Section2 = {
     section: {
       id: 1,
@@ -536,7 +574,43 @@
     ]
   }
 
-
+  export const YNG_STM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.6SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.6SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý đội nhóm kinh doanh",
+        content:
+          "Bạn có thể tạo nhiều nhóm nhân viên có trách nhiệm hiệu quả để giám sát các chương trình bán hàng của mình và từ đó cải thiện doanh số bán hàng.",
+        image: "/images/sales-team-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.6SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý đội nhóm kinh doanh",
+        content:
+          "Bạn có thể tạo nhiều nhóm nhân viên có trách nhiệm hiệu quả để giám sát các chương trình bán hàng của mình và từ đó cải thiện doanh số bán hàng.",
+        image: "/images/sales-team-management.jpg"
+      },
+    ],
+  };
 
   export const YNG_STM_Section2 = {
     section: {
@@ -1076,6 +1150,43 @@
     ]
   }
 
+  export const YNG_CCRM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.5.1SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.5.1SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "CRM - Quản lý quan hệ khách hàng",
+        content:
+          "Tích hợp tất cả các nghiệp vụ bán hàng trên một nền tảng.// Cải thiện năng suất làm việc và tối ưu chuyển đổi cơ hội bán hàng thành đơn hàng.",
+        image: "/images/crm-customer-relationship-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.5.1SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "CRM - Quản lý quan hệ khách hàng",
+        content:
+          "Tích hợp tất cả các nghiệp vụ bán hàng trên một nền tảng.// Cải thiện năng suất làm việc và tối ưu chuyển đổi cơ hội bán hàng thành đơn hàng.",
+        image: "/images/crm-customer-relationship-management.jpg"
+      },
+    ],
+  };
 
   export const YNG_CCRM_Section2 = {
     section: {
@@ -1629,6 +1740,44 @@
     ]
   }
 
+  export const YNG_HASC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.5.2SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.5.2SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Helpdesk - Chăm sóc sau bán",
+        content:
+          "Đẹp tuyệt vời & thân thiện với thiết bị di động.",
+        image: "/images/helpdesk-after-sale-care.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.5.2SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Helpdesk - Chăm sóc sau bán",
+        content:
+          "Đẹp tuyệt vời & thân thiện với thiết bị di động.",
+        image: "/images/helpdesk-after-sale-care.jpg"
+      },
+    ],
+  };
+
   export const YNG_HASC_Section2 = {
     section: {
       id: 1,
@@ -2180,6 +2329,44 @@
       },
     ]
   }
+
+  export const YNG_MW_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.5.3SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.5.3SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Bảo trì & Bảo hành",
+        content:
+          "Cho những nhà sản xuất tân tiến.",
+        image: "/images/maintenance-warranty.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.5.3SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Bảo trì & Bảo hành",
+        content:
+          "Cho những nhà sản xuất tân tiến.",
+        image: "/images/maintenance-warranty.jpg"
+      },
+    ],
+  };
 
   export const YNG_MW_Section2 = {
     section: {
@@ -2733,6 +2920,44 @@
     ]
   }
 
+  export const YNG_CS_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.5.4SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.5.4SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Khảo sát khách hàng",
+        content:
+          "Giúp bạn có được nhiều chi tiết hơn, cải thiện hiệu suất của tổ chức.",
+        image: "/images/customer-surveys.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.5.4SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Khảo sát khách hàng",
+        content:
+          "Giúp bạn có được nhiều chi tiết hơn, cải thiện hiệu suất của tổ chức.",
+        image: "/images/customer-surveys.jpg"
+      },
+    ],
+  };
+
   export const YNG_CS_Section2 = {
     section: {
       id: 1,
@@ -3285,6 +3510,43 @@
     ]
   }
 
+  export const YNG_Recruit_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.6.1SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.1SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tuyển dụng",
+        content:
+          "Từ tìm kiếm ứng viên đến ký kết hợp đồng, dễ dàng xử lý quy trình tuyển dụng.",
+        image: "/images/recruit.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.1SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tuyển dụng",
+        content:
+          "Từ tìm kiếm ứng viên đến ký kết hợp đồng, dễ dàng xử lý quy trình tuyển dụng.",
+        image: "/images/recruit.jpg"
+      },
+    ],
+  };
 
   export const YNG_Recruit_Section2 = {
     section: {
@@ -3838,6 +4100,44 @@
     ]
   }
 
+  export const YNG_EP_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.6.2SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.2SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Hồ sơ nhân viên",
+        content:
+          "Tất cả trong một: Tuyển dụng, Đánh giá, Chi phí, Nghỉ phép, Chuyên cần, ...",
+        image: "/images/employee_profiles.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.2SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Hồ sơ nhân viên",
+        content:
+          "Tất cả trong một: Tuyển dụng, Đánh giá, Chi phí, Nghỉ phép, Chuyên cần, ...",
+        image: "/images/employee_profiles.jpg"
+      },
+    ],
+  };
+
   export const YNG_EP_Section2 = {
     section: {
       id: 1,
@@ -4390,6 +4690,43 @@
     ]
   }
 
+  export const YNG_QLHD_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.6.3SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.3SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý hợp đồng",
+        content:
+          "Hỗ trợ quản lý hợp đồng trên các giao diện khác nhau",
+        image: "/images/qlhd.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.3SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý hợp đồng",
+        content:
+          "Hỗ trợ quản lý hợp đồng trên các giao diện khác nhau",
+        image: "/images/qlhd.jpg"
+      },
+    ],
+  };
 
   export const YNG_QLHD_Section2 = {
     section: {
@@ -4943,6 +5280,317 @@
     ]
   }
 
+  export const YNG_OC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.6.4SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.4SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Sơ đồ tổ chức",
+        content:
+          "Thể hiện cấu trúc phân chia nhân sự, mang lại cái nhìn tổng quan về cách tổ chức doanh nghiệp.",
+        image: "/images/organizational-chart.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.4SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Sơ đồ tổ chức",
+        content:
+          "Thể hiện cấu trúc phân chia nhân sự, mang lại cái nhìn tổng quan về cách tổ chức doanh nghiệp.",
+        image: "/images/organizational-chart.jpg"
+      },
+    ],
+  };
+
+  export const YNG_OC_Section2 = {
+    section: {
+      id: 1,
+      name: 'Trực quan cấu trúc bên trong doanh nghiệp và mối quan hệ giữa các cá nhân',
+      code: 'PG002.6.4SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.4SE00002CN000001',
+        title: 'Thể hiện cấu trúc trực quan, dễ theo dõi',
+        description:
+          'Cấu trúc doanh nghiệp được thể hiện dưới dạng biểu đồ tổ chức, là tiêu chuẩn chung và dễ hiểu với hầu hết nhân sự hiện nay.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.4SE00002CN000002',
+        title: 'Thể hiện được mối quan hệ giữa các nhân sự',
+        description:
+          'Cấu trúc theo tầng của biểu đồ tổ chức thể rõ phân tầng của doanh nghiệp, nhân sự truy cập vào sơ đồ tổ chức có thể dễ dàng xác định được các quan hệ trực tiếp với nhân sự như quản lý trực tiếp, các thành viên cùng đội/nhóm.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_OC_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.6.4SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.6.4SE00003CN000001',
+        title: 'Sơ đồ tổ chức',
+        description:
+          'Cho phép tìm kiếm trong sơ đồ ',
+        slug: '',
+        content:
+          'Trong trường hợp hệ thống lớn và phức tạp, nhân sự có thể tìm kiếm thông tin nhân viên trong sơ đồ theo Tên, Mã, username để dễ dàng tìm kiếm các thông tin liên quan của nhân sự.',
+        image: '/images/PG002.6.4SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.6.4SE00003CN000002',
+        title: 'Sơ đồ tổ chức',
+        description:
+          'Cho phép thu gọn - Mở rộng sơ đồ',
+        slug: '',
+        content:
+          'Người dùng có thể dễ dàng tùy chỉnh sơ đồ theo ý mình.',
+        image: '/images/PG002.6.4SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.6.4SE00003CN000003',
+        title: 'Sơ đồ tổ chức',
+        description:
+          'Liên kết với hồ sơ nhân sự',
+        slug: '',
+        content:
+          'Nhân sự có thể truy cập nhanh vào hồ sơ nhân viên và xem chi tiết các thông tin của nhân viên bằng liên kết tại ảnh đại diện của nhân viên đó.',
+        image: '/images/PG002.6.4SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_JC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.5SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.5SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quy trình gia nhập",
+        content:
+          "Đẹp tuyệt vời và thân thiện với thiết bị di động.",
+        image: "/images/joining-process.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.5SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quy trình gia nhập",
+        content:
+          "Đẹp tuyệt vời và thân thiện với thiết bị di động.",
+        image: "/images/joining-process.jpg"
+      },
+    ],
+  };
+
+  export const YNG_JC_Section2 = {
+    section: {
+      id: 1,
+      name: 'Chuẩn hóa quy trình, giảm thiểu chứng từ, trải nghiệm chuyên nghiệp',
+      code: 'PG002.3.5SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.5SE00002CN000001',
+        title: 'Chuẩn hóa quy trình',
+        description:
+          'Quy trình onboard được thiếp lập sẵn với danh sách nhiệm vụ và nhân sự phụ trách phù hợp, đảm bảo tình thống nhất trong việc triển khai.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.5SE00002CN000002',
+        title: 'Giảm thiểu các chứng từ phát sinh',
+        description:
+          'Quá trình thực hiện quy trình được thể hiển thông qua nội dung và trạng thái của hoạt động trên hệ thống thay vì các loại chứng từ truyền thống. Giảm thiểu việc in ấn và thời gian hoàn thành công việc.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.3.5SE00002CN000003',
+        title: 'Mang lại trải nghiệm chuyên nghiệp cho nhân sự mới ',
+        description:
+          'Quy trình rõ ràng và có hệ thống giúp nhân sự mới gia nhập hiểu rõ nhiệm vụ và các quyền lợi của bản thân, mang lại trải nghiệm tốt cho nhân sự.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_JC_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.5SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.5SE00003CN000001',
+        title: 'Quy trình gia nhập',
+        description:
+          'Cho phép tạo nhiều quy trình khác nhau',
+        slug: '',
+        content:
+          'Với doanh nghiệp mà đặc thù từng bộ phận khác biệt, hệ thống cho phép tạo ra nhiều quy trình gia nhập khác nhau phù hợp với từng bộ phận của doanh nghiệp.',
+        image: '/images/PG002.3.5SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.5SE00003CN000002',
+        title: 'Quy trình gia nhập',
+        description:
+          ' Tự động phân công các công việc liên quan cho nhân sự phù hợp',
+        slug: '',
+        content:
+          ' Khi một nhân sự mới gia nhập và thực hiện quá trình onboard, các nhiệm vụ sẽ được tự động phân công cho nhân sự phù hợp theo cài đặt của quy trình (VD: Nhân viên kỹ thuật, Quản lý của nhân sự với, Nhân viên hành chính nhân sự,...).',
+        image: '/images/PG002.3.5SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.3.5SE00003CN000003',
+        title: 'Quy trình gia nhập',
+        description:
+          'Nhắc nhở thời hạn công việc',
+        slug: '',
+        content:
+          'Khi quy trình gia nhập của nhân sự được bắt đầu, thời hạn của từng hoạt động cũng được ấn định. Hệ thống thực hiện nhắn nhở các nhân sự phụ trách khi sắp đến hạn, quá hạn để đảm bảo việc thực hiện đúng lịch.',
+        image: '/images/PG002.3.5SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_Timekeeping_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.6SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.6SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Chấm công",
+        content:
+          "Theo dõi thời gian - Dự báo năng suất",
+        image: "/images/timekeeping.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.6SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Chấm công",
+        content:
+          "Theo dõi thời gian - Dự báo năng suất",
+        image: "/images/timekeeping.jpg"
+      },
+    ],
+  };
+
   export const YNG_Timekeeping_Section2 = {
     section: {
       id: 1,
@@ -5494,6 +6142,44 @@
       },
     ]
   }
+
+  export const YNG_VO_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.7SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.7SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Nghỉ phép & Tăng ca",
+        content:
+          "Quản lý nghỉ phép và tăng ca của nhân viên",
+        image: "/images/vacation-overtime.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.7SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Nghỉ phép & Tăng ca",
+        content:
+          "Quản lý nghỉ phép và tăng ca của nhân viên",
+        image: "/images/vacation-overtime.jpg"
+      },
+    ],
+  };
 
   export const YNG_VO_Section2 = {
     section: {
@@ -6047,6 +6733,43 @@
     ]
   }
 
+  export const YNG_Assess_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.8SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.8SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đánh giá hiệu suất",
+        content:
+          "Tạo đánh giá trong vài phút và xem xét hiệu suất của nhân viên.",
+        image: "/images/assess.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.8SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đánh giá hiệu suất",
+        content:
+          "Tạo đánh giá trong vài phút và xem xét hiệu suất của nhân viên.",
+        image: "/images/assess.jpg"
+      },
+    ],
+  };
 
   export const YNG_Assess_Section2 = {
     section: {
@@ -6600,6 +7323,718 @@
     ]
   }
 
+  export const YNG_Payroll_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.9SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.9SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tính lương",
+        content:
+          "Hệ thống xử lý bảng lương hàng tháng tối ưu việc quản lý bảng lương của doanh nghiệp giúp giảm thiểu chi phí, rủi ro và tăng cường sự chính xác.",
+        image: "/images/payroll.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.9SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tính lương",
+        content:
+          "Hệ thống xử lý bảng lương hàng tháng tối ưu việc quản lý bảng lương của doanh nghiệp giúp giảm thiểu chi phí, rủi ro và tăng cường sự chính xác.",
+        image: "/images/payroll.jpg"
+      },
+    ],
+  };
+
+  export const YNG_Payroll_Section2 = {
+    section: {
+      id: 1,
+      name: 'Tự động cập nhật dữ liệu. Giảm thời gian tổng hợp và nhập liệu',
+      code: 'PG002.3.9SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.9SE00002CN000001',
+        title: 'Tự động cập nhật thông tin lương và phụ cấp',
+        description:
+          'Lương và phụ cấp của nhân sự được thiết lập tại hợp đồng được tự động chuyển sang bảng lương vào kỳ tương ứng.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.9SE00002CN000002',
+        title: 'Tự động cập nhật dữ liệu chấm công',
+        description:
+          'Dữ liệu từ phân hệ chấm công của nhân sự được tự động cập nhật thành đầu vào bảng lương.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.3.9SE00002CN000003',
+        title: 'Tự động cập ngày nghỉ lễ và nghỉ phép',
+        description:
+          'Dữ liệu ngày nghỉ lễ tính lương theo chính sách doanh nghiệp và ngày nghỉ phép cá nhân của nhân sự được ghi nhận vào bảng lương kỳ tương ứng.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_Payroll_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.9SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.9SE00003CN000001',
+        title: 'Tính lương',
+        description:
+          'Cài đặt cách tính lương linh hoạt',
+        slug: '',
+        content:
+          'Hệ thống cho phép được cài đặt nhiều cấu trúc tính lương, phù hợp với vị trí và đặc thù công việc của từng nhóm nhân viên khác nhau. Thành phần của cấu trúc lương được cấu trúc dưới dạng công thức tính toán, dễ dàng thay đổi và cập nhật theo nhu cầu doanh nghiệp.',
+        image: '/images/PG002.3.9SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.9SE00003CN000002',
+        title: 'Tính lương',
+        description:
+          'Tạo bảng lương nhanh chóng, dễ dàng',
+        slug: '',
+        content:
+          'Dựa trên việc thừa kế dữ liệu từ các phân hệ và cấu trúc lương cài đặt, việc tạo lập bảng lương hàng tháng gói gọn trong việc chọn kỳ và nhân sự cần tính lương.',
+        image: '/images/PG002.3.9SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.3.9SE00003CN000003',
+        title: 'Tính lương',
+        description:
+          'Tương tác trực quan trên hệ thống',
+        slug: '',
+        content:
+          'Quá trình duyệt bảng lương và phản hồi của nhân sự trên từng phiếu lương được thực hiện trên hệ thống thay vì thông qua email như cách thức truyền thống. Thông tin điều chỉnh và phản hồi cũng được ghi nhận ngay lập tức và lưu lại lịch sử phục vụ việc tra cứu về sau.',
+        image: '/images/PG002.3.9SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_TNI_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.10SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.10SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Thuế & Bảo hiểm",
+        content:
+          "Hỗ trợ hoạt động kê khai thuế thu nhập và bảo hiểm của doanh nghiệp, đồng bộ với các dữ liệu từ các phân hệ khác như hợp đồng, tính lương.",
+        image: "/images/tax-and-insurance.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.10SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Thuế & Bảo hiểm",
+        content:
+          "Hỗ trợ hoạt động kê khai thuế thu nhập và bảo hiểm của doanh nghiệp, đồng bộ với các dữ liệu từ các phân hệ khác như hợp đồng, tính lương.",
+        image: "/images/tax-and-insurance.jpg"
+      },
+    ],
+  };
+
+  export const YNG_TNI_Section2 = {
+    section: {
+      id: 1,
+      name: 'Tích hợp dữ liệu từ bảng lương, trích xuất dữ liệu nhanh chóng',
+      code: 'PG002.3.10SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.10SE00002CN000001',
+        title: 'Thuế TNCN và bảo hiểm được cấu hình trong bảng lương',
+        description:
+          'Bảng lương được cấu hình các thông tin liên quan đến cách tính thuế TNCN và bảo hiểm. Khi thực hiện tính lương cũng cập nhật giá trị liên quan đến thuế TNCN và bảo hiểm cần nộp trong kỳ.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.10SE00002CN000002',
+        title: 'Trích xuất báo cáo liên quan từ bảng lương',
+        description:
+          'Nhân sự phụ trách có thể tổng hợp trực tiếp thông tin thuế và bảo hiểm từ báo cáo bảng lương.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_TNI_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.3.10SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.3.10SE00003CN000001',
+        title: 'Thuế & Bảo hiểm',
+        description:
+          'Cài đặt linh hoạt cách tính thuế và bảo hiểm cho nhân sự',
+        slug: '',
+        content:
+          'Với các chính sách khác nhau cho nhân sự, hệ thống cho phép cấu hình tại hợp đồng nhân sự cách tính thuế TNCN (theo mức cố định, lũy tiến) và bảo hiểm xã hội (có thực hiện nộp BHXH tại doanh nghiệp hay không).',
+        image: '/images/PG002.3.10SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.3.10SE00003CN000002',
+        title: 'Thuế & Bảo hiểm',
+        description:
+          'Hỗ trợ quyết toán thuế TNCN hàng năm',
+        slug: '',
+        content:
+          'Nhân sự phụ trách quyết toán thuế TNCN có thể tạo bảng quyết toán, dữ liệu về thuế TNCN và thu nhập chịu thuế trong kỳ được tự động đồng bộ từ bảng lương hàng tháng trong kỳ quyết toán.',
+        image: '/images/PG002.3.10SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.3.10SE00003CN000003',
+        title: 'Thuế & Bảo hiểm',
+        description:
+          'Dễ dàng xuất dữ liệu hỗ trợ kê khai',
+        slug: '',
+        content:
+          'Hệ thống hỗ trợ các mẫu in và file xuất theo chuẩn của các phần mềm kê khai, giúp nhân sự phụ trách giảm thời gian chuyển đổi dữ liệu từ hệ thống sang các phần mềm kê khai của cơ quan chức năng.',
+        image: '/images/PG002.3.10SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_BC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.1SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.1SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối ngân hàng",
+        content:
+          "Chức năng tích hợp thanh toán từ tài khoản của doanh nghiệp ngay trên hệ thống: Cho phép thực hiện thanh toán toán, đồng bộ số dư, truy xuất sao kê tài khoản.",
+        image: "/images/bank-connection.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.1SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối ngân hàng",
+        content:
+          "Chức năng tích hợp thanh toán từ tài khoản của doanh nghiệp ngay trên hệ thống: Cho phép thực hiện thanh toán toán, đồng bộ số dư, truy xuất sao kê tài khoản.",
+        image: "/images/bank-connection.jpg"
+      },
+    ],
+  };
+
+  export const YNG_BC_Section2 = {
+    section: {
+      id: 1,
+      name: 'Cấu hình các nhân sự được truy cập vào tài khoản doanh nghiệp',
+      code: 'PG002.4.1SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.1SE00002CN000001',
+        title: 'Cấu hình các nhân sự với quyền thanh toán và xác nhận thanh toán',
+        description:
+          'Hệ thống cho phép cài đặt các nhân sự có quyền thực hiện lệnh thanh toán và duyệt lệnh thanh toán của doanh nghiệp như: kế toán, kế toán trưởng, chủ sở hữu tài khoản.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.1SE00002CN000002',
+        title: 'Cấu hình các nhân sự với quyền truy cập sao kê',
+        description:
+          'Với tính năng đồng bộ dữ liệu thông qua API được cung cấp bởi ngân hàng, hệ thống cho phép cấu hình các nhân sự có quyền xem sao kê, lịch sử giao dịch của tài khoản mà không cần cung cấp thông tin đăng nhập tài khoản tại ngân hàng cho nhân sự đó.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_BC_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.1SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.1SE00003CN000001',
+        title: 'Kết nối ngân hàng',
+        description:
+          'Tích hợp nhiều tài khoản doanh nghiệp trên cùng một giao diện',
+        slug: '',
+        content:
+          'Khi doanh nghiệp sử dụng nhiều tài khoản thuộc nhiều ngân hàng khác nhau. Kế toán phụ trách muốn thực hiện thao tác chỉ cần sử dụng một màn hình thông tin tài khoản thay vì cần đăng nhập nhiều cổng thông tin riêng ứng với từng ngân hàng sử dụng.',
+        image: '/images/PG002.4.1SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.1SE00003CN000002',
+        title: 'Kết nối ngân hàng',
+        description:
+          'Tự động đồng bộ thông tin từ dữ liệu của phân hệ khác',
+        slug: '',
+        content:
+          'Khi phát sinh đề nghị thanh toán, thay vì tiếp nhận thông tin và thực hiện nhập liệu lại, kế toán có thể thực hiện lệnh thanh toán ngay trên giao điện đề nghị. Hệ thống tự động cập nhật dữ liệu từ đề nghị, giảm thiểu sai sót về thông tin chuyển khoản hay số tiền thanh toán.',
+        image: '/images/PG002.4.1SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.4.1SE00003CN000003',
+        title: 'Kết nối ngân hàng',
+        description:
+          'Tự động cập nhật kết quả giao dịch',
+        slug: '',
+        content:
+          'Kết quả của việc giao dịch nhận từ ngân hàng được tự động đồng bộ về chứng từ gốc. Nhân sự đề nghị hoặc nhân viên bán hàng cho thể ngay lập tức nhận được kết quả mà không cần trao đổi với kế toán. Giảm thời gian chờ đợi thông tin và tăng hiệu quả công việc.',
+        image: '/images/PG002.4.1SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_RC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.2SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.2SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối tuyển dụng",
+        content:
+          "Cho phép liên kết jobsite tuyển dụng như (TopCV, Vietnamworks, Career Builder...), giúp quản lý tập trung CV từ tất cả các kênh tuyển dụng trên một giao diện duy nhất.",
+        image: "/images/recruitment-connection.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.2SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối tuyển dụng",
+        content:
+          "Cho phép liên kết jobsite tuyển dụng như (TopCV, Vietnamworks, Career Builder...), giúp quản lý tập trung CV từ tất cả các kênh tuyển dụng trên một giao diện duy nhất.",
+        image: "/images/recruitment-connection.jpg"
+      },
+    ],
+  };
+
+  export const YNG_RC_Section2 = {
+    section: {
+      id: 1,
+      name: 'Cho phép đồng bộ dữ liệu từ nhiều Jobsite khác khau',
+      code: 'PG002.4.2SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.2SE00002CN000001',
+        title: 'Cho phép cấu hình nhiều mail thông tin đồng bộ',
+        description:
+          '',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.2SE00002CN000002',
+        title: 'Cho phép cấu hình nhiều kênh tuyển dụng',
+        description:
+          '',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.4.2SE00002CN000003',
+        title: 'Cho phép cấu hình nhiều tin tuyển dụng',
+        description:
+          '',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_RC_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.2SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.2SE00003CN000001',
+        title: 'Kết nối tuyển dụng',
+        description:
+          'Tự động đọc thông tin email và ghi nhận vào thông tin tương ứng',
+        slug: '',
+        content:
+          'Các thông tin ứng viên được ghi nhận trong email được tách theo từng thông tin chi tiết của ứng viên trong hồ sơ trên hệ thống (Tên, email, vị trí tuyển dụng,…).',
+        image: '/images/PG002.4.2SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.2SE00003CN000002',
+        title: 'Kết nối tuyển dụng',
+        description:
+          'Tự động đồng bộ hồ sơ ứng viên',
+        slug: '',
+        content:
+          'Với các jobsite gửi thông tin ứng viên dưới dạng file pdf đính kèm, file này sẽ được đính kèm tương ứng vào hồ sơ ứng viên trên hệ thống. Với các jobsite gửi thông tin ứng viên dưới dạng link truy cập, link này cũng được đính kèm trong hồ sơ ứng viên, giúp nhân sự tuyển dụng không cần truy cập lại thông tin email.',
+        image: '/images/PG002.4.2SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_ELC_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.3SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.3SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối E-Learning",
+        content:
+          "Cho phép kết nối với các đơn vị cung cấp các nội dung về đào tạo, dễ dàng thao tác, thông tin được cập nhật về ngay hệ thống nội bộ.",
+        image: "/images/elearning-connection.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.3SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kết nối E-Learning",
+        content:
+          "Cho phép kết nối với các đơn vị cung cấp các nội dung về đào tạo, dễ dàng thao tác, thông tin được cập nhật về ngay hệ thống nội bộ.",
+        image: "/images/elearning-connection.jpg"
+      },
+    ],
+  };
+
+  export const YNG_ELC_Section2 = {
+    section: {
+      id: 1,
+      name: 'Cho phép kết nối không giới hạn với các đơn vị cung cấp nội dung đào tạo',
+      code: 'PG002.4.3SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.3SE00002CN000001',
+        title: 'Nội dung phong phú',
+        description:
+          'Các đối tác cung cấp nội dung bao gồm nhưng không giới hạn bởi: Đào tạo chuyên môn, Đào tạo tin học văn phòng, Đào tạo nghiệp vụ kế toán,...',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.3SE00002CN000002',
+        title: 'Nhà cung cấp đa dạng',
+        description:
+          'Danh sách các nhà cung cấp đa dạng',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.4.3SE00002CN000003',
+        title: 'Nhiều hình thức khóa học',
+        description:
+          'Bên cạnh các nội dung học với giáo trình online tự học, hệ thống cho phép kết nối với các giảng viên với nội dung đào tạo trực tiếp, đào tạo online có giảng viên.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_ELC_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.3SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.3SE00003CN000001',
+        title: 'Kết nối E-Learning',
+        description:
+          'Tích hợp sẵn các khóa học về đào tạo sử dụng hệ thống',
+        slug: '',
+        content:
+          'Hệ thống được tích hợp và cập nhật liên tục về các khóa đào tạo sử dụng tính năng của hệ thống và cách quản trị hiệu quả với các biểu mẫu có sẵn.',
+        image: '/images/PG002.4.3SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.3SE00003CN000002',
+        title: 'Kết nối E-Learning',
+        description:
+          'Giao diện mua hàng nhanh chóng và thuận tiện',
+        slug: '',
+        content:
+          'Danh sách các khóa học được liệt kê và cập nhật liên tục. Người dùng có thể tìm kiếm khóa học theo nhu cầu, quản lý được danh sách khóa học đã mua. Khi xác nhận mua hàng, thông tin về sản phẩm và chi phí được đồng bộ về phân hệ mua hàng trên hệ thống.',
+        image: '/images/PG002.4.3SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.4.3SE00003CN000003',
+        title: 'Kết nối E-Learning',
+        description:
+          'Tự động cập nhật nội dung khóa học',
+        slug: '',
+        content:
+          'Sau khi xác nhận thanh toán thành công, nội dung khóa học được tự động cập nhật về phân hệ E-learning trên dữ liệu của doanh nghiệp, không cần truy cập thủ công vào cổng thông tin của nhà cung cấp.',
+        image: '/images/PG002.4.3SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_ES_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.4SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.4SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Chữ ký số",
+        content:
+          "Gửi, ký và phê duyệt tài liệu trực tuyến.",
+        image: "/images/e-sign.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.4SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Chữ ký số",
+        content:
+          "Gửi, ký và phê duyệt tài liệu trực tuyến.",
+        image: "/images/e-sign.jpg"
+      },
+    ],
+  };
 
   export const YNG_ES_Section2 = {
     section: {
@@ -7153,6 +8588,43 @@
     ]
   }
 
+  export const YNG_ECOM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.5SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.5SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Sàn TMĐT",
+        content:
+          "Nền tảng Thương mại Điện tử bạn đang tìm kiếm. Nguồn mở. Có thể mở rộng. Sẵn sàng sử dụng.",
+        image: "/images/e-commerce.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.5SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Sàn TMĐT",
+        content:
+          "Nền tảng Thương mại Điện tử bạn đang tìm kiếm. Nguồn mở. Có thể mở rộng. Sẵn sàng sử dụng.",
+        image: "/images/e-commerce.jpg"
+      },
+    ],
+  };
 
   export const YNG_ECOM_Section2 = {
     section: {
@@ -7706,6 +9178,174 @@
     ]
   }
 
+  export const YNG_SU_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.6SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.6SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đơn vị vận chuyển",
+        content:
+          "Tạo vận đơn ngày trên đơn bán hàng. Tiết kiệm thời gian. Dễ dàng quản lý.",
+        image: "/images/shipping-unit.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.6SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đơn vị vận chuyển",
+        content:
+          "Tạo vận đơn ngày trên đơn bán hàng. Tiết kiệm thời gian. Dễ dàng quản lý.",
+        image: "/images/shipping-unit.jpg"
+      },
+    ],
+  };
+
+  export const YNG_SU_Section2 = {
+    section: {
+      id: 1,
+      name: 'Thao tác nhanh và tiện lợi, tích hợp sẵn đơn vị vận chuyển',
+      code: 'PG002.4.6SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.6SE00002CN000001',
+        title: 'Cho phép tạo đơn vận chuyển trên thông tin đơn hàng',
+        description:
+          'Tại đơn bán hàng có thể chọn các thông tin về đơn vị vận chuyển.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.6SE00002CN000002',
+        title: ' Tự động cập nhật thông tin từ các phân hệ khác',
+        description:
+          'Các thông tin về địa chỉ giao nhận, sản phẩm được đồng bộ trực tiếp từ thông tin các phân hệ quản lý đơn hàng. Người dùng không cần nhập liệu thủ công.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_SU_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.4.6SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.4.6SE00003CN000001',
+        title: 'Đơn vị vận chuyển',
+        description:
+          'Tích hợp nhiều đơn vị vận chuyển',
+        slug: '',
+        content:
+          'Hệ thống tích hợp sẵn nhiều đơn vị vận chuyển: giaohangtietkiem, giaohangnhanh, nhattin,...',
+        image: '/images/PG002.4.62SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.4.6SE00003CN000002',
+        title: 'Đơn vị vận chuyển',
+        description:
+          'Kiểm tra và so sánh giá dễ dàng',
+        slug: '',
+        content:
+          'Từ thông đơn hàng, người dùng có chức năng kiểm tra giá vận chuyển của đơn vị đã chọn trên giao diện đơn hàng, giúp dễ dàng so sánh giá của nhiều đơn vị vận chuyện khác nhau, từ đó chọn lựa đơn vị phù hợp.',
+        image: '/images/PG002.4.62SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.4.6SE00003CN000003',
+        title: 'Đơn vị vận chuyển',
+        description:
+          'Tự động cập nhật trạng thái vận đơn',
+        slug: '',
+        content:
+          'Các thông tin thay đổi về đơn hàng vận chuyển được tự động cập nhật về đơn bán hàng trên hệ thống bao gồm: Trạng thái, Phí vận chuyển thực tế, Thời gian giao hàng, Giá trị thu COD mà không cần truy cập cổng thông tin đơn vị vận chuyển.',
+        image: '/images/PG002.4.6SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_MNS_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.1SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.1SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Messenger & Lịch biểu",
+        content:
+          "Người dùng có thể tham gia vào cuộc trò chuyện riêng tư hoặc trò chuyện nhóm với đồng nghiệp của họ.",
+        image: "/images/messenger-and-schedule.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.1SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Messenger & Lịch biểu",
+        content:
+          "Người dùng có thể tham gia vào cuộc trò chuyện riêng tư hoặc trò chuyện nhóm với đồng nghiệp của họ.",
+        image: "/images/messenger-and-schedule.jpg"
+      },
+    ],
+  };
+
   export const YNG_MNS_Section2 = {
     section: {
       id: 1,
@@ -8257,6 +9897,187 @@
     },
   ]
   }
+
+  export const YNG_PNA_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.2SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.2SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đề xuất & Phê duyệt",
+        content:
+          "Chuyển đổi toàn bộ quy trình đề xuất và phê duyệt: Tiết kiệm thời gian xử lý, thông tin tương tác giữa các bộ phận nhanh chóng, dễ dàng.",
+        image: "/images/proposal-and-approval.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.2SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đề xuất & Phê duyệt",
+        content:
+          "Chuyển đổi toàn bộ quy trình đề xuất và phê duyệt: Tiết kiệm thời gian xử lý, thông tin tương tác giữa các bộ phận nhanh chóng, dễ dàng.",
+        image: "/images/proposal-and-approval.jpg"
+      },
+    ],
+  };
+
+  export const YNG_PNA_Section2 = {
+    section: {
+      id: 1,
+      name: 'Tiết kiệm thời gian xử lý. Dễ dàng tương tác. Sử dụng được ở mọi nơi',
+      code: 'PG002.1.2SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.2SE00002CN000001',
+        title: 'Tiết kiệm thời gian xử lý',
+        description:
+          'Yêu cầu được đề xuất sẽ lập tức được thông báo với người phê duyệt. Không cần chờ đợi việc in ấn và gặp mặt trực tiếp.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.2SE00002CN000002',
+        title: 'Dễ dàng tương tác',
+        description:
+          'Người đề xuất và phê duyệt có thể gửi tin nhắn, đính kèm tài liệu, trao đổi ý kiến với nhau ngay trên thông tin đề xuất.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.2SE00002CN000003',
+        title: 'Sử dụng được ở mọi nơi',
+        description:
+          'Chức năng đề xuất và phê duyệt hỗ trợ trên các nền tảng website và ứng dựng smartphone.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+  
+  export const YNG_PNA_Section3 = {
+  section: {
+    id: 1,
+    name: '',
+    code: 'PG002.1.2SE00003',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'PG002.1.2SE00003CN000001',
+      title: 'Đề xuất & Phê duyệt',
+      description:
+        'Quản lý đề xuất theo danh mục',
+      slug: '',
+      content:
+        'Dễ dàng quản lý đề xuất hơn thông qua cách phân loại theo các danh mục khác nhau. Cài đặt được đối tượng duyệt cho từng danh mục.',
+      image: '/images/PG002.1.2SE00003CN1.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'PG002.1.2SE00003CN000002',
+      title: 'Đề xuất & Phê duyệt',
+      description:
+        'Thông tin rõ ràng minh bạch',
+      slug: '',
+      content:
+        'Thông tin người gửi, người duyệt, thời gian duyệt, lịch sử trao đổi, tương tác được lưu trữ lại trong lịch sử đề xuất.',
+      image: '/images/PG002.1.2SE00003CN2.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'PG002.1.2SE00003CN000003',
+      title: 'Đề xuất & Phê duyệt',
+      description:
+        'Tích hợp với hệ thống ngân hàng điện tử',
+      slug: '',
+      content:
+        'Đề xuất sau khi được phê duyệt có thể thực hiện lệnh chi và duyệt chi từ các thông tin thanh toán được ghi nhận.',
+      image: '/images/PG002.1.2SE00003CN3.png',
+      video: '',
+      thumbnail: '',
+    },
+  ],
+  };
+
+  export const YNG_AM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.3SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.3SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý giao việc",
+        content:
+          "Đẹp, dễ dàng, mã nguồn mở, tổng quan về khối lượng công việc của bạn và tình trạng của các nhiệm vụ cá nhân.",
+        image: "/images/assignment-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.3SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý giao việc",
+        content:
+          "Đẹp, dễ dàng, mã nguồn mở, tổng quan về khối lượng công việc của bạn và tình trạng của các nhiệm vụ cá nhân.",
+        image: "/images/assignment-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_AM_Section2 = {
   section: {
@@ -8328,7 +10149,7 @@
       slug: '',
       content:
         'Lên lịch cho nhóm của bạn thực hiện các dự án có tính đến ngày nghỉ của nhân viên. Lập kế hoạch trước cho các dự án sắp tới với dự báo dựa trên các dự án tương đương và ước tính thời hạn chính xác hơn.',
-      image: '/images/PG002.1.2SE00003CN000001.png',
+      image: '/images/PG002.1.3SE00003CN000001.png',
       video: '',
       thumbnail: '',
     },
@@ -8342,7 +10163,7 @@
       slug: '',
       content:
         'Đơn giản hóa quy trình, chia dự án của bạn thành các nhiệm vụ và giao chúng cho nhóm của bạn để cải thiện khả năng cộng tác. Tạo các giai đoạn tùy chỉnh cho từng dự án để đơn giản hóa tổng quan về quy trình làm việc của bạn và tăng hiệu quả tổng thể của dự án.',
-      image: '/images/PG002.1.2SE00003CN000002.png',
+      image: '/images/PG002.1.3SE00003CN000002.png',
       video: '',
       thumbnail: '',
     },
@@ -8356,11 +10177,49 @@
       slug: '',
       content:
         'Thêm ghi chú nhanh hoặc đính kèm tệp vào bất kỳ nhiệm vụ nào và duy trì kết nối với nhóm của bạn. Giao tiếp qua trò chuyện, viết lên bảng thời gian thực được chia sẻ hoặc sử dụng trò chuyện trực tiếp – tất cả trong một giao diện duy nhất!',
-      image: '/images/PG002.1.2SE00003CN000003.png',
+      image: '/images/PG002.1.3SE00003CN000003.png',
       video: '',
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_DM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.4SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.4SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý tài liệu",
+        content:
+          "Tiết kiệm thời gian ghi hóa đơn, quét hợp đồng, phê duyệt tài liệu và trở thành một công ty không giấy tờ.",
+        image: "/images/document-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.4SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý tài liệu",
+        content:
+          "Tiết kiệm thời gian ghi hóa đơn, quét hợp đồng, phê duyệt tài liệu và trở thành một công ty không giấy tờ.",
+        image: "/images/document-management.jpg"
+      },
+    ],
   };
   
   export const YNG_DM_Section2 = {
@@ -8467,6 +10326,44 @@
     },
   ],
   };
+
+  export const YNG_EL_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.5SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.5SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đào tạo trực tuyến",
+        content:
+          "Uy tín - Bảo mật - Chi phí thấp",
+        image: "/images/e-learning.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.5SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Đào tạo trực tuyến",
+        content:
+          "Uy tín - Bảo mật - Chi phí thấp",
+        image: "/images/e-learning.jpg"
+      },
+    ],
+  };
   
   export const YNG_EL_Section2 = {
   section: {
@@ -8571,6 +10468,44 @@
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_PM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.6SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.6SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý mua hàng",
+        content:
+          "Giúp bạn dễ dàng quản lý nhà cung cấp và kiểm soát quy trình mua hàng",
+        image: "/images/purchase-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.6SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý mua hàng",
+        content:
+          "Giúp bạn dễ dàng quản lý nhà cung cấp và kiểm soát quy trình mua hàng",
+        image: "/images/purchase-management.jpg"
+      },
+    ],
   };
   
   export const YNG_PM_Section2 = {
@@ -8677,6 +10612,44 @@
     },
   ],
   };
+
+  export const YNG_IM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.7SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.7SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý kho",
+        content:
+          "Phần mềm quản lý kho với hệ thống mã số mã vạch chuẩn mực, tương thích với mọi thiết bị phần cứng và tự động hóa các bước trong quy trình vận hành kho.",
+        image: "/images/inventory-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.7SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý kho",
+        content:
+          "Phần mềm quản lý kho với hệ thống mã số mã vạch chuẩn mực, tương thích với mọi thiết bị phần cứng và tự động hóa các bước trong quy trình vận hành kho.",
+        image: "/images/inventory-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_IM_Section2 = {
   section: {
@@ -8781,6 +10754,44 @@
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_ProM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.8SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.8SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý dự án",
+        content:
+          "Đẹp, dễ dàng, mã nguồn mở, tổng quan về khối lượng công việc của bạn và tình trạng của các nhiệm vụ cá nhân.",
+        image: "/images/project-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.8SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý dự án",
+        content:
+          "Đẹp, dễ dàng, mã nguồn mở, tổng quan về khối lượng công việc của bạn và tình trạng của các nhiệm vụ cá nhân.",
+        image: "/images/project-management.jpg"
+      },
+    ],
   };
   
   export const YNG_ProM_Section2 = {
@@ -8887,6 +10898,44 @@
     },
   ],
   };
+
+  export const YNG_PDM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.9SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.9SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý sản xuất",
+        content:
+          "Sản xuất + Bảo trì + PLM + Chất lượng",
+        image: "/images/production-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.9SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý sản xuất",
+        content:
+          "Sản xuất + Bảo trì + PLM + Chất lượng",
+        image: "/images/production-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_PDM_Section2 = {
   section: {
@@ -8992,14 +11041,52 @@
     },
   ],
   };
+
+  export const YNG_QM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.10SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.10SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý chất lượng",
+        content:
+          "Cho những nhà sản xuất tân tiến.",
+        image: "/images/quality-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.10SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý chất lượng",
+        content:
+          "Cho những nhà sản xuất tân tiến.",
+        image: "/images/quality-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_QM_Section2 = {
   section: {
     id: 1,
-    name: 'Một cách đầy đủ, được tích hợp',
+    name: 'Tích hợp đầy đủ, với những hoạt động của kho hàng và hoạt động sản xuất',
     code: 'PG002.1.10SE00002',
     image: '',
-    description: 'Với những hoạt động của kho hàng và hoạt động sản xuất',
+    description: '',
   },
   components: [
     {
@@ -9096,6 +11183,902 @@
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_ENM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.11SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.11SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Thiết bị và Bảo dưỡng",
+        content:
+          "Quản lý danh sách thiết bị, nhân sự quản lý thiết bị, chu kỳ bảo dưỡng và lịch sử bảo dưỡng thiết bị.",
+        image: "/images/equipment-and-maintenance.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.11SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Thiết bị và Bảo dưỡng",
+        content:
+          "Quản lý danh sách thiết bị, nhân sự quản lý thiết bị, chu kỳ bảo dưỡng và lịch sử bảo dưỡng thiết bị.",
+        image: "/images/equipment-and-maintenance.jpg"
+      },
+    ],
+  };
+
+  export const YNG_ENM_Section2 = {
+    section: {
+      id: 1,
+      name: 'Quản lý tình trạng thiết bị tập trung rõ ràng',
+      code: 'PG002.1.11SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.11SE00002CN000001',
+        title: 'Quản lý danh sách thiết bị',
+        description:
+          'Tất cả thiết bị doanh nghiệp sở hữu, bao gồm đang sử dụng và không sử dụng được liệt kê đầy đủ, tránh thất thoát và đầu tư thiết bị vượt quá nhu cầu sử dụng.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.11SE00002CN000002',
+        title: 'Ghi nhận được lịch sử sử dụng',
+        description:
+          'Quản lý thiết bị theo người sử dụng, ghi nhận lại lịch sử các giai đoạn chuyển giao đối tượng sử dụng.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.11SE00002CN000003',
+        title: 'Quản lý lịch sử sửa chữa',
+        description:
+          'Lịch sử sửa chữa của thiết bị được công khai với người quản lý chung tài sản và người tiếp nhận thiết bị, từ đó đánh giá được tình trạng thiết bị mình đang quản lý.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+    export const YNG_ENM_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.11SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.11SE00003CN000001',
+        title: 'Thiết bị và Bảo dưỡng',
+        description:
+          'Quản lý thuận tiện thiết bị theo danh mục',
+        slug: '',
+        content:
+          'Thiết bị được cấu hình quản lý theo danh mục, giúp dễ dàng tra cứu. Các thông tin tương đồng giữa các thiết bị cũng được mặc định sẵn, giúp giảm thời gian nhập liệu thông tin thiết bị trên hệ thống.',
+        image: '/images/PG002.1.11SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.11SE00003CN000002',
+        title: 'Thiết bị và Bảo dưỡng',
+        description:
+          'Tự động nhắc lịch khi đến thời gian bảo dưỡng',
+        slug: '',
+        content:
+          'Hệ thống tự động nhắc lịch cho bộ phận kỹ thuật khi đến lịch bảo dưỡng thiết bị, tự động tạo công việc tránh các tình huống bỏ sót hoặc quá hạn bảo dưỡng.',
+        image: '/images/PG002.1.11SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.11SE00003CN000003',
+        title: 'Thiết bị và Bảo dưỡng',
+        description:
+          'Chủ động theo dõi tình trạng bảo dưỡng thiết bị mình quản lý',
+        slug: '',
+        content:
+          'Tình trạng hoạt động bảo dưỡng của thiết bị được liên kết với thông tin thiết bị. Người quản lý thiết bị có thể theo dõi lịch bảo dưỡng, nhân viên kỹ thuật thực hiện bảo dưỡng, trạng thái thực hiện mà không cần liên hệ trực tiếp với bộ phận kỹ thuật.',
+        image: '/images/PG002.1.11SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_RA_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.12SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.12SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán phải thu",
+        content:
+          "Quản lý các chứng từ và tính trạng các khoản phải thu của doanh nghiệp: tình trạng công nợ, tuổi nợ, hạn thanh toán.",
+        image: "/images/receivable-accounting.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.12SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán phải thu",
+        content:
+          "Quản lý các chứng từ và tính trạng các khoản phải thu của doanh nghiệp: tình trạng công nợ, tuổi nợ, hạn thanh toán.",
+        image: "/images/receivable-accounting.jpg"
+      },
+    ],
+  };
+
+  export const YNG_RA_Section2 = {
+    section: {
+      id: 1,
+      name: 'Báo cáo đa chiều về tính trạng công nợ phải thu',
+      code: 'PG002.1.12SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.12SE00002CN000001',
+        title: 'Tổng hợp công nợ theo khách hàng, tuổi nợ',
+        description:
+          'Báo cáo công nợ được tổng hợp theo khách hàng hoặc theo thời gian, thể hiện tổng doanh thu, số tiền đã thanh toán, công nợ còn lại.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.12SE00002CN000002',
+        title: 'Dễ dàng tìm kiếm và sắp xếp',
+        description:
+          'Các chứng từ công nợ có thể thực hiện tìm kiếm, sắp xếp, nhóm theo khách hàng, thời gian, đơn hàng, số tiền, thời hạn thanh toán.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.12SE00002CN000003',
+        title: 'Tự động nhắc lịch thanh toán',
+        description:
+          'Tự động gửi email nhắc lịch khách hàng hoặc tạo hoạt động cho nhân viên phụ trách nhắc lịch khách hàng, hỗ trợ quá trình thu hồi nợ.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+  export const YNG_RA_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.12SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.12SE00003CN000001',
+        title: 'Kế toán phải thu',
+        description:
+          'Định khoản tự động',
+        slug: '',
+        content:
+          'Tự động hạch toán theo thông tin tài khoản được cài đặt tại đối tượng khách hàng và sản phẩm, giảm thời gian nhập liệu chứng từ.',
+        image: '/images/PG002.1.12SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.12SE00003CN000002',
+        title: 'Kế toán phải thu',
+        description:
+          'Liên kết với phân hệ bán hàng',
+        slug: '',
+        content:
+          'Hỗ trợ tính năng tạo hóa đơn ghi nhận công nợ từ đơn bán hàng, thừa kế các thông tin đã nhập tại đơn bán hàng, kế toán chỉ cần kiểm tra và điều chỉnh khi cần thiết.',
+        image: '/images/PG002.1.12SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.12SE00003CN000003',
+        title: 'Kế toán phải thu',
+        description:
+          'Ghi nhận thanh toán linh hoạt',
+        slug: '',
+        content:
+          'Kế toán có thể ghi nhận khoản thanh toán công nợ của khách hàng theo nhiều hình thức: Thanh toán đích danh hóa đơn, Thanh toán hàng hoạt hóa đơn, Ghi nhận một khoản thanh toán và thực hiện phân bổ vào hóa đơn sau.',
+        image: '/images/PG002.1.12SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_PA_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.13SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.13SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán phải trả",
+        content:
+          "Quản lý các chứng từ và tính trạng các khoản phải trả của doanh nghiệp: tình trạng công nợ, tuổi nợ, hạn thanh toán.",
+        image: "/images/receivable-accounting.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.13SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán phải trả",
+        content:
+          "Quản lý các chứng từ và tính trạng các khoản phải trả của doanh nghiệp: tình trạng công nợ, tuổi nợ, hạn thanh toán.",
+        image: "/images/receivable-accounting.jpg"
+      },
+    ],
+  };
+
+  export const YNG_PA_Section2 = {
+    section: {
+      id: 1,
+      name: 'Báo cáo đa chiều về tính trạng công nợ phải thu',
+      code: 'PG002.1.13SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.13SE00002CN000001',
+        title: 'Tổng hợp công nợ theo khách hàng, tuổi nợ',
+        description:
+          'Báo cáo công nợ được tổng hợp theo đối tượng hoặc theo thời gian, thể hiện tổng doanh thu, số tiền đã thanh toán, công nợ còn lại.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.13SE00002CN000002',
+        title: 'Dễ dàng tìm kiếm và sắp xếp',
+        description:
+          'Các chứng từ công nợ có thể thực hiện tìm kiếm, sắp xếp, nhóm theo đối tượng, thời gian, đơn hàng, số tiền, thời hạn thanh toán.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.13SE00002CN000003',
+        title: 'Tự động nhắc lịch thanh toán',
+        description:
+          'Tự động hoạt động cho nhân viên phụ trách về thời hạn thanh toán, đảm bảo việc thực hiện thanh toán cho nhà cung cấp đúng hạn.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+  export const YNG_PA_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.13SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.13SE00003CN000001',
+        title: 'Kế toán phải trả',
+        description:
+          'Định khoản tự động',
+        slug: '',
+        content:
+          'Tự động hạch toán theo thông tin tài khoản được cài đặt tại đối tượng và sản phẩm, giảm thời gian nhập liệu chứng từ.',
+        image: '/images/PG002.1.13SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.13SE00003CN000002',
+        title: 'Kế toán phải trả',
+        description:
+          'Liên kết với phân hệ mua hàng',
+        slug: '',
+        content:
+          'Hỗ trợ tính năng tạo hóa đơn ghi nhận công nợ từ đơn mua hàng, thừa kế các thông tin đã nhập tại đơn mua hàng, kế toán chỉ cần kiểm tra và điều chỉnh khi cần thiết.',
+        image: '/images/PG002.1.13SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.13SE00003CN000003',
+        title: 'Kế toán phải trả',
+        description:
+          'Ghi nhận thanh toán linh hoạt',
+        slug: '',
+        content:
+          'Kế toán có thể ghi nhận khoản thanh toán công nợ cho nhà cung cấp theo nhiều hình thức: Thanh toán đích danh hóa đơn, Thanh toán hàng hoạt hóa đơn, Ghi nhận một khoản thanh toán và thực hiện phân bổ vào hóa đơn sau.',
+        image: '/images/PG002.1.13SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_ANT_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.14SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.14SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tài sản cố định & Công cụ, dụng cụ",
+        content:
+          "Quản lý danh mục tài sản cố định và công cụ dụng cụ, tình trạng sử dụng, tình trạng khấu hao, giá trị tài sản.",
+        image: "/images/assets-and-tools.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.14SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Tài sản cố định & Công cụ, dụng cụ",
+        content:
+          "Quản lý danh mục tài sản cố định và công cụ dụng cụ, tình trạng sử dụng, tình trạng khấu hao, giá trị tài sản.",
+        image: "/images/assets-and-tools.jpg"
+      },
+    ],
+  };
+
+  export const YNG_ANT_Section2 = {
+    section: {
+      id: 1,
+      name: 'Quản lý tập trung, nhập liệu nhanh chóng, ghi nhận thông tin đầy đủ về tài sản, công cụ',
+      code: 'PG002.1.14SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.14SE00002CN000001',
+        title: 'Quản lý tập trung',
+        description:
+          'Tài sản cố định và công cụ dụng cụ được quản lý tập trung và được phân loại theo danh mục. Kế toán có thể xem đầy đủ toàn bộ danh sách nhưng vẫn có thể tìm kiếm và sắp xếp theo từng danh mục.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.14SE00002CN000002',
+        title: 'Giảm thời gian nhập liệu',
+        description:
+          'Những thông tin chung của từng danh mục tài sản/dụng cụ được lưu giá trị mặc định sẵn. Khi phát sinh tài sản mới, kế toán chỉ cần nhập thông tin riêng như giá trị, ngày bắt đầu khấu hao.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.14SE00002CN000003',
+        title: 'Ghi nhận đầy đủ thông tin',
+        description:
+          'Ngoài các thông tin hỗ trợ hạch toán, hệ thống ghi nhận các thông tin quản lý vận hành khác như: Thông số tài sản/dụng cụ, nhân sự quản lý, mục đích sử dụng, lịch sử thay đổi thông tin.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+  export const YNG_ANT_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.14SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.14SE00003CN000001',
+        title: 'Tài sản cố định & Công cụ, dụng cụ',
+        description:
+          'Tự động trích khấu hao định kỳ theo thông tin đã cài đặt',
+        slug: '',
+        content:
+          'Tài sản/Công cụ đã cài đặt thông giá trị, thời gian, hình thức khấu hao sẽ được tự động tạo hạch toán trích khấu hao hàng kỳ.',
+        image: '/images/PG002.1.14SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.14SE00003CN000002',
+        title: 'Tài sản cố định & Công cụ, dụng cụ',
+        description:
+          'Tự động hạch toán khi thay đổi thông tin khấu hao',
+        slug: '',
+        content:
+          'Tài sản được thay đổi giá trị, mục đích sử dụng, kỳ khấu hao sẽ tự động được tạo ra hạch toán điều chỉnh tương ứng với thông tin thay đổi. Người dùng không cần tính toán và tạo hạch toán thủ công.',
+        image: '/images/PG002.1.14SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.14SE00003CN000003',
+        title: 'Tài sản cố định & Công cụ, dụng cụ',
+        description:
+          'Hỗ trợ các nghiệp vụ thanh lý, tiêu hủy tài sản cố định',
+        slug: '',
+        content:
+          'Khi thực hiện các nghiệp vụ về thanh lý, tiêu hủy tài sản cố định, hệ thống tự động tạo ra hạch toán tương ứng đồng thời cập nhật tình trạng của tài sản để đảm bảo thống nhất trong quản lý trong thông tin.',
+        image: '/images/PG002.1.14SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_SA_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.15SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.15SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán kho",
+        content:
+          "Quản lý danh sách hàng hóa vật tư, Báo cáo hoạt động xuất nhập kho, Tính giá trị hàng tồn kho.",
+        image: "/images/stock-accounting.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.15SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán kho",
+        content:
+          "Quản lý danh sách hàng hóa vật tư, Báo cáo hoạt động xuất nhập kho, Tính giá trị hàng tồn kho.",
+        image: "/images/stock-accounting.jpg"
+      },
+    ],
+  };
+
+  export const YNG_SA_Section2 = {
+    section: {
+      id: 1,
+      name: 'Đồng bộ hóa dữ liệu, báo cáo giá trị tồn kho liên tục, tích hợp nhiều biểu mẫu',
+      code: 'PG002.1.15SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.15SE00002CN000001',
+        title: 'Dữ liệu được đồng bộ',
+        description:
+          'Kế toán kho là một phân hệ thuộc hệ thống quản trị doanh nghiệp thống nhất nên các dữ liệu cơ sở như hàng hóa, vật tư, kho được đồng bộ với các phân hệ khác, không cần thực hiện chuyển đổi và đối chiếu dữ liệu.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.15SE00002CN000002',
+        title: 'Báo cáo tình trạng tồn kho liên tục',
+        description:
+          'Các báo cáo về giá trị hàng hóa được cập nhật dữ liệu liên tục từ hoạt động xuất nhập kho phát sinh trên hệ thống.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.15SE00002CN000003',
+        title: 'Tích hợp các biểu mẫu có sẵn',
+        description:
+          'Hệ thống tích hợp các biểu mẫu có sẵn phù hợp với thông tư và quy định của doanh nghiệp, phục vụ cho việc in ấn và lưu trữ chứng từ.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+  export const YNG_SA_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.15SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.15SE00003CN000001',
+        title: 'Kế toán kho',
+        description:
+          'Hạch toán tự động dựa trên các hoạt động kho',
+        slug: '',
+        content:
+          'Khi phát sinh hoạt động kho, dựa trên các cấu hình được cài đặt, hệ thống thực hiện tự động hạch toán tăng giảm giá trị tồn kho.',
+        image: '/images/PG002.1.15SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.15SE00003CN000002',
+        title: 'Kế toán kho',
+        description:
+          'Cung cấp nhiều phương thức tính giá vốn khác nhau',
+        slug: '',
+        content:
+          'Kế toán có thể cấu hình phương thức hạch toán giá vốn phù hợp với đặt thù của doanh nghiệp: Giá vốn cập nhật thủ công, Giá vốn trung bình, FIFO.',
+        image: '/images/PG002.1.15SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.15SE00003CN000003',
+        title: 'Kế toán kho',
+        description:
+          'Ghi nhận chi phí mua hàng vào giá vốn',
+        slug: '',
+        content:
+          'Chi phí mua hàng có thể được ghi nhận độc lập thủ công hoặc thông qua chứng từ công nợ với nhà cung cấp sau đó phân bổ vào sản phẩm theo từng lần nhập kho và phân bổ theo nhiều hình thức.',
+        image: '/images/PG002.1.15SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_GA_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.16SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.16SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán tổng hợp",
+        content:
+          "Quản lý các bút toán điều chỉnh, các bút toán định kỳ, các bút toán phân bổ cuối kỳ, kết chuyển cuối kỳ.",
+        image: "/images/general-accounting.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.16SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Kế toán tổng hợp",
+        content:
+          "Quản lý các bút toán điều chỉnh, các bút toán định kỳ, các bút toán phân bổ cuối kỳ, kết chuyển cuối kỳ.",
+        image: "/images/general-accounting.jpg"
+      },
+    ],
+  };
+
+  export const YNG_GA_Section2 = {
+    section: {
+      id: 1,
+      name: 'Hạch toán tự động và thủ công, hỗ trợ tạo bút toán tổng hợp cuối kỳ',
+      code: 'PG002.1.16SE00002',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.16SE00002CN000001',
+        title: 'Cho phép cập nhật số dư đầu kỳ',
+        description:
+          'Kế toán có thể cập nhật thủ công số dư đầu kỳ các tài khoản để bắt đầu kỳ kế toán mới khi phát sinh các nghiệp vụ chuyển đổi pháp nhân hoặc chuyển đổi từ hệ thống cũ.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.16SE00002CN000002',
+        title: 'Cho phép hạch toán thủ công',
+        description:
+          'Kế toán có thể tạo bút toán thủ công ghi nhận các nghiệp vụ phát sinh ngoài những nghiệp vụ được tích hợp từ các phân hệ khác trên hệ thống.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.16SE00002CN000003',
+        title: 'Báo cáo cập nhật tình trạng tài khoản',
+        description:
+          'Kế toán có thể tra cứu tình trạng dư nợ, dư có của tài khoản thực tế bất cứ thời điểm nào.',
+        slug: '',
+        content: '',
+        image: '',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+    
+  export const YNG_GA_Section3 = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.16SE00003',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.16SE00003CN000001',
+        title: 'Kế toán tổng hợp',
+        description:
+          'Tự động kết chuyển theo quy tắc',
+        slug: '',
+        content:
+          'Dựa trên quy tắc kết chuyển gồm các thông tin: Thời gian, Tài khoản nguồn, Tài khoản đích, Hệ thống tự động chạy định kỳ và hạch toán kết chuyển.',
+        image: '/images/PG002.1.16SE00003CN000001.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.16SE00003CN000002',
+        title: 'Kế toán tổng hợp',
+        description:
+          'Thực hiện Khóa sổ, Mở sổ',
+        slug: '',
+        content:
+          'Cho phép kế toán có thể thực hiện Khóa sổ khi không muốn thay đổi chứng từ phục vụ thực hiện Báo cáo tài chính, thay đổi pháp nhân, Mở sổ khi cần điều chỉnh chứng từ và ghi nhận lại lịch sử thay đổi thông tin Khóa sổ, Mở sổ.',
+        image: '/images/PG002.1.16SE00003CN000002.png',
+        video: '',
+        thumbnail: '',
+      },
+      {
+        id: 3,
+        language: 'vi',
+        code: 'PG002.1.16SE00003CN000003',
+        title: 'Kế toán tổng hợp',
+        description:
+          'Hỗ trợ tạo báo cáo tài chính',
+        slug: '',
+        content:
+          'Hệ thống cung cấp các loại báo cáo tài chính theo quy định của thông tư như Bảng cân đối kế toán, Báo cáo kết quả hoạt động kinh doanh, Báo cáo lưu chuyển tiền tệ.',
+        image: '/images/PG002.1.16SE00003CN000003.png',
+        video: '',
+        thumbnail: '',
+      },
+    ],
+  };
+
+  export const YNG_BM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.1.17SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.1.17SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý ngân sách",
+        content:
+          "Bước đệm dẫn đến thành công cho bất kỳ doanh nghiệp nào.",
+        image: "/images/budget-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.1.17SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý ngân sách",
+        content:
+          "Bước đệm dẫn đến thành công cho bất kỳ doanh nghiệp nào.",
+        image: "/images/budget-management.jpg"
+      },
+    ],
   };
   
   export const YNG_BM_Section2 = {
@@ -9202,6 +12185,44 @@
     },
   ],
   };
+
+  export const YNG_PromoM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.2.1SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.2.1SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý khuyến mại & báo giá",
+        content:
+          "Tạo báo giá đẹp, chuyên nghiệp, gọn gàng trong nháy mắt. // Theo dõi toàn bộ quá trình gửi báo giá, xác nhận và thanh toán trực tuyến.",
+        image: "/images/promotion-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.2.1SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý khuyến mại & báo giá",
+        content:
+          "Tạo báo giá đẹp, chuyên nghiệp, gọn gàng trong nháy mắt. // Theo dõi toàn bộ quá trình gửi báo giá, xác nhận và thanh toán trực tuyến.",
+        image: "/images/promotion-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_PromoM_Section2 = {
   section: {
@@ -9306,6 +12327,44 @@
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_CM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.2.2SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.2.2SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý khách hàng",
+        content:
+          "Giúp bạn nắm bắt toàn bộ thông tin về khách hàng, lịch sử giao dịch, doanh số, giá trị hợp đồng, phản hồi... duy nhất trên 1 nền tảng.",
+        image: "/images/customer-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.2.2SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý khách hàng",
+        content:
+          "Giúp bạn nắm bắt toàn bộ thông tin về khách hàng, lịch sử giao dịch, doanh số, giá trị hợp đồng, phản hồi... duy nhất trên 1 nền tảng.",
+        image: "/images/customer-management.jpg"
+      },
+    ],
   };
   
   export const YNG_CM_Section2 = {
@@ -9412,6 +12471,44 @@
     },
   ],
   };
+
+  export const YNG_ContractM_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.2.3SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.2.3SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý hợp đồng",
+        content:
+          "Chỉ mất 3 giây để tìm kiếm và theo dõi toàn bộ thông tin.",
+        image: "/images/contract-management.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.2.3SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Quản lý hợp đồng",
+        content:
+          "Chỉ mất 3 giây để tìm kiếm và theo dõi toàn bộ thông tin.",
+        image: "/images/contract-management.jpg"
+      },
+    ],
+  };
   
   export const YNG_ContractM_Section2 = {
   section: {
@@ -9516,6 +12613,44 @@
       thumbnail: '',
     },
   ],
+  };
+
+  export const YNG_POS_Banner = {
+    section: {
+      id: 1,
+      name: '',
+      code: 'PG002.2.4SE00001',
+      image: '',
+      description: '',
+    },
+    components: [
+      {
+        id: 1,
+        language: 'vi',
+        code: 'PG002.2.4SE00001CN000001',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Hệ thống POS",
+        content:
+          "Thiết lập trong vài phút. Bán hàng trong vài giây.",
+        image: "/images/pos-system.jpg"
+      },
+      {
+        id: 2,
+        language: 'vi',
+        code: 'PG002.2.4SE00001CN000002',
+        slug: '',
+        video: '',
+        thumbnail: '',
+        title: "Dự án thành công",
+        description: "Hệ thống POS",
+        content:
+          "Thiết lập trong vài phút. Bán hàng trong vài giây.",
+        image: "/images/pos-system.jpg"
+      },
+    ],
   };
   
   export const YNG_POS_Section2 = {
