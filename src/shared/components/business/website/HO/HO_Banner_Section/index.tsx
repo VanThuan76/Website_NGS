@@ -4,7 +4,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
-import React, { createRef, RefObject, useEffect, useRef, useState } from 'react';
+import React, { RefObject, useRef, useState } from 'react';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
@@ -70,7 +70,7 @@ const HomeBannerSection = ({ data }: Props) => {
                   <PreImage
                     src={item.image as string}
                     height={760}
-                    width={1440}
+                    width={1980}
                     layer={false}
                     alt={item.title as string}
                     className='w-full h-full object-cover'

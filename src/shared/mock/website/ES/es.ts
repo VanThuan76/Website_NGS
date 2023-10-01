@@ -257,21 +257,21 @@ export const ESTeamData = {
 export const ESEnvironmentData = {
     section: {
         id: 1,
-        name: 'Môi trường làm việc truyền cảm hứng với lãnh đạo có tâm, có tầm.',
-        code: "ES12312",
+        name: '',
+        code: "ESEnvironment",
         image: "",
-        description: "Được làm việc với lãnh đạo giỏi và tận tâm đó là may mắn mà không phải bất cứ ai cũng có. Tại NGS bạn sẽ thấy mình trưởng thành lên mỗi ngày khi bạn nhận được những câu hỏi rất hóc búa từ lãnh đạo, hoặc những bàn tay đưa ra khi bạn gặp khó khăn từ sếp. //Lãnh đạo NGS có nhiều năm hoặc tập ở nước ngoài hoặc làm việc tại các tổ chức hàng đầu thế giới như Microsft, Oracle, SAP … Một số anh chị lãnh đạo khác đều đã từng giữ các vị trí lãnh đạo tại các doanh nghiệp công nghệ thông tin Việt Nam hàng đầu. Với khát khao xây dựng một tổ chức kiểu mới, linh hoạt, sáng tạo và hiệu quả, họ gia nhập NGS mang theo trong mình tư duy quản trị hiện đại, chuyên nghiệp, và sự linh hoạt cũng như tinh thần khát khao chinh phục.//NGS mong rằng, tinh thần này sẽ luôn được duy trì ở các thế hệ tiếp theo và đó chính là bạn, các cộng sự tài năng của chúng tôi."
+        description: ""
     },
     components: [
         {
             id: 1,
             language: 'vi',
             code: "PG003.10SE00002CN000001",
-            title: "",
-            description: "",
+            title: "Môi trường làm việc truyền cảm hứng với lãnh đạo có tâm, có tầm.",
+            description: "Được làm việc với lãnh đạo giỏi và tận tâm đó là may mắn mà không phải bất cứ ai cũng có. Tại NGS bạn sẽ thấy mình trưởng thành lên mỗi ngày khi bạn nhận được những câu hỏi rất hóc búa từ lãnh đạo, hoặc những bàn tay đưa ra khi bạn gặp khó khăn từ sếp. //Lãnh đạo NGS có nhiều năm hoặc tập ở nước ngoài hoặc làm việc tại các tổ chức hàng đầu thế giới như Microsft, Oracle, SAP … Một số anh chị lãnh đạo khác đều đã từng giữ các vị trí lãnh đạo tại các doanh nghiệp công nghệ thông tin Việt Nam hàng đầu. Với khát khao xây dựng một tổ chức kiểu mới, linh hoạt, sáng tạo và hiệu quả, họ gia nhập NGS mang theo trong mình tư duy quản trị hiện đại, chuyên nghiệp, và sự linh hoạt cũng như tinh thần khát khao chinh phục.//NGS mong rằng, tinh thần này sẽ luôn được duy trì ở các thế hệ tiếp theo và đó chính là bạn, các cộng sự tài năng của chúng tôi.",
             slug: "",
             content: "",
-            image: "/images/ESEnvironment01.png",
+            image: "/images/ESEnvironment01.png,/images/ESEnvironment02.png,/images/ESEnvironment03.png,/images/ESEnvironment04.png",
             video: "",
             thumbnail: ""
         },
@@ -279,11 +279,11 @@ export const ESEnvironmentData = {
             id: 2,
             language: 'vi',
             code: "PG003.10SE00002CN000002",
-            title: "",
-            description: "",
+            title: "Cơ hội học hỏi và thăng tiến không giới hạn",
+            description: "NGS luôn tạo điều kiện để bạn được học hỏi và thử sức trong bất kỳ vị trí và lĩnh vực nào, miễn rằng quyết tâm của bạn đủ lớn. Dù là ngạch chuyên gia hay quản trị, mỗi sự lựa chọn của bạn sẽ được cố vấn bởi bộ phận Nhân sự hay cán bộ quản lý trực tiếp của bạn. Chúng tôi mong muốn bạn có thể khai thác được toàn bộ tiềm năng của mình, bởi mỗi hành trình trưởng thành của bạn tại NGS chính là thành công của chúng tôi - NGS trao quyền thành công cho mỗi cộng sự của mình.",
             slug: "",
             content: "",
-            image: "/images/ESEnvironment02.png",
+            image: "/images/ESEnvironment01.png,/images/ESEnvironment02.png,/images/ESEnvironment03.png,/images/ESEnvironment04.png",
             video: "",
             thumbnail: ""
         },
@@ -291,11 +291,11 @@ export const ESEnvironmentData = {
             id: 3,
             language: 'vi',
             code: "PG003.10SE00002CN000003",
-            title: "",
-            description: "",
+            title: "Văn hoá và các hoạt động phong trào nhiều màu sắc",
+            description: "NGS tôn trọng sự khác biệt của mỗi cá nhận bên cạnh tinh thần nỗ lực hết mình vì tập thể. Dẫn đến văn hoá làm việc của NGS thể hiện sự đa dạng trong tính hoà hợp lẫn nhau. NGS muốn mang lại một cuộc sống nhiều trải nghiệm cho cán bộ nhân viên bên cạnh công việc nên các hoạt động phong trào đều được đầu tư và coi trọng. //Bạn có thể thích đá bóng hay chơi guitar, bạn có thể tham gia câu lạc bộ tiếng Anh hoặc câu lạc bộ bơi lội, hay đừng bất ngờ nếu bạn có thể nhận được một lời nhắn dễ thương của đồng nghiệp trong chương trình Radio mỗi ngày. NGS tin rằng, ai đi làm cũng mưu cầu hạnh phúc, và chúng ta chỉ có thể tạo ra trải nghiệm tốt nhất cho khách hàng nếu mỗi nhân viên đều hạnh phúc.",
             slug: "",
             content: "",
-            image: "/images/ESEnvironment03.png",
+            image: "/images/ESEnvironment01.png,/images/ESEnvironment02.png,/images/ESEnvironment03.png,/images/ESEnvironment04.png",
             video: "",
             thumbnail: ""
         },
@@ -303,11 +303,11 @@ export const ESEnvironmentData = {
             id: 4,
             language: 'vi',
             code: "PG003.10SE00002CN000004",
-            title: "",
-            description: "",
+            title: "Chính sách phúc lợi cạnh tranh và đa dạng",
+            description: "Tài sản lớn nhất của NGS là những con người tài năng, dẫn đến NGS luôn dành sự ưu tiên cho cải tiến chính sách nhân sự, phúc lợi hàng năm. Thu nhập tại NGS được chi trả dựa trên năng lực và mức độ đóng góp của mỗi cá nhân và được đánh giá là một mức đãi ngộ hấp dẫn trên thị trường. Lương của nhân viên không chỉ là khoản lương cố định hàng tháng, NGS xây dựng cơ chế đánh giá hàng tháng để bạn có thể nhận được sự ghi nhận kịp thời của cán bộ quản lý, đồng thời đừng bất ngờ nếu thu nhập tháng đó của bạn cao hơn offer nếu như bạn đã có một tháng nỗ lực và nhiều đóng góp. //Thưởng tháng 13, thưởng hiệu suất cuối năm không phải là khoản thưởng duy nhất, nếu dự án làm việc tốt hoặc nhận được sự khen ngợi từ khách hàng, thì hãy vui mừng đón nhận các khoản bonus bất ngờ nhé. Các phúc lợi tài chính vào ngày lễ tết hay phi tài chính như bảo hiểm sức khoẻ, nghỉ mát, team building... luôn mang lại những trải nghiệm tuyệt vời cho cán bộ nhân viên. NGS đang nỗ lực hết mình để trở thành Best company to work cho mỗi chúng ta.",
             slug: "",
             content: "",
-            image: "/images/ESEnvironment04.png",
+            image: "/images/ESEnvironment05.png,/images/ESEnvironment06.png,/images/ESEnvironment07.png,/images/ESEnvironment08.png",
             video: "",
             thumbnail: ""
         },

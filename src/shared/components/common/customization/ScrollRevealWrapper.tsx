@@ -6,7 +6,7 @@ interface Props {
   revealConfig?: object;
 }
 
-const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
+const ScrollRevealWrapper: FC<Props> = ({ children, style }) => {
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -19,7 +19,7 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
   }, [isInView]);
 
   return (
-    <main ref={ref} className='relative overflow-hidden' style={style} data-testid='section'>
+    <section ref={ref} className='relative overflow-hidden' style={style} data-testid='sectionParent'>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -31,7 +31,7 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, revealConfig }) => {
       >
         {children}
       </motion.div>
-    </main>
+    </section>
   );
 };
 

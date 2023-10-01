@@ -49,21 +49,21 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             name={data.section.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7'
+            className='w-full grid-cols-7 col-span-7 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
       </div>
-      <div className='w-full flex flex-col lg:flex-row justify-center items-start gap-5 bg-transparent'>
+      <div className='w-full flex flex-col lg:flex-row justify-center items-center gap-5 bg-transparent'>
         {data.components.map((item, idx) => {
           return (
             <motion.div
               key={idx}
               className={`w-full dark:bg-[#1B1D35] ${
-                data.components && data.components?.length - 1 !== idx && 'border-card-aboutUs-home'
-              } p-5 flex flex-col justify-center items-center gap-5 text-center`}
+                data.components && data.components?.length - 1 !== idx && 'border-card-aboutUs-home pr-5 mr-5'
+              } flex flex-col justify-center items-center gap-5 text-center`}
               variants={{
                 hidden: { opacity: 0, scale: 0 },
                 visible: { opacity: 1, scale: 0.9 },
@@ -73,7 +73,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
               transition={{ duration: 0.7, delay: idx * 0.9 }}
             >
               <div className='text-orange-500 text-5xl'>{item.title}</div>
-              <div className='w-2/3 flex flex-col'>
+              <div className='w-full flex flex-col'>
                 {item.description.split('//').map((word, idx) => (
                   <p key={idx}>{word}</p>
                 ))}

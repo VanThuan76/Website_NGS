@@ -23,7 +23,7 @@ const FormDesignOneItem = () => {
     console.log('Options:', selectedItems);
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md'>
+    <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md z-30'>
       <div className='w-full flex justify-start items-start'>
         <form onSubmit={handleSubmit} className='w-full mt-4 p-8 text-[#A6A6A6]'>
           <div className='w-full mb-4'>
@@ -35,7 +35,7 @@ const FormDesignOneItem = () => {
               id='fullName'
               value={fullName}
               onChange={e => setFullName(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b rounded'
+              className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
               required
             />
           </div>
@@ -49,7 +49,7 @@ const FormDesignOneItem = () => {
                 id='email'
                 value={phoneNumber}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>
@@ -62,7 +62,7 @@ const FormDesignOneItem = () => {
                 id='phoneNumber'
                 value={phoneNumber}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>
@@ -76,7 +76,7 @@ const FormDesignOneItem = () => {
                 id='workPosition'
                 value={workPosition}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>
@@ -88,7 +88,7 @@ const FormDesignOneItem = () => {
                 id='companyName'
                 value={companyName}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>
@@ -102,7 +102,7 @@ const FormDesignOneItem = () => {
                 id='workPosition'
                 value={workPosition}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>
@@ -114,7 +114,7 @@ const FormDesignOneItem = () => {
                 id='companyName'
                 value={companyName}
                 onChange={e => setPhoneNumber(e.target.value)}
-                className='w-full bg-transparent px-3 py-2 border-b rounded'
+                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
             </div>

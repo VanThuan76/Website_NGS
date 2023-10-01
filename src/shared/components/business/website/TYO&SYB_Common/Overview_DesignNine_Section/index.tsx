@@ -22,7 +22,7 @@ const OverviewDesignNineSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='flex flex-col justify-start items-start gap-2 z-30'
+          className='w-full grid-cols-7 col-span-7 !text-left'
         />
         <div className='pt-8 flex flex-col justify-start items-start gap-5'>
           {data.components.map((item, idx) => (

@@ -133,7 +133,7 @@ export const Home_2 = {
 export const Home_3 = {
     section: {
         id: 3,
-        name: 'Cập nhật phiên bản 5.0 cho tổ chứ của bạn bằng dịch vụ công nghệ thông tin tổng thể',
+        name: 'Cập nhật phiên bản 5.0 cho tổ chức của bạn bằng dịch vụ công nghệ thông tin tổng thể',
         code: "PG001SE00003",
         image: "/images/PG001SE00003CN000001.png",
         description: "NGS cam kết đồng hành cùng quá trình đó với mọi tổ chức bằng đội ngũ chuyên gia tư vấn hàng đầu, thiết kế, triển khai, và vận hành giải pháp chuyên nghiệp. Bên cạnh đó chúng tôi mang đến sự hiểu biết sâu sắc về đặc thù của ngành để hỗ trợ tốt nhất cho khách hàng."

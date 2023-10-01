@@ -30,7 +30,7 @@ const HomeWhyUsSection = ({title, data, className}: Props) => {
                 name={data.section!.name as string}
                 description={data.section!.description as string}
                 findMore={false}
-                className='w-full'
+                className='w-full !text-left'
               />
               {/* <-- Content Responsive Mobile */}
               <div className='flex md:hidden w-full lg:w-1/2 xl:w-1/2 flex-col justify-center items-center'>
