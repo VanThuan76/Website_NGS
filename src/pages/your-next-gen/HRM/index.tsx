@@ -10,7 +10,7 @@ import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
 import { YNG_DWM_Section5, YNG_DWM_Section6, YNG_DWM_Section7, YNG_DWM_Section8 } from '@/mocks/website/YNG/yng';
 import { YNG_Home_Solution_HRM } from '@/mocks/website/YNG/YNG_Home/solution';
-import { YNGHomeBanner1 } from '@/mocks/website/YNG/YNG_Home/example';
+import { YNGHomeBannerHRM } from '@/mocks/website/YNG/YNG_Home/example';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -23,7 +23,7 @@ const ERPPage = () => {
         <meta name='description' content='Giải pháp Quản lý doanh nghiệp NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <YNGHomeBannerSection title='Dich vu' data={YNGHomeBanner1} />
+      <YNGHomeBannerSection title='NGS HRM' data={YNGHomeBannerHRM} />
       <YNGHomeSolutionSection data={YNG_Home_Solution_HRM} />
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_DWM_Section5} />
       <YNGCommonIntroductionSection data={YNG_DWM_Section6} />

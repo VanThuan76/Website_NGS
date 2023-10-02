@@ -3777,7 +3777,7 @@ export const TYO_CDP_Section7 = {
         name: 'Sử dụng CDP để làm gì?',
         code: "PG003.2SE00007",
         image: "",
-        description: "Dưới đây là một vài ví dụ và chúng không liên quan đến tiếp thị."
+        description: ""
     },
     components: [
         {
