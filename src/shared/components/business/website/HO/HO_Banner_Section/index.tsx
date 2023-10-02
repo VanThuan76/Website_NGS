@@ -25,14 +25,12 @@ const HomeBannerSection = ({ data }: Props) => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
   });
-
   // if (data.components) {
   //   data.components.forEach(() => {
   //     const ref = useRef<HTMLDivElement>(null);
   //     progressLines.current.push(ref);
   //   });
   // }
-
   const onAutoplayTimeLeft = (s: any, time: any, progress: any) => {
     progressLines.current.forEach(progressLine => {
       if (progressLine.current) {

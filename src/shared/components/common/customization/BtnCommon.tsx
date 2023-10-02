@@ -21,9 +21,9 @@ const BtnCommon = ({ hover = true, cls, colorSvg, title }: Props) => {
       whileTap={{ scale: 0.9 }}
       whileHover={hover ? 'hover' : ''}
       variants={buttonVariants}
-      className={`pl-[16px] pr-[12px] py-[18px] text-[#FC5E03] relative flex justify-start items-center gap-2 cursor-pointer rounded-[12px] font-medium ${cls}`}
+      className={`py-2 px-6 md:pl-[16px] md:pr-[12px] md:py-[18px] text-[#FC5E03] relative flex justify-start items-center gap-2 cursor-pointer rounded-[4px] md:rounded-[12px] font-medium ${cls}`}
     >
-      <p className='text-base'>{title}</p>
+      <p className='text-base font-normal'>{title}</p>
       <IconLineDirection color={colorSvg} />
     </motion.div>
   );

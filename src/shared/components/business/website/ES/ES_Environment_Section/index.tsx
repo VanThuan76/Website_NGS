@@ -44,7 +44,6 @@ const ESEnvironment = ({ data, className }: Props) => {
       zIndex: inView ? 50 : 0,
     });
   }, [controls, currentIndex, inView]);
-
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section

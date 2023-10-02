@@ -66,7 +66,7 @@ const Header = () => {
             <ThemeModeToggle />
             <LanguageSwitch />
           </div> */}
-          <div className='lg:hidden xl:hidden'>
+          <div className='lg:hidden'>
             <Sheet>
               <SheetTrigger asChild>
                 <Menu color='#FC5E03' className='cursor-pointer' />

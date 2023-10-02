@@ -50,7 +50,7 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
         </p>
         {/* Responsive--> */}
         <UseLinkRouter url={URLS_SYSTEM.ES}>
-          <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+          <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
         </UseLinkRouter>
       </motion.div>
     </motion.div>

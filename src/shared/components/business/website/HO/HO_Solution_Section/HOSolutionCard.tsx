@@ -16,10 +16,10 @@ interface Props {
 }
 
 const HOSolutionCard = ({ id, title, description, image, url, className }: Props) => {
+  const currentBreakPoint = useBreakPoint();
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
-  const currentBreakPoint = useBreakPoint()
   const animateTheme =
     theme === 'dark'
       ? {
@@ -69,7 +69,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
       >
         <div className='w-full h-[60px] flex flex-col justify-start items-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
-            <h1 key={idx} className='text-[24px] font-medium leading-8'>
+            <h1 key={idx} className='text-base md:text-2xl font-medium leading-6 md:leading-8'>
               {item}
             </h1>
           ))}

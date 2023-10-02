@@ -27,9 +27,9 @@ const HomePioneeringSection = ({ data, className }: Props) => {
       <div className='max-w-[1440px] w-full mx-auto my-auto grid grid-cols-1 md:grid-cols-2 gap-5 justify-between items-center py-14'>
         <div className='w-full flex flex-col justify-start items-start gap-3'>
           <h1 className='text-2xl lg:text-4xl font-medium'>{data.section.name}</h1>
-          <p>{data.section.description}</p>
+          <p className='text-sm text-slate-500'>{data.section.description}</p>
           <UseNextLink path={URLS_EXTERNAL.ISPACE_EDU}>
-            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseNextLink>
         </div>
         <div className={`col-span-1 relative max-w-[600px] ${currentBreakPoint === "sm" ? "h-[50px]" : "h-[150px]"}`}>

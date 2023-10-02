@@ -37,7 +37,7 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
       />
-      <div className='max-w-[1440px] mt-20 mx-auto grid grid-cols-2 lg:grid-cols-4 bg-transparent overflow-hidden gap-2'>
+      <div className='max-w-[1440px] mt-10 md:mt-20 mx-auto grid grid-cols-2 md:grid-cols-4 bg-transparent overflow-hidden gap-2'>
         {data &&
           data.components.map((item, idx) => (
             <motion.div 

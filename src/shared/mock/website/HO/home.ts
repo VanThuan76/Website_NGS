@@ -107,7 +107,7 @@ export const Home_2 = {
             id: 3,
             language: 'vi',
             code: "PG001SE00002CN000003",
-            title: "Giải pháp Quản lý nhân sự",
+            title: "Giải pháp Quản lý // nhân sự",
             description: "Tối ưu hoá quản lý nhân sự, giảm thiểu thời gian và tăng hiệu quả công việc",
             slug: "/your-next-gen/HRM",
             content: "",
@@ -205,7 +205,7 @@ export const Home_3 = {
 export const Home_4 = {
     section: {
         id: 4,
-        name: 'Bảo vệ toàn vẹn hệ thống // công nghệ thông tin của bạn bằng dịch vụ an ninh mạng 24/7 chuyên nghiệp',
+        name: 'Bảo vệ toàn vẹn hệ thống công nghệ thông tin của bạn bằng dịch vụ an ninh mạng 24/7 chuyên nghiệp',
         code: "PG001SE00004",
         image: "",
         description: "Các rủi ro về an ninh mạng có thể gây ra hậu quả nghiêm trọng đến bí mật kinh doanh, vận hành hay trách nhiệm pháp lý của tổ chức. Việc khắc phục các sự số an ninh mạng đòi hỏi lực lượng chuyên gia bảo mật cao cấp và quy trình chuyên nghiệp. Chúng tôi sẵn sàng đồng hành và bảo vệ hệ thống chuyển đổi số của khách hàng với dịch vụ An ninh mạng toàn diện và an toàn."

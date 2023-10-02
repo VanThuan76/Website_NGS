@@ -30,7 +30,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
     <section
       ref={ref}
       id={data.section.code}
-      className={`relative flex flex-col gap-16 pt-[124px] pb-20 px-4 md:px-24 ${className}`}
+      className={`relative flex flex-col gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
     >
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-20 '>
         <div className='col-span-1 relative h-[370px]'>
@@ -50,7 +50,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
       </div>
