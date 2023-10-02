@@ -42,10 +42,10 @@ const OCDetailPage = () => {
         <YNGCommonIntroductionSection data={YNG_MNS_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_MNS_Section7} />
+        <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_MNS_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-        <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_MNS_Section8} />
+        <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_MNS_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );
