@@ -50,10 +50,10 @@ const AssessDetailPage = () => (
       <YNGCommonIntroductionSection data={YNG_Assess_Section6} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_Assess_Section7} />
+      <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_Assess_Section7} />
     </ScrollRevealWrapper>
     <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
-      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_Assess_Section8} />
+      <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_Assess_Section8} />
     </ScrollRevealWrapper>
   </React.Fragment>
 );

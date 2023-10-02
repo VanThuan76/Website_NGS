@@ -27,8 +27,8 @@ const ERPPage = () => {
       <YNGHomeSolutionSection data={YNG_Home_Solution_Sale} />
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_DWM_Section5} />
       <YNGCommonIntroductionSection data={YNG_DWM_Section6} />
-      <YNGCommonBackSolutionSection title='Back to Solution' data={YNG_DWM_Section7} />
-      <YNGCommonPilotSubriceSection title='Pilot Subcribe' data={YNG_DWM_Section8} />
+      <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_DWM_Section7} />
+      <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_DWM_Section8} />
     </React.Fragment>
   );
 };
