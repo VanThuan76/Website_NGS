@@ -14,11 +14,11 @@ const NewsItem = ({ data }: Props) => {
     <div className='relative w-full h-full dark:bg-[#1B1D35] grid grid-cols-3 lg:grid-cols-2 gap-0 lg:gap-3 rounded-lg shadow-lg'>
       <PreImage
         src={data.image as string}
-        height={270}
+        height={350}
         width={300}
         layer={false}
         alt={data.title as string}
-        className='absolute w-full h-full rounded-l-lg object-cover'
+        className='absolute w-full h-full rounded-l-lg object-left-top object-cover'
       />
       <div className='w-full flex flex-col justify-start items-start gap-3 p-5 col-span-2 lg:col-span-1'>
         <div className='w-full flex flex-col justify-start items-start lg:flex-row lg:justify-between lg:items-center'>

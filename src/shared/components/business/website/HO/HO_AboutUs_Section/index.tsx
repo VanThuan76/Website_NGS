@@ -60,7 +60,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             <motion.div
               key={idx}
               className={`w-full dark:bg-[#1B1D35] ${
-                data.components && data.components?.length - 1 !== idx && 'border-card-aboutUs-home md:pr-5 md:mr-5'
+                data.components && data.components?.length - 1 !== idx && 'p-7 border-card-aboutUs-home-right md:pr-5 md:mr-5'
               } flex flex-col justify-center items-center gap-5 text-center`}
               variants={{
                 hidden: { opacity: 0, scale: 0 },

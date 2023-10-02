@@ -19,17 +19,17 @@ const ESMissionSection = ({ data, className }: Props) => {
             <h1 className='text-sm leading-5 md:text-2xl md:leading-6 font-medium text-orange-500'>{data.section.name}</h1>
             <HightLightText originalText={data.section.description} className='text-2xl md:text-[40px] leading-8 md:leading-[48px]' />
           </div>
-          <div className='w-full flex flex-col lg:flex-row justify-center items-start gap-5 mt-16 bg-transparent overflow-hidden'>
+          <div className='w-full flex flex-col lg:flex-row justify-center items-start gap-5 md:mt-16 bg-transparent overflow-hidden'>
             {data.components.map((item, idx) => {
               return (
                 <div
                   key={idx}
                   className={`w-full dark:bg-[#1B1D35] ${
                     data.components && data.components?.length - 1 !== idx && 'border-card-mission-es'
-                  } p-5 flex flex-col justify-center items-center gap-5 text-center`}
+                  } md:p-5 flex flex-col justify-center items-center gap-3 md:gap-5 text-center`}
                 >
-                  <div className='text-orange-500 text-5xl'>{item.title}</div>
-                  <p className='w-full'>{item.description}</p>
+                  <div className='text-orange-500 text-xl md:text-[40px]'>{item.title}</div>
+                  <p className='text-sm md:text-base w-full'>{item.description}</p>
                 </div>
               );
             })}

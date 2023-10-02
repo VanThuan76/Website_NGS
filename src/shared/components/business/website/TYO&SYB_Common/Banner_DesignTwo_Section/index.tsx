@@ -21,7 +21,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
         <div className='relative w-full flex justify-between items-center mx-auto'>
           <div className='absolute mx-auto top-1/2 left-1/4 transform -translate-x-[20%] md:-translate-x-[30%] -translate-y-1/2 w-[90%] md:w-[60%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
             <div className='flex flex-col justify-start items-start gap-3'>
-              <div className='mb-4 flex justify-center items-center gap-3'>
+              <div className='hidden md:flex mb-4 justify-center items-center gap-3'>
                 {breadcrumb.map((item: string, idx: number) => (
                   <div key={idx} className='flex justify-center items-center gap-2'>
                     <p className={`text-sm ${idx === breadcrumb.length - 1 ? 'text-white' : 'text-[#FC5E03]'}`}>

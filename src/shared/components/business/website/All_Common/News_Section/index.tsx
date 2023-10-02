@@ -27,7 +27,7 @@ const NewsSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={false}
-        className='w-full flex justify-start items-start'
+        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !text-left !gap-3'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto mt-10  grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-6'>
         <div className='dark:bg-[#1B1D35] flex flex-col justify-start items-start pb-5 rounded-lg shadow-lg'>
@@ -48,7 +48,7 @@ const NewsSection = ({ title, data, className }: Props) => {
             <p className='text-sm text-slatse-500'>{data.components[0].description}</p>
             <p className='w-full text-end text-sm text-slate-400'>{data.components[0].author}</p>
           <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-            <BtnCommon title='Tìm hiểu thêm' cls='w-[170px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon title='Tìm hiểu thêm' cls='w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
           </div>
         </div>

@@ -55,7 +55,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
           className='w-full h-full object-cover'
         />
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
-          <div className='relative w-full min-h-[350px]'>
+          <div className='relative w-full min-h-[500px] md:min-h-[350px]'>
             {data.components.map((item, idx) => (
               <div key={idx} className='absolute top-0 w-full flex flex-col justify-start items-start gap-10'>
                 <div className='flex flex-col justify-start items-start gap-2'>
