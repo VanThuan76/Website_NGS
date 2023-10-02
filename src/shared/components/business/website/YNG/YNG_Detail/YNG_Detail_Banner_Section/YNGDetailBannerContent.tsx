@@ -1,5 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import { motion } from 'framer-motion';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 const container = {
@@ -76,7 +77,9 @@ const YNGDetailBannerContent = ({ selectedTab }: Props) => {
       <motion.div className='w-[672px] text-xl font-medium leading-7'>
         {selectedTab ? selectedTab.content : ''}
       </motion.div>
-      <BtnCommon title='Đăng ký ngay' cls='!px-6 bg-white border-none !rounded-sm' />
+      <UseLinkRedirect sectionCode='FormYNG'>
+        <BtnCommon title='Đăng ký ngay' cls='!px-6 bg-white border-none !rounded-sm' />
+      </UseLinkRedirect>
     </InitBasicAnimation>
   );
 };

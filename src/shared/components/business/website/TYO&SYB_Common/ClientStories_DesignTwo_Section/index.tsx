@@ -26,20 +26,21 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className={`${
+              className={`w-full mx-auto pr-5 ${
                 data.components &&
                 data.components?.length - 1 !== idx &&
-                'border-clientStories-designTwo-section mx-auto pr-4'
+                'border-clientStories-designTwo-section'
               }`}
             >
-              <PreImage
-                src={item.image as string}
-                height={100}
-                width={200}
-                layer={false}
-                alt={item.title}
-                className={`rounded-lg cursor-pointer object-contain`}
-              />
+              <div className='relative h-[200px] rounded-lg cursor-pointer overflow-hidden'>
+                <PreImage
+                  src={item.image as string}
+                  layer={false}
+                  alt={item.title}
+                  objectFit='contain'
+                  objectPosition='center'
+                />
+              </div>
             </div>
           ))}
         </div>

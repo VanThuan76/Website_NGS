@@ -7,6 +7,7 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+import ESPeopleResponsive from './ESPeopleResponsive';
 
 type Props = {
   title: string;
@@ -45,7 +46,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full flex flex-col justify-start items-start gap-3'
       />
-      <div className='relative w-full grid grid-cols-2 justify-start items-start gap-10'>
+      <div className='hidden md:grid mt-3 relative w-full grid-cols-2 justify-start items-start gap-10'>
         <PreImage
           src={data.section.image}
           width={1980}
@@ -65,7 +66,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
               </div>
             ))}
           </div>
-          <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
+          <ul className='absolute bottom-5 hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (
               <motion.li
                 key={idx}
@@ -84,6 +85,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
           </ul>
         </div>
       </div>
+      <ESPeopleResponsive data={data.components} />
     </section>
   );
 };

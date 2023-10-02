@@ -1232,7 +1232,7 @@ export const YNG_DWM_Banner = {
           'Tối ưu thời gian bán hàng',
         slug: '',
         content:
-          'Với giải pháp Odoo CRM, nhân viên kinh doanh được giải phóng khỏi các công việc giấy tờ, báo cáo đang chiếm tới 80% thời gian làm việc, để tập trung vào bán hàng nhiều hơn.',
+          'Với giải pháp NGS ERP CRM, nhân viên kinh doanh được giải phóng khỏi các công việc giấy tờ, báo cáo đang chiếm tới 80% thời gian làm việc, để tập trung vào bán hàng nhiều hơn.',
         image: '/images/PG002.5.1SE00003CN000002.png',
         video: '',
         thumbnail: '',
@@ -1795,7 +1795,7 @@ export const YNG_DWM_Banner = {
           'Tối ưu hóa năng suất',
         slug: '',
         content:
-          'Tạo quy tắc SLA của bạn và để Odoo tự động hành động. Tự động hóa email hoặc hành động ở các giai đoạn khác nhau của việc phân bổ vé. Xác định các mẫu email động để tự động phản hồi các câu hỏi phổ biến nhất.',
+          'Tạo quy tắc SLA của bạn và để NGS ERP tự động hành động. Tự động hóa email hoặc hành động ở các giai đoạn khác nhau của việc phân bổ vé. Xác định các mẫu email động để tự động phản hồi các câu hỏi phổ biến nhất.',
         image: '/images/PG002.5.2SE00003CN000001.png',
         video: '',
         thumbnail: '',
@@ -2372,7 +2372,7 @@ export const YNG_DWM_Banner = {
           'Tự động hóa bảo trì dự phòng để dây chuyền sản xuất luôn hoạt động',
         slug: '',
         content:
-          'Odoo tính toán các thống kê tiêu chuẩn nhằm giúp bạn lập kế hoạch bảo trì dự phòng, bao gồm thời gian trung bình giữa các sự cố (MTBF), thời gian sửa chữa trung bình (MTTR) và ngày dự kiến xảy ra sự cố tiếp theo, đồng thời cho phép bạn tự động lập lịch đo lường và bảo trì dự phòng.',
+          'NGS ERP tính toán các thống kê tiêu chuẩn nhằm giúp bạn lập kế hoạch bảo trì dự phòng, bao gồm thời gian trung bình giữa các sự cố (MTBF), thời gian sửa chữa trung bình (MTTR) và ngày dự kiến xảy ra sự cố tiếp theo, đồng thời cho phép bạn tự động lập lịch đo lường và bảo trì dự phòng.',
         image: '/images/PG002.5.3SE00003CN000001.png',
         video: '',
         thumbnail: '',
@@ -2921,7 +2921,7 @@ export const YNG_DWM_Banner = {
         code: 'PG002.5.4SE00002CN000003',
         title: 'Tự động hóa việc đánh giá',
         description:
-          'Không cần phải đồng bộ hóa kết quả với cơ sở dữ liệu của bạn. Odoo sẽ tự động theo dõi nó!',
+          'Không cần phải đồng bộ hóa kết quả với cơ sở dữ liệu của bạn. NGS ERP sẽ tự động theo dõi nó!',
         slug: '',
         content: '',
         image: '',
@@ -2949,7 +2949,7 @@ export const YNG_DWM_Banner = {
           'Chia sẻ và thu nhập dữ liệu',
         slug: '',
         content:
-          'Chia sẻ khảo sát của bạn nhanh chóng với hệ thống chia sẻ tích hợp của Odoo. Truyền đạt về các khảo sát của bạn chỉ trong vài cú nhấp chuột.',
+          'Chia sẻ khảo sát của bạn nhanh chóng với hệ thống chia sẻ tích hợp của NGS ERP. Truyền đạt về các khảo sát của bạn chỉ trong vài cú nhấp chuột.',
         image: '/images/PG002.5.4SE00003CN000001.png',
         video: '',
         thumbnail: '',
@@ -2977,7 +2977,7 @@ export const YNG_DWM_Banner = {
           'Đơn giản và trực quan, từ thiết kế đến phân tích',
         slug: '',
         content:
-          'Dễ dàng ngay từ đầu nhờ giao diện cực kỳ thân thiện với người dùng, Odoo Surveys cho phép bạn tạo và chỉnh sửa khảo sát mà không cần nỗ lực. Phản ứng với nhu cầu tiếp thị của bạn và cung cấp các nghiên cứu bất cứ lúc nào.',
+          'Dễ dàng ngay từ đầu nhờ giao diện cực kỳ thân thiện với người dùng, NGS ERP Surveys cho phép bạn tạo và chỉnh sửa khảo sát mà không cần nỗ lực. Phản ứng với nhu cầu tiếp thị của bạn và cung cấp các nghiên cứu bất cứ lúc nào.',
         image: '/images/PG002.5.4SE00003CN000003.png',
         video: '',
         thumbnail: '',
@@ -8368,7 +8368,7 @@ export const YNG_DWM_Banner = {
         code: 'PG002.4.52SE00002CN000001',
         title: 'Trình chỉnh sửa Kéo & Thả',
         description:
-          'Odoo cung cấp nhiều lựa chọn khối dựng. Kéo và thả chúng để tạo các trang tuyệt đẹp.',
+          'NGS ERP cung cấp nhiều lựa chọn khối dựng. Kéo và thả chúng để tạo các trang tuyệt đẹp.',
         slug: '',
         content: '',
         image: '',
@@ -8381,7 +8381,7 @@ export const YNG_DWM_Banner = {
         code: 'PG002.4.52SE00002CN000002',
         title: 'Thiết kế cửa hàng của bạn chỉ trong 4 bước đơn giản',
         description:
-          'Thiết kế cửa hàng của bạn chỉ trong 4 bước đơn giản Sử dụng cấu hình trang web AI để tạo trang web của bạn trong 4 bước đơn giản. Odoo sẽ cung cấp hình ảnh không có bản quyền dựa theo lĩnh vực của bạn.',
+          'Thiết kế cửa hàng của bạn chỉ trong 4 bước đơn giản Sử dụng cấu hình trang web AI để tạo trang web của bạn trong 4 bước đơn giản. NGS ERP sẽ cung cấp hình ảnh không có bản quyền dựa theo lĩnh vực của bạn.',
         slug: '',
         content: '',
         image: '',
@@ -8394,7 +8394,7 @@ export const YNG_DWM_Banner = {
         code: 'PG002.4.52SE00002CN000003',
         title: 'Chủ đề Chuyên nghiệp',
         description:
-          'Odoo cung cấp các chủ đề riêng tuyệt đẹp được thiết kế cho từng ngành. Bạn cũng có thể tạo chủ đề tùy chỉnh của riêng mình.',
+          'NGS ERP cung cấp các chủ đề riêng tuyệt đẹp được thiết kế cho từng ngành. Bạn cũng có thể tạo chủ đề tùy chỉnh của riêng mình.',
         slug: '',
         content: '',
         image: '',
@@ -8422,7 +8422,7 @@ export const YNG_DWM_Banner = {
           'Bán mọi thứ có thể',
         slug: '',
         content:
-          'Odoo phù hợp với mọi loại hình kinh doanh, với hàng trăm tính năng có thể sẵn sàng sử dụng. Bạn sẽ không cần đầu tư vào nhiều plugin.',
+          'NGS ERP phù hợp với mọi loại hình kinh doanh, với hàng trăm tính năng có thể sẵn sàng sử dụng. Bạn sẽ không cần đầu tư vào nhiều plugin.',
         image: '/images/PG002.4.522SE00003CN000001.png',
         video: '',
         thumbnail: '',
@@ -8436,7 +8436,7 @@ export const YNG_DWM_Banner = {
           'Chuyển đổi khách truy cập',
         slug: '',
         content:
-          'Odoo có các công cụ hữu ích để giúp bạn chuyển đổi khách truy cập thành khách hàng. Trả lời câu hỏi của khách truy cập ngay lập tức. Tin nhắn hiển thị trên back-end của bạn.',
+          'NGS ERP có các công cụ hữu ích để giúp bạn chuyển đổi khách truy cập thành khách hàng. Trả lời câu hỏi của khách truy cập ngay lập tức. Tin nhắn hiển thị trên back-end của bạn.',
         image: '/images/PG002.4.522SE00003CN000002.png',
         video: '',
         thumbnail: '',
@@ -9130,7 +9130,7 @@ export const YNG_DWM_Banner = {
         'Thông báo và phản hồi',
       slug: '',
       content:
-        'Nếu có bất kỳ cuộc hội thoại nào có gắn dấu sao thì cuộc hội thoại đó sẽ được liệt kê trong hộp Có gắn dấu sao. Odoo giúp người dùng gắn dấu sao cho bất kỳ tin nhắn hoặc thông báo nào.',
+        'Nếu có bất kỳ cuộc hội thoại nào có gắn dấu sao thì cuộc hội thoại đó sẽ được liệt kê trong hộp Có gắn dấu sao. NGS ERP giúp người dùng gắn dấu sao cho bất kỳ tin nhắn hoặc thông báo nào.',
       image: '/images/PG002.1.1SE00003CN000002.png',
       video: '',
       thumbnail: '',
@@ -9978,10 +9978,10 @@ export const YNG_DWM_Banner = {
       code: 'PG002.1.4SE00003CN000003',
       title: 'Quản lý tài liệu',
       description:
-        'Tích hợp với những ứng dụng Odoo',
+        'Tích hợp với những ứng dụng NGS ERP',
       slug: '',
       content:
-        'Tài liệu được tích hợp với các Ứng dụng Odoo khác, tạo hóa đơn cho nhà cung cấp chỉ bằng một cú nhấp chuột với sự trợ giúp của AI trong Kế toán hoặc Tạo nhiệm vụ từ các tài liệu cụ thể.',
+        'Tài liệu được tích hợp với các Ứng dụng NGS ERP khác, tạo hóa đơn cho nhà cung cấp chỉ bằng một cú nhấp chuột với sự trợ giúp của AI trong Kế toán hoặc Tạo nhiệm vụ từ các tài liệu cụ thể.',
       image: '/images/PG002.1.4SE00003CN000003.png',
       video: '',
       thumbnail: '',
@@ -10029,7 +10029,7 @@ export const YNG_DWM_Banner = {
       code: 'PG002.1.5SE00002CN000001',
       title: 'Khả năng tùy chỉnh cao',
       description:
-        'Với Phần mềm E-learning Odoo, mọi thứ thật dễ dàng tùy chỉnh để đáp ứng yêu cầu của khách hàng trong các lĩnh vực đào tạo.',
+        'Với Phần mềm E-learning NGS ERP, mọi thứ thật dễ dàng tùy chỉnh để đáp ứng yêu cầu của khách hàng trong các lĩnh vực đào tạo.',
       slug: '',
       content: '',
       image: '',
@@ -10097,7 +10097,7 @@ export const YNG_DWM_Banner = {
         'Thời gian triển khai nhanh chóng',
       slug: '',
       content:
-        'Chúng tôi phát hiện rằng việc tiết kiệm thời gian cho khách hàng là rất quan trọng. Với hệ thống Elearning Odoo, chúng tôi đã tích hợp đầy đủ các tính năng nên việc áp dụng hệ thống rất nhanh chóng.',
+        'Chúng tôi phát hiện rằng việc tiết kiệm thời gian cho khách hàng là rất quan trọng. Với hệ thống Elearning NGS ERP, chúng tôi đã tích hợp đầy đủ các tính năng nên việc áp dụng hệ thống rất nhanh chóng.',
       image: '/images/PG002.1.5SE00003CN000002.png',
       video: '',
       thumbnail: '',
@@ -10343,7 +10343,7 @@ export const YNG_DWM_Banner = {
         'Cải thiện hiệu suất & thời gian ',
       slug: '',
       content:
-        'Nhận phương pháp lưu kho hiệu quả nhất và cải thiện mọi hoạt động nội bộ của bạn. Hàng tồn kho nhập kép của Odoo không có đầu vào, đầu ra hoặc chuyển đổi chứng khoán. Thay vào đó, tất cả các hoạt động là di chuyển chứng khoán giữa các địa điểm.',
+        'Nhận phương pháp lưu kho hiệu quả nhất và cải thiện mọi hoạt động nội bộ của bạn. Hàng tồn kho nhập kép của NGS ERP không có đầu vào, đầu ra hoặc chuyển đổi chứng khoán. Thay vào đó, tất cả các hoạt động là di chuyển chứng khoán giữa các địa điểm.',
       image: '/images/PG002.1.7SE00003CN000001.png',
       video: '',
       thumbnail: '',
@@ -10371,7 +10371,7 @@ export const YNG_DWM_Banner = {
         'Có thể truy xuất nguồn gốc',
       slug: '',
       content:
-        'Theo dõi mọi sự luân chuyển chứng khoán với hệ thống kiểm kê hai lần duy nhất của Odoo. // Theo dõi mọi cổ phiếu chuyển từ mua hàng sang thùng kho đến đơn đặt hàng. // Theo dõi seires hoặc số lô từ bất cứ nơi nào trong chuỗi cung ứng của bạn.',
+        'Theo dõi mọi sự luân chuyển chứng khoán với hệ thống kiểm kê hai lần duy nhất của NGS ERP. // Theo dõi mọi cổ phiếu chuyển từ mua hàng sang thùng kho đến đơn đặt hàng. // Theo dõi seires hoặc số lô từ bất cứ nơi nào trong chuỗi cung ứng của bạn.',
       image: '/images/PG002.1.7SE00003CN000003.png',
       video: '',
       thumbnail: '',
@@ -12122,7 +12122,7 @@ export const YNG_DWM_Banner = {
       code: 'PG002.2.4SE00002CN000002',
       title: 'Giao diện thông minh',
       description:
-        'Odoo POS dựa trên một giao diện thông minh mà bất kỳ công ty bán lẻ nào đều có thể dễ dàng sử dụng.',
+        'NGS ERP POS dựa trên một giao diện thông minh mà bất kỳ công ty bán lẻ nào đều có thể dễ dàng sử dụng.',
       slug: '',
       content: '',
       image: '',
@@ -12135,7 +12135,7 @@ export const YNG_DWM_Banner = {
       code: 'PG002.2.4SE00002CN000003',
       title: 'Tùy chỉnh linh hoạt',
       description:
-        'Bạn có thể cấu hình Odoo POS theo đúng nhu cầu của mình nhờ tính năng tùy chỉnh vô cùng linh hoạt.',
+        'Bạn có thể cấu hình NGS ERP POS theo đúng nhu cầu của mình nhờ tính năng tùy chỉnh vô cùng linh hoạt.',
       slug: '',
       content: '',
       image: '',
@@ -12177,7 +12177,7 @@ export const YNG_DWM_Banner = {
         'Giữ liên lạc với khách hàng',
       slug: '',
       content:
-        'Thưởng cho khách hàng trung thành của bạn bằng điểm, quà tặng và chiết khấu với các chương trình khách hàng thân thiết của Odoo. Toàn bộ quá trình có thể nhanh chóng hoàn thành và hoàn toàn tự động.',
+        'Thưởng cho khách hàng trung thành của bạn bằng điểm, quà tặng và chiết khấu với các chương trình khách hàng thân thiết của NGS ERP. Toàn bộ quá trình có thể nhanh chóng hoàn thành và hoàn toàn tự động.',
       image: '/images/PG002.2.4SE00003CN000002.png',
       video: '',
       thumbnail: '',

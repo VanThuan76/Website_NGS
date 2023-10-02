@@ -24,25 +24,25 @@ const CCPage = () => {
         <meta name='description' content='Contact Center NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <BannerDesignTwoSection breadcrumb={["Trang chủ", "Dịch vụ xuất sắc", "Contact Center"]} data={TYO_CC_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignThreeSection title='Tổng quan' data={TYO_CC_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ChallengeDesignOneSection title='Thách thức' data={TYO_CC_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignTwoSetion title='Dịch vụ của chúng tôi' data={TYO_CC_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CC_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <PartnerDesignThreeSection data={TYO_CC_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

@@ -32,7 +32,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='flex flex-col lg:flex-row xl:flex-row justify-start items-start gap-8'
+        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
       />
       <div className='max-w-[1440px] w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
         <div className='grid grid-cols-4 justify-end items-end gap-2'>
@@ -44,6 +44,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
               title={item.title}
               description={item.description}
               image={item.image}
+              slug={item.slug}
               sectionControls={sectionControls}
               idx={idx}
             />
@@ -57,6 +58,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
               title={item.title}
               description={item.description}
               image={item.image}
+              slug={item.slug}
               sectionControls={sectionControls}
               idx={idx}
             />
@@ -69,6 +71,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
               title={item.title}
               description={item.description}
               image={item.image}
+              slug={item.slug}
               sectionControls={sectionControls}
               idx={idx}
             />

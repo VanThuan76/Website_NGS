@@ -26,28 +26,28 @@ const DAAPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <BannerDesignOneSection title='Dữ liệu và phân tích' data={TYOBanner1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
       <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignOneSection title='' data={TYOService1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <PartnerDesignThreeSection data={TYOPartner3_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_17} />
       </ScrollRevealWrapper>
 

@@ -16,15 +16,15 @@ const OverviewDesignNineSection = ({ title, data, className }: Props) => {
       id={data.section.code}
       className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
     >
-      <div className='w-full grid grid-cols-2 justify-start items-start gap-12'>
+      <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-start items-start md:gap-12'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 !text-left'
+          className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-2 !text-left'
         />
-        <div className='pt-8 flex flex-col justify-start items-start gap-5'>
+        <div className='md:pt-16 flex flex-col justify-start items-start gap-5'>
           {data.components.map((item, idx) => (
             <div key={idx} className='w-full flex flex-col justify-start items-start gap-3'>
               <h1 className='text-xl md:text-2xl font-semibold'>{item.title}</h1>

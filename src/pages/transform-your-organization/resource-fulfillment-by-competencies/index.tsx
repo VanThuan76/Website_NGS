@@ -23,22 +23,22 @@ const TIPage = () => {
         <meta name='description' content='System Integration NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <BannerDesignOneSection title="Resource Fullfillment by Competencies" data={TYO_RF_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignOneSection title='Tổng quan' data={TYO_RF_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignFourSection title='Our Service & Solution' data={TYO_RF_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_RF_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ClientStoriesDesignTwoSection title='Client stories' data={TYO_AMS_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>

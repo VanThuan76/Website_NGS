@@ -64,15 +64,10 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
         <div className='w-full h-full bg-[#FC5E03]'>
           <YNGDetailBannerContent selectedTab={selectedTab!} />
         </div>
-        <div className='absolute -top-52 right-0 w-1/3 h-full'>
-          <PreImage
-            src='/images/BannerDetailYNG.png'
-            height={1145}
-            width={745}
-            layer={false}
-            alt="BannerDetailYNG"
-            className='w-full h-full object-cover rounded-lg'
-          />
+        <div className='absolute top-0 right-0 w-1/2 h-full'>
+          <div className='relative w-full h-full rounded-lg overflow-hidden'>
+            <PreImage src='/images/BannerDetailYNG.png' layer={false} alt='BannerDetailYNG' />
+          </div>
         </div>
         <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10'>
           <div className='flex items-center justify-between gap-5'>

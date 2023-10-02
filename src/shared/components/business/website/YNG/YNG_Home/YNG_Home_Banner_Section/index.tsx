@@ -74,14 +74,15 @@ const YNGHomeBannerSection = ({ title, data, className }: Props) => {
               transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
               className='w-full flex-shrink-0 snap-start'
             >
+              <div className='relative h-[700px] rounded-lg overflow-hidden'>
               <PreImage
                 src='/images/BannerYNG.png'
                 height={700}
                 width={1980}
                 layer={true}
                 alt='BannerYNG'
-                className='w-full h-full object-cover rounded-lg'
               />
+              </div>
             </motion.div>
           </AnimatePresence>
         </div>

@@ -26,7 +26,9 @@ const WhyUsDesignOneSection = ({ title, data, className }: Props) => {
         <div className='flex flex-col justify-start items-start gap-10'>
           {data.components.map((item, idx) => (
             <div key={idx} className='w-full h-full flex justify-start items-start px-4 py-6 gap-2 rounded-lg'>
-              <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
+              <div className='relative w-[70px] h-[70px] rounded-lg overflow-hidden'>
+                <PreImage src={item.image} alt={item.title} />
+              </div>
               <div className='w-full flex flex-col justify-start items-start gap-3 mt-2'>
                 <h1 className='text-xl md:text-3xl font-medium'>{item.title}</h1>
                 <div className='w-full flex flex-col justify-start items-start gap-2'>

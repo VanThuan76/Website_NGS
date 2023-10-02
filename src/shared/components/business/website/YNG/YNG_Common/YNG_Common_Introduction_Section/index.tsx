@@ -4,6 +4,7 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { splitTextToArrayByDot } from '@/utils/functions/splitTextToArray';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -23,14 +24,8 @@ const YNGCommonIntroductionSection = ({ data, className }: Props) => {
             }`}
           >
             <div className='cols-span-1 w-[518px] h-full flex flex-col justify-between items-start text-white'>
-              <div>
-                <PreImage
-                  src={item.image}
-                  width={176}
-                  height={80}
-                  alt={item.title}
-                  className='w-full h-full rounded-lg mb-[28px]'
-                />
+              <div className='relative w-[176px] h-[80px] rounded-lg overflow-hidden'>
+                <PreImage src={item.image} alt={item.title} />
                 <p className='text-sm md:text-[32px] leading-[40px]'>{item.title}</p>
               </div>
               <div className='flex flex-col gap-2 justify-start items-start'>
@@ -41,16 +36,12 @@ const YNGCommonIntroductionSection = ({ data, className }: Props) => {
                   </div>
                 ))}
               </div>
-              <BtnCommon title='Đọc thêm' cls='text-white bg-orange-500 p-4' />
+              <UseLinkRedirect sectionCode='FormYNG'>
+                <BtnCommon title='Đọc thêm' cls='text-white bg-orange-500 p-4' />
+              </UseLinkRedirect>
             </div>
-            <div className='relative w-full max-h-[500px] cols-span-1'>
-              <PreImage
-                src={item.video}
-                width={674}
-                height={431}
-                alt={item.title}
-                className='w-full h-full object-cover rounded-lg'
-              />
+            <div className='relative w-full h-[431px] col-span-1 rounded-lg overflow-hidden'>
+              <PreImage src={item.video} alt={item.title} />
             </div>
           </div>
         ))}

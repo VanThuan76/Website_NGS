@@ -9,22 +9,27 @@ export function PreImage({ src, layer, ...rest }: Props) {
   const {theme} = useTheme();
   const backgroundLayer = theme === "light" ? "bg-white" : "bg-black"
   return (
-    <div>
+    <div className='relative w-full h-full overflow-hidden'>
       {src ? (
-        <div className='relative w-full h-full overflow-hidden'>
+        <>
           <Image
+            alt={rest.alt}
             src={src}
-            style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
-            {...rest}
+            layout="fill"
+            objectFit={rest.objectFit || "cover"}
+            objectPosition={rest.objectPosition || "left"}
+            placeholder="empty"
           />
           {layer && <div style={rest.style} className={`${rest.className} bg-black absolute top-0 left-0 w-full h-full opacity-50 blur-lg`}></div>}
-        </div>
+        </>
       ) : (
         <div>
           <Image
+            alt='default'
             src='/images/default.png'
-            style={{ width: `${rest.width}px`, height: `${rest.height}px` }}
-            {...rest}
+            layout="fill"
+            objectFit={rest.objectFit || "cover"}
+            objectPosition={rest.objectPosition || "left"}
           />
         </div>
       )}

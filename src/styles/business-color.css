@@ -437,7 +437,7 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  height: 2px;
+  height: 4px;
   background: #FC5E03;
   transform-origin: 0%;
   z-index: 9999;

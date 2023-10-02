@@ -1,5 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -10,7 +11,6 @@ type Props = {
 
 const YNGDetailProductSection = ({ data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
-
   return (
     <section id={data.section.code} className={`w-full ${className}`}>
       <div className='w-full flex flex-col justify-center items-center gap-8'>
@@ -25,15 +25,14 @@ const YNGDetailProductSection = ({ data, className }: Props) => {
                 <h1 className='text-2xl md:text-4xl font-semibold'>{item.description}</h1>
               </div>
               <p className='mt-5'>{item.content}</p>
-              <BtnCommon title='Khám phá ngay' cls='text-white bg-orange-500 p-4' />
+              <UseLinkRedirect sectionCode='FormYNG'>
+                <BtnCommon title='Khám phá ngay' cls='text-white bg-orange-500 p-4' />
+              </UseLinkRedirect>
             </div>
-            <div className='relative w-full max-h-[500px] cols-span-1'>
+            <div className='relative h-[500px] col-span-1 rounded-lg overflow-hidden'>
               <PreImage
                 src={item.image}
-                width={1980}
-                height={500}
                 alt={item.title}
-                className='w-full h-full object-cover rounded-lg'
               />
             </div>
           </div>

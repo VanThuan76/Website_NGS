@@ -25,7 +25,7 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full flex flex-col justify-start items-start gap-3'
+            className='w-full grid-cols-7 col-span-7 !text-left'
           />
           <div className='w-full flex flex-col justify-center items-center'>
             {data &&
@@ -37,14 +37,14 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
             <BtnCommon title='Đăng ký ngay' cls='text-white bg-orange-500 p-4' />
           </UseLinkRouter>
         </div>
-          <PreImage
-            src={data.section.image}
-            width={1980}
-            height={704}
-            alt={data.section.name}
-            className='w-full h-full object-cover'
-          />
-        </div>
+        <PreImage
+          src={data.section.image}
+          width={1980}
+          height={704}
+          alt={data.section.name}
+          className='w-full h-full object-cover'
+        />
+      </div>
     </section>
   );
 };

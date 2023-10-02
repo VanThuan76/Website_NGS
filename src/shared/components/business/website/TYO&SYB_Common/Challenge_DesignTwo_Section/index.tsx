@@ -54,13 +54,9 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
                       ))}
                     </div>
                   </div>
-                  <PreImage
-                    src={selectedTab?.image || ''}
-                    width={1980}
-                    height={450}
-                    alt={item.title}
-                    className='w-full h-full object-cover blur-image'
-                  />
+                  <div className='relative w-[850px] h-[450px] blur-image'>
+                    <PreImage src={selectedTab?.image || ''} alt={item.title} />
+                  </div>
                 </div>
               </div>
             </div>

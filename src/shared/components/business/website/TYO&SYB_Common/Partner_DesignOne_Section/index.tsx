@@ -31,14 +31,12 @@ const PartnerDesignOneSection = ({ title, data, className }: Props) => {
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
-        <div className='w-full'>
+        <div className='relative w-[600px] h-[150px]'>
           <PreImage
             src={data.section.image}
-            height={150}
-            width={600}
             layer={false}
             alt={data.section.name}
-            className='w-full object-contain'
+            objectFit="contain"
           />
         </div>
       </div>

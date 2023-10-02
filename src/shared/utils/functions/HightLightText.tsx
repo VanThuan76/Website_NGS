@@ -23,7 +23,11 @@ const HightLightText = ({ originalText, className }: Props) => {
       }
     });
   };
-  return <div className={`block ${className}`}>{formatText(originalText)}</div>;
+  return (
+    <div className={`block ${className}`} style={{ letterSpacing: -1 }}>
+      {formatText(originalText)}
+    </div>
+  );
 };
 
 export default HightLightText;

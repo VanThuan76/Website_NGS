@@ -16,7 +16,6 @@ const ServiceDesignFourItem = ({ item }: Props) => {
     >
       <div className='w-full flex justify-between items-start gap-4 md:gap-8'>
         <h1 className={`text-md md:text-xl font-medium ${isClick ? 'text-orange-500' : ''}`}>{item.title}</h1>
-        {/* <ArrowUp /> */}
         <div
           className={`flex justify-center items-center w-[30px] h-[30px] rounded-full ${
             isClick ? 'bg-[#FACFB3]' : 'bg-slate-300'

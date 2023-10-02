@@ -3,13 +3,16 @@ import { useTheme } from 'next-themes';
 import { useState } from 'react';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
+import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
+import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 interface Props {
   item: Partial<IComponents>;
 }
 
 const HomeWhyUsResponsive = ({ item }: Props) => {
-  const {theme} = useTheme();
-  const colorIcon = theme !== "dark" ? "#F06426" : "#fff"
+  const { theme } = useTheme();
+  const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
@@ -23,7 +26,7 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start pl-10 md:pl-20'
+        className='flex-col justify-center items-start md:pl-20'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{
@@ -31,8 +34,16 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        <p className='text-sm md:text-base'>{item.description}</p>
-        <BtnCommon cls='border-orange-400' title='Tìm hiểu thêm' colorSvg={colorIcon} />
+        <div className='flex flex-col justify-center items-center'>
+          {splitTextToArrayByDoubleSlash(item.description || '').map((item: string, idx: number) => (
+            <p key={idx} className='text-sm lg:text-base text-slate-500'>
+              {item}
+            </p>
+          ))}
+        </div>
+        <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+        </UseLinkRouter>
       </motion.div>
     </div>
   );

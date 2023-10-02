@@ -24,30 +24,30 @@ const CCPage = () => {
         <meta name='description' content='Contact Center NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <BannerDesignTwoSection
           breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
           data={TYO_CB_Section1} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignThreeSection title='Tổng quan' data={TYO_CI_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ChallengeDesignOneSection title='Thách thức' data={TYO_CI_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignFourSection title='Our Service & Solution' data={TYO_CI_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CI_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <PartnerDesignThreeSection data={TYO_CI_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ClientStoriesDesignOneSection title='' data={TYO_CI_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={TYO_CI_Section8} />
       </ScrollRevealWrapper>
 

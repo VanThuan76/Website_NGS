@@ -15,14 +15,8 @@ const WhyUsDesignThreeSection = ({ title, data, className }: Props) => {
   return (
     <section id={data.section.code} className={`px-4 md:px-24 lg:px-32 py-4 md:py-12 overflow-hidden ${className}`}>
       <div className='w-full grid grid-cols-2 justify-center items-center gap-16'>
-        <div className='relative w-full flex-shrink-0 snap-start'>
-          <PreImage
-            src={data.section.image}
-            width={1980}
-            height={500}
-            alt={data.section.name}
-            className='w-full h-full rounded-lg object-cover'
-          />
+        <div className='relative w-full h-[500px] rounded-lg overflow-hidden'>
+          <PreImage src={data.section.image} alt={data.section.name} />
         </div>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-10'>
           <TitleSection

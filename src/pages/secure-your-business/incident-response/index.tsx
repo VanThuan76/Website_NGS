@@ -28,22 +28,22 @@ const TIPage = () => {
         breadcrumb={['Trang chủ', 'Bảo mật kinh doanh', 'Dịch vụ điều tra và ứng phó sự cố an ninh mạng']}
         data={SYB_IR_Banner}
       />
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <OverviewDesignThreeSection title='Tổng quan' data={SYB_IR_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <ChallengeDesignThreeSection title='Thách thức' data={SYB_IR_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <ServiceDesignThreeSection title='Dịch vụ' data={SYB_IR_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_IR_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <ClientStoriesDesignOneSection title='' data={TYO_CRM_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper >
         <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>

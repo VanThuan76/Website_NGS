@@ -37,25 +37,25 @@ const ERPPage = () => {
         breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
         data={SYB_RT_Section1}
       />
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignOneSection title='Tổng quan' data={SYB_RT_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignFourSection title='Tổng quan' data={SYB_RT_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignFiveSection title='Service' data={SYB_RT_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_RT_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <PartnerDesignTwoSection data={SYB_RT_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_RT_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={SYB_RT_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

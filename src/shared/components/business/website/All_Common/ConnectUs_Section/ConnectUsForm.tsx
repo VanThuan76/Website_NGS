@@ -1,3 +1,5 @@
+import { ToastAction } from '@/components/common/ui/toast';
+import { useToast } from '@/components/common/ui/use-toast';
 import IconLineDirection from '@/components/icon/IconLineDirection';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
@@ -7,6 +9,7 @@ export interface Props {
 }
 const ConnectUsForm = ({ connectUsData }: Props) => {
   const { theme } = useTheme();
+  const { toast } = useToast()
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
@@ -23,6 +26,11 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
     console.log('Email:', fullName);
     console.log('Phone Number:', phoneNumber);
     console.log('Options:', selectedItems);
+    toast({
+      variant: "success",
+      title: "Chúc mừng",
+      description: "Bạn đã kết nối với NGS thành công",
+    })
   };
   return (
     <div className='w-full flex flex-col justify-start items-start text-white'>

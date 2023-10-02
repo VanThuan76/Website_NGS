@@ -40,13 +40,7 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
           </UseLinkRedirect>
         </div>
         <div className='relative w-full h-full flex-shrink-0 snap-start'>
-          <PreImage
-            src={data.section.image}
-            width={1980}
-            height={704}
-            alt={data.section.name}
-            className='w-full h-full object-cover'
-          />
+          <PreImage src={data.section.image} alt={data.section.name} />
         </div>
       </div>
     </section>

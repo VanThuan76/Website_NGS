@@ -14,10 +14,10 @@ const ESMissionSection = ({ data, className }: Props) => {
   return (
     <section id={data.section.code} className={`relative overflow-hidden pb-4 md:pb-8 lg:pb-10 xl:pb-24 p-4 md:p-24 ${className} bg-[#051C2C]`}>
       <div className='max-w-[1440px] mx-auto grid grid-cols-3 justify-between items-center gap-5 text-white'>
-        <div className='col-span-2 w-full h-full flex flex-col justify-center items-start gap-10'>
+        <div className='col-span-3 md:col-span-2 my-36 md:my-0 w-full h-full flex flex-col justify-center items-start gap-10 z-20'>
           <div className='w-full flex flex-col justify-start items-start gap-3'>
-            <h1 className='text-orange-500'>{data.section.name}</h1>
-            <HightLightText originalText={data.section.description} className='text-3xl lg:text-4xl' />
+            <h1 className='text-sm leading-5 md:text-2xl md:leading-6 font-medium text-orange-500'>{data.section.name}</h1>
+            <HightLightText originalText={data.section.description} className='text-2xl md:text-[40px] leading-8 md:leading-[48px]' />
           </div>
           <div className='w-full flex flex-col lg:flex-row justify-center items-start gap-5 mt-16 bg-transparent overflow-hidden'>
             {data.components.map((item, idx) => {

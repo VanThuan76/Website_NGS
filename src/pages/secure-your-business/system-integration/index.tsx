@@ -24,31 +24,31 @@ const TIPage = () => {
         <meta name='description' content='System Integration NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <BannerDesignTwoSection
           breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
           data={SYB_SI_Banner}
         />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <OverviewDesignOneSection title='Tổng quan' data={SYB_SI_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ChallengeDesignThreeSection title='Thách thức' data={SYB_SI_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ServiceDesignOneSection title='Dịch vụ' data={SYB_SI_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <PartnerDesignThreeSection data={SYB_SI_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>

@@ -43,7 +43,7 @@ const TitleSection = (data: Partial<Props>) => {
         <p className={`text-sm md:text-2xl !text-[#FC5E03] text-center ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
-              <motion.span variants={child} className='mr-[10px]' key={idx}>
+              <motion.span variants={child} className='mr-[5px] md:mr-[10px]' key={idx}>
                 {word}
               </motion.span>
             ))}
@@ -56,8 +56,8 @@ const TitleSection = (data: Partial<Props>) => {
             {data.name?.split('//').map((word, idx) => (
               <motion.span
                 variants={child}
-                className={`mr-[10px] flex flex-col text-[40px] text-[#29130F] font-medium ${data.className}`}
-                style={{lineHeight: "48px", letterSpacing: -1}}
+                className={`mr-[10px] flex flex-col text-2xl md:text-[40px] text-[#29130F] font-medium leading-8 md:leading-[48px] ${data.className}`}
+                style={{letterSpacing: -1}}
                 key={idx}
               >
                 {word}

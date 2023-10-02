@@ -2,6 +2,7 @@ import React from 'react';
 import TitleSection from '@/components/common/customization/TitleSection';
 import YNG_IconArrowRight from '@/components/icon/YNG/YNG_ERP/YNG_ERP_solution/YNG_IconArrowRight';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 
 type Props = {
   title: string;
@@ -19,16 +20,18 @@ const YNGCommonBackSolutionSection = ({ title, data, className }: Props) => {
             name={data.section.name}
             description={data.section.description}
             findMore={true}
-            className='w-full grid col-span-7 !text-left'
+            className='w-full grid-cols-7 col-span-7 !gap-6 !text-left'
           />
         </div>
         <div className={`col-span-1 w-full flex flex-col lg:flex-row justify-between items-center gap-4 mt-10`}>
           <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-start items-start gap-6'>
             {data.components.map((item, idx) => (
-              <div key={idx} className='flex justify-between items-center pb-4 border-b-2 border-slate-300'>
-                <p className='text-base font-normal'>{item.title}</p>
-                <YNG_IconArrowRight />
-              </div>
+              <UseLinkRouter key={idx} url={`/your-next-gen${item.slug}`}>
+                <div key={idx} className='flex justify-between items-center pb-4 border-b-2 border-slate-300'>
+                  <p className='text-base font-normal'>{item.title}</p>
+                  <YNG_IconArrowRight />
+                </div>
+              </UseLinkRouter>
             ))}
           </div>
         </div>

@@ -2,7 +2,7 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 
 export interface Props {
-  data: IComponents
+  data: IComponents;
 }
 const HOTestimonialContent = ({ data }: Props) => {
   return (
@@ -10,7 +10,9 @@ const HOTestimonialContent = ({ data }: Props) => {
       <div className='flex flex-col justify-start items-start gap-5'>
         <h1>{data.content}</h1>
         <div className='w-full flex justify-start items-center gap-3'>
-          <PreImage src={data.image as string} width={50} height={50} alt={'event'} className='w-full rounded-full' />
+          <div className='relative w-[50px] h-[50px] rounded-full overflow-hidden'>
+            <PreImage src={data.image as string} width={50} height={50} alt={'event'} />
+          </div>
           <div className='flex flex-col justify-start items-start opacity-80 text-sm'>
             <p>{data.title}</p>
             <p>{data.description}</p>

@@ -1,13 +1,10 @@
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper/modules';
 import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import TitleSection from '@/components/common/customization/TitleSection';
-import BackgroundDark from '@/components/icon/HO/solution/BackgroundDark';
-import BackgroundLight from '@/components/icon/HO/solution/BackgroundLight';
 import TeamDesignOneItem from './Team_DesignOne_Item';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
@@ -20,7 +17,6 @@ type Props = {
 };
 
 const TeamDesignOneSection = ({ title, data, className }: Props) => {
-  const { theme } = useTheme();
   const [hoveredItem, setHoveredItem] = useState<IComponents>();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
@@ -33,18 +29,30 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           findMore={true}
           className='w-full grid-cols-7 col-span-7 !text-left !gap-0'
         />
-        <Swiper className='w-full'>
+        <Swiper
+          className='mySwiper'
+          pagination={{
+            dynamicBullets: true,
+          }}
+          slidesPerView={1}
+          spaceBetween={10}
+          modules={[Pagination]}
+          centeredSlides={true}
+        >
           {data.components.map((item, idx) => (
-            <SwiperSlide className='max-w-[292px] p-2' key={idx}>
+            <SwiperSlide className='max-w-[335px] p-2 mx-auto' key={idx}>
               <div
-                className='relative max-w-[292px] min-h-[300px] lg:min-h-[365px] rounded-lg overflow-hidden'
+                className='relative max-w-[335px] min-h-[418px] rounded-lg overflow-hidden'
                 onMouseEnter={() => setHoveredItem(item)}
                 onMouseLeave={() => setHoveredItem(undefined)}
               >
                 {hoveredItem === item ? (
-                  <TeamDesignOneItem content={item.content || ''} className='absolute top-0 left-0 w-full bg-black text-white transition ease-in-out duration-100 opacity-90' />
+                  <TeamDesignOneItem
+                    content={item.content || ''}
+                    className='absolute top-0 left-0 w-full bg-black text-white transition ease-in-out duration-100 opacity-90'
+                  />
                 ) : (
-                  <div className='relative w-full h-full'>
+                  <div className='relative w-[335px] h-[418px]'>
                     <PreImage
                       src={item.image}
                       width={1980}

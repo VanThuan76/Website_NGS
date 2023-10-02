@@ -23,14 +23,14 @@ const HomeWhyUsSection = ({title, data, className}: Props) => {
         className={`relative md: lg: xl: px-4 md:px-24 ${className}`}
       >
         <div className='max-w-[1440px] w-full mx-auto my-auto'>
-          <div className='w-full grid grid-cols-2'>
+          <div className='w-full grid grid-cols-1 md:grid-cols-2'>
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection
                 title={title}
                 name={data.section!.name as string}
                 description={data.section!.description as string}
                 findMore={false}
-                className='w-full !text-left'
+                className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
               />
               {/* <-- Content Responsive Mobile */}
               <div className='flex md:hidden w-full lg:w-1/2 xl:w-1/2 flex-col justify-center items-center'>

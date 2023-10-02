@@ -25,14 +25,9 @@ const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
         <div className='mb-3 text-xl md:text-2xl'>0{idx + 1}</div>
         <div className='flex flex-col justify-start items-start gap-2'>
           <h1 className='text-sm text-slate-500'>{item.title}</h1>
-          <PreImage
-          src={item.image}
-          height={35}
-          width={120}
-          layer={false}
-          alt={item.title}
-          className='w-full h-full object-contain'
-        />
+          <div className='relative w-[120px] h-[35px]'>
+            <PreImage src={item.image} layer={false} alt={item.title} objectFit='contain' />
+          </div>
         </div>
       </div>
 
@@ -51,7 +46,11 @@ const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
           {item.description.length > 100 ? `${item.description.substring(0, 80)}...` : item.description}
         </p>
         {/* Responsive--> */}
-        <BtnCommon title='Tìm hiểu thêm' cls='mt-5 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+        <BtnCommon
+          title='Tìm hiểu thêm'
+          cls='mt-5 w-[190px] md:w-[170px] border border-orange-500'
+          colorSvg={colorIcon}
+        />
       </motion.div>
     </div>
   );

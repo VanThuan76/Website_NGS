@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
 import { Menu } from 'lucide-react';
@@ -10,6 +9,7 @@ import ThemeModeToggle from '@/components/common/ToggleThemeMode';
 import LanguageSwitch from '@/components/common/LanguageSwitch';
 import NavigationMenuMain from './NavigationMenuMain';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
+import NavigationMenuMainResponsive from './NavigationMenuMainResponsive';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -43,16 +43,11 @@ const Header = () => {
       }`}
     >
       <div className='w-full flex justify-around items-center'>
-        <div className='absolute left-5 flex justify-center items-center gap-2 z-20'>
-          <PreImage
-            height={150}
-            width={250}
-            src='/logo.png'
-            alt='Logo'
-            layer={false}
-            onClick={() => router.push('/')}
-            className='cursor-pointer'
-          />
+        <div
+          className='absolute w-[250px] h-[150px] -left-16 md:left-5 flex justify-center items-center gap-2 z-20 cursor-pointer'
+          onClick={() => router.push('/')}
+        >
+          <PreImage src='/logo.png' alt='Logo' layer={false} />
         </div>
         <div className='relative hidden lg:block z-10 text-[#1C1C1C]'>
           <NavigationMenuMain
@@ -65,34 +60,7 @@ const Header = () => {
           />
         </div>
       </div>
-      <div className='absolute right-5 flex justify-center items-center gap-2 z-20'>
-        <div
-          id='dropdown'
-          className='z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700'
-        >
-          <ul className='py-2 text-sm text-gray-700 dark:text-gray-200' aria-labelledby='dropdownDefaultButton'>
-            <li>
-              <a href='#' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                Dashboard
-              </a>
-            </li>
-            <li>
-              <a href='#' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                Settings
-              </a>
-            </li>
-            <li>
-              <a href='#' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                Earnings
-              </a>
-            </li>
-            <li>
-              <a href='#' className='block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white'>
-                Sign out
-              </a>
-            </li>
-          </ul>
-        </div>
+      <div className='absolute right-0 md:right-5 flex justify-center items-center gap-2 z-20'>
         <div className='flex gap-8 items-center'>
           {/* <div className='hidden lg:flex gap-8 items-center'>
             <ThemeModeToggle />
@@ -101,18 +69,10 @@ const Header = () => {
           <div className='lg:hidden xl:hidden'>
             <Sheet>
               <SheetTrigger asChild>
-                <div>
-                  <Menu />
-                </div>
+                <Menu color='#FC5E03' className='cursor-pointer' />
               </SheetTrigger>
-              <SheetContent className='w-[70%] cursor-pointer' side={'right'}>
-                <div>
-                  {fakeMenu.map((mainMenu, idx) => (
-                    <Link href={'#'} key={idx}>
-                      <li>{mainMenu.title}</li>
-                    </Link>
-                  ))}
-                </div>
+              <SheetContent className='w-full h-full overflow-y-scroll' side={'top'}>
+               <NavigationMenuMainResponsive fakeMenu={fakeMenu} />
               </SheetContent>
             </Sheet>
           </div>

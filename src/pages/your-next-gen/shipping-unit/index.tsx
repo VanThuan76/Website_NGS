@@ -22,28 +22,28 @@ const SUDetailPage = () => (
       <meta name='description' content='Đơn vị vận chuyển' />
       <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
     </Head>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGDetailBannerSection data={YNG_SU_Banner} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGDetailWhyChooseSection title='Tại sao chọn Đơn vị vận chuyển?' data={YNG_SU_Section2} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGDetailProductSection data={YNG_SU_Section3} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGDetailDirectionSetion data={YNG_ECOM_Section4} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_ECOM_Section5} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGCommonIntroductionSection data={YNG_ECOM_Section6} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_ECOM_Section7} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+    <ScrollRevealWrapper  >
       <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_ECOM_Section8} />
     </ScrollRevealWrapper>
   </React.Fragment>

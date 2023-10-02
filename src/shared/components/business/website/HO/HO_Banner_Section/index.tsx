@@ -2,22 +2,24 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import 'swiper/css/effect-fade';
+import React, { RefObject, useRef, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade, Autoplay, Pagination, Navigation } from 'swiper/modules';
-import React, { RefObject, useRef, useState } from 'react';
 import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import { PreImage } from '@/components/common/customization/PreImage';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
 import MouseScroll from '@/components/icon/HO/banner/MouseScroll';
 import HOBannerContent from './HOBannerContent';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
-import { PreImage } from '@/components/common/customization/PreImage';
+import useBreakPoint from '@/hooks/useBreakPoint';
 interface Props {
   data: Partial<IBaseSectionComponent>;
 }
 const HomeBannerSection = ({ data }: Props) => {
   const progressLines = useRef<Array<RefObject<HTMLDivElement>>>([]);
   const ref = useRef<HTMLDivElement>(null);
+  const currentBreakPoint = useBreakPoint()
   const [isActived, setIsActived] = useState<number>(NaN);
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
@@ -66,14 +68,11 @@ const HomeBannerSection = ({ data }: Props) => {
             <SwiperSlide key={idx}>
               <div className='relative w-full flex justify-between items-center mx-auto'>
                 <HOBannerContent selectedTab={item} />
-                <div className='mx-auto w-[100vw] h-[100vh] relative overflow-hidden'>
+                <div className={`mx-auto ${currentBreakPoint === "sm" ? "w-[375px] h-[454px]" : "w-[1440px] h-[864px]"} relative overflow-hidden`}>
                   <PreImage
                     src={item.image as string}
-                    height={760}
-                    width={1980}
                     layer={false}
                     alt={item.title as string}
-                    className='w-full h-full object-cover'
                   />
                 </div>
               </div>

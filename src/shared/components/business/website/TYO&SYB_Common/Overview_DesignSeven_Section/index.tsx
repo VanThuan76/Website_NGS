@@ -27,9 +27,12 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
         />
         <div className='relative w-full h-full grid grid-cols-3 justify-between items-center gap-5 -mt-6'>
           {data.components.map((item, idx) => (
-            <div key={idx} className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg border-overview-designSeven-section'>
-              <div className='absolute -top-10 w-full h-full'>
-                <PreImage src={item.image} width={60} height={60} alt={item.title} className='rounded-lg' />
+            <div
+              key={idx}
+              className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg border-overview-designSeven-section'
+            >
+              <div className='absolute w-[60px] h-[60px] rounded-lg overflow-hidden -top-10'>
+                <PreImage src={item.image} alt={item.title} />
               </div>
               <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>

@@ -33,14 +33,12 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
       className={`relative flex flex-col gap-16 pt-[124px] pb-20 px-4 md:px-24 ${className}`}
     >
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-20 '>
-        <div className='w-full'>
+        <div className='col-span-1 relative h-[370px]'>
           <PreImage
             src={data.section.image}
-            height={370}
-            width={650}
             layer={false}
             alt={data.section.name}
-            className='w-full h-full object-contain'
+            objectFit="contain"
           />
         </div>
         <div className='w-full flex flex-col justify-start items-start'>
@@ -49,7 +47,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             name={data.section.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !text-left'
+            className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
@@ -62,7 +60,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             <motion.div
               key={idx}
               className={`w-full dark:bg-[#1B1D35] ${
-                data.components && data.components?.length - 1 !== idx && 'border-card-aboutUs-home pr-5 mr-5'
+                data.components && data.components?.length - 1 !== idx && 'border-card-aboutUs-home md:pr-5 md:mr-5'
               } flex flex-col justify-center items-center gap-5 text-center`}
               variants={{
                 hidden: { opacity: 0, scale: 0 },

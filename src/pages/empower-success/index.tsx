@@ -72,9 +72,9 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
       <ScrollRevealWrapper>
         <ESOrganizationalSystemSection title='HỆ SINH THÁI NGS' data={ESOrganizationalSystemData} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
+      {/* <ScrollRevealWrapper>
         <NewsSection title='TIN TỨC VÀ SỰ KIỆN' data={ESNewsAndEventData as unknown as IBaseSectionComponentNews} />
-      </ScrollRevealWrapper>
+      </ScrollRevealWrapper> */}
       <ScrollRevealWrapper>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>

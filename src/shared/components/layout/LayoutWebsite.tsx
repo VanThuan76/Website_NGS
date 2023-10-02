@@ -1,5 +1,6 @@
 import { motion, useScroll } from 'framer-motion';
 import { useRef } from 'react';
+import { Toaster } from '../common/ui/toaster';
 import Footer from './footer';
 import Header from './header';
 interface Props {
@@ -15,6 +16,7 @@ const LayoutWebsite = ({ children }: Props) => {
         {children}
       </main>
       <motion.div className='progress-bar' style={{ scaleX: scrollYProgress }} />
+      <Toaster />
       <Footer />
     </>
   );

@@ -30,14 +30,8 @@ const ChallengeDesignOneSection = ({ title, data, className }: Props) => {
           key={idx}
           className='max-w-[1440px] grid grid-cols-2 gap-10 justify-between items-center px-12 bg-[#F9F4EE] rounded-lg -mt-6'
         >
-          <div className='relative w-full mt-5 flex-shrink-0 snap-start -translate-x-16'>
-            <PreImage
-              src={item.image}
-              width={1980}
-              height={624}
-              alt={item.title}
-              className='w-full object-cover rounded-lg'
-            />
+          <div className='relative w-full h-[624px] rounded-lg overflow-hidden mt-5 flex-shrink-0 snap-start -translate-x-16'>
+            <PreImage src={item.image} alt={item.title} objectPosition="center" />
           </div>
           <div className='w-full flex flex-col justify-start items-start gap-3'>
             <h1 className='text-xl md:text-3xl text-orange-500 font-semibold'>{item.title}</h1>

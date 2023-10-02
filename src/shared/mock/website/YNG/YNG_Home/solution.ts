@@ -17,7 +17,7 @@ export const YNG_Home_Solution_ERP = {
             code: 'PG002-1SE00002CN000001',
             title: 'Ứng dụng cho Văn phòng Điện tử',
             description: 'Cung cấp môi trường làm việc và tương tác trực tuyến cho toàn bộ doanh nghiệp.',
-            slug: '/messenger-schedule, /proposal-and-approval, /assignment-management, /document-management, /e-learning',
+            slug: '/messenger-and-schedule, /proposal-and-approval, /assignment-management, /document-management, /e-learning',
             content: '',
             image: '',
             video: '',

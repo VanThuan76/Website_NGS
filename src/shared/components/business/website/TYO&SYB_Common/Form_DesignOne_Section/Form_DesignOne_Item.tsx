@@ -1,26 +1,34 @@
+import { toast } from '@/components/common/ui/use-toast';
 import IconLineDirection from '@/components/icon/IconLineDirection';
+import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 import { useState } from 'react';
 
 const FormDesignOneItem = () => {
-  const [fullName, setFullName] = useState('');
-  const [product, setProduct] = useState('');
-  const [workPosition, setWorkPosition] = useState('');
-  const [companyName, setCompanyName] = useState('');
-  const [phoneNumber, setPhoneNumber] = useState('');
-  const [selectedItems, setSelectedItems] = useState<string[]>([]);
-
-  const handleItemClick = (item: string) => {
-    if (selectedItems.includes(item)) {
-      setSelectedItems(prevItems => prevItems.filter(selectedItem => selectedItem !== item));
-    } else {
-      setSelectedItems(prevItems => [...prevItems, item]);
-    }
-  };
+  const [cityAndProvince, setCityAndProvince] = useState<any[]>();
+  const [formData, setFormData] = useState({
+    fullName: '',
+    email: '',
+    phoneNumber: '',
+    workPosition: '',
+    companyName: '',
+    cityOrProvince: '',
+    staffSize: '',
+  });
+  useQuery(['getCityAndProvince'], {
+    queryFn: () => axios.get(`https://vn-public-apis.fpo.vn/provinces/getAll?limit=-1`),
+    onSuccess(data) {
+      setCityAndProvince(data?.data.data.data);
+    },
+  });
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    console.log('Email:', fullName);
-    console.log('Phone Number:', phoneNumber);
-    console.log('Options:', selectedItems);
+    console.log(formData);
+    toast({
+      variant: "success",
+      title: "Chúc mừng",
+      description: "Bạn đã đăng ký thành công",
+    })
   };
   return (
     <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md z-30'>
@@ -33,8 +41,13 @@ const FormDesignOneItem = () => {
             <input
               type='text'
               id='fullName'
-              value={fullName}
-              onChange={e => setFullName(e.target.value)}
+              value={formData.fullName}
+              onChange={e =>
+                setFormData({
+                  ...formData,
+                  fullName: e.target.value,
+                })
+              }
               className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
               required
             />
@@ -47,8 +60,13 @@ const FormDesignOneItem = () => {
               <input
                 type='text'
                 id='email'
-                value={phoneNumber}
-                onChange={e => setPhoneNumber(e.target.value)}
+                value={formData.email}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    email: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
@@ -60,8 +78,13 @@ const FormDesignOneItem = () => {
               <input
                 type='tel'
                 id='phoneNumber'
-                value={phoneNumber}
-                onChange={e => setPhoneNumber(e.target.value)}
+                value={formData.phoneNumber}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    phoneNumber: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
@@ -74,8 +97,13 @@ const FormDesignOneItem = () => {
               </label>
               <input
                 id='workPosition'
-                value={workPosition}
-                onChange={e => setPhoneNumber(e.target.value)}
+                value={formData.workPosition}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    workPosition: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
@@ -86,8 +114,13 @@ const FormDesignOneItem = () => {
               </label>
               <input
                 id='companyName'
-                value={companyName}
-                onChange={e => setPhoneNumber(e.target.value)}
+                value={formData.companyName}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    companyName: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />
@@ -95,25 +128,43 @@ const FormDesignOneItem = () => {
           </div>
           <div className='w-full grid grid-cols-2 gap-4 mb-4'>
             <div className='w-full'>
-              <label htmlFor='workPosition' className='block mb-1'>
-                Tỉnh/Thành phố
-              </label>
-              <input
-                id='workPosition'
-                value={workPosition}
-                onChange={e => setPhoneNumber(e.target.value)}
+              <select
+                id='cityOrProvince'
+                value={formData.cityOrProvince}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    cityOrProvince: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
-              />
+              >
+                <option value='' disabled>
+                  Lựa chọn Tỉnh/Thành phố
+                </option>
+                {cityAndProvince &&
+                  cityAndProvince.map((item, index) => (
+                    <option key={index} value={item.name}>
+                      {item.name}
+                    </option>
+                  ))}
+              </select>
             </div>
+
             <div className='w-full'>
-              <label htmlFor='companyName' className='block mb-1'>
+              <label htmlFor='staffSize' className='block mb-1'>
                 Quy mô nhân sự
               </label>
               <input
-                id='companyName'
-                value={companyName}
-                onChange={e => setPhoneNumber(e.target.value)}
+                id='staffSize'
+                value={formData.staffSize}
+                onChange={e =>
+                  setFormData({
+                    ...formData,
+                    staffSize: e.target.value,
+                  })
+                }
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               />

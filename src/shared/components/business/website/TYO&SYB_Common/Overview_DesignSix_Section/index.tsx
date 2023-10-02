@@ -26,13 +26,10 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
           findMore={true}
           className='w-full grid-cols-7 col-span-7 text-center'
         />
-        <div className='relative w-full -mt-12 flex-shrink-0 snap-start'>
+        <div className='relative w-full h-[360px] object-cover overflow-hidden -mt-12 flex-shrink-0 snap-start'>
           <PreImage
             src={data.section.image}
-            width={1980}
-            height={360}
             alt={data.section.name}
-            className='w-full object-cover'
           />
         </div>
         <div className='w-full grid grid-cols-3 gap-5 mt-5'>

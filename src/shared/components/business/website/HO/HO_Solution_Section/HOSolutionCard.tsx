@@ -5,12 +5,13 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import useBreakPoint from '@/hooks/useBreakPoint';
 interface Props {
   id: number;
   title: string;
   description: string;
   image: string;
-  url:string
+  url: string;
   className: string;
 }
 
@@ -18,6 +19,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   const [isHovered, setIsHovered] = useState(false);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
+  const currentBreakPoint = useBreakPoint()
   const animateTheme =
     theme === 'dark'
       ? {
@@ -48,7 +50,13 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
         ease: 'easeInOut',
       }}
     >
-      <PreImage src={image} width={56} height={56} alt={title} className='mb-4 rounded-lg' />
+      <div
+        className={`relative ${
+          currentBreakPoint === 'sm' ? 'w-[40px] h-[40px]' : 'w-[56px] h-[56px]'
+        } overflow-hidden mb-4 rounded-lg`}
+      >
+        <PreImage src={image} alt={title} />
+      </div>
       <motion.div
         className={`w-full flex flex-col justify-start items-start gap-4`}
         initial='start'
@@ -69,20 +77,24 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
         <p className='pb-6 text-sm'>{description}</p>
       </motion.div>
       {isHovered && (
-          <motion.div
-            variants={buttonVariants}
-            initial='hidden'
-            animate='visible'
-            transition={{
-              duration: 0.3,
-              ease: 'easeInOut',
-            }}
-          >
-            <UseLinkRouter url={url}>
-              <BtnCommon cls='mt-6 h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]' title='Tìm hiểu thêm' colorSvg={colorIcon} />
-            </UseLinkRouter>
-          </motion.div>
-        )}
+        <motion.div
+          variants={buttonVariants}
+          initial='hidden'
+          animate='visible'
+          transition={{
+            duration: 0.3,
+            ease: 'easeInOut',
+          }}
+        >
+          <UseLinkRouter url={url}>
+            <BtnCommon
+              cls='mt-6 h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]'
+              title='Tìm hiểu thêm'
+              colorSvg={colorIcon}
+            />
+          </UseLinkRouter>
+        </motion.div>
+      )}
     </motion.div>
   );
 };

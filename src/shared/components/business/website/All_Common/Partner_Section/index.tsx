@@ -16,7 +16,6 @@ type Props = {
 };
 
 const PartnerSection = ({ title, data, className }: Props) => {
-
   const { theme } = useTheme();
   const [selectedPartner, setSelectedPartner] = useState<Partial<IComponents> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
@@ -31,12 +30,12 @@ const PartnerSection = ({ title, data, className }: Props) => {
     >
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>{title}</h1>
-        <div className='w-full mt-20 hidden md:flex items-start justify-between gap-5'>
+        <div className='w-full mt-20 hidden md:flex items-start justify-between'>
           <Swiper
             className='mySwiper'
             modules={[Autoplay, Pagination, Navigation]}
             slidesPerView={6}
-            spaceBetween={50}
+            spaceBetween={0}
             centeredSlides={true}
             navigation={false}
             autoplay={{
@@ -46,18 +45,15 @@ const PartnerSection = ({ title, data, className }: Props) => {
             loop
           >
             {data.components.map((item, idx) => (
-              <SwiperSlide className='max-w-[250px]' key={idx}>
-                <PreImage
-                  src={item.image as string}
-                  height={100}
-                  width={150}
-                  layer={false}
-                  alt={item.title}
-                  className={`relative w-full h-full rounded-lg cursor-pointer object-contain ${
+              <SwiperSlide key={idx}>
+                <div
+                  className={`relative w-[156px] h-[106px] ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-80'
-                  }`}
+                  } cursor-pointer`}
                   onClick={() => setSelectedPartner(item)}
-                />
+                >
+                  <PreImage src={item.image as string} layer={false} alt={item.title} objectFit="contain" />
+                </div>
               </SwiperSlide>
             ))}
           </Swiper>
@@ -83,7 +79,7 @@ const PartnerSection = ({ title, data, className }: Props) => {
           ))}
         </div>
         {/* <-- Home Partner Responsive */}
-        <PartnerResponsive />
+        <PartnerResponsive data={data.components} />
         {/* Home Partner Responsive --> */}
       </div>
     </section>

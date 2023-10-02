@@ -28,15 +28,14 @@ const YNGCommonCustomerSection = ({ title, data, className }: Props) => {
       <div className='max-w-[1440px] w-full flex flex-col justify-between items-center'>
         <div className='w-full bg-red grid grid-cols-2 justify-end items-end md:grid-cols-6 gap-4 p-2'>
           {data.components.map((item, idx) => (
-            <div key={idx} className={`relative max-w-[310px] h-full rounded-lg shadow-md overflow-hidden`}>
+            <div key={idx} className={`relative max-w-[310px] h-[100px] py-3 rounded-lg overflow-hidden`}>
               <PreImage
                 key={idx}
-                width={1980}
-                height={100}
                 alt={`ERPCustomer ${idx}`}
                 src={item.image}
                 style={{ opacity: 0.8, transition: 'opacity 0.3s ease-in-out' }}
-                className={`col-span-1 py-5 object-center`}
+                objectPosition="center"
+                objectFit="contain"
               />
               <div className='absolute top-0 left-0 w-full h-full'>
                 <BorderCard />

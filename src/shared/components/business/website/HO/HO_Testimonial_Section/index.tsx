@@ -27,7 +27,7 @@ const HomeTestimonialSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='!w-[300px] grid-cols-7 col-span-7 !text-left'
+            className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-full border border-orange-500' colorSvg={colorIcon} />

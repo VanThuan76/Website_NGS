@@ -23,7 +23,7 @@ const OverviewDesignThreeSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full flex justify-start items-start gap-2 z-30'
+          className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !text-left !gap-2 z-30'
         />
         <BorderStyleOneLight className='absolute bottom-0 z-10 left-0 object-cover' />
       </div>

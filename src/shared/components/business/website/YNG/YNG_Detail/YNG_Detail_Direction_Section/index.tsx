@@ -1,6 +1,7 @@
 import React from 'react';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 type Props = {
   data: Partial<IBaseSectionComponent>;
@@ -21,7 +22,9 @@ const YNGDetailDirectionSetion = ({ data, className }: Props) => {
         <div className='w-full flex flex-col justify-center items-center gap-3'>
           <h1 className='text-3xl lg:text-4xl'>{data.section.name}</h1>
           <p className='text-center'>{data.section.description}</p>
-          <BtnCommon title='Xem giá chi tiết' cls='text-white bg-orange-500 p-4' />
+          <UseLinkRedirect sectionCode='FormYNG'>
+            <BtnCommon title='Khám phá ngay' cls='text-white bg-orange-500 p-4' />
+          </UseLinkRedirect>
         </div>
       </div>
     </section>

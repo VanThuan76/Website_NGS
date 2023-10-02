@@ -18,7 +18,9 @@ const Footer = () => {
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center'>
         <div className='w-full grid grid-cols-2 gap-4 justify-between items-center md:justify-start mb-4'>
           <div className='w-[95%] flex flex-col justify-start items-start gap-2'>
-            <PreImage height={200} width={200} src={'/logo.svg'} alt={'Logo'} layer={false} />
+            <div className='relative w-[200px] h-[200px]'>
+              <PreImage src={'/logo.svg'} alt={'Logo'} layer={false} objectFit="contain" />
+            </div>
             <p className='font-medium'>{footerContactData.name}</p>
             <div className='space-x-2'>
               <p className='font-normal'>Địa chỉ:</p>
@@ -31,9 +33,11 @@ const Footer = () => {
             <div className='space-x-2'>
               <p className='font-normal'>VP Giao dịch:</p>
               <div className='flex flex-col justify-start items-start'>
-                {splitTextToArrayByDoubleSlash(footerContactData.transactionOffices || '').map((item: string, idx: number) => (
-                  <p key={idx}>{item}</p>
-                ))}
+                {splitTextToArrayByDoubleSlash(footerContactData.transactionOffices || '').map(
+                  (item: string, idx: number) => (
+                    <p key={idx}>{item}</p>
+                  ),
+                )}
               </div>
             </div>
             <div className='space-x-2'>

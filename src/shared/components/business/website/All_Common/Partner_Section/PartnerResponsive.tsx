@@ -1,30 +1,40 @@
 import 'swiper/css';
 import 'swiper/css/effect-creative';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';
-
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { PreImage } from '@/components/common/customization/PreImage';
-import { partnerData } from '@/mocks/website/HO/partner';
-
-const PartnerResponsive = () => {
+import { IComponents } from 'src/shared/schemas/typedef/IComponents';
+type Props = {
+  data: IComponents[];
+};
+const PartnerResponsive = ({ data }: Props) => {
   return (
     <div className='w-full block md:hidden'>
-      {/* @ts-ignore */}
-      <Swiper pagination={{
+      <Swiper
+        className='mySwiper'
+        pagination={{
           dynamicBullets: true,
         }}
-        modules={[Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
+        slidesPerView={1}
+        spaceBetween={10}
+        centeredSlides={true}
+        navigation={false}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        loop
       >
-        {partnerData.map((item, idx) => (
+        {data.map((item, idx) => (
           <SwiperSlide className='w-full py-5 rounded-lg' key={idx}>
-            <div className='w-full'>
+            <div className='w-full h-[100px] cursor-pointer rounded-lg overflow-hidden'>
               <PreImage
-                src={item.image!}
-                height={100}
-                width={600}
+                src={item.image}
                 layer={false}
-                alt={'Service'}
-                className={`rounded-lg cursor-pointer`}
+                alt={item.title}
+                objectFit="contain"
+                objectPosition='center'
               />
             </div>
             <div
@@ -33,9 +43,9 @@ const PartnerResponsive = () => {
             >
               <div className='w-full flex flex-col justify-start items-start gap-3'>
                 <p className='font-medium text-2xl'>{item.title}</p>
-                <p className='font-thin text-sm'>{item.rank}</p>
+                <p className='font-thin text-sm'>{item.description}</p>
               </div>
-              <p>{item.description}</p>
+              <p>{item.content}</p>
             </div>
           </SwiperSlide>
         ))}

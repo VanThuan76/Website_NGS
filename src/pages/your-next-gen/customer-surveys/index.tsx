@@ -23,28 +23,28 @@ const CSDetailPage = () => {
         <meta name='description' content='Khảo sát khách hàng' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGDetailBannerSection data={YNG_CS_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGDetailWhyChooseSection title='Tại sao chọn Khảo sát khách hàng?' data={YNG_CS_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGDetailProductSection data={YNG_CS_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGDetailDirectionSetion data={YNG_CS_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGCommonCustomerSection title='Khách hàng' data={YNG_CS_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGCommonIntroductionSection data={YNG_CS_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_CS_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }} >
+      <ScrollRevealWrapper  >
         <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_CS_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

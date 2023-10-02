@@ -27,14 +27,11 @@ const OverviewDesignFiveSection = ({ title, data, className }: Props) => {
             ))}
           </div>
         </div>
-        <div className='relative w-full h-auto flex flex-col justify-between items-center gap-5 mt-5'>
+        <div className='relative w-full h-[550px] flex flex-col justify-between items-center gap-5 mt-5'>
           <PreImage
             src={data.section.image}
-            height={550}
-            width={1980}
             layer={false}
             alt={data.section.name}
-            className='w-full object-cover'
           />
         </div>
       </div>

@@ -30,19 +30,18 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full !text-left text-white'
+            className='w-full grid-cols-7 col-span-7 !text-left text-white'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
-        <div className='relative w-full flex-shrink-0 snap-start'>
+        <div className='relative w-full h-full rounded-lg overflow-hidden'>
           <PreImage
             src={data.section.image}
             width={1980}
             height={500}
             alt={data.section.name}
-            className='w-full h-full object-cover rounded-lg'
           />
         </div>
       </div>

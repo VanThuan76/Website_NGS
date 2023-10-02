@@ -23,25 +23,25 @@ const SOCPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <BannerDesignOneSection title="Develop new solution" data={SYBBanner1_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <OverviewDesignSixSection title='Tổng quan' data={SYBOverview6_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <ServiceDesignFiveSection title='NGS triển khai' data={SYBService5_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYBWhyUs1_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <PartnerDesignTwoSection data={SYBPartner2_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={SYBclientStories1_PG4_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper revealConfig={{ origin: 'left', distance: '30px', duration: 1000 }}>
+      <ScrollRevealWrapper>
         <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_3} />
       </ScrollRevealWrapper>
 

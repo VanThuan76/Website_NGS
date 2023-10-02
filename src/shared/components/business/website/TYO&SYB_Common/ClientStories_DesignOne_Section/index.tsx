@@ -63,7 +63,9 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
                   ))}
                 </div>
                 <div className='flex justify-center items-center gap-5'>
-                  <PreImage src={item.image} width={70} height={70} alt={item.title} className='rounded-lg' />
+                  <div className='relative w-[70px] h-[70px] rounded-lg overflow-hidden'>
+                    <PreImage src={item.image} alt={item.title} />
+                  </div>
                   <div className='flex flex-col justify-start items-start'>
                     <p>{item.title}</p>
                     <p className='font-thin'>{item.description}</p>
@@ -93,13 +95,9 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             ))}
           </ul> */}
         </div>
-        <PreImage
-          src={data.section.image}
-          width={1980}
-          height={550}
-          alt={data.section.name}
-          className='w-full h-full object-cover rounded-lg'
-        />
+        <div className='relative w-full h-[550px] rounded-lg overflow-hidden'>
+          <PreImage src={data.section.image} alt={data.section.name} />
+        </div>
       </div>
     </section>
   );

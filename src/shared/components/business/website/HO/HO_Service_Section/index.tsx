@@ -27,7 +27,7 @@ const HomeServiceSection = ({ title, data, className }: Props) => {
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='flex flex-col lg:flex-row xl:flex-row justify-between items-start gap-3'
+        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
       />
       <div className='max-w-[1440px] w-full h-full mx-auto my-auto mt-10 flex items-start justify-between lg:gap-10 xl:gap-10 overflow-hidden'>
         <AnimatePresence>
@@ -38,14 +38,9 @@ const HomeServiceSection = ({ title, data, className }: Props) => {
               })}
           </div>
         </AnimatePresence>
-        <PreImage
-          src={data.section.image}
-          height={500}
-          width={500}
-          layer={false}
-          alt={data.section.name}
-          className='hidden lg:block xl:block relative rounded-lg'
-        />
+        <div className='hidden md:block relative w-[676px] h-[676px] rounded-lg overflow-hidden'>
+          <PreImage src={data.section.image} layer={false} alt={data.section.name}/>
+        </div>
       </div>
     </section>
   );
