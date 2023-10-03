@@ -120,7 +120,7 @@ pipeline {
     stage('Deploy and run') {
           steps {
             sh 'chmod a+x ./2.deploy.sh'
-            sh "helm upgrade --install website cicd/website --namespace ${namespace} --set image.tag=${TAG}"
+            sh "helm upgrade --install ngs-website cicd/website --namespace ${namespace} --set image.tag=${TAG}"
             // sh './2.deploy.sh'
             // sh 'helm upgrade --install vna cicd/user-api -n vna-dev'
           }
