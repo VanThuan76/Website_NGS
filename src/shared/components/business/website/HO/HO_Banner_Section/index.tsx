@@ -66,7 +66,7 @@ const HomeBannerSection = ({ data }: Props) => {
             <SwiperSlide key={idx}>
               <div className='relative w-full flex justify-between items-center mx-auto'>
                 <HOBannerContent selectedTab={item} />
-                <div className={`mx-auto ${currentBreakPoint === "sm" ? "w-[375px] h-[454px]" : "w-[1440px] h-[864px]"} relative overflow-hidden`}>
+                <div className={`mx-auto ${currentBreakPoint === "sm" ? "w-[375px] h-[454px]" : "w-full h-[864px]"} relative overflow-hidden`}>
                   <PreImage
                     src={item.image as string}
                     layer={false}
