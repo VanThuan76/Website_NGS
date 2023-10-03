@@ -1,6 +1,6 @@
 /* groovylint-disable NestedBlockDepth, UnusedVariable, VariableTypeRequired */
 // git repository info
-def gitRepository = 'http://171.244.51.190/ngsdigital/bfsi/product/website/website_fe'
+def gitRepository = 'http://171.244.51.190/ngsdigital/bfsi/product/website/website_fe.git'
 
 def gitBranch = 'develop'
 
