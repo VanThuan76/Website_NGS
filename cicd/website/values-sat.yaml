@@ -5,7 +5,7 @@
 replicaCount: 2
 
 image:
-  repository: harbor.ngsd.vn/website/website-fe
+  repository: harbor.ngsd.vn/ngs-website/fe-vna-pss
   # pullPolicy: IfNotPresent
   pullPolicy: Always
   # Overrides the image tag whose default is the chart appVersion.
