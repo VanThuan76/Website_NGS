@@ -55,14 +55,14 @@ ingress:
     # kubernetes.io/tls-acme: "true"
   hosts:
     # - host: vna-pss.songoku.nl
-    - host: vna-sit.ngsd.vn
+    - host: website-sit.ngsd.vn
       paths:
         - path: /
           pathType: ImplementationSpecific
   tls: 
     - hosts:
-        - vna-sit.ngsd.vn
-      secretName: vna-sit-ngsd-vn
+        - website-sit.ngsd.vn
+      secretName: website-sit-ngsd-vn
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local

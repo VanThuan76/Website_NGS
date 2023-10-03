@@ -8,7 +8,7 @@ def gitBranch = 'develop'
 def imageGroup = 'ngs-website'
 def appName = 'fe-website'
 /* groovylint-disable-next-line UnusedVariable */
-def namespace = 'website-uat'
+def namespace = 'ngs-website-uat'
 
 // harbor-registry credentials
 def registryCredential = 'jenkins-admin'
