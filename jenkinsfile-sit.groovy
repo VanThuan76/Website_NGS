@@ -5,7 +5,7 @@ def gitRepository = 'http://171.244.51.190/ngsdigital/bfsi/product/website/websi
 def gitBranch = 'develop'
 
 // Image infor in registry
-def imageGroup = 'website'
+def imageGroup = 'ngs-website'
 def appName = 'fe-website'
 /* groovylint-disable-next-line UnusedVariable */
 def namespace = 'website-uat'
