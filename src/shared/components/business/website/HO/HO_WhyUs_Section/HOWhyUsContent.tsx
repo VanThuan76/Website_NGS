@@ -40,11 +40,11 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item)}
-              className={`w-full px-5 pb-3 border-b-2 cursor-pointer ${
+              className={`w-full pb-3 border-b-2 cursor-pointer ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
-              <div className='flex flex-col justify-start items-start text-center'>
+              <div className='flex flex-col justify-center items-center'>
                 {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
                   <p key={idx} className='text-base hover:text-slate-800'>
                     {item}

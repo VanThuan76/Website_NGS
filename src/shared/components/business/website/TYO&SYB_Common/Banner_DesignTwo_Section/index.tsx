@@ -51,8 +51,8 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
             </UseLinkRedirect>
           </div>
           <div
-            className={`mx-auto ${
-              currentBreakPoint === 'sm' ? 'w-[375px] h-[454px]' : 'w-full h-[864px]'
+            className={`mx-auto w-[100vw] ${
+              currentBreakPoint === 'sm' ? 'h-[454px]' : 'h-[864px]'
             } relative overflow-hidden`}
           >
             <PreImage src={data.section.image as string} layer={true} alt={data.section.name as string} objectPosition="center" />

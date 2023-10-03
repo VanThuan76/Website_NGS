@@ -32,7 +32,7 @@ const HomePioneeringSection = ({ data, className }: Props) => {
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseNextLink>
         </div>
-        <div className={`col-span-1 relative max-w-[600px] ${currentBreakPoint === "sm" ? "h-[50px]" : "h-[150px]"}`}>
+        <div className={`col-span-1 relative max-w-[600px] ${currentBreakPoint === "sm" ? "h-[100px]" : "h-[150px]"}`}>
           <PreImage
             src={data.section.image}
             layer={false}

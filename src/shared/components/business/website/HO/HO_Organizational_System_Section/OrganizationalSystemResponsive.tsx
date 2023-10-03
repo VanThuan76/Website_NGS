@@ -16,9 +16,12 @@ const OrganizationalSystemResponsive = ({ data }: Props) => {
         pagination={{
           dynamicBullets: true,
         }}
+        slidesPerView={2}
+        spaceBetween={50}
+        centeredSlides={true}
       >
         {data.map((item, idx) => (
-          <SwiperSlide className='w-full py-5 rounded-lg' key={idx}>
+          <SwiperSlide className='py-5 rounded-lg' key={idx}>
             <div className='w-full h-[55px]'>
               <PreImage src={item.image} layer={false} alt={item.title} objectFit='contain' />
             </div>

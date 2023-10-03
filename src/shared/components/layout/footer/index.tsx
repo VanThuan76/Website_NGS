@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <section className='bg-[#141523] text-white font-thin pb-4 md:pb-8 lg:pb-10 px-4 md:px-24'>
       <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-10 justify-between items-center'>
-        <div className='w-full grid grid-cols-2 gap-4 justify-between items-center md:justify-start mb-4'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-4 justify-between items-center md:justify-start mb-4'>
           <div className='w-[95%] flex flex-col justify-start items-start gap-2'>
             <div className='relative w-[200px] h-[200px]'>
               <PreImage src={'/logo.svg'} alt={'Logo'} layer={false} objectFit="contain" />
@@ -63,13 +63,13 @@ const Footer = () => {
           <div className='w-full md:w-1/2 flex lg:hidden flex-col justify-center items-center'>
             <ResponsiveContent title='Sản phẩm & Dịch vụ' items={footerServiceData} />
             <ResponsiveContent title='Công ty' items={footerCompanyData} />
-            <ResponsiveContent title='' items={footerSupportData} />
+            <ResponsiveContent title='Hỗ trợ' items={footerSupportData} />
           </div>
           {/* <--Content - Responsive Desktop */}
           <div className='w-full hidden lg:flex justify-around items-start'>
             <InforFooter title='Sản phẩm & Dịch vụ' info={footerServiceData} />
             <InforFooter title='Công ty' info={footerCompanyData} />
-            <InforFooter title='' info={footerSupportData} />
+            <InforFooter title='Hỗ trợ' info={footerSupportData} />
           </div>
         </div>
         <div className='w-full flex flex-col md:flex-row justify-start items-start md:justify-between md:items-center border-t-2 py-5'>

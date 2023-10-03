@@ -39,7 +39,7 @@ const ServiceDesignThreeSection = ({ title,sub, data, className, sectionCodeLink
           />
           <div className='mt-10 flex flex-col justify-end items-end gap-3'>
             <p className='text-right'>{sub ? sub : ""}</p>
-            <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
+            <UseLinkRedirect sectionCode={'FormCTA'}>
               <BtnCommon title='Kết nối với NGS' cls='border border-orange-500' />
             </UseLinkRedirect>
           </div>

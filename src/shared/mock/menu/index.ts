@@ -424,7 +424,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Giải pháp cho doanh nghiệp vừa và nhỏ",
+                                title: "Giải pháp cho doanh nghiệp Vừa và Nhỏ",
                                 path: "/small-and-midsize-enterprises",
                                 menuChild: []
                             },
@@ -434,7 +434,7 @@ export const fakeMenu = [
                                 menuChild: []
                             },
                             {
-                                title: "Phân tích dữ liệu quản trị",
+                                title: "Phân tích Dữ liệu quản trị",
                                 path: "/data-and-analysis",
                                 menuChild: []
                             },
@@ -550,7 +550,7 @@ export const fakeMenu = [
                         path: "/secure-your-business",
                         menuChild: [
                             {
-                                title: "Kiểm thử xâm nhập hệ thống ứng dụng",
+                                title: "Kiểm thử xâm nhập hệ thống/ ứng dụng",
                                 path: "/penetration-testing",
                                 menuChild: []
                             },

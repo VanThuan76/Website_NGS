@@ -26,8 +26,8 @@ const YNGCommonIntroductionSection = ({ data, className }: Props) => {
             <div className='cols-span-1 w-[518px] h-full flex flex-col justify-between items-start text-white'>
               <div className='relative w-[176px] h-[80px] rounded-lg overflow-hidden'>
                 <PreImage src={item.image} alt={item.title} />
-                <p className='text-sm md:text-[32px] leading-[40px]'>{item.title}</p>
               </div>
+              <p className='text-sm md:text-[32px] leading-[40px]'>{item.title}</p>
               <div className='flex flex-col gap-2 justify-start items-start'>
                 {splitTextToArrayByDot(item.content).map((item: string, idx: number) => (
                   <div key={idx} className='flex justify-start items-start gap-[18px]'>
@@ -37,7 +37,7 @@ const YNGCommonIntroductionSection = ({ data, className }: Props) => {
                 ))}
               </div>
               <UseLinkRedirect sectionCode='FormYNG'>
-                <BtnCommon title='Đọc thêm' cls='text-white bg-orange-500 p-4' />
+                <BtnCommon title='Khám phá ngay' cls='text-white bg-orange-500 p-4' />
               </UseLinkRedirect>
             </div>
             <div className='relative w-full h-[431px] col-span-1 rounded-lg overflow-hidden'>

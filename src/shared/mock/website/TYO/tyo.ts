@@ -3414,7 +3414,7 @@ export const TYOForm1_PG3_17 = {
 export const TYO_DSP_Banner = {
     section: {
         id: 1,
-        name: 'Thế giới số là thế giới lấy// con người làm trung tâm.',
+        name: 'Thế giới số là thế giới lấy// con người làm trung tâm!',
         code: "PG003.1SE00001",
         image: "/images/PG003.1SE00001.png",
         description: "Bạn đã sẵn sàng bắt đầu hành trình Chuyển đổi số của mình chưa?"

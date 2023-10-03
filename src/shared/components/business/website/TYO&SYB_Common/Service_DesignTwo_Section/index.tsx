@@ -38,14 +38,8 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
           <Swiper pagination={{ dynamicBullets: true }} modules={[Pagination]} className='shadow-lg'>
             {data.components.map((item, idx) => (
               <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
-                <PreImage
-                  alt='Event'
-                  //@ts-ignore
-                  src={item.image}
-                  width={650}
-                  height={600}
-                  className='rounded-lg'
-                />
+                <div className='relative w-[650px] h-[600px] rounded-lg overflow-hidden'></div>
+                <PreImage alt={item.title} src={item.image} />
                 <ServiceDesignTwoItem data={item} />
               </SwiperSlide>
             ))}
@@ -79,18 +73,14 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                     className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
                   >
                     {item === selectedTab ? (
-                      <div className='w-full h-full flex flex-col rounded-lg'>
-                        <PreImage alt='Event' src={item.image!} width={1980} height={600} className='rounded-lg  border border-orange-400' />
+                      <div className='w-full h-[600px] flex flex-col rounded-lg overflow-hidden border border-orange-400'>
+                        <PreImage alt={item.title} src={item.image} />
                         <ServiceDesignTwoItem data={item} />
                       </div>
                     ) : (
-                      <PreImage
-                        alt='Event'
-                        src={item.image!}
-                        width={1980}
-                        height={600}
-                        className='object-cover rounded-lg'
-                      />
+                      <div className='w-full h-[600px] rounded-lg overflow-hidden'>
+                        <PreImage alt={item.title} src={item.image} />
+                      </div>
                     )}
                     <div className='absolute left-5 top-5 text-xl md:text-2xl text-white'>0{idx + 1}</div>
                     {item !== selectedTab ? (

@@ -12,7 +12,7 @@ const LayoutWebsite = ({ children }: Props) => {
   return (
     <>
       <Header />
-      <main ref={ref} className='min-h-screen dark:bg-[#141523]'>
+      <main ref={ref} className='overflow-x-hidden min-h-screen dark:bg-[#141523]'>
         {children}
       </main>
       <motion.div className='progress-bar' style={{ scaleX: scrollYProgress }} />

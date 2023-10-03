@@ -1,8 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
-import { URLS_SYSTEM } from '@/utils/constants';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import ServiceDesignFourItem from './Service_DesignFour_Item';
@@ -28,14 +27,14 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
             className='w-full grid-cols-7 col-span-7 !text-left'
           />
           <div className='w-full flex flex-col justify-center items-center'>
-            {data &&
+            {data &&  
               data.components!.map((item, idx) => {
                 return <ServiceDesignFourItem key={idx} item={item} />;
               })}
           </div>
-          <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
+          <UseLinkRedirect sectionCode={'FormCTA'}>
             <BtnCommon title='Đăng ký ngay' cls='text-white bg-orange-500 p-4' />
-          </UseLinkRouter>
+          </UseLinkRedirect>
         </div>
         <PreImage
           src={data.section.image}

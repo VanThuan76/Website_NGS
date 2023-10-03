@@ -34,7 +34,7 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
           <div className='flex flex-col justify-start items-start gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>
 
-            <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
+            <UseLinkRedirect sectionCode={'FormCTA'}>
               <BtnCommon title='Dùng thử' cls='border border-orange-500' />
             </UseLinkRedirect>
           </div>

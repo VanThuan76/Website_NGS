@@ -14,7 +14,7 @@ export const Home_1 = {
             title: "IT Consulting & Service Provider",
             description: "Chúng tôi là",
             slug: "it-consulting-&-service-provider-1",
-            content: "NGS - ĐƠN VỊ CUNG CẤP DỊCH VỤ// TƯ VẤN CÔNG NGHỆ THÔNG TIN VÀ// CHUYỂN ĐỔI SỐ TOÀN DIỆN.",
+            content: "NGS - ĐƠN VỊ CUNG CẤP DỊCH VỤ// TƯ VẤN CÔNG NGHỆ THÔNG TIN VÀ CHUYỂN ĐỔI SỐ // TOÀN DIỆN.",
             image: "/images/background_1.png",
             video: "",
             thumbnail: ""
@@ -26,7 +26,7 @@ export const Home_1 = {
             title: "Trust Partner",
             description: "Chúng tôi tự hào là",
             slug: "trust-partner-2",
-            content: "ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ// LỚN NHẤT TRÊN THẾ GIỚI",
+            content: "ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ LỚN NHẤT// TRÊN THẾ GIỚI",
             image: "/images/background_2.png",
             video: "",
             thumbnail: ""
@@ -38,7 +38,7 @@ export const Home_1 = {
             title: "Outstanding Customer Experience",
             description: "Chúng tôi cam kết",
             slug: "outstanding-customer-experience-3",
-            content: "MANG ĐẾN CHO KHÁCH HÀNG// TRẢI NGHIỆM TỐT NHẤT// CÙNG NHỮNG SẢN PHẨM HOÀN THIỆN.",
+            content: "MANG ĐẾN CHO KHÁCH HÀNG TRẢI NGHIỆM TỐT NHẤT// CÙNG NHỮNG SẢN PHẨM HOÀN THIỆN.",
             image: "/images/background_3.png",
             video: "",
             thumbnail: ""
@@ -83,7 +83,7 @@ export const Home_2 = {
             id: 1,
             language: 'vi',
             code: "PG001SE00002CN000001",
-            title: "Giải pháp Quản lý doanh nghiệp",
+            title: "Giải pháp // Quản lý doanh nghiệp",
             description: "Sức mạnh của một tổ chức và tiềm năng tạo ra doanh thu phụ thuộc nhiều vào chất lượng quản lý doanh nghiệp",
             slug: "/your-next-gen/ERP",
             content: "",
@@ -95,7 +95,7 @@ export const Home_2 = {
             id: 2,
             language: 'vi',
             code: "PG001SE00002CN000002",
-            title: "Giải pháp Bán hàng",
+            title: "Giải pháp // Bán hàng",
             description: "Kiểm soát hoạt động bán hàng, tối đa doanh thu và lợi nhuận, cung cấp sự hài lòng cao nhất đến khách hàng",
             slug: "/your-next-gen/Sale",
             content: "",
@@ -107,7 +107,7 @@ export const Home_2 = {
             id: 3,
             language: 'vi',
             code: "PG001SE00002CN000003",
-            title: "Giải pháp Quản lý // nhân sự",
+            title: "Giải pháp // Quản lý nhân sự",
             description: "Tối ưu hoá quản lý nhân sự, giảm thiểu thời gian và tăng hiệu quả công việc",
             slug: "/your-next-gen/HRM",
             content: "",
@@ -119,7 +119,7 @@ export const Home_2 = {
             id: 4,
             language: 'vi',
             code: "PG001SE00002CN000004",
-            title: "Giải pháp Kết nối",
+            title: "Giải pháp // Kết nối",
             description: "Tích hợp tạo lập cuộc sống dễ dàng chỉ với một cú nhấp chuột",
             slug: "/your-next-gen/Connect",
             content: "",
@@ -205,10 +205,10 @@ export const Home_3 = {
 export const Home_4 = {
     section: {
         id: 4,
-        name: 'Bảo vệ toàn vẹn hệ thống công nghệ thông tin của bạn bằng dịch vụ an ninh mạng 24/7 chuyên nghiệp',
+        name: 'Bảo vệ toàn vẹn hệ thống // công nghệ thông tin của bạn bằng // dịch vụ an ninh mạng 24/7',
         code: "PG001SE00004",
         image: "",
-        description: "Các rủi ro về an ninh mạng có thể gây ra hậu quả nghiêm trọng đến bí mật kinh doanh, vận hành hay trách nhiệm pháp lý của tổ chức. Việc khắc phục các sự số an ninh mạng đòi hỏi lực lượng chuyên gia bảo mật cao cấp và quy trình chuyên nghiệp. Chúng tôi sẵn sàng đồng hành và bảo vệ hệ thống chuyển đổi số của khách hàng với dịch vụ An ninh mạng toàn diện và an toàn."
+        description: "Các rủi ro về an ninh mạng có thể gây ra hậu quả nghiêm trọng đến tổ chức. Việc khắc phục các sự số an ninh mạng đòi hỏi lực lượng chuyên gia bảo mật cao cấp và quy trình chuyên nghiệp. Chúng tôi sẵn sàng đồng hành và bảo vệ hệ thống chuyển đổi số của khách hàng với dịch vụ An ninh mạng toàn diện và an toàn."
     },
     components: [
         {
@@ -407,7 +407,7 @@ export const Home_7 = {
             id: 1,
             language: 'vi',
             code: "PG001SE00007CN000001",
-            title: "Năng lực công nghệ vững vàng",
+            title: "Năng lực công nghệ // vững vàng",
             description: "- NGS sở hữu đội ngũ chuyên gia công nghệ, tư vấn, triển khai và vận hành giải pháp Công nghệ thông tin An ninh mạng của các hãng hàng đầu. Bên cạnh đó chúng tôi tự hào có sự hiểu biết đa lĩnh vực từ Tài chính ngân hàng, Hàng không, Dầu khí, Sản xuất, Thương mại .... tích lũy trong quá trình làm việc với các khách hàng lớn.// - Đồng thời, các giải pháp do NGS phát triển được xây dựng trên các nền tảng mã nguồn mở hiện đại và sự hiểu biết sâu sắc về hệ thống quản trị của mỗi ngành.",
             slug: "sang-tao-27",
             content: "",
@@ -419,7 +419,7 @@ export const Home_7 = {
             id: 2,
             language: 'vi',
             code: "PG001SE00007CN000002",
-            title: "Trải nghiệm khách hàng xuất sắc",
+            title: "Trải nghiệm khách hàng // xuất sắc",
             description: "- NGS mong muốn mang lại sự hài lòng cho khách hàng trong suốt hành trình sử dụng sản phẩm, dịch vụ. Thông qua sự hiểu biết sâu sắc về nhu cầu và mong đợi của quý khách hàng từ đó chúng tôi mang đến quy trình làm việc chuyên nghiệp và thái độ phụng sự hết lòng.",
             slug: "linh-hoat-28",
             content: "",
@@ -431,7 +431,7 @@ export const Home_7 = {
             id: 3,
             language: 'vi',
             code: "PG001SE00007CN000003",
-            title: "Sáng tạo và đổi mới liên tục",
+            title: "Sáng tạo và đổi mới // liên tục",
             description: "- NGS nuôi dưỡng văn hóa sáng tạo, đổi mới liên tục bên trong tổ chức, từ đó tạo nên đội ngũ nhân tài chuyên nghiệp và linh hoạt. Chúng tôi tin rằng, sự sáng tạo sẽ góp phần mang đến các giải pháp, phương án triển khai tốt nhất, đáp ứng các yêu cầu cấp thiết của khách hàng.",
             slug: "sang-tao-29",
             content: "",

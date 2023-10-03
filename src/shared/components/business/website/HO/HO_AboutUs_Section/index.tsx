@@ -8,6 +8,7 @@ import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import BackgroundAboutUs from '@/components/icon/HO/aboutUs/BackgroundAboutUs';
+import useBreakPoint from '@/hooks/useBreakPoint';
 
 type Props = {
   title: string;
@@ -19,6 +20,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true });
+  const currentBreakPoint = useBreakPoint()
   const sectionControls = useAnimation();
   useEffect(() => {
     if (isInView) {
@@ -30,18 +32,11 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
     <section
       ref={ref}
       id={data.section.code}
-      className={`relative flex flex-col gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
+      className={`relative flex flex-col md:gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
     >
-      <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start gap-20 '>
-        <div className='col-span-1 relative h-[370px]'>
-          <PreImage
-            src={data.section.image}
-            layer={false}
-            alt={data.section.name}
-            objectFit="contain"
-          />
-        </div>
-        <div className='w-full flex flex-col justify-start items-start'>
+      <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start md:gap-20'>
+        {/* Responsive */}
+        <div className='mt-5 flex md:hidden w-full flex-col justify-start items-start'>
           <TitleSection
             title={title}
             name={data.section.name as string}
@@ -50,7 +45,32 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
             className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] md:w-[170px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon
+              title='Tìm hiểu thêm'
+              cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
+              colorSvg={colorIcon}
+            />
+          </UseLinkRouter>
+        </div>
+        {/* Responsive */}
+        <div className='col-span-1 relative h-[370px] rounded-lg overflow-hidden'>
+          <PreImage src={data.section.image} layer={false} alt={data.section.name} objectFit='contain' />
+          <BackgroundAboutUs className='block md:hidden absolute left-0 top-0 w-full h-[470px] -z-10' />
+        </div>
+        <div className='hidden md:flex w-full flex-col justify-start items-start'>
+          <TitleSection
+            title={title}
+            name={data.section.name as string}
+            description={data.section!.description as string}
+            findMore={true}
+            className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
+          />
+          <UseLinkRouter url={URLS_SYSTEM.ES}>
+            <BtnCommon
+              title='Tìm hiểu thêm'
+              cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
+              colorSvg={colorIcon}
+            />
           </UseLinkRouter>
         </div>
       </div>
@@ -59,8 +79,10 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           return (
             <motion.div
               key={idx}
-              className={`w-full dark:bg-[#1B1D35] ${
-                data.components && data.components?.length - 1 !== idx && 'p-7 border-card-aboutUs-home-right md:pr-5 md:mr-5'
+              className={`w-full dark:bg-[#1B1D35] p-7 ${
+                data.components &&
+                data.components?.length - 1 !== idx && currentBreakPoint !== "sm" ?
+                'border-card-aboutUs-home-right pr-20' :  data.components && data.components?.length - 1 !== idx  && 'border-b border-b-slate-300'
               } flex flex-col justify-center items-center gap-5 text-center`}
               variants={{
                 hidden: { opacity: 0, scale: 0 },
@@ -80,7 +102,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           );
         })}
       </div>
-      <BackgroundAboutUs className='absolute left-0 top-0 w-full h-full -z-10' />
+      <BackgroundAboutUs className='hidden md:block absolute left-0 top-0 w-full h-full -z-10' />
     </section>
   );
 };

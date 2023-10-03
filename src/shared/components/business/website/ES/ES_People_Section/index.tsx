@@ -78,7 +78,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
                 } cursor-pointer font-medium`}
                 onClick={() => setSelectedTab(data && data.components && data.components[idx])}
               >
-                {`${idx + 1} of ${data.components?.length}`}
+                {item.description.split("&")[0]}
                 {item === selectedTab ? <motion.div layoutId='underline' /> : null}
               </motion.li>
             ))}

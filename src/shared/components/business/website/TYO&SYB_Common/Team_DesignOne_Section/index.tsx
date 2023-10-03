@@ -9,6 +9,7 @@ import TeamDesignOneItem from './Team_DesignOne_Item';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BackgroundTeam from '@/components/icon/ES/BackgroundTeam';
+import useBreakPoint from '@/hooks/useBreakPoint';
 
 type Props = {
   title: string;
@@ -18,6 +19,7 @@ type Props = {
 
 const TeamDesignOneSection = ({ title, data, className }: Props) => {
   const [hoveredItem, setHoveredItem] = useState<IComponents>();
+  const currentBreakPoint = useBreakPoint()
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`px-6 py-5 md:py-10 lg:py-20 md:px-12 lg:px-24 ${className}`}>
@@ -34,13 +36,12 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           pagination={{
             dynamicBullets: true,
           }}
-          slidesPerView={1}
-          spaceBetween={10}
+          slidesPerView={currentBreakPoint === "sm" ? 1 : 2}
+          spaceBetween={0}
           modules={[Pagination]}
-          centeredSlides={true}
         >
           {data.components.map((item, idx) => (
-            <SwiperSlide className='max-w-[335px] p-2 mx-auto' key={idx}>
+            <SwiperSlide className='w-full p-0 md:max-w-[335px] md:p-2 mx-auto' key={idx}>
               <div
                 className='relative max-w-[335px] min-h-[418px] rounded-lg overflow-hidden'
                 onMouseEnter={() => setHoveredItem(item)}
@@ -49,7 +50,7 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
                 {hoveredItem === item ? (
                   <TeamDesignOneItem
                     content={item.content || ''}
-                    className='absolute top-0 left-0 w-full bg-black text-white transition ease-in-out duration-100 opacity-90'
+                    className='absolute top-0 left-0 w-full bg-black text-white'
                   />
                 ) : (
                   <div className='relative w-[335px] h-[418px]'>

@@ -1,5 +1,6 @@
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import useBreakPoint from '@/hooks/useBreakPoint';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
@@ -10,6 +11,7 @@ type Props = {
 };
 
 const OverviewDesignFourSection = ({ title, data, className }: Props) => {
+  const currentBreakPoint = useBreakPoint();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`pb-4 md:pb-8 lg:pb-16 px-4 md:px-24 overflow-hidden ${className}  `}>
@@ -19,15 +21,21 @@ const OverviewDesignFourSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 text-center'
+          className='w-full grid-cols-7 col-span-7 !gap-0 !text-left md:!text-center'
         />
-        <div className='w-full grid grid-cols-3 gap-8 -mt-12'>
+        <div className='w-full grid grid-cols-1 md:grid-cols-3 gap-8 -mt-12'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className='flex flex-col justify-start items-center gap-3 pr-4 border-card-overview-designFour-section'
+              className={`flex flex-col justify-start items-start md:justify-start md:items-center gap-3 pr-4 ${
+                currentBreakPoint !== 'sm' && 'border-card-overview-designFour-section'
+              }`}
             >
-              <div className='relative w-[60px] h-[60px] rounded-lg overflow-hidden'>
+              <div
+                className={`relative ${
+                  currentBreakPoint === 'sm' ? 'w-[44px] h-[44px]' : 'w-[60px] h-[60px]'
+                } rounded-lg overflow-hidden`}
+              >
                 <PreImage src={item.image} alt={item.title} />
               </div>
               <h1 className='text-xl md:text-2xl font-semibold text-center'>{item.title}</h1>

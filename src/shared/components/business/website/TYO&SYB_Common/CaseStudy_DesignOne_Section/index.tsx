@@ -1,8 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
-import { URLS_SYSTEM } from '@/utils/constants';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import { useTheme } from 'next-themes';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -32,17 +31,12 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
             findMore={true}
             className='w-full grid-cols-7 col-span-7 !text-left text-white'
           />
-          <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <UseLinkRedirect sectionCode={'FormCTA'}>
             <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
-          </UseLinkRouter>
+          </UseLinkRedirect>
         </div>
         <div className='relative w-full h-full rounded-lg overflow-hidden'>
-          <PreImage
-            src={data.section.image}
-            width={1980}
-            height={500}
-            alt={data.section.name}
-          />
+          <PreImage src={data.section.image} width={1980} height={500} alt={data.section.name} />
         </div>
       </div>
     </section>

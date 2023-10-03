@@ -5,8 +5,7 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import IconCheckSuccess from '@/components/icon/TYO&SYB_Common/IconCheckSuccess';
-import UseLinkRouter from '@/utils/functions/UseLinkRouter';
-import { URLS_SYSTEM } from '@/utils/constants';
+import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 
 type Props = {
   title: string;
@@ -32,21 +31,16 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
           />
           {data.components.map((item, idx) => (
             <div key={idx} className='flex justify-start items-start gap-2'>
-              <IconCheckSuccess className='w-[24px] h-[24px]'/>
+              <IconCheckSuccess className='w-[24px] h-[24px]' />
               <p className='w-full'>{item.title}</p>
             </div>
           ))}
-          <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <UseLinkRedirect sectionCode={'FormCTA'}>
             <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
-          </UseLinkRouter>
+          </UseLinkRedirect>
         </div>
         <div className='relative w-full h-full object-cover overflow-hidden'>
-          <PreImage
-            src={data.section.image}
-            width={1980}
-            height={1000}
-            alt={data.section.name}
-          />
+          <PreImage src={data.section.image} width={1980} height={1000} alt={data.section.name} />
         </div>
       </div>
     </section>
