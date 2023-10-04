@@ -38,8 +38,8 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`px-4 md:px-24 overflow-hidden ${className} bg-[#051C2C]`}>
-      <div className='relative w-full grid grid-cols-2 justify-center items-center gap-5'>
+    <section id={data.section.code} className={`w-screen px-4 md:px-24 overflow-hidden ${className} bg-[#051C2C]`}>
+      <div className='relative w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 py-20'>
           <TitleSection
             title={title}

@@ -32,7 +32,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
     <section
       ref={ref}
       id={data.section.code}
-      className={`relative flex flex-col md:gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
+      className={`max-w-[1440px] relative flex flex-col md:gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
     >
       <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start md:gap-20'>
         {/* Responsive */}

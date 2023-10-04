@@ -25,7 +25,7 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
       }}
       initial='hidden'
       animate={sectionControls}
-      transition={{ duration: 0.7, delay: idx * 0.9 }}
+      transition={{ duration: 0.7, delay: idx * 0.5 }}
       onMouseEnter={() => setIsHovered(idx)}
       onMouseLeave={() => setIsHovered(undefined)}
       onClick={() => router.push(`/secure-your-business/${slug}`)}
@@ -37,10 +37,11 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
         <p className='text-lg md:text-xl text-center font-normal md:font-semibold'>{title}</p>
       </div>
       <motion.p
-        className='max-w-[304px] p-2 absolute top-0 bg-[#e5e5e5] z-30'
-        style={{ overflowY: 'hidden' }}
-        initial={{ opacity: 0, height: 0 }}
-        animate={{ opacity: isHovered === idx ? 1 : 0, height: isHovered === idx ? '202px' : 0 }}
+        className='max-w-[304px] h-[202px] p-2 absolute top-0 bg-[#e5e5e5] z-30'
+        style={{ overflowY: 'hidden'}}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: isHovered === idx ? 1 : 0}}
+        whileHover={{translateY: -5}}
         transition={{
           duration: 0.5,
           ease: 'easeInOut',

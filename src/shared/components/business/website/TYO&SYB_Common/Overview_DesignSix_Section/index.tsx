@@ -16,7 +16,7 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
+      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
     >
       <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
         <TitleSection

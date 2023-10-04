@@ -5,6 +5,7 @@ import SectionCoreValue from '@/components/icon/ES/SectionCoreValue';
 import SectionCoreValue3 from '@/components/icon/ES/SectionCoreValue3';
 import SectionCoreValue2 from '@/components/icon/ES/SectionCoveValue2';
 import BackgroundDark from '@/components/icon/HO/security/BackgroundDark';
+import useBreakPoint from '@/hooks/useBreakPoint';
 import useInviewScroll from '@/hooks/useInviewScroll';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import { motion, useAnimation } from 'framer-motion';
@@ -12,6 +13,7 @@ import { useTheme } from 'next-themes';
 import React, { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
+import ESCoreValueResponsive from './ESCoreValueResponsive';
 
 type Props = {
   title: string;
@@ -21,6 +23,7 @@ type Props = {
 };
 const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) => {
   const { theme } = useTheme();
+  const currentBreakPoint = useBreakPoint();
   const [sectionRef, inView] = useInView({
     threshold: 0.5,
   });
@@ -37,13 +40,13 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section
-      ref={sectionRef}
+      ref={currentBreakPoint !== 'sm' ? sectionRef : null}
       id='ESCOREVALUE'
-      className={`mt-10 2xl:mt-20 h-[1105px] flex flex-col justify-center items-center pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`mt-10 2xl:mt-20 h-auto md:h-[1105px] flex flex-col justify-center items-center pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
       <motion.div
         animate={controls}
-        className='w-full h-full mx-auto my-auto grid grid-cols-1 justify-start items-start bg-white'
+        className='hidden md:grid w-full h-full mx-auto my-auto grid-cols-1 justify-start items-start bg-white'
       >
         <TitleSection
           title={title}
@@ -53,16 +56,16 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
           className='w-full grid-cols-7 col-span-7 text-center !gap-0'
         />
         {currentIndex === 0 ? (
-          <SectionCoreValue className='w-full h-full object-cover' />
+          <SectionCoreValue className='hidden md:block w-full h-full object-cover' />
         ) : currentIndex === 1 ? (
-          <SectionCoreValue2 className='w-full h-full object-cover' />
+          <SectionCoreValue2 className='hidden md:block w-full h-full object-cover' />
         ) : (
-          <SectionCoreValue3 className='w-full h-full object-cover' />
+          <SectionCoreValue3 className='hidden md:block w-full h-full object-cover' />
         )}
         <div className={`${inView ? 'fixed -bottom-2 right-1/2 translate-x-1/2 block' : 'hidden'}`}>
-        <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
-          <BtnCommon title='Discover our service' cls='text-orange-500 p-4 rounded-sm' hover={false} />
-        </UseLinkRedirect>
+          <UseLinkRedirect sectionCode={sectionCodeLink || 'ConnectUs'}>
+            <BtnCommon title='Khám phá dịch vụ của chúng tôi' cls='text-orange-500 p-4 rounded-sm' hover={false} />
+          </UseLinkRedirect>
         </div>
         <motion.div
           className='absolute -top-24 left-0 w-full h-full -z-10'
@@ -72,12 +75,13 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
           transition={{ duration: 0.5 }}
         >
           {theme === 'dark' ? (
-            <BackgroundDark className='w-full object-center' />
+            <BackgroundDark className='hidden md:block w-full object-center' />
           ) : (
-            <BackgroundCoreValueLight className='w-full scale-150 md:scale-100 object-center' />
+            <BackgroundCoreValueLight className='hidden md:block w-full scale-150 md:scale-100 object-center' />
           )}
         </motion.div>
       </motion.div>
+      <ESCoreValueResponsive data={data.components} />
     </section>
   );
 };

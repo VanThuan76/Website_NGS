@@ -19,7 +19,7 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
 
   return (
-    <section id={data.section.code} className={`relative overflow-hidden ${className} bg-[#051C2C]`}>
+    <section id={data.section.code} className={`w-screen relative overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
         <div className='w-full px-4 py-2 md:px-24 md:py-20 flex flex-col justify-start items-start gap-8 text-white'>
           <TitleSection

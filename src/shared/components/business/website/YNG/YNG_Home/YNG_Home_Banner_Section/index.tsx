@@ -60,7 +60,7 @@ const YNGHomeBannerSection = ({ title, data, className }: Props) => {
   }, []);
 
   return (
-    <section id={data && data.section && data.section.code} className={`block pb-10 ${className}`}>
+    <section id={data && data.section && data.section.code} className={`w-screen block pb-10 ${className}`}>
       <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[600px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
         <div className='w-full h-full col-span-1 bg-[#FEF6EB]'>
           <YNGHomeBannerContent title={title} selectedTab={selectedTab!} />

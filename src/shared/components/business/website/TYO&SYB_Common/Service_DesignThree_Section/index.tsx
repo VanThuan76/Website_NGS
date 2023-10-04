@@ -18,7 +18,7 @@ const ServiceDesignThreeSection = ({ title,sub, data, className, sectionCodeLink
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`relative pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
+    <section id={data.section.code} className={`max-w-[1440px] relative pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
       <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start gap-10'>
         <div className='w-full max-h-[850px] pr-4 flex flex-col justify-start items-start gap-10 overflow-y-scroll service-designthree-section-with-scrollbar pl-12'>
           {data.components.map((item, idx) => {

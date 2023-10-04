@@ -38,7 +38,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`px-4 md:px-24 overflow-hidden ${className}`}>
+    <section id={data.section.code} className={`max-w-[1440px] ${className}`}>
       <TitleSection
         title={title}
         name={data.section!.name as string}
@@ -46,27 +46,33 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full flex flex-col justify-start items-start gap-3'
       />
-      <div className='hidden md:grid mt-3 relative w-full grid-cols-2 justify-start items-start gap-10'>
-        <PreImage
-          src={data.section.image}
-          width={1980}
-          height={500}
-          alt={data.section.name}
-          className='w-full h-full object-cover'
-        />
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3'>
-          <div className='relative w-full min-h-[500px] md:min-h-[350px]'>
+      <div className='max-w-[1440px] mx-auto mt-3 hidden md:grid grid-cols-2 justify-center items-center gap-10 overflow-hidden'>
+        <div className='col-span-1 relative w-full h-[500px]'>
+          <PreImage src={data.section.image} alt={data.section.name} />
+        </div>
+        <div className='col-span-1 w-full flex flex-col justify-start items-start gap-3'>
+          <div className='relative w-full min-h-[500px] md:min-h-[450px]'>
             {data.components.map((item, idx) => (
               <div key={idx} className='absolute top-0 w-full flex flex-col justify-start items-start gap-10'>
                 <div className='flex flex-col justify-start items-start gap-2'>
                   <p className='text-xl md:text-3xl'>{selectedTab?.title}</p>
                   <p className='font-normal text-[#9A3902]'>{selectedTab?.description}</p>
                 </div>
-                <p className='font-normal text-[#9A3902]'>{selectedTab?.content}</p>
+                {selectedTab && selectedTab?.content!.split('//').length > 0 ? (
+                  <div className='w-full flex flex-col justify-start items-start gap-3'>
+                    {selectedTab?.content?.split('//').map((item, index) => (
+                      <p key={index} className='font-normal text-[#9A3902] italic'>
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+                ) : (
+                  <p className='font-normal text-[#9A3902]'>{selectedTab?.content}</p>
+                )}
               </div>
             ))}
           </div>
-          <ul className='absolute bottom-5 hidden md:flex items-center justify-between gap-5'>
+          <ul className='hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (
               <motion.li
                 key={idx}
@@ -78,7 +84,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
                 } cursor-pointer font-medium`}
                 onClick={() => setSelectedTab(data && data.components && data.components[idx])}
               >
-                {item.description.split("&")[0]}
+                {item.description.split('&')[0]}
                 {item === selectedTab ? <motion.div layoutId='underline' /> : null}
               </motion.li>
             ))}

@@ -67,7 +67,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
           ease: 'easeInOut',
         }}
       >
-        <div className='w-full h-[60px] flex flex-col justify-start items-start'>
+         <div className='w-full h-[60px] flex flex-col justify-start items-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
             <h1 key={idx} className='text-base md:text-2xl font-medium leading-6 md:leading-8'>
               {item}
@@ -88,7 +88,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
         >
           <UseLinkRouter url={url}>
             <BtnCommon
-              cls='mt-6 h-[24px] border-orange-500 bg-white cursor-pointer rounded-[8px]'
+              cls='mt-6 h-[40px] border-orange-500 bg-white cursor-pointer rounded-[8px]'
               title='Tìm hiểu thêm'
               colorSvg={colorIcon}
             />

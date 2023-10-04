@@ -25,15 +25,15 @@ const FormDesignOneItem = () => {
     e.preventDefault();
     console.log(formData);
     toast({
-      variant: "success",
-      title: "Chúc mừng",
-      description: "Bạn đã đăng ký thành công",
-    })
+      variant: 'success',
+      title: 'Chúc mừng',
+      description: 'Bạn đã đăng ký thành công',
+    });
   };
   return (
     <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md z-30'>
       <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full mt-4 p-8 text-[#A6A6A6]'>
+        <form onSubmit={handleSubmit} className='w-full mt-4 md:p-8 text-[#A6A6A6]'>
           <div className='w-full mb-4'>
             <label htmlFor='fullName' className='block mb-1'>
               Họ và tên của bạn
@@ -126,8 +126,11 @@ const FormDesignOneItem = () => {
               />
             </div>
           </div>
-          <div className='w-full grid grid-cols-2 gap-4 mb-4'>
+          <div className='w-full grid grid-cols-2 justify-between items-end gap-4 mb-4'>
             <div className='w-full'>
+              <label htmlFor='staffSize' className='block mb-1'>
+                Chọn tỉnh/thành phố
+              </label>
               <select
                 id='cityOrProvince'
                 value={formData.cityOrProvince}
@@ -140,9 +143,7 @@ const FormDesignOneItem = () => {
                 className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
                 required
               >
-                <option value='' disabled>
-                  Lựa chọn Tỉnh/Thành phố
-                </option>
+                <option value='' disabled />
                 {cityAndProvince &&
                   cityAndProvince.map((item, index) => (
                     <option key={index} value={item.name}>

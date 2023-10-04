@@ -21,12 +21,16 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='flex justify-start items-start gap-4 md:gap-8'>
-        <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl'>{item.title}</h1>
+      <div className='flex justify-start items-start gap-1'>
+        {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
+          <p key={idx} className='text-md md:text-xl lg:text-2xl xl:text-3xl'>
+            {item}
+          </p>
+        ))}
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start md:pl-20'
+        className='flex-col justify-center items-start pl-5'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{
@@ -42,7 +46,7 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
           ))}
         </div>
         <UseLinkRouter url={URLS_SYSTEM.ES}>
-          <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+          <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] border border-orange-500' colorSvg={colorIcon} />
         </UseLinkRouter>
       </motion.div>
     </div>

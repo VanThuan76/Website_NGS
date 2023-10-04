@@ -22,8 +22,8 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
   const currentBreakPoint = useBreakPoint()
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`px-6 py-5 md:py-10 lg:py-20 md:px-12 lg:px-24 ${className}`}>
-      <div className='max-w-[1440px] mx-auto my-auto bg-transparent overflow-hidden'>
+    <section id={data.section.code} className={`max-w-[1440px] px-6 py-5 md:py-10 lg:py-20 md:px-12 lg:px-24 ${className}`}>
+      <div className='w-full mx-auto my-auto bg-transparent overflow-hidden'>
         <TitleSection
           title={title}
           name={data.section.name as string}

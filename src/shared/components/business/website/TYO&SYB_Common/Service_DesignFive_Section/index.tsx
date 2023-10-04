@@ -17,7 +17,7 @@ const ServiceDesignFiveSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`px-4 md:px-24 overflow-hidden ${className}`}
+      className={`max-w-[1440px] px-4 md:px-24 overflow-hidden ${className}`}
     >
       <div className='w-full grid grid-cols-2 justify-start items-start gap-36'>
         <div className='w-full flex flex-col justify-start items-start gap-3'>

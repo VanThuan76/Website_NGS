@@ -52,7 +52,7 @@ const ESEnvironment = ({ data, className }: Props) => {
       style={{
         backgroundColor: `${backgroundColor[currentIndex]}`,
       }}
-      className={`h-[300vh] ${className}`}
+      className={`w-screen h-[300vh] ${className}`}
     >
       <motion.div
         animate={controls}

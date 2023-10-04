@@ -1,7 +1,6 @@
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import FormDesignOneItem from './Form_DesignOne_Item';
-import IconMail from '@/components/icon/IconMail';
 import { useTheme } from 'next-themes';
 import BorderStyleForm from '@/components/icon/TYO&SYB_Common/BorderStyleForm';
 
@@ -18,9 +17,9 @@ const FormDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id="FormCTA"
-      className={`relative overflow-hidden ${className}  `}
+      className={`max-w-[1440px] relative overflow-hidden ${className}  `}
     >
-      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start gap-10 pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24'>
+      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-1 md:grid-cols-2 justify-between items-start gap-10 pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24'>
         <div className='w-full h-full flex flex-col justify-between items-start z-30'>
           <div className='flex flex-col justify-start items-start gap-3'>
             <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
@@ -29,7 +28,7 @@ const FormDesignOneSection = ({ title, data, className }: Props) => {
         </div>
         <FormDesignOneItem />
       </div>
-      <BorderStyleForm className='absolute w-full h-full -left-1/3 -top-[13%] z-10' />
+      <BorderStyleForm className='absolute w-full h-full -left-1/3 bottom-0 md:-top-[13%] z-10' />
     </section>
   );
 };

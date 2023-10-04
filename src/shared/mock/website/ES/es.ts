@@ -26,7 +26,45 @@ export const ESCoreValueData = {
         image: "",
         description: ""
     },
-    components: []
+    components: [
+        {
+            id: 1,
+            language: 'vi',
+            code: "PG003.10SE00003CN000001",
+            title: "Tôn trọng // Tâm huyết // Sáng tạo // Hoà hợp // Tín nhiệm // Chuyên nghiệp",
+            description: "Chấp nhận sự khác biệt vốn có giữa các bên để tìm ra phương án phối hợp, hợp tác phù hợp đem lại hiệu quả cao // Tận tâm, nhiệt tình với công việc. Luôn có niềm vui, sự tích cực trong công việc // Luôn suy nghĩ tìm tòi và học hỏi để tìm ra cái mới, cách giải quyết tốt nhất để đạt hiệu quả tốt nhất // Chung mục tiêu, đoàn kết, gắn bó, chia sẻ với đồng nghiệp, đối tác, khách hàng // Coi trọng chữ TÍN, thực hiện nghiêm túc mọi cam kết. Lời nói luôn đi đôi với hành động // Tuân thủ quy định, quy trình; tác phong nhanh nhẹn, khoa học; phối hợp hiệu quả với đồng nghiệp và đối tác để hoàn thành công việc",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 2,
+            language: 'vi',
+            code: "PG003.10SE00003CN000002",
+            title: "Tự tôn // Sáng kiến // Tâm thành // Chuyên môn // Tín nghĩa // Hoà nhã",
+            description: "Biết trân trọng bản thân, giữ gìn sức khỏe, trau dồi chuyên môn, tự tin thể hiện chính kiến trên tinh thần xây dựng. // Mạnh dạn đưa ra các ý tưởng mới, đề xuất mới để cải tiến hiệu suất công việc. // Lấy chữ Tâm làm điểm xuất phát cho mọi suy nghĩ và hành động, hướng tới những giá trị tốt đẹp (giá trị chân – thiện - mỹ). // Nắm vững kiến thức chuyên môn. Không ngừng học hỏi, trau dồi kiến thức chuyên sâu để thực hiện công việc, đáp ứng các yêu cầu từ thực tiễn. // Sống nhân ái, có trước có sau. Sống có trách nhiệm và quan tâm chăm sóc lẫn nhau. // Giữ thái độ nhẹ nhàng, vui vẻ trong ứng xử, kiểm soát cảm xúc và thái độ khi giao tiếp. ",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+        {
+            id: 3,
+            language: 'vi',
+            code: "PG003.10SE00003CN000003",
+            title: "Tôn vinh // Sáng suốt // Tâm đức // Chuyên cần // Uy tín // Hài hoà",
+            description: "Luôn ghi nhận, khen thưởng kịp thời những nỗ lực, thành tích của đồng nghiệp, đối tác trong việc nâng cao hiệu quả hoạt động của công ty. // Minh mẫn trong tư duy, suy nghĩ mạch lạc, thấu đáo, nhìn vấn đề từ nhiều khía cạnh khác nhau. // Luôn hành động vì lợi ích chung của cộng đồng và xã hội, để đức cho tương lai. // Tuân thủ quy định của công ty về giờ làm việc và thời gian làm việc. Thực hiện đúng các nề nếp của công ty. // Giữ gìn hình ảnh, uy tín thương hiệu của NGS, mỗi thành viên là một đại sứ thương hiệu của NGS. // Giải quyết mọi vấn đề hợp lý hợp tình, cân bằng, hiểu thấu đáo mọi vấn đề trước khi đưa ra giải pháp, suy tính hậu quả trước khi ra quyết định.",
+            slug: "",
+            content: "",
+            image: "",
+            video: "",
+            thumbnail: ""
+        },
+
+    ]
 }
 export const ESMissionData = {
     section: {
@@ -103,7 +141,7 @@ export const ESPeopleData = {
             title: "Ông Nguyễn Vũ Hoàng An",
             description: "TGĐ NGS",
             slug: "",
-            content: "NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình.",
+            content: '"NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình." // Thông điệp từ TGĐ NGS Holding',
             image: "",
             video: "",
             thumbnail: ""
@@ -113,7 +151,7 @@ export const ESPeopleData = {
             language: 'vi',
             code: "PG003.10SE00002CN000002",
             title: "Ông Phạm Thế Trường",
-            description: "Chủ tịch NGS & Phó TGĐ NGS",
+            description: "Chủ tịch NGS Holding & Phó TGĐ NGS Consulting",
             slug: "",
             content: "Sau 20 năm làm việc cho các tổ chức công nghệ đa quốc gia hàng đầu với các chức vụ cấp cao tại Oracle, SAP, Microsoft, ông Trường gia nhập NGS với khát khao xây dựng một công ty kiểu mới có năng lực công nghệ mạnh và văn hóa chuyên nghiệp - hướng khách hàng.",
             image: "",
@@ -125,7 +163,7 @@ export const ESPeopleData = {
             language: 'vi',
             code: "PG003.10SE00002CN000003",
             title: "Bà Nguyễn Thị Thúy Hằng",
-            description: "Phó TGĐ NGS & Phó TGĐ NGS",
+            description: "Phó TGĐ NGS Holding & Phó TGĐ NGS Consulting",
             slug: "",
             content: "Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Thúy Hằng gia nhập NGS và xây dựng lên NGS Consulting với mục tiêu trở thành công ty tư vấn chuyển đổi số hàng đầu tại Việt Nam.",
             image: "",

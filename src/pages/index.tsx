@@ -122,9 +122,9 @@ export function HomePage({
       <ScrollRevealWrapper sectionCode={Home_11.section.code}>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_12.section.code}>
+      {/* <ScrollRevealWrapper sectionCode={Home_12.section.code}>
         <HomeTestimonialSection title='KHÁCH HÀNG' data={Home_12} />
-      </ScrollRevealWrapper>
+      </ScrollRevealWrapper> */}
       {/* <ScrollRevealWrapper>
         <HomeCaseStudySection data={Home_13}/>
       </ScrollRevealWrapper> */}

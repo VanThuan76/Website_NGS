@@ -18,7 +18,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
   });
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`p-4 md:p-24 overflow-hidden ${className} bg-[#051C2C]`}>
+    <section id={data.section.code} className={`w-screen p-4 md:p-24 overflow-hidden ${className} bg-[#051C2C]`}>
       <TitleSection
         title={title}
         name={data.section.name as string}
@@ -40,7 +40,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
             >
               <div className='p-6'>{item.title}</div>
             </div>
-            <div className='w-full cols-span-2'>
+            <div className='w-full col-span-2'>
               <div className='absolute top-0'>
                 <div className='relative w-full h-full flex-shrink-0 snap-start'>
                   <div className='absolute h-full flex flex-col justify-center items-start gap-4 top-1/2 left-1/3 transform -translate-x-[40%] -translate-y-1/2 z-30 text-white'>
@@ -54,7 +54,7 @@ const ChallengeDesignTwoSection = ({ title, data, className }: Props) => {
                       ))}
                     </div>
                   </div>
-                  <div className='relative w-[850px] h-[450px] blur-image'>
+                  <div className='col-span-1 relative w-[950px] h-[450px] blur-image'>
                     <PreImage src={selectedTab?.image || ''} alt={item.title} />
                   </div>
                 </div>

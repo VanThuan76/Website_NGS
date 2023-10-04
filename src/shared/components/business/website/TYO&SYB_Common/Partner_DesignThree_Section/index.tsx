@@ -18,7 +18,7 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
   });
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`bg-[#FC5E03] dark:bg-[#7d4aeb] text-white px-4 md:px-24 ${className}`}>
+    <section id={data.section.code} className={`w-screen bg-[#FC5E03] dark:bg-[#7d4aeb] text-white px-4 md:px-24 ${className}`}>
       <div className='max-w-[1440px] h-full mx-auto my-auto flex flex-col justify-start items-start gap-10 pb-4 md:pb-8 lg:pb-16'>
         <div className='mt-10 w-[50%] flex flex-col justify-start items-start gap-5'>
           <h1 className='text-2xl md:text-4xl font-medium'>{data.section.name}</h1>

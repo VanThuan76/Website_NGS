@@ -14,7 +14,7 @@ const OverviewDesignNineSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
+      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
     >
       <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-start items-start md:gap-12'>
         <TitleSection

@@ -46,7 +46,7 @@ const HomeBannerSection = ({ data }: Props) => {
   };
   if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data && data.section && data.section.code} className='pb-10 block'>
+    <section id={data && data.section && data.section.code} className='w-screen pb-10 block'>
       <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
         <Swiper
           spaceBetween={30}
@@ -66,7 +66,7 @@ const HomeBannerSection = ({ data }: Props) => {
             <SwiperSlide key={idx}>
               <div className='relative w-full flex justify-between items-center mx-auto'>
                 <HOBannerContent selectedTab={item} />
-                <div className={`mx-auto w-[100vw] ${currentBreakPoint === "sm" ? "h-[454px]" : "h-[864px]"} relative overflow-hidden`}>
+                <div className={`mx-auto w-screen ${currentBreakPoint === "sm" ? "h-[454px]" : "h-[864px]"} relative overflow-hidden`}>
                   <PreImage
                     src={item.image as string}
                     layer={false}

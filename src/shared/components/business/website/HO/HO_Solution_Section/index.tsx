@@ -6,15 +6,17 @@ import TitleSection from '@/components/common/customization/TitleSection';
 import BackgroundDark from '@/components/icon/HO/solution/BackgroundDark';
 import BackgroundLight from '@/components/icon/HO/solution/BackgroundLight';
 import HOSolutionCard from './HOSolutionCard';
+import useBreakPoint from '@/hooks/useBreakPoint';
 
 type Props = {
-  title: string
+  title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
 
 const HomeSolutionSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
+  const currentBreakPoint = useBreakPoint();
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true });
   const sectionControls = useAnimation();
@@ -29,7 +31,11 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
   };
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section ref={ref} id={data.section.code} className={`pb-4 md:pb-8 lg:pb-10 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section
+      ref={ref}
+      id={data.section.code}
+      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-10 xl:pb-24 px-4 md:px-24 ${className}`}
+    >
       <TitleSection
         title={title}
         name={data.section.name as string}
@@ -37,28 +43,28 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
       />
-      <div className='max-w-[1440px] mt-10 md:mt-20 mx-auto grid grid-cols-2 md:grid-cols-4 bg-transparent overflow-hidden gap-2'>
+      <div className='w-full mt-10 md:mt-20 mx-auto grid grid-cols-1 md:grid-cols-4 justify-center items-center bg-transparent overflow-hidden gap-2'>
         {data &&
           data.components.map((item, idx) => (
-            <motion.div 
-              className="max-w-[310px] min-h-[300px] lg:min-h-[345px] border-card-solution-home pr-2" 
+            <motion.div
+              className={`w-full mx-auto ${currentBreakPoint !== 'sm' && 'border-card-solution-home'} md:pr-2`}
               key={idx}
               variants={{
-                hidden: {opacity:0, translateX: -50},
-                visible: {opacity: 1, translateX: 0}
+                hidden: { opacity: 0, translateX: -50 },
+                visible: { opacity: 1, translateX: 0 },
               }}
               initial='hidden'
               animate={sectionControls}
-              transition={{duration: 0.7, delay: idx * 0.7}}
+              transition={{ duration: 0.7, delay: idx * 0.7 }}
             >
-              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[345px] rounded-lg overflow-hidden'>
+              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[345px] mx-auto rounded-lg overflow-hidden'>
                 <motion.div
-                 className='absolute top-0 left-0 w-full min-h-[300px] lg:min-h-[345px]'
-                 variants={animationVariants}
-                 initial='hidden'
-                 animate='visible'
-                 exit='hidden'
-                 transition={{ duration: 0.5, ease: 'easeInOut' }}
+                  className='absolute top-0 left-0 w-full min-h-[300px] lg:min-h-[345px]'
+                  variants={animationVariants}
+                  initial='hidden'
+                  animate='visible'
+                  exit='hidden'
+                  transition={{ duration: 0.5, ease: 'easeInOut' }}
                 >
                   {theme === 'dark' ? <BackgroundDark /> : <BackgroundLight />}
                 </motion.div>

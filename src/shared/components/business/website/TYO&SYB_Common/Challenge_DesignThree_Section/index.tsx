@@ -15,8 +15,8 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`overflow-hidden ${className} bg-[#051C2C]`}>
-      <div className='w-full grid grid-cols-2 justify-center items-center gap-5'>
+    <section id={data.section.code} className={`w-screen overflow-hidden ${className} bg-[#051C2C]`}>
+      <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 px-20 py-24'>
           <p className='text-sm md:text-2xl text-orange-500 font-medium'>{title}</p>
           <div className='w-full flex flex-col justify-start items-start gap-12'>
@@ -39,7 +39,7 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
             <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none' />
           </UseLinkRedirect>
         </div>
-        <div className='relative w-full h-full flex-shrink-0 snap-start'>
+        <div className='relative w-full h-full'>
           <PreImage src={data.section.image} alt={data.section.name} />
         </div>
       </div>

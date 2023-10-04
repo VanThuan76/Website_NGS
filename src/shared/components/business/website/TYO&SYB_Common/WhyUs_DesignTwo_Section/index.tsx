@@ -15,7 +15,7 @@ const WhyUsDesignTwoSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
+    <section id={data.section.code} className={`max-w-[1440px] pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
       <div className='w-full mx-auto my-auto mt-10 grid grid-cols-1 justify-end items-end gap-10'>
         <TitleSection
           title={title}

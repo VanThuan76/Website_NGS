@@ -20,9 +20,9 @@ const HomeWhyUsSection = ({title, data, className}: Props) => {
   return (
       <section
         id={data && data.section && data.section.code}
-        className={`relative md: lg: xl: px-4 md:px-24 ${className}`}
+        className={`max-w-[1440px] relative md: lg: xl: px-4 md:px-24 ${className}`}
       >
-        <div className='max-w-[1440px] w-full mx-auto my-auto'>
+        <div className='w-full mx-auto my-auto'>
           <div className='w-full grid grid-cols-1 md:grid-cols-2'>
             <div className='w-full flex flex-col justify-between items-center gap-3'>
               <TitleSection

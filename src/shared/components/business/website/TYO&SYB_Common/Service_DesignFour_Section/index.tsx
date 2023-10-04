@@ -16,8 +16,8 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`overflow-hidden bg-[#F9F4EE] ${className}`}>
-      <div className='w-full h-full grid grid-cols-2 justify-start items-start gap-5'>
+    <section id={data.section.code} className={`w-screen overflow-hidden bg-[#F9F4EE] ${className}`}>
+      <div className='max-w-[1440px]  h-full grid grid-cols-2 justify-start items-start gap-5'>
         <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 py-12 px-4 md:px-24'>
           <TitleSection
             title={title}

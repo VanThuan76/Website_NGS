@@ -26,7 +26,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
   }, [isInView]);
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section ref={ref} id={data.section.code} className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section ref={ref} id={data.section.code} className={`max-w-[1440px] relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
       <TitleSection
         title={title}
         name={data.section!.name as string}
@@ -34,7 +34,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
         findMore={true}
         className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
       />
-      <div className='max-w-[1440px] w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
+      <div className='w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
         <div className='grid grid-cols-4 justify-end items-end gap-2'>
           <div></div>
           <div></div>

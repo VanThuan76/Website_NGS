@@ -11,9 +11,9 @@ const HOOrganizationalSystemSection = ({ data, className }: Props) => {
   return (
     <section
       id={data && data.section && data.section.code}
-      className={`relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`w-screen relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
     >
-      <div className='w-full h-full flex flex-col justify-center items-center mt-20'>
+      <div className='max-w-[1440px] h-full flex flex-col justify-center items-center mt-20'>
         <div className='w-full flex flex-col items-center justify-center'>
           <h2 className='text-sm md:text-2xl !text-[#FC5E03]'>{data.section.name}</h2>
           <div className='hidden md:grid mt-6 w-full grid-cols-5 justify-between items-center gap-24'>

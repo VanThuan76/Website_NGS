@@ -10,7 +10,7 @@ type Props = {
 const YNGHomeSolutionSection = ({ data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`w-full ${className}`}>
+    <section id={data.section.code} className={`max-w-[1440px] ${className}`}>
       <div className='w-full mx-auto my-auto mt-14 flex flex-col justify-between'>
         <div className='flex flex-col justify-start items-start gap-4 px-24'>
           <p className='text-sm md:text-2xl text-[#FC5E03] font-medium'>Giá trị cốt lõi</p>
