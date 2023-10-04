@@ -23,13 +23,13 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='col-span-7 w-full grid-cols-7 text-center'
+          className='col-span-7 w-full grid-cols-7 !gap-3 text-center'
         />
-        <div className='relative -mt-6 grid h-full w-full grid-cols-3 items-center justify-between gap-5'>
+        <div className='-mt-6 grid h-full w-full grid-cols-1 items-center justify-between gap-10 md:grid-cols-3 md:gap-5'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className='border-overview-designSeven-section flex h-full w-full flex-col items-start justify-start gap-2 rounded-lg px-4 py-6'
+              className='border-overview-designSeven-section relative flex h-full w-full flex-col items-start justify-start gap-2 rounded-lg px-4 py-6'
             >
               <div className='absolute -top-10 h-[60px] w-[60px] overflow-hidden rounded-lg'>
                 <PreImage src={item.image} alt={item.title} />

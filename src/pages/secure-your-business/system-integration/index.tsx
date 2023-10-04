@@ -20,6 +20,7 @@ import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Comm
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import dynamic from 'next/dynamic';
+import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -52,7 +53,7 @@ const TIPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignThreeSection data={SYB_SI_Section6} />
+        <PartnerSection title='Đối tác đồng hành cùng NGS' data={SYB_SI_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />

@@ -1,5 +1,4 @@
-import { motion, useAnimation, useInView } from 'framer-motion';
-import { Link as ScrollLink } from 'react-scroll';
+import { useAnimation, useInView } from 'framer-motion';
 import React, { useRef, useEffect, FC, CSSProperties } from 'react';
 interface Props {
   style?: CSSProperties;
@@ -24,21 +23,9 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, sectionCode }) => {
       ref={ref}
       className='relative mx-auto flex w-full flex-col items-center justify-center overflow-hidden'
       style={style}
-      data-testid='section-parent'
+      id={`sectionParent:${sectionCode}`}
     >
       {children}
-
-      {/* <ScrollLink to={sectionCode || ''} spy={true} smooth={true} duration={500}>
-        <motion.div
-          variants={{
-            hidden: { opacity: 0, y: 75 },
-            visible: { opacity: 1, y: 0 },
-          }}
-          initial='hidden'
-          animate={mainControls}
-          transition={{ duration: 0.5, delay: 0.25 }}
-        ></motion.div>
-      </ScrollLink> */}
     </section>
   );
 };

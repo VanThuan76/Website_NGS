@@ -31,7 +31,7 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={false}
-          className='col-span-7 w-full grid-cols-7 text-center'
+          className='col-span-7 w-full grid-cols-7 !gap-0 text-center'
         />
         <div className='block w-full lg:hidden'>
           {/* @ts-ignore */}

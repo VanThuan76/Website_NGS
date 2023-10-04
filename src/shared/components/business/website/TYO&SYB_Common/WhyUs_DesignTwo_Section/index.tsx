@@ -22,11 +22,11 @@ const WhyUsDesignTwoSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full !text-left'
+          className='col-span-7 w-full grid-cols-7 !gap-3 !text-left md:col-span-5 md:grid-cols-12'
         />
         <div className='grid w-full grid-cols-12 items-end justify-end'>
-          <div className='col-span-7'></div>
-          <div className='col-span-5 flex flex-col items-start justify-start gap-5'>
+          <div className='col-span-7 hidden md:block'></div>
+          <div className='col-span-12 flex flex-col items-start justify-start gap-5 md:col-span-5'>
             {data.components.map((item, idx) => (
               <div
                 key={idx}

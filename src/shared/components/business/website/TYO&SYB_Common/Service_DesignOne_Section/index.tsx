@@ -19,17 +19,17 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
   return (
     <section id={data.section.code} className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}>
       <div
-        className={`mx-auto my-auto mt-10 grid w-full ${
-          !checkSolution || !checkServiceAndSupport ? 'grid-cols-3' : 'grid-cols-4'
+        className={`mx-auto my-auto mt-10 grid w-full grid-cols-1 ${
+          !checkSolution || !checkServiceAndSupport ? 'md:grid-cols-3' : 'md:grid-cols-4'
         } items-start justify-start gap-10`}
       >
-        <div className='col-span-2 flex h-full w-full flex-col items-start justify-start'>
+        <div className='col-span-1 flex h-full w-full flex-col items-start justify-start md:col-span-2'>
           <TitleSection
             title={title}
             name={data.section.name as string}
             description={data.section.description as string}
             findMore={true}
-            className='col-span-7 w-full grid-cols-7 !text-left'
+            className='col-span-7 w-full grid-cols-7 !gap-3 !text-left'
           />
           <div className='flex flex-col items-start justify-start gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>

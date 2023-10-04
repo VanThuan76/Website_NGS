@@ -22,7 +22,7 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
           <h1 className='flex w-full flex-col text-2xl font-medium text-white md:text-4xl'>{data.section.name}</h1>
         </div>
         <div className='z-10 w-full -translate-y-4 transform border-t border-orange-500'></div>
-        <div className='mt-10 grid w-full grid-cols-6 gap-5'>
+        <div className='mt-10 grid w-full grid-cols-2 gap-5 md:grid-cols-6'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
@@ -30,7 +30,7 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
                 data.components && data.components?.length - 1 !== idx && 'border-clientStories-designTwo-section'
               }`}
             >
-              <div className='relative h-[200px] cursor-pointer overflow-hidden rounded-lg'>
+              <div className='relative h-[87px] w-full cursor-pointer overflow-hidden rounded-lg'>
                 <PreImage
                   src={item.image as string}
                   layer={false}

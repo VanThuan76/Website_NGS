@@ -24,7 +24,7 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
       }}
       animate={sectionControls}
       initial='hidden'
-      transition={{ duration: 0.7, delay: idx * 0.7 }}
+      transition={{ duration: 0.5, delay: idx * 0.5 }}
       style={{ borderBottom: '1px solid #5A5A5A' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

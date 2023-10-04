@@ -15,7 +15,8 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ErrorBoundary from '@/components/layout/layoutAdmin/ErrorBoudary';
 import { useAppSelector } from '@/hooks/useRedux';
 import useRouterChange from '@/hooks/useRouterChange';
-import { JellyTriangle } from '@uiball/loaders';
+import { PreImage } from '@/components/common/customization/PreImage';
+import { motion } from 'framer-motion';
 
 const interText = Bai_Jamjuree({
   subsets: ['vietnamese'],
@@ -47,15 +48,39 @@ const ConfigLayout = ({
   useRouterChange();
   return (
     <main className={interText.className}>
-      {/* TODO change theme */}
-      {isRouteLoading && (
-        <div className='absolute z-[9999] flex min-h-screen w-screen flex-col items-center justify-center gap-2 bg-foreground/20 bg-opacity-70'>
-          <JellyTriangle color='#016390' />
+      {isRouteLoading ? (
+        <div
+          style={{ background: 'linear-gradient(45deg, #9565a6, #27a0bd, #f58529)' }}
+          className='absolute z-[9999] flex h-[100vh] w-screen flex-col items-center justify-center gap-2'
+        >
+          <motion.div
+            initial={{ scale: 0.7 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
+            className='flex w-full flex-col items-center justify-center'
+          >
+            <div className='relative h-[150px] w-[150px] transform overflow-hidden'>
+              <PreImage src='/LogoRoute.png' alt='LogoRoute' objectPosition='center' objectFit='contain' />
+            </div>
+            <span
+              style={{
+                width: '120px',
+                fontSize: '3rem',
+                fontWeight: 'bold',
+                color: '#fff',
+                fontStyle: 'italic',
+                textShadow: '1px 1px 2px #58585A',
+              }}
+            >
+              NGS
+            </span>
+          </motion.div>
         </div>
+      ) : (
+        <NextThemesProvider attribute='class' defaultTheme='light' enableSystem>
+          {getLayout(children)}
+        </NextThemesProvider>
       )}
-      <NextThemesProvider attribute='class' defaultTheme='light' enableSystem>
-        {getLayout(children)}
-      </NextThemesProvider>
     </main>
   );
 };

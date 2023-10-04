@@ -46,8 +46,8 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
                 ))}
               </div>
             </div>
-            <UseLinkRedirect sectionCode={sectionCodeLink || 'PG003.1SE00008'}>
-              <BtnCommon title='Đăng ký ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+            <UseLinkRedirect sectionCode={sectionCodeLink || 'FormCTA'}>
+              <BtnCommon title='Tìm hiểu thêm' cls='bg-white text-orange-500 p-4 rounded-sm' />
             </UseLinkRedirect>
           </div>
           <div

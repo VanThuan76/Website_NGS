@@ -198,7 +198,7 @@ export const SYBWhyUs1_PG4_1 = {
 export const SYBPartner2_PG4_1 = {
   section: {
     id: 6,
-    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS"',
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'PG0004_1SE00006',
     image: '',
     description: '',
@@ -212,7 +212,7 @@ export const SYBPartner2_PG4_1 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/SEC_fujitsu.png',
+      image: '/images/fujitsu.png',
       video: '',
       thumbnail: '',
     },
@@ -236,7 +236,7 @@ export const SYBPartner2_PG4_1 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/SEC_microsoft.png',
+      image: '/images/Microsoft.png',
       video: '',
       thumbnail: '',
     },
@@ -366,7 +366,7 @@ export const SYBClientStories2_Secure = {
 export const SYBForm1_PG4_1 = {
   section: {
     id: 8,
-    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+    name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên"',
     code: 'PG0004_1SE00008',
     image: '',
     description: '',
@@ -2263,7 +2263,7 @@ export const SYB_RT_Section5 = {
       language: 'vi',
       code: 'PG004.8SE00005CN000003',
       title: 'Phương pháp tiếp cận toàn diện',
-      description: '',
+      description: 'Đánh giá con người, quy trình và công nghệ để đảm bảo phòng thủ toàn diện.',
       slug: '',
       content: 'Đánh giá con người, quy trình và công nghệ để đảm bảo phòng thủ toàn diện.',
       image: '/images/logo_TYO_CB.png',

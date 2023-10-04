@@ -25,7 +25,7 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
       }}
       initial='hidden'
       animate={sectionControls}
-      transition={{ duration: 0.7, delay: idx * 0.5 }}
+      transition={{ duration: 0.5, delay: idx * 0.5 }}
       onMouseEnter={() => setIsHovered(idx)}
       onMouseLeave={() => setIsHovered(undefined)}
       onClick={() => router.push(`/secure-your-business/${slug}`)}

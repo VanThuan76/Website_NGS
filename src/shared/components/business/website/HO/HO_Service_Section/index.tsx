@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { AnimatePresence, useAnimation, useInView } from 'framer-motion';
+import { useAnimation, useInView } from 'framer-motion';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import TitleSection from '@/components/common/customization/TitleSection';
@@ -34,14 +34,12 @@ const HomeServiceSection = ({ title, data, className }: Props) => {
         className='col-span-7 w-full grid-cols-7 !gap-8 !text-left md:col-span-5 md:grid-cols-12'
       />
       <div className='mx-auto my-auto mt-5 flex h-full w-full items-start justify-between overflow-hidden md:mt-10 lg:gap-10 xl:gap-10'>
-        <AnimatePresence>
-          <div className='flex w-full flex-col items-center justify-center lg:w-1/2'>
-            {data &&
-              data.components.map((item, idx) => {
-                return <HOServiceSection sectionControls={sectionControls} key={idx} item={item} idx={idx} />;
-              })}
-          </div>
-        </AnimatePresence>
+        <div className='flex w-full flex-col items-center justify-center lg:w-1/2'>
+          {data &&
+            data.components.map((item, idx) => {
+              return <HOServiceSection sectionControls={sectionControls} key={idx} item={item} idx={idx} />;
+            })}
+        </div>
         <div className='relative hidden h-[676px] w-[676px] overflow-hidden rounded-lg md:block'>
           <PreImage src={data.section.image} layer={false} alt={data.section.name} />
         </div>

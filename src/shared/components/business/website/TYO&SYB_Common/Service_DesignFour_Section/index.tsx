@@ -17,7 +17,7 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
 
   return (
     <section id={data.section.code} className={`w-screen overflow-hidden bg-[#F9F4EE] ${className}`}>
-      <div className='grid  h-full max-w-[1440px] grid-cols-2 items-start justify-start gap-5'>
+      <div className='grid  h-full max-w-[1440px] grid-cols-1 items-start justify-start gap-5 md:grid-cols-2'>
         <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 px-4 py-12 md:px-24'>
           <TitleSection
             title={title}

@@ -17,7 +17,7 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
   return (
     <section id={data.section.code} className={`w-screen overflow-hidden ${className} bg-[#051C2C]`}>
       <div className='grid w-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2'>
-        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 px-20 py-24'>
+        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 px-4 py-6 md:px-20 md:py-24'>
           <p className='text-sm font-medium text-orange-500 md:text-2xl'>{title}</p>
           <div className='flex w-full flex-col items-start justify-start gap-12'>
             <div className='flex flex-col gap-2'>

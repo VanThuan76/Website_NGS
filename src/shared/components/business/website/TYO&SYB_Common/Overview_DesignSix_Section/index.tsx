@@ -24,12 +24,12 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='col-span-7 w-full grid-cols-7 text-center'
+          className='col-span-7 w-full grid-cols-7 !gap-5 text-center'
         />
         <div className='relative -mt-12 h-[360px] w-full flex-shrink-0 snap-start overflow-hidden object-cover'>
           <PreImage src={data.section.image} alt={data.section.name} />
         </div>
-        <div className='mt-5 grid w-full grid-cols-3 gap-5'>
+        <div className='mt-5 grid w-full grid-cols-1 gap-5 md:grid-cols-3'>
           {data.components.map((item, idx) => {
             return (
               <div key={idx} className='flex flex-col items-center justify-center gap-4 pb-4'>

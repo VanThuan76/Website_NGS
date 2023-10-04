@@ -28,11 +28,21 @@ const PartnerDesignOneSection = ({ title, data, className }: Props) => {
           <h1 className='text-2xl font-medium lg:text-4xl'>{data.section.name}</h1>
           <p>{data.section.description}</p>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
+            <BtnCommon
+              title='Tìm hiểu thêm'
+              cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
+              colorSvg={colorIcon}
+            />
           </UseLinkRouter>
         </div>
-        <div className='relative h-[150px] w-[600px]'>
-          <PreImage src={data.section.image} layer={false} alt={data.section.name} objectFit='contain' />
+        <div className='relative h-[150px] w-full'>
+          <PreImage
+            src={data.section.image}
+            layer={false}
+            alt={data.section.name}
+            objectFit='contain'
+            objectPosition='center'
+          />
         </div>
       </div>
     </section>
