@@ -50,10 +50,16 @@ export async function renderHomeContent(language: string, token: string | undefi
       COMMON_SectionNewsData,
       HO_PartnerData,
       HO_TestimonialData,
-      HO_CaseStudy
+      HO_CaseStudy,
     ] = await Promise.all(getListComponentBySectionCode);
-    const COMMON_NewsData: IBaseResponseSectionComponent | any = await mergeCommonData('/articles/get-top-latest-news', COMMON_SectionNewsData);
-    const COMMON_EventData: IBaseResponseSectionComponent | any = await mergeCommonData('/events/get-top-latest-events', COMMON_SectionEventData);
+    const COMMON_NewsData: IBaseResponseSectionComponent | any = await mergeCommonData(
+      '/articles/get-top-latest-news',
+      COMMON_SectionNewsData,
+    );
+    const COMMON_EventData: IBaseResponseSectionComponent | any = await mergeCommonData(
+      '/events/get-top-latest-events',
+      COMMON_SectionEventData,
+    );
     return {
       props: {
         homePageData,

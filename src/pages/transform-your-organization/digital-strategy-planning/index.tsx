@@ -35,10 +35,7 @@ const DSPPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Chuyển đổi số']}
-          data={TYO_DSP_Banner}
-        />
+        <BannerDesignTwoSection breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Chuyển đổi số']} data={TYO_DSP_Banner} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignFiveSection title='Chiến lược chuyển đổi số' data={TYO_DSP_Section2} />

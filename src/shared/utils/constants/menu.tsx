@@ -24,7 +24,7 @@ export const APP_MENU: MenuItem[] = [
       {
         title: 'News',
         href: '/admin/news-manage/news',
-      }, 
+      },
       {
         title: 'Category',
         href: '/admin/news-manage/category',
@@ -49,7 +49,7 @@ export const APP_MENU: MenuItem[] = [
       {
         title: 'User',
         href: '/admin/system-manage/users',
-      }, 
+      },
       {
         title: 'Role',
         href: '/admin/system-manage/roles',

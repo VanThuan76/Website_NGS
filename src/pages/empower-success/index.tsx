@@ -29,7 +29,7 @@ import {
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
-import { Home_11, } from '@/mocks/website/HO/home';
+import { Home_11 } from '@/mocks/website/HO/home';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import ESClientSection from '@/components/business/website/ES/ES_Client_Section';
 
@@ -49,7 +49,11 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignTwoSection sectionCodeLink={"ConnectUs"} breadcrumb={['Trang chủ', 'Về chúng tôi']} data={ESBannerData} />
+        <BannerDesignTwoSection
+          sectionCodeLink={'ConnectUs'}
+          breadcrumb={['Trang chủ', 'Về chúng tôi']}
+          data={ESBannerData}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESVisionSection data={ESVisionData} />
@@ -58,7 +62,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESMissionSection data={ESMissionData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESCoreValueSection sectionCodeLink={"ConnectUs"} title='GIÁ TRỊ CỐT LÕI' data={ESCoreValueData} />
+        <ESCoreValueSection sectionCodeLink={'ConnectUs'} title='GIÁ TRỊ CỐT LÕI' data={ESCoreValueData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESPeopleSection title='CON NGƯỜI NGS' data={ESPeopleData} />

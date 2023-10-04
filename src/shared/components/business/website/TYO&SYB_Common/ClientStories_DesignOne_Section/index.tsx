@@ -38,9 +38,9 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`w-screen px-4 md:px-24 overflow-hidden ${className} bg-[#051C2C]`}>
-      <div className='relative w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 py-20'>
+    <section id={data.section.code} className={`w-screen overflow-hidden px-4 md:px-24 ${className} bg-[#051C2C]`}>
+      <div className='relative grid w-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2'>
+        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 py-20'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
@@ -49,24 +49,24 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             className='w-full font-bold text-orange-500'
           />
           <QuoteIcon />
-          <div className='relative w-full min-h-[450px]'>
+          <div className='relative min-h-[450px] w-full'>
             {data.components.map((item, idx) => (
               <div
                 key={idx}
-                className='absolute top-0 w-full flex flex-col justify-start items-start gap-10 text-white'
+                className='absolute top-0 flex w-full flex-col items-start justify-start gap-10 text-white'
               >
-                <div className='max-h-[200px] pr-4 clientStories-designOne-section-with-scrollbar flex flex-col gap-2'>
+                <div className='clientStories-designOne-section-with-scrollbar flex max-h-[200px] flex-col gap-2 pr-4'>
                   {item.content.split('//').map((word, idx) => (
                     <p className='text-lg md:text-2xl' key={idx}>
                       {word}
                     </p>
                   ))}
                 </div>
-                <div className='flex justify-center items-center gap-5'>
-                  <div className='relative w-[70px] h-[70px] rounded-lg overflow-hidden'>
+                <div className='flex items-center justify-center gap-5'>
+                  <div className='relative h-[70px] w-[70px] overflow-hidden rounded-lg'>
                     <PreImage src={item.image} alt={item.title} />
                   </div>
-                  <div className='flex flex-col justify-start items-start'>
+                  <div className='flex flex-col items-start justify-start'>
                     <p>{item.title}</p>
                     <p className='font-thin'>{item.description}</p>
                   </div>
@@ -95,7 +95,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             ))}
           </ul> */}
         </div>
-        <div className='relative w-full h-[550px] rounded-lg overflow-hidden'>
+        <div className='relative h-[550px] w-full overflow-hidden rounded-lg'>
           <PreImage src={data.section.image} alt={data.section.name} />
         </div>
       </div>

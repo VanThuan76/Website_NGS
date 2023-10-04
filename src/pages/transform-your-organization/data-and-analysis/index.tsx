@@ -8,7 +8,17 @@ import OverviewDesignSevenSection from '@/components/business/website/TYO&SYB_Co
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
-import { TYOBanner1_PG3_17, TYOClientStories2_PG3_10, TYOForm1_PG3_17, TYOOverview4_PG3_17, TYOOverview7_PG3_17, TYOPartner3_PG3_17, TYOService1_PG3_17, TYOWhyUs1_PG3_17, TYOchallenge2_PG3_17 } from '@/mocks/website/TYO/tyo';
+import {
+  TYOBanner1_PG3_17,
+  TYOClientStories2_PG3_10,
+  TYOForm1_PG3_17,
+  TYOOverview4_PG3_17,
+  TYOOverview7_PG3_17,
+  TYOPartner3_PG3_17,
+  TYOService1_PG3_17,
+  TYOWhyUs1_PG3_17,
+  TYOchallenge2_PG3_17,
+} from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 import dynamic from 'next/dynamic';
@@ -26,31 +36,30 @@ const DAAPage = () => {
         <meta name='description' content='YNG_ERP NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <BannerDesignOneSection title='Dữ liệu và phân tích' data={TYOBanner1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
-      <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
+      <ScrollRevealWrapper>
+        <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <ServiceDesignOneSection title='' data={TYOService1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <PartnerDesignThreeSection data={TYOPartner3_PG3_17} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_17} />
       </ScrollRevealWrapper>
-
     </React.Fragment>
   );
 };

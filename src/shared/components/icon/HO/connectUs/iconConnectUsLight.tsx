@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function IconConnectUsLight({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='184' height='184' viewBox='0 0 184 184' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='184' height='184' viewBox='0 0 184 184' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <path
         d='M122.319 58.9849C155.916 58.4717 183.338 84.9148 183.988 118.509C184.084 123.442 183.591 128.243 182.575 132.848C180.855 140.645 179.833 148.58 179.833 156.565V171.999C179.833 174.364 177.916 176.281 175.551 176.281H160.117C152.132 176.281 144.197 177.303 136.4 179.023C131.795 180.039 126.994 180.532 122.062 180.436C88.4678 179.786 62.0246 152.365 62.5371 118.769C63.037 85.9757 89.5265 59.4859 122.319 58.9849Z'
         fill='url(#paint0_linear_3212_746)'

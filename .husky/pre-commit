@@ -1,0 +1,42 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo '🏗️👷 Styling, testing and building your project before committing'
+
+# Check Prettier standards
+npm run check-format ||
+(
+    echo '🤢🤮🤢🤮 Format code thế cũng chấp nhận được ? 🤢🤮🤢🤮
+            Prettier Check Failed. Run npm run format, add changes and try commit again.';
+    false;
+)
+
+# Check ESLint Standards
+npm run check-lint ||
+(
+        echo '😤🏀👋😤 Kiểm tra lại lint? 😤🏀👋😤 
+                ESLint Check Failed. Make the required changes listed above, add changes and try to commit again.'
+        false; 
+)
+
+# Check tsconfig standards
+npm run check-types ||
+(
+    echo '🤡😂❌🤡 Lỗi type rồi :) 🤡😂❌🤡
+            Are you seriously trying to write that? Make the changes required above.'
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '🤔🤔🤔🤔... Oke.... Code trông tạm ổn đấy... Đang thử build lại. 🤔🤔🤔🤔'
+
+npm run build ||
+(
+    echo '❌👷🔨❌ Xem lại, build không được. Sửa lại chỗ cần build ❌👷🔨❌
+            Next build failed: View the errors above to see why. 
+    '
+    false;
+)
+
+# If everything passes... Now we can commit
+echo '✅✅✅✅ Oke tiếp tục các bước khác để commit code ✅✅✅✅'

@@ -31,14 +31,14 @@ export default function Page404() {
   }, []);
 
   return (
-    <section className='pt-48 lg:pt-50 xl:pt-55 pb-25 lg:pb-32.5 xl:pb-37.5 overflow-hidden'>
+    <section className='lg:pt-50 xl:pt-55 pb-25 lg:pb-32.5 xl:pb-37.5 overflow-hidden pt-48'>
       <div className='animate_top mx-auto max-w-[518px] text-center'>
-        <Image src={Img404} alt='404' className='mx-auto mb-7.5' width={396} height={156} />
+        <Image src={Img404} alt='404' className='mb-7.5 mx-auto' width={396} height={156} />
 
-        <h2 className='font-semibold text-2xl md:text-4xl text-black dark:text-white mb-5'>This Page Does Not Exist</h2>
+        <h2 className='mb-5 text-2xl font-semibold text-black dark:text-white md:text-4xl'>This Page Does Not Exist</h2>
         <p className='mb-7.5'>The page you were looking for appears to have been moved, deleted or does not exist.</p>
-        <button className=' bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3 mt-4'>
-          <Link href={'/'} className='inline-flex gap-2.5 items-center'>
+        <button className=' dark:bg-btndark hover:bg-blackho mt-4 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out'>
+          <Link href={'/'} className='inline-flex items-center gap-2.5'>
             Return to Home
             <svg
               className='fill-white'

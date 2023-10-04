@@ -14,20 +14,20 @@ const OverviewDesignNineSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
+      className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
-      <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-start items-start md:gap-12'>
+      <div className='grid w-full grid-cols-1 items-start justify-start md:grid-cols-2 md:gap-12'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-2 !text-left'
+          className='col-span-7 w-full grid-cols-7 !gap-2 !text-left md:col-span-5 md:grid-cols-12'
         />
-        <div className='md:pt-16 flex flex-col justify-start items-start gap-5'>
+        <div className='flex flex-col items-start justify-start gap-5 md:pt-16'>
           {data.components.map((item, idx) => (
-            <div key={idx} className='w-full flex flex-col justify-start items-start gap-3'>
-              <h1 className='text-xl md:text-2xl font-semibold'>{item.title}</h1>
+            <div key={idx} className='flex w-full flex-col items-start justify-start gap-3'>
+              <h1 className='text-xl font-semibold md:text-2xl'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>
             </div>
           ))}

@@ -7,7 +7,7 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 import YNGHomeBannerContent from './YNGHomeBannerContent';
 
 interface Props {
-  title: string
+  title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 }
@@ -60,12 +60,12 @@ const YNGHomeBannerSection = ({ title, data, className }: Props) => {
   }, []);
 
   return (
-    <section id={data && data.section && data.section.code} className={`w-screen block pb-10 ${className}`}>
-      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[600px] grid grid-cols-1 lg:grid-cols-2 overflow-hidden dark:text-white'>
-        <div className='w-full h-full col-span-1 bg-[#FEF6EB]'>
+    <section id={data && data.section && data.section.code} className={`block w-screen pb-10 ${className}`}>
+      <div className='snap-x-mandatory scrollbar-none relative grid h-full grid-cols-1 overflow-hidden dark:text-white lg:max-h-[600px] lg:grid-cols-2'>
+        <div className='col-span-1 h-full w-full bg-[#FEF6EB]'>
           <YNGHomeBannerContent title={title} selectedTab={selectedTab!} />
         </div>
-        <div className='w-full col-span-1'>
+        <div className='col-span-1 w-full'>
           <AnimatePresence mode='wait'>
             <motion.div
               key={selectedTab ? selectedTab.title : 'empty'}
@@ -74,28 +74,22 @@ const YNGHomeBannerSection = ({ title, data, className }: Props) => {
               transition={{ duration: 0.5, damping: 10, stiffness: 50 }}
               className='w-full flex-shrink-0 snap-start'
             >
-              <div className='relative h-[700px] rounded-lg overflow-hidden'>
-              <PreImage
-                src='/images/BannerYNG.png'
-                height={700}
-                width={1980}
-                layer={true}
-                alt='BannerYNG'
-              />
+              <div className='relative h-[700px] overflow-hidden rounded-lg'>
+                <PreImage src='/images/BannerYNG.png' layer={true} alt='BannerYNG' objectPosition='center' />
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
-        <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10 z-40'>
+        <InitBasicAnimation className='absolute bottom-0 z-40 lg:bottom-12 lg:left-10'>
           <div className='flex items-center justify-between gap-5'>
-            <ul className='md:flex items-center justify-between gap-5'>
+            <ul className='items-center justify-between gap-5 md:flex'>
               {data.components!.map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className={`px-5 pb-3 border-b-4 ${
+                  className={`border-b-4 px-5 pb-3 ${
                     item === selectedTab ? 'text-orange-500' : 'text-orange-500'
                   } cursor-pointer font-medium`}
                   onClick={() => setSelectedTab(item)}

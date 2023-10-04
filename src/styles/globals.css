@@ -77,12 +77,11 @@
     @apply bg-background text-foreground;
     overflow-x: hidden;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
 }
-
 
 ::-webkit-scrollbar {
   width: 6px;

@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BorderStyleForm({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='447' height='535' viewBox='0 0 447 535' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='447' height='535' viewBox='0 0 447 535' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <path
         opacity='0.7'
         fill-rule='evenodd'

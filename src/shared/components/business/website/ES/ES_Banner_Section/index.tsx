@@ -14,14 +14,14 @@ const EmpowerSuccessBannerSection = ({ data }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className='block'>
-      <div className='flex md:block snap-x-mandatory scrollbar-none relative max-h-[600px] overflow-hidden light:text-white'>
-        <div className='relative w-full flex justify-between items-center mx-auto'>
-          <div className='absolute top-1/3 left-1/3 transform -translate-x-1/2 -translate-y-1/2 w-[50%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
-            <div className='flex flex-col justify-start items-start gap-3'>
-              <h1 className='text-2xl md:text-4xl font-semibold'>{data.section.name}</h1>
+      <div className='snap-x-mandatory scrollbar-none light:text-white relative flex max-h-[600px] overflow-hidden md:block'>
+        <div className='relative mx-auto flex w-full items-center justify-between'>
+          <div className='absolute left-1/3 top-1/3 z-30 flex w-[50%] -translate-x-1/2 -translate-y-1/2 transform flex-col items-start justify-start gap-3 text-white'>
+            <div className='flex flex-col items-start justify-start gap-3'>
+              <h1 className='text-2xl font-semibold md:text-4xl'>{data.section.name}</h1>
               <div
                 style={{ lineHeight: '120%' }}
-                className='w-full text-2xl lg:text-5xl uppercase text-white font-medium'
+                className='w-full text-2xl font-medium uppercase text-white lg:text-5xl'
               >
                 {data.section.description}
               </div>
@@ -31,7 +31,7 @@ const EmpowerSuccessBannerSection = ({ data }: Props) => {
             <motion.div
               animate={{ y: 10 }}
               transition={{ duration: 2, repeat: Infinity, delay: 1, repeatDelay: 1 }}
-              className='absolute right-10 bottom-10 z-30'
+              className='absolute bottom-10 right-10 z-30'
             >
               <MouseScroll className='hidden lg:block' />
             </motion.div>

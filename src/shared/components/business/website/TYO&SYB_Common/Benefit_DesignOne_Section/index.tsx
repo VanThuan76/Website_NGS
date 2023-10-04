@@ -14,27 +14,27 @@ const BenefitDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`w-screen pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden bg-[#051C2C] text-white ${className}  `}
+      className={`w-screen overflow-hidden bg-[#051C2C] px-4 pb-4 text-white md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
-        <div className='flex flex-col justify-start items-start md:justify-center md:items-center gap-2'>
-          <p className='text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='w-[70%] text-2xl md:text-4xl font-medium text-center'>{data.section.name}</h1>
-          <p className='text-sm md:text-base font-medium not-italic'>{data.section.description}</p>
+      <div className='mx-auto my-auto mt-10 flex w-full flex-col items-center justify-between'>
+        <div className='flex flex-col items-start justify-start gap-2 md:items-center md:justify-center'>
+          <p className='text-sm text-orange-500 md:text-2xl'>{title}</p>
+          <h1 className='w-[70%] text-center text-2xl font-medium md:text-4xl'>{data.section.name}</h1>
+          <p className='text-sm font-medium not-italic md:text-base'>{data.section.description}</p>
         </div>
-        <div className='w-full grid grid-cols-4 gap-24 mt-14'>
+        <div className='mt-14 grid w-full grid-cols-4 gap-24'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className={`max-w-[250px] flex flex-col justify-between items-center gap-4 ${
+              className={`flex max-w-[250px] flex-col items-center justify-between gap-4 ${
                 data.components && data.components?.length - 1 !== idx && 'border-card-benefit-designOne-section pr-8'
               }`}
             >
-              <div className='relative w-[70px] h-[70px] rounded-lg overflow-hidden'>
+              <div className='relative h-[70px] w-[70px] overflow-hidden rounded-lg'>
                 <PreImage src={item.image} alt={item.title} />
               </div>
-              <h1 className='text-lg md:text-2xl font-semibold text-center'>{item.title}</h1>
-              <p className='text-xs md:text-base text-center'>{item.description}</p>
+              <h1 className='text-center text-lg font-semibold md:text-2xl'>{item.title}</h1>
+              <p className='text-center text-xs md:text-base'>{item.description}</p>
             </div>
           ))}
         </div>

@@ -6,7 +6,16 @@ import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import { TYOBanner1_PG3_12, TYOClientStories2_PG3_12, TYOForm1_PG3_12, TYOOverview4_PG3_12, TYOPartner1_PG3_10, TYOService1_PG3_12, TYOWhyUs1_PG3_12, TYOchallenge2_PG3_12 } from '@/mocks/website/TYO/tyo';
+import {
+  TYOBanner1_PG3_12,
+  TYOClientStories2_PG3_12,
+  TYOForm1_PG3_12,
+  TYOOverview4_PG3_12,
+  TYOPartner1_PG3_10,
+  TYOService1_PG3_12,
+  TYOWhyUs1_PG3_12,
+  TYOchallenge2_PG3_12,
+} from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignNineSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignNine_Section';
@@ -51,16 +60,7 @@ const FMPage = () => {
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_12} />
       </ScrollRevealWrapper>
-
-
-
-
-
-
-
-
     </React.Fragment>
-
   );
 };
 

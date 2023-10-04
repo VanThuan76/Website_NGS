@@ -1,18 +1,17 @@
-import appSlice from './appSlice'
-import pageEditorSlice from './pageEditorSlice'
-import roleSlice from './roleSlice'
-import { configureStore } from '@reduxjs/toolkit'
-import { enableMapSet } from 'immer'
+import appSlice from './appSlice';
+import pageEditorSlice from './pageEditorSlice';
+import roleSlice from './roleSlice';
+import { configureStore } from '@reduxjs/toolkit';
+import { enableMapSet } from 'immer';
 
-
-enableMapSet()
+enableMapSet();
 export const store = configureStore({
-    reducer: {
-        appSlice: appSlice,
-        pageEditorSlice: pageEditorSlice,
-        roleSlice: roleSlice
-    }
-})
+  reducer: {
+    appSlice: appSlice,
+    pageEditorSlice: pageEditorSlice,
+    roleSlice: roleSlice,
+  },
+});
 
-export type RootState = ReturnType<typeof store.getState>
-export type AppDispatch = typeof store.dispatch
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;

@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BackgroundMission({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='600' height='658' viewBox='0 0 600 658' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='600' height='658' viewBox='0 0 600 658' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g opacity='0.8' clipPath='url(#clip0_5652_8710)'>
         <path
           opacity='0.6'

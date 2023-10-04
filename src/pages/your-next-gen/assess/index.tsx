@@ -31,28 +31,28 @@ const AssessDetailPage = () => (
       <meta name='description' content='Đánh giá hiệu suất NGS' />
       <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
     </Head>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGDetailBannerSection data={YNG_Assess_Banner} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGDetailWhyChooseSection title='Tại sao chọn Đánh giá hiệu suất?' data={YNG_Assess_Section2} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGDetailProductSection data={YNG_Assess_Section3} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGDetailDirectionSetion data={YNG_Assess_Section4} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGCommonCustomerSection title='Khách hàng' data={YNG_Assess_Section5} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGCommonIntroductionSection data={YNG_Assess_Section6} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_Assess_Section7} />
     </ScrollRevealWrapper>
-    <ScrollRevealWrapper  >
+    <ScrollRevealWrapper>
       <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_Assess_Section8} />
     </ScrollRevealWrapper>
   </React.Fragment>

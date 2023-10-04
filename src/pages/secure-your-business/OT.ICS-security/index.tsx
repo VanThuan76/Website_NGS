@@ -25,7 +25,6 @@ const ScrollRevealWrapper = dynamic(() => import('@/components/common/customizat
   ssr: false,
 });
 
-
 const ERPPage = () => {
   return (
     <React.Fragment>

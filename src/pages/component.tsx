@@ -103,7 +103,7 @@ const Component = () => {
       />
       <BenefitDesignOneSection title='Tổng quan' data={TYOBenefit1} />
       <BenefitDesignTwoSection title='Thách thức' data={TYOBenefit2} />
-      <CaseStudyDesignOneSection title='CaseStudy' data={TYOCaseStudy1}/>
+      <CaseStudyDesignOneSection title='CaseStudy' data={TYOCaseStudy1} />
     </>
   );
 };

@@ -18,7 +18,7 @@ export function CreateCategory({}: Props) {
   }
   return (
     <section className='w-full'>
-      <div className='flex justify-between mb-6'>
+      <div className='mb-6 flex justify-between'>
         <div className='text-2xl font-bold'>Create Category</div>
         <Button onClick={() => router.push('/admin/Category')}>
           <ListBulletIcon className='mr-2' />

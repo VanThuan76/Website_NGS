@@ -31,11 +31,11 @@ const FormDesignOneItem = () => {
     });
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start md:border-2 md:border-slate-300 md:rounded-lg md:shadow-md z-30'>
-      <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full mt-4 md:p-8 text-[#A6A6A6]'>
-          <div className='w-full mb-4'>
-            <label htmlFor='fullName' className='block mb-1'>
+    <div className='z-30 flex w-full flex-col items-start justify-start md:rounded-lg md:border-2 md:border-slate-300 md:shadow-md'>
+      <div className='flex w-full items-start justify-start'>
+        <form onSubmit={handleSubmit} className='mt-4 w-full text-[#A6A6A6] md:p-8'>
+          <div className='mb-4 w-full'>
+            <label htmlFor='fullName' className='mb-1 block'>
               Họ và tên của bạn
             </label>
             <input
@@ -48,13 +48,13 @@ const FormDesignOneItem = () => {
                   fullName: e.target.value,
                 })
               }
-              className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+              className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
               required
             />
           </div>
-          <div className='w-full grid grid-cols-2 gap-4 mb-4'>
+          <div className='mb-4 grid w-full grid-cols-2 gap-4'>
             <div className='w-full'>
-              <label htmlFor='email' className='block mb-1'>
+              <label htmlFor='email' className='mb-1 block'>
                 Email*
               </label>
               <input
@@ -67,12 +67,12 @@ const FormDesignOneItem = () => {
                     email: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               />
             </div>
             <div className='w-full'>
-              <label htmlFor='phoneNumber' className='block mb-1'>
+              <label htmlFor='phoneNumber' className='mb-1 block'>
                 Số điện thoại:
               </label>
               <input
@@ -85,14 +85,14 @@ const FormDesignOneItem = () => {
                     phoneNumber: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               />
             </div>
           </div>
-          <div className='w-full grid grid-cols-2 gap-4 mb-4'>
+          <div className='mb-4 grid w-full grid-cols-2 gap-4'>
             <div className='w-full'>
-              <label htmlFor='workPosition' className='block mb-1'>
+              <label htmlFor='workPosition' className='mb-1 block'>
                 Vị trí công việc
               </label>
               <input
@@ -104,12 +104,12 @@ const FormDesignOneItem = () => {
                     workPosition: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               />
             </div>
             <div className='w-full'>
-              <label htmlFor='companyName' className='block mb-1'>
+              <label htmlFor='companyName' className='mb-1 block'>
                 Tên công ty
               </label>
               <input
@@ -121,14 +121,14 @@ const FormDesignOneItem = () => {
                     companyName: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               />
             </div>
           </div>
-          <div className='w-full grid grid-cols-2 justify-between items-end gap-4 mb-4'>
+          <div className='mb-4 grid w-full grid-cols-2 items-end justify-between gap-4'>
             <div className='w-full'>
-              <label htmlFor='staffSize' className='block mb-1'>
+              <label htmlFor='staffSize' className='mb-1 block'>
                 Chọn tỉnh/thành phố
               </label>
               <select
@@ -140,7 +140,7 @@ const FormDesignOneItem = () => {
                     cityOrProvince: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               >
                 <option value='' disabled />
@@ -154,7 +154,7 @@ const FormDesignOneItem = () => {
             </div>
 
             <div className='w-full'>
-              <label htmlFor='staffSize' className='block mb-1'>
+              <label htmlFor='staffSize' className='mb-1 block'>
                 Quy mô nhân sự
               </label>
               <input
@@ -166,12 +166,12 @@ const FormDesignOneItem = () => {
                     staffSize: e.target.value,
                   })
                 }
-                className='w-full bg-transparent px-3 py-2 border-b rounded focus:outline-none'
+                className='w-full rounded border-b bg-transparent px-3 py-2 focus:outline-none'
                 required
               />
             </div>
           </div>
-          <div className='w-full flex flex-col justify-center items-center'>
+          <div className='flex w-full flex-col items-center justify-center'>
             <p className='text-center'>
               Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua
               thách thức và đạt được thành công đáng kể
@@ -179,7 +179,7 @@ const FormDesignOneItem = () => {
             <button
               style={{ border: '1px solid #FC5F04' }}
               type='submit'
-              className={`bg-[#fff] text-orange-500 relative flex justify-center items-center gap-3 text-left py-2 px-4 cursor-pointer mt-3 hover:border-2 hover:ease-in-out hover:transition rounded-full`}
+              className={`relative mt-3 flex cursor-pointer items-center justify-center gap-3 rounded-full bg-[#fff] px-4 py-2 text-left text-orange-500 hover:border-2 hover:transition hover:ease-in-out`}
             >
               <p className='text-sm'>Đăng ký ngay</p>
               <IconLineDirection color='#FC5F04' />

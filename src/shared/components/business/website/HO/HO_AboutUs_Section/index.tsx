@@ -20,7 +20,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true });
-  const currentBreakPoint = useBreakPoint()
+  const currentBreakPoint = useBreakPoint();
   const sectionControls = useAnimation();
   useEffect(() => {
     if (isInView) {
@@ -32,17 +32,17 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
     <section
       ref={ref}
       id={data.section.code}
-      className={`max-w-[1440px] relative flex flex-col md:gap-16 md:pt-[124px] pb-20 px-4 md:px-24 ${className}`}
+      className={`relative flex max-w-[1440px] flex-col px-4 pb-20 md:gap-16 md:px-24 md:pt-[124px] ${className}`}
     >
-      <div className='w-full grid grid-cols-1 lg:grid-cols-2 justify-start items-start md:gap-20'>
+      <div className='grid w-full grid-cols-1 items-start justify-start md:gap-20 lg:grid-cols-2'>
         {/* Responsive */}
-        <div className='mt-5 flex md:hidden w-full flex-col justify-start items-start'>
+        <div className='mt-5 flex w-full flex-col items-start justify-start md:hidden'>
           <TitleSection
             title={title}
             name={data.section.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
+            className='col-span-7 w-full grid-cols-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon
@@ -53,17 +53,17 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           </UseLinkRouter>
         </div>
         {/* Responsive */}
-        <div className='col-span-1 relative h-[370px] rounded-lg overflow-hidden'>
+        <div className='relative col-span-1 h-[370px] overflow-hidden rounded-lg'>
           <PreImage src={data.section.image} layer={false} alt={data.section.name} objectFit='contain' />
-          <BackgroundAboutUs className='block md:hidden absolute left-0 top-0 w-full h-[470px] -z-10' />
+          <BackgroundAboutUs className='absolute left-0 top-0 -z-10 block h-[470px] w-full md:hidden' />
         </div>
-        <div className='hidden md:flex w-full flex-col justify-start items-start'>
+        <div className='hidden w-full flex-col items-start justify-start md:flex'>
           <TitleSection
             title={title}
             name={data.section.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !gap-8 !text-left'
+            className='col-span-7 w-full grid-cols-7 !gap-8 !text-left'
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon
@@ -74,16 +74,16 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           </UseLinkRouter>
         </div>
       </div>
-      <div className='w-full flex flex-col lg:flex-row justify-center items-center gap-5 bg-transparent'>
+      <div className='flex w-full flex-col items-center justify-center gap-5 bg-transparent lg:flex-row'>
         {data.components.map((item, idx) => {
           return (
             <motion.div
               key={idx}
-              className={`w-full dark:bg-[#1B1D35] p-7 ${
-                data.components &&
-                data.components?.length - 1 !== idx && currentBreakPoint !== "sm" ?
-                'border-card-aboutUs-home-right pr-20' :  data.components && data.components?.length - 1 !== idx  && 'border-b border-b-slate-300'
-              } flex flex-col justify-center items-center gap-5 text-center`}
+              className={`w-full p-7 dark:bg-[#1B1D35] ${
+                data.components && data.components?.length - 1 !== idx && currentBreakPoint !== 'sm'
+                  ? 'border-card-aboutUs-home-right pr-20'
+                  : data.components && data.components?.length - 1 !== idx && 'border-b border-b-slate-300'
+              } flex flex-col items-center justify-center gap-5 text-center`}
               variants={{
                 hidden: { opacity: 0, scale: 0 },
                 visible: { opacity: 1, scale: 0.9 },
@@ -92,8 +92,8 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
               animate={sectionControls}
               transition={{ duration: 0.7, delay: idx * 0.9 }}
             >
-              <div className='text-orange-500 text-5xl'>{item.title}</div>
-              <div className='w-full flex flex-col'>
+              <div className='text-5xl text-orange-500'>{item.title}</div>
+              <div className='flex w-full flex-col'>
                 {item.description.split('//').map((word, idx) => (
                   <p key={idx}>{word}</p>
                 ))}
@@ -102,7 +102,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           );
         })}
       </div>
-      <BackgroundAboutUs className='hidden md:block absolute left-0 top-0 w-full h-full -z-10' />
+      <BackgroundAboutUs className='absolute left-0 top-0 -z-10 hidden h-full w-full md:block' />
     </section>
   );
 };

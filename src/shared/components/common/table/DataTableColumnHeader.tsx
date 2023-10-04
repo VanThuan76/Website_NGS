@@ -72,7 +72,6 @@ const DataTableColumnHeader = <TData, TValue>({
               onChange={v => {
                 setSearchValue(v.target.value);
               }}
-
             />
             <Button
               onClick={() => {

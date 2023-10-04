@@ -9,9 +9,23 @@ import YNGDetailDirectionSetion from '@/components/business/website/YNG/YNG_Deta
 import YNGCommonCustomerSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Customer_Section';
 import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_BackSolution_Section';
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
-import { YNGDetailBanner1} from '@/mocks/website/YNG/YNG_Detail/example';
+import { YNGDetailBanner1 } from '@/mocks/website/YNG/YNG_Detail/example';
 import YNGDetailBannerSection from '@/components/business/website/YNG/YNG_Detail/YNG_Detail_Banner_Section';
-import { YNG_ENM_Banner, YNG_ENM_Section2, YNG_ENM_Section3, YNG_MNS_Banner, YNG_MNS_Section2, YNG_MNS_Section3, YNG_MNS_Section4, YNG_MNS_Section5, YNG_MNS_Section6, YNG_MNS_Section7, YNG_MNS_Section8, YNG_PNA_Section2, YNG_PNA_Section3 } from '@/mocks/website/YNG/yng';
+import {
+  YNG_ENM_Banner,
+  YNG_ENM_Section2,
+  YNG_ENM_Section3,
+  YNG_MNS_Banner,
+  YNG_MNS_Section2,
+  YNG_MNS_Section3,
+  YNG_MNS_Section4,
+  YNG_MNS_Section5,
+  YNG_MNS_Section6,
+  YNG_MNS_Section7,
+  YNG_MNS_Section8,
+  YNG_PNA_Section2,
+  YNG_PNA_Section3,
+} from '@/mocks/website/YNG/yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -24,28 +38,28 @@ const ENMDetailPage = () => {
         <meta name='description' content='Thiết bị và Bảo dưỡng NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailBannerSection data={YNG_ENM_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailWhyChooseSection title='Tại sao chọn Thiết bị và Bảo dưỡng?' data={YNG_ENM_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailProductSection data={YNG_ENM_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailDirectionSetion data={YNG_MNS_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonCustomerSection title='Khách hàng' data={YNG_MNS_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonIntroductionSection data={YNG_MNS_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_MNS_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_MNS_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

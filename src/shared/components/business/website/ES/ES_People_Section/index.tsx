@@ -38,30 +38,30 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
     },
   };
   return (
-    <section id={data.section.code} className={`max-w-[1440px] ${className}`}>
+    <section id={data.section.code} className={`mx-auto w-screen px-4 py-10 md:px-24 lg:py-20 ${className}`}>
       <TitleSection
         title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full flex flex-col justify-start items-start gap-3'
+        className='col-span-7 grid-cols-7 !gap-0 !text-left'
       />
-      <div className='max-w-[1440px] mx-auto mt-3 hidden md:grid grid-cols-2 justify-center items-center gap-10 overflow-hidden'>
-        <div className='col-span-1 relative w-full h-[500px]'>
-          <PreImage src={data.section.image} alt={data.section.name} />
+      <div className='mx-auto mt-3 hidden max-w-[1440px] grid-cols-2 items-center justify-between gap-10 overflow-hidden md:grid'>
+        <div className='relative col-span-1 h-[500px] w-full'>
+          <PreImage src={data.section.image} alt={data.section.name} objectPosition='center' />
         </div>
-        <div className='col-span-1 w-full flex flex-col justify-start items-start gap-3'>
-          <div className='relative w-full min-h-[500px] md:min-h-[450px]'>
+        <div className='col-span-1 flex w-full flex-col items-start justify-start gap-3'>
+          <div className='relative min-h-[500px] w-full md:min-h-[450px]'>
             {data.components.map((item, idx) => (
-              <div key={idx} className='absolute top-0 w-full flex flex-col justify-start items-start gap-10'>
-                <div className='flex flex-col justify-start items-start gap-2'>
+              <div key={idx} className='absolute top-0 flex w-full flex-col items-start justify-start gap-10'>
+                <div className='flex flex-col items-start justify-start gap-2'>
                   <p className='text-xl md:text-3xl'>{selectedTab?.title}</p>
                   <p className='font-normal text-[#9A3902]'>{selectedTab?.description}</p>
                 </div>
-                {selectedTab && selectedTab?.content!.split('//').length > 0 ? (
-                  <div className='w-full flex flex-col justify-start items-start gap-3'>
+                {selectedTab && selectedTab?.content!.split('//').length > 1 ? (
+                  <div className='flex w-full flex-col items-start justify-start gap-3'>
                     {selectedTab?.content?.split('//').map((item, index) => (
-                      <p key={index} className='font-normal text-[#9A3902] italic'>
+                      <p key={index} className='font-normal italic text-[#9A3902]'>
                         {item}
                       </p>
                     ))}
@@ -72,15 +72,15 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
               </div>
             ))}
           </div>
-          <ul className='hidden md:flex items-center justify-between gap-5'>
+          <ul className='hidden items-center justify-between gap-5 md:flex'>
             {data.components.map((item, idx) => (
               <motion.li
                 key={idx}
                 initial='inactive'
                 animate={selectedTab === item ? 'active' : 'inactive'}
                 variants={contentAnimated}
-                className={`px-5 pb-3 border-b-2 ${
-                  item === selectedTab ? '!text-[#FC5E03] !border-b-[#FC5E03]' : '!text-[#FECFB3] !border-b-[#FECFB3]'
+                className={`border-b-2 px-5 pb-3 ${
+                  item === selectedTab ? '!border-b-[#FC5E03] !text-[#FC5E03]' : '!border-b-[#FECFB3] !text-[#FECFB3]'
                 } cursor-pointer font-medium`}
                 onClick={() => setSelectedTab(data && data.components && data.components[idx])}
               >

@@ -30,8 +30,8 @@ const FormImageEdit = ({ data, onSubmit, isLoading, defaultValue, onBack }: Prop
   const cropRef = useRef(null);
   return (
     <>
-      <div className='w-full grid grid-cols-2 items-start justify-start gap-5 p-6'>
-        <div className='w-full flex flex-col gap-4 justify-center items-center'>
+      <div className='grid w-full grid-cols-2 items-start justify-start gap-5 p-6'>
+        <div className='flex w-full flex-col items-center justify-center gap-4'>
           <AvatarEditor
             ref={cropRef}
             image={data.url}
@@ -44,23 +44,33 @@ const FormImageEdit = ({ data, onSubmit, isLoading, defaultValue, onBack }: Prop
           />
         </div>
         <div className='flex flex-col items-start justify-start gap-4'>
-          <p>
-            Điền thông tin ảnh:
-          </p>
+          <p>Điền thông tin ảnh:</p>
           <Form {...form}>
             <form
               onSubmit={form.handleSubmit(onSubmit)}
               onError={e => {
                 console.log(e);
               }}
-              className='space-y-4 w-full'
+              className='w-full space-y-4'
             >
               <InputText form={form} fieldName='name' label='Tên File' />
               <InputText form={form} fieldName='caption' label='Chú thích' />
               <InputText form={form} fieldName='path' label='Đường dẫn' />
-              <InputSelect options={[{ value: 1, label: 'folder1' }, { value: 2, label: 'folder2' }]} placeHolder='Chọn folder lưu trữ' form={form} fieldName='location' label='Địa chỉ' />
+              <InputSelect
+                options={[
+                  { value: 1, label: 'folder1' },
+                  { value: 2, label: 'folder2' },
+                ]}
+                placeHolder='Chọn folder lưu trữ'
+                form={form}
+                fieldName='location'
+                label='Địa chỉ'
+              />
               <div className='flex justify-start gap-4'>
-                <Button type='submit'> {isLoading && <Loader2 className='mr-2 h-4 w-4 animate-spin' />}Thay đổi ảnh</Button>
+                <Button type='submit'>
+                  {' '}
+                  {isLoading && <Loader2 className='mr-2 h-4 w-4 animate-spin' />}Thay đổi ảnh
+                </Button>
                 <Button type='submit'> {isLoading && <Loader2 className='mr-2 h-4 w-4 animate-spin' />}Lưu</Button>
               </div>
             </form>

@@ -12,7 +12,7 @@ export function ImageCommon({ src, layer, ...rest }: Props) {
   return (
     <>
       {src ? (
-        <div className='relative h-full w-full flex justify-center overflow-hidden bg-primary/10'>
+        <div className='relative flex h-full w-full justify-center overflow-hidden bg-primary/10'>
           <Image src={src} style={{ width: `${rest.width}px`, height: `${rest.height}px` }} {...rest} />
           {layer && (
             <div

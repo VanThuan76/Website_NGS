@@ -5,7 +5,17 @@ const nextConfig = {
   reactStrictMode: true,
   i18n,
   images: {
-    domains: ["172.16.50.206", "khoinguonsangtao.vn", "media.istockphoto.com" ,"vanhoadoisong.vn", "c4.wallpaperflare.com", "digital-dialogues.net"],
+    domains: ['ngs.com.vn'],
   },
-}
-module.exports = nextConfig
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.alias['^./src/pages/admin/.*$'] = require.resolve('./src/pages/index.tsx');
+    }
+    if (!config.experiments) {
+      config.experiments = {};
+    }
+    config.experiments.topLevelAwait = true;
+    return config;
+  },
+};
+module.exports = nextConfig;

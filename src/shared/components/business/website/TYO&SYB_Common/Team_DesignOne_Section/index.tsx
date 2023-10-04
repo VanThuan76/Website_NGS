@@ -19,53 +19,47 @@ type Props = {
 
 const TeamDesignOneSection = ({ title, data, className }: Props) => {
   const [hoveredItem, setHoveredItem] = useState<IComponents>();
-  const currentBreakPoint = useBreakPoint()
+  const currentBreakPoint = useBreakPoint();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`max-w-[1440px] px-6 py-5 md:py-10 lg:py-20 md:px-12 lg:px-24 ${className}`}>
-      <div className='w-full mx-auto my-auto bg-transparent overflow-hidden'>
+    <section id={data.section.code} className={`w-screen px-4 pb-10 md:px-24 md:pb-20 ${className}`}>
+      <div className='mx-auto my-auto w-full overflow-hidden bg-transparent'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 !text-left !gap-0'
+          className='col-span-7 w-full grid-cols-7 !gap-0 !text-left'
         />
         <Swiper
           className='mySwiper'
           pagination={{
             dynamicBullets: true,
           }}
-          slidesPerView={currentBreakPoint === "sm" ? 1 : 2}
+          slidesPerView={currentBreakPoint === 'sm' ? 1 : 4}
           spaceBetween={0}
           modules={[Pagination]}
         >
           {data.components.map((item, idx) => (
-            <SwiperSlide className='w-full p-0 md:max-w-[335px] md:p-2 mx-auto' key={idx}>
+            <SwiperSlide className='mx-auto md:max-w-[335px] md:p-2' key={idx}>
               <div
-                className='relative max-w-[335px] min-h-[418px] rounded-lg overflow-hidden'
+                className='relative flex h-[418px] w-full items-center justify-center overflow-hidden rounded-lg md:max-w-[335px]'
                 onMouseEnter={() => setHoveredItem(item)}
                 onMouseLeave={() => setHoveredItem(undefined)}
               >
                 {hoveredItem === item ? (
                   <TeamDesignOneItem
                     content={item.content || ''}
-                    className='absolute top-0 left-0 w-full bg-black text-white'
+                    className='absolute left-0 top-0 w-full bg-black text-white'
                   />
                 ) : (
-                  <div className='relative w-[335px] h-[418px]'>
-                    <PreImage
-                      src={item.image}
-                      width={1980}
-                      height={350}
-                      alt={title}
-                      className='w-full h-full rounded-lg object-cover'
-                    />
-                    <div className='absolute left-5 bottom-5 flex flex-col justify-start items-start text-white gap-2 z-20'>
+                  <div className='relative h-[418px] w-[335px]'>
+                    <PreImage src={item.image} alt={title} objectPosition='center' />
+                    <div className='absolute bottom-5 left-5 z-20 flex w-[90%] flex-col items-start justify-start gap-2 text-white'>
                       <p>{item.title}</p>
                       <p>{item.description}</p>
                     </div>
-                    <BackgroundTeam className='absolute -bottom-5 w-full h-full z-10' />
+                    <BackgroundTeam className='absolute -bottom-10 z-10 h-full w-full' />
                   </div>
                 )}
               </div>

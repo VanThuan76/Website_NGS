@@ -16,26 +16,23 @@ const OverviewDesignSixSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
+      className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
+      <div className='mx-auto my-auto mt-10 flex w-full flex-col items-center justify-between'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 text-center'
+          className='col-span-7 w-full grid-cols-7 text-center'
         />
-        <div className='relative w-full h-[360px] object-cover overflow-hidden -mt-12 flex-shrink-0 snap-start'>
-          <PreImage
-            src={data.section.image}
-            alt={data.section.name}
-          />
+        <div className='relative -mt-12 h-[360px] w-full flex-shrink-0 snap-start overflow-hidden object-cover'>
+          <PreImage src={data.section.image} alt={data.section.name} />
         </div>
-        <div className='w-full grid grid-cols-3 gap-5 mt-5'>
+        <div className='mt-5 grid w-full grid-cols-3 gap-5'>
           {data.components.map((item, idx) => {
             return (
-              <div key={idx} className='flex flex-col justify-center items-center gap-4 pb-4'>
+              <div key={idx} className='flex flex-col items-center justify-center gap-4 pb-4'>
                 {splitTextToArrayByDoubleSlash(item.content).map((item: string, idx: number) => (
                   <p key={idx} className='text-xs md:text-base'>
                     {item}

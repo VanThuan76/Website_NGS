@@ -5,6 +5,7 @@ import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArra
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import useInviewScroll from '@/hooks/useInviewScroll';
 import { motion, useAnimation } from 'framer-motion';
+import ESEnvironmentResponsive from './ESEnvironmentResponsive';
 
 const variantsText = {
   show: {
@@ -52,33 +53,33 @@ const ESEnvironment = ({ data, className }: Props) => {
       style={{
         backgroundColor: `${backgroundColor[currentIndex]}`,
       }}
-      className={`w-screen h-[300vh] ${className}`}
+      className={`h-[300vh] w-screen ${className}`}
     >
       <motion.div
         animate={controls}
         style={{
           backgroundColor: `${backgroundColor[currentIndex]}`,
         }}
-        className='px-10 mx-auto my-auto grid grid-cols-1 justify-center items-center gap-8'
+        className='mx-auto my-auto hidden grid-cols-1 items-center justify-center gap-8 px-10 md:grid'
       >
-        <div className='mx-auto ml-0 md:ml-56 flex justify-center items-center md:justify-normal md:items-start'>
+        <div className='mx-auto ml-0 flex items-center justify-center md:ml-56 md:items-start md:justify-normal'>
           <motion.div
             key={currentIndex}
             variants={{
               show: {
-                height: '210px',
+                opacity: 1,
                 transition: {
                   ease: 'easeOut',
                   duration: 1,
                 },
               },
               hide: {
-                height: '0px',
+                opacity: 0,
               },
             }}
             animate='show'
             initial='hide'
-            className='relative w-[210px] h-[210px] rounded-lg overflow-hidden'
+            className='relative h-[210px] w-[210px] overflow-hidden rounded-lg'
           >
             <PreImage
               src={data.components[currentIndex].image.split(',')[0]}
@@ -86,25 +87,25 @@ const ESEnvironment = ({ data, className }: Props) => {
             />
           </motion.div>
         </div>
-        <div className='mx-auto my-auto grid grid-cols-1 md:grid-cols-4 justify-between items-center'>
-          <div className='flex justify-center items-center'>
+        <div className='mx-auto my-auto grid grid-cols-1 items-center justify-between md:grid-cols-4'>
+          <div className='flex items-center justify-center'>
             <motion.div
               key={currentIndex}
               variants={{
                 show: {
-                  height: '210px',
+                  opacity: 1,
                   transition: {
                     ease: 'easeOut',
                     duration: 1,
                   },
                 },
                 hide: {
-                  height: '0px',
+                  opacity: 0,
                 },
               }}
               animate='show'
               initial='hide'
-              className='mx-auto relative w-[210px] h-[210px] rounded-lg overflow-hidden'
+              className='relative mx-auto h-[210px] w-[210px] overflow-hidden rounded-lg'
             >
               <PreImage
                 src={data.components[currentIndex].image.split(',')[1]}
@@ -117,9 +118,9 @@ const ESEnvironment = ({ data, className }: Props) => {
             variants={variantsText}
             animate='show'
             initial='hide'
-            className='col-span-2 w-full flex flex-col justify-center items-center gap-3'
+            className='col-span-2 flex w-full flex-col items-center justify-center gap-3'
           >
-            <h1 className='text-xl md:text-3xl text-orange-500 font-semibold text-center'>
+            <h1 className='text-center text-xl font-semibold text-orange-500 md:text-3xl'>
               {data.components[currentIndex].title}
             </h1>
             <div className='flex flex-col gap-2'>
@@ -132,24 +133,24 @@ const ESEnvironment = ({ data, className }: Props) => {
               )}
             </div>
           </motion.div>
-          <div className='flex justify-center items-center'>
+          <div className='flex items-center justify-center'>
             <motion.div
               key={currentIndex}
               variants={{
                 show: {
-                  height: '363px',
+                  opacity: 1,
                   transition: {
                     ease: 'easeOut',
                     duration: 1,
                   },
                 },
                 hide: {
-                  height: '0px',
+                  opacity: 0,
                 },
               }}
               animate='show'
               initial='hide'
-              className='mx-auto relative w-[272px] h-[363px] rounded-lg overflow-hidden'
+              className='relative mx-auto h-[363px] w-[272px] overflow-hidden rounded-lg'
             >
               <PreImage
                 src={data.components[currentIndex].image.split(',')[2]}
@@ -158,35 +159,38 @@ const ESEnvironment = ({ data, className }: Props) => {
             </motion.div>
           </div>
         </div>
-        <div className='flex justify-center items-center'>
+        <div className='flex items-center justify-center'>
           <motion.div
             key={currentIndex}
             variants={{
               show: {
-                height: '295px',
+                opacity: 1,
                 transition: {
                   ease: 'easeOut',
                   duration: 1,
                 },
               },
               hide: {
-                height: '0px',
+                opacity: 0,
               },
             }}
             animate='show'
             initial='hide'
-            className='relative w-[590px] h-[295px] overflow-hidden rounded-lg'
+            className='relative h-[295px] w-[590px] overflow-hidden rounded-lg'
           >
             <PreImage
               src={data.components[currentIndex].image.split(',')[3]}
               width={590}
               height={295}
               alt={data.components[currentIndex].title}
-              className='w-full h-full rounded-lg object-cover'
+              className='h-full w-full rounded-lg object-cover'
             />
           </motion.div>
         </div>
       </motion.div>
+      <div className='md:hidden'>
+        <ESEnvironmentResponsive data={data} inView={inView} />
+      </div>
     </section>
   );
 };

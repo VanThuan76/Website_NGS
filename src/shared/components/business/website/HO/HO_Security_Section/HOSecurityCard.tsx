@@ -7,18 +7,18 @@ interface Props {
   title: string;
   description: string;
   image: string;
-  slug: string
+  slug: string;
   sectionControls: AnimationControls;
   idx: number;
   className?: string;
 }
 const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx, className }: Props) => {
   const [isHovered, setIsHovered] = useState<number | undefined>();
-  const router = useRouter()
-  const currentBreakPoint = useBreakPoint()
+  const router = useRouter();
+  const currentBreakPoint = useBreakPoint();
   return (
     <motion.div
-      className={`border-card-security-home relative max-w-[304px] h-[202px] p-2 flex flex-col justify-center items-center bg-white dark:bg-[#222442] rounded-lg shadow-sm overflow-hidden col-span-1 cursor-pointer ${className}`}
+      className={`border-card-security-home relative col-span-1 flex h-[202px] max-w-[304px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-white p-2 shadow-sm dark:bg-[#222442] ${className}`}
       variants={{
         hidden: { opacity: 0, translateX: -50, translateY: -50 },
         visible: { opacity: 1, translateX: 0, translateY: 0 },
@@ -30,18 +30,18 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
       onMouseLeave={() => setIsHovered(undefined)}
       onClick={() => router.push(`/secure-your-business/${slug}`)}
     >
-      <div className='flex flex-col justify-center items-center gap-3'>
-        <div className={`relative ${currentBreakPoint === "sm" ? "w-[56px] h-[56px]" : "w-[72px] h-[72px]"}`}>
+      <div className='flex flex-col items-center justify-center gap-3'>
+        <div className={`relative ${currentBreakPoint === 'sm' ? 'h-[56px] w-[56px]' : 'h-[72px] w-[72px]'}`}>
           <PreImage src={image as string} alt={title} />
         </div>
-        <p className='text-lg md:text-xl text-center font-normal md:font-semibold'>{title}</p>
+        <p className='text-center text-lg font-normal md:text-xl md:font-semibold'>{title}</p>
       </div>
       <motion.p
-        className='max-w-[304px] h-[202px] p-2 absolute top-0 bg-[#e5e5e5] z-30'
-        style={{ overflowY: 'hidden'}}
+        className='absolute top-0 z-30 h-[202px] max-w-[304px] bg-[#e5e5e5] p-3'
+        style={{ overflowY: 'hidden' }}
         initial={{ opacity: 0 }}
-        animate={{ opacity: isHovered === idx ? 1 : 0}}
-        whileHover={{translateY: -5}}
+        animate={{ opacity: isHovered === idx ? 1 : 0 }}
+        whileHover={{ translateY: -5 }}
         transition={{
           duration: 0.5,
           ease: 'easeInOut',

@@ -6,7 +6,17 @@ import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
-import { TYOBanner1_PG3_15, TYOForm1_PG3_15, TYOOverview8_PG3_15, TYOPartner3_PG3_15, TYOService1_PG3_15, TYOService2_PG3_15, TYOWhyUs1_PG3_15, TYOchallenge3_PG3_15, TYOclientStories1_PG3_15 } from '@/mocks/website/TYO/tyo';
+import {
+  TYOBanner1_PG3_15,
+  TYOForm1_PG3_15,
+  TYOOverview8_PG3_15,
+  TYOPartner3_PG3_15,
+  TYOService1_PG3_15,
+  TYOService2_PG3_15,
+  TYOWhyUs1_PG3_15,
+  TYOchallenge3_PG3_15,
+  TYOclientStories1_PG3_15,
+} from '@/mocks/website/TYO/tyo';
 import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
@@ -31,7 +41,7 @@ const SMEPage = () => {
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-      <OverviewDesignEightSection title='Tổng quan' data={TYOOverview8_PG3_15} />
+        <OverviewDesignEightSection title='Tổng quan' data={TYOOverview8_PG3_15} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <BenefitDesignTwoSection title='Lợi ích mang lại' data={TYOchallenge3_PG3_15} />
@@ -51,13 +61,7 @@ const SMEPage = () => {
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_15} />
       </ScrollRevealWrapper>
-
-
-
-
-
     </React.Fragment>
-
   );
 };
 

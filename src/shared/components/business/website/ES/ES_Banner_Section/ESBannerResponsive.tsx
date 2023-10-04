@@ -18,10 +18,10 @@ const ESBannerResponsive = ({ data }: Props) => {
         name={data && (data.section?.name as string)}
         description={data.section?.description as string}
         findMore={true}
-        className='w-full flex flex-col justify-start items-start'
+        className='flex w-full flex-col items-start justify-start'
       />
-      <div className='flex snap-x-mandatory scrollbar-none relative max-h-[700px] overflow-hidden dark:text-white'>
-        <div className='relative w-full flex justify-between items-center mx-auto'>
+      <div className='snap-x-mandatory scrollbar-none relative flex max-h-[700px] overflow-hidden dark:text-white'>
+        <div className='relative mx-auto flex w-full items-center justify-between'>
           <AnimatePresence mode='wait'>
             <motion.div
               key={data ? data.section?.code : 'empty'}

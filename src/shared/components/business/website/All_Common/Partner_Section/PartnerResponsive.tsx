@@ -9,7 +9,7 @@ type Props = {
 };
 const PartnerResponsive = ({ data }: Props) => {
   return (
-    <div className='w-full block md:hidden'>
+    <div className='block w-full md:hidden'>
       <Swiper
         className='mySwiper'
         pagination={{
@@ -27,23 +27,17 @@ const PartnerResponsive = ({ data }: Props) => {
         loop
       >
         {data.map((item, idx) => (
-          <SwiperSlide className='w-full py-5 rounded-lg' key={idx}>
-            <div className='w-full h-[100px] cursor-pointer rounded-lg overflow-hidden'>
-              <PreImage
-                src={item.image}
-                layer={false}
-                alt={item.title}
-                objectFit="contain"
-                objectPosition='center'
-              />
+          <SwiperSlide className='w-full rounded-lg py-5' key={idx}>
+            <div className='h-[100px] w-full cursor-pointer overflow-hidden rounded-lg'>
+              <PreImage src={item.image} layer={false} alt={item.title} objectFit='contain' objectPosition='center' />
             </div>
             <div
-              className='w-full py-5 flex flex-col justify-between items-center gap-5'
+              className='flex w-full flex-col items-center justify-between gap-5 py-5'
               style={{ borderTop: '1px solid #fff' }}
             >
-              <div className='w-full flex flex-col justify-start items-start gap-3'>
-                <p className='font-medium text-2xl'>{item.title}</p>
-                <p className='font-thin text-sm'>{item.description}</p>
+              <div className='flex w-full flex-col items-start justify-start gap-3'>
+                <p className='text-2xl font-medium'>{item.title}</p>
+                <p className='text-sm font-thin'>{item.description}</p>
               </div>
               <p>{item.content}</p>
             </div>

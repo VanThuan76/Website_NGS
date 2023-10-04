@@ -12,22 +12,25 @@ type Props = {
 const ESOrganizationalSystemSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section
+      id={data.section.code}
+      className={`max-w-[1440px] px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}`}
+    >
       <TitleSection
         title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
+        className='col-span-7 w-full grid-cols-7 !gap-8 !text-left md:col-span-5 md:grid-cols-12'
       />
-      <div className='w-full h-full mx-auto my-auto md:mt-10 grid grid-cols-1 md:grid-cols-2 items-start justify-between md:gap-10 overflow-hidden'>
-        <div className='w-full flex flex-col justify-center items-center'>
+      <div className='mx-auto my-auto grid h-full w-full grid-cols-1 items-start justify-between overflow-hidden md:mt-10 md:grid-cols-2 md:gap-10'>
+        <div className='flex w-full flex-col items-center justify-center'>
           {data &&
             data.components.map((item, idx) => {
               return <ESOrganizationalSystemItem key={idx} item={item} idx={idx} />;
             })}
         </div>
-        <div className='hidden lg:block relative h-[550px] rounded-lg overflow-hidden'>
+        <div className='relative hidden h-[550px] overflow-hidden rounded-lg lg:block'>
           <PreImage src={data.section.image} layer={false} alt={data.section.name} />
         </div>
       </div>

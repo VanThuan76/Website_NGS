@@ -19,9 +19,9 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
 
   return (
-    <section id={data.section.code} className={`w-screen relative overflow-hidden ${className} bg-[#051C2C]`}>
-      <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
-        <div className='w-full px-4 py-2 md:px-24 md:py-20 flex flex-col justify-start items-start gap-8 text-white'>
+    <section id={data.section.code} className={`relative w-screen overflow-hidden ${className} bg-[#051C2C]`}>
+      <div className='grid w-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2'>
+        <div className='flex w-full flex-col items-start justify-start gap-8 px-4 py-2 text-white md:px-24 md:py-20'>
           <TitleSection
             title={title}
             name={data.section.name as string}
@@ -30,8 +30,8 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
             className='w-full !text-left text-white'
           />
           {data.components.map((item, idx) => (
-            <div key={idx} className='flex justify-start items-start gap-2'>
-              <IconCheckSuccess className='w-[24px] h-[24px]' />
+            <div key={idx} className='flex items-start justify-start gap-2'>
+              <IconCheckSuccess className='h-[24px] w-[24px]' />
               <p className='w-full'>{item.title}</p>
             </div>
           ))}
@@ -39,7 +39,7 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
             <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
           </UseLinkRedirect>
         </div>
-        <div className='relative w-full h-full object-cover overflow-hidden'>
+        <div className='relative h-full w-full overflow-hidden object-cover'>
           <PreImage src={data.section.image} width={1980} height={1000} alt={data.section.name} />
         </div>
       </div>

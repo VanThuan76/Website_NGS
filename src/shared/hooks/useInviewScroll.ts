@@ -32,7 +32,7 @@ const useInviewScroll = ({ amountComponent, inView }: Props) => {
       window.removeEventListener('scroll', debouncedHandleScroll);
     };
   }, [debouncedHandleScroll, inView]);
-  return currentIndex
+  return currentIndex;
 };
 
 export default useInviewScroll;

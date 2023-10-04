@@ -1,5 +1,5 @@
 const ESBannerContent = () => {
-    return ( <></> );
-}
- 
+  return <></>;
+};
+
 export default ESBannerContent;

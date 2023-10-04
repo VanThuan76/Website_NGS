@@ -14,15 +14,15 @@ const OverviewDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className} `}
+      className={`w-screen overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className} `}
     >
-      <div className='relative w-full mx-auto my-auto flex flex-col justify-between items-center'>
+      <div className='relative mx-auto my-auto flex w-full flex-col items-center justify-between'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !text-left !gap-3 z-30'
+          className='z-30 col-span-7 w-full grid-cols-7 !gap-3 !text-left md:col-span-5 md:grid-cols-12'
         />
         <BorderStyleOneLight className='absolute top-0 z-10 object-cover' />
       </div>

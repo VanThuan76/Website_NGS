@@ -106,7 +106,7 @@ export function CategoryList() {
       <div className='flex items-center justify-between'>
         <div className='text-2xl font-bold'>{TABLE_NAME}</div>
         <div
-          className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg cursor-pointer'
+          className='flex h-9 cursor-pointer items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'
           onClick={() => router.push('/admin/Category-manage/category/create')}
         >
           <PlusCircle className='mr-2' />

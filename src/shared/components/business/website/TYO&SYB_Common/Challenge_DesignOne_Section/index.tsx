@@ -16,26 +16,26 @@ const ChallengeDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden bg-[#F9F4EE] md:bg-inherit ${className}  `}
+      className={`max-w-[1440px] overflow-hidden bg-[#F9F4EE] px-4 pb-4 md:bg-inherit md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
       <TitleSection
         title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !text-left !gap-0'
+        className='col-span-7 grid-cols-7 !gap-0 !text-left md:col-span-5 md:grid-cols-12'
       />
       {data.components.map((item, idx) => (
         <div
           key={idx}
-          className='w-full grid grid-cols-1 md:grid-cols-2 gap-10 justify-between items-center md:px-12 md:mt-3 bg-[#F9F4EE] rounded-lg'
+          className='grid w-full grid-cols-1 items-center justify-between gap-10 rounded-lg bg-[#F9F4EE] md:mt-3 md:grid-cols-2 md:px-12'
         >
-          <div className='relative w-full h-[435px] md:h-[624px] rounded-lg overflow-hidden mt-5 flex-shrink-0 snap-start md:-translate-x-16'>
-            <PreImage src={item.image} alt={item.title} objectPosition="center" />
+          <div className='relative mt-5 h-[435px] w-full flex-shrink-0 snap-start overflow-hidden rounded-lg md:h-[624px] md:-translate-x-16'>
+            <PreImage src={item.image} alt={item.title} objectPosition='center' />
           </div>
-          <div className='w-full flex flex-col justify-start items-start gap-3'>
-            <h1 className='text-xl md:text-3xl text-orange-500 font-semibold'>{item.title}</h1>
-            <div className='flex flex-col justify-center items-center gap-2'>
+          <div className='flex w-full flex-col items-start justify-start gap-3'>
+            <h1 className='text-xl font-semibold text-orange-500 md:text-3xl'>{item.title}</h1>
+            <div className='flex flex-col items-center justify-center gap-2'>
               {splitTextToArrayByDoubleSlash(item.description).map((item: string, idx: number) => (
                 <p key={idx} className='text-sm md:text-base'>
                   {item}

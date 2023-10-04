@@ -12,29 +12,29 @@ type Props = {
 };
 const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
   const { pathname } = useRouter();
-  const router = useRouter()
+  const router = useRouter();
   return (
-    <div className='w-full mx-auto'>
+    <div className='mx-auto w-full'>
       <SheetClose
-        className='relative w-[250px] h-[50px] -left-20 top-0 flex justify-center items-center gap-2 z-20 cursor-pointer'
+        className='relative -left-20 top-0 z-20 flex h-[50px] w-[250px] cursor-pointer items-center justify-center gap-2'
         onClick={() => router.push('/')}
       >
         <PreImage src='/logo.png' alt='Logo' layer={false} />
       </SheetClose>
       {fakeMenu.map((mainMenu, index) => (
-        <div className='w-full h-full' key={index}>
+        <div className='h-full w-full' key={index}>
           {mainMenu.menuChild.length === 0 ? (
             <div className='w-full py-4'>
               <SheetClose>
                 <UseLinkRouter url={mainMenu.path || ''}>
-                  <p className='text-base leading-6 font-medium'>{mainMenu.title}</p>
+                  <p className='text-base font-medium leading-6'>{mainMenu.title}</p>
                 </UseLinkRouter>
               </SheetClose>
             </div>
           ) : (
             <Accordion type='multiple' className='cursor-pointer'>
               <AccordionItem value={mainMenu.title}>
-                <AccordionTrigger className='text-base leading-6 font-medium'>{mainMenu.title}</AccordionTrigger>
+                <AccordionTrigger className='text-base font-medium leading-6'>{mainMenu.title}</AccordionTrigger>
                 <AccordionContent>
                   {mainMenu.menuChild.map((menuChild2, index) => {
                     return (
@@ -42,17 +42,17 @@ const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
                         {menuChild2.title !== '' ? (
                           <Accordion type='multiple'>
                             <AccordionItem value={menuChild2.title}>
-                              <AccordionTrigger className='text-sm leading-6 font-medium'>
+                              <AccordionTrigger className='text-sm font-medium leading-6'>
                                 {menuChild2.title}
                               </AccordionTrigger>
                               <AccordionContent>
                                 {menuChild2.menuChild.map((menuChild3, index) => (
                                   <div
                                     key={index}
-                                    className='mt-5 ml-5 w-full flex flex-col justify-start items-start gap-5'
+                                    className='ml-5 mt-5 flex w-full flex-col items-start justify-start gap-5'
                                   >
                                     <p
-                                      className='h-[5px] w-full text-[#a6a6a6] pb-4'
+                                      className='h-[5px] w-full pb-4 text-[#a6a6a6]'
                                       style={{ borderBottom: '1px solid #E8E8E8' }}
                                     >
                                       {menuChild3.title}
@@ -75,16 +75,16 @@ const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
                             </AccordionItem>
                           </Accordion>
                         ) : (
-                          <div className='w-full flex flex-col justify-start items-star gap-8'>
-                            <SecureMenuIcon className='w-[56px] h-[56px]' />
+                          <div className='items-star flex w-full flex-col justify-start gap-8'>
+                            <SecureMenuIcon className='h-[56px] w-[56px]' />
                             <p className='text-base font-semibold leading-6'>
                               Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7 chuyên
                               nghiệp
                             </p>
                             {menuChild2.menuChild.map((menuChild3, index) => (
-                              <div key={index} className='mt-5 w-full flex flex-col justify-start items-start gap-5'>
+                              <div key={index} className='mt-5 flex w-full flex-col items-start justify-start gap-5'>
                                 <p
-                                  className='h-[5px] w-full text-[#a6a6a6] pb-4'
+                                  className='h-[5px] w-full pb-4 text-[#a6a6a6]'
                                   style={{ borderBottom: '1px solid #E8E8E8' }}
                                 >
                                   {menuChild3.title}

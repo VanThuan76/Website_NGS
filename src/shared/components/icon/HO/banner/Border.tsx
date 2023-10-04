@@ -29,7 +29,7 @@ export default function Border({ ...rest }: SVGProps<SVGSVGElement>) {
         </g>
         <path
           d='M1948.47 618.919C1948.47 618.919 1564.29 202.41 970.32 200.155C376.354 197.899 -321.075 575.027 -586.856 814.959L-649.142 -421.5L1908.37 -1073L1948.47 618.919Z'
-          fill="currentColor"
+          fill='currentColor'
         />
       </g>
       <defs>

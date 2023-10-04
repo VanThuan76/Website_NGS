@@ -58,7 +58,7 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                 </NavigationMenuTrigger>
                 <NavigationMenuContent className='NavigationMenuContent'>
                   <div className='List one gap-10'>
-                    <div className='w-full flex flex-col justify-start items-start gap-5 border-r-2 border-r-slate-200 px-8 pt-4'>
+                    <div className='flex w-full flex-col items-start justify-start gap-5 border-r-2 border-r-slate-200 px-8 pt-4'>
                       {mainMenu.menuChild.map((menuChild2, idx) => {
                         return (
                           <div className='w-full' key={idx}>
@@ -67,7 +67,7 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                                 style={{
                                   borderBottom: '1px solid #E8E8E8',
                                 }}
-                                className='relative w-full flex justify-between items-start cursor-pointer pb-6'
+                                className='relative flex w-full cursor-pointer items-start justify-between pb-6'
                                 whileHover={{
                                   borderBottom: '1px solid #FC5E03',
                                   color: '#000',
@@ -78,14 +78,14 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                                 <p>{menuChild2.title}</p>
                                 {selectedMenuChild3 === menuChild2 && (
                                   <div
-                                    className='absolute bottom-0 w-full h-[1px]'
+                                    className='absolute bottom-0 h-[1px] w-full'
                                     style={{ borderBottom: '1px solid #FC5E03' }}
                                   ></div>
                                 )}
                                 {selectedMenuChild3 === menuChild2 && <IconLineDirection scale={0} color='#FC5E03' />}
                               </motion.div>
                             ) : (
-                              <div className='w-full flex flex-col justify-start items-start'>
+                              <div className='flex w-full flex-col items-start justify-start'>
                                 <SecureMenuIcon />
                                 <p className='text-2xl text-[#a6a6a6]'>
                                   Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7
@@ -98,15 +98,15 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                       })}
                     </div>
                     {selectedMenuChild3 ? (
-                      <div className='w-full flex flex-col justify-start items-start gap-8 px-8 pt-4 pb-6'>
-                        <h1 className='font-semibold text-2xl'>{selectedMenuChild3.title}</h1>
-                        <div className='w-full flex justify-start items-start gap-6'>
+                      <div className='flex w-full flex-col items-start justify-start gap-8 px-8 pb-6 pt-4'>
+                        <h1 className='text-2xl font-semibold'>{selectedMenuChild3.title}</h1>
+                        <div className='flex w-full items-start justify-start gap-6'>
                           {selectedMenuChild3.menuChild.map((menuChild3, idx) => (
-                            <div key={idx} className='w-[277px] flex flex-col justify-start items-start gap-5'>
+                            <div key={idx} className='flex w-[277px] flex-col items-start justify-start gap-5'>
                               {menuChild3.title !== '' && (
                                 <div
                                   style={{ borderBottom: '1px solid #E8E8E8' }}
-                                  className='w-full text-[#a6a6a6] pb-4'
+                                  className='w-full pb-4 text-[#a6a6a6]'
                                 >
                                   {menuChild3.title}
                                 </div>

@@ -6,7 +6,6 @@ interface Props {
   image: string;
 }
 const EditorImage = ({ image }: Props) => {
-  
   const cropRef = useRef(null);
 
   const handleSave = async () => {
@@ -30,9 +29,7 @@ const EditorImage = ({ image }: Props) => {
         scale={1.2}
         rotate={0}
       />
-      <Button onClick={handleSave}>
-        Thay đổi
-      </Button>
+      <Button onClick={handleSave}>Thay đổi</Button>
     </>
   );
 };

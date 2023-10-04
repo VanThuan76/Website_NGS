@@ -9,7 +9,7 @@ type Props = {
 };
 const OrganizationalSystemResponsive = ({ data }: Props) => {
   return (
-    <div className='w-full block md:hidden'>
+    <div className='block w-full md:hidden'>
       <Swiper
         className='mySwiper'
         modules={[Pagination]}
@@ -21,8 +21,8 @@ const OrganizationalSystemResponsive = ({ data }: Props) => {
         centeredSlides={true}
       >
         {data.map((item, idx) => (
-          <SwiperSlide className='py-5 rounded-lg' key={idx}>
-            <div className='w-full h-[55px]'>
+          <SwiperSlide className='rounded-lg py-5' key={idx}>
+            <div className='h-[55px] w-full'>
               <PreImage src={item.image} layer={false} alt={item.title} objectFit='contain' />
             </div>
           </SwiperSlide>

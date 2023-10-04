@@ -10,7 +10,16 @@ import YNGCommonCustomerSection from '@/components/business/website/YNG/YNG_Comm
 import YNGCommonBackSolutionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_BackSolution_Section';
 import YNGCommonIntroductionSection from '@/components/business/website/YNG/YNG_Common/YNG_Common_Introduction_Section';
 import YNGDetailBannerSection from '@/components/business/website/YNG/YNG_Detail/YNG_Detail_Banner_Section';
-import { YNG_MW_Banner, YNG_MW_Section2, YNG_MW_Section3, YNG_MW_Section4, YNG_MW_Section5, YNG_MW_Section6, YNG_MW_Section7, YNG_MW_Section8 } from '@/mocks/website/YNG/yng';
+import {
+  YNG_MW_Banner,
+  YNG_MW_Section2,
+  YNG_MW_Section3,
+  YNG_MW_Section4,
+  YNG_MW_Section5,
+  YNG_MW_Section6,
+  YNG_MW_Section7,
+  YNG_MW_Section8,
+} from '@/mocks/website/YNG/yng';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -23,28 +32,28 @@ const MWDetailPage = () => {
         <meta name='description' content='Bảo trì & Bảo hành' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailBannerSection data={YNG_MW_Banner} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailWhyChooseSection title='Tại sao chọn Bảo trì & Bảo hành?' data={YNG_MW_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailProductSection data={YNG_MW_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGDetailDirectionSetion data={YNG_MW_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonCustomerSection title='Khách hàng' data={YNG_MW_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonIntroductionSection data={YNG_MW_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonBackSolutionSection title='Ứng dụng liên quan' data={YNG_MW_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <YNGCommonPilotSubriceSection title='Đăng ký tư vấn hoặc Demo' data={YNG_MW_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

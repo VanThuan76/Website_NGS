@@ -8,7 +8,16 @@ import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import { SYBBanner1_PG4_1, SYBClientStories2_Secure, SYBForm1_PG4_1, SYBOverview1_PG4_1, SYBPartner2_PG4_1, SYBService3_PG4_1, SYBWhyUs1_PG4_1, SYBchallenge3_PG4_1 } from '@/mocks/website/SYB/syb';
+import {
+  SYBBanner1_PG4_1,
+  SYBClientStories2_Secure,
+  SYBForm1_PG4_1,
+  SYBOverview1_PG4_1,
+  SYBPartner2_PG4_1,
+  SYBService3_PG4_1,
+  SYBWhyUs1_PG4_1,
+  SYBchallenge3_PG4_1,
+} from '@/mocks/website/SYB/syb';
 
 import dynamic from 'next/dynamic';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
@@ -28,7 +37,8 @@ const SOCPage = () => {
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
           breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Giám sát, vận hành an ninh mạng']}
-          data={SYBBanner1_PG4_1} />
+          data={SYBBanner1_PG4_1}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignOneSection title='TỔNG QUAN' data={SYBOverview1_PG4_1} />
@@ -51,7 +61,6 @@ const SOCPage = () => {
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYBForm1_PG4_1} />
       </ScrollRevealWrapper>
-
     </React.Fragment>
   );
 };

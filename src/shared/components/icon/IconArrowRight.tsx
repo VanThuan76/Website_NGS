@@ -20,4 +20,3 @@ export default function IconArrowRight({ ...rest }: SVGProps<SVGSVGElement>) {
     </svg>
   );
 }
-

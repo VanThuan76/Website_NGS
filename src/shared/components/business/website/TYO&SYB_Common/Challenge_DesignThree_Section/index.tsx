@@ -16,20 +16,20 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
 
   return (
     <section id={data.section.code} className={`w-screen overflow-hidden ${className} bg-[#051C2C]`}>
-      <div className='w-full grid grid-cols-1 md:grid-cols-2 justify-center items-center gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 px-20 py-24'>
-          <p className='text-sm md:text-2xl text-orange-500 font-medium'>{title}</p>
-          <div className='w-full flex flex-col justify-start items-start gap-12'>
+      <div className='grid w-full grid-cols-1 items-center justify-center gap-5 md:grid-cols-2'>
+        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 px-20 py-24'>
+          <p className='text-sm font-medium text-orange-500 md:text-2xl'>{title}</p>
+          <div className='flex w-full flex-col items-start justify-start gap-12'>
             <div className='flex flex-col gap-2'>
               {data.section.name.split('//').map((word, idx) => (
-                <p className='text-white mr-[10px] w-full flex flex-col text-2xl md:text-4xl font-medium' key={idx}>
+                <p className='mr-[10px] flex w-full flex-col text-2xl font-medium text-white md:text-4xl' key={idx}>
                   {word}
                 </p>
               ))}
             </div>
-            <div className='max-h-[450px] pr-4 challenge-designThree-section-with-scrollbar flex flex-col gap-2'>
+            <div className='challenge-designThree-section-with-scrollbar flex max-h-[450px] flex-col gap-2 pr-4'>
               {data.section.description.split('//').map((word, idx) => (
-                <p className='text-sm md:text-base font-medium not-italic text-[#757575] dark:text-[#C2C0BF]' key={idx}>
+                <p className='text-sm font-medium not-italic text-[#757575] dark:text-[#C2C0BF] md:text-base' key={idx}>
                   {word}
                 </p>
               ))}
@@ -39,7 +39,7 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
             <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none' />
           </UseLinkRedirect>
         </div>
-        <div className='relative w-full h-full'>
+        <div className='relative h-full w-full'>
           <PreImage src={data.section.image} alt={data.section.name} />
         </div>
       </div>

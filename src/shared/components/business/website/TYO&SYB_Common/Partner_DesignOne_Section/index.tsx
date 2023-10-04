@@ -18,26 +18,21 @@ const PartnerDesignOneSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`relative w-screen my-10 z-30 px-4 md:px-24 ${className}`}
+      className={`relative z-30 my-10 w-screen px-4 md:px-24 ${className}`}
       style={{
         background: `linear-gradient(180deg, rgba(248, 133, 80, 0.3) -9.34%, rgba(255, 255, 255, 0.3) 129.73%)`,
       }}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col lg:flex-row gap-5 justify-between items-center py-14'>
-        <div className='w-full flex flex-col justify-start items-start gap-3'>
-          <h1 className='text-2xl lg:text-4xl font-medium'>{data.section.name}</h1>
+      <div className='mx-auto my-auto flex w-full max-w-[1440px] flex-col items-center justify-between gap-5 py-14 lg:flex-row'>
+        <div className='flex w-full flex-col items-start justify-start gap-3'>
+          <h1 className='text-2xl font-medium lg:text-4xl'>{data.section.name}</h1>
           <p>{data.section.description}</p>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[170px] border border-orange-500' colorSvg={colorIcon} />
           </UseLinkRouter>
         </div>
-        <div className='relative w-[600px] h-[150px]'>
-          <PreImage
-            src={data.section.image}
-            layer={false}
-            alt={data.section.name}
-            objectFit="contain"
-          />
+        <div className='relative h-[150px] w-[600px]'>
+          <PreImage src={data.section.image} layer={false} alt={data.section.name} objectFit='contain' />
         </div>
       </div>
     </section>

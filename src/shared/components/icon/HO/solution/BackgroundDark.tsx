@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BackgroundDark({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='310' height='420' viewBox='0 0 310 420' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='310' height='420' viewBox='0 0 310 420' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g clipPath='url(#clip0_2487_3095)'>
         <mask id='path-1-inside-1_2487_3095' fill='white'>
           <path d='M0 0H310V420H0V0Z' />

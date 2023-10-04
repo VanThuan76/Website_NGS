@@ -26,11 +26,11 @@ const PartnerSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`w-screen bg-[#fc5e03] dark:bg-[#7d4aeb] text-white mb-4 md:mb-12 lg:mb-24 px-4 md:px-24 ${className}`}
+      className={`mb-4 w-screen bg-[#fc5e03] px-4 text-white dark:bg-[#7d4aeb] md:mb-12 md:px-24 lg:mb-24 ${className}`}
     >
-      <div className='max-w-[1440px] mx-auto my-auto flex flex-col justify-start items-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
+      <div className='mx-auto my-auto flex max-w-[1440px] flex-col items-start justify-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
         <h1 className='mt-5 pt-10 text-3xl'>{title}</h1>
-        <div className='w-full mt-20 hidden md:flex items-start justify-between'>
+        <div className='mt-20 hidden w-full items-start justify-between md:flex'>
           <Swiper
             className='mySwiper'
             modules={[Autoplay, Pagination, Navigation]}
@@ -47,27 +47,27 @@ const PartnerSection = ({ title, data, className }: Props) => {
             {data.components.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <div
-                  className={`relative w-[156px] h-[106px] ${
+                  className={`relative h-[106px] w-[156px] ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-80'
                   } cursor-pointer`}
                   onClick={() => setSelectedPartner(item)}
                 >
-                  <PreImage src={item.image as string} layer={false} alt={item.title} objectFit="contain" />
+                  <PreImage src={item.image as string} layer={false} alt={item.title} objectFit='contain' />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className='w-full mt-5 hidden md:block'>
+        <div className='mt-5 hidden w-full md:block'>
           {data.components.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
                 <div
-                  className='w-full pt-5 flex flex-col lg:flex-row justify-between items-start gap-5'
+                  className='flex w-full flex-col items-start justify-between gap-5 pt-5 lg:flex-row'
                   style={{ borderTop: `1px solid ${colorBorder}` }}
                 >
-                  <div className='w-full flex flex-col justify-start items-start gap-3'>
-                    <p className='font-medium text-2xl'>{item.title}</p>
+                  <div className='flex w-full flex-col items-start justify-start gap-3'>
+                    <p className='text-2xl font-medium'>{item.title}</p>
                     <p className='text-sm'>{item.description}</p>
                   </div>
                   <p className='w-full lg:w-1/2'>{item.content}</p>

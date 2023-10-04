@@ -15,17 +15,17 @@ const OverviewDesignTwoSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className}  `}
+      className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
-      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start'>
+      <div className='mx-auto my-auto mt-10 grid w-full grid-cols-2 items-start justify-between'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 !text-left'
+          className='col-span-7 w-full grid-cols-7 !text-left'
         />
-        <div className='max-w-[360px] grid grid-cols-2 gap-14 justify-self-end align-self-end'>
+        <div className='align-self-end grid max-w-[360px] grid-cols-2 gap-14 justify-self-end'>
           {data.components.map((item, idx) => {
             let rotationAngle = (360 / data.components!.length) * idx;
             let scaleRevenue = '';
@@ -38,8 +38,8 @@ const OverviewDesignTwoSection = ({ title, data, className }: Props) => {
             }
             const transformStyle = `rotate(${rotationAngle}deg) ${scaleRevenue}`;
             return (
-              <div className='relative max-w-[220px] max-h-[200px] flex justify-center items-center pt-8' key={idx}>
-                <p className='w-full text-center z-30'>{item.content}</p>
+              <div className='relative flex max-h-[200px] max-w-[220px] items-center justify-center pt-8' key={idx}>
+                <p className='z-30 w-full text-center'>{item.content}</p>
                 <BorderStyleTwoLight className='absolute top-0 z-10' style={{ transform: transformStyle }} />
               </div>
             );

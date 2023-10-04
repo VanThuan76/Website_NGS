@@ -10,14 +10,14 @@ const ServiceDesignFourItem = ({ item }: Props) => {
   const [isClick, setIsClick] = useState(false);
   return (
     <div
-      className='w-full py-3 flex flex-col gap-5 min-h-[10px] lg:min-h-[60px] overflow-hidden cursor-pointer'
+      className='flex min-h-[10px] w-full cursor-pointer flex-col gap-5 overflow-hidden py-3 lg:min-h-[60px]'
       style={{ borderBottom: '1px solid #555' }}
       onClick={() => setIsClick(!isClick)}
     >
-      <div className='w-full flex justify-between items-start gap-4 md:gap-8'>
-        <h1 className={`text-md md:text-xl font-medium ${isClick ? 'text-orange-500' : ''}`}>{item.title}</h1>
+      <div className='flex w-full items-start justify-between gap-4 md:gap-8'>
+        <h1 className={`text-md font-medium md:text-xl ${isClick ? 'text-orange-500' : ''}`}>{item.title}</h1>
         <div
-          className={`flex justify-center items-center w-[30px] h-[30px] rounded-full ${
+          className={`flex h-[30px] w-[30px] items-center justify-center rounded-full ${
             isClick ? 'bg-[#FACFB3]' : 'bg-slate-300'
           }`}
         >
@@ -26,7 +26,7 @@ const ServiceDesignFourItem = ({ item }: Props) => {
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start'
+        className='flex-col items-start justify-center'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isClick ? 1 : 0, height: isClick ? 'auto' : 0 }}
         transition={{
@@ -35,8 +35,8 @@ const ServiceDesignFourItem = ({ item }: Props) => {
         }}
       >
         {/* <--Responsive */}
-        <p className='hidden md:block text-sm md:text-base font-normal'>{item.content}</p>
-        <p className='block md:hidden text-sm md:text-base font-normal'>
+        <p className='hidden text-sm font-normal md:block md:text-base'>{item.content}</p>
+        <p className='block text-sm font-normal md:hidden md:text-base'>
           {item.content.length > 100 ? `${item.content.substring(0, 80)}...` : item.content}
         </p>
         {/* Responsive--> */}

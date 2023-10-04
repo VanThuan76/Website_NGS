@@ -21,25 +21,29 @@ const HomeServiceSection = ({ title, data, className }: Props) => {
   }, [isInView]);
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section ref={ref} id={data.section.code} className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section
+      ref={ref}
+      id={data.section.code}
+      className={`max-w-[1440px] px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}`}
+    >
       <TitleSection
         title={title}
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
+        className='col-span-7 w-full grid-cols-7 !gap-8 !text-left md:col-span-5 md:grid-cols-12'
       />
-      <div className='w-full h-full mx-auto my-auto mt-5 md:mt-10 flex items-start justify-between lg:gap-10 xl:gap-10 overflow-hidden'>
+      <div className='mx-auto my-auto mt-5 flex h-full w-full items-start justify-between overflow-hidden md:mt-10 lg:gap-10 xl:gap-10'>
         <AnimatePresence>
-          <div className='w-full lg:w-1/2 flex flex-col justify-center items-center'>
+          <div className='flex w-full flex-col items-center justify-center lg:w-1/2'>
             {data &&
               data.components.map((item, idx) => {
                 return <HOServiceSection sectionControls={sectionControls} key={idx} item={item} idx={idx} />;
               })}
           </div>
         </AnimatePresence>
-        <div className='hidden md:block relative w-[676px] h-[676px] rounded-lg overflow-hidden'>
-          <PreImage src={data.section.image} layer={false} alt={data.section.name}/>
+        <div className='relative hidden h-[676px] w-[676px] overflow-hidden rounded-lg md:block'>
+          <PreImage src={data.section.image} layer={false} alt={data.section.name} />
         </div>
       </div>
     </section>

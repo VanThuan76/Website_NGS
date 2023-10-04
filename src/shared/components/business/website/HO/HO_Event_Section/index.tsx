@@ -12,7 +12,7 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 
 type Props = {
-  title: string
+  title: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
 };
@@ -25,39 +25,34 @@ const HomeEventSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`mx-auto flex w-full flex-col items-center justify-around px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}`}
     >
-      <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
+      <div className='mx-auto my-auto flex w-full max-w-[1440px] flex-col items-center justify-around gap-10'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section!.description as string}
           findMore={false}
-          className='w-full md:w-[80%] flex justify-between items-center gap-3'
+          className='flex w-full items-center justify-between gap-3 md:w-[80%]'
         />
-        <div className='w-full block lg:hidden'>
+        <div className='block w-full lg:hidden'>
           {/* @ts-ignore */}
-          <Swiper pagination={{
+          <Swiper
+            pagination={{
               dynamicBullets: true,
             }}
             modules={[Pagination]}
             className='shadow-lg'
           >
             {data.components.map((item, idx) => (
-              <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
-                <PreImage
-                  alt={item.title}
-                  src={item.image}
-                  width={650}
-                  height={600}
-                  className='rounded-lg'
-                />
+              <SwiperSlide className='flex h-full w-full flex-col rounded-lg shadow-lg' key={idx}>
+                <PreImage alt={item.title} src={item.image} width={650} height={600} className='rounded-lg' />
                 <HOEventContent event={item} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
+        <div className='hidden w-full grid-cols-6 items-end justify-between gap-5 lg:grid'>
           <AnimatePresence>
             {data.components.map((item, idx) => {
               return (
@@ -77,7 +72,7 @@ const HomeEventSection = ({ title, data, className }: Props) => {
                   }}
                   className={`${
                     item === selectedTab ? 'col-span-3' : 'col-span-1'
-                  } w-full flex-shrink-0 snap-start cursor-pointer`}
+                  } w-full flex-shrink-0 cursor-pointer snap-start`}
                   onClick={() => setSelectedTab(item)}
                   onMouseEnter={() => setSelectedTab(item)}
                 >
@@ -86,8 +81,14 @@ const HomeEventSection = ({ title, data, className }: Props) => {
                     className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
                   >
                     {item === selectedTab ? (
-                      <div className='w-full h-full grid grid-cols-1 justify-between items-start rounded-lg overflow-hidden'>
-                        <PreImage alt='Event' src={item.image} width={750} height={390} className='w-full h-full object-cover rounded-lg' />
+                      <div className='grid h-full w-full grid-cols-1 items-start justify-between overflow-hidden rounded-lg'>
+                        <PreImage
+                          alt='Event'
+                          src={item.image}
+                          width={750}
+                          height={390}
+                          className='h-full w-full rounded-lg object-cover'
+                        />
                         <HOEventContent className='relative' event={item} />
                       </div>
                     ) : (
@@ -100,7 +101,9 @@ const HomeEventSection = ({ title, data, className }: Props) => {
                       />
                     )}
                     {item !== selectedTab ? (
-                      <div className='absolute bottom-0 font-semibold text-sm text-center text-slate-100'>{item.description}</div>
+                      <div className='absolute bottom-0 text-center text-sm font-semibold text-slate-100'>
+                        {item.description}
+                      </div>
                     ) : (
                       ''
                     )}

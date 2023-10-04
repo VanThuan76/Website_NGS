@@ -9,7 +9,7 @@ export interface Props {
 }
 const ConnectUsForm = ({ connectUsData }: Props) => {
   const { theme } = useTheme();
-  const { toast } = useToast()
+  const { toast } = useToast();
   const [fullName, setFullName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
   const [selectedItems, setSelectedItems] = useState<string[]>([]);
@@ -27,22 +27,22 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
     console.log('Phone Number:', phoneNumber);
     console.log('Options:', selectedItems);
     toast({
-      variant: "success",
-      title: "Chúc mừng",
-      description: "Bạn đã kết nối với NGS thành công",
-    })
+      variant: 'success',
+      title: 'Chúc mừng',
+      description: 'Bạn đã kết nối với NGS thành công',
+    });
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start text-white'>
-      <h1 className='text-2xl lg:text-3xl font-thin lg:pl-8'>Bạn quan tâm đến...</h1>
-      <div className='mt-3 grid grid-cols-2 md:grid-cols-3 gap-3 lg:pl-8'>
+    <div className='flex w-full flex-col items-start justify-start text-white'>
+      <h1 className='text-2xl font-thin lg:pl-8 lg:text-3xl'>Bạn quan tâm đến...</h1>
+      <div className='mt-3 grid grid-cols-2 gap-3 md:grid-cols-3 lg:pl-8'>
         {connectUsData &&
           connectUsData.map((item, idx) => {
             const isSelected = selectedItems.includes(item);
             return (
               <div
                 key={idx}
-                className={`text-center p-2 rounded-full border cursor-pointer ${
+                className={`cursor-pointer rounded-full border p-2 text-center ${
                   isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
                 }`}
                 onClick={() => handleItemClick(item)}
@@ -52,10 +52,10 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
             );
           })}
       </div>
-      <div className='w-full flex justify-start items-start'>
-        <form onSubmit={handleSubmit} className='w-full p-2 md:p-4 lg:p-8 mt-4'>
-          <div className='w-full mb-4'>
-            <label htmlFor='fullName' className='block mb-1'>
+      <div className='flex w-full items-start justify-start'>
+        <form onSubmit={handleSubmit} className='mt-4 w-full p-2 md:p-4 lg:p-8'>
+          <div className='mb-4 w-full'>
+            <label htmlFor='fullName' className='mb-1 block'>
               Họ và tên của bạn?
             </label>
             <input
@@ -63,12 +63,12 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
               id='fullName'
               value={fullName}
               onChange={e => setFullName(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b focus:outline-none'
+              className='w-full border-b bg-transparent px-3 py-2 focus:outline-none'
               required
             />
           </div>
-          <div className='w-full mb-4'>
-            <label htmlFor='phoneNumber' className='block mb-1'>
+          <div className='mb-4 w-full'>
+            <label htmlFor='phoneNumber' className='mb-1 block'>
               Số điện thoại:
             </label>
             <input
@@ -76,14 +76,14 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
               id='phoneNumber'
               value={phoneNumber}
               onChange={e => setPhoneNumber(e.target.value)}
-              className='w-full bg-transparent px-3 py-2 border-b focus:outline-none'
+              className='w-full border-b bg-transparent px-3 py-2 focus:outline-none'
               required
             />
           </div>
 
           <button
             type='submit'
-            className={`bg-[#fff] text-orange-500 relative flex justify-between items-center gap-3 text-left pl-[16px] pr-[12px] py-[18px] cursor-pointer mt-3 hover:bg-[#efeeee] hover:ease-in-out hover:transition rounded-[12px]`}
+            className={`relative mt-3 flex cursor-pointer items-center justify-between gap-3 rounded-[12px] bg-[#fff] py-[18px] pl-[16px] pr-[12px] text-left text-orange-500 hover:bg-[#efeeee] hover:transition hover:ease-in-out`}
           >
             <p className='text-sm'>Kết nối với NGS</p>
             <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />

@@ -28,7 +28,7 @@ import { APP_SAVE_KEY } from '@/utils/constants';
 import { getCookie } from 'cookies-next';
 
 type Props = {
-  informationPage: IDetailPageById,
+  informationPage: IDetailPageById;
   sections: ISection[];
 };
 
@@ -49,14 +49,14 @@ export function EditPage({ informationPage, sections }: Props) {
       </div>
 
       <Separator className='my-6' />
-      <div className=' p-4 w-full rounded-lg space-y-2'>
-        <Tabs defaultValue='1' className='w-full h-full'>
+      <div className=' w-full space-y-2 rounded-lg p-4'>
+        <Tabs defaultValue='1' className='h-full w-full'>
           <TabsList className='grid w-max grid-cols-2'>
             <TabsTrigger value='1'>Hiện tại</TabsTrigger>
             <TabsTrigger value='2'>Request</TabsTrigger>
           </TabsList>
           <TabsContent value='1' className='space-y-4'>
-            <div className='space-x-2 flex justify-end items-center'>
+            <div className='flex items-center justify-end space-x-2'>
               <Select
                 value={activeSectionCode}
                 onValueChange={e => {
@@ -68,11 +68,12 @@ export function EditPage({ informationPage, sections }: Props) {
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    {sections && sections.map(item => (
-                      <SelectItem key={item.code} value={item.code}>
-                        {item.name}
-                      </SelectItem>
-                    ))}
+                    {sections &&
+                      sections.map(item => (
+                        <SelectItem key={item.code} value={item.code}>
+                          {item.name}
+                        </SelectItem>
+                      ))}
                   </SelectGroup>
                 </SelectContent>
               </Select>
@@ -97,7 +98,7 @@ export const getStaticProps: GetStaticProps = async ctx => {
   try {
     const detailPageResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/${id}`);
     const dataDetailPage = await detailPageResponse.json();
-    const informationPage = dataDetailPage.data
+    const informationPage = dataDetailPage.data;
     const sectionResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/section/get-by-page/${id}`);
     const dataSection = await sectionResponse.json();
     const sections = dataSection.data;

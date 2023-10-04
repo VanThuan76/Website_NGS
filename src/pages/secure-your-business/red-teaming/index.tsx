@@ -37,25 +37,25 @@ const ERPPage = () => {
         breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ kiểm thử đăng nhập hệ thống']}
         data={SYB_RT_Section1}
       />
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <OverviewDesignOneSection title='Tổng quan' data={SYB_RT_Section2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <OverviewDesignFourSection title='Tổng quan' data={SYB_RT_Section3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <ServiceDesignFiveSection title='Service' data={SYB_RT_Section4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_RT_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <PartnerDesignTwoSection data={SYB_RT_Section6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_RT_Section7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper  >
+      <ScrollRevealWrapper>
         <FormDesignOneSection title='Dùng thử' data={SYB_RT_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>

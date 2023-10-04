@@ -14,25 +14,23 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`w-screen pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden bg-[#051C2C] ${className} `}
+      className={`w-screen overflow-hidden bg-[#051C2C] px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className} `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
-        <div className='flex flex-col justify-center items-center gap-2 z-20 bg-[#051C2C]'>
-          <p className='mb-3 text-sm md:text-2xl text-orange-500'>{title}</p>
-          <h1 className='w-full flex flex-col text-2xl md:text-4xl font-medium text-white'>{data.section.name}</h1>
+      <div className='mx-auto my-auto mt-10 flex w-full flex-col items-center justify-between'>
+        <div className='z-20 flex flex-col items-center justify-center gap-2 bg-[#051C2C]'>
+          <p className='mb-3 text-sm text-orange-500 md:text-2xl'>{title}</p>
+          <h1 className='flex w-full flex-col text-2xl font-medium text-white md:text-4xl'>{data.section.name}</h1>
         </div>
-        <div className='w-full border-t border-orange-500 transform -translate-y-4 z-10'></div>
-        <div className='w-full mt-10 grid grid-cols-6 gap-5'>
+        <div className='z-10 w-full -translate-y-4 transform border-t border-orange-500'></div>
+        <div className='mt-10 grid w-full grid-cols-6 gap-5'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className={`w-full mx-auto pr-5 ${
-                data.components &&
-                data.components?.length - 1 !== idx &&
-                'border-clientStories-designTwo-section'
+              className={`mx-auto w-full pr-5 ${
+                data.components && data.components?.length - 1 !== idx && 'border-clientStories-designTwo-section'
               }`}
             >
-              <div className='relative h-[200px] rounded-lg cursor-pointer overflow-hidden'>
+              <div className='relative h-[200px] cursor-pointer overflow-hidden rounded-lg'>
                 <PreImage
                   src={item.image as string}
                   layer={false}

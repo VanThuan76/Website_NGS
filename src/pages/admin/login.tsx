@@ -1,4 +1,3 @@
-
 import InputPassword from '@/components/common/form/InputPassword';
 import InputText from '@/components/common/form/InputText';
 import { Button } from '@/components/common/ui/button';
@@ -31,8 +30,8 @@ const Login = () => {
   return (
     <>
       <div className='relative h-full flex-col items-center justify-center md:grid lg:max-w-none lg:grid-cols-2 lg:px-0'>
-        <div className='relative md:h-full flex-col bg-muted p-10 text-white dark:border-r lg:flex'>
-          <div className='absolute inset-0 bg-zinc-900 login-background' />
+        <div className='relative flex-col bg-muted p-10 text-white dark:border-r md:h-full lg:flex'>
+          <div className='login-background absolute inset-0 bg-zinc-900' />
           <div className='relative z-20 flex items-center text-lg font-medium'>
             <Image src='/logo.svg' width={48} height={48} alt='Logo' />
             &nbsp; {process.env.NEXT_PUBLIC_APP_NAME}
@@ -55,7 +54,7 @@ const Login = () => {
         </div>
         <div className='lg:p-8'>
           <div className='mx-auto flex w-full flex-col justify-center space-y-6 sm:w-[350px]'>
-            <Tabs defaultValue='merchant' className='w-[350px] mx-auto mt-4'>
+            <Tabs defaultValue='merchant' className='mx-auto mt-4 w-[350px]'>
               {/* Merchant Login */}
               <TabsContent value='merchant'>
                 <Card className='w-[350px]'>
@@ -74,14 +73,14 @@ const Login = () => {
                             label='Mật khẩu'
                             inputProps={{ type: 'password' }}
                           />
-                          <div className='flex flex-col items-start my-2'>
-                            <Button variant='link' type='button' disabled className='p-0 h-auto'>
+                          <div className='my-2 flex flex-col items-start'>
+                            <Button variant='link' type='button' disabled className='h-auto p-0'>
                               Quên mật khẩu?
                             </Button>
                           </div>
                         </div>
                         <div className='flex justify-between'>
-                          <Button className='w-full flex gap-2' type='submit'>
+                          <Button className='flex w-full gap-2' type='submit'>
                             {doLogin.isLoading && <Loader2 size={16} className='animate-spin' />} Đăng nhập
                           </Button>
                         </div>

@@ -1,56 +1,48 @@
 import { Table } from '@tanstack/react-table';
-import React from 'react'
+import React from 'react';
 import { DropdownMenu, DropdownMenuCheckboxItem, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu';
 import { Button } from '../ui/button';
-import {ChevronDown, EyeIcon, SettingsIcon, TableIcon} from 'lucide-react';
+import { ChevronDown, EyeIcon, SettingsIcon, TableIcon } from 'lucide-react';
 
 interface DataTableHeaderProps<TData> {
-    table: Table<TData>;
+  table: Table<TData>;
 }
 
-export default function DataTableHeader<TData>({
-    table,
-}: DataTableHeaderProps<TData>) {
-    return (
-        <div className="flex items-center py-4 gap-1 flex-wrap justify-end">
-            {/* TODO any action here */}
-            {
-                table.getFilteredSelectedRowModel().rows.length > 0 && (
-                    <div className="flex-1 text-sm text-muted-foreground mr-2">
-                        {table.getFilteredSelectedRowModel().rows.length} of{' '}
-                        {table.getFilteredRowModel().rows.length} row(s) selected.
-                    </div>
-                )
-            }
-            <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                    <Button variant="outline" className="ml-auto border ">
-                        <SettingsIcon/> <ChevronDown className="ml-2 h-4 w-4 "  />
-                    </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end">
-                    {table
-                        .getAllColumns()
-                        .filter(
-                            (column) => column.getCanHide()
-                        )
-                        .map((column) => {
-                            return (
-                                <DropdownMenuCheckboxItem
-                                    key={column.id}
-                                    className="capitalize"
-                                    checked={column.getIsVisible()}
-                                    onCheckedChange={(value) =>
-                                        column.toggleVisibility(!!value)
-                                    }
-                                >
-                                    {column.id}
-                                </DropdownMenuCheckboxItem>
-                            )
-                        })}
-                </DropdownMenuContent>
-            </DropdownMenu>
-            {/* <DropdownMenu >
+export default function DataTableHeader<TData>({ table }: DataTableHeaderProps<TData>) {
+  return (
+    <div className='flex flex-wrap items-center justify-end gap-1 py-4'>
+      {/* TODO any action here */}
+      {table.getFilteredSelectedRowModel().rows.length > 0 && (
+        <div className='mr-2 flex-1 text-sm text-muted-foreground'>
+          {table.getFilteredSelectedRowModel().rows.length} of {table.getFilteredRowModel().rows.length} row(s)
+          selected.
+        </div>
+      )}
+      <DropdownMenu>
+        <DropdownMenuTrigger asChild>
+          <Button variant='outline' className='ml-auto border '>
+            <SettingsIcon /> <ChevronDown className='ml-2 h-4 w-4 ' />
+          </Button>
+        </DropdownMenuTrigger>
+        <DropdownMenuContent align='end'>
+          {table
+            .getAllColumns()
+            .filter(column => column.getCanHide())
+            .map(column => {
+              return (
+                <DropdownMenuCheckboxItem
+                  key={column.id}
+                  className='capitalize'
+                  checked={column.getIsVisible()}
+                  onCheckedChange={value => column.toggleVisibility(!!value)}
+                >
+                  {column.id}
+                </DropdownMenuCheckboxItem>
+              );
+            })}
+        </DropdownMenuContent>
+      </DropdownMenu>
+      {/* <DropdownMenu >
                     <DropdownMenuTrigger asChild>
                         <Button className="ml-auto">
                             <FilterIcon />Lọc
@@ -140,9 +132,6 @@ export default function DataTableHeader<TData>({
                         </div>
                     </DropdownMenuContent>
                 </DropdownMenu> */}
-
-        </div>
-
-
-    )
+    </div>
+  );
 }

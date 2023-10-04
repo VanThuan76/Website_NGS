@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BackgroundAboutUs({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='1010' height='849' viewBox='0 0 1010 849' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='1010' height='849' viewBox='0 0 1010 849' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g opacity='0.4' filter='url(#filter0_f_3933_8472)'>
         <ellipse
           cx='418.78'

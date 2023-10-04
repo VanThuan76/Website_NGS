@@ -16,21 +16,21 @@ const ESClientSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden ${className} `}
+      className={`mx-auto my-auto w-screen overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className} `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center'>
+      <div className='mx-auto mt-10 flex max-w-[1440px] flex-col items-center justify-between'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='flex flex-col justify-start items-start gap-2 z-20 bg-white'
+          className='z-20 flex flex-col items-start justify-start gap-2 bg-white'
         />
-       <div className='w-full grid grid-cols-1 gap-12'>
-          <ESClientItem title={data.components[0].title} data={data.components.slice(0,6)}/>
-          <ESClientItem title={data.components[6].title} data={data.components.slice(6,12)}/>
-          <ESClientItem title={data.components[12].title} data={data.components.slice(12,24)}/>
-       </div>
+        <div className='grid w-full grid-cols-1 gap-12'>
+          <ESClientItem title={data.components[0].title} data={data.components.slice(0, 6)} />
+          <ESClientItem title={data.components[6].title} data={data.components.slice(6, 12)} />
+          <ESClientItem title={data.components[12].title} data={data.components.slice(12, 24)} />
+        </div>
       </div>
     </section>
   );

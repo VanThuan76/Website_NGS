@@ -36,32 +36,32 @@ const Header = () => {
       initial={{ height: '85px' }}
       animate={{ height: isScrolled ? '80px' : '85px' }}
       transition={{ duration: 0.3 }}
-      className={`w-full top-0 z-50 flex justify-between items-center gap-5 transition ${
+      className={`top-0 z-50 flex w-full items-center justify-between gap-5 transition ${
         isScrolled
-          ? 'sticky light:text-black border-b-[1px] border-opacity-50 border-black-300 duration-500 ease-in-out bg-[#fff] dark:bg-[#141523]'
-          : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
+          ? 'light:text-black border-black-300 sticky border-b-[1px] border-opacity-50 bg-[#fff] duration-500 ease-in-out dark:bg-[#141523]'
+          : 'sticky bg-opacity-100 duration-500 ease-in-out dark:bg-[#141523]'
       }`}
     >
-      <div className='w-full flex justify-around items-center'>
+      <div className='flex w-full items-center justify-around'>
         <div
-          className='absolute w-[250px] h-[150px] -left-16 md:left-5 flex justify-center items-center gap-2 z-20 cursor-pointer'
+          className='absolute -left-16 z-20 flex h-[150px] w-[250px] cursor-pointer items-center justify-center gap-2 md:left-5'
           onClick={() => router.push('/')}
         >
           <PreImage src='/logo.png' alt='Logo' layer={false} />
         </div>
-        <div className='relative hidden lg:block z-10 text-[#1C1C1C]'>
+        <div className='relative z-10 hidden text-[#1C1C1C] lg:block'>
           <NavigationMenuMain
-            className={`w-full top-0 z-50 gap-5 transition ${
+            className={`top-0 z-50 w-full gap-5 transition ${
               isScrolled
-                ? 'sticky light:text-black border-opacity-50 border-black-300 duration-500 ease-in-out bg-[#fff] dark:bg-[#141523]'
-                : 'sticky dark:bg-[#141523] bg-opacity-100 duration-500 ease-in-out'
+                ? 'light:text-black border-black-300 sticky border-opacity-50 bg-[#fff] duration-500 ease-in-out dark:bg-[#141523]'
+                : 'sticky bg-opacity-100 duration-500 ease-in-out dark:bg-[#141523]'
             }`}
             fakeMenu={fakeMenu}
           />
         </div>
       </div>
-      <div className='absolute right-0 md:right-5 flex justify-center items-center gap-2 z-20'>
-        <div className='flex gap-8 items-center'>
+      <div className='absolute right-0 z-20 flex items-center justify-center gap-2 md:right-5'>
+        <div className='flex items-center gap-8'>
           {/* <div className='hidden lg:flex gap-8 items-center'>
             <ThemeModeToggle />
             <LanguageSwitch />
@@ -71,13 +71,13 @@ const Header = () => {
               <SheetTrigger asChild>
                 <Menu color='#FC5E03' className='cursor-pointer' />
               </SheetTrigger>
-              <SheetContent className='w-full h-full overflow-y-scroll' side={'top'}>
-               <NavigationMenuMainResponsive fakeMenu={fakeMenu} />
+              <SheetContent className='h-full w-full overflow-y-scroll' side={'top'}>
+                <NavigationMenuMainResponsive fakeMenu={fakeMenu} />
               </SheetContent>
             </Sheet>
           </div>
           <UseLinkRedirect sectionCode='ConnectUs'>
-            <button className='dark:text-white font-bold py-2 px-4 rounded cursor-pointer hidden lg:block'>
+            <button className='hidden cursor-pointer rounded px-4 py-2 font-bold dark:text-white lg:block'>
               Liên hệ
             </button>
           </UseLinkRedirect>

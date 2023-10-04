@@ -1,3 +1,3 @@
 export const priceData = {
-    image: "/sectionPrice.svg"
-}
+  image: '/sectionPrice.svg',
+};

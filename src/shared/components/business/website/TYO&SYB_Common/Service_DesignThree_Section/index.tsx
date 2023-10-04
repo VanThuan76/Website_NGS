@@ -11,41 +11,44 @@ type Props = {
   sub?: string;
   data: Partial<IBaseSectionComponent>;
   className?: string;
-  sectionCodeLink?: string
+  sectionCodeLink?: string;
 };
 
-const ServiceDesignThreeSection = ({ title,sub, data, className, sectionCodeLink }: Props) => {
+const ServiceDesignThreeSection = ({ title, sub, data, className, sectionCodeLink }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`max-w-[1440px] relative pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
-      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-2 justify-between items-start gap-10'>
-        <div className='w-full max-h-[850px] pr-4 flex flex-col justify-start items-start gap-10 overflow-y-scroll service-designthree-section-with-scrollbar pl-12'>
+    <section
+      id={data.section.code}
+      className={`relative max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}
+    >
+      <div className='mx-auto my-auto mt-10 grid w-full grid-cols-2 items-start justify-between gap-10'>
+        <div className='service-designthree-section-with-scrollbar flex max-h-[850px] w-full flex-col items-start justify-start gap-10 overflow-y-scroll pl-12 pr-4'>
           {data.components.map((item, idx) => {
             return (
-              <div key={idx} className='w-full flex-shrink-0 snap-start cursor-pointer'>
+              <div key={idx} className='w-full flex-shrink-0 cursor-pointer snap-start'>
                 <ServiceDesignThreeItem data={item} />
               </div>
             );
           })}
         </div>
-        <div className='w-full flex flex-col justify-start items-end'>
+        <div className='flex w-full flex-col items-end justify-start'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 justify-end items-end text-right'
+            className='col-span-7 w-full grid-cols-7 items-end justify-end text-right'
           />
-          <div className='mt-10 flex flex-col justify-end items-end gap-3'>
-            <p className='text-right'>{sub ? sub : ""}</p>
+          <div className='mt-10 flex flex-col items-end justify-end gap-3'>
+            <p className='text-right'>{sub ? sub : ''}</p>
             <UseLinkRedirect sectionCode={'FormCTA'}>
               <BtnCommon title='Kết nối với NGS' cls='border border-orange-500' />
             </UseLinkRedirect>
           </div>
         </div>
       </div>
-      <BackgroundServiceDesignThreeSection className='absolute left-0 top-0 w-full h-full -z-10' />
+      <BackgroundServiceDesignThreeSection className='absolute left-0 top-0 -z-10 h-full w-full' />
     </section>
   );
 };

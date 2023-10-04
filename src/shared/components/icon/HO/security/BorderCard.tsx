@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BorderCard({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='311' height='311' viewBox='0 0 311 311' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='311' height='311' viewBox='0 0 311 311' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <line x1='0.5' y1='267' x2='0.49999' y2='44.856' stroke='url(#paint0_linear_4956_26211)' />
       <line x1='45' y1='0.5' x2='267' y2='0.5' stroke='url(#paint1_linear_4956_26211)' />
       <line x1='45' y1='310.5' x2='267' y2='310.5' stroke='url(#paint2_linear_4956_26211)' />

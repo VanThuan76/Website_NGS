@@ -17,13 +17,13 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`relative mb-10 w-full${className}`}>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
-        <div className='relative w-full flex justify-between items-center mx-auto'>
-          <div className='absolute mx-auto top-1/2 left-1/4 transform -translate-x-[20%] md:-translate-x-[30%] -translate-y-1/2 w-[90%] md:w-[60%] flex flex-col justify-start items-start gap-3 z-30 text-white'>
-            <div className='flex flex-col justify-start items-start gap-3'>
-              <div className='hidden md:flex mb-4 justify-center items-center gap-3'>
+      <div className='snap-x-mandatory scrollbar-none light:text-white relative flex max-h-[600px] overflow-hidden'>
+        <div className='relative mx-auto flex w-full items-center justify-between'>
+          <div className='absolute left-1/4 top-1/2 z-30 mx-auto flex w-[90%] -translate-x-[20%] -translate-y-1/2 transform flex-col items-start justify-start gap-3 text-white md:w-[60%] md:-translate-x-[30%]'>
+            <div className='flex flex-col items-start justify-start gap-3'>
+              <div className='mb-4 hidden items-center justify-center gap-3 md:flex'>
                 {breadcrumb.map((item: string, idx: number) => (
-                  <div key={idx} className='flex justify-center items-center gap-2'>
+                  <div key={idx} className='flex items-center justify-center gap-2'>
                     <p className={`text-sm ${idx === breadcrumb.length - 1 ? 'text-white' : 'text-[#FC5E03]'}`}>
                       {item}
                     </p>
@@ -31,16 +31,16 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
                   </div>
                 ))}
               </div>
-              <div className='w-full flex flex-col justify-start items-start gap-4'>
+              <div className='flex w-full flex-col items-start justify-start gap-4'>
                 {data.section.name.split('//').map((word, idx) => (
-                  <h1 className='text-2xl md:text-5xl font-semibold leading-6' key={idx}>
+                  <h1 className='text-2xl font-semibold leading-6 md:text-5xl' key={idx}>
                     {word}
                   </h1>
                 ))}
               </div>
-              <div className='mt-5 w-full flex flex-col justify-start items-start'>
+              <div className='mt-5 flex w-full flex-col items-start justify-start'>
                 {data.section.description.split('//').map((word, idx) => (
-                  <p className='text-sm md:text-lg font-normal leading-5 md:leading-7' key={idx}>
+                  <p className='text-sm font-normal leading-5 md:text-lg md:leading-7' key={idx}>
                     {word}
                   </p>
                 ))}
@@ -55,7 +55,12 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
               currentBreakPoint === 'sm' ? 'h-[454px]' : 'h-[864px]'
             } relative overflow-hidden`}
           >
-            <PreImage src={data.section.image as string} layer={true} alt={data.section.name as string} objectPosition="center" />
+            <PreImage
+              src={data.section.image as string}
+              layer={true}
+              alt={data.section.name as string}
+              objectPosition='center'
+            />
           </div>
         </div>
       </div>

@@ -4,7 +4,17 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import { TYO_CA_Section2, TYO_CA_Section3, TYO_CA_Section4, TYO_CA_Section5, TYO_CA_Section6, TYO_CA_Section7, TYO_CA_Section8, TYO_CA_Section9, TYO_CB_Section1 } from '@/mocks/website/TYO/tyo';
+import {
+  TYO_CA_Section2,
+  TYO_CA_Section3,
+  TYO_CA_Section4,
+  TYO_CA_Section5,
+  TYO_CA_Section6,
+  TYO_CA_Section7,
+  TYO_CA_Section8,
+  TYO_CA_Section9,
+  TYO_CB_Section1,
+} from '@/mocks/website/TYO/tyo';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
@@ -18,7 +28,6 @@ const ScrollRevealWrapper = dynamic(() => import('@/components/common/customizat
   ssr: false,
 });
 
-
 const CCPage = () => {
   return (
     <React.Fragment>
@@ -30,7 +39,8 @@ const CCPage = () => {
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
           breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Ngành Hàng không']}
-          data={TYO_CB_Section1} />
+          data={TYO_CB_Section1}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignOneSection title='Hệ thống CNTT lõi Ngành Hàng không' data={TYO_CA_Section2} />
@@ -45,7 +55,7 @@ const CCPage = () => {
         <ServiceDesignOneSection title='' data={TYO_CA_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignThreeSection title='Tại sao chọn NGS' data={TYO_CA_Section6}/>
+        <WhyUsDesignThreeSection title='Tại sao chọn NGS' data={TYO_CA_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <PartnerDesignTwoSection title='' data={TYO_CA_Section7} />
@@ -56,7 +66,6 @@ const CCPage = () => {
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_CA_Section9} />
       </ScrollRevealWrapper>
-
     </React.Fragment>
   );
 };

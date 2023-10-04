@@ -7,10 +7,10 @@ type Props = {
 };
 const ServiceDesignOneItem = ({ data, titleItem }: Props) => {
   return (
-    <div className='w-full h-full mt-6 flex flex-col justify-start items-start'>
-      <p className='text-sm md:text-2xl text-orange-500'>{titleItem}</p>
+    <div className='mt-6 flex h-full w-full flex-col items-start justify-start'>
+      <p className='text-sm text-orange-500 md:text-2xl'>{titleItem}</p>
       {data.map((item, idx) => (
-        <div key={idx} className='w-full flex justify-between items-center pt-6 pb-4 border-b border-slate-300'>
+        <div key={idx} className='flex w-full items-center justify-between border-b border-slate-300 pb-4 pt-6'>
           <p className='text-base md:text-lg'>{item.title}</p>
         </div>
       ))}

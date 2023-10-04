@@ -1,9 +1,9 @@
 export interface ISection {
-    id: number;
-    name: string;
-    code: string;
-    image: string;
-    description: string;
+  id: number;
+  name: string;
+  code: string;
+  image: string;
+  description: string;
 }
 export interface ISectionCreate {
   code: string;

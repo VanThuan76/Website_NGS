@@ -20,8 +20,15 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, sectionCode }) => {
   }, [isInView]);
 
   return (
-    <section ref={ref} className='relative overflow-hidden' style={style} data-testid='sectionParent'>
-      <ScrollLink to={sectionCode || ''} spy={true} smooth={true} duration={500}>
+    <section
+      ref={ref}
+      className='relative mx-auto flex w-full flex-col items-center justify-center overflow-hidden'
+      style={style}
+      data-testid='section-parent'
+    >
+      {children}
+
+      {/* <ScrollLink to={sectionCode || ''} spy={true} smooth={true} duration={500}>
         <motion.div
           variants={{
             hidden: { opacity: 0, y: 75 },
@@ -30,10 +37,8 @@ const ScrollRevealWrapper: FC<Props> = ({ children, style, sectionCode }) => {
           initial='hidden'
           animate={mainControls}
           transition={{ duration: 0.5, delay: 0.25 }}
-        >
-          {children}
-        </motion.div>
-      </ScrollLink>
+        ></motion.div>
+      </ScrollLink> */}
     </section>
   );
 };

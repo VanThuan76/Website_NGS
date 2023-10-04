@@ -23,29 +23,29 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
   return (
     <section
       id='Event'
-      className={`w-full flex flex-col justify-around items-center mx-auto pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`mx-auto flex w-full flex-col items-center justify-around px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}`}
     >
-      <div className='w-full mx-auto my-auto flex flex-col justify-around items-center gap-10'>
+      <div className='mx-auto my-auto flex w-full flex-col items-center justify-around gap-10'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={false}
-          className='w-full grid-cols-7 col-span-7 text-center'
+          className='col-span-7 w-full grid-cols-7 text-center'
         />
-        <div className='w-full block lg:hidden'>
+        <div className='block w-full lg:hidden'>
           {/* @ts-ignore */}
           <Swiper pagination={{ dynamicBullets: true }} modules={[Pagination]} className='shadow-lg'>
             {data.components.map((item, idx) => (
-              <SwiperSlide className='w-full h-full flex flex-col rounded-lg shadow-lg' key={idx}>
-                <div className='relative w-[650px] h-[600px] rounded-lg overflow-hidden'></div>
+              <SwiperSlide className='flex h-full w-full flex-col rounded-lg shadow-lg' key={idx}>
+                <div className='relative h-[600px] w-[650px] overflow-hidden rounded-lg'></div>
                 <PreImage alt={item.title} src={item.image} />
                 <ServiceDesignTwoItem data={item} />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className='w-full lg:grid grid-cols-6 justify-between items-end gap-5 hidden'>
+        <div className='hidden w-full grid-cols-6 items-end justify-between gap-5 lg:grid'>
           <AnimatePresence>
             {data.components.map((item, idx) => {
               return (
@@ -65,7 +65,7 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                   }}
                   className={`${
                     item === selectedTab ? 'col-span-3' : 'col-span-1'
-                  } w-full flex-shrink-0 snap-start cursor-pointer`}
+                  } w-full flex-shrink-0 cursor-pointer snap-start`}
                   onClick={() => setSelectedTab(item)}
                 >
                   <motion.div
@@ -73,18 +73,18 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                     className={`${item === selectedTab ? 'col-span-3' : 'col-span-1'} w-full shadow-lg`}
                   >
                     {item === selectedTab ? (
-                      <div className='w-full h-[600px] flex flex-col rounded-lg overflow-hidden border border-orange-400'>
+                      <div className='flex h-[600px] w-full flex-col overflow-hidden rounded-lg border border-orange-400'>
                         <PreImage alt={item.title} src={item.image} />
                         <ServiceDesignTwoItem data={item} />
                       </div>
                     ) : (
-                      <div className='w-full h-[600px] rounded-lg overflow-hidden'>
+                      <div className='h-[600px] w-full overflow-hidden rounded-lg'>
                         <PreImage alt={item.title} src={item.image} />
                       </div>
                     )}
-                    <div className='absolute left-5 top-5 text-xl md:text-2xl text-white'>0{idx + 1}</div>
+                    <div className='absolute left-5 top-5 text-xl text-white md:text-2xl'>0{idx + 1}</div>
                     {item !== selectedTab ? (
-                      <div className='absolute left-1/2 bottom-0 transform -translate-x-1/2 text-sm text-center text-white'>
+                      <div className='absolute bottom-0 left-1/2 -translate-x-1/2 transform text-center text-sm text-white'>
                         {item.title}
                       </div>
                     ) : (

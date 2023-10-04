@@ -19,7 +19,7 @@ interface Props {
 const HomeBannerSection = ({ data }: Props) => {
   const progressLines = useRef<Array<RefObject<HTMLDivElement>>>([]);
   const ref = useRef<HTMLDivElement>(null);
-  const currentBreakPoint = useBreakPoint()
+  const currentBreakPoint = useBreakPoint();
   const [isActived, setIsActived] = useState<number>(NaN);
   const [selectedTab, setSelectedTab] = useState<Partial<SectionData> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
@@ -46,8 +46,8 @@ const HomeBannerSection = ({ data }: Props) => {
   };
   if (!selectedTab) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data && data.section && data.section.code} className='w-screen pb-10 block'>
-      <div className='snap-x-mandatory scrollbar-none relative max-h-[600px] flex overflow-hidden light:text-white'>
+    <section id={data && data.section && data.section.code} className='block w-screen pb-10'>
+      <div className='snap-x-mandatory scrollbar-none light:text-white relative flex max-h-[600px] overflow-hidden'>
         <Swiper
           spaceBetween={30}
           effect={'fade'}
@@ -64,33 +64,33 @@ const HomeBannerSection = ({ data }: Props) => {
         >
           {data.components!.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className='relative w-full flex justify-between items-center mx-auto'>
+              <div className='relative mx-auto flex w-full items-center justify-between'>
                 <HOBannerContent selectedTab={item} />
-                <div className={`mx-auto w-screen ${currentBreakPoint === "sm" ? "h-[454px]" : "h-[864px]"} relative overflow-hidden`}>
-                  <PreImage
-                    src={item.image as string}
-                    layer={false}
-                    alt={item.title as string}
-                  />
+                <div
+                  className={`mx-auto w-screen ${
+                    currentBreakPoint === 'sm' ? 'h-[454px]' : 'h-[864px]'
+                  } relative overflow-hidden`}
+                >
+                  <PreImage src={item.image as string} layer={false} alt={item.title as string} />
                 </div>
               </div>
             </SwiperSlide>
           ))}
         </Swiper>
         <UseLinkRedirect sectionCode='PG001SE00002'>
-          <div className='animate-bounce absolute right-10 bottom-10 z-30 hidden lg:block'>
+          <div className='absolute bottom-10 right-10 z-30 hidden animate-bounce lg:block'>
             <MouseScroll />
           </div>
         </UseLinkRedirect>
-        <InitBasicAnimation className='absolute bottom-10 pl-4 lg:pl-20 z-40'>
-          <div className='relative w-full flex items-center justify-between gap-3'>
-            <ul className='hidden md:flex items-center justify-between gap-3'>
+        <InitBasicAnimation className='absolute bottom-10 z-40 pl-4 lg:pl-20'>
+          <div className='relative flex w-full items-center justify-between gap-3'>
+            <ul className='hidden items-center justify-between gap-3 md:flex'>
               {data.components!.map((item, idx) => {
                 progressLines.current.push(ref);
                 return (
                   <li
                     key={idx}
-                    className={`relative custom-list-item px-4 pb-3 text-sm font-normal ${
+                    className={`custom-list-item relative px-4 pb-3 text-sm font-normal ${
                       isActived === idx ? 'text-slate-50' : 'text-slate-300'
                     } cursor-pointer`}
                   >

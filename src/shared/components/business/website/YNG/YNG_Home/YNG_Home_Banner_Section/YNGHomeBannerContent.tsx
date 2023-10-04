@@ -3,7 +3,6 @@ import InitBasicAnimation from '@/components/common/customization/InitBasicAnima
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import { motion } from 'framer-motion';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
-import { SectionData } from 'src/shared/schemas/typedef/ISectionData';
 
 const container = {
   hidden: { opacity: 0 },
@@ -62,23 +61,27 @@ interface Props {
 
 const YNGHomeBannerContent = ({ title, selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='min-h-screen pt-16 px-12 w-full flex flex-col justify-start items-start gap-10 leading-[90%] z-40'>
+    <InitBasicAnimation className='z-40 flex w-full flex-col items-start justify-start gap-10 px-4 pb-4 pt-16 leading-[90%] md:px-12'>
       <div className='text-left text-3xl lg:text-6xl'>
         <motion.div
-          className='flex flex-col justify-start items-start'
+          className='flex flex-col items-start justify-start'
           variants={container}
           initial='hidden'
           animate='visible'
         >
-          <p className='text-base !text-[#FC5E03]'>{title}</p>
+          <p className='text-sm !text-[#FC5E03] md:text-base'>{title}</p>
           {selectedTab.description?.split('//').map((word, idx) => (
-            <motion.span variants={child} className='text-5xl font-semibold leading-[56px]' key={idx}>
+            <motion.span
+              variants={child}
+              className='text-2xl font-medium leading-8 md:text-5xl md:font-semibold md:leading-[56px]'
+              key={idx}
+            >
               {word}
             </motion.span>
           ))}
         </motion.div>
       </div>
-      <motion.div className='w-[607px] text-xl font-medium leading-7'>
+      <motion.div className='w-full text-xl font-medium leading-7 md:w-[80%]'>
         {selectedTab ? selectedTab.content : ''}
       </motion.div>
       <UseLinkRedirect sectionCode='FormYNG'>

@@ -9,28 +9,27 @@ import useMediaModal from '@/hooks/useMediaModal';
 
 interface Props {
   data: IImageMedia;
-  viewMode: 'mutation' | 'view'
+  viewMode: 'mutation' | 'view';
 }
 const CardImage = ({ data, viewMode }: Props) => {
-  const { currentFolder, setCurrentFolder, chosenImage, setChosenImage, setSearchKey, searchKey } = useMediaModal()
+  const { currentFolder, setCurrentFolder, chosenImage, setChosenImage, setSearchKey, searchKey } = useMediaModal();
 
   return (
     <div
-      className='group relative flex cursor-pointer flex-col items-start justify-start gap-3 rounded-md  p-2 lg:p-4 shadow-lg bg-primary-foreground max-h-[440px] lg:max-h-[600px] overflow-y-auto'
+      className='group relative flex max-h-[440px] cursor-pointer flex-col items-start justify-start gap-3  overflow-y-auto rounded-md bg-primary-foreground p-2 shadow-lg lg:max-h-[600px] lg:p-4'
       onClick={() => setChosenImage(data)}
     >
-      <div className='flex justify-center w-full'>
-
+      <div className='flex w-full justify-center'>
         <ImageCommon width={88} height={88} src={data.url} alt={`Image ${data.title}`} className='w-full rounded-md' />
       </div>
       <div className='flex w-full items-center justify-between'>
-        <div className='hidden md:flex lg:flex xl:flex flex-col items-start justify-start'>
+        <div className='hidden flex-col items-start justify-start md:flex lg:flex xl:flex'>
           <p>{data.title}</p>
           <p className='text-sm font-thin'>{data.size}</p>
         </div>
         <Badge>IMAGE</Badge>
       </div>
-      {viewMode === 'mutation' &&
+      {viewMode === 'mutation' && (
         <TriggerDialogForm
           className='min-w-[1080px]'
           titleDialog='Chỉnh sửa ảnh'
@@ -38,7 +37,7 @@ const CardImage = ({ data, viewMode }: Props) => {
             <EditIcon
               width={30}
               height={30}
-              className={`absolute right-5 top-5 cursor-pointer rounded-md bg-white group-hover:block hidden`}
+              className={`absolute right-5 top-5 hidden cursor-pointer rounded-md bg-white group-hover:block`}
             />
           }
           form={
@@ -49,7 +48,8 @@ const CardImage = ({ data, viewMode }: Props) => {
               }}
             />
           }
-        />}
+        />
+      )}
     </div>
   );
 };

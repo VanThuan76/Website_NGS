@@ -10,7 +10,7 @@ const TeamDesignOneItem = ({ content, className }: Props) => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className={`w-full h-full flex flex-col justify-between items-start p-3 cursor-pointer overflow-hidden border-collapse ${className}`}
+      className={`flex h-full w-full border-collapse cursor-pointer flex-col items-start justify-between overflow-hidden p-3 ${className}`}
     >
       <p className='text-sm md:text-base'>{content.length > 300 ? `${content.substring(0, 250)}...` : content}</p>
     </motion.div>

@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
 export interface IPage {
-    id: React.Key,
-    name: string;
-    active?: boolean
+  id: React.Key;
+  name: string;
+  active?: boolean;
 }
 export interface IDetailPageByCompany {
   id: number;
@@ -14,30 +14,29 @@ export interface IDetailPageByCompany {
   views: number;
 }
 interface Company {
-    active: boolean;
-    isDelete: boolean;
-    createdDate: string;
-    updatedDate: string;
-    id: number;
-    name: string;
-    phone: string;
-    taxCode?: any;
-    address: string;
-    issuedDate: string;
-    career: string;
-    legalRepresentation: string;
+  active: boolean;
+  isDelete: boolean;
+  createdDate: string;
+  updatedDate: string;
+  id: number;
+  name: string;
+  phone: string;
+  taxCode?: any;
+  address: string;
+  issuedDate: string;
+  career: string;
+  legalRepresentation: string;
 }
 export interface IDetailPageById {
-    active: boolean;
-    isDelete: boolean;
-    createdDate: string;
-    updatedDate: string;
-    id: number;
-    company: Company;
-    name: string;
-    seo: string;
-    description: string;
-    image?: any;
-    views: number;
+  active: boolean;
+  isDelete: boolean;
+  createdDate: string;
+  updatedDate: string;
+  id: number;
+  company: Company;
+  name: string;
+  seo: string;
+  description: string;
+  image?: any;
+  views: number;
 }
-

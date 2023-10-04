@@ -18,17 +18,20 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
   });
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section id={data.section.code} className={`w-screen bg-[#FC5E03] dark:bg-[#7d4aeb] text-white px-4 md:px-24 ${className}`}>
-      <div className='max-w-[1440px] h-full mx-auto my-auto flex flex-col justify-start items-start gap-10 pb-4 md:pb-8 lg:pb-16'>
-        <div className='mt-10 w-[50%] flex flex-col justify-start items-start gap-5'>
-          <h1 className='text-2xl md:text-4xl font-medium'>{data.section.name}</h1>
+    <section
+      id={data.section.code}
+      className={`w-screen bg-[#FC5E03] px-4 text-white dark:bg-[#7d4aeb] md:px-24 ${className}`}
+    >
+      <div className='mx-auto my-auto flex h-full max-w-[1440px] flex-col items-start justify-start gap-10 pb-4 md:pb-8 lg:pb-16'>
+        <div className='mt-10 flex w-[50%] flex-col items-start justify-start gap-5'>
+          <h1 className='text-2xl font-medium md:text-4xl'>{data.section.name}</h1>
         </div>
-        <div className='w-full mt-5 hidden md:flex items-start justify-between gap-5'>
+        <div className='mt-5 hidden w-full items-start justify-between gap-5 md:flex'>
           <Swiper className='w-full'>
             {data.components.map((item, idx) => (
               <SwiperSlide key={idx}>
                 <div
-                  className={`relative w-[106px] h-[106px] ${
+                  className={`relative h-[106px] w-[106px] ${
                     item === selectedPartner ? 'opacity-100' : ' opacity-80'
                   } cursor-pointer`}
                   onClick={() => setSelectedPartner(item)}
@@ -39,16 +42,16 @@ const PartnerDesignThreeSection = ({ data, className }: Props) => {
             ))}
           </Swiper>
         </div>
-        <div className='w-full mt-5 hidden md:block'>
+        <div className='mt-5 hidden w-full md:block'>
           {data.components.map((item, idx) => (
             <div key={idx}>
               {item === selectedPartner ? (
-                <div className='w-full pt-5 flex flex-col lg:flex-row justify-between items-start gap-5'>
-                  <div className='w-full flex flex-col justify-start items-start gap-3'>
-                    <p className='font-medium text-xl md:text-3xl'>{item.title}</p>
-                    <p className='font-thin text-sm'>{item.description}</p>
+                <div className='flex w-full flex-col items-start justify-between gap-5 pt-5 lg:flex-row'>
+                  <div className='flex w-full flex-col items-start justify-start gap-3'>
+                    <p className='text-xl font-medium md:text-3xl'>{item.title}</p>
+                    <p className='text-sm font-thin'>{item.description}</p>
                   </div>
-                  <p className='w-full text-base md:text-xl font-normal'>{item.content}</p>
+                  <p className='w-full text-base font-normal md:text-xl'>{item.content}</p>
                 </div>
               ) : (
                 <></>

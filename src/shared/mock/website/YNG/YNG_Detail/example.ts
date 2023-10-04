@@ -62,8 +62,7 @@ export const YNGDetailProduct1 = {
       language: 'vi',
       code: 'CPN12312',
       title: 'Thời đại mà khách hàng nắm quyền kiểm soát',
-      description:
-        'Dịch vụ hỗ trợ vận hành',
+      description: 'Dịch vụ hỗ trợ vận hành',
       slug: '',
       content:
         'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng.',
@@ -76,8 +75,7 @@ export const YNGDetailProduct1 = {
       language: 'vi',
       code: 'CPN12312',
       title: 'Thời đại mà khách hàng nắm quyền kiểm soát',
-      description:
-        'Dịch vụ hỗ trợ vận hành',
+      description: 'Dịch vụ hỗ trợ vận hành',
       slug: '',
       content:
         'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng.',
@@ -91,21 +89,21 @@ export const YNGDetailDirection1 = {
   section: {
     id: 1,
     name: 'Đồng hành cùng chúng tôi',
-    code: "TY12323",
-    image: "",
-    description: "NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế."
-
+    code: 'TY12323',
+    image: '',
+    description:
+      'NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế.',
   },
-  components: []
-}
+  components: [],
+};
 export const YNGCommonCustomer1 = {
   section: {
     id: 1,
     name: 'Những đơn vị đã cùng đồng hành với NGS',
-    title: "",
-    description: "",
-    code: "TY12323",
-    image: ""
+    title: '',
+    description: '',
+    code: 'TY12323',
+    image: '',
   },
   components: [
     {
@@ -180,23 +178,24 @@ export const YNGCommonCustomer1 = {
       video: '',
       thumbnail: '',
     },
-  ]
-}
+  ],
+};
 export const YNGCommonBackSolution1 = {
   section: {
     id: 1,
     name: 'Ứng dụng cho Bán hàng',
-    title: "",
-    description: "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể",
-    code: "TY12323",
-    image: ""
+    title: '',
+    description:
+      'Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng kể',
+    code: 'TY12323',
+    image: '',
   },
   components: [
     {
       id: 1,
       language: 'vi',
       code: 'CPN12312',
-      title: "Trình xây dựng trang web",
+      title: 'Trình xây dựng trang web',
       description: '',
       slug: '',
       content: '',
@@ -208,7 +207,7 @@ export const YNGCommonBackSolution1 = {
       id: 2,
       language: 'vi',
       code: 'CPN12312',
-      title: "Trình xây dựng trang web",
+      title: 'Trình xây dựng trang web',
       description: '',
       slug: '',
       content: '',
@@ -220,7 +219,7 @@ export const YNGCommonBackSolution1 = {
       id: 3,
       language: 'vi',
       code: 'CPN12312',
-      title: "Trình xây dựng trang web",
+      title: 'Trình xây dựng trang web',
       description: '',
       slug: '',
       content: '',
@@ -232,7 +231,7 @@ export const YNGCommonBackSolution1 = {
       id: 4,
       language: 'vi',
       code: 'CPN12312',
-      title: "Trình xây dựng trang web",
+      title: 'Trình xây dựng trang web',
       description: '',
       slug: '',
       content: '',
@@ -240,23 +239,23 @@ export const YNGCommonBackSolution1 = {
       video: '',
       thumbnail: '',
     },
-  ]
-}
+  ],
+};
 export const YNGCommonPilotSubrice1 = {
   section: {
     id: 1,
     name: 'Ứng dụng cho Bán hàng',
-    title: "",
-    description: "Doanh nghiệp của bạn cần giải pháp CRM tốt hơn?",
-    code: "TY12323",
-    image: ""
+    title: '',
+    description: 'Doanh nghiệp của bạn cần giải pháp CRM tốt hơn?',
+    code: 'TY12323',
+    image: '',
   },
   components: [
     {
       id: 1,
       language: 'vi',
       code: 'CPN12312',
-      title: "Công cụ hỗ trợ bán hàng đầy đủ tính năng",
+      title: 'Công cụ hỗ trợ bán hàng đầy đủ tính năng',
       description: '',
       slug: '',
       content: '',
@@ -268,7 +267,7 @@ export const YNGCommonPilotSubrice1 = {
       id: 2,
       language: 'vi',
       code: 'CPN12312',
-      title: "Tối ưu thời gian bán hàng",
+      title: 'Tối ưu thời gian bán hàng',
       description: '',
       slug: '',
       content: '',
@@ -280,7 +279,7 @@ export const YNGCommonPilotSubrice1 = {
       id: 3,
       language: 'vi',
       code: 'CPN12312',
-      title: "Phân bổ & khai thác lead",
+      title: 'Phân bổ & khai thác lead',
       description: '',
       slug: '',
       content: '',
@@ -292,7 +291,7 @@ export const YNGCommonPilotSubrice1 = {
       id: 4,
       language: 'vi',
       code: 'CPN12312',
-      title: "Dữ liệu lead tập trung & check trùng",
+      title: 'Dữ liệu lead tập trung & check trùng',
       description: '',
       slug: '',
       content: '',
@@ -304,7 +303,7 @@ export const YNGCommonPilotSubrice1 = {
       id: 5,
       language: 'vi',
       code: 'CPN12312',
-      title: "Trình xây dựng trang web",
+      title: 'Trình xây dựng trang web',
       description: '',
       slug: '',
       content: '',
@@ -312,8 +311,8 @@ export const YNGCommonPilotSubrice1 = {
       video: '',
       thumbnail: '',
     },
-  ]
-}
+  ],
+};
 export const YNGCommonIntroduction1 = {
   section: {
     id: 1,
@@ -353,11 +352,11 @@ export const YNGDetailBanner1 = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Giám sát và vận hành // an ninh mạng (SOC)",
+      title: 'Dự án thành công',
+      description: 'Giám sát và vận hành // an ninh mạng (SOC)',
       content:
-        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng",
-      image: ""
+        'Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng',
+      image: '',
     },
     {
       id: 2,
@@ -366,11 +365,11 @@ export const YNGDetailBanner1 = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Giám sát, vận hành an ninh mạng (SOC)",
+      title: 'Dự án thành công',
+      description: 'Giám sát, vận hành an ninh mạng (SOC)',
       content:
-        "Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng",
-      image: ""
+        'Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua thách thức và đạt được thành công đáng',
+      image: '',
     },
   ],
 };

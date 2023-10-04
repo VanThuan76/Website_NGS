@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function SectionCoreValue2({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='1072' height='749' viewBox='0 0 1072 749' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='1072' height='749' viewBox='0 0 1072 749' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <path
         fill-rule='evenodd'
         clip-rule='evenodd'

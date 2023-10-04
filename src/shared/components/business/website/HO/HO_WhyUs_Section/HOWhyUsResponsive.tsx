@@ -16,12 +16,12 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <div
-      className='w-full py-3 flex flex-col gap-5 min-h-[10px] xl:min-h-[100px] overflow-hidden cursor-pointer'
+      className='flex min-h-[10px] w-full cursor-pointer flex-col gap-5 overflow-hidden py-3 xl:min-h-[100px]'
       style={{ borderBottom: '1px solid #555' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className='flex justify-start items-start gap-1'>
+      <div className='flex items-start justify-start gap-1'>
         {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
           <p key={idx} className='text-md md:text-xl lg:text-2xl xl:text-3xl'>
             {item}
@@ -30,7 +30,7 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
       </div>
 
       <motion.div
-        className='flex-col justify-center items-start pl-5'
+        className='flex-col items-start justify-center pl-5'
         initial={{ opacity: 0, height: 0 }}
         animate={{ opacity: isHovered ? 1 : 0, height: isHovered ? 'auto' : 0 }}
         transition={{
@@ -38,9 +38,9 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
           ease: 'easeInOut',
         }}
       >
-        <div className='flex flex-col justify-center items-center'>
+        <div className='flex flex-col items-center justify-center'>
           {splitTextToArrayByDoubleSlash(item.description || '').map((item: string, idx: number) => (
-            <p key={idx} className='text-sm lg:text-base text-slate-500'>
+            <p key={idx} className='text-sm text-slate-500 lg:text-base'>
               {item}
             </p>
           ))}

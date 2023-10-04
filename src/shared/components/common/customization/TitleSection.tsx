@@ -38,9 +38,9 @@ const TitleSection = (data: Partial<Props>) => {
     },
   };
   return (
-    <div className='max-w-[1440px] w-full mx-auto my-auto flex flex-col gap-4 mt-5'>
+    <div className='mx-auto my-auto mt-5 flex w-full max-w-[1440px] flex-col gap-4'>
       {data.title && title && (
-        <p className={`text-sm md:text-2xl !text-[#FC5E03] text-center ${data.className}`}>
+        <p className={`text-center text-sm !text-[#FC5E03] md:text-2xl ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
               <motion.span variants={child} className='mr-[5px] md:mr-[10px]' key={idx}>
@@ -50,14 +50,14 @@ const TitleSection = (data: Partial<Props>) => {
           </motion.div>
         </p>
       )}
-      <div className={`w-full grid grid-cols-12 gap-[80px] ${data.className}`}>
-        <div className='col-span-7 w-full flex flex-col'>
+      <div className={`grid w-full grid-cols-12 gap-[80px] ${data.className}`}>
+        <div className='col-span-7 flex w-full flex-col'>
           <motion.div variants={container} className='flex flex-col' initial='hidden' animate='visible'>
             {data.name?.split('//').map((word, idx) => (
               <motion.span
                 variants={child}
-                className={`mr-[10px] flex flex-col text-2xl md:text-[40px] text-[#29130F] font-medium leading-8 md:leading-[48px] ${data.className}`}
-                style={{letterSpacing: -1}}
+                className={`mr-[10px] flex flex-col text-2xl font-medium leading-8 text-[#29130F] md:text-[40px] md:leading-[48px] ${data.className}`}
+                style={{ letterSpacing: -1 }}
                 key={idx}
               >
                 {word}
@@ -66,12 +66,12 @@ const TitleSection = (data: Partial<Props>) => {
           </motion.div>
         </div>
         {data.findMore ? (
-          <div className={`col-span-5 w-full flex flex-col justify-start items-start mb-10 ${data.className}`}>
+          <div className={`col-span-5 mb-10 flex w-full flex-col items-start justify-start ${data.className}`}>
             <motion.div variants={container} className='flex flex-col gap-2' initial='hidden' animate='visible'>
               {data.description?.split('//').map((word, idx) => (
                 <motion.span
                   variants={child}
-                  className='col-span-1 text-sm md:text-base font-medium not-italic text-slate-500 dark:text-[#C2C0BF]'
+                  className='col-span-1 text-sm font-medium not-italic text-slate-500 dark:text-[#C2C0BF] md:text-base'
                   key={idx}
                 >
                   {word}

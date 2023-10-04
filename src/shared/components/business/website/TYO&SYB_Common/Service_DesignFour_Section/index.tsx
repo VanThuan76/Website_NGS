@@ -17,17 +17,17 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
 
   return (
     <section id={data.section.code} className={`w-screen overflow-hidden bg-[#F9F4EE] ${className}`}>
-      <div className='max-w-[1440px]  h-full grid grid-cols-2 justify-start items-start gap-5'>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-3 py-12 px-4 md:px-24'>
+      <div className='grid  h-full max-w-[1440px] grid-cols-2 items-start justify-start gap-5'>
+        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-3 px-4 py-12 md:px-24'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !text-left'
+            className='col-span-7 w-full grid-cols-7 !text-left'
           />
-          <div className='w-full flex flex-col justify-center items-center'>
-            {data &&  
+          <div className='flex w-full flex-col items-center justify-center'>
+            {data &&
               data.components!.map((item, idx) => {
                 return <ServiceDesignFourItem key={idx} item={item} />;
               })}
@@ -41,7 +41,7 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
           width={1980}
           height={704}
           alt={data.section.name}
-          className='w-full h-full object-cover'
+          className='h-full w-full object-cover'
         />
       </div>
     </section>

@@ -47,7 +47,7 @@ export default function PageEditor({}: Props) {
   // useEffect(() => {
   //   refetch();
   // }, [activeSectionCode !== '']);
-  if(!data) return <></>
+  if (!data) return <></>;
   const RenderComponent = () => {
     switch (activeSectionCode) {
       case 'PG001SE00001':
@@ -74,10 +74,10 @@ export default function PageEditor({}: Props) {
     }
   };
   return (
-    <div className='w-full h-full grid grid-cols-1 gap-4'>
-      <div className='w-full grid grid-cols-4 gap-4'>
+    <div className='grid h-full w-full grid-cols-1 gap-4'>
+      <div className='grid w-full grid-cols-4 gap-4'>
         {/* Preview  */}
-        <Card className='relative col-span-3 flex flex-col gap-4 p-4 flex-1 cursor-move overflow-hidden overflow-x-scroll'>
+        <Card className='relative col-span-3 flex flex-1 cursor-move flex-col gap-4 overflow-hidden overflow-x-scroll p-4'>
           {activeSectionCode && data && (
             <TransformWrapper
               initialScale={1}
@@ -111,8 +111,8 @@ export default function PageEditor({}: Props) {
         </Card>
 
         {/* FORM value  */}
-        <Card className='flex flex-col gap-4 p-4 flex-1'>
-          <div className='flex gap-2 items-center'>
+        <Card className='flex flex-1 flex-col gap-4 p-4'>
+          <div className='flex items-center gap-2'>
             <b>Nội dung</b>
             <Select value={activeLang} onValueChange={e => dispatch(setActiveLang(e))}>
               <SelectTrigger className='w-[100px]'>
@@ -161,11 +161,11 @@ export default function PageEditor({}: Props) {
             data.components &&
             data.components.map((component, index) => (
               <Collapsible key={index} className='w-full'>
-                <CollapsibleTrigger className='border bg-primary-foreground p-2 rounded-sm w-full flex gap-2 items-center group'>
+                <CollapsibleTrigger className='group flex w-full items-center gap-2 rounded-sm border bg-primary-foreground p-2'>
                   Component {index + 1}{' '}
                   <ChevronDown
                     size={16}
-                    className='text-foreground/50 w-3.5 h-3.5 transition-all group-data-[state=open]:rotate-90'
+                    className='h-3.5 w-3.5 text-foreground/50 transition-all group-data-[state=open]:rotate-90'
                   />
                 </CollapsibleTrigger>
                 <CollapsibleContent>
@@ -203,7 +203,7 @@ export default function PageEditor({}: Props) {
                         <TriggerDialogForm
                           titleDialog='Trình ảnh'
                           trigger={
-                            <div className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg'>
+                            <div className='flex h-9 items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'>
                               Tải ảnh
                             </div>
                           }

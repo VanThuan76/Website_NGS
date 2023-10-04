@@ -17,7 +17,7 @@ interface Props {
 
 const HOSolutionCard = ({ id, title, description, image, url, className }: Props) => {
   const currentBreakPoint = useBreakPoint();
-  const [isHovered, setIsHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(currentBreakPoint === 'sm' && id === 0 ? true : false);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const animateTheme =
@@ -41,7 +41,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   };
   return (
     <motion.div
-      className={`flex flex-col justify-start items-start py-[16px] px-[16px] cursor-pointer overflow-hidden border-collapse ${className}`}
+      className={`flex border-collapse cursor-pointer flex-col items-start justify-start overflow-hidden px-[16px] py-[16px] ${className}`}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
@@ -52,13 +52,13 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
     >
       <div
         className={`relative ${
-          currentBreakPoint === 'sm' ? 'w-[40px] h-[40px]' : 'w-[56px] h-[56px]'
-        } overflow-hidden mb-4 rounded-lg`}
+          currentBreakPoint === 'sm' ? 'h-[40px] w-[40px]' : 'h-[56px] w-[56px]'
+        } mb-4 overflow-hidden rounded-lg`}
       >
         <PreImage src={image} alt={title} />
       </div>
       <motion.div
-        className={`w-full flex flex-col justify-start items-start gap-4`}
+        className={`flex w-full flex-col items-start justify-start gap-4`}
         initial='start'
         animate={isHovered ? 'end' : 'start'}
         variants={containerVariants}
@@ -67,9 +67,9 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
           ease: 'easeInOut',
         }}
       >
-         <div className='w-full h-[60px] flex flex-col justify-start items-start'>
+        <div className='flex h-[60px] w-full flex-col items-start justify-start'>
           {splitTextToArrayByDoubleSlash(title || '').map((item: string, idx: number) => (
-            <h1 key={idx} className='text-base md:text-2xl font-medium leading-6 md:leading-8'>
+            <h1 key={idx} className='text-base font-medium leading-6 md:text-2xl md:leading-8'>
               {item}
             </h1>
           ))}

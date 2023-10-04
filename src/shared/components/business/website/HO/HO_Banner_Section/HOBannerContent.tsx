@@ -52,11 +52,11 @@ interface Props {
 
 const HOBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='absolute top-28 w-full mx-auto flex flex-col justify-center items-start gap-5 pl-4 lg:pl-24 z-40 font-custom'>
-      <div className='text-left text-sm lg:text-lg underline font-medium text-white'>
+    <InitBasicAnimation className='font-custom absolute top-28 z-40 mx-auto flex w-full flex-col items-start justify-center gap-5 pl-4 lg:pl-24'>
+      <div className='text-left text-sm font-medium text-white underline lg:text-lg'>
         <AnimatePresence mode='wait'>
           <motion.div
-            className='text-left text-sm lg:text-lg underline font-medium text-white'
+            className='text-left text-sm font-medium text-white underline lg:text-lg'
             variants={textVariants}
             initial='initial'
             animate='animate'
@@ -90,18 +90,23 @@ const HOBannerContent = ({ selectedTab }: Props) => {
           </motion.div>
         </AnimatePresence>
       </div>
-        <motion.div className='flex flex-col justify-start items-start' variants={container} initial='hidden' animate='visible'>
-          {selectedTab.content?.split('//').map((word, idx) => (
-            <motion.span
-              variants={child}
-              style={{ lineHeight: '130%' }}
-              className='text-2xl lg:text-5xl uppercase text-white font-normal'
-              key={idx}
-            >
-              {word}
-            </motion.span>
-          ))}
-        </motion.div>
+      <motion.div
+        className='flex flex-col items-start justify-start'
+        variants={container}
+        initial='hidden'
+        animate='visible'
+      >
+        {selectedTab.content?.split('//').map((word, idx) => (
+          <motion.span
+            variants={child}
+            style={{ lineHeight: '130%' }}
+            className='text-2xl font-normal uppercase text-white lg:text-5xl'
+            key={idx}
+          >
+            {word}
+          </motion.span>
+        ))}
+      </motion.div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
         <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm rounded-lg' />
       </UseLinkRouter>

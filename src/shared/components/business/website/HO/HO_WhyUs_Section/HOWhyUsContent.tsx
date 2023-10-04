@@ -30,8 +30,8 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
     },
   };
   return (
-    <div className='w-full flex flex-col justify-start items-start gap-12'>
-      <motion.div className='w-full flex justify-start items-start text-sm lg:text-lg mt-5'>
+    <div className='flex h-full w-full flex-col items-start justify-start gap-12 pb-3'>
+      <motion.div className='mt-5 flex w-full items-start justify-start text-sm lg:text-lg'>
         {data.map((item, idx) => {
           return (
             <motion.div
@@ -40,11 +40,11 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item)}
-              className={`w-full pb-3 border-b-2 cursor-pointer ${
+              className={`w-full cursor-pointer border-b-2 pb-3 ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
-              <div className='flex flex-col justify-center items-center'>
+              <div className='flex flex-col items-center justify-center'>
                 {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
                   <p key={idx} className='text-base hover:text-slate-800'>
                     {item}
@@ -55,9 +55,9 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
           );
         })}
       </motion.div>
-      <div className='flex flex-col justify-center items-center'>
+      <div className='flex flex-col items-center justify-center'>
         {splitTextToArrayByDoubleSlash(selectedIcon.description || '').map((item: string, idx: number) => (
-          <p key={idx} className='text-sm lg:text-base text-slate-500'>
+          <p key={idx} className='text-sm text-slate-500 lg:text-base'>
             {item}
           </p>
         ))}

@@ -13,18 +13,21 @@ const WhyUsDesignThreeSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`max-w-[1440px] px-4 md:px-24 lg:px-32 py-4 md:py-12 overflow-hidden ${className}`}>
-      <div className='w-full grid grid-cols-2 justify-center items-center gap-16'>
-        <div className='relative w-full h-[500px] rounded-lg overflow-hidden'>
+    <section
+      id={data.section.code}
+      className={`max-w-[1440px] overflow-hidden px-4 py-4 md:px-24 md:py-12 lg:px-32 ${className}`}
+    >
+      <div className='grid w-full grid-cols-2 items-center justify-center gap-16'>
+        <div className='relative h-[500px] w-full overflow-hidden rounded-lg'>
           <PreImage src={data.section.image} alt={data.section.name} />
         </div>
-        <div className='cols-span-1 w-full flex flex-col justify-start items-start gap-10'>
+        <div className='cols-span-1 flex w-full flex-col items-start justify-start gap-10'>
           <TitleSection
             title={title}
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !text-left'
+            className='col-span-7 w-full grid-cols-7 !text-left'
           />
         </div>
       </div>

@@ -23,7 +23,7 @@ export function NewsUpdate({ id }: Props) {
   const router = useRouter();
   return (
     <section className='w-full'>
-      <div className='flex justify-between mb-6'>
+      <div className='mb-6 flex justify-between'>
         <div className='text-2xl font-bold'>Update News</div>
         <Button onClick={() => router.push('/news')}>
           <ListBulletIcon className='mr-2' /> List News

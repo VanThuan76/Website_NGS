@@ -2,7 +2,7 @@ import { Link } from 'react-scroll';
 
 type Props = {
   children: React.ReactNode;
-  sectionCode: string
+  sectionCode: string;
 };
 const UseLinkRedirect = ({ children, sectionCode }: Props) => {
   return (

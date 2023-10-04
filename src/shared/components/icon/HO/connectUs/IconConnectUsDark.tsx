@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function IconConnectUsDark({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='184' height='184' viewBox='0 0 184 184' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='184' height='184' viewBox='0 0 184 184' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <path
         d='M122.32 58.9854C155.918 58.4722 183.339 84.9153 183.99 118.51C184.085 123.442 183.592 128.243 182.577 132.848C180.857 140.646 179.834 148.58 179.834 156.565V172C179.834 174.364 177.917 176.281 175.553 176.281H160.118C152.133 176.281 144.199 177.304 136.401 179.024C131.797 180.039 126.996 180.532 122.064 180.437C88.4692 179.787 62.0261 152.366 62.5386 118.769C63.0385 85.9762 89.5279 59.4863 122.32 58.9854Z'
         fill='url(#paint0_linear_2265_7704)'

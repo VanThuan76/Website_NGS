@@ -17,21 +17,21 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
   const checkSolution = data.components.find(item => item.slug === 'solution');
   const checkServiceAndSupport = data.components.find(item => item.slug === 'service-and-support');
   return (
-    <section id={data.section.code} className={`max-w-[1440px] pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
+    <section id={data.section.code} className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}>
       <div
-        className={`w-full mx-auto my-auto mt-10 grid ${
+        className={`mx-auto my-auto mt-10 grid w-full ${
           !checkSolution || !checkServiceAndSupport ? 'grid-cols-3' : 'grid-cols-4'
-        } justify-start items-start gap-10`}
+        } items-start justify-start gap-10`}
       >
-        <div className='w-full h-full col-span-2 flex flex-col justify-start items-start'>
+        <div className='col-span-2 flex h-full w-full flex-col items-start justify-start'>
           <TitleSection
             title={title}
             name={data.section.name as string}
             description={data.section.description as string}
             findMore={true}
-            className='w-full grid-cols-7 col-span-7 !text-left'
+            className='col-span-7 w-full grid-cols-7 !text-left'
           />
-          <div className='flex flex-col justify-start items-start gap-3'>
+          <div className='flex flex-col items-start justify-start gap-3'>
             <p>Bạn muốn đăng ký bản dùng thử?</p>
 
             <UseLinkRedirect sectionCode={'FormCTA'}>

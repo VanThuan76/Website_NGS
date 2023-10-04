@@ -8,7 +8,7 @@ export function PreImage({ src, height }: Props) {
     <div style={{ width: '100%', height: '100%', position: 'relative' }}>
       {src ? (
         <div
-          className='w-full mb-10 mobile:h-full'
+          className='mobile:h-full mb-10 w-full'
           style={{
             height: height,
             backgroundImage: `url(${process.env.NEXT_PUBLIC_DEV_IMAGE_API_URL}${src})`,
@@ -21,7 +21,7 @@ export function PreImage({ src, height }: Props) {
         ></div>
       ) : (
         <div
-          className='w-full mb-10 mobile:h-full'
+          className='mobile:h-full mb-10 w-full'
           style={{
             height: height,
             backgroundImage: `url("/images/default.png")`,

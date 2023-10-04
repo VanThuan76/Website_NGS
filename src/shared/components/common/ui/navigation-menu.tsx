@@ -25,7 +25,7 @@ const NavigationMenuList = React.forwardRef<
 >(({ className, ...props }, ref) => (
   <NavigationMenuPrimitive.List
     ref={ref}
-    className={cn('w-full group flex flex-1 list-none items-center justify-center space-x-1', className)}
+    className={cn('group flex w-full flex-1 list-none items-center justify-center space-x-1', className)}
     {...props}
   />
 ));
@@ -102,7 +102,7 @@ const NavigationMenuIndicator = React.forwardRef<
     )}
     {...props}
   >
-    <div className='relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm bg-border border border-orange-500 shadow-md' />
+    <div className='relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm border border-orange-500 bg-border shadow-md' />
   </NavigationMenuPrimitive.Indicator>
 ));
 NavigationMenuIndicator.displayName = NavigationMenuPrimitive.Indicator.displayName;

@@ -1,7 +1,7 @@
-import { IYourNextGen } from "@/mocks/website/YNG/YNG_Home/solution";
-import { IWebsiteNews } from "../models/INews";
-import { IComponents } from "./IComponents";
-import { ISection } from "./ISection";
+import { IYourNextGen } from '@/mocks/website/YNG/YNG_Home/solution';
+import { IWebsiteNews } from '../models/INews';
+import { IComponents } from './IComponents';
+import { ISection } from './ISection';
 
 export interface IBaseSectionComponent {
   section: ISection;

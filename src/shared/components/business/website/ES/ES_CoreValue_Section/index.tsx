@@ -42,42 +42,42 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
     <section
       ref={currentBreakPoint !== 'sm' ? sectionRef : null}
       id='ESCOREVALUE'
-      className={`mt-10 2xl:mt-20 h-auto md:h-[1105px] flex flex-col justify-center items-center pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`mt-10 flex h-auto flex-col items-center justify-center px-4 pb-4 md:h-[1105px] md:px-24 md:pb-8 lg:pb-16 xl:pb-24 2xl:mt-20 ${className}`}
     >
       <motion.div
         animate={controls}
-        className='hidden md:grid w-full h-full mx-auto my-auto grid-cols-1 justify-start items-start bg-white'
+        className='mx-auto my-auto hidden h-full w-full grid-cols-1 items-start justify-start bg-white md:grid'
       >
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 text-center !gap-0'
+          className='col-span-7 w-full grid-cols-7 !gap-0 text-center'
         />
         {currentIndex === 0 ? (
-          <SectionCoreValue className='hidden md:block w-full h-full object-cover' />
+          <SectionCoreValue className='hidden h-full w-full object-cover md:block' />
         ) : currentIndex === 1 ? (
-          <SectionCoreValue2 className='hidden md:block w-full h-full object-cover' />
+          <SectionCoreValue2 className='hidden h-full w-full object-cover md:block' />
         ) : (
-          <SectionCoreValue3 className='hidden md:block w-full h-full object-cover' />
+          <SectionCoreValue3 className='hidden h-full w-full object-cover md:block' />
         )}
-        <div className={`${inView ? 'fixed -bottom-2 right-1/2 translate-x-1/2 block' : 'hidden'}`}>
+        <div className={`${inView ? 'fixed -bottom-2 right-1/2 block translate-x-1/2' : 'hidden'}`}>
           <UseLinkRedirect sectionCode={sectionCodeLink || 'ConnectUs'}>
             <BtnCommon title='Khám phá dịch vụ của chúng tôi' cls='text-orange-500 p-4 rounded-sm' hover={false} />
           </UseLinkRedirect>
         </div>
         <motion.div
-          className='absolute -top-24 left-0 w-full h-full -z-10'
+          className='absolute -top-24 left-0 -z-10 h-full w-full'
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
           transition={{ duration: 0.5 }}
         >
           {theme === 'dark' ? (
-            <BackgroundDark className='hidden md:block w-full object-center' />
+            <BackgroundDark className='hidden w-full object-center md:block' />
           ) : (
-            <BackgroundCoreValueLight className='hidden md:block w-full scale-150 md:scale-100 object-center' />
+            <BackgroundCoreValueLight className='hidden w-full scale-150 object-center md:block md:scale-100' />
           )}
         </motion.div>
       </motion.div>

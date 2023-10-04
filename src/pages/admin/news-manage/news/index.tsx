@@ -105,14 +105,14 @@ export function NewsList() {
     <section className='w-full space-y-4'>
       <div className='flex items-center justify-between'>
         <div className='text-2xl font-bold'>{TABLE_NAME}</div>
-          <div
-            className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg cursor-pointer'
-            onClick={() => router.push('/admin/news-manage/news/create')}
-          >
-            <PlusCircle className='mr-2' />
-            Thêm mới bài viết
-          </div>
+        <div
+          className='flex h-9 cursor-pointer items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'
+          onClick={() => router.push('/admin/news-manage/news/create')}
+        >
+          <PlusCircle className='mr-2' />
+          Thêm mới bài viết
         </div>
+      </div>
       <DataTable data={data?.data.content || []} columns={columnNews} tableName={TABLE_NAME} {...tableConfig} />
     </section>
   );

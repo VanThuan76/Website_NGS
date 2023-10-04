@@ -15,26 +15,26 @@ const OverviewDesignSevenSection = ({ title, data, className }: Props) => {
   return (
     <section
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 overflow-hidden flex ${className}  `}
+      className={`flex max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}  `}
     >
-      <div className='w-full mx-auto my-auto mt-10 flex flex-col justify-between items-center gap-12'>
+      <div className='mx-auto my-auto mt-10 flex w-full flex-col items-center justify-between gap-12'>
         <TitleSection
           title={title}
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='w-full grid-cols-7 col-span-7 text-center'
+          className='col-span-7 w-full grid-cols-7 text-center'
         />
-        <div className='relative w-full h-full grid grid-cols-3 justify-between items-center gap-5 -mt-6'>
+        <div className='relative -mt-6 grid h-full w-full grid-cols-3 items-center justify-between gap-5'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className='w-full h-full flex flex-col justify-start items-start px-4 py-6 gap-2 rounded-lg border-overview-designSeven-section'
+              className='border-overview-designSeven-section flex h-full w-full flex-col items-start justify-start gap-2 rounded-lg px-4 py-6'
             >
-              <div className='absolute w-[60px] h-[60px] rounded-lg overflow-hidden -top-10'>
+              <div className='absolute -top-10 h-[60px] w-[60px] overflow-hidden rounded-lg'>
                 <PreImage src={item.image} alt={item.title} />
               </div>
-              <h1 className='text-xl md:text-2xl text-center text-orange-500'>{item.title}</h1>
+              <h1 className='text-center text-xl text-orange-500 md:text-2xl'>{item.title}</h1>
               <p className='text-xs md:text-base'>{item.description}</p>
             </div>
           ))}

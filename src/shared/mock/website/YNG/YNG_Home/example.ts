@@ -14,11 +14,11 @@ export const YNGHomeBannerERP = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Hệ thống Quản lý doanh nghiệp tập trung",
+      title: 'Dự án thành công',
+      description: 'Hệ thống Quản lý doanh nghiệp tập trung',
       content:
-        "NGS ERP là hệ thống giúp doanh nghiệp có thể quản lý toàn bộ quy trình vận hành trên cùng một nền tảng với chi phí chuyển đổi thấp nhất",
-      image: ""
+        'NGS ERP là hệ thống giúp doanh nghiệp có thể quản lý toàn bộ quy trình vận hành trên cùng một nền tảng với chi phí chuyển đổi thấp nhất',
+      image: '',
     },
   ],
 };
@@ -39,11 +39,10 @@ export const YNGHomeBannerCRM = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Hệ thống Quản lý Khách hàng và Bán hàng tập trung",
-      content:
-        "Ứng dụng công nghệ giúp hỗ trợ, gia tăng hiệu quả và phát triển hoạt động bán hàng",
-      image: ""
+      title: 'Dự án thành công',
+      description: 'Hệ thống Quản lý Khách hàng và Bán hàng tập trung',
+      content: 'Ứng dụng công nghệ giúp hỗ trợ, gia tăng hiệu quả và phát triển hoạt động bán hàng',
+      image: '',
     },
   ],
 };
@@ -64,11 +63,11 @@ export const YNGHomeBannerHRM = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Hệ thống Quản lý Nhân sự tập trung",
+      title: 'Dự án thành công',
+      description: 'Hệ thống Quản lý Nhân sự tập trung',
       content:
-        "Số hóa quy trình quản lý giúp gia tăng trải nghiệm của nhân viên từ đó gia tăng cạnh tranh trong thị trường nhân sự",
-      image: ""
+        'Số hóa quy trình quản lý giúp gia tăng trải nghiệm của nhân viên từ đó gia tăng cạnh tranh trong thị trường nhân sự',
+      image: '',
     },
   ],
 };
@@ -89,11 +88,11 @@ export const YNGHomeBannerConnect = {
       slug: '',
       video: '',
       thumbnail: '',
-      title: "Dự án thành công",
-      description: "Hệ thống Tích hợp tập trung",
+      title: 'Dự án thành công',
+      description: 'Hệ thống Tích hợp tập trung',
       content:
-        "Tích hợp các dịch vụ trọng yếu ngay trên nền tảng Quản lý Doanh nghiệp: Ngân hàng, Dịch vụ Công, BPO,...",
-      image: ""
+        'Tích hợp các dịch vụ trọng yếu ngay trên nền tảng Quản lý Doanh nghiệp: Ngân hàng, Dịch vụ Công, BPO,...',
+      image: '',
     },
   ],
 };

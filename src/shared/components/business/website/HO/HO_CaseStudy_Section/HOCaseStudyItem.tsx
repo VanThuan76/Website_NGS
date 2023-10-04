@@ -12,7 +12,7 @@ interface Props {
 const HOCaseStudyItem = ({ data }: Props) => {
   const { theme } = useTheme();
   return (
-    <div className='relative w-full flex flex-col justify-between items-center rounded-lg'>
+    <div className='relative flex w-full flex-col items-center justify-between rounded-lg'>
       <div className='w-full'>
         <PreImage
           src={'/images/background_3.png'}
@@ -23,10 +23,10 @@ const HOCaseStudyItem = ({ data }: Props) => {
           className='w-full rounded-lg object-cover'
         />
       </div>
-      <div className='absolute bottom-5 left-0 px-5 w-full flex flex-col justify-between items-start'>
+      <div className='absolute bottom-5 left-0 flex w-full flex-col items-start justify-between px-5'>
         <p className='text-xl'>{data.title}</p>
         <UseLinkRouter url={URLS_SYSTEM.NOTFOUND}>
-          <div className='flex justify-between items-center gap-3 mt-2 md:mt-4 lg:mt-8'>
+          <div className='mt-2 flex items-center justify-between gap-3 md:mt-4 lg:mt-8'>
             <motion.p className='text-sm'>Tìm hiểu thêm</motion.p>
             <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
           </div>

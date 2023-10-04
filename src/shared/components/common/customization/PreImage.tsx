@@ -6,30 +6,35 @@ interface Props extends ImageProps {
 }
 
 export function PreImage({ src, layer, ...rest }: Props) {
-  const {theme} = useTheme();
-  const backgroundLayer = theme === "light" ? "bg-white" : "bg-black"
+  const { theme } = useTheme();
+  const backgroundLayer = theme === 'light' ? 'bg-white' : 'bg-black';
   return (
-    <div className='relative w-full h-full overflow-hidden'>
+    <div className='relative h-full w-full overflow-hidden'>
       {src ? (
         <>
           <Image
             alt={rest.alt}
             src={src}
-            layout="fill"
-            objectFit={rest.objectFit || "cover"}
-            objectPosition={rest.objectPosition || "left"}
-            placeholder="empty"
+            layout='fill'
+            objectFit={rest.objectFit || 'cover'}
+            objectPosition={rest.objectPosition || 'left'}
+            placeholder='empty'
           />
-          {layer && <div style={rest.style} className={`${rest.className} bg-black absolute top-0 left-0 w-full h-full opacity-50 blur-lg`}></div>}
+          {layer && (
+            <div
+              style={rest.style}
+              className={`${rest.className} absolute left-0 top-0 h-full w-full bg-black opacity-50 blur-lg`}
+            ></div>
+          )}
         </>
       ) : (
         <div>
           <Image
             alt='default'
             src='/images/default.png'
-            layout="fill"
-            objectFit={rest.objectFit || "cover"}
-            objectPosition={rest.objectPosition || "left"}
+            layout='fill'
+            objectFit={rest.objectFit || 'cover'}
+            objectPosition={rest.objectPosition || 'left'}
           />
         </div>
       )}

@@ -59,10 +59,10 @@ interface Props {
 
 const YNGDetailBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='min-h-screen w-full pt-24 px-12 flex flex-col justify-start items-start gap-10 leading-[90%] text-white'>
+    <InitBasicAnimation className='z-20 flex min-h-screen w-full flex-col items-start justify-start gap-10 px-12 pt-24 leading-[90%] text-white'>
       <div className='text-left text-3xl lg:text-6xl'>
         <motion.div
-          className='flex flex-col justify-start items-start'
+          className='flex flex-col items-start justify-start'
           variants={container}
           initial='hidden'
           animate='visible'
@@ -74,7 +74,7 @@ const YNGDetailBannerContent = ({ selectedTab }: Props) => {
           ))}
         </motion.div>
       </div>
-      <motion.div className='w-[672px] text-xl font-medium leading-7'>
+      <motion.div className='w-[90%] text-xl font-medium leading-7 md:w-[50%]'>
         {selectedTab ? selectedTab.content : ''}
       </motion.div>
       <UseLinkRedirect sectionCode='FormYNG'>

@@ -59,26 +59,26 @@ const YNGDetailBannerSection = ({ data, className }: Props) => {
   }, []);
 
   return (
-    <section id={data && data.section && data.section.code} className={`block pb-10 ${className}`}>
-      <div className='snap-x-mandatory scrollbar-none h-full relative lg:max-h-[600px] overflow-hidden dark:text-white'>
-        <div className='w-full h-full bg-[#FC5E03]'>
+    <section id={data && data.section && data.section.code} className={`block w-screen pb-10 ${className}`}>
+      <div className='snap-x-mandatory scrollbar-none relative h-full w-full overflow-hidden dark:text-white lg:max-h-[600px]'>
+        <div className='z-20 h-full w-full bg-[#FC5E03]'>
           <YNGDetailBannerContent selectedTab={selectedTab!} />
         </div>
-        <div className='absolute top-0 right-0 w-1/2 h-full'>
-          <div className='relative w-full h-full rounded-lg overflow-hidden'>
+        <div className='absolute -bottom-56 left-0 z-10 h-full w-full overflow-hidden md:left-auto md:right-0 md:top-0 md:w-1/2'>
+          <div className='relative h-full w-full overflow-hidden rounded-lg'>
             <PreImage src='/images/BannerDetailYNG.png' layer={false} alt='BannerDetailYNG' />
           </div>
         </div>
-        <InitBasicAnimation className='absolute bottom-0 lg:bottom-12 lg:left-10'>
+        <InitBasicAnimation className='absolute bottom-0 z-20 lg:bottom-12 lg:left-10'>
           <div className='flex items-center justify-between gap-5'>
-            <ul className='md:flex items-center justify-between gap-5'>
+            <ul className='items-center justify-between gap-5 md:flex'>
               {data.components!.map((item, idx) => (
                 <motion.li
                   key={idx}
                   initial='inactive'
                   animate={selectedTab === item ? 'active' : 'inactive'}
                   variants={contentAnimated}
-                  className='px-5 pb-3 border-b-2 cursor-pointer font-medium'
+                  className='cursor-pointer border-b-2 px-5 pb-3 font-medium'
                   onClick={() => setSelectedTab(item)}
                 >
                   {`${item.title}`}

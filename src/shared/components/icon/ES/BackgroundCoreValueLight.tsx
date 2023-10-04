@@ -2,7 +2,7 @@ import React, { SVGProps } from 'react';
 
 export default function BackgroundCoreValueLight({ ...rest }: SVGProps<SVGSVGElement>) {
   return (
-    <svg width='1440' height='1105' viewBox='0 0 1440 1105' fill='none' xmlns='http://www.w3.org/2000/svg' { ...rest }>
+    <svg width='1440' height='1105' viewBox='0 0 1440 1105' fill='none' xmlns='http://www.w3.org/2000/svg' {...rest}>
       <g clip-path='url(#clip0_4814_871)'>
         <g opacity='0.3' filter='url(#filter0_f_4814_871)'>
           <path

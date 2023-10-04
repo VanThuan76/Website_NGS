@@ -11,7 +11,7 @@ const Header = () => {
         <TriggerDialogForm
           titleDialog='Tạo thư mục'
           trigger={
-            <div className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg'>
+            <div className='flex h-9 items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'>
               <PlusCircle className='mr-2' />
               Thêm mới thư mục
             </div>
@@ -27,7 +27,7 @@ const Header = () => {
         <TriggerDialogForm
           titleDialog='Tạo thư mục'
           trigger={
-            <div className='dark:bg-white dark:text-black h-9 px-4 py-2 flex justify-center items-center border-2 border-slate-300 rounded-lg'>
+            <div className='flex h-9 items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'>
               <PlusCircle className='mr-2' />
               Thêm mới ảnh
             </div>

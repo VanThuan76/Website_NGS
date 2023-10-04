@@ -34,20 +34,24 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
     <section
       ref={ref}
       id={data.section.code}
-      className={`max-w-[1440px] pb-4 md:pb-8 lg:pb-10 xl:pb-24 px-4 md:px-24 ${className}`}
+      className={`max-w-[1440px] px-4 pb-4 md:px-24 md:pb-8 lg:pb-10 xl:pb-24 ${className}`}
     >
       <TitleSection
         title={title}
         name={data.section.name as string}
         description={data.section.description as string}
         findMore={true}
-        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
+        className='col-span-7 w-full grid-cols-7 !gap-8 !text-left md:col-span-5 md:grid-cols-12'
       />
-      <div className='w-full mt-10 md:mt-20 mx-auto grid grid-cols-1 md:grid-cols-4 justify-center items-center bg-transparent overflow-hidden gap-2'>
+      <div className='mx-auto mt-10 grid w-full grid-cols-1 items-center justify-center gap-2 overflow-hidden bg-transparent md:mt-20 md:grid-cols-4'>
         {data &&
           data.components.map((item, idx) => (
             <motion.div
-              className={`w-full mx-auto ${currentBreakPoint !== 'sm' && 'border-card-solution-home'} md:pr-2`}
+              className={`mx-auto w-full ${
+                currentBreakPoint !== 'sm'
+                  ? 'border-card-solution-home-right pr-2'
+                  : 'border-card-solution-home-bottom pb-2'
+              }`}
               key={idx}
               variants={{
                 hidden: { opacity: 0, translateX: -50 },
@@ -57,9 +61,9 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
               animate={sectionControls}
               transition={{ duration: 0.7, delay: idx * 0.7 }}
             >
-              <div className='relative max-w-[310px] min-h-[300px] lg:min-h-[345px] mx-auto rounded-lg overflow-hidden'>
+              <div className='relative mx-auto min-h-[300px] max-w-[310px] overflow-hidden rounded-lg lg:min-h-[345px]'>
                 <motion.div
-                  className='absolute top-0 left-0 w-full min-h-[300px] lg:min-h-[345px]'
+                  className='absolute left-0 top-0 min-h-[300px] w-full lg:min-h-[345px]'
                   variants={animationVariants}
                   initial='hidden'
                   animate='visible'
@@ -74,7 +78,7 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
                   description={item.description || ''}
                   image={item.image}
                   url={item.slug}
-                  className={'absolute top-0 left-0 w-full h-full'}
+                  className={'absolute left-0 top-0 h-full w-full'}
                 />
               </div>
             </motion.div>

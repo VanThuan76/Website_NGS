@@ -26,16 +26,20 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
   }, [isInView]);
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section ref={ref} id={data.section.code} className={`max-w-[1440px] relative pb-4 md:pb-8 lg:pb-16 xl:pb-24 px-4 md:px-24 ${className}`}>
+    <section
+      ref={ref}
+      id={data.section.code}
+      className={`relative max-w-[1440px] px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24 ${className}`}
+    >
       <TitleSection
         title={title}
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='w-full grid-cols-7 col-span-7 md:grid-cols-12 md:col-span-5 !gap-8 !text-left'
+        className='col-span-7 w-full grid-cols-7 !gap-8 !text-left md:col-span-5 md:grid-cols-12'
       />
-      <div className='w-full mx-auto my-auto hidden lg:flex flex-col justify-between items-center lg:items-end gap-5 mt-5'>
-        <div className='grid grid-cols-4 justify-end items-end gap-2'>
+      <div className='mx-auto my-auto mt-5 hidden w-full flex-col items-center justify-between gap-5 lg:flex lg:items-end'>
+        <div className='grid grid-cols-4 items-end justify-end gap-2'>
           <div></div>
           <div></div>
           {data.components.slice(0, 2).map((item, idx) => (
@@ -50,7 +54,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
             />
           ))}
         </div>
-        <div className='grid grid-cols-4 justify-end items-end gap-2'>
+        <div className='grid grid-cols-4 items-end justify-end gap-2'>
           <div></div>
           {data.components.slice(2, 5).map((item, idx) => (
             <HOSecurityCard
@@ -64,7 +68,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
             />
           ))}
         </div>
-        <div className='grid grid-cols-4 justify-end items-end gap-2'>
+        <div className='grid grid-cols-4 items-end justify-end gap-2'>
           {data.components.slice(5, 9).map((item, idx) => (
             <HOSecurityCard
               key={idx}
@@ -79,10 +83,10 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
         </div>
       </div>
       {/* <-- Responsive */}
-      <HOSecurityResponsive data={data}  sectionControls={sectionControls}/>
+      <HOSecurityResponsive data={data} sectionControls={sectionControls} />
       {/* Responsive --> */}
       <motion.div
-        className='absolute top-0 left-0 w-full h-full -z-10'
+        className='absolute left-0 top-0 -z-10 h-full w-full'
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         exit={{ opacity: 0 }}
@@ -91,7 +95,7 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
         {theme === 'dark' ? (
           <BackgroundDark className='w-full object-center' />
         ) : (
-          <BackgroundLight className='w-full scale-150 md:scale-100 object-center' />
+          <BackgroundLight className='w-full scale-150 object-center md:scale-100' />
         )}
       </motion.div>
     </section>

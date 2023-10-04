@@ -10,7 +10,7 @@ build_dev:
     - echo 'Start building website ngs'
     - pwd
     - docker stop web-ngs-landing-test || true && docker rm web-ngs-landing-test || true
-    - docker build -t web-ngs-landing-test:v1.0 -f Dockerfile.dev . 
+    - docker build -t web-ngs-landing-test:v1.0 -f Dockerfile.dev .
     - docker run -d --restart=always -it -p 3311:3000 --name web-ngs-landing-test web-ngs-landing-test:v1.0
     - echo 'build done!'
 
@@ -28,6 +28,5 @@ deploy_dev:
   only:
     - develop
     - /^dev-.*$/
-
 # mutiple env build here
 

@@ -15,8 +15,8 @@ const WhyUsDesignTwoSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`max-w-[1440px] pb-4 px-4 md:px-24 overflow-hidden ${className}  `}>
-      <div className='w-full mx-auto my-auto mt-10 grid grid-cols-1 justify-end items-end gap-10'>
+    <section id={data.section.code} className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}>
+      <div className='mx-auto my-auto mt-10 grid w-full grid-cols-1 items-end justify-end gap-10'>
         <TitleSection
           title={title}
           name={data.section.name as string}
@@ -24,21 +24,21 @@ const WhyUsDesignTwoSection = ({ title, data, className }: Props) => {
           findMore={true}
           className='w-full !text-left'
         />
-        <div className='w-full grid grid-cols-12 justify-end items-end'>
+        <div className='grid w-full grid-cols-12 items-end justify-end'>
           <div className='col-span-7'></div>
-          <div className='col-span-5 flex flex-col justify-start items-start gap-5'>
+          <div className='col-span-5 flex flex-col items-start justify-start gap-5'>
             {data.components.map((item, idx) => (
               <div
                 key={idx}
-                className='w-full h-full flex justify-start items-start rounded-lg cursor-pointer'
+                className='flex h-full w-full cursor-pointer items-start justify-start rounded-lg'
                 onMouseEnter={() => setIsHovered(item)}
                 onMouseLeave={() => setIsHovered(undefined)}
               >
-                <div className='w-full flex flex-col justify-start items-start gap-3 py-6 border-b border-b-slate-400'>
+                <div className='flex w-full flex-col items-start justify-start gap-3 border-b border-b-slate-400 py-6'>
                   <div className='border-card-whyUs-designTwo-section pl-6'>
-                    <h1 className='text-base md:text-xl font-semibold'>{item.title}</h1>
+                    <h1 className='text-base font-semibold md:text-xl'>{item.title}</h1>
                     <motion.p
-                      className='hidden mt-2 text-xs md:text-base'
+                      className='mt-2 hidden text-xs md:text-base'
                       initial={{ opacity: 0, height: 0 }}
                       animate={{ opacity: isHovered === item ? 1 : 0, height: isHovered === item ? 'auto' : 0 }}
                       transition={{
