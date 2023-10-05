@@ -35,23 +35,40 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
   return (
     <div className='flex w-full flex-col items-start justify-start text-white'>
       <h1 className='text-2xl font-thin lg:pl-8 lg:text-3xl'>Bạn quan tâm đến...</h1>
-      <div className='mt-3 grid grid-cols-2 gap-3 md:grid-cols-3 lg:pl-8'>
+      <div className='mt-4 flex flex-wrap items-start justify-start gap-2 md:gap-4 lg:pl-8'>
         {connectUsData &&
           connectUsData.map((item, idx) => {
             const isSelected = selectedItems.includes(item);
             return (
               <div
                 key={idx}
-                className={`cursor-pointer rounded-full border p-2 text-center ${
+                className={`flex h-[56px] cursor-pointer items-center justify-center rounded-full border p-[12px] text-center md:px-[14px] md:py-[16px] ${
                   isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
                 }`}
                 onClick={() => handleItemClick(item)}
               >
-                {item}
+                <p className=''>{item}</p>
               </div>
             );
           })}
       </div>
+      {/* <div className='mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:pl-8'>
+        {connectUsData &&
+          connectUsData.slice(3, 6).map((item, idx) => {
+            const isSelected = selectedItems.includes(item);
+            return (
+              <div
+                key={idx}
+                className={`flex h-[56px] cursor-pointer items-center justify-center rounded-full border px-[14px] py-[16px] text-center ${
+                  isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
+                }`}
+                onClick={() => handleItemClick(item)}
+              >
+                <p className=''>{item}</p>
+              </div>
+            );
+          })}
+      </div> */}
       <div className='flex w-full items-start justify-start'>
         <form onSubmit={handleSubmit} className='mt-4 w-full p-2 md:p-4 lg:p-8'>
           <div className='mb-4 w-full'>

@@ -17,10 +17,10 @@ import {
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ClientStoriesDesignThreeSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignThree_Section';
 
 import dynamic from 'next/dynamic';
+import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -57,8 +57,8 @@ const CCPage = () => {
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CB_Section5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='' data={TYO_CB_Section6} />
+      <ScrollRevealWrapper sectionCode={TYO_CB_Section6.section.code}>
+        <PartnerSection title='NGS đồng hành cùng những đối tác tuyệt vời' data={TYO_CB_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignThreeSection title='Client stories' data={TYO_CB_Section7} />

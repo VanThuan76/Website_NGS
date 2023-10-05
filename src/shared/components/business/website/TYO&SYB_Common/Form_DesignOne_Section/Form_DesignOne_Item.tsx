@@ -73,7 +73,7 @@ const FormDesignOneItem = () => {
             </div>
             <div className='w-full'>
               <label htmlFor='phoneNumber' className='mb-1 block'>
-                Số điện thoại:
+                Số điện thoại
               </label>
               <input
                 type='tel'

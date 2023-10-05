@@ -24,12 +24,12 @@ const BenefitDesignOneSection = ({ title, data, className }: Props) => {
             {data.section.description}
           </p>
         </div>
-        <div className='mt-14 grid w-full grid-cols-1 items-center justify-center gap-24 md:grid-cols-4'>
+        <div className='mt-14 grid w-full grid-cols-1 items-center justify-start md:grid-cols-4'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className={`flex max-w-[250px] flex-col items-center justify-between gap-4 ${
-                data.components && data.components?.length - 1 !== idx && 'border-card-benefit-designOne-section pr-8'
+              className={`flex w-full flex-col items-center justify-start gap-4 ${
+                data.components && data.components?.length - 1 !== idx && 'border-card-benefit-designOne-section'
               }`}
             >
               <div className='relative h-[70px] w-[70px] overflow-hidden rounded-lg'>

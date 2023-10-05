@@ -6,7 +6,7 @@ type Props = {
 };
 const UseLinkRedirect = ({ children, sectionCode }: Props) => {
   return (
-    <Link to={sectionCode} smooth={true} duration={1000} spy={true} offset={-100} className='cursor-pointer'>
+    <Link to={sectionCode} smooth={true} duration={300} spy={true} offset={-100} className='cursor-pointer'>
       {children}
     </Link>
   );

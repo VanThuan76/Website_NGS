@@ -15,7 +15,9 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const contentAnimated = {
     active: {
-      borderColor: theme === 'dark' ? '#723AD4' : '#F06426',
+      borderBottom: '4px solid #F06426',
+      borderBottomLeftRadius: '3px',
+      borderBottomRightRadius: '3px',
       color: theme === 'dark' ? '#fff' : '#000',
       opacity: 1,
       transition: {
@@ -24,8 +26,8 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
       },
     },
     inactive: {
-      borderColor: 'rgb(100 116 139)',
-      color: 'rgb(100 116 139)',
+      borderBottom: '2px solid #A6A6A6',
+      color: '#A6A6A6',
       opacity: 0.8,
     },
   };
@@ -40,13 +42,13 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
               animate={selectedIcon === item ? 'active' : 'inactive'}
               variants={contentAnimated}
               onClick={() => setSelectedIcon(item)}
-              className={`w-full cursor-pointer border-b-2 pb-3 ${
+              className={`w-full cursor-pointer border-b-4 pb-4 ${
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
-              <div className='flex flex-col items-center justify-center'>
+              <div className='flex flex-col items-center justify-center hover:text-slate-800 '>
                 {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
-                  <p key={idx} className='text-base hover:text-slate-800'>
+                  <p key={idx} className='text-base'>
                     {item}
                   </p>
                 ))}

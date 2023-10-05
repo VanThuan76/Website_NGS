@@ -56,7 +56,7 @@ const TitleSection = (data: Partial<Props>) => {
             {data.name?.split('//').map((word, idx) => (
               <motion.span
                 variants={child}
-                className={`mr-[10px] flex flex-col text-2xl font-medium leading-8 text-[#29130F] md:text-[40px] md:leading-[48px] ${data.className}`}
+                className={`mr-[10px] flex flex-col text-2xl font-semibold leading-8 text-[#29130F] md:text-[40px] md:leading-[48px] ${data.className}`}
                 style={{ letterSpacing: -1 }}
                 key={idx}
               >

@@ -108,7 +108,7 @@ const HOBannerContent = ({ selectedTab }: Props) => {
         ))}
       </motion.div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
-        <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500 !rounded-sm rounded-lg' />
+        <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500' />
       </UseLinkRouter>
     </InitBasicAnimation>
   );

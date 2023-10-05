@@ -59,7 +59,14 @@ const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
                                     </p>
                                     {menuChild3.menuChild &&
                                       menuChild3.menuChild.map((menuChild4: IMenuChild3, index: number) => (
-                                        <UseLinkRouter url={`${menuChild3.path}${menuChild4.path}`} key={index}>
+                                        <UseLinkRouter
+                                          url={`${
+                                            menuChild4.path === '/update-soon'
+                                              ? menuChild4.path
+                                              : menuChild3.path + menuChild4.path
+                                          }`}
+                                          key={index}
+                                        >
                                           <p
                                             className={`${
                                               '/' + pathname.split('/')[2] === menuChild4.path ? 'text-[#FC5E03]' : ''

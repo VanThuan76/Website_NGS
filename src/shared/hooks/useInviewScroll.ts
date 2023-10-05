@@ -20,7 +20,7 @@ const useInviewScroll = ({ amountComponent, inView }: Props) => {
     scrollPositionRef.current = currentScrollPos;
   };
 
-  const debouncedHandleScroll = debounce(handleScroll, 100);
+  const debouncedHandleScroll = debounce(handleScroll, 50);
   useEffect(() => {
     if (inView) {
       window.addEventListener('scroll', debouncedHandleScroll);

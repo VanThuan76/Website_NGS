@@ -7,18 +7,22 @@ import { useTheme } from 'next-themes';
 const ConnectUsSection = () => {
   const { theme } = useTheme();
   return (
-    <section id='ConnectUs' className='w-screen bg-[#FC5E03] px-4 dark:bg-[#5E18F4] md:px-24'>
-      <div className='mx-auto my-auto flex max-w-[1440px] flex-col items-start justify-between gap-10 rounded-md p-2 md:p-4 lg:flex-row lg:p-8'>
-        <div className='flex w-full flex-col items-start justify-between gap-5 text-white lg:w-[50%]'>
-          <h1 className='text-3xl lg:text-4xl'>Kết nối với NGS</h1>
-          <p className='text-lg lg:text-xl'>Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên</p>
+    <section id='ConnectUs' className='my-24 max-w-[1240px] rounded-lg bg-[#FC5E03] dark:bg-[#5E18F4]'>
+      <div className='mx-auto my-auto grid w-full grid-cols-1 items-start justify-between gap-8 rounded-md px-4 py-10 md:grid-cols-12 md:p-20'>
+        <div className='flex w-full flex-col items-start justify-between gap-5 text-white md:col-span-5'>
+          <h1 className='text-3xl font-semibold lg:text-5xl'>Kết nối với NGS</h1>
+          <p className='text-lg lg:text-xl'>
+            Xin vui lòng cho chúng tôi biết những gì bạn cần và chúng tôi sẽ liên hệ với bạn sớm nhất!
+          </p>
           {theme === 'dark' ? (
             <IconConnectUsDark className='hidden lg:block' />
           ) : (
             <IconConnectUsLight className='hidden lg:block' />
           )}
         </div>
-        <ConnectUsForm connectUsData={connectUsData} />
+        <div className='md:col-span-7'>
+          <ConnectUsForm connectUsData={connectUsData} />
+        </div>
       </div>
     </section>
   );

@@ -21,7 +21,7 @@ const ClientStoriesDesignThreeSection = ({ title, data, className }: Props) => {
           <p className='text-sm text-orange-500 md:text-2xl'>{title}</p>
           <h1 className='flex w-full flex-col text-2xl font-medium text-white md:text-4xl'>{data.section.name}</h1>
         </div>
-        <div className='z-10 w-full -translate-y-4 transform border-t border-orange-500'></div>
+        <div className='border-card-clientStories-top z-10 w-full -translate-y-4 transform'></div>
         <p className='mt-5 text-center text-sm font-medium not-italic text-white md:text-base'>
           {data.section.description}
         </p>

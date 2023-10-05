@@ -3682,7 +3682,7 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_fis3.1.png',
+      image: '/images/Fis.png',
       video: '',
       thumbnail: '',
     },
@@ -4756,9 +4756,9 @@ export const TYO_CB_Section4 = {
       language: 'vi',
       code: 'PG003.6SE00004CN000001',
       title:
-        'Thấu hiểu và nắm bắt các mục tiêu và thách thức trong kinh doanh bảo hiểm của khách hàng là doanh nghiệp bảo hiểm',
+        'Thấu hiểu và nắm bắt các mục tiêu và thách thức trong kinh doanh bảo hiểm của khách hàng là doanh nghiệp ngân hàng',
       description:
-        ' tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải, chẳng hạn như sản phẩm, dịch vụ và quy trình lỗi thời, khả năng công nghệ hạn chế hoặc kỳ vọng của khách hàng thay đổi. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.',
+        ' tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải, chẳng hạn như sản phẩm, dịch vụ và quy trình lỗi thời, khả năng công nghệ hạn chế hoặc kỳ vọng của khách hàng thay đổi. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi ngân hàng thế hệ mới.',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4783,9 +4783,9 @@ export const TYO_CB_Section4 = {
       id: 3,
       language: 'vi',
       code: 'PG003.6SE00004CN000003s',
-      title: ' Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi bảo hiểm thế hệ mới',
+      title: ' Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi ngân hàng thế hệ mới',
       description:
-        '+ Sử dụng công nghệ số hướng tới dịch vụ nhằm tạo ra quy trình kinh doanh, văn hóa và trải nghiệm mới cho khách hàng.+ Xác định giải pháp cốt lõi bảo hiểm thế hệ mới nào có ROI tốt nhất; tạo điều kiện thuận lợi cho các hoạt động ưu tiên dẫn đến lộ trình hành động.+ Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật vững chắc để phát triển và thực hiện, phù hợp với lộ trình kỹ thuật số.',
+        '+ Sử dụng công nghệ số hướng tới dịch vụ nhằm tạo ra quy trình kinh doanh, văn hóa và trải nghiệm mới cho khách hàng.+ Xác định giải pháp cốt lõi ngân hàng thế hệ mới nào có ROI tốt nhất; tạo điều kiện thuận lợi cho các hoạt động ưu tiên dẫn đến lộ trình hành động.+ Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật vững chắc để phát triển và thực hiện, phù hợp với lộ trình kỹ thuật số.',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4801,7 +4801,7 @@ export const TYO_CB_Section5 = {
     code: 'TPG003.6SE00005',
     image: '',
     description:
-      'Chúng tôi là đối tác đáng tin cậy cho quá trình chuyển đổi kỹ thuật số của doanh nghiệp bạn trong lĩnh vực giải pháp lõi bảo hiểm thế hệ mới',
+      'Chúng tôi là đối tác đáng tin cậy cho quá trình chuyển đổi kỹ thuật số của doanh nghiệp bạn trong lĩnh vực giải pháp lõi ngân hàng thế hệ mới',
   },
   components: [
     {
@@ -4810,7 +4810,7 @@ export const TYO_CB_Section5 = {
       code: 'PG003.6SE00005CN000001',
       title: 'Tập trung vào giá trị',
       description:
-        'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững trong lĩnh vực bảo hiểm tư nhân và lĩnh vực tài chính nói chung.',
+        'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững trong lĩnh vực ngân hàng tư nhân và lĩnh vực tài chính nói chung.',
       slug: '',
       content: '',
       image: '/images/logo_TYO_CB.png',
@@ -4835,7 +4835,7 @@ export const TYO_CB_Section5 = {
       language: 'vi',
       code: 'PG003.6SE00005CN000003',
       title: 'Chuyên môn chuyển đổi kỹ thuật số toàn diện',
-      description: 'Chúng tôi giúp khách hàng từ chiến lược đến thực thi giải pháp trong lĩnh vực bảo hiểm',
+      description: 'Chúng tôi giúp khách hàng từ chiến lược đến thực thi giải pháp trong lĩnh vực ngân hàng',
       slug: '',
       content: '',
       image: '/images/logo_TYO_CB.png',
@@ -4874,7 +4874,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_fis.png',
+      image: '/images/Fis.png',
       video: '',
       thumbnail: '',
     },

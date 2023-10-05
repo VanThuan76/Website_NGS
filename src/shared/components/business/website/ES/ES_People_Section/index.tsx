@@ -46,28 +46,28 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
         findMore={true}
         className='col-span-7 grid-cols-7 !gap-0 !text-left'
       />
-      <div className='mx-auto mt-3 hidden max-w-[1440px] grid-cols-2 items-center justify-between gap-10 overflow-hidden md:grid'>
-        <div className='relative col-span-1 h-[500px] w-full'>
+      <div className='mx-auto mt-3 hidden max-w-[1440px] grid-cols-5 items-center justify-between gap-10 overflow-hidden md:grid'>
+        <div className='relative col-span-2 h-[500px] w-full'>
           <PreImage src={data.section.image} alt={data.section.name} objectPosition='center' />
         </div>
-        <div className='col-span-1 flex w-full flex-col items-start justify-start gap-3'>
+        <div className='col-span-3 flex w-full flex-col items-start justify-start gap-3'>
           <div className='relative min-h-[500px] w-full md:min-h-[450px]'>
             {data.components.map((item, idx) => (
               <div key={idx} className='absolute top-0 flex w-full flex-col items-start justify-start gap-10'>
                 <div className='flex flex-col items-start justify-start gap-2'>
                   <p className='text-xl md:text-3xl'>{selectedTab?.title}</p>
-                  <p className='font-normal text-[#9A3902]'>{selectedTab?.description}</p>
+                  <p className='font-normal'>{selectedTab?.description}</p>
                 </div>
                 {selectedTab && selectedTab?.content!.split('//').length > 1 ? (
                   <div className='flex w-full flex-col items-start justify-start gap-3'>
                     {selectedTab?.content?.split('//').map((item, index) => (
-                      <p key={index} className='font-normal italic text-[#9A3902]'>
+                      <p key={index} className='font-normal italic'>
                         {item}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p className='font-normal text-[#9A3902]'>{selectedTab?.content}</p>
+                  <p className='font-normal'>{selectedTab?.content}</p>
                 )}
               </div>
             ))}
@@ -84,7 +84,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
                 } cursor-pointer font-medium`}
                 onClick={() => setSelectedTab(data && data.components && data.components[idx])}
               >
-                {item.description.split('&')[0]}
+                {idx === 0 ? item.description.split('&')[0] : item.description.split('&')[1]}
                 {item === selectedTab ? <motion.div layoutId='underline' /> : null}
               </motion.li>
             ))}

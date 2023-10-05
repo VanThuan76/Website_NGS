@@ -17,7 +17,7 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
   const [isHovered, setIsHovered] = useState(false);
   return (
     <motion.div
-      className='flex min-h-[10px] w-full cursor-pointer flex-col gap-5 overflow-hidden py-3 lg:min-h-[100px]'
+      className='border-card-service-ho-bottom flex min-h-[10px] w-full cursor-pointer flex-col gap-5 overflow-hidden py-3 lg:min-h-[100px]'
       variants={{
         hidden: { opacity: 0, translateY: -50 },
         visible: { opacity: 1, translateY: 0 },
@@ -25,7 +25,6 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
       animate={sectionControls}
       initial='hidden'
       transition={{ duration: 0.5, delay: idx * 0.5 }}
-      style={{ borderBottom: '1px solid #5A5A5A' }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >

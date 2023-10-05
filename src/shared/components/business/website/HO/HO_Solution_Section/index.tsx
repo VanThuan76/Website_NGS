@@ -59,7 +59,7 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
               }}
               initial='hidden'
               animate={sectionControls}
-              transition={{ duration: 0.7, delay: idx * 0.7 }}
+              transition={{ duration: 0.3, delay: idx * 0.5 }}
             >
               <div className='relative mx-auto min-h-[300px] max-w-[310px] overflow-hidden rounded-lg lg:min-h-[345px]'>
                 <motion.div
@@ -67,8 +67,10 @@ const HomeSolutionSection = ({ title, data, className }: Props) => {
                   variants={animationVariants}
                   initial='hidden'
                   animate='visible'
-                  exit='hidden'
-                  transition={{ duration: 0.5, ease: 'easeInOut' }}
+                  transition={{
+                    duration: 0.3,
+                    ease: 'easeInOut',
+                  }}
                 >
                   {theme === 'dark' ? <BackgroundDark /> : <BackgroundLight />}
                 </motion.div>

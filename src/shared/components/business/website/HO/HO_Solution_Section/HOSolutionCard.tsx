@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import { useTheme } from 'next-themes';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { PreImage } from '@/components/common/customization/PreImage';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
@@ -17,7 +17,12 @@ interface Props {
 
 const HOSolutionCard = ({ id, title, description, image, url, className }: Props) => {
   const currentBreakPoint = useBreakPoint();
-  const [isHovered, setIsHovered] = useState(currentBreakPoint === 'sm' && id === 0 ? true : false);
+  const [isHovered, setIsHovered] = useState(false);
+  useEffect(() => {
+    if (currentBreakPoint === 'sm' && id === 1) {
+      setIsHovered(true);
+    }
+  }, [currentBreakPoint]);
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const animateTheme =
@@ -41,12 +46,12 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
   };
   return (
     <motion.div
-      className={`flex border-collapse cursor-pointer flex-col items-start justify-start overflow-hidden px-[16px] py-[16px] ${className}`}
+      className={`flex cursor-pointer flex-col items-start justify-start overflow-hidden px-[16px] py-[16px] ${className}`}
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
       animate={animateTheme}
       transition={{
-        duration: 0.5,
+        duration: 0.3,
         ease: 'easeInOut',
       }}
     >

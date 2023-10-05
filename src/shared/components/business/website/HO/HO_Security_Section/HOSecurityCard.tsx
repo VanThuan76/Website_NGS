@@ -25,13 +25,13 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
       }}
       initial='hidden'
       animate={sectionControls}
-      transition={{ duration: 0.5, delay: idx * 0.5 }}
+      transition={{ duration: 0.3, delay: idx * 0.5 }}
       onMouseEnter={() => setIsHovered(idx)}
       onMouseLeave={() => setIsHovered(undefined)}
       onClick={() => router.push(`/secure-your-business/${slug}`)}
     >
       <div className='flex flex-col items-center justify-center gap-3'>
-        <div className={`relative ${currentBreakPoint === 'sm' ? 'h-[56px] w-[56px]' : 'h-[72px] w-[72px]'}`}>
+        <div className={`relative ${currentBreakPoint === 'sm' ? 'h-[32px] w-[32px]' : 'h-[56px] w-[56px]'}`}>
           <PreImage src={image as string} alt={title} />
         </div>
         <p className='text-center text-lg font-normal md:text-xl md:font-semibold'>{title}</p>
@@ -43,7 +43,7 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
         animate={{ opacity: isHovered === idx ? 1 : 0 }}
         whileHover={{ translateY: -5 }}
         transition={{
-          duration: 0.5,
+          duration: 0.3,
           ease: 'easeInOut',
         }}
       >

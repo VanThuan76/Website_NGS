@@ -62,7 +62,7 @@ const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Prop
         <ESMissionSection data={ESMissionData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESCoreValueSection sectionCodeLink={'ConnectUs'} title='GIÁ TRỊ CỐT LÕI' data={ESCoreValueData} />
+        <ESCoreValueSection sectionCodeLink='ConnectUs' title='GIÁ TRỊ CỐT LÕI' data={ESCoreValueData} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ESPeopleSection title='CON NGƯỜI NGS' data={ESPeopleData} />

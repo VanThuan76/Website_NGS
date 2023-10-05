@@ -21,7 +21,7 @@ const ClientStoriesDesignTwoSection = ({ title, data, className }: Props) => {
           <p className='mb-3 text-sm text-orange-500 md:text-2xl'>{title}</p>
           <h1 className='flex w-full flex-col text-2xl font-medium text-white md:text-4xl'>{data.section.name}</h1>
         </div>
-        <div className='z-10 w-full -translate-y-4 transform border-t border-orange-500'></div>
+        <div className='border-card-clientStories-top z-10 w-full -translate-y-4 transform'></div>
         <div className='mt-10 grid w-full grid-cols-2 gap-5 md:grid-cols-6'>
           {data.components.map((item, idx) => (
             <div

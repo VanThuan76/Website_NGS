@@ -1,11 +1,11 @@
 import '../styles/globals.css';
-import '../styles/business-color.css';
+import '../styles/businessStyle.css';
 import '../styles/customStyle.scss';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { NextPage } from 'next';
 import { ReactElement } from 'react';
-import { Bai_Jamjuree } from 'next/font/google';
+import { Bai_Jamjuree, Plus_Jakarta_Sans } from 'next/font/google';
 import { Provider } from 'react-redux';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';

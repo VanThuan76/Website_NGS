@@ -19,7 +19,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Đề xuất & Phê duyệt',
-                path: '/404',
+                path: '/proposal-and-approval',
                 menuChild: [],
               },
               {
@@ -70,7 +70,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Thiết bị và Bảo dưỡng',
-                path: '/404',
+                path: '/equipment-and-maintenance',
                 menuChild: [],
               },
             ],
@@ -81,27 +81,27 @@ export const fakeMenu = [
             menuChild: [
               {
                 title: 'Kế toán phải thu',
-                path: '/404',
+                path: '/receivable-accounting',
                 menuChild: [],
               },
               {
                 title: 'Kế toán phải trả',
-                path: '/404',
+                path: '/payable-accounting',
                 menuChild: [],
               },
               {
                 title: 'Tài sản cố định & Công cụ, Dụng cụ',
-                path: '/404',
+                path: '/assets-and-tools',
                 menuChild: [],
               },
               {
                 title: 'Kế toán kho',
-                path: '/404',
+                path: '/stock-accountin',
                 menuChild: [],
               },
               {
                 title: 'Kế toán tổng hợp',
-                path: '/404',
+                path: '/general-accounting',
                 menuChild: [],
               },
               {
@@ -191,7 +191,7 @@ export const fakeMenu = [
             menuChild: [
               {
                 title: 'Sơ đồ tổ chức',
-                path: '/404',
+                path: '/organizational-chart',
                 menuChild: [],
               },
               {
@@ -212,7 +212,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Quy trình gia nhập',
-                path: '/404',
+                path: '/joining-process',
                 menuChild: [],
               },
             ],
@@ -244,12 +244,12 @@ export const fakeMenu = [
 
               {
                 title: 'Tính lương',
-                path: '/404',
+                path: '/payroll',
                 menuChild: [],
               },
               {
                 title: 'Thuế & Bảo hiểm',
-                path: '/404',
+                path: '/tax-and-insurance',
                 menuChild: [],
               },
             ],
@@ -266,17 +266,17 @@ export const fakeMenu = [
             menuChild: [
               {
                 title: 'Kết nối ngân hàng',
-                path: '/404',
+                path: '/bank-connection',
                 menuChild: [],
               },
               {
                 title: 'Kết nối tuyển dụng',
-                path: '/404',
+                path: '/recruitment-connection',
                 menuChild: [],
               },
               {
                 title: 'Kết nối Đào tạo trực tuyến',
-                path: '/404',
+                path: '/elearning-connection',
                 menuChild: [],
               },
             ],
@@ -297,7 +297,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Đơn vị vận chuyển',
-                path: '/404',
+                path: '/shipping-unit',
                 menuChild: [],
               },
             ],
@@ -326,7 +326,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Tối ưu hóa quy trình kinh doanh',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
             ],
@@ -358,12 +358,12 @@ export const fakeMenu = [
               },
               {
                 title: 'Quản trị trải nghiệm khách hàng',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
               {
                 title: 'Nền tảng Marketing số',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
             ],
@@ -452,17 +452,17 @@ export const fakeMenu = [
             menuChild: [
               {
                 title: 'Dịch vụ Hạ tầng',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
               {
                 title: 'Dịch vụ Dữ liệu',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
               {
                 title: 'Chuyển đổi nền tảng',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
             ],
@@ -484,7 +484,7 @@ export const fakeMenu = [
               },
               {
                 title: 'Dịch vụ Quản trị Hệ thống',
-                path: '/404',
+                path: '/update-soon',
                 menuChild: [],
               },
             ],

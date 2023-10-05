@@ -16,6 +16,7 @@ import { IMenu, IMenuChild3 } from '@/mocks/menu';
 import Link from 'next/link';
 import SecureMenuIcon from '@/components/icon/SecureMenuIcon';
 import { useRouter } from 'next/router';
+import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 
 type Props = {
   fakeMenu: IMenu[];
@@ -73,6 +74,10 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                                   color: '#000',
                                   x: 10,
                                 }}
+                                transition={{
+                                  duration: 0.3,
+                                  ease: 'easeInOut',
+                                }}
                                 onMouseEnter={() => setSelectedMenuChild3(menuChild2)}
                               >
                                 <p>{menuChild2.title}</p>
@@ -113,18 +118,25 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                               )}
                               {menuChild3.menuChild &&
                                 menuChild3.menuChild.map((menuChild4, idx) => (
-                                  <NavigationMenuLink
-                                    className={`text-[14px] ${
-                                      '/' + pathname.split('/')[2] === menuChild4.path ? 'text-[#FC5E03]' : ''
-                                    }`}
-                                    style={{
-                                      borderTop: `${menuChild3.title === '' && idx === 0 ? '1px solid #E8E8E8' : ''}`,
-                                    }}
+                                  <UseLinkRouter
                                     key={idx}
-                                    href={`${menuChild3.path}${menuChild4.path}`}
+                                    url={`${
+                                      menuChild4.path === '/update-soon'
+                                        ? menuChild4.path
+                                        : menuChild3.path + menuChild4.path
+                                    }`}
                                   >
-                                    {menuChild4.title}
-                                  </NavigationMenuLink>
+                                    <p
+                                      className={`text-[14px] ${
+                                        '/' + pathname.split('/')[2] === menuChild4.path ? 'text-[#FC5E03]' : ''
+                                      }`}
+                                      style={{
+                                        borderTop: `${menuChild3.title === '' && idx === 0 ? '1px solid #E8E8E8' : ''}`,
+                                      }}
+                                    >
+                                      {menuChild4.title}
+                                    </p>
+                                  </UseLinkRouter>
                                 ))}
                             </div>
                           ))}

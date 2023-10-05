@@ -32,7 +32,7 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           className='col-span-7 w-full grid-cols-7 !gap-0 !text-left'
         />
         <Swiper
-          className='mySwiper'
+          className='mySwiper h-[450px]'
           pagination={{
             dynamicBullets: true,
           }}
@@ -50,7 +50,7 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
                 {hoveredItem === item ? (
                   <TeamDesignOneItem
                     content={item.content || ''}
-                    className='absolute left-0 top-0 w-full bg-black text-white'
+                    className='absolute left-0 top-0 w-full bg-[#FC5E03] text-white'
                   />
                 ) : (
                   <div className='relative h-[418px] w-[335px]'>
@@ -59,7 +59,7 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
                       <p>{item.title}</p>
                       <p>{item.description}</p>
                     </div>
-                    <BackgroundTeam className='absolute -bottom-10 z-10 h-full w-full' />
+                    <BackgroundTeam className='absolute -bottom-24 z-10 h-full w-full' />
                   </div>
                 )}
               </div>

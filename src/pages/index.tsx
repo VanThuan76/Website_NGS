@@ -110,9 +110,6 @@ export function HomePage({
       <ScrollRevealWrapper sectionCode={Home_7.section.code}>
         <HomeWhyUsSection title='ĐIỀU GÌ TẠO NÊN NGS' data={Home_7} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_8.section.code}>
-        <HOOrganizationalSystemSection data={Home_8} />
-      </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper>
         <HomeEventSection title='SỰ KIỆN' data={Home_9} />
       </ScrollRevealWrapper>
@@ -121,6 +118,9 @@ export function HomePage({
       </ScrollRevealWrapper> */}
       <ScrollRevealWrapper sectionCode={Home_11.section.code}>
         <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper sectionCode={Home_8.section.code}>
+        <HOOrganizationalSystemSection data={Home_8} />
       </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper sectionCode={Home_12.section.code}>
         <HomeTestimonialSection title='KHÁCH HÀNG' data={Home_12} />

@@ -144,7 +144,7 @@ export const ESPeopleData = {
       language: 'vi',
       code: 'PG003.10SE00002CN000001',
       title: 'Ông Nguyễn Vũ Hoàng An',
-      description: 'TGĐ NGS',
+      description: 'TGĐ NGS Holding',
       slug: '',
       content:
         '"NGS ra đời với sứ mệnh mang lại Next Generation Solution cho khách hàng từ 2008. Trải qua hành trình gần 20 năm, chúng tôi hiểu rằng, ngoài giải pháp thế hệ mới đầy hiệu quả, khách hàng còn mong đợi dịch vụ tận tâm với trải nghiệm xuất sắc. Chúng tôi mong muốn được đồng hành cũng khách hàng trong quá trình chuyển đổi tổ chức, ứng dụng công nghệ thông tin để tạo ra các kết quả đột phá. Và thật tuyệt vời nếu NGS được trở thành người trao quyền thành công cho đối tác, khách hàng, và cộng sự của chính mình." // Thông điệp từ TGĐ NGS Holding',
@@ -157,7 +157,7 @@ export const ESPeopleData = {
       language: 'vi',
       code: 'PG003.10SE00002CN000002',
       title: 'Ông Phạm Thế Trường',
-      description: 'CT NGS & PTGĐ NGSC',
+      description: 'Phó TGĐ NGS Holding & Chủ tịch NGS Consulting',
       slug: '',
       content:
         'Sau 20 năm làm việc cho các tổ chức công nghệ đa quốc gia hàng đầu với các chức vụ cấp cao tại Oracle, SAP, Microsoft, ông Trường gia nhập NGS với khát khao xây dựng một công ty kiểu mới có năng lực công nghệ mạnh và văn hóa chuyên nghiệp - hướng khách hàng.',
@@ -170,7 +170,7 @@ export const ESPeopleData = {
       language: 'vi',
       code: 'PG003.10SE00002CN000003',
       title: 'Bà Nguyễn Thị Thúy Hằng',
-      description: 'PTGĐ NGS & PTGĐ NGSC',
+      description: 'Phó TGĐ NGS Holding & Phó TGĐ NGS Consulting',
       slug: '',
       content:
         'Hơn 20 năm triển khai các hệ thống ERP/SAP cho các tổ chức, doanh nghiệp hàng đầu tại Việt Nam, bà Thúy Hằng gia nhập NGS và xây dựng lên NGS Consulting với mục tiêu trở thành công ty tư vấn chuyển đổi số hàng đầu tại Việt Nam.',
@@ -295,7 +295,7 @@ export const ESTeamData = {
       language: 'vi',
       code: 'PG003.10SE00002CN00009',
       title: ' Bà Lã Thị Thùy Linh',
-      description: '',
+      description: 'Giám đốc tư vấn giải pháp CRM - Công ty NGSC',
       slug: '',
       content:
         'Với hơn 15 năm kinh nghiệm tư vấn triển khai giải pháp quản trị doanh nghiệp ERP/CRM/Supply Chain Management với nền tảng của các hãng Microsoft, SAP, Infor, Salesforce... bà Lã Thị Thùy Linh đã có những am hiểu về đặc thù vận hành, quản trị theo các ngành nghề của khách hàng. Do vậy, đã có các cơ hội tham gia tư vấn chuyển đổi số cho các Doanh nghiệp, xây dựng chiến lược, định hướng và lộ trình ứng dụng CNTT vào hoạt động của DN đó, giúp mang lại các giá trị thông qua việc đầu tư, ứng dụng và triển khai các dự án công nghệ phù hợp, đúng thời điểm cho các Khách hàng. Gia nhập NGS, bà Linh mong muốn sẽ đồng hành cùng các khách hàng trong quá trình chuyển đổi số, bằng các giải pháp CRM hàng đầu trên thế giới, giúp doanh nghiệp triển khai chiến lược hướng khách hàng làm trọng tâm.',

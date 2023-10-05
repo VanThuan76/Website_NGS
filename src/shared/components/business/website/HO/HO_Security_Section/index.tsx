@@ -1,10 +1,8 @@
 import React, { useEffect, useRef } from 'react';
-import { motion, useAnimation, useInView } from 'framer-motion';
+import { useAnimation, useInView } from 'framer-motion';
 import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import TitleSection from '@/components/common/customization/TitleSection';
-import BackgroundDark from '@/components/icon/HO/security/BackgroundDark';
-import BackgroundLight from '@/components/icon/HO/security/BackgroundLight';
 import HOSecurityCard from './HOSecurityCard';
 import HOSecurityResponsive from './HOSecurityResponsive';
 
@@ -85,19 +83,6 @@ const HomeSecuritySection = ({ title, data, className }: Props) => {
       {/* <-- Responsive */}
       <HOSecurityResponsive data={data} sectionControls={sectionControls} />
       {/* Responsive --> */}
-      <motion.div
-        className='absolute left-0 top-0 -z-10 h-full w-full'
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.5 }}
-      >
-        {theme === 'dark' ? (
-          <BackgroundDark className='w-full object-center' />
-        ) : (
-          <BackgroundLight className='w-full scale-150 object-center md:scale-100' />
-        )}
-      </motion.div>
     </section>
   );
 };
