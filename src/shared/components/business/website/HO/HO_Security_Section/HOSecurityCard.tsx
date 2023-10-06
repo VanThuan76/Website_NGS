@@ -34,7 +34,7 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
         <div className={`relative ${currentBreakPoint === 'sm' ? 'h-[32px] w-[32px]' : 'h-[56px] w-[56px]'}`}>
           <PreImage src={image as string} alt={title} />
         </div>
-        <p className='text-center text-lg font-normal md:text-xl md:font-semibold'>{title}</p>
+        <p className='text-center text-lg font-normal md:text-xl md:font-medium'>{title}</p>
       </div>
       <motion.p
         className='absolute top-0 z-30 h-[202px] max-w-[304px] bg-[#e5e5e5] p-3'

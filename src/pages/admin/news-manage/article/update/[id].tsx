@@ -15,7 +15,7 @@ type Props = {
 export function NewsUpdate({ id }: Props) {
   const data = useGetDetailNews({ id });
   const handleUpdateNews = useUpdateNews(() => {
-    router.push('/news');
+    router.push('/article');
   });
   function onSubmit(values: Partial<IAdminNews>) {
     handleUpdateNews.mutate({ id: id, news: values });
@@ -25,7 +25,7 @@ export function NewsUpdate({ id }: Props) {
     <section className='w-full'>
       <div className='mb-6 flex justify-between'>
         <div className='text-2xl font-bold'>Update News</div>
-        <Button onClick={() => router.push('/news')}>
+        <Button onClick={() => router.push('/article')}>
           <ListBulletIcon className='mr-2' /> List News
         </Button>
       </div>
@@ -33,7 +33,7 @@ export function NewsUpdate({ id }: Props) {
         onSubmit={onSubmit}
         isLoading={handleUpdateNews.isLoading}
         defaultValue={data.data}
-        onBack={() => router.push('/news')}
+        onBack={() => router.push('/article')}
       />
     </section>
   );

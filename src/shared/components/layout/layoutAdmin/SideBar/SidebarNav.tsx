@@ -1,16 +1,15 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-
 import { cn } from '@/utils/tailwind/functions';
-import { MenuItem } from '@/utils/constants/menu';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '@/components/common/ui/collapsible';
-import { ArrowDown, ArrowDown01, ChevronDown, ChevronLeft } from 'lucide-react';
-import { useState } from 'react';
-import classNames from 'classnames';
+import { ChevronDown, ChevronLeft } from 'lucide-react';
 import { useAppSelector } from '@/hooks/useRedux';
 import { useDispatch } from 'react-redux';
 import { toggleMenu } from 'src/shared/stores/appSlice';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/common/ui/tooltip';
+import classNames from 'classnames';
+import { useEffect } from 'react';
+import { MenuItem } from '../DashboardLayout';
 
 type Props = {
   menus: MenuItem[];
@@ -20,6 +19,9 @@ const SidebarNav = ({ menus }: Props) => {
   const path = usePathname();
   const isCollapseMenu = useAppSelector(state => state.appSlice.isCollapseMenu);
   const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(toggleMenu(!isCollapseMenu));
+  }, []);
   if (!menus?.length) {
     return null;
   }
@@ -28,12 +30,21 @@ const SidebarNav = ({ menus }: Props) => {
       {menus.map((item, index) => {
         return item.chidren ? (
           <Collapsible key={item.href}>
-            <CollapsibleTrigger className='group flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground'>
+            <CollapsibleTrigger
+              className={cn(
+                'group flex w-full items-center justify-between rounded-md px-3 py-2 text-sm font-medium hover:bg-accent hover:text-accent-foreground',
+                path.split('/')[2] === item.href.split('/')[2] ? 'bg-accent text-accent-foreground' : 'transparent',
+              )}
+            >
               <TooltipProvider delayDuration={200}>
                 <Tooltip>
                   <TooltipTrigger className='w-full' asChild>
                     <div className='flex w-full items-center gap-2'>
-                      <div className='flex '>
+                      <div
+                        className={cn(
+                          'group flex items-center rounded-md text-sm font-medium hover:bg-accent hover:text-accent-foreground',
+                        )}
+                      >
                         {item.Icon}
                         <span className={classNames('', { hidden: isCollapseMenu })}>{item.title}</span>
                       </div>

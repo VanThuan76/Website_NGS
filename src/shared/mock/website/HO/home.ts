@@ -26,7 +26,7 @@ export const Home_1 = {
       title: 'Đối tác tin cậy',
       description: 'Chúng tôi tự hào là',
       slug: 'trust-partner-2',
-      content: 'ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ LỚN NHẤT// TRÊN THẾ GIỚI',
+      content: 'ĐỐI TÁC HÀNG ĐẦU CỦA CÁC HÃNG CÔNG NGHỆ // LỚN NHẤT TRÊN THẾ GIỚI',
       image: '/images/background_2.png',
       video: '',
       thumbnail: '',

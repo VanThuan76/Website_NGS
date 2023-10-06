@@ -1,5 +1,4 @@
 import React from 'react';
-
 export interface IPage {
   id: React.Key;
   name: string;

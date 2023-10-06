@@ -20,7 +20,7 @@ import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
 
 export function NewsList() {
   const router = useRouter();
-  const TABLE_NAME = 'News';
+  const TABLE_NAME = 'Article';
   const { data, tableConfig, getFieldValueOnSearchParam } = useGetListNews();
   const useDelete = useDeleteNews();
 
@@ -41,7 +41,7 @@ export function NewsList() {
             <DropdownMenuContent align='end'>
               <DropdownMenuItem
                 className='cursor-pointer pl-4 font-medium'
-                onClick={() => router.push(`/admin/news/update/${record.id}`)}
+                onClick={() => router.push(`/admin/article/update/${record.id}`)}
               >
                 <Edit className='mr-2 h-4 w-4' /> Chỉnh sửa
               </DropdownMenuItem>
@@ -107,7 +107,7 @@ export function NewsList() {
         <div className='text-2xl font-bold'>{TABLE_NAME}</div>
         <div
           className='flex h-9 cursor-pointer items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'
-          onClick={() => router.push('/admin/news-manage/news/create')}
+          onClick={() => router.push('/admin/news-manage/article/create')}
         >
           <PlusCircle className='mr-2' />
           Thêm mới bài viết

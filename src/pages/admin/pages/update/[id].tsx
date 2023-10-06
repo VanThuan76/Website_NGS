@@ -21,7 +21,7 @@ import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
 import { initData, setActiveSection } from 'src/shared/stores/pageEditorSlice';
 import { ISection } from 'src/shared/schemas/typedef/ISection';
 import { useRouter } from 'next/router';
-import { GetStaticPaths, GetStaticProps } from 'next';
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from 'next';
 import { IDetailPageById } from 'src/shared/schemas/typedef/IPage';
 import { renderHomeContent } from '@/utils/fetchServerSide/renderHomeContent';
 import { APP_SAVE_KEY } from '@/utils/constants';
@@ -93,35 +93,39 @@ export function EditPage({ informationPage, sections }: Props) {
 EditPage.getLayout = (children: React.ReactNode) => <DashBoardLayout>{children}</DashBoardLayout>;
 export default EditPage;
 
-export const getStaticProps: GetStaticProps = async ctx => {
-  const id = ctx.params?.id;
-  try {
-    const detailPageResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/${id}`);
-    const dataDetailPage = await detailPageResponse.json();
-    const informationPage = dataDetailPage.data;
-    const sectionResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/section/get-by-page/${id}`);
-    const dataSection = await sectionResponse.json();
-    const sections = dataSection.data;
-    return {
-      props: {
-        informationPage,
-        sections,
-      },
-    };
-  } catch (error) {
-    console.error('Error fetching data:', error);
-    return {
-      props: {
-        informationPage: undefined,
-        sections: [],
-      },
-    };
-  }
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  return { props: { id: ctx.query.id } };
 };
 
-export const getStaticPaths: GetStaticPaths = async _ctx => {
-  return {
-    paths: [],
-    fallback: true,
-  };
-};
+// export const getStaticProps: GetStaticProps = async ctx => {
+//   const id = ctx.params?.id;
+//   try {
+//     const detailPageResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/pages/get-by-id/${id}`);
+//     const dataDetailPage = await detailPageResponse.json();
+//     const informationPage = dataDetailPage.data;
+//     const sectionResponse = await fetch(`${process.env.NEXT_PUBLIC_DEV_API_URL}/section/get-by-page/${id}`);
+//     const dataSection = await sectionResponse.json();
+//     const sections = dataSection.data;
+//     return {
+//       props: {
+//         informationPage,
+//         sections,
+//       },
+//     };
+//   } catch (error) {
+//     console.error('Error fetching data:', error);
+//     return {
+//       props: {
+//         informationPage: undefined,
+//         sections: [],
+//       },
+//     };
+//   }
+// };
+
+// export const getStaticPaths: GetStaticPaths = async _ctx => {
+//   return {
+//     paths: [],
+//     fallback: true,
+//   };
+// };

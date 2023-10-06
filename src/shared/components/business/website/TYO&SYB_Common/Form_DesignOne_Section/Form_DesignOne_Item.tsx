@@ -179,7 +179,7 @@ const FormDesignOneItem = () => {
             <button
               style={{ border: '1px solid #FC5F04' }}
               type='submit'
-              className={`relative mt-3 flex cursor-pointer items-center justify-center gap-3 rounded-full bg-[#fff] px-4 py-2 text-left text-orange-500 hover:border-2 hover:transition hover:ease-in-out`}
+              className={`relative mt-3 flex cursor-pointer items-center justify-center gap-3 rounded-[12px] bg-[#fff] px-4 py-2 text-left text-orange-500 hover:border-2 hover:transition hover:ease-in-out`}
             >
               <p className='text-sm'>Đăng ký ngay</p>
               <IconLineDirection color='#FC5F04' />

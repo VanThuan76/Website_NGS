@@ -19,12 +19,12 @@ type Props = {
 };
 
 type LabelProps = {
-  data: IPage;
+  data: IPage | undefined;
 };
 
 const Label: React.FC<LabelProps> = ({ data }) => {
   const router = useRouter();
-
+  if (!data) return <React.Fragment></React.Fragment>;
   return (
     <Card className='relative w-full px-4 py-4'>
       <b>
@@ -53,19 +53,22 @@ const Label: React.FC<LabelProps> = ({ data }) => {
 };
 
 const PageChart: React.FC<Props> = ({ menuPageTree }) => {
+  const homePage: IPage | undefined = menuPageTree.find(page => page.id === 1);
   return (
     <div className='w-full p-4 text-center'>
       <Tree
         lineWidth={'2px'}
         lineColor={'lightgray'}
         lineBorderRadius={'10px'}
-        label={<Label data={menuPageTree[0]} />}
+        label={<Label data={homePage} />}
         nodePadding='10px'
       >
         {menuPageTree &&
-          menuPageTree.slice(1, menuPageTree.length).map(item => {
-            return <TreeNode key={item.id} label={<Label data={item} />} />;
-          })}
+          menuPageTree
+            .filter(page => page.id !== 1)
+            .map(item => {
+              return <TreeNode key={item.id} label={<Label data={item} />} />;
+            })}
       </Tree>
     </div>
   );

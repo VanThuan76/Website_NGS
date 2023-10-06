@@ -32,43 +32,43 @@ export interface IFolderMedia {
 }
 export const imageMedia = [
   {
-    url: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg',
+    url: '/images/background_1.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://vanhoadoisong.vn/wp-content/uploads/2022/10/51-background-hinh-nen-powerpoint-ve-marketing-full-hd-thumbnail.jpg',
+    url: '/images/background_2.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg',
+    url: '/images/background_3.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://c4.wallpaperflare.com/wallpaper/624/21/247/microsoft-windows-windows-10-technology-hi-tech-wallpaper-preview.jpg',
+    url: '/images/background_3.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg',
+    url: '/images/background_1.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg',
+    url: '/images/background_1.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
   {
-    url: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg',
+    url: '/images/background_1.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },
 
   {
-    url: 'https://khoinguonsangtao.vn/wp-content/uploads/2022/11/hinh-nen-may-bay-vietnam-airline.jpg',
+    url: '/images/background_1.png',
     title: 'image.png',
     size: 'PNG - 512✕512',
   },

@@ -1,19 +1,18 @@
 import InputText from '@/components/common/form/InputText';
 import InputTextArea from '@/components/common/form/InputTextArea';
 import { Button } from '@/components/common/ui/button';
-import { Form, FormDescription, FormField, FormLabel } from '@/components/common/ui/form';
-import convertSlug from '@/utils/functions/convertSlug';
+import { Form, FormField, FormLabel } from '@/components/common/ui/form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { Loader2, MoveLeft } from 'lucide-react';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useForm } from 'react-hook-form';
-import Media from 'src/pages/admin/media';
 import { IAdminNews } from 'src/shared/schemas/models/INews';
 import { z } from 'zod';
 import TriggerDialogForm from '../media/TriggerDialogForm';
 import InputEditor from '@/components/common/form/InputEditor';
-import EditorBlock from '@/components/common/editor';
+import Media from 'src/pages/admin/media';
 import useWarnIfUnsavedChanges from '@/hooks/useWarnIfUnsavedChanges';
+import convertSlug from '@/utils/functions/convertSlug';
 import _ from 'lodash';
 
 type Props = {
@@ -71,7 +70,7 @@ export default function FormNews({ onSubmit, isLoading, defaultValue, onBack }: 
           className='lg:min-w-[1080px] xl:min-w-[1080px]'
           trigger={
             <div
-              className='flex h-9 items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'
+              className='flex h-9 cursor-pointer items-center justify-center rounded-lg border-2 border-slate-300 px-4 py-2 dark:bg-white dark:text-black'
               data-value='image/123123asdasd'
             >
               Tải ảnh

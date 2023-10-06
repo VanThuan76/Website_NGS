@@ -41,7 +41,7 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                     }}
                     className={navigationMenuTriggerStyle()}
                   >
-                    {mainMenu.title}
+                    <p>{mainMenu.title}</p>
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>

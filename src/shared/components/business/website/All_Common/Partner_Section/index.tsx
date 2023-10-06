@@ -21,12 +21,9 @@ const PartnerSection = ({ title, data, className }: Props) => {
   });
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
-    <section
-      id={data.section.code}
-      className={`w-screen bg-[#fc5e03] px-4 text-white dark:bg-[#7d4aeb] md:px-24 ${className}`}
-    >
-      <div className='mx-auto my-auto flex max-w-[1440px] flex-col items-start justify-start pb-4 md:pb-8 lg:pb-16 xl:pb-24'>
-        <h1 className='mt-5 pt-10 text-3xl'>{title}</h1>
+    <section id={data.section.code} className={`w-screen bg-[#fc5e03] text-white dark:bg-[#7d4aeb] ${className}`}>
+      <div className='mx-auto flex max-w-[1440px] flex-col items-start justify-start px-4 pb-4 md:px-24 md:pb-8 lg:pb-16 xl:pb-24'>
+        <h1 className='mt-5 pt-10 text-3xl md:text-[40px]'>{title}</h1>
         <div className='mt-20 hidden w-full items-start justify-between md:flex'>
           <Swiper
             className='mySwiper'
@@ -36,7 +33,7 @@ const PartnerSection = ({ title, data, className }: Props) => {
             centeredSlides={true}
             navigation={false}
             autoplay={{
-              delay: 500,
+              delay: 1000,
               disableOnInteraction: false,
             }}
             loop

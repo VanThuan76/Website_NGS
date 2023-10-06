@@ -38,17 +38,17 @@ const TitleSection = (data: Partial<Props>) => {
     },
   };
   return (
-    <div className='mx-auto my-auto mt-5 flex w-full max-w-[1440px] flex-col gap-4'>
+    <div className='mx-auto my-auto mt-5 flex w-full max-w-[1440px] flex-col gap-1'>
       {data.title && title && (
-        <p className={`text-center text-sm !text-[#FC5E03] md:text-2xl ${data.className}`}>
+        <h1 className={`text-center text-sm !text-[#FC5E03] md:text-2xl ${data.className}`}>
           <motion.div variants={container} transition={{ duration: 0.7, delay: 5 }} initial='hidden' animate='visible'>
             {title.map((word, idx) => (
-              <motion.span variants={child} className='mr-[5px] md:mr-[10px]' key={idx}>
+              <motion.span variants={child} key={idx} className='mr-[5px] font-normal leading-6 md:mr-[10px]'>
                 {word}
               </motion.span>
             ))}
           </motion.div>
-        </p>
+        </h1>
       )}
       <div className={`grid w-full grid-cols-12 gap-[80px] ${data.className}`}>
         <div className='col-span-7 flex w-full flex-col'>

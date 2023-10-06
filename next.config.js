@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const { i18n } = require('./next-i18next.config');
 
-const nextConfig = {
+module.exports = {
   reactStrictMode: true,
   i18n,
   images: {
@@ -17,5 +17,16 @@ const nextConfig = {
     config.experiments.topLevelAwait = true;
     return config;
   },
+  async exportPathMap(defaultPathMap) {
+    const excludeAdminPages = (path) => path.startsWith('/admin');
+
+    const filteredPathMap = Object.keys(defaultPathMap).reduce((acc, path) => {
+      if (!excludeAdminPages(path)) {
+        acc[path] = defaultPathMap[path];
+      }
+      return acc;
+    }, {});
+
+    return filteredPathMap;
+  },
 };
-module.exports = nextConfig;

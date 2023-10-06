@@ -38,7 +38,7 @@ const Header = () => {
       transition={{ duration: 0.3 }}
       className={`top-0 z-50 flex w-full items-center justify-between gap-5 transition ${
         isScrolled
-          ? 'light:text-black border-black-300 sticky border-b-[1px] border-opacity-50 bg-[#fff] duration-500 ease-in-out dark:bg-[#141523]'
+          ? 'light:text-black sticky border-b-[2px] border-[#E5E5E5] border-opacity-100 bg-[#fff] duration-500 ease-in-out dark:bg-[#141523]'
           : 'sticky bg-opacity-100 duration-500 ease-in-out dark:bg-[#141523]'
       }`}
     >

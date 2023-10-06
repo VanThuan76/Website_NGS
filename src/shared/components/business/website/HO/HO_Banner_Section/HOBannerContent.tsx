@@ -52,64 +52,74 @@ interface Props {
 
 const HOBannerContent = ({ selectedTab }: Props) => {
   return (
-    <InitBasicAnimation className='font-custom absolute top-28 z-40 mx-auto flex w-full flex-col items-start justify-center gap-5 pl-4 lg:pl-24'>
-      <div className='text-left text-sm font-medium text-white underline lg:text-lg'>
-        <AnimatePresence mode='wait'>
-          <motion.div
-            className='text-left text-sm font-medium text-white underline lg:text-lg'
-            variants={textVariants}
-            initial='initial'
-            animate='animate'
-          >
-            {selectedTab
-              ? selectedTab?.description?.split(' ').map((word, idx) => (
-                  <motion.div
-                    key={idx}
-                    className='inline-block text-sm md:text-lg lg:text-2xl'
-                    variants={{
-                      initial: {
-                        opacity: 0,
-                        y: -10,
-                        rotate: -5,
-                      },
-                      animate: {
-                        opacity: 1,
-                        y: 0,
-                        rotate: 0,
-                        transition: {
-                          ease: 'easeOut',
-                          duration: 0.4,
+    <InitBasicAnimation className='font-custom absolute top-28 z-40 flex w-full flex-col items-start justify-center gap-5 px-4 md:px-20'>
+      <div className='mx-auto flex w-full flex-col items-start justify-start gap-6 px-4 md:px-24'>
+        <div className='text-left text-sm font-medium text-white underline lg:text-lg'>
+          <AnimatePresence mode='wait'>
+            <motion.div
+              className='text-left text-sm font-medium text-white underline lg:text-lg'
+              variants={textVariants}
+              initial='initial'
+              animate='animate'
+            >
+              {selectedTab
+                ? selectedTab?.description?.split(' ').map((word, idx) => (
+                    <motion.div
+                      key={idx}
+                      className='inline-block text-sm md:text-lg lg:text-2xl'
+                      variants={{
+                        initial: {
+                          opacity: 0,
+                          y: -10,
+                          rotate: -5,
                         },
-                      },
-                    }}
-                  >
-                    {word + '\u00A0'}
-                  </motion.div>
-                ))
-              : ''}
-          </motion.div>
-        </AnimatePresence>
+                        animate: {
+                          opacity: 1,
+                          y: 0,
+                          rotate: 0,
+                          transition: {
+                            ease: 'easeOut',
+                            duration: 0.4,
+                          },
+                        },
+                      }}
+                    >
+                      {word + '\u00A0'}
+                    </motion.div>
+                  ))
+                : ''}
+            </motion.div>
+          </AnimatePresence>
+        </div>
+        <motion.div
+          className='hidden flex-col items-start justify-start md:flex'
+          variants={container}
+          initial='hidden'
+          animate='visible'
+        >
+          {selectedTab.content?.split('//').map((word, idx) => (
+            <motion.span
+              variants={child}
+              className='text-5xl font-semibold uppercase leading-[56px] text-white'
+              key={idx}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </motion.div>
+        {/* Responsive */}
+        <h1 className='block text-2xl font-semibold uppercase leading-8 text-white md:hidden'>
+          {selectedTab.content?.split('//').map((word, idx) => (
+            <motion.span variants={child} key={idx}>
+              {word}
+            </motion.span>
+          ))}
+        </h1>
+        {/* Responsive */}
+        <UseLinkRouter url={URLS_SYSTEM.ES}>
+          <BtnCommon title='Tìm hiểu thêm' cls='w-[190px] md:w-[170px] bg-[#fff] border-none !text-orange-500' />
+        </UseLinkRouter>
       </div>
-      <motion.div
-        className='flex flex-col items-start justify-start'
-        variants={container}
-        initial='hidden'
-        animate='visible'
-      >
-        {selectedTab.content?.split('//').map((word, idx) => (
-          <motion.span
-            variants={child}
-            style={{ lineHeight: '130%' }}
-            className='text-2xl font-normal uppercase text-white lg:text-5xl'
-            key={idx}
-          >
-            {word}
-          </motion.span>
-        ))}
-      </motion.div>
-      <UseLinkRouter url={URLS_SYSTEM.ES}>
-        <BtnCommon title='Tìm hiểu thêm' cls='!px-3 bg-[#fff] border-none !text-orange-500' />
-      </UseLinkRouter>
     </InitBasicAnimation>
   );
 };

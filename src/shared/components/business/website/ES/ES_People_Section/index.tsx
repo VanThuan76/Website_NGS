@@ -55,19 +55,19 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
             {data.components.map((item, idx) => (
               <div key={idx} className='absolute top-0 flex w-full flex-col items-start justify-start gap-10'>
                 <div className='flex flex-col items-start justify-start gap-2'>
-                  <p className='text-xl md:text-3xl'>{selectedTab?.title}</p>
+                  <h1 className='text-xl font-medium md:text-3xl'>{selectedTab?.title}</h1>
                   <p className='font-normal'>{selectedTab?.description}</p>
                 </div>
                 {selectedTab && selectedTab?.content!.split('//').length > 1 ? (
                   <div className='flex w-full flex-col items-start justify-start gap-3'>
                     {selectedTab?.content?.split('//').map((item, index) => (
-                      <p key={index} className='font-normal italic'>
+                      <p key={index} className='font-normal italic text-[#757575]'>
                         {item}
                       </p>
                     ))}
                   </div>
                 ) : (
-                  <p className='font-normal'>{selectedTab?.content}</p>
+                  <p className='font-normal text-[#757575]'>{selectedTab?.content}</p>
                 )}
               </div>
             ))}

@@ -2,6 +2,7 @@ import CardImage from '@/components/business/admin/media/CardImage';
 import Header from '@/components/business/admin/media/Header';
 import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
 import { imageMedia } from '@/mocks/admin/media';
+import { GetServerSideProps } from 'next';
 
 const Folder = () => {
   return (
@@ -18,3 +19,7 @@ const Folder = () => {
 
 Folder.getLayout = (children: React.ReactNode) => <DashBoardLayout>{children}</DashBoardLayout>;
 export default Folder;
+
+export const getServerSideProps: GetServerSideProps = async ctx => {
+  return { props: { id: ctx.query.id } };
+};

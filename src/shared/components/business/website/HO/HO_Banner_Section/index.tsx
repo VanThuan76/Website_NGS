@@ -64,7 +64,7 @@ const HomeBannerSection = ({ data }: Props) => {
         >
           {data.components!.map((item, idx) => (
             <SwiperSlide key={idx}>
-              <div className='relative mx-auto flex w-full items-center justify-between'>
+              <div className='relative flex w-full items-center justify-between'>
                 <HOBannerContent selectedTab={item} />
                 <div
                   className={`mx-auto w-screen ${
@@ -82,15 +82,15 @@ const HomeBannerSection = ({ data }: Props) => {
             <MouseScroll />
           </div>
         </UseLinkRedirect>
-        <InitBasicAnimation className='absolute bottom-10 z-40 pl-4 lg:pl-20'>
-          <div className='relative flex w-full items-center justify-between gap-3'>
-            <ul className='hidden items-center justify-between gap-3 md:flex'>
+        <InitBasicAnimation className='absolute bottom-10 z-40 w-screen'>
+          <div className='relative mx-auto flex max-w-[1440px] items-center justify-between gap-5 px-4 md:px-24'>
+            <ul className='hidden items-center justify-between gap-10 md:flex'>
               {data.components!.map((item, idx) => {
                 progressLines.current.push(ref);
                 return (
                   <li
                     key={idx}
-                    className={`custom-list-item relative px-4 pb-3 text-sm font-normal ${
+                    className={`custom-list-item relative pb-3 text-sm font-normal ${
                       isActived === idx ? 'text-slate-50' : 'text-slate-300'
                     } cursor-pointer`}
                   >

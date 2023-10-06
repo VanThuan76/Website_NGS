@@ -52,8 +52,8 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           </UseLinkRouter>
         </div>
         {/* Responsive */}
-        <div className='relative col-span-1 h-[370px] overflow-hidden rounded-lg'>
-          <PreImage src={data.section.image} layer={false} alt={data.section.name} objectFit='contain' />
+        <div className='relative col-span-1 h-[370px] scale-150 overflow-hidden rounded-lg'>
+          <PreImage src={data.section.image} layer={false} alt={data.section.name} objectPosition='center' />
         </div>
         <div className='hidden w-full flex-col items-start justify-start md:flex'>
           <TitleSection
@@ -72,31 +72,30 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           </UseLinkRouter>
         </div>
       </div>
-      <div className='flex w-full flex-col items-center justify-center bg-transparent lg:flex-row'>
-        {data.components.map((item, idx) => {
-          return (
-            <motion.div
-              key={idx}
-              className={`w-full p-7 dark:bg-[#1B1D35] ${
-                data.components && data.components?.length - 1 !== idx && currentBreakPoint !== 'sm'
-                  ? 'border-card-aboutUs-home-right'
-                  : data.components && data.components?.length - 1 !== idx && 'border-b border-b-slate-300'
-              } flex flex-col items-center justify-center text-center`}
-              variants={{
-                hidden: { opacity: 0, scale: 0 },
-                visible: { opacity: 1, scale: 0.9 },
-              }}
-              initial='hidden'
-              animate={sectionControls}
-              transition={{ duration: 0.3, delay: idx * 0.5 }}
-            >
-              <div className='flex w-full flex-col items-center justify-center gap-2'>
-                <div className='text-5xl font-normal text-[#FC5E03]'>+{item.title}</div>
-                <p className='text-2xl leading-8'>{item.description}</p>
-              </div>
-            </motion.div>
-          );
-        })}
+      <div className='flex w-full justify-center lg:justify-between'>
+        {data.components.map((item, idx) => (
+          <motion.div
+            key={idx}
+            className={`w-full p-7 dark:bg-[#1B1D35] ${
+              data.components && data.components?.length - 1 !== idx && currentBreakPoint !== 'sm'
+                ? 'border-card-aboutUs-home-right'
+                : data.components && data.components?.length - 1 !== idx && 'border-b border-b-slate-300'
+            } flex flex-col items-center text-center`}
+            style={{ flex: 1, alignSelf: 'start' }}
+            variants={{
+              hidden: { opacity: 0, scale: 0 },
+              visible: { opacity: 1, scale: 0.9 },
+            }}
+            initial='hidden'
+            animate={sectionControls}
+            transition={{ duration: 0.3, delay: idx * 0.5 }}
+          >
+            <div className='flex flex-col items-center gap-2'>
+              <div className='text-5xl font-normal text-[#FC5E03]'>+{item.title}</div>
+              <p className='text-2xl leading-8'>{item.description}</p>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </section>
   );
