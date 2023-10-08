@@ -82,9 +82,9 @@ const ServiceDesignTwoSection = ({ title, data, className }: Props) => {
                         <PreImage alt={item.title} src={item.image} />
                       </div>
                     )}
-                    <div className='absolute left-5 top-5 text-xl text-white md:text-2xl'>0{idx + 1}</div>
+                    <div className='absolute left-5 top-5 text-xl text-black md:text-4xl'>0{idx + 1}</div>
                     {item !== selectedTab ? (
-                      <div className='absolute bottom-0 left-1/2 -translate-x-1/2 transform text-center text-sm text-white'>
+                      <div className='absolute bottom-0 left-1/2 -translate-x-1/2 transform text-center text-sm text-black'>
                         {item.title}
                       </div>
                     ) : (

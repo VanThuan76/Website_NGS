@@ -21,6 +21,7 @@ import ClientStoriesDesignThreeSection from '@/components/business/website/TYO&S
 
 import dynamic from 'next/dynamic';
 import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -44,7 +45,7 @@ const CCPage = () => {
         <OverviewDesignOneSection title='Tổng quan' data={TYO_CB_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignOneSection title='Thách thức của bạn' data={TYO_CB_Section3} />
+        <ChallengeDesignOneSection title='Thách thức' data={TYO_CB_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignThreeSection
@@ -58,7 +59,7 @@ const CCPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_CB_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={TYO_CB_Section6.section.code}>
-        <PartnerSection title='NGS đồng hành cùng những đối tác tuyệt vời' data={TYO_CB_Section6} />
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CB_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignThreeSection title='Client stories' data={TYO_CB_Section7} />

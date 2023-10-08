@@ -75,7 +75,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             ))}
           </div>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon title='All clients stories' cls='absolute bottom-24 left-0 border border-orange-500 !bg-none' />
+            <BtnCommon title='Tìm hiểu thêm' cls='absolute bottom-24 left-0 border border-orange-500 !bg-none' />
           </UseLinkRouter>
           {/* <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (

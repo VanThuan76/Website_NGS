@@ -3486,7 +3486,7 @@ export const TYO_DSP_Section2 = {
     code: 'PG003.1SE00002',
     image: '/images/Image_OverviewDesignFIveSection.png',
     description:
-      'Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường.// NGS cung cấp dịch vụ chuyên nghiệp về Chuyển đổi số với hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Chiến lược Kỹ thuật số là bước quan trọng đầu tiên để thúc đẩy quá trình Chuyển đổi số.',
+      'Chuyển đổi số là quá trình tái cấu trúc của một tổ chức dựa trên việc sử dụng các công nghệ số để tạo ra hoặc thay đổi các quy trình kinh doanh, văn hóa và trải nghiệm khách hàng, nhằm đáp ứng yêu cầu thay đổi của doanh nghiệp và thị trường// NGS cung cấp dịch vụ chuyên nghiệp về Chuyển đổi số với hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Chiến lược Kỹ thuật số là bước quan trọng đầu tiên để thúc đẩy quá trình Chuyển đổi số',
   },
   components: [],
 };
@@ -3504,9 +3504,9 @@ export const TYO_DSP_Section3 = {
       id: 1,
       language: 'vi',
       code: 'PG003.1SE00003CN000001',
-      title: '“Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh.”',
+      title: '“Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh”',
       description:
-        'Nhu cầu của khách hàng và thị trường đang thay đổi nhanh hơn bao giờ hết, đòi hỏi doanh nghiệp phải nhanh chóng điều chỉnh chiến lược, sản phẩm, dịch vụ để duy trì tính cạnh tranh. Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh.// NGS hiểu rằng việc phát triển một chiến lược chuyển đổi số rõ ràng, phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một trong những thách thức lớn nhất, đặc biệt khi doanh nghiệp không được nhận thức đầy đủ và đúng đắn về quá trình chuyển đổi số.',
+        'Nhu cầu của khách hàng và thị trường đang thay đổi nhanh hơn bao giờ hết, đòi hỏi doanh nghiệp phải nhanh chóng điều chỉnh chiến lược, sản phẩm, dịch vụ để duy trì tính cạnh tranh. Các giải pháp kinh doanh số sáng tạo sẽ là một phần thiết yếu trong chiến lược cạnh tranh// NGS hiểu rằng việc phát triển một chiến lược chuyển đổi số rõ ràng, phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một trong những thách thức lớn nhất, đặc biệt khi doanh nghiệp không được nhận thức đầy đủ và đúng đắn về quá trình chuyển đổi số',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00003CN000001.png',
@@ -3582,7 +3582,7 @@ export const TYO_DSP_Section5 = {
       language: 'vi',
       code: 'PG003.1SE00005CN000001',
       title: 'Tập trung vào giá trị',
-      description: 'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững.',
+      description: 'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00004.png',
@@ -3607,7 +3607,7 @@ export const TYO_DSP_Section5 = {
       language: 'vi',
       code: 'PG003.1SE00005CN000003',
       title: 'Chuyên môn toàn diện về chuyển đổi số',
-      description: 'Chúng tôi giúp khách hàng từ chiến lược đến thực thi.',
+      description: 'Chúng tôi giúp khách hàng từ chiến lược đến thực thi',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00004.png',
@@ -3619,8 +3619,8 @@ export const TYO_DSP_Section5 = {
 
 export const TYO_DSP_Section6 = {
   section: {
-    id: 6,
-    name: 'NGS đồng hành cùng những đối tác tuyệt vời',
+    id: 7,
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'PG003.1SE00006',
     image: '',
     description: '',
@@ -3634,10 +3634,11 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_kpmg.png',
+      image: '/images/SAP.png',
       video: '',
       thumbnail: '',
     },
+
     {
       id: 2,
       language: 'vi',
@@ -3646,7 +3647,7 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_oracle.png',
+      image: '/images/Salesforce.png',
       video: '',
       thumbnail: '',
     },
@@ -3658,7 +3659,7 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_detoilette.png',
+      image: '/images/genesys.png',
       video: '',
       thumbnail: '',
     },
@@ -3670,7 +3671,7 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_genesys.png',
+      image: '/images/Oracle.png',
       video: '',
       thumbnail: '',
     },
@@ -3682,7 +3683,7 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/Fis.png',
+      image: '/images/deloitte.png',
       video: '',
       thumbnail: '',
     },
@@ -3694,7 +3695,55 @@ export const TYO_DSP_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_igtb.png',
+      image: '/images/IBM.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 7,
+      language: 'vi',
+      code: 'PG003.1SE00006CN000007',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/iGTB.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 8,
+      language: 'vi',
+      code: 'PG003.1SE00006CN000008',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/pwc.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 9,
+      language: 'vi',
+      code: 'PG003.1SE00006CN000009',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/kpmg.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 10,
+      language: 'vi',
+      code: 'PG003.1SE00006CN0000010',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Fis.png',
       video: '',
       thumbnail: '',
     },
@@ -3708,7 +3757,7 @@ export const TYO_DSP_Section7 = {
     code: 'PG003.1SE00007',
     image: '/images/casestudy.png',
     description:
-      'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng.',
+      'Trong thời đại hiện tại, khách hàng đòi hỏi sự kiểm soát và trải nghiệm cá nhân hóa. Các công ty như Amazon, Netflix và Uber đã thành công nhờ khả năng dự đoán sở thích và tùy chỉnh dịch vụ. Khách hàng mong đợi trải nghiệm liên kết giữa các kênh, nhưng đa số công ty không kết nối các dữ liệu này. Kết quả là trải nghiệm khách hàng bị rời rạc và nhà tiếp thị thiếu thông tin chính xác. Để thành công, các công ty cần xây dựng sự nhất quán và chính xác trong việc kết nối các kênh và thu thập thông tin về khách hàng',
   },
   components: [],
 };
@@ -3742,7 +3791,7 @@ export const TYO_CDP_Section2 = {
     code: 'PG003.2SE00002',
     image: '',
     description:
-      'Nền tảng dữ liệu khách hàng đã tồn tại hơn một thập kỷ nhưng bắt đầu trở nên phổ biến vào năm 2016 khi các doanh nghiệp B2C tập trung cao độ  xử lý khối lượng lớn dữ liệu giao dịch, nhân khẩu học và hành vi. CDP được triển khai và áp dụng nhanh chóng, rộng rãi đối với tất cả các ngành, điển hình như Bán lẻ, Nhà hàng, Du lịch & Khách sạn, Truyền thông & Giải trí. // Giải pháp CDP thông thường bao gồm cơ sở dữ liệu khách hàng, tự động hóa tiếp thị, quản lý chiến dịch đa kênh và quản lý tương tác theo thời gian thực. CDP sẽ cần cho Doanh nghiệp khi cần cơ sở dữ liệu tiếp thị gắn với dữ liệu cấp người dùng.',
+      'Nền tảng dữ liệu khách hàng đã tồn tại hơn một thập kỷ nhưng bắt đầu trở nên phổ biến vào năm 2016 khi các doanh nghiệp B2C tập trung cao độ  xử lý khối lượng lớn dữ liệu giao dịch, nhân khẩu học và hành vi. CDP được triển khai và áp dụng nhanh chóng, rộng rãi đối với tất cả các ngành, điển hình như Bán lẻ, Nhà hàng, Du lịch & Khách sạn, Truyền thông & Giải trí // Giải pháp CDP thông thường bao gồm cơ sở dữ liệu khách hàng, tự động hóa tiếp thị, quản lý chiến dịch đa kênh và quản lý tương tác theo thời gian thực. CDP sẽ cần cho Doanh nghiệp khi cần cơ sở dữ liệu tiếp thị gắn với dữ liệu cấp người dùng',
   },
   components: [],
 };
@@ -3754,7 +3803,7 @@ export const TYO_CDP_Section3 = {
     code: 'PG003.2SE00003',
     image: '/images/PG003.2SE00003.png',
     description:
-      'NGS hiểu rằng chúng ta đang sống trong thời đại mà khách hàng mong đợi các nhà cung cấp hiểu rõ sở thích của họ, muốn có trải nghiệm cá nhân hóa và yêu cầu dịch vụ nhanh chóng. Amazon có thể dự đoán những sản phẩm chúng ta sẽ mua tiếp theo, Netflix đề xuất các chương trình chúng ta thích với độ chính xác cao và Uber cho phép chúng ta tùy chỉnh các chuyến đi cho phù hợp với loại phương tiện mà chúng ta muốn đi.. Việc thực hiện điều này không còn là một lợi thế tiếp thị nữa mà trở thành bộ tính năng tối thiểu mà một công ty cần xây dựng trong sản phẩm của mình để họ có thể bán thành công sản phẩm hay dịch vụ. //Khi nói đến tiếp thị, khách hàng mong đợi những tương tác họ có trên trang web của công ty sẽ chuyển thành trải nghiệm trên ứng dụng di động và thậm chí cả lượt ghé thăm cửa hàng. Vấn đề là, đối với hầu hết các công ty, những môi trường đó hoạt động dựa trên các bộ dữ liệu khác nhau - mặc dù khách hàng là như nhau. Khách hàng cũng mong đợi trải nghiệm của họ phải nhất quán và “đúng thời điểm” khi họ chuyển từ kênh này sang kênh khác. //Hầu hết hành trình của khách hàng đều liên quan đến ba kênh khác nhau (ví dụ: e-mail, web và ứng dụng di động) và khách hàng có xu hướng di chuyển liền mạch và nhanh chóng giữa các kênh này. Tuy nhiên, hầu hết các công ty không kết nối các môi trường dữ liệu này theo thời gian thực. Kết quả là trải nghiệm của người tiêu dùng bị rời rạc và nhà tiếp thị thiếu một nguồn thông tin chính xác duy nhất về khách hàng.',
+      'NGS hiểu rằng chúng ta đang sống trong thời đại mà khách hàng mong đợi các nhà cung cấp hiểu rõ sở thích của họ, muốn có trải nghiệm cá nhân hóa và yêu cầu dịch vụ nhanh chóng. Amazon có thể dự đoán những sản phẩm chúng ta sẽ mua tiếp theo, Netflix đề xuất các chương trình chúng ta thích với độ chính xác cao và Uber cho phép chúng ta tùy chỉnh các chuyến đi cho phù hợp với loại phương tiện mà chúng ta muốn đi.. Việc thực hiện điều này không còn là một lợi thế tiếp thị nữa mà trở thành bộ tính năng tối thiểu mà một công ty cần xây dựng trong sản phẩm của mình để họ có thể bán thành công sản phẩm hay dịch vụ //Khi nói đến tiếp thị, khách hàng mong đợi những tương tác họ có trên trang web của công ty sẽ chuyển thành trải nghiệm trên ứng dụng di động và thậm chí cả lượt ghé thăm cửa hàng. Vấn đề là, đối với hầu hết các công ty, những môi trường đó hoạt động dựa trên các bộ dữ liệu khác nhau - mặc dù khách hàng là như nhau. Khách hàng cũng mong đợi trải nghiệm của họ phải nhất quán và “đúng thời điểm” khi họ chuyển từ kênh này sang kênh khác //Hầu hết hành trình của khách hàng đều liên quan đến ba kênh khác nhau (ví dụ: e-mail, web và ứng dụng di động) và khách hàng có xu hướng di chuyển liền mạch và nhanh chóng giữa các kênh này. Tuy nhiên, hầu hết các công ty không kết nối các môi trường dữ liệu này theo thời gian thực. Kết quả là trải nghiệm của người tiêu dùng bị rời rạc và nhà tiếp thị thiếu một nguồn thông tin chính xác duy nhất về khách hàng',
   },
   components: [],
 };
@@ -3775,7 +3824,7 @@ export const TYO_CDP_Section4 = {
       code: 'PG003.2SE00004CN000001',
       title: 'Kết nối dữ liệu khách hàng',
       description:
-        'CDP giúp kết nối tất cả dữ liệu khách hàng từ các nguồn khác nhau vào một nơi duy nhất. Điều này bao gồm việc kết hợp các ID khách hàng từ các phiên bản CRM khác nhau và liên kết các cơ sở dữ liệu không chia sẻ truyền thống như đám mây tiếp thị, phần mềm dịch vụ khách hàng và công cụ thương mại điện tử.',
+        'CDP giúp kết nối tất cả dữ liệu khách hàng từ các nguồn khác nhau vào một nơi duy nhất. Điều này bao gồm việc kết hợp các ID khách hàng từ các phiên bản CRM khác nhau và liên kết các cơ sở dữ liệu không chia sẻ truyền thống như đám mây tiếp thị, phần mềm dịch vụ khách hàng và công cụ thương mại điện tử',
       slug: '',
       content: '',
       image: '',
@@ -3788,7 +3837,7 @@ export const TYO_CDP_Section4 = {
       code: 'PG003.2SE00004CN000002',
       title: 'Đối chiếu danh tính khách hàng',
       description:
-        'CDP so sánh các thông tin danh tính mà công ty đã có về khách hàng, chẳng hạn như email và số điện thoại di động, với những thông tin khách hàng trước đó đã được công ty biết trước khi chia sẻ dữ liệu với các công ty khác. Điều này giúp xác định và liên kết các tương tác của khách hàng từ các kênh khác nhau, như email và trang web, thành một hồ sơ duy nhất.',
+        'CDP so sánh các thông tin danh tính mà công ty đã có về khách hàng, chẳng hạn như email và số điện thoại di động, với những thông tin khách hàng trước đó đã được công ty biết trước khi chia sẻ dữ liệu với các công ty khác. Điều này giúp xác định và liên kết các tương tác của khách hàng từ các kênh khác nhau, như email và trang web, thành một hồ sơ duy nhất',
       slug: '',
       content: '',
       image: '',
@@ -3801,7 +3850,7 @@ export const TYO_CDP_Section4 = {
       code: 'PG003.2SE00004CN000003',
       title: 'Cung cấp dữ liệu thời gian thực',
       description:
-        'Sau khi CDP tạo ra hồ sơ thống nhất về khách hàng, nó cần cung cấp dữ liệu này theo thời gian thực để các công ty có thể cung cấp trải nghiệm cá nhân hóa. Điều này đòi hỏi kết nối dữ liệu khách hàng với các hệ thống khác nhau như công cụ gửi email, nền tảng e-commerce và hệ thống quản lý nội dung.',
+        'Sau khi CDP tạo ra hồ sơ thống nhất về khách hàng, nó cần cung cấp dữ liệu này theo thời gian thực để các công ty có thể cung cấp trải nghiệm cá nhân hóa. Điều này đòi hỏi kết nối dữ liệu khách hàng với các hệ thống khác nhau như công cụ gửi email, nền tảng e-commerce và hệ thống quản lý nội dung',
       slug: '',
       content: '',
       image: '',
@@ -3818,7 +3867,7 @@ export const TYO_CDP_Section5 = {
     code: 'PG003.2SE00005',
     image: '/images/Image_OverviewDesignFIveSection.png',
     description:
-      'Với kinh nghiệm tư vấn giải pháp công nghệ trong Chuyển đổi trải nghiệm khách hàng và thấu hiểu hành vi, thói quen của khách hàng tại Việt Nam, NGS đã xây dựng đội ngũ tư vấn và triển khai có đầy đủ năng lực để cùng khách hàng đánh giá, lựa chọn ra giải pháp CDP phù hợp với đặc thù của từng Doanh nghiệp – trong đó, nổi bật là giải pháp CDP của Salesforce.',
+      'Với kinh nghiệm tư vấn giải pháp công nghệ trong Chuyển đổi trải nghiệm khách hàng và thấu hiểu hành vi, thói quen của khách hàng tại Việt Nam, NGS đã xây dựng đội ngũ tư vấn và triển khai có đầy đủ năng lực để cùng khách hàng đánh giá, lựa chọn ra giải pháp CDP phù hợp với đặc thù của từng Doanh nghiệp – trong đó, nổi bật là giải pháp CDP của Salesforce',
   },
   components: [],
 };
@@ -3830,7 +3879,7 @@ export const TYO_CDP_Section6 = {
     code: 'PG003.2SE00006',
     image: '/images/PG003.2SE00005.png',
     description:
-      'NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế.',
+      'NGS là đối tác Reseller của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CDP trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam - đảm bảo thành công và hiệu quả của Salesforce CDP khi được triển khai và ứng dụng vào thực tế',
   },
   components: [],
 };
@@ -3850,7 +3899,7 @@ export const TYO_CDP_Section7 = {
       code: 'PG003.2SE00007CN000001',
       title: 'Cá nhân hoá',
       description:
-        'CDP giúp cá nhân hóa trải nghiệm khách hàng, kết hợp dữ liệu từ nhiều nguồn để gửi email, thông báo hoặc hiển thị nội dung phù hợp với sở thích và nhu cầu của từng khách hàng. // Những khách hàng xem nội dung phù hợp với sở thích của họ có khả năng tương tác với thương hiệu cao gấp 5 lần.',
+        'CDP giúp cá nhân hóa trải nghiệm khách hàng, kết hợp dữ liệu từ nhiều nguồn để gửi email, thông báo hoặc hiển thị nội dung phù hợp với sở thích và nhu cầu của từng khách hàng // Những khách hàng xem nội dung phù hợp với sở thích của họ có khả năng tương tác với thương hiệu cao gấp 5 lần',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00004.png',
@@ -3863,7 +3912,7 @@ export const TYO_CDP_Section7 = {
       code: 'PG003.2SE00007CN000002',
       title: 'Ngăn chặn',
       description:
-        'CDP ngăn chặn tiếp thị không cần thiết bằng cách xác định khách hàng đã mua và tập trung nguồn lực tiếp thị vào khách hàng mới tiềm năng.',
+        'CDP ngăn chặn tiếp thị không cần thiết bằng cách xác định khách hàng đã mua và tập trung nguồn lực tiếp thị vào khách hàng mới tiềm năng',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00004.png',
@@ -3876,7 +3925,7 @@ export const TYO_CDP_Section7 = {
       code: 'PG003.2SE00007CN000003',
       title: 'Thông tin chuyên sâu',
       description:
-        'CDP cung cấp thông tin chuyên sâu cho tổng đài viên trong Call Center, giúp họ tạo ra trải nghiệm cá nhân hóa và cung cấp dịch vụ tốt hơn cho khách hàng.',
+        'CDP cung cấp thông tin chuyên sâu cho tổng đài viên trong Call Center, giúp họ tạo ra trải nghiệm cá nhân hóa và cung cấp dịch vụ tốt hơn cho khách hàng',
       slug: '',
       content: '',
       image: '/images/PG003.1SE00004.png',
@@ -3891,7 +3940,7 @@ export const TYO_CDP_Section8 = {
     id: 1,
     name: 'Những khách hàng đã hài lòng',
     code: 'PG003.2SE00008',
-    image: '/images/clientstories.png',
+    image: '/images/client_story.png',
     description: '',
   },
   components: [
@@ -3903,21 +3952,81 @@ export const TYO_CDP_Section8 = {
       description: 'Nguyễn Anh Huy',
       slug: '',
       content:
-        'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp',
-      image: '/images/Ellipse.png',
+        'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa. Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.',
+      image: '/images/Ellipse 131.png',
+      video: '',
+      thumbnail: '',
+    },
+  ],
+};
+
+export const TYO_CDP_Section9 = {
+  section: {
+    id: 9,
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
+    code: 'PG003.2SE00009',
+    image: '',
+    description: '',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'PG003.2SE00009CN000001',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Salesforce.png',
+      video: '',
+      thumbnail: '',
+    },
+
+    {
+      id: 2,
+      language: 'vi',
+      code: 'PG003.2SE00009CN000002',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/google.png',
       video: '',
       thumbnail: '',
     },
     {
-      id: 2,
+      id: 3,
       language: 'vi',
-      code: 'PG003.2SE00008CN000002',
-      title: 'Head of Design',
-      description: 'Nguyễn Anh Huy',
+      code: 'PG003.2SE00009CN000003',
+      title: '',
+      description: '',
       slug: '',
-      content:
-        'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp',
-      image: '/images/Ellipse.png',
+      content: '',
+      image: '/images/AWS.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 4,
+      language: 'vi',
+      code: 'PG003.2SE00009CN000004',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Oracle.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 5,
+      language: 'vi',
+      code: 'PG003.2SE00009CN000005',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Cloudera.png',
       video: '',
       thumbnail: '',
     },
@@ -3938,11 +4047,11 @@ export const TYO_CRM_Banner = {
 export const TYO_CRM_Section2 = {
   section: {
     id: 2,
-    name: 'Tổng quan về CRM - Quản trị quan hệ khách hàng',
+    name: 'CRM - Quản trị quan hệ khách hàng',
     code: 'PG003.3SE00002',
     image: '',
     description:
-      'CRM là viết tắt của quản lý quan hệ khách hàng. Đó là công nghệ được bất kỳ loại hình doanh nghiệp hoặc tổ chức nào, dù lớn hay nhỏ, sử dụng để quản lý và hỗ trợ các mối quan hệ khách hàng. CRM giúp các tổ chức xây dựng và phát triển mối quan hệ trong toàn bộ vòng đời của khách hàng, bao gồm tiếp thị, bán hàng, thương mại, dịch vụ và CNTT. Nó được sử dụng bởi các công ty B2C trong lĩnh vực hàng tiêu dùng và bán lẻ cũng như các tổ chức B2B trong lĩnh vực công nghệ cao, sản xuất, dịch vụ tài chính, chăm sóc sức khỏe... // Hệ thống CRM cho phép doanh nghiệp quản lý mối quan hệ khách hàng và khách hàng tiềm năng bằng dữ liệu. Bạn có thể lưu trữ, theo dõi và phân tích thông tin khách hàng và khách hàng tiềm năng ở cùng một hệ thống, bao gồm thông tin liên hệ và tài khoản, cơ hội bán hàng, trường hợp dịch vụ và chiến dịch tiếp thị. Với dữ liệu lưu trữ tập trung ở nền tảng, các tổ chức có được bức tranh hoàn chỉnh về khách hàng và khách hàng tiềm năng mà các nhóm trong công ty có thể chia sẻ và phân tích theo thời gian thực.',
+      'CRM là viết tắt của quản lý quan hệ khách hàng. Đó là công nghệ được bất kỳ loại hình doanh nghiệp hoặc tổ chức nào, dù lớn hay nhỏ, sử dụng để quản lý và hỗ trợ các mối quan hệ khách hàng. CRM giúp các tổ chức xây dựng và phát triển mối quan hệ trong toàn bộ vòng đời của khách hàng, bao gồm tiếp thị, bán hàng, thương mại, dịch vụ và CNTT. Nó được sử dụng bởi các công ty B2C trong lĩnh vực hàng tiêu dùng và bán lẻ cũng như các tổ chức B2B trong lĩnh vực công nghệ cao, sản xuất, dịch vụ tài chính, chăm sóc sức khỏe... // // Hệ thống CRM cho phép doanh nghiệp quản lý mối quan hệ khách hàng và khách hàng tiềm năng bằng dữ liệu. Bạn có thể lưu trữ, theo dõi và phân tích thông tin khách hàng và khách hàng tiềm năng ở cùng một hệ thống, bao gồm thông tin liên hệ và tài khoản, cơ hội bán hàng, trường hợp dịch vụ và chiến dịch tiếp thị. Với dữ liệu lưu trữ tập trung ở nền tảng, các tổ chức có được bức tranh hoàn chỉnh về khách hàng và khách hàng tiềm năng mà các nhóm trong công ty có thể chia sẻ và phân tích theo thời gian thực',
   },
   components: [],
 };
@@ -3950,9 +4059,9 @@ export const TYO_CRM_Section2 = {
 export const TYO_CRM_Section3 = {
   section: {
     id: 3,
-    name: 'Thời đại mà khách hàng nắm quyền kiểm soát',
+    name: 'Một số thách thức thường gặp',
     code: 'PG003.3SE00003',
-    image: '/images/PG003.3SE00003.png',
+    image: '/images/TYO_CRM_Section3.png',
     description:
       'Một số thách thức doanh nghiệp thường gặp phải khi triển khai CRM bao gồm: //1. Chi phí đầu tư triển khai và vận hành //2. Khả năng tích hợp với các hệ thống khác của doanh nghiệp, không liên kết chặt chẽ với các quy trình kinh doanh của doanh nghiệp //3. Không thân thiện đối với người dùng //4. Không xác định được mục tiêu rõ ràng',
   },
@@ -4036,7 +4145,7 @@ export const TYO_CRM_Section5 = {
     code: 'PG003.3SE00005',
     image: '/images/Image_OverviewDesignFIveSection2.png',
     description:
-      'NGS là đơn vị tư vấn, triển khai trải nghiệm khách hàng liền mạch từ thu thập và chuẩn hóa dữ liệu khách hàng trên CDP, Truyền thông (Marketing Cloud), Bán hàng (Sales Cloud), Chăm sóc Khách hàng (Services Cloud) trên cùng một nền tảng công nghệ của Salesforce.',
+      'NGS là đơn vị tư vấn, triển khai trải nghiệm khách hàng liền mạch từ thu thập và chuẩn hóa dữ liệu khách hàng trên CDP, Truyền thông (Marketing Cloud), Bán hàng (Sales Cloud), Chăm sóc Khách hàng (Services Cloud) trên cùng một nền tảng công nghệ của Salesforce',
   },
   components: [],
 };
@@ -4048,7 +4157,7 @@ export const TYO_CRM_Section6 = {
     code: 'PG003.3SE00006',
     image: '/images/PG003.2SE00005.png',
     description:
-      'NGS là đối tác của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CRM trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam. Từ đó, đảm bảo thành công và hiệu quả của Salesforce CRM khi được triển khai và ứng dụng vào thực tế.',
+      'NGS là đối tác của Salesforce tại Việt Nam, chúng tôi có thể chia sẻ thực tiễn thành công của toàn bộ khách hàng đã ứng dụng Salesforce CRM trên toàn thế giới, linh hoạt và tùy chỉnh để phù hợp với đặc thù hoạt động của Các Doanh nghiệp tại Việt Nam. Từ đó, đảm bảo thành công và hiệu quả của Salesforce CRM khi được triển khai và ứng dụng vào thực tế',
   },
   components: [],
 };
@@ -4058,7 +4167,7 @@ export const TYO_CRM_Section7 = {
     id: 7,
     name: 'Những khách hàng đã hài lòng',
     code: 'PG003.3SE00007',
-    image: '/images/clientstories.png',
+    image: '/images/client_story.png',
     description: '',
   },
   components: [
@@ -4071,7 +4180,7 @@ export const TYO_CRM_Section7 = {
       slug: '',
       content:
         'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa. //Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.',
-      image: '/images/Ellipse.png',
+      image: '/images/Ellipse 131.png',
       video: '',
       thumbnail: '',
     },
@@ -4092,11 +4201,11 @@ export const TYO_CC_Banner = {
 export const TYO_CC_Section2 = {
   section: {
     id: 2,
-    name: 'NDUC Contact Center - Giải pháp toàn diện cho doanh nghiệp.',
+    name: 'NDUC Contact Center - Giải pháp toàn diện cho doanh nghiệp',
     code: 'PG003.4SE00002',
     image: '',
     description:
-      'NDUC Contact Center là một giải pháp toàn diện của NGS, giúp xử lý tất cả các nghiệp vụ liên quan đến khách hàng qua nhiều kênh khác nhau như cuộc gọi thoại, SMS, email, Facebook, Zalo, Live chat ... // NDUC Contact Center là một hệ thống đồng bộ các kênh liên lạc, giúp Doanh nghiệp có thể cung cấp một dịch vụ liền mạch, thể hiện được hình ảnh thương hiệu nhất quán đồng thời nâng cao trải nghiệm Khách hàng.',
+      'NDUC Contact Center là một giải pháp toàn diện của NGS, giúp xử lý tất cả các nghiệp vụ liên quan đến khách hàng qua nhiều kênh khác nhau như cuộc gọi thoại, SMS, email, Facebook, Zalo, Live chat ... // NDUC Contact Center là một hệ thống đồng bộ các kênh liên lạc, giúp Doanh nghiệp có thể cung cấp một dịch vụ liền mạch, thể hiện được hình ảnh thương hiệu nhất quán đồng thời nâng cao trải nghiệm Khách hàng',
   },
   components: [],
 };
@@ -4104,7 +4213,7 @@ export const TYO_CC_Section2 = {
 export const TYO_CC_Section3 = {
   section: {
     id: 3,
-    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng',
     code: 'PG003.4SE00003',
     image: '',
     description: '',
@@ -4114,12 +4223,12 @@ export const TYO_CC_Section3 = {
       id: 1,
       language: 'vi',
       code: 'PG003.4SE00003CN000001',
-      title: '“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.',
+      title: '“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”',
       description:
-        'Nền kinh tế thế giới đã chuyển sang giai đoạn cạnh tranh bằng trải nghiệm thay thế cho dịch vụ khách hàng truyền thống. Mọi hoạt động chuyển đổi số đều hướng tới con người ở trung tâm với mục tiêu công nghệ vị nhân sinh. // Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.',
+        'Nền kinh tế thế giới đã chuyển sang giai đoạn cạnh tranh bằng trải nghiệm thay thế cho dịch vụ khách hàng truyền thống. Mọi hoạt động chuyển đổi số đều hướng tới con người ở trung tâm với mục tiêu công nghệ vị nhân sinh // Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp',
       slug: '',
       content: '',
-      image: '/images/PG003.4SE00003CN000001.png',
+      image: '/images/TYO_CC_Section3.png',
       video: '',
       thumbnail: '',
     },
@@ -4129,7 +4238,7 @@ export const TYO_CC_Section3 = {
 export const TYO_CC_Section4 = {
   section: {
     id: 4,
-    name: 'NDUC- NGS Digital Unified Communications là giải pháp hoàn chỉnh để kết nối khách hàng bao gồm nhiều cấu phần như:',
+    name: 'NDUC - NGS Digital Unified Communications là giải pháp hoàn chỉnh để kết nối khách hàng bao gồm nhiều cấu phần',
     code: 'PG003.4SE00004',
     image: '',
     description: '',
@@ -4143,7 +4252,7 @@ export const TYO_CC_Section4 = {
       description: 'Hệ thống tổng đài ảo thông minh',
       slug: '',
       content: '',
-      image: '/images/background_1.png',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -4155,7 +4264,7 @@ export const TYO_CC_Section4 = {
       description: 'Phương thức tích hợp đa dạng, đa nền tảng (CRM và Omni Channel), hỗ trợ cả Voice AI và Chatbot',
       slug: '',
       content: '',
-      image: '/images/background_1.png',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -4168,7 +4277,7 @@ export const TYO_CC_Section4 = {
         'Bên cạnh giải pháp, với nhiều năm kinh nghiệm triển khai hệ thống chăm sóc khách hàng cho đa dạng khách hàng với nhiều ngành khác nhau, NGS sẵn sàng đồng hành cùng bạn trong việc tư vấn và xây dựng quy trình, cung cấp nhân lực chăm sóc khách hàng chuyên nghiệp bài bản cho doanh nghiệp của bạn.',
       slug: '',
       content: '',
-      image: '/images/background_1.png',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -4182,15 +4291,15 @@ export const TYO_CC_Section5 = {
     code: 'PG003.4SE00005',
     image: '/images/Image_OverviewDesignFIveSection3.png',
     description:
-      'Đội ngũ phát triển sản phẩm, tư vấn và triển khai của NGS với nhiều năm kinh nghiệm sẽ sẵn sàng giúp đỡ và đi cùng Khách hàng trong quá trình nâng cấp và chuyển đổi số hệ thống // Giải pháp NDUC Contact Center của NGS đã triển khai thành công cho hơn 120 Doanh nghiệp lớn nhỏ trên cả nước với quy mô và ngành nghề khác nhau.',
+      'Đội ngũ phát triển sản phẩm, tư vấn và triển khai của NGS với nhiều năm kinh nghiệm sẽ sẵn sàng giúp đỡ và đi cùng Khách hàng trong quá trình nâng cấp và chuyển đổi số hệ thống // Giải pháp NDUC Contact Center của NGS đã triển khai thành công cho hơn 120 Doanh nghiệp lớn nhỏ trên cả nước với quy mô và ngành nghề khác nhau',
   },
   components: [],
 };
 
 export const TYO_CC_Section6 = {
   section: {
-    id: 6,
-    name: 'Đối tác đồng hành cùng NGS',
+    id: 7,
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'PG003.4SE00006',
     image: '',
     description: '',
@@ -4200,15 +4309,15 @@ export const TYO_CC_Section6 = {
       id: 1,
       language: 'vi',
       code: 'PG003.4SE00006CN000001',
-      title: 'Công ty TNHH Fivetran',
-      description: 'Đối tác hạng đồng',
+      title: '',
+      description: '',
       slug: '',
-      content:
-        'Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn',
-      image: '/images/logo_3cx.png',
+      content: '',
+      image: '/images/genesys.png',
       video: '',
       thumbnail: '',
     },
+
     {
       id: 2,
       language: 'vi',
@@ -4217,7 +4326,7 @@ export const TYO_CC_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_odoo.png',
+      image: '/images/3CX.png',
       video: '',
       thumbnail: '',
     },
@@ -4229,19 +4338,7 @@ export const TYO_CC_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_genesys.png',
-      video: '',
-      thumbnail: '',
-    },
-    {
-      id: 4,
-      language: 'vi',
-      code: 'PG003.4SE00006CN000004',
-      title: '',
-      description: '',
-      slug: '',
-      content: '',
-      image: '/images/logo_salesforce.png',
+      image: '/images/Odoo.png',
       video: '',
       thumbnail: '',
     },
@@ -4701,7 +4798,7 @@ export const TYO_CB_Section2 = {
     code: 'TPG003.6SE00002',
     image: '',
     description:
-      'Ngân hàng lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh. //NGS cung cấp các dịch vụ ngân hàng chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược ngân hàng kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi kinh doanh ngân hàng cho tổ chức tín dụng của bạn.',
+      'Ngân hàng lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh //NGS cung cấp các dịch vụ ngân hàng chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược ngân hàng kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi kinh doanh ngân hàng cho tổ chức tín dụng của bạn',
   },
   components: [
     {
@@ -4721,7 +4818,7 @@ export const TYO_CB_Section2 = {
 export const TYO_CB_Section3 = {
   section: {
     id: 3,
-    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng',
     code: 'TPG003.6SE00003',
     image: '',
     description: '',
@@ -4733,7 +4830,7 @@ export const TYO_CB_Section3 = {
       code: 'PG003.6SE00003CN000001',
       title: 'Doanh nghiệp ngân hàng trong thời đại mới',
       description:
-        'Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. Và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. //Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.',
+        'Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. Và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này //Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4745,7 +4842,7 @@ export const TYO_CB_Section3 = {
 export const TYO_CB_Section4 = {
   section: {
     id: 4,
-    name: 'Dịch vụ chúng tôi cung cấp.',
+    name: 'Dịch vụ chúng tôi cung cấp',
     code: 'TPG003.6SE00004',
     image: '',
     description: '',
@@ -4758,7 +4855,7 @@ export const TYO_CB_Section4 = {
       title:
         'Thấu hiểu và nắm bắt các mục tiêu và thách thức trong kinh doanh bảo hiểm của khách hàng là doanh nghiệp ngân hàng',
       description:
-        ' tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải, chẳng hạn như sản phẩm, dịch vụ và quy trình lỗi thời, khả năng công nghệ hạn chế hoặc kỳ vọng của khách hàng thay đổi. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi ngân hàng thế hệ mới.',
+        'Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải, chẳng hạn như sản phẩm, dịch vụ và quy trình lỗi thời, khả năng công nghệ hạn chế hoặc kỳ vọng của khách hàng thay đổi. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi ngân hàng thế hệ mới',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4771,7 +4868,7 @@ export const TYO_CB_Section4 = {
       code: 'PG003.6SE00004CN000002',
       title: 'Đánh giá trạng thái hiện tại của tổ chức của bạn',
       description:
-        'Có tính đến các số liệu kinh doanh chính mà bạn đã xác định, tiến hành đánh giá kỹ lưỡng về mức độ trưởng thành và khả năng kỹ thuật số của tổ chức bạn. Đánh giá cơ sở hạ tầng công nghệ, hệ thống quản lý dữ liệu, quy trình vận hành và nguồn nhân tài hiện có của bạn.',
+        'Có tính đến các số liệu kinh doanh chính mà bạn đã xác định, tiến hành đánh giá kỹ lưỡng về mức độ trưởng thành và khả năng kỹ thuật số của tổ chức bạn. Đánh giá cơ sở hạ tầng công nghệ, hệ thống quản lý dữ liệu, quy trình vận hành và nguồn nhân tài hiện có của bạn',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4785,7 +4882,7 @@ export const TYO_CB_Section4 = {
       code: 'PG003.6SE00004CN000003s',
       title: ' Xây dựng chuyển đổi số thành công trong Chiến lược giải pháp lõi ngân hàng thế hệ mới',
       description:
-        '+ Sử dụng công nghệ số hướng tới dịch vụ nhằm tạo ra quy trình kinh doanh, văn hóa và trải nghiệm mới cho khách hàng.+ Xác định giải pháp cốt lõi ngân hàng thế hệ mới nào có ROI tốt nhất; tạo điều kiện thuận lợi cho các hoạt động ưu tiên dẫn đến lộ trình hành động.+ Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật vững chắc để phát triển và thực hiện, phù hợp với lộ trình kỹ thuật số.',
+        'Sử dụng công nghệ số hướng tới dịch vụ nhằm tạo ra quy trình kinh doanh, văn hóa và trải nghiệm mới cho khách hàng//Xác định giải pháp cốt lõi ngân hàng thế hệ mới nào có ROI tốt nhất; tạo điều kiện thuận lợi cho các hoạt động ưu tiên dẫn đến lộ trình hành động//Kết hợp hiểu biết sâu sắc về kinh doanh với kiến thức kỹ thuật vững chắc để phát triển và thực hiện, phù hợp với lộ trình kỹ thuật số',
       slug: '',
       content: '',
       image: '/images/TYO_BCsection3.png',
@@ -4810,7 +4907,7 @@ export const TYO_CB_Section5 = {
       code: 'PG003.6SE00005CN000001',
       title: 'Tập trung vào giá trị',
       description:
-        'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững trong lĩnh vực ngân hàng tư nhân và lĩnh vực tài chính nói chung.',
+        'Chúng tôi luôn tập trung vào việc mang lại giá trị kinh doanh và lợi thế bền vững trong lĩnh vực ngân hàng tư nhân và lĩnh vực tài chính nói chung',
       slug: '',
       content: '',
       image: '/images/logo_TYO_CB.png',
@@ -4847,11 +4944,10 @@ export const TYO_CB_Section5 = {
 export const TYO_CB_Section6 = {
   section: {
     id: 6,
-    name: 'NGS đồng hành cùng những đối tác tuyệt vời',
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'TPG003.6SE00006',
     image: '',
-    description:
-      'Đối tác của chúng tôi là những nhà cung cấp giải pháp ngân hàng lõi hoặc có xếp hạng về ứng dụng giải pháp hàng đầu thế giới (FIS Global, Temenos), với đánh giá từ tổ chức uy tín như Gartner, Forrester, hoặc am hiểu sâu sắc thị trường và có nhiều khách hàng lớn (Intellect, SAP, Finastra) trong cùng lĩnh vực và quy mô tại Việt Nam',
+    description: '',
   },
   components: [
     {
@@ -4862,7 +4958,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_forrester.png',
+      image: '/images/SAP.png',
       video: '',
       thumbnail: '',
     },
@@ -4874,7 +4970,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/Fis.png',
+      image: '/images/Azentio.png',
       video: '',
       thumbnail: '',
     },
@@ -4886,7 +4982,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_temenos.png',
+      image: '/images/Newgen.png',
       video: '',
       thumbnail: '',
     },
@@ -4898,7 +4994,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_garner.png',
+      image: '/images/intellect.png',
       video: '',
       thumbnail: '',
     },
@@ -4910,7 +5006,7 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_intellect.png',
+      image: '/images/Fis.png',
       video: '',
       thumbnail: '',
     },
@@ -4922,7 +5018,31 @@ export const TYO_CB_Section6 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_finastra.png',
+      image: '/images/Odoo.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 7,
+      language: 'vi',
+      code: 'PG003.6SE00006CN000007',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Temenos.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 8,
+      language: 'vi',
+      code: 'PG003.6SE00006CN000008',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Fisnatra.png',
       video: '',
       thumbnail: '',
     },
@@ -4979,7 +5099,7 @@ export const TYO_CB_Section7 = {
 export const TYO_CB_Section8 = {
   section: {
     id: 8,
-    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+    name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên',
     code: 'TPG003.6SE00008',
     image: '',
     description: '',
@@ -5027,11 +5147,11 @@ export const TYO_CI_Section1 = {
 export const TYO_CI_Section2 = {
   section: {
     id: 2,
-    name: 'Tổng quan về chuyển đổi số và dịch vụ công nghệ thông tin',
+    name: 'Bảo hiểm lõi thế hệ mới, dịch vụ chuyên nghiệp, chiến lược kỹ thuật số',
     code: 'TPG003.7SE00002',
     image: '/images/background_2.png',
     description:
-      'Bảo hiểm lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh. Chúng tôi cung cấp các dịch vụ bảo hiểm chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược bảo hiểm kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi bảo hiểm cho tổ chức của bạn.',
+      'Bảo hiểm lõi thế hệ mới là sự tái cấu trúc của một tổ chức, với quy trình sử dụng công nghệ kỹ thuật số để tạo ra mới — hoặc sửa đổi — quy trình kinh doanh, văn hóa và trải nghiệm khách hàng hiện có để đáp ứng các yêu cầu đang thay đổi của thị trường và kinh doanh // //Chúng tôi cung cấp các dịch vụ bảo hiểm chuyên nghiệp với sự hiểu biết sâu sắc về môi trường kinh doanh, công nghệ và con người. Lập kế hoạch chiến lược bảo hiểm kỹ thuật số mới là bước quan trọng đầu tiên để chuyển đổi bảo hiểm cho tổ chức của bạn',
   },
   components: [
     {
@@ -5052,7 +5172,7 @@ export const TYO_CI_Section2 = {
 export const TYO_CI_Section3 = {
   section: {
     id: 3,
-    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng.',
+    name: 'Khó khăn trong việc tiếp cận và chăm sóc khách hàng',
     code: 'TPG003.7SE00003',
     image: '/images/background_2.png',
     description: '',
@@ -5062,9 +5182,9 @@ export const TYO_CI_Section3 = {
       id: 1,
       language: 'vi',
       code: 'PG003.7SE00003CN000001',
-      title: '“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”.',
+      title: '“Việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng”',
       description:
-        'Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại.Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp.',
+        'Đại dịch Covid 19 vừa qua đã làm ảnh hưởng đến rất nhiều Doanh nghiệp trong việc tiếp cận và chăm sóc Khách hàng. Đồng thời nhu cầu và mong muốn của Khách hàng ngày càng tăng cao. Vậy nên cách tiếp cận và chăm sóc khách hàng truyền thống dần dần lỗi thời và không còn phù hợp trong bối cảnh kinh tế đang dần chuyển mình theo thời đại 4.0 như hiện tại//Vậy nên, việc chuyển đổi số hệ thống và quy trình Trải nghiệm Khách hàng là điều kiện tối quan trọng đối với bất kỳ Doanh nghiệp nào cho dù là lớn hay nhỏ. Việc chuyển đổi này sẽ giúp cho Doanh nghiệp có được tầm nhìn tổng quan về Khách hàng, giúp Doanh nghiệp dễ dàng tiếp cận và chăm sóc Khách hàng mọi lúc mọi nơi, tăng giá trị thương hiệu cho Doanh nghiệp',
       slug: '',
       content: '',
       image: '/images/TYO_CIsection3.png',
@@ -5076,7 +5196,7 @@ export const TYO_CI_Section3 = {
 export const TYO_CI_Section4 = {
   section: {
     id: 4,
-    name: 'How we work',
+    name: 'Cách chúng tôi làm việc',
     code: 'TPG003.7SE00004',
     image: '/images/TYO_CIsection4.png',
     description:
@@ -5092,7 +5212,7 @@ export const TYO_CI_Section4 = {
       description: '',
       slug: '',
       content:
-        'Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới.',
+        'Tiến hành các cuộc phỏng vấn cấp điều hành, hội thảo, khảo sát và kiểm tra để xác định những thách thức cụ thể mà tổ chức của bạn gặp phải. Sự hiểu biết này sẽ đóng vai trò là nền tảng để định hình chiến lược chuyển đổi kỹ thuật số của bạn trong cốt lõi bảo hiểm thế hệ mới',
       image: '',
       video: '',
       thumbnail: '',
@@ -5129,7 +5249,8 @@ export const TYO_CI_Section5 = {
     name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
     code: 'TPG003.6SE00005',
     image: '',
-    description: 'We are trusted partner for your digital transformation',
+    description:
+      'Chúng tôi là đối tác đáng tin cậy cho quá trình chuyển đổi kỹ thuật số của doanh nghiệp bạn trong lĩnh vực giải pháp lõi ngân hàng thế hệ mới',
   },
   components: [
     {
@@ -5174,23 +5295,21 @@ export const TYO_CI_Section5 = {
 export const TYO_CI_Section6 = {
   section: {
     id: 8,
-    name: 'Đối tác đồng hành cùng NGS',
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'TPG003.7SE00006',
     image: '',
-    description:
-      'Đối tác của chúng tôi là những nhà cung cấp giải pháp bảo hiểm lõi hoặc có xếp hạng về ứng dụng giải pháp hàng đầu thế giới (Sapiens, eBao), với đánh giá từ tổ chức uy tín như Gartner, Forrester, hoặc am hiểu sâu sắc thị trường và có nhiều khách hàng lớn (Azentio) trong cùng lĩnh vực và quy mô tại Việt Nam',
+    description: '',
   },
   components: [
     {
       id: 1,
       language: 'vi',
       code: 'PG003.7SE00006CN000001',
-      title: 'Công ty TNHH Fivetran',
-      description: 'Đối tác hạng đồng',
+      title: '',
+      description: '',
       slug: '',
-      content:
-        'Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn',
-      image: '/images/logo_sapiens.png',
+      content: '',
+      image: '/images/Azentio.png',
       video: '',
       thumbnail: '',
     },
@@ -5198,12 +5317,11 @@ export const TYO_CI_Section6 = {
       id: 2,
       language: 'vi',
       code: 'PG003.7SE00006CN000002',
-      title: '“Doanh nghiệp ngân hàng trong thời đại mới”.',
-      description:
-        'Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.',
+      title: '',
+      description: '',
       slug: '',
       content: '',
-      image: '/images/logo_ebaotech.png',
+      image: '/images/Newgen.png',
       video: '',
       thumbnail: '',
     },
@@ -5211,12 +5329,11 @@ export const TYO_CI_Section6 = {
       id: 3,
       language: 'vi',
       code: 'PG003.7SE00006CN000003',
-      title: '“Doanh nghiệp ngân hàng trong thời đại mới”.',
-      description:
-        'Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.',
+      title: '',
+      description: '',
       slug: '',
       content: '',
-      image: '/images/logo_gartner.png',
+      image: '/images/intellect.png',
       video: '',
       thumbnail: '',
     },
@@ -5224,11 +5341,47 @@ export const TYO_CI_Section6 = {
       id: 4,
       language: 'vi',
       code: 'PG003.7SE00006CN000004',
-      title: '“Doanh nghiệp ngân hàng trong thời đại mới”.',
+      title: '',
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_forrester',
+      image: '/images/Gartner.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 5,
+      language: 'vi',
+      code: 'PG003.7SE00006CN000005',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Forrester.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 6,
+      language: 'vi',
+      code: 'PG003.7SE00006CN000006',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/Sapiens.png',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 7,
+      language: 'vi',
+      code: 'PG003.7SE00006CN000007',
+      title: '',
+      description: '',
+      slug: '',
+      content: '',
+      image: '/images/eBao màu.png',
       video: '',
       thumbnail: '',
     },
@@ -5239,7 +5392,7 @@ export const TYO_CI_Section7 = {
     id: 7,
     name: 'Những khách hàng đã hài lòng',
     code: 'TPG003.7SE00007',
-    image: '/images/TYO_CIsection7.png',
+    image: '/images/client_story.png',
     description: '',
   },
   components: [
@@ -5247,11 +5400,11 @@ export const TYO_CI_Section7 = {
       id: 1,
       language: 'vi',
       code: 'PG003.7SE00007CN000001',
-      title: 'Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng',
-      description: 'Majesco//Nguyễn Anh Huy ',
+      title: 'Majesco',
+      description: 'Nguyễn Anh Huy',
       slug: '',
-      content: '',
-      image: '/images/icon1.png',
+      content: 'Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng',
+      image: '/images/Ellipse 131.png',
       video: '',
       thumbnail: '',
     },
@@ -5260,7 +5413,7 @@ export const TYO_CI_Section7 = {
 export const TYO_CI_Section8 = {
   section: {
     id: 8,
-    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+    name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên',
     code: 'TPG003.6SE00008',
     image: '',
     description: '',
@@ -5308,11 +5461,11 @@ export const TYO_CA_Section1 = {
 export const TYO_CA_Section2 = {
   section: {
     id: 2,
-    name: 'NGS là đối tác tin cậy của các hãng hàng không trên thế giới.',
+    name: 'Cung cấp dịch vụ tư vấn triển khai công nghệ thông tin cho ngành hàng không',
     code: 'TPG003.8SE00002',
     image: '/images/TYO_CAsection1.png',
     description:
-      'Ngành hàng không là một trong những ngành đi tiên phong trong chuyển đổi số để đến với kỷ nguyên 5.0 - công nghệ vị nhân sinh, nơi con người là trung tâm của bất kỳ hoạt động công nghệ thông tin nào.  Khách hàng của ngành hàng không sẽ ngày càng đòi hỏi cao hơn về các trải nhiệm trong suốt hành trình của mình, từ đó đòi hỏi các hãng hàng không phải thay đổi nhanh, liên tục để mang lại các trải nghiệm xuất sắc. Một hệ thống công nghệ thông tin hướng tới quản trị hiệu quả, linh hoạt toàn bộ chuỗi hoạt động của hãng hàng không và từ đó nâng cao trải nghiêm cho hành khách là mục tiêu mà NGS muốn hướng tới trong quá trình đồng hành và cung cấp dịch vụ tư vấn triển khai công nghệ thông tin cốt lõi cho ngành hàng không.',
+      'Ngành hàng không là một trong những ngành đi tiên phong trong chuyển đổi số để đến với kỷ nguyên 5.0 - công nghệ vị nhân sinh, nơi con người là trung tâm của bất kỳ hoạt động công nghệ thông tin nào. Khách hàng của ngành hàng không sẽ ngày càng đòi hỏi cao hơn về các trải nhiệm trong suốt hành trình của mình, từ đó đòi hỏi các hãng hàng không phải thay đổi nhanh, liên tục để mang lại các trải nghiệm xuất sắc// // Một hệ thống công nghệ thông tin hướng tới quản trị hiệu quả, linh hoạt toàn bộ chuỗi hoạt động của hãng hàng không và từ đó nâng cao trải nghiêm cho hành khách là mục tiêu mà NGS muốn hướng tới trong quá trình đồng hành và cung cấp dịch vụ tư vấn triển khai công nghệ thông tin cốt lõi cho ngành hàng không',
   },
   components: [
     {
@@ -5343,8 +5496,8 @@ export const TYO_CA_Section3 = {
       id: 1,
       language: 'vi',
       code: 'PG003.8SE00003CN000001',
-      title: 'Bộ giải pháp hàng không.',
-      description: 'Bộ giải pháp hàng không.',
+      title: 'Bộ giải pháp hàng không',
+      description: 'Bộ giải pháp hàng không',
       slug: '',
       content:
         'Bộ giải pháp hàng không giúp hợp lý hóa và loại bỏ sự phức tạp trong các hoạt động vận hành cho các hãng hàng không có thể tập trung vào việc quản lý và phát triển hoạt động kinh doanh, đổi mới và mang lại trải nghiệm tuyệt vời cho du khách. //Hơn thế nữa, NGS và các đối tác chiến lược tham vọng tạo trải nghiệm tốt hơn cho khách du lịch bằng việc đơn giản quá trình chọn và đặt chuyến bay trở nên nhanh chóng và dễ dàng.',
@@ -5396,7 +5549,7 @@ export const TYO_CA_Section3 = {
 export const TYO_CA_Section4 = {
   section: {
     id: 4,
-    name: 'Our products and solution',
+    name: 'Sản phẩm và giải pháp của chúng tôi',
     code: 'TPG003.8SE00004',
     image: '',
     description: '',
@@ -5408,10 +5561,10 @@ export const TYO_CA_Section4 = {
       code: 'PG003.8SE00004CN000001',
       title: 'Hàng không',
       description:
-        'Trao quyền cho các hãng hàng không để tối đa hóa tiềm năng kinh doanh của họ: + Dịch vụ và phụ trợ cho hãng hàng không + Định giá, nhóm giá vé, + Đặt chỗ, đặt chỗ thông minh+ Kiểm soát khởi hành+ Khách hàng+ Quản lý chuyến bay+ Hàng tồn kho',
+        'Trao quyền cho các hãng hàng không để tối đa hoá tiềm năng kinh doanh của họ: dịch vụ và phụ trợ cho hãng hàng không; định giá, nhóm giá vé; đặt chỗ, đặt chỗ thông minh; kiểm soát khởi hành; khách hàng; quản lý chuyến bay; hàng tồn kho.',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5420,10 +5573,10 @@ export const TYO_CA_Section4 = {
       language: 'vi',
       code: 'PG003.8SE00004CN000002',
       title: 'Sân bay',
-      description: '+ Giải pháp hành khách và hành lý+ Hệ thống quản lý sân bay+ Giải pháp cho nhân viên mặt đất',
+      description: 'Giải pháp hành khách và hành lý; Hệ thống quản lý sân bay; Giải pháp cho nhân viên mặt đất',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5433,10 +5586,10 @@ export const TYO_CA_Section4 = {
       code: 'PG003.8SE00004CN000003',
       title: 'Khối hỗ trợ của hãng hàng không',
       description:
-        '+ Quản lý chi tiêu + Đảm bảo các quy trình quản lý tiền mặt, ngân quỹ và kế toán theo thời gian thực trong toàn tập đoàn, bằng cách cho phép tự động hóa quy trình từ đầu đến cuối và hợp nhất theo thời gian thực của nhiều hệ thống phụ trợ.Có được thông tin chung về Nhân sự và Tài chính để hỗ trợ các quyết định kinh doanh thông minh và quản lý hiệu suất tốt hơn để có lợi thế cạnh tranh rõ ràngGiải pháp cho các hãng hàng không thuộc mọi quy mô và loại hình từ các công ty khởi nghiệp đến các tổ chức cấp một (bao gồm các tập đoàn hàng không), các tổ chức bảo trì làm việc cho các hãng hàng không cụ thể, các nhà cung cấp MRO độc lập ở mọi quy mô',
+        'Quản lý chi tiêu; Đảm bảo các quy trình quản lý tiền mặt, ngân quỹ và kế toán theo thời gian thực trong toàn tập đoàn, bằng cách cho phép tự động hóa quy trình từ đầu đến cuối và hợp nhất theo thời gian thực của nhiều hệ thống phụ trợ. Có được thông tin chung về Nhân sự và Tài chính để hỗ trợ các quyết định kinh doanh thông minh và quản lý hiệu suất tốt hơn để có lợi thế cạnh tranh rõ ràng; Giải pháp cho các hãng hàng không thuộc mọi quy mô và loại hình từ các công ty khởi nghiệp đến các tổ chức cấp một (bao gồm các tập đoàn hàng không), các tổ chức bảo trì làm việc cho các hãng hàng không cụ thể, các nhà cung cấp MRO độc lập ở mọi quy mô',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5445,10 +5598,10 @@ export const TYO_CA_Section4 = {
       language: 'vi',
       code: 'PG003.8SE00004CN000004',
       title: 'Dịch vụ và hỗ trợ',
-      description: '- Dịch vụ tư vấn- Dịch vụ triển khai - Chuyển đổi dữ liệu- Quản lý dự án- Bảo trì, vận hành ',
+      description: 'Dịch vụ tư vấn; Dịch vụ triển khai; Chuyển đổi dữ liệu; Quản lý dự án; Bảo trì, vận hành ',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5533,14 +5686,14 @@ export const TYO_CA_Section6 = {
     code: 'TPG003.8SE00006',
     image: '/images/WhyUsCoreAirline.png',
     description:
-      'NGS tự hào là đối tác triển khai của các hãng hàng đầu trên thế giới nhằm cung cấp sức mạnh công nghệ cho ngành hàng không, cho phép các hãng hàng không thực sự tạo ra sự khác biệt trong trải nghiệm cho khách hàng của mình. //Các đối tác của NGS liên tục nghiên cứu chuyên sâu, với niềm đam mê về ngàng hàng không, để có thể cung cấp nền tảng kết nối hệ sinh thái hàng không với quan điểm độc đáo đúng trọng tâm của ngành, hướng tới sự kết nối và trải nghiệm, thiết kế lại các hãng hàng không và hoạt động du lịch của ngày mai.',
+      'NGS tự hào là đối tác triển khai của các hãng hàng đầu trên thế giới nhằm cung cấp sức mạnh công nghệ cho ngành hàng không, cho phép các hãng hàng không thực sự tạo ra sự khác biệt trong trải nghiệm cho khách hàng của mình //Các đối tác của NGS liên tục nghiên cứu chuyên sâu, với niềm đam mê về ngàng hàng không, để có thể cung cấp nền tảng kết nối hệ sinh thái hàng không với quan điểm độc đáo đúng trọng tâm của ngành, hướng tới sự kết nối và trải nghiệm, thiết kế lại các hãng hàng không và hoạt động du lịch của ngày mai',
   },
   components: [],
 };
 export const TYO_CA_Section7 = {
   section: {
     id: 7,
-    name: 'Đồng hành cùng chúng tôi',
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'TPG003.8SE00007',
     image: '',
     description: '',
@@ -5550,11 +5703,11 @@ export const TYO_CA_Section7 = {
       id: 1,
       language: 'vi',
       code: 'PG003.8SE00007CN000001',
-      title: 'Công ty TNHH Fivetran',
-      description: 'Đối tác hạng đồng',
+      title: '',
+      description: '',
       slug: '',
       content: '',
-      image: '/images/logo_amos.png',
+      image: '/images/SAP.png',
       video: '',
       thumbnail: '',
     },
@@ -5567,31 +5720,7 @@ export const TYO_CA_Section7 = {
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_sap.png',
-      video: '',
-      thumbnail: '',
-    },
-    {
-      id: 3,
-      language: 'vi',
-      code: 'PG003.8SE00007CN000003',
-      title: '',
-      description: '',
-      slug: '',
-      content: '',
-      image: '/images/logo_amadus.png',
-      video: '',
-      thumbnail: '',
-    },
-    {
-      id: 4,
-      language: 'vi',
-      code: 'PG003.8SE00007CN000004',
-      title: '',
-      description: '',
-      slug: '',
-      content: '',
-      image: '/images/logo_legstate.png',
+      image: '/images/Amadeus.png',
       video: '',
       thumbnail: '',
     },
@@ -5602,7 +5731,7 @@ export const TYO_CA_Section8 = {
     id: 7,
     name: 'Những khách hàng đã hài lòng',
     code: 'TPG003.7SE00007',
-    image: '/images/TYO_CIsection7.png',
+    image: '/images/client_story.png',
     description: '',
   },
   components: [
@@ -5615,7 +5744,7 @@ export const TYO_CA_Section8 = {
       slug: '',
       content:
         'Quản lý quan hệ khách hàng (CRM) giờ đây là giải pháp bắt buộc phải có đối với mọi loại hình doanh nghiệp. Xét cho cùng, CRM cho phép bạn hiểu sâu sắc về khách hàng và khách hàng tiềm năng của mình, xây dựng mối quan hệ mật thiết với họ và cung cấp cho họ dịch vụ xuất sắc. CRM cũng cung cấp cho bạn thông tin chuyên sâu cần thiết để đưa ra quyết định dựa trên dữ liệu và các công cụ nhằm tối ưu hóa nhiệm vụ dự báo, doanh số bán hàng, tiếp thị, tự động hóa quy trình làm việc hỗ trợ khách hàng và hơn thế nữa. Cuối cùng, CRM giúp doanh nghiệp của bạn tối đa hóa sự hài lòng của khách hàng và giá trị trọn đời của khách hàng, thúc đẩy doanh số bán hàng nhiều hơn và giải quyết các vấn đề của khách hàng nhanh hơn. Đây là tất cả mọi thứ bạn cần biết.',
-      image: '',
+      image: '/images/Ellipse 131.png',
       video: '',
       thumbnail: '',
     },
@@ -5624,7 +5753,7 @@ export const TYO_CA_Section8 = {
 export const TYO_CA_Section9 = {
   section: {
     id: 8,
-    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+    name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên',
     code: 'TPG003.6SE00008',
     image: '',
     description: '',
@@ -5672,7 +5801,7 @@ export const TYO_CG_Section1 = {
 export const TYO_CG_Section2 = {
   section: {
     id: 2,
-    name: 'Trang bị công nghệ giải pháp cho ngành dầu khí!',
+    name: 'NGS đổi mới lĩnh vực Dầu khí qua dịch vụ đám mây và hiển thị theo thời gian thực',
     code: 'TPG003.9SE00002',
     image: '',
     description:
@@ -5697,11 +5826,11 @@ export const TYO_CG_Section2 = {
 export const TYO_CG_Section3 = {
   section: {
     id: 3,
-    name: 'Các giải pháp ngành của chúng tôi giúp',
+    name: 'Giải pháp Dầu khí: Chuyển đổi, Tái tạo và Tư duy số',
     code: 'TPG003.9SE00003',
     image: '/images/TYO_CGsection3.png',
     description:
-      '- Cơ hội M&A mới trong ngành dầu khí- Tăng cường tỷ lệ năng lượng tái tạo trong hỗn hợp năng lượng- Lập kế hoạch vốn tuân thủ- Chuyển đổi số trong ngành Dầu khí',
+      '- Chuyển đổi năng lượng bền vững//- Cơ hội M&A mới trong ngành dầu khí//- Tăng cường tỷ lệ năng lượng tái tạo trong hỗn hợp năng lượng//- Lập kế hoạch vốn tuân thủ//- Chuyển đổi số trong ngành Dầu khí',
   },
   components: [
     {
@@ -5732,12 +5861,12 @@ export const TYO_CG_Section4 = {
       id: 1,
       language: 'vi',
       code: 'PG003.9SE00004CN000001',
-      title:
-        'Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí. ',
-      description: '',
+      title: 'Hệ thống quản lý kinh doanh',
+      description:
+        'Các hệ thống backend cho việc quản lý kinh doanh đối với các giai đoạn thượng nguồn và hạ nguồn của các hệ thống dầu khí.',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5749,7 +5878,7 @@ export const TYO_CG_Section4 = {
       description: '',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5761,7 +5890,7 @@ export const TYO_CG_Section4 = {
       description: '',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5769,12 +5898,12 @@ export const TYO_CG_Section4 = {
       id: 4,
       language: 'vi',
       code: 'PG003.9SE00004CN000004',
-      title:
+      title: 'Giải pháp Connected Depot by Implico',
+      description:
         'Giải pháp Connected Depot by Implico tối ưu quản lý các kho dầu khí NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam.',
-      description: '',
       slug: '',
       content: '',
-      image: '',
+      image: '/images/grey.png',
       video: '',
       thumbnail: '',
     },
@@ -5785,32 +5914,19 @@ export const TYO_CG_Section5 = {
     id: 5,
     name: 'Tại sao nên chọn đồng hành cùng chúng tôi',
     code: 'TPG003.9SE00005',
-    image: '',
+    image: '/images/4people.png',
     description:
       'NGS được biết đến là nhà cung cấp các giải pháp công nghệ hàng đầu cho ngành Dầu khí. Bắt đầu từ năm 2015 đến nay, chủ yếu tập trung vào Giải pháp SAP, NGS đã thành lập đội ngũ chuyên gia có kinh nghiệm cao trong việc tư vấn và triển khai giải pháp cho nhiều doanh nghiệp trong ngành Dầu khí tại Việt Nam.',
   },
-  components: [
-    {
-      id: 1,
-      language: 'vi',
-      code: 'PG003.9SE00005CN000001',
-      title: '“Doanh nghiệp ngân hàng trong thời đại mới”.',
-      description:
-        'Nhu cầu và thị trường của khách hàng đang thay đổi nhanh hơn bao giờ hết, đòi hỏi cách tiếp cận của doanh nghiệp ngân hàng phải nhanh chóng điều chỉnh chiến lược, sản phẩm dịch vụ và giải pháp để duy trì tính cạnh tranh. và các giải pháp kinh doanh kỹ thuật số sáng tạo trong giải pháp lõi thế hệ mới sẽ là một phần thiết yếu của sự kết hợp và đáp ứng này. Việc phát triển một chiến lược chuyển đổi kỹ thuật số rõ ràng khi bắt đầu bằng hoạt động của ngân hàng lõi thế hệ mới phù hợp với các mục tiêu kinh doanh tổng thể của tổ chức là một thách thức và tầm nhìn hoặc khả năng lãnh đạo phù hợp có thể thúc đẩy sự tiến bộ.',
-      slug: '',
-      content: '',
-      image: '/images/TYO_BCsection3.png',
-      video: '',
-      thumbnail: '',
-    },
-  ],
+  components: [],
 };
+
 export const TYO_CG_Section6 = {
   section: {
     id: 6,
-    name: 'Đối tác đồng hành cùng NGS',
+    name: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
     code: 'TPG003.8SE00006',
-    image: '/images/TYO_CGsection1.png',
+    image: '',
     description: '',
   },
   components: [
@@ -5818,48 +5934,11 @@ export const TYO_CG_Section6 = {
       id: 1,
       language: 'vi',
       code: 'PG003.9SE00006CN000001',
-      title: 'Công ty TNHH Fivetran',
-      description: 'Đối tác hạng đồng',
-      slug: '',
-      content:
-        'Fivetran là đối tác đã bước đi cùng NGS quang đường 5 năm. Với sự hợp tác  về công nghệ và dịch vụ. Hai bên cùng hợp tác trong lĩnh vực hàng hóa vận chuyển lớn',
-      image: '',
-      video: '',
-      thumbnail: '/images/logo_3CX.png',
-    },
-    {
-      id: 2,
-      language: 'vi',
-      code: 'PG003.9SE00006CN000002',
       title: '',
       description: '',
       slug: '',
       content: '',
-      image: '/images/logo_odoo.png',
-      video: '',
-      thumbnail: '',
-    },
-    {
-      id: 3,
-      language: 'vi',
-      code: 'PG003.9SE00006CN000003',
-      title: '',
-      description: '',
-      slug: '',
-      content: '',
-      image: '/images/logo_genesys.png',
-      video: '',
-      thumbnail: '',
-    },
-    {
-      id: 4,
-      language: 'vi',
-      code: 'PG003.9SE00006CN000004',
-      title: '',
-      description: '',
-      slug: '',
-      content: '',
-      image: '/images/logo_saleforce.png',
+      image: '/images/SAP.png',
       video: '',
       thumbnail: '',
     },
@@ -5870,7 +5949,7 @@ export const TYO_CG_Section7 = {
     id: 7,
     name: 'Những khách hàng đã hài lòng',
     code: 'TPG003.9SE00007',
-    image: '/images/TYO_CIsection7.png',
+    image: '/images/client_story.png',
     description: '',
   },
   components: [
@@ -5878,11 +5957,11 @@ export const TYO_CG_Section7 = {
       id: 1,
       language: 'vi',
       code: 'PG003.9SE00007CN000001',
-      title: 'Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng',
-      description: 'Majesco//Nguyễn Anh Huy ',
+      title: 'Majesco',
+      description: 'Nguyễn Anh Huy',
       slug: '',
-      content: '',
-      image: '/images/icon1.png',
+      content: 'Cùng NGS đã đến và làm thay đổi diện mạo, cách thức tiếp cận khách hàng, gia tăng mức độ hài lòng',
+      image: '/images/Ellipse 131.png',
       video: '',
       thumbnail: '',
     },
@@ -5891,7 +5970,7 @@ export const TYO_CG_Section7 = {
 export const TYO_CG_Section8 = {
   section: {
     id: 8,
-    name: 'Bạn muốn đăng ký đề xuất bản dùng thử?',
+    name: 'Hãy để chúng tôi kết nối với bạn và mang lại những trải nghiệm đầu tiên',
     code: 'TPG003.9SE00008',
     image: '',
     description: '',

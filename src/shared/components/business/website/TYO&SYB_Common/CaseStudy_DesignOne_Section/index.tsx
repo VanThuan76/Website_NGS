@@ -32,7 +32,7 @@ const CaseStudyDesignOneSection = ({ title, data, className }: Props) => {
             className='col-span-7 w-full grid-cols-7 !gap-5 !text-left text-white md:!gap-10'
           />
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon cls='border-orange-500 bg-white px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
+            <BtnCommon cls='border-orange-500 bg-white px-4' title='Kết nối với NGS' colorSvg={colorIcon} />
           </UseLinkRedirect>
         </div>
         <div className='ols-span-1 relative block h-[500px] w-full overflow-hidden rounded-lg'>

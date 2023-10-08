@@ -19,9 +19,11 @@ import {
   TYO_CDP_Section6,
   TYO_CDP_Section7,
   TYO_CDP_Section8,
+  TYO_CDP_Section9,
   TYO_DSP_Section8,
 } from '@/mocks/website/TYO/tyo';
 import dynamic from 'next/dynamic';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -59,6 +61,9 @@ const CDPPage = () => {
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <PartnerDesignOneSection data={TYO_CDP_Section6} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CDP_Section9} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={TYO_CDP_Section8} />
