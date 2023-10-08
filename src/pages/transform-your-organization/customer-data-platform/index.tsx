@@ -60,9 +60,6 @@ const CDPPage = () => {
         <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CDP_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignOneSection data={TYO_CDP_Section6} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
         <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CDP_Section9} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>

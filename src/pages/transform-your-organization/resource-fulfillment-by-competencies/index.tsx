@@ -9,6 +9,7 @@ import {
   TYO_RF_Section2,
   TYO_RF_Section3,
   TYO_RF_Section4,
+  TYO_RF_Section5,
 } from '@/mocks/website/TYO/tyo';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
@@ -25,7 +26,7 @@ const TIPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>System Integration NGS</title>
+        <title>Resource Fullfillment by Competencies NGS</title>
         <meta name='description' content='System Integration NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
@@ -36,16 +37,16 @@ const TIPage = () => {
         <OverviewDesignOneSection title='Tổng quan' data={TYO_RF_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignFourSection title='Our Service & Solution' data={TYO_RF_Section3} />
+        <ServiceDesignFourSection title='Dịch vụ & Giải pháp' data={TYO_RF_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_RF_Section4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYO_AMS_Section6} />
+        <ClientStoriesDesignTwoSection title='Client stories' data={TYO_RF_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

@@ -4,16 +4,14 @@ import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
-import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import {
   TYOBanner1_PG3_11,
   TYOchallenge1_PG3_11,
   TYOClientStories2_PG3_11,
   TYOForm1_PG3_11,
   TYOOverview1_PG3_11,
-  TYOPartner3_PG3_11,
+  TYOPartner1_PG3_10,
   TYOService1_PG3_11,
   TYOWhyUs1_PG3_11,
 } from '@/mocks/website/TYO/tyo';
@@ -21,6 +19,7 @@ import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/F
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignNineSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignNine_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
+import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -52,10 +51,10 @@ const SCMPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignThreeSection data={TYOPartner3_PG3_11} />
+        <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Những khách hàng đã hài lòng' data={TYOClientStories2_PG3_11} />
+        <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_11} />

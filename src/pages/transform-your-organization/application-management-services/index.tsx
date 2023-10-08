@@ -5,7 +5,6 @@ import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Com
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import OverviewDesignNineSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignNine_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
-import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import {
@@ -18,6 +17,7 @@ import {
 } from '@/mocks/website/TYO/tyo';
 import { SYB_TI_Section9 } from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -47,7 +47,7 @@ const AMSPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_AMS_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Những khách hàng đã hài lòng' data={TYO_AMS_Section6} />
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_AMS_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYB_TI_Section9} />

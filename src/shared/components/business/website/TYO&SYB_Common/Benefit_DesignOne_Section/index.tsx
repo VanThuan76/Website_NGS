@@ -20,9 +20,7 @@ const BenefitDesignOneSection = ({ title, data, className }: Props) => {
         <div className='flex flex-col items-center justify-center gap-3'>
           <p className='text-sm text-orange-500 md:text-2xl'>{title}</p>
           <h1 className='w-full text-center text-2xl font-medium md:w-[70%] md:text-4xl'>{data.section.name}</h1>
-          <p className='text-center text-sm font-medium not-italic md:text-left md:text-base'>
-            {data.section.description}
-          </p>
+          <p className='text-center text-sm font-medium not-italic md:text-base'>{data.section.description}</p>
         </div>
         <div className='mt-14 grid w-full grid-cols-1 items-center justify-start md:grid-cols-4'>
           {data.components.map((item, idx) => (
