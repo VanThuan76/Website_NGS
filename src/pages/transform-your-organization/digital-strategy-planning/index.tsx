@@ -18,9 +18,8 @@ import {
 } from '@/mocks/website/TYO/tyo';
 import CaseStudyDesignOneSection from '@/components/business/website/TYO&SYB_Common/CaseStudy_DesignOne_Section';
 import dynamic from 'next/dynamic';
-import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
-import { Home_11 } from '@/mocks/website/HO/home';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -50,7 +49,7 @@ const DSPPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_DSP_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_DSP_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <CaseStudyDesignOneSection title='NHỮNG KHÁCH HÀNG ĐÃ HÀI LÒNG' data={TYO_DSP_Section7} />

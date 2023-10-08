@@ -36,7 +36,7 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
             </div>
           </div>
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon title='Đăng ký ngay' cls='border border-orange-500 !bg-none' />
+            <BtnCommon title='Kết nối với NGS' cls='border border-orange-500 !bg-none' />
           </UseLinkRedirect>
         </div>
         <div className='relative h-full w-full'>

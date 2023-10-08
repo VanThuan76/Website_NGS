@@ -27,7 +27,7 @@ const WhyUsDesignThreeSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='col-span-7 w-full grid-cols-7 !gap-0 !text-left'
+            className='col-span-7 w-full grid-cols-7 !gap-4 !text-left'
           />
         </div>
         {/* Responsive */}

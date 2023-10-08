@@ -43,7 +43,7 @@ const CCPage = () => {
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='Hệ thống CNTT lõi Ngành Hàng không' data={TYO_CA_Section2} />
+        <OverviewDesignOneSection title='Tổng quan' data={TYO_CA_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYO_CA_Section3} />
@@ -58,7 +58,7 @@ const CCPage = () => {
         <WhyUsDesignThreeSection title='Tại sao chọn NGS' data={TYO_CA_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='' data={TYO_CA_Section7} />
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CA_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={TYO_CA_Section8} />

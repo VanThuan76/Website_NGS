@@ -33,7 +33,7 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
               })}
           </div>
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon title='Đăng ký ngay' cls='text-white bg-orange-500 p-4' />
+            <BtnCommon title='Kết nối với NGS' cls='text-white bg-orange-500 p-4' />
           </UseLinkRedirect>
         </div>
         <PreImage

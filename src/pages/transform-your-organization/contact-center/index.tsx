@@ -6,7 +6,6 @@ import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Co
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFive_Section';
-import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import {
   TYO_CC_Banner,
@@ -18,6 +17,7 @@ import {
   TYO_DSP_Section8,
 } from '@/mocks/website/TYO/tyo';
 import dynamic from 'next/dynamic';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -47,10 +47,10 @@ const CCPage = () => {
         <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CC_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignThreeSection data={TYO_CC_Section6} />
+        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CC_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_DSP_Section8} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_DSP_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

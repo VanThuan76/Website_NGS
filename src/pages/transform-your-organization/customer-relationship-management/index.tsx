@@ -43,7 +43,7 @@ const CustomerRelationshipManagementPage = () => {
         <OverviewDesignThreeSection title='Tổng quan' data={TYO_CRM_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection title='Thách thức của bạn' data={TYO_CRM_Section3} />
+        <ChallengeDesignThreeSection title='Thách thức' data={TYO_CRM_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ của chúng tôi' data={TYO_CRM_Section4} />

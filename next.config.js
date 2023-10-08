@@ -18,7 +18,7 @@ module.exports = {
     return config;
   },
   async exportPathMap(defaultPathMap) {
-    const excludeAdminPages = (path) => path.startsWith('/admin');
+    const excludeAdminPages = path => path.startsWith('/admin');
 
     const filteredPathMap = Object.keys(defaultPathMap).reduce((acc, path) => {
       if (!excludeAdminPages(path)) {
