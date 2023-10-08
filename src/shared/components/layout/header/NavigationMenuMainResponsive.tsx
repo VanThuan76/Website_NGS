@@ -2,16 +2,15 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/common/ui/accordion';
 import { SheetClose } from '@/components/common/ui/sheet';
 import SecureMenuIcon from '@/components/icon/SecureMenuIcon';
-import { IMenu, IMenuChild3 } from '@/mocks/menu';
+import useTrans from '@/hooks/useTrans';
+import { IMenuChild3 } from '@/mocks/menu';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-type Props = {
-  fakeMenu: IMenu[];
-};
-const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
+const NavigationMenuMainResponsive = () => {
   const { pathname } = useRouter();
+  const { trans, lang } = useTrans();
   const router = useRouter();
   return (
     <div className='mx-auto w-full'>
@@ -21,7 +20,7 @@ const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
       >
         <PreImage src='/logo.png' alt='Logo' layer={false} />
       </SheetClose>
-      {fakeMenu.map((mainMenu, index) => (
+      {trans.website.menu.map((mainMenu, index) => (
         <div className='h-full w-full' key={index}>
           {mainMenu.menuChild.length === 0 ? (
             <div className='w-full py-4'>
@@ -85,8 +84,9 @@ const NavigationMenuMainResponsive = ({ fakeMenu }: Props) => {
                           <div className='items-star flex w-full flex-col justify-start gap-8'>
                             <SecureMenuIcon className='h-[56px] w-[56px]' />
                             <p className='text-base font-semibold leading-6'>
-                              Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7 chuyên
-                              nghiệp
+                              {lang === 'vi'
+                                ? 'Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7 chuyên nghiệp'
+                                : 'Ensure the integrity of your Information Technology system with 24/7 Professional Cybersecurity Services.'}
                             </p>
                             {menuChild2.menuChild.map((menuChild3, index) => (
                               <div key={index} className='mt-5 flex w-full flex-col items-start justify-start gap-5'>

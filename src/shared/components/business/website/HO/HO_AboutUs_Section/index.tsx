@@ -8,6 +8,7 @@ import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
 import { motion, useAnimation, useInView } from 'framer-motion';
 import useBreakPoint from '@/hooks/useBreakPoint';
+import useTrans from '@/hooks/useTrans';
 
 type Props = {
   title: string;
@@ -16,6 +17,7 @@ type Props = {
 };
 const HomeAboutUsSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const ref = useRef<HTMLElement>(null);
   const isInView = useInView(ref, { once: true });
@@ -45,7 +47,7 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon
-              title='Tìm hiểu thêm'
+              title={trans.common.findOutMore}
               cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
               colorSvg={colorIcon}
             />
@@ -65,14 +67,14 @@ const HomeAboutUsSection = ({ title, data, className }: Props) => {
           />
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon
-              title='Tìm hiểu thêm'
+              title={trans.common.findOutMore}
               cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
               colorSvg={colorIcon}
             />
           </UseLinkRouter>
         </div>
       </div>
-      <div className='flex w-full justify-center lg:justify-between'>
+      <div className='grid w-full grid-cols-1 justify-center md:grid-cols-4 lg:justify-between'>
         {data.components.map((item, idx) => (
           <motion.div
             key={idx}

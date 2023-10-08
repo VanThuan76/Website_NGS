@@ -5,7 +5,7 @@ import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { NextPage } from 'next';
 import { ReactElement } from 'react';
-// import { Bai_Jamjuree, Plus_Jakarta_Sans } from 'next/font/google';
+import { Bai_Jamjuree, Plus_Jakarta_Sans } from 'next/font/google';
 import { Provider } from 'react-redux';
 import { ThemeProvider as NextThemesProvider } from 'next-themes';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
@@ -18,12 +18,12 @@ import useRouterChange from '@/hooks/useRouterChange';
 import { PreImage } from '@/components/common/customization/PreImage';
 import { motion } from 'framer-motion';
 
-// const interText = Bai_Jamjuree({
-//   subsets: ['vietnamese'],
-//   style: 'normal',
-//   display: 'swap',
-//   weight: ['200', '300', '400', '500', '600', '700'],
-// });
+const interText = Bai_Jamjuree({
+  subsets: ['vietnamese'],
+  style: 'normal',
+  display: 'swap',
+  weight: ['200', '300', '400', '500', '600', '700'],
+});
 
 export type NextPageWithLayout<P = {}, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => React.ReactNode;
@@ -47,8 +47,7 @@ const ConfigLayout = ({
   const isRouteLoading = useAppSelector(state => state.appSlice.isRouteLoading);
   useRouterChange();
   return (
-    // <main className={interText.className}>
-    <main>
+    <main className={interText.className}>
       {isRouteLoading ? (
         <div
           style={{ background: 'linear-gradient(45deg, #9565a6, #27a0bd, #f58529)' }}
@@ -90,8 +89,7 @@ export default function App({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? (page => <LayoutWebsite>{page}</LayoutWebsite>);
   return (
     <ErrorBoundary>
-      {/* <main className={interText.className}> */}
-      <main>
+      <main className={interText.className}>
         <Head>
           <title>Website NGS</title>
           <meta name='description' content='Website NGS' />

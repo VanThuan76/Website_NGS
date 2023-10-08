@@ -492,9 +492,6 @@ h1 {
     'clig' off,
     'liga' off;
 }
-.blur-image {
-  filter: blur(2px);
-}
 .line-animation-banner {
   --progress: 0;
   --max-width: 100%;

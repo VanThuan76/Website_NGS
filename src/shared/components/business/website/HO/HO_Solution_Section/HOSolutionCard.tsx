@@ -6,6 +6,7 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import useBreakPoint from '@/hooks/useBreakPoint';
+import useTrans from '@/hooks/useTrans';
 interface Props {
   id: number;
   title: string;
@@ -17,6 +18,7 @@ interface Props {
 
 const HOSolutionCard = ({ id, title, description, image, url, className }: Props) => {
   const currentBreakPoint = useBreakPoint();
+  const { trans } = useTrans();
   const [isHovered, setIsHovered] = useState(false);
   useEffect(() => {
     if (currentBreakPoint === 'sm' && id === 1) {
@@ -94,7 +96,7 @@ const HOSolutionCard = ({ id, title, description, image, url, className }: Props
           <UseLinkRouter url={url}>
             <BtnCommon
               cls='mt-6 h-[40px] border-orange-500 bg-white cursor-pointer rounded-[8px]'
-              title='Tìm hiểu thêm'
+              title={trans.common.findOutMore}
               colorSvg={colorIcon}
             />
           </UseLinkRouter>

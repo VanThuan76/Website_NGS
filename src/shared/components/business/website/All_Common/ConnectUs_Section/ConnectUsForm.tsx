@@ -1,13 +1,12 @@
 import { ToastAction } from '@/components/common/ui/toast';
 import { useToast } from '@/components/common/ui/use-toast';
 import IconLineDirection from '@/components/icon/IconLineDirection';
+import useTrans from '@/hooks/useTrans';
 import { useTheme } from 'next-themes';
 import { useState } from 'react';
 
-export interface Props {
-  connectUsData: any[];
-}
-const ConnectUsForm = ({ connectUsData }: Props) => {
+const ConnectUsForm = () => {
+  const { trans } = useTrans();
   const { theme } = useTheme();
   const { toast } = useToast();
   const [fullName, setFullName] = useState('');
@@ -34,10 +33,10 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
   };
   return (
     <div className='flex w-full flex-col items-start justify-start text-white'>
-      <h1 className='text-2xl font-thin lg:pl-8 lg:text-3xl'>Bạn quan tâm đến...</h1>
+      <h1 className='text-2xl font-thin lg:pl-8 lg:text-3xl'>{trans.website.formConnectUs.sub}</h1>
       <div className='mt-4 flex flex-wrap items-start justify-start gap-2 md:gap-4 lg:pl-8'>
-        {connectUsData &&
-          connectUsData.map((item, idx) => {
+        {trans.website.formConnectUs.services &&
+          trans.website.formConnectUs.services.map((item, idx) => {
             const isSelected = selectedItems.includes(item);
             return (
               <div
@@ -52,28 +51,11 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
             );
           })}
       </div>
-      {/* <div className='mt-4 grid grid-cols-2 gap-3 md:grid-cols-3 lg:pl-8'>
-        {connectUsData &&
-          connectUsData.slice(3, 6).map((item, idx) => {
-            const isSelected = selectedItems.includes(item);
-            return (
-              <div
-                key={idx}
-                className={`flex h-[56px] cursor-pointer items-center justify-center rounded-full border px-[14px] py-[16px] text-center ${
-                  isSelected ? 'border-orange-700' : 'border-[#F5F5F5]'
-                }`}
-                onClick={() => handleItemClick(item)}
-              >
-                <p className=''>{item}</p>
-              </div>
-            );
-          })}
-      </div> */}
       <div className='flex w-full items-start justify-start'>
         <form onSubmit={handleSubmit} className='mt-4 w-full p-2 md:p-4 lg:p-8'>
           <div className='mb-4 w-full'>
             <label htmlFor='fullName' className='mb-1 block'>
-              Họ và tên của bạn?
+              {trans.website.formConnectUs.fullName}
             </label>
             <input
               type='text'
@@ -86,7 +68,7 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
           </div>
           <div className='mb-4 w-full'>
             <label htmlFor='phoneNumber' className='mb-1 block'>
-              Số điện thoại:
+              {trans.website.formConnectUs.phoneNumber}
             </label>
             <input
               type='tel'
@@ -102,7 +84,7 @@ const ConnectUsForm = ({ connectUsData }: Props) => {
             type='submit'
             className={`relative mt-3 flex cursor-pointer items-center justify-between gap-3 rounded-[12px] bg-[#fff] py-[18px] pl-[16px] pr-[12px] text-left text-orange-500 hover:bg-[#efeeee] hover:transition hover:ease-in-out`}
           >
-            <p className='text-sm'>Kết nối với NGS</p>
+            <p className='text-sm'>{trans.website.formConnectUs.title}</p>
             <IconLineDirection color={theme !== 'dark' ? '#FC5E03' : '#fff'} />
           </button>
         </form>

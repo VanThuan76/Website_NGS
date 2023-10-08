@@ -22,11 +22,11 @@ const BenefitDesignOneSection = ({ title, data, className }: Props) => {
           <h1 className='w-full text-center text-2xl font-medium md:w-[70%] md:text-4xl'>{data.section.name}</h1>
           <p className='text-center text-sm font-medium not-italic md:text-base'>{data.section.description}</p>
         </div>
-        <div className='mt-14 grid w-full grid-cols-1 items-center justify-start md:grid-cols-4'>
+        <div className='mt-14 grid w-full grid-cols-1 items-center justify-center md:grid-cols-4'>
           {data.components.map((item, idx) => (
             <div
               key={idx}
-              className={`flex w-full flex-col items-center justify-start gap-4 ${
+              className={`flex w-full flex-col items-center justify-start gap-4 p-2 ${
                 data.components && data.components?.length - 1 !== idx && 'border-card-benefit-designOne-section'
               }`}
             >

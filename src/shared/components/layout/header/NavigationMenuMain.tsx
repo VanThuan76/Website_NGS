@@ -12,24 +12,22 @@ import {
   navigationMenuTriggerStyle,
 } from '@/components/common/ui/navigation-menu';
 import IconLineDirection from '@/components/icon/IconLineDirection';
-import { IMenu, IMenuChild3 } from '@/mocks/menu';
+import { IMenuChild3 } from '@/mocks/menu';
 import Link from 'next/link';
 import SecureMenuIcon from '@/components/icon/SecureMenuIcon';
 import { useRouter } from 'next/router';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import useTrans from '@/hooks/useTrans';
 
-type Props = {
-  fakeMenu: IMenu[];
-  className?: string;
-};
-const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
+const NavigationMenuMain = () => {
   const { pathname } = useRouter();
+  const { trans, lang } = useTrans();
   // TODO: Fix menu by parent_id
-  const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(fakeMenu[0].menuChild[0]);
+  const [selectedMenuChild3, setSelectedMenuChild3] = useState<IMenuChild3>(trans.website.menu[0].menuChild[0]);
   return (
     <NavigationMenu className='NavigationMenuRoot'>
       <NavigationMenuList className='NavigationMenuList'>
-        {fakeMenu.map((mainMenu, idx) => (
+        {trans.website.menu.map((mainMenu, idx) => (
           <div key={idx}>
             {mainMenu.menuChild.length === 0 ? (
               <NavigationMenuItem>
@@ -93,8 +91,9 @@ const NavigationMenuMain = ({ fakeMenu, className }: Props) => {
                               <div className='flex w-full flex-col items-start justify-start'>
                                 <SecureMenuIcon />
                                 <p className='text-2xl text-[#a6a6a6]'>
-                                  Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7
-                                  chuyên nghiệp
+                                  {lang === 'vi'
+                                    ? 'Bảo vệ toàn vẹn hệ thống Công nghệ thông tin của bạn bằng Dịch vụ An ninh mạng 24/7 chuyên nghiệp'
+                                    : 'Ensure the integrity of your Information Technology system with 24/7 Professional Cybersecurity Services.'}
                                 </p>
                               </div>
                             )}

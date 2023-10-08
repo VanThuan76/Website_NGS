@@ -6,12 +6,14 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import useTrans from '@/hooks/useTrans';
 interface Props {
   item: Partial<IComponents>;
 }
 
 const HomeWhyUsResponsive = ({ item }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -46,7 +48,11 @@ const HomeWhyUsResponsive = ({ item }: Props) => {
           ))}
         </div>
         <UseLinkRouter url={URLS_SYSTEM.ES}>
-          <BtnCommon title='Tìm hiểu thêm' cls='mt-3 w-[190px] border border-orange-500' colorSvg={colorIcon} />
+          <BtnCommon
+            title={trans.common.findOutMore}
+            cls='mt-3 w-[190px] border border-orange-500'
+            colorSvg={colorIcon}
+          />
         </UseLinkRouter>
       </motion.div>
     </div>

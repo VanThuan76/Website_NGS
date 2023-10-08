@@ -1,5 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import InitBasicAnimation from '@/components/common/customization/InitBasicAnimation';
+import useTrans from '@/hooks/useTrans';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -51,9 +52,10 @@ interface Props {
 }
 
 const HOBannerContent = ({ selectedTab }: Props) => {
+  const { trans } = useTrans();
   return (
-    <InitBasicAnimation className='font-custom absolute top-28 z-40 flex w-full flex-col items-start justify-center gap-5 px-4 md:px-20'>
-      <div className='mx-auto flex w-full flex-col items-start justify-start gap-6 px-4 md:px-24'>
+    <InitBasicAnimation className='font-custom absolute top-28 z-40 flex w-full flex-col items-start justify-center gap-5'>
+      <div className='flex w-full flex-col items-start justify-start gap-6 px-4 md:px-24'>
         <div className='text-left text-sm font-medium text-white underline lg:text-lg'>
           <AnimatePresence mode='wait'>
             <motion.div
@@ -117,7 +119,10 @@ const HOBannerContent = ({ selectedTab }: Props) => {
         </h1>
         {/* Responsive */}
         <UseLinkRouter url={URLS_SYSTEM.ES}>
-          <BtnCommon title='Tìm hiểu thêm' cls='w-[190px] md:w-[170px] bg-[#fff] border-none !text-orange-500' />
+          <BtnCommon
+            title={trans.common.findOutMore}
+            cls='w-[190px] md:w-[170px] bg-[#fff] border-none !text-orange-500'
+          />
         </UseLinkRouter>
       </div>
     </InitBasicAnimation>

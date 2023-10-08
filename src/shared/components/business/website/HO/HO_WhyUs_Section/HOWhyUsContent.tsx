@@ -5,6 +5,7 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { splitTextToArrayByDoubleSlash } from '@/utils/functions/splitTextToArray';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
+import useTrans from '@/hooks/useTrans';
 interface Props {
   setSelectedIcon: any;
   data: Partial<IComponents>[];
@@ -12,6 +13,7 @@ interface Props {
 }
 const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const contentAnimated = {
     active: {
@@ -33,7 +35,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
   };
   return (
     <div className='flex h-full w-full flex-col items-start justify-start gap-12 pb-3'>
-      <motion.div className='mt-5 flex w-full items-start justify-start text-sm lg:text-lg'>
+      <motion.div className='mt-5 flex w-full justify-center text-sm lg:text-lg'>
         {data.map((item, idx) => {
           return (
             <motion.div
@@ -46,7 +48,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
                 idx === 0 ? 'rounded-l-sm' : idx === data.length - 1 ? 'rounded-r-sm' : ''
               }`}
             >
-              <div className='flex flex-col items-center justify-center hover:text-slate-800 '>
+              <div className='flex flex-col items-center justify-center text-center hover:text-slate-800'>
                 {splitTextToArrayByDoubleSlash(item.title || '').map((item: string, idx: number) => (
                   <p key={idx} className='text-base'>
                     {item}
@@ -65,7 +67,7 @@ const HomeWhyUsContent = ({ setSelectedIcon, selectedIcon, data }: Props) => {
         ))}
       </div>
       <UseLinkRouter url={URLS_SYSTEM.ES}>
-        <BtnCommon title='Tìm hiểu thêm' cls='w-[170px] border border-orange-500' colorSvg={colorIcon} />
+        <BtnCommon title={trans.common.findOutMore} cls='w-[170px] border border-orange-500' colorSvg={colorIcon} />
       </UseLinkRouter>
     </div>
   );

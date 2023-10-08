@@ -5,6 +5,7 @@ import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
+import useTrans from '@/hooks/useTrans';
 interface Props {
   item: IComponents;
   idx: number;
@@ -13,6 +14,7 @@ interface Props {
 
 const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   const [isHovered, setIsHovered] = useState(false);
   return (
@@ -50,7 +52,7 @@ const HOServiceSection = ({ item, idx, sectionControls }: Props) => {
         {/* Responsive--> */}
         <UseLinkRouter url={URLS_SYSTEM.ES}>
           <BtnCommon
-            title='Tìm hiểu thêm'
+            title={trans.common.findOutMore}
             cls='mt-5 w-[190px] md:w-[170px] border border-orange-500'
             colorSvg={colorIcon}
           />

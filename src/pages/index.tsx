@@ -20,22 +20,8 @@ import { GetServerSideProps } from 'next';
 import { APP_SAVE_KEY } from '@/utils/constants';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderHomeContent } from '@/utils/fetchServerSide/renderHomeContent';
-import {
-  Home_1,
-  Home_10,
-  Home_11,
-  Home_12,
-  Home_13,
-  Home_2,
-  Home_3,
-  Home_4,
-  Home_5,
-  Home_6,
-  Home_7,
-  Home_8,
-  Home_9,
-} from '@/mocks/website/HO/home';
 import HOOrganizationalSystemSection from '@/components/business/website/HO/HO_Organizational_System_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -70,6 +56,7 @@ export function HomePage({
   HO_TestimonialData,
   HO_CaseStudy,
 }: Props) {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
@@ -89,26 +76,26 @@ export function HomePage({
         <meta name='twitter:description' content={homePageData.description} />
         <meta name='twitter:image' content={homePageData.image} /> */}
       </Head>
-      <ScrollRevealWrapper sectionCode={Home_1.section.code}>
-        <HomeBannerSection data={Home_1} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_1.section.code}>
+        <HomeBannerSection data={trans.website.home.section_1} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_2.section.code}>
-        <HomeSolutionSection title='GIẢI PHÁP TIÊN PHONG' data={Home_2} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_2.section.code}>
+        <HomeSolutionSection title='GIẢI PHÁP TIÊN PHONG' data={trans.website.home.section_2} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_3.section.code}>
-        <HomeServiceSection title='DỊCH VỤ XUẤT SẮC' data={Home_3} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_3.section.code}>
+        <HomeServiceSection title='DỊCH VỤ XUẤT SẮC' data={trans.website.home.section_3} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_4.section.code}>
-        <HomeSecuritySection title='BẢO MẬT TOÀN DIỆN' data={Home_4} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_4.section.code}>
+        <HomeSecuritySection title='BẢO MẬT TOÀN DIỆN' data={trans.website.home.section_4} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_5.section.code}>
-        <HomePioneeringSection data={Home_5} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_5.section.code}>
+        <HomePioneeringSection data={trans.website.home.section_5} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_6.section.code}>
-        <HomeAboutUsSection title='VỀ CHÚNG TÔI' data={Home_6} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_6.section.code}>
+        <HomeAboutUsSection title='VỀ CHÚNG TÔI' data={trans.website.home.section_6} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_7.section.code}>
-        <HomeWhyUsSection title='ĐIỀU GÌ TẠO NÊN NGS' data={Home_7} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_7.section.code}>
+        <HomeWhyUsSection title='ĐIỀU GÌ TẠO NÊN NGS' data={trans.website.home.section_7} />
       </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper>
         <HomeEventSection title='SỰ KIỆN' data={Home_9} />
@@ -116,11 +103,11 @@ export function HomePage({
       <ScrollRevealWrapper>
         <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper> */}
-      <ScrollRevealWrapper sectionCode={Home_11.section.code}>
-        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_11.section.code}>
+        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={trans.website.home.section_11} />
       </ScrollRevealWrapper>
-      <ScrollRevealWrapper sectionCode={Home_8.section.code}>
-        <HOOrganizationalSystemSection data={Home_8} />
+      <ScrollRevealWrapper sectionCode={trans.website.home.section_8.section.code}>
+        <HOOrganizationalSystemSection data={trans.website.home.section_8} />
       </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper sectionCode={Home_12.section.code}>
         <HomeTestimonialSection title='KHÁCH HÀNG' data={Home_12} />

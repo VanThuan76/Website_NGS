@@ -18,7 +18,7 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
   const currentBreakPoint = useBreakPoint();
   return (
     <motion.div
-      className={`border-card-security-home relative col-span-1 flex h-[202px] max-w-[304px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-white p-2 shadow-sm dark:bg-[#222442] ${className}`}
+      className={`border-card-security-home relative col-span-1 flex h-[202px] max-w-[304px] cursor-pointer flex-col items-center justify-center overflow-hidden rounded-lg bg-white p-2 shadow-sm dark:bg-[#222442] md:w-[304px] ${className}`}
       variants={{
         hidden: { opacity: 0, translateX: -50, translateY: -50 },
         visible: { opacity: 1, translateX: 0, translateY: 0 },
