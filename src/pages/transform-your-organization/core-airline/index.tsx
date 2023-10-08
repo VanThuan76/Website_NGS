@@ -28,7 +28,7 @@ const ScrollRevealWrapper = dynamic(() => import('@/components/common/customizat
   ssr: false,
 });
 
-const CCPage = () => {
+const CAPage = () => {
   return (
     <React.Fragment>
       <Head>
@@ -70,5 +70,5 @@ const CCPage = () => {
   );
 };
 
-CCPage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
-export default CCPage;
+CAPage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
+export default CAPage;

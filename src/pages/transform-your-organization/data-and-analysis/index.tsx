@@ -4,8 +4,6 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
-import OverviewDesignSevenSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSeven_Section';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import {
@@ -13,7 +11,7 @@ import {
   TYOClientStories2_PG3_10,
   TYOForm1_PG3_17,
   TYOOverview4_PG3_17,
-  TYOOverview7_PG3_17,
+  TYOPartner1_PG3_10,
   TYOPartner3_PG3_17,
   TYOService1_PG3_17,
   TYOWhyUs1_PG3_17,
@@ -23,6 +21,8 @@ import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/F
 
 import dynamic from 'next/dynamic';
 import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -37,7 +37,10 @@ const DAAPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignOneSection title='Dữ liệu và phân tích' data={TYOBanner1_PG3_17} />
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dữ liệu và phân tích']}
+          data={TYOBanner1_PG3_17}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
@@ -52,13 +55,13 @@ const DAAPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
+        <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignThreeSection data={TYOPartner3_PG3_17} />
-      </ScrollRevealWrapper>
-      <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_17} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_17} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

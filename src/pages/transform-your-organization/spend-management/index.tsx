@@ -42,7 +42,7 @@ const SMPage = () => {
         <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_13} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <BenefitDesignTwoSection title='GIÁ TRỊ MANG LẠI' data={TYOchallenge3_PG3_13} />
+        <BenefitDesignTwoSection title='Lợi ích mang lại' data={TYOchallenge3_PG3_13} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_13} />

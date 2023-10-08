@@ -18,6 +18,7 @@ import BannerDesignOneSection from '@/components/business/website/All_Common/Ban
 import BenefitDesignOneSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignOne_Section';
 import WhyUsDesignTwoSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignTwo_Section';
 import dynamic from 'next/dynamic';
+import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -27,7 +28,7 @@ const CCPage = () => {
   return (
     <React.Fragment>
       <Head>
-        <title>Core Insurance NGS</title>
+        <title>Application development & modernization NGS</title>
         <meta name='description' content='Contact Center NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
@@ -47,10 +48,10 @@ const CCPage = () => {
         <WhyUsDesignTwoSection title='Tổng quan' data={TYO_ADM_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={TYO_ADM_Section6} />
+        <PartnerDesignOneSection data={TYO_ADM_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYO_ADM_Section7} />
+        <FormDesignOneSection title='Kết nối với NGS' data={TYO_ADM_Section7} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

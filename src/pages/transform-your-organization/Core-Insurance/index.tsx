@@ -25,7 +25,7 @@ const ScrollRevealWrapper = dynamic(() => import('@/components/common/customizat
   ssr: false,
 });
 
-const CCPage = () => {
+const CIPage = () => {
   return (
     <React.Fragment>
       <Head>
@@ -64,5 +64,5 @@ const CCPage = () => {
   );
 };
 
-CCPage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
-export default CCPage;
+CIPage.getLayout = (children: React.ReactNode) => <LayoutWebsite>{children}</LayoutWebsite>;
+export default CIPage;

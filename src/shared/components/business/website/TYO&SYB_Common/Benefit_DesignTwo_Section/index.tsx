@@ -36,7 +36,7 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
             </div>
           ))}
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Đăng ký ngay' colorSvg={colorIcon} />
+            <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Kết nối với NGS' colorSvg={colorIcon} />
           </UseLinkRedirect>
         </div>
         <div className='relative h-full w-full overflow-hidden object-cover'>

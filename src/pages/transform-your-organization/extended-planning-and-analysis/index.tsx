@@ -2,11 +2,9 @@ import React from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import {
@@ -20,6 +18,8 @@ import {
   TYOclientStories1_PG3_16,
 } from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -33,10 +33,13 @@ const EPAAPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignOneSection title='Lập kế hoạch và phân tích mở rộng (xP&A)' data={TYOBanner1_PG3_16} />
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Lập kế hoạch và phân tích mở rộng (xP&A)']}
+          data={TYOBanner1_PG3_16}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_16} />
+        <OverviewDesignOneSection title='Tổng quan' data={TYOOverview4_PG3_16} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_16} />
@@ -54,7 +57,7 @@ const EPAAPage = () => {
         <ClientStoriesDesignOneSection title='' data={TYOclientStories1_PG3_16} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={TYOForm1_PG3_16} />
+        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_16} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );
