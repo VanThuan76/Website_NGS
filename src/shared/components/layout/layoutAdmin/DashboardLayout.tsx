@@ -53,7 +53,7 @@ const DashBoardLayout = ({ children }: { children: React.ReactNode }) => {
     },
     {
       title: trans.admin.common.pages,
-      href: '/admin/pages',
+      href: '/admin/pages-manage',
       Icon: <FileBox className='mr-2 h-5 w-5' />,
     },
     {

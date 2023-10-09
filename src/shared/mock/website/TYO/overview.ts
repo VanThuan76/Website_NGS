@@ -411,6 +411,94 @@ export const TYOchallenge3 = {
   },
   components: [],
 };
+export const TYOchallenge4 = {
+  section: {
+    id: 4,
+    name: 'Thách thức của bạn',
+    code: 'TY1232323454',
+    image: '',
+    description:
+      'Theo một số thống kê gần đây, một tỷ lệ lớn các sự cố an ninh trong các tổ chức không bị phát hiện. Nếu chỉ dựa vào cơ chế phát hiện và ngăn chặn tự động. Doanh nghiệp của bạn có nguy cơ không phát hiện được những vấn đề sau:',
+  },
+  components: [
+    {
+      id: 1,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '90%',
+      description:
+        'Các cuộc tấn công mạng',
+      slug: '',
+      content: 'Hoạt động độc lập với các phần mềm độc hại',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 2,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '2000+',
+      description:
+        'Các cuộc tấn công nâng cao',
+      slug: '',
+      content: 'Hoạt động trên cơ sở hạ tầng của bạn',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 3,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '68%',
+      description:
+        'Các trường hợp gián điệp',
+      slug: '',
+      content: 'Đang diễn ra',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 4,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '10,000+',
+      description:
+        'Các cuộc tấn công',
+      slug: '',
+      content: 'Kết hợp với các công cụ mà trước đây chưa được xác định',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 5,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '72%',
+      description: 'Các cuộc tấn công',
+      slug: '',
+      content: 'Khai thác sử dụng lỗ hổng zero-day',
+      image: '/mockSVG/HO_SECURITY_icon.svg',
+      video: '',
+      thumbnail: '',
+    },
+    {
+      id: 6,
+      language: 'vi',
+      code: 'CPN12312',
+      title: '15,000+',
+      description: 'Các cuộc tấn công',
+      slug: '',
+      content: 'Không cần tập tin',
+      image: '',
+      video: '',
+      thumbnail: '',
+    },
+  ],
+};
 export const TYOClientStories2 = {
   section: {
     id: 2,

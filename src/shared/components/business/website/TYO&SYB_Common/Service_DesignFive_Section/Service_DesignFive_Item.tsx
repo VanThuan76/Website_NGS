@@ -11,7 +11,13 @@ const ServiceDesignFiveItem = ({ item, idx }: Props) => {
       style={{ borderLeft: '1px solid #FC5E03' }}
     >
       <div className='relative flex h-full w-full flex-col items-start justify-start gap-4 pl-5 md:gap-8'>
-        <p className='mt-5 text-xs md:text-base'>{item.content}</p>
+        <div className='flex w-full flex-col gap-2'>
+          {item.content.split('//').map((word, idx) => (
+            <p key={idx} className='mt-5 text-xs md:text-base'>
+              {word}
+            </p>
+          ))}
+        </div>
         <div className='absolute left-0 top-5 z-20 flex h-[50px] w-[50px] -translate-x-12 transform items-center justify-center rounded-full border-2 border-orange-500 bg-white'>
           {idx + 1}
         </div>

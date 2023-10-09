@@ -18,6 +18,8 @@ import {
 import dynamic from 'next/dynamic';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import ChallengeDesignFourSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignFour_Section';
+import { TYOchallenge4 } from '@/mocks/website/TYO/overview';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -39,6 +41,9 @@ const SOCPage = () => {
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <OverviewDesignEightSection title='Tổng quan' data={SYBOverview6_PG4_3} />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <ChallengeDesignFourSection title='Thách thức' data={TYOchallenge4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignFiveSection title='NGS triển khai' data={SYBService5_PG4_3} />

@@ -61,7 +61,7 @@ export function HomePage({
     <React.Fragment>
       <Head>
         {/* <title>{homePageData.name}</title> */}
-        <title>Trang chủ - NGS | Chuyển đổi số toàn diện</title>
+        <title>{trans.website.home.title}</title>
         <link rel='icon' href='/logo.svg' sizes='any' />
         {/* <meta name='description' content={homePageData.description} />
         <meta name='keywords' content={homePageData.seo} />
@@ -80,22 +80,22 @@ export function HomePage({
         <HomeBannerSection data={trans.website.home.section_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_2.section.code}>
-        <HomeSolutionSection title='GIẢI PHÁP TIÊN PHONG' data={trans.website.home.section_2} />
+        <HomeSolutionSection title={trans.website.home.titleSection.section_2} data={trans.website.home.section_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_3.section.code}>
-        <HomeServiceSection title='DỊCH VỤ XUẤT SẮC' data={trans.website.home.section_3} />
+        <HomeServiceSection title={trans.website.home.titleSection.section_3} data={trans.website.home.section_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_4.section.code}>
-        <HomeSecuritySection title='BẢO MẬT TOÀN DIỆN' data={trans.website.home.section_4} />
+        <HomeSecuritySection title={trans.website.home.titleSection.section_4} data={trans.website.home.section_4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_5.section.code}>
         <HomePioneeringSection data={trans.website.home.section_5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_6.section.code}>
-        <HomeAboutUsSection title='VỀ CHÚNG TÔI' data={trans.website.home.section_6} />
+        <HomeAboutUsSection title={trans.website.home.titleSection.section_6} data={trans.website.home.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_7.section.code}>
-        <HomeWhyUsSection title='ĐIỀU GÌ TẠO NÊN NGS' data={trans.website.home.section_7} />
+        <HomeWhyUsSection title={trans.website.home.titleSection.section_7} data={trans.website.home.section_7} />
       </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper>
         <HomeEventSection title='SỰ KIỆN' data={Home_9} />
@@ -104,7 +104,7 @@ export function HomePage({
         <NewsSection title='TIN TỨC' data={Home_10 as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper> */}
       <ScrollRevealWrapper sectionCode={trans.website.home.section_11.section.code}>
-        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={trans.website.home.section_11} />
+        <PartnerSection title={trans.website.home.titleSection.section_11} data={trans.website.home.section_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper sectionCode={trans.website.home.section_8.section.code}>
         <HOOrganizationalSystemSection data={trans.website.home.section_8} />

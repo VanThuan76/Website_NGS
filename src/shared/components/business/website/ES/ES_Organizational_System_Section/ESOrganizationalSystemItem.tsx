@@ -4,12 +4,14 @@ import { useState } from 'react';
 import { IComponents } from 'src/shared/schemas/typedef/IComponents';
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
+import useTrans from '@/hooks/useTrans';
 interface Props {
   item: IComponents;
   idx: number;
 }
 
 const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
+  const { trans } = useTrans();
   const { theme } = useTheme();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
 
@@ -47,7 +49,7 @@ const ESOrganizationalSystemItem = ({ item, idx }: Props) => {
         </p>
         {/* Responsive--> */}
         <BtnCommon
-          title='Tìm hiểu thêm'
+          title={trans.common.findOutMore}
           cls='mt-5 w-[190px] md:w-[170px] border border-orange-500'
           colorSvg={colorIcon}
         />

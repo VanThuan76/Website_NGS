@@ -3,6 +3,7 @@ import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common
 import BenefitDesignOneSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignOne_Section';
 import BenefitDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignTwo_Section';
 import CaseStudyDesignOneSection from '@/components/business/website/TYO&SYB_Common/CaseStudy_DesignOne_Section';
+import ChallengeDesignFourSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignFour_Section';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
@@ -49,6 +50,7 @@ import {
   TYOchallenge1,
   TYOchallenge2,
   TYOchallenge3,
+  TYOchallenge4,
   TYOClientStories2,
   TYOOverview1,
   TYOOverview2,
@@ -78,6 +80,7 @@ const Component = () => {
       <OverviewDesignEightSection title='Tổng quan' data={TYOOverview8} />
       <OverviewDesignNineSection title='Tổng quan' data={TYOOverview9} />
       <ChallengeDesignTwoSection title='Thách thức' data={TYOchallenge2} />
+      <ChallengeDesignFourSection title='Thách thức' data={TYOchallenge4} />
       <ChallengeDesignOneSection title='Thách thức' data={TYOchallenge1} />
       <ChallengeDesignThreeSection title='Thách thức' data={TYOchallenge3} />
       <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2} />

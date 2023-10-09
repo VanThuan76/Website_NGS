@@ -14,24 +14,13 @@ import ESPeopleSection from '@/components/business/website/ES/ES_People_Section'
 import { GetServerSideProps } from 'next';
 import { renderNewsContent } from '@/utils/fetchServerSide/renderNewsContent';
 import { APP_SAVE_KEY } from '@/utils/constants';
-import {
-  ESBannerData,
-  ESClientData,
-  ESCoreValueData,
-  ESEnvironmentData,
-  ESMissionData,
-  ESNewsAndEventData,
-  ESOrganizationalSystemData,
-  ESPeopleData,
-  ESTeamData,
-  ESVisionData,
-} from '@/mocks/website/ES/es';
 import NewsSection from '@/components/business/website/All_Common/News_Section';
 import { IBaseSectionComponent, IBaseSectionComponentNews } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { renderPartnerContent } from '@/utils/fetchServerSide/renderPartnerContent';
 import { Home_11 } from '@/mocks/website/HO/home';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import ESClientSection from '@/components/business/website/ES/ES_Client_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -41,49 +30,60 @@ type Props = {
   COMMON_SectionPartnerData: IBaseSectionComponent;
 };
 const EmpowerSuccessPage = ({ COMMON_NewsData, COMMON_SectionPartnerData }: Props) => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Về chúng tôi NGS</title>
+        <title>{trans.common.aboutUs} NGS</title>
         <meta name='description' content='Về chúng tôi NGS' />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
           sectionCodeLink={'ConnectUs'}
-          breadcrumb={['Trang chủ', 'Về chúng tôi']}
-          data={ESBannerData}
+          breadcrumb={[trans.common.home, trans.common.aboutUs]}
+          data={trans.website.aboutUs.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESVisionSection data={ESVisionData} />
+        <ESVisionSection data={trans.website.aboutUs.section_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESMissionSection data={ESMissionData} />
+        <ESMissionSection data={trans.website.aboutUs.section_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESCoreValueSection sectionCodeLink='ConnectUs' title='GIÁ TRỊ CỐT LÕI' data={ESCoreValueData} />
+        <ESCoreValueSection
+          sectionCodeLink='ConnectUs'
+          title={trans.website.aboutUs.titleSection.section_4}
+          data={trans.website.aboutUs.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESPeopleSection title='CON NGƯỜI NGS' data={ESPeopleData} />
+        <ESPeopleSection title={trans.website.aboutUs.titleSection.section_5} data={trans.website.aboutUs.section_5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <TeamDesignOneSection title='' data={ESTeamData} />
+        <TeamDesignOneSection title='' data={trans.website.aboutUs.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESEnvironment data={ESEnvironmentData} />
+        <ESEnvironment data={trans.website.aboutUs.section_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESOrganizationalSystemSection title='HỆ SINH THÁI NGS' data={ESOrganizationalSystemData} />
+        <ESOrganizationalSystemSection
+          title={trans.website.aboutUs.titleSection.section_8}
+          data={trans.website.aboutUs.section_8}
+        />
       </ScrollRevealWrapper>
       {/* <ScrollRevealWrapper>
         <NewsSection title='TIN TỨC VÀ SỰ KIỆN' data={ESNewsAndEventData as unknown as IBaseSectionComponentNews} />
       </ScrollRevealWrapper> */}
       <ScrollRevealWrapper>
-        <PartnerSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={Home_11} />
+        <PartnerSection title={trans.website.aboutUs.titleSection.section_9} data={trans.website.home.section_11} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ESClientSection title='KHÁCH HÀNG' data={ESClientData} />
+        <ESClientSection
+          title={trans.website.aboutUs.titleSection.section_10}
+          data={trans.website.aboutUs.section_10}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ConnectUsSection />

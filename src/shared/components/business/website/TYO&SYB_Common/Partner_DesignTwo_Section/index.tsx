@@ -19,7 +19,7 @@ const PartnerDesignTwoSection = ({ title, data, className }: Props) => {
         <div className='flex flex-col items-center justify-center gap-2'>
           <h1 className='text-center text-2xl font-semibold text-white md:text-4xl'>{data.section.name}</h1>
         </div>
-        <div className='mt-10 grid w-full grid-cols-2 items-center justify-center gap-y-24 md:grid-cols-4'>
+        <div className='mt-10 grid w-full grid-cols-2 items-center justify-center gap-y-4 md:grid-cols-4 md:gap-y-24'>
           {data.components.map((item, idx) => (
             <div className='border-card-partner-designTwo-section col-span-1 h-[75px] w-full p-2' key={idx}>
               <PreImage

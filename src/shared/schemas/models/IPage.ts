@@ -5,13 +5,6 @@ import { axiosInstance, axiosInstanceNoAuth } from '../typedef/Axios';
 import { IDetailPageById, IPage, IDetailPageByCompany } from '../typedef/IPage';
 const QUERY_KEY = 'Page';
 
-// export interface IPage extends IBaseModel {
-//     name: string,
-//     status: boolean,
-//     Seo: ISeo
-//     sections: any,
-//     parentId?: number,
-// }
 export const useGetListPage = () => {
   return useQuery({
     queryKey: [QUERY_KEY],

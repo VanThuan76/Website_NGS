@@ -40,18 +40,23 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
             </UseLinkRedirect>
           </div>
         </div>
-        {checkSolution && (
-          <ServiceDesignOneItem titleItem='Giải pháp' data={data.components.filter(item => item.slug === 'solution')} />
-        )}
-        {checkServiceAndSupport && (
-          <ServiceDesignOneItem
-            titleItem='Dịch vụ và hỗ trợ'
-            data={data.components.filter(item => item.slug === 'service-and-support')}
-          />
-        )}
-        {checkReport && (
-          <ServiceDesignOneItem titleItem='Báo cáo' data={data.components.filter(item => item.slug === 'report')} />
-        )}
+        <div className='col-span-1 grid grid-cols-1 gap-10 md:col-span-2 md:grid-cols-2'>
+          {checkSolution && (
+            <ServiceDesignOneItem
+              titleItem='Giải pháp'
+              data={data.components.filter(item => item.slug === 'solution')}
+            />
+          )}
+          {checkServiceAndSupport && (
+            <ServiceDesignOneItem
+              titleItem='Dịch vụ và hỗ trợ'
+              data={data.components.filter(item => item.slug === 'service-and-support')}
+            />
+          )}
+          {checkReport && (
+            <ServiceDesignOneItem titleItem='Báo cáo' data={data.components.filter(item => item.slug === 'report')} />
+          )}
+        </div>
       </div>
     </section>
   );

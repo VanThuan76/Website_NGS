@@ -1,26 +1,178 @@
 export const pageAdminData = [
   {
     id: 1,
-    name: 'HomePage',
-    status: true,
+    name: 'Trang chủ',
+    active: true,
+    is_edit: true,
+    childrenPage: []
   },
   {
     id: 2,
-    name: 'NextGen',
-    status: true,
-    parentId: 1,
+    name: 'Dịch vụ xuất sắc',
+    active: true,
+    is_edit: true,
+    childrenPage: [
+      {
+        id: 23,
+        name: 'Giám sát, vận hành an ninh',
+        active: true,
+        is_edit: true,
+        parent_id: 2,
+        childrenPage: [
+          {
+            id: 24,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 23,
+            childrenPage: []
+          },
+          {
+            id: 25,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 23,
+            childrenPage: []
+          },
+          {
+            id: 26,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 23,
+            childrenPage: []
+          },
+        ]
+      },
+      {
+        id: 28,
+        name: 'Giám sát, vận hành an ninh',
+        active: true,
+        is_edit: true,
+        parent_id: 2,
+        childrenPage: [
+          {
+            id: 29,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 28,
+            childrenPage: []
+          },
+          {
+            id: 30,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 28,
+            childrenPage: []
+          },
+          {
+            id: 31,
+            name: 'Giám sát, vận hành an ninh2',
+            active: true,
+            is_edit: true,
+            parent_id: 28,
+            childrenPage: []
+          },
+        ]
+      },
+    ]
   },
   {
     id: 3,
-    name: 'Solution',
-    status: true,
-    parentId: 1,
+    name: 'Bảo mật toàn diện',
+    active: true,
+    is_edit: true,
+    childrenPage: [
+      {
+        id: 6,
+        name: 'Giám sát, vận hành an ninh',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 7,
+        name: 'Giải pháp dịch vụ an ninh mạng công nghiệp',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 8,
+        name: 'Triển khai tích hợp giải pháp an toàn thông tin',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 9,
+        name: 'Kiểm thử xâm nhập hệ thống/ ứng dụng',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 10,
+        name: 'Kiểm thử tấn công xâm nhập chuyên sâu',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 11,
+        name: 'Đánh giá xâm nhập hệ thống',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 12,
+        name: 'Thông tin tình báo an ninh mạng',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 13,
+        name: 'Ứng cứu sự cố',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+      {
+        id: 14,
+        name: 'Rà soát phân tích, gỡ bỏ mã độc',
+        active: true,
+        is_edit: true,
+        parent_id: 3,
+        childrenPage: []
+      },
+    ]
   },
   {
     id: 4,
-    name: 'Solution',
-    status: true,
-    parentId: 2,
+    name: 'Giải pháp tiên phong',
+    active: true,
+    is_edit: true,
+    childrenPage: []
+  },
+  {
+    id: 5,
+    name: 'Về chúng tôi',
+    active: true,
+    is_edit: false,
+    childrenPage: []
   },
 ];
 export const pageAdminEditorData = [
