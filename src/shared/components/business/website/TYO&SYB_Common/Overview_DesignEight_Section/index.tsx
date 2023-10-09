@@ -23,7 +23,7 @@ const OverviewDesignEightSection = ({ title, data, className }: Props) => {
           name={data.section.name as string}
           description={data.section.description as string}
           findMore={true}
-          className='z-30 col-span-7 w-full grid-cols-7 !gap-0 text-center'
+          className='z-30 col-span-7 w-full grid-cols-7 !gap-5 text-center'
         />
         <BorderStyleOneLight className='absolute top-0 z-10 object-cover' />
       </div>

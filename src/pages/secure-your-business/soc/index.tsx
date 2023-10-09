@@ -1,7 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
@@ -21,6 +20,7 @@ import {
 
 import dynamic from 'next/dynamic';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -41,16 +41,16 @@ const SOCPage = () => {
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='TỔNG QUAN' data={SYBOverview1_PG4_1} />
+        <OverviewDesignEightSection title='Tổng quan' data={SYBOverview1_PG4_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection sectionCodeLink='FormCTA' title='THÁCH THỨC CỦA BẠN' data={SYBchallenge3_PG4_1} />
+        <ChallengeDesignThreeSection sectionCodeLink='FormCTA' title='Thách thức' data={SYBchallenge3_PG4_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection sectionCodeLink='FormCTA' title='DỊCH VỤ CỦA CHÚNG TÔI' data={SYBService3_PG4_1} />
+        <ServiceDesignThreeSection sectionCodeLink='FormCTA' title='Dịch vụ' data={SYBService3_PG4_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='TẠI SAO CHỌN NGS' data={SYBWhyUs1_PG4_1} />
+        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYBWhyUs1_PG4_1} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <PartnerDesignTwoSection data={SYBPartner2_PG4_1} />
@@ -59,7 +59,7 @@ const SOCPage = () => {
         <ClientStoriesDesignTwoSection title='Client stories' data={SYBClientStories2_Secure} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYBForm1_PG4_1} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYBForm1_PG4_1} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

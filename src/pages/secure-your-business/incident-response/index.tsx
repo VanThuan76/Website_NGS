@@ -51,7 +51,7 @@ const TIPage = () => {
         <ClientStoriesDesignOneSection title='' data={TYO_CRM_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

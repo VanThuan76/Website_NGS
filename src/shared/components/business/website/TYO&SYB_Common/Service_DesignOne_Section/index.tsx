@@ -16,6 +16,7 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const checkSolution = data.components.find(item => item.slug === 'solution');
   const checkServiceAndSupport = data.components.find(item => item.slug === 'service-and-support');
+  const checkReport = data.components.find(item => item.slug === 'report');
   return (
     <section id={data.section.code} className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}>
       <div
@@ -47,6 +48,9 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
             titleItem='Dịch vụ và hỗ trợ'
             data={data.components.filter(item => item.slug === 'service-and-support')}
           />
+        )}
+        {checkReport && (
+          <ServiceDesignOneItem titleItem='Báo cáo' data={data.components.filter(item => item.slug === 'report')} />
         )}
       </div>
     </section>

@@ -1,8 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import OverviewDesignSixSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignSix_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ServiceDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFive_Section';
@@ -18,6 +16,8 @@ import {
   SYBclientStories1_PG4_3,
 } from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -32,10 +32,13 @@ const SOCPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignOneSection title='Develop new solution' data={SYBBanner1_PG4_3} />
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Đánh giá xâm nhập hệ thống']}
+          data={SYBBanner1_PG4_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignSixSection title='Tổng quan' data={SYBOverview6_PG4_3} />
+        <OverviewDesignEightSection title='Tổng quan' data={SYBOverview6_PG4_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignFiveSection title='NGS triển khai' data={SYBService5_PG4_3} />
@@ -50,7 +53,7 @@ const SOCPage = () => {
         <ClientStoriesDesignOneSection title='' data={SYBclientStories1_PG4_3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_3} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYBForm1_PG4_3} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

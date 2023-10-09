@@ -16,11 +16,10 @@ import {
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
-import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
-import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import dynamic from 'next/dynamic';
-import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -36,12 +35,12 @@ const TIPage = () => {
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
+          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
           data={SYB_SI_Banner}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='Tổng quan' data={SYB_SI_Section2} />
+        <OverviewDesignEightSection title='Tổng quan' data={SYB_SI_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ChallengeDesignThreeSection title='Thách thức' data={SYB_SI_Section3} />
@@ -53,13 +52,13 @@ const TIPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerSection title='Đối tác đồng hành cùng NGS' data={SYB_SI_Section6} />
+        <PartnerDesignTwoSection title='Đối tác đồng hành cùng NGS' data={SYB_SI_Section6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={SYB_TI_Section9} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYB_TI_Section9} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

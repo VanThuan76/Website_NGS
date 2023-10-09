@@ -3,7 +3,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ChallengeDesignOneSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignOne_Section';
-import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
@@ -20,6 +19,7 @@ import {
   SYB_OIS_Section8,
 } from '@/mocks/website/SYB/syb';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -34,14 +34,14 @@ const ERPPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <BannerDesignTwoSection
-        breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Giải pháp dịch vụ an ninh mạng công nghiệp']}
+        breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'OT/ICS Security']}
         data={SYB_OIS_Section1}
       />
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='TỔNG QUAN' data={SYB_OIS_Section2} />
+        <OverviewDesignEightSection title='Tổng quan' data={SYB_OIS_Section2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignOneSection title='THÁCH THỨC CỦA BẠN' data={SYB_OIS_Section3} />
+        <ChallengeDesignOneSection title='Thách thức' data={SYB_OIS_Section3} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={SYB_OIS_Section4} />
@@ -56,7 +56,7 @@ const ERPPage = () => {
         <ClientStoriesDesignTwoSection title='Client stories' data={SYB_OIS_Section7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYB_OIS_Section8} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYB_OIS_Section8} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );
