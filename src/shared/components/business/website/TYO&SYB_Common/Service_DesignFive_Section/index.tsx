@@ -15,7 +15,10 @@ const ServiceDesignFiveSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`mx-auto max-w-[1440px] overflow-hidden px-4 md:px-24 ${className}`}>
+    <section
+      id={data.section.code}
+      className={`mx-auto max-w-[1440px] overflow-hidden px-4 py-24 md:px-24 ${className}`}
+    >
       <div className='grid w-full grid-cols-1 items-start justify-start gap-36 md:grid-cols-2'>
         <div className='flex w-full flex-col items-start justify-start gap-3'>
           <TitleSection

@@ -29,7 +29,10 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
             </div>
             <div className='challenge-designThree-section-with-scrollbar flex max-h-[450px] flex-col gap-2 pr-4'>
               {data.section.description.split('//').map((word, idx) => (
-                <p className='text-sm font-medium not-italic text-[#757575] dark:text-[#C2C0BF] md:text-base' key={idx}>
+                <p
+                  className='mb-3 text-sm font-medium not-italic text-[#757575] dark:text-[#C2C0BF] md:text-base'
+                  key={idx}
+                >
                   {word}
                 </p>
               ))}

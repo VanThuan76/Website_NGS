@@ -1,12 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
-import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
@@ -22,6 +19,9 @@ import {
   SYBclientStories1_PG4_2,
 } from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
+import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -36,10 +36,13 @@ const PTPage = () => {
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignOneSection title='Bảo mật xuất sắc' data={SYBBanner1_PG4_2} />
+        <BannerDesignTwoSection
+          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Dịch vụ kiểm thử đăng nhập hệ thống ứng dụng']}
+          data={SYBBanner1_PG4_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='Tổng quan' data={SYBOverview1_PG4_2} />
+        <OverviewDesignEightSection title='Tổng quan' data={SYBOverview1_PG4_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ChallengeDesignThreeSection title='Thách thức' data={SYBchallenge3_PG4_2} />
@@ -54,13 +57,13 @@ const PTPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYBWhyUs1_PG4_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignThreeSection data={SYBPartner3_PG4_2} />
+        <PartnerDesignTwoSection data={SYBPartner3_PG4_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignOneSection title='' data={SYBclientStories1_PG4_2} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Dùng thử' data={SYBForm1_PG4_2} />
+        <FormDesignOneSection title='Kết nối với NGS' data={SYBForm1_PG4_2} />
       </ScrollRevealWrapper>
     </React.Fragment>
   );
