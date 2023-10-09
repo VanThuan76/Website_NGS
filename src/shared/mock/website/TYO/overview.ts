@@ -426,8 +426,7 @@ export const TYOchallenge4 = {
       language: 'vi',
       code: 'CPN12312',
       title: '90%',
-      description:
-        'Các cuộc tấn công mạng',
+      description: 'Các cuộc tấn công mạng',
       slug: '',
       content: 'Hoạt động độc lập với các phần mềm độc hại',
       image: '',
@@ -439,8 +438,7 @@ export const TYOchallenge4 = {
       language: 'vi',
       code: 'CPN12312',
       title: '2000+',
-      description:
-        'Các cuộc tấn công nâng cao',
+      description: 'Các cuộc tấn công nâng cao',
       slug: '',
       content: 'Hoạt động trên cơ sở hạ tầng của bạn',
       image: '',
@@ -452,8 +450,7 @@ export const TYOchallenge4 = {
       language: 'vi',
       code: 'CPN12312',
       title: '68%',
-      description:
-        'Các trường hợp gián điệp',
+      description: 'Các trường hợp gián điệp',
       slug: '',
       content: 'Đang diễn ra',
       image: '',
@@ -465,8 +462,7 @@ export const TYOchallenge4 = {
       language: 'vi',
       code: 'CPN12312',
       title: '10,000+',
-      description:
-        'Các cuộc tấn công',
+      description: 'Các cuộc tấn công',
       slug: '',
       content: 'Kết hợp với các công cụ mà trước đây chưa được xác định',
       image: '',

@@ -4,7 +4,7 @@ export const pageAdminData = [
     name: 'Trang chủ',
     active: true,
     is_edit: true,
-    childrenPage: []
+    childrenPage: [],
   },
   {
     id: 2,
@@ -25,7 +25,7 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 23,
-            childrenPage: []
+            childrenPage: [],
           },
           {
             id: 25,
@@ -33,7 +33,7 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 23,
-            childrenPage: []
+            childrenPage: [],
           },
           {
             id: 26,
@@ -41,9 +41,9 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 23,
-            childrenPage: []
+            childrenPage: [],
           },
-        ]
+        ],
       },
       {
         id: 28,
@@ -58,7 +58,7 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 28,
-            childrenPage: []
+            childrenPage: [],
           },
           {
             id: 30,
@@ -66,7 +66,7 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 28,
-            childrenPage: []
+            childrenPage: [],
           },
           {
             id: 31,
@@ -74,11 +74,11 @@ export const pageAdminData = [
             active: true,
             is_edit: true,
             parent_id: 28,
-            childrenPage: []
+            childrenPage: [],
           },
-        ]
+        ],
       },
-    ]
+    ],
   },
   {
     id: 3,
@@ -92,7 +92,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 7,
@@ -100,7 +100,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 8,
@@ -108,7 +108,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 9,
@@ -116,7 +116,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 10,
@@ -124,7 +124,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 11,
@@ -132,7 +132,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 12,
@@ -140,7 +140,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 13,
@@ -148,7 +148,7 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
       {
         id: 14,
@@ -156,23 +156,23 @@ export const pageAdminData = [
         active: true,
         is_edit: true,
         parent_id: 3,
-        childrenPage: []
+        childrenPage: [],
       },
-    ]
+    ],
   },
   {
     id: 4,
     name: 'Giải pháp tiên phong',
     active: true,
     is_edit: true,
-    childrenPage: []
+    childrenPage: [],
   },
   {
     id: 5,
     name: 'Về chúng tôi',
     active: true,
     is_edit: false,
-    childrenPage: []
+    childrenPage: [],
   },
 ];
 export const pageAdminEditorData = [

@@ -647,14 +647,14 @@ const VNScript = {
       ],
     },
     home: {
-      title: "Trang chủ - NGS | Chuyển đổi số toàn diện",
+      title: 'Trang chủ - NGS | Chuyển đổi số toàn diện',
       titleSection: {
-        section_2: "GIẢI PHÁP TIÊN PHONG",
-        section_3: "DỊCH VỤ XUẤT SẮC",
-        section_4: "BẢO MẬT TOÀN DIỆN",
-        section_6: "VỀ CHÚNG TÔI",
-        section_7: "ĐIỀU GÌ TẠO NÊN NGS",
-        section_11: "ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS",
+        section_2: 'GIẢI PHÁP TIÊN PHONG',
+        section_3: 'DỊCH VỤ XUẤT SẮC',
+        section_4: 'BẢO MẬT TOÀN DIỆN',
+        section_6: 'VỀ CHÚNG TÔI',
+        section_7: 'ĐIỀU GÌ TẠO NÊN NGS',
+        section_11: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
       },
       section_1: {
         section: {
@@ -1764,11 +1764,11 @@ const VNScript = {
     },
     aboutUs: {
       titleSection: {
-        section_4: "GIÁ TRỊ CỐT LÕI",
-        section_5: "CON NGƯỜI NGS",
-        section_8: "HỆ SINH THÁI NGS",
-        section_9: "ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS",
-        section_10: "KHÁCH HÀNG",
+        section_4: 'GIÁ TRỊ CỐT LÕI',
+        section_5: 'CON NGƯỜI NGS',
+        section_8: 'HỆ SINH THÁI NGS',
+        section_9: 'ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS',
+        section_10: 'KHÁCH HÀNG',
       },
       section_1: {
         section: {
@@ -1950,7 +1950,7 @@ const VNScript = {
             video: '',
             thumbnail: '',
           },
-        ]
+        ],
       },
       section_6: {
         section: {
@@ -2519,7 +2519,7 @@ const VNScript = {
             thumbnail: '',
           },
         ],
-      }
+      },
     },
     formConnectUs: {
       title: 'Kết nối với NGS',
@@ -2538,7 +2538,7 @@ const VNScript = {
     },
   },
   admin: {
-    title: "Trang Quản Lý Nội Dung NGS",
+    title: 'Trang Quản Lý Nội Dung NGS',
     common: {
       homepage: 'Trang chủ',
       pages: 'Các trang',
@@ -2561,7 +2561,7 @@ const VNScript = {
   },
   common: {
     home: 'Trang chủ',
-    aboutUs: "Về chúng tôi",
+    aboutUs: 'Về chúng tôi',
     contact: 'Liên hệ',
     findOutMore: 'Tìm hiểu thêm',
   },

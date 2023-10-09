@@ -648,14 +648,14 @@ const ENScript = {
       ],
     },
     home: {
-      title: "Home - NGS | Comprehensive digital transformation",
+      title: 'Home - NGS | Comprehensive digital transformation',
       titleSection: {
-        section_2: "YOUR NEXT GEN SOLUTION",
-        section_3: "TRANSFORM YOUR ORGANIZATION",
-        section_4: "SECURE YOUR BUSSINESS",
-        section_6: "ABOUT US",
-        section_7: "WHY NGS",
-        section_11: "PARTNERS NGS",
+        section_2: 'YOUR NEXT GEN SOLUTION',
+        section_3: 'TRANSFORM YOUR ORGANIZATION',
+        section_4: 'SECURE YOUR BUSSINESS',
+        section_6: 'ABOUT US',
+        section_7: 'WHY NGS',
+        section_11: 'PARTNERS NGS',
       },
       section_1: {
         section: {
@@ -1774,42 +1774,42 @@ const ENScript = {
     },
     aboutUs: {
       titleSection: {
-        section_4: "CORE VALUES",
-        section_5: "NGS TALENT TEAM",
-        section_8: "NGS ECOSYSTEM",
-        section_9: "PARTNERS NGS",
-        section_10: "CUSTOMERS NGS",
+        section_4: 'CORE VALUES',
+        section_5: 'NGS TALENT TEAM',
+        section_8: 'NGS ECOSYSTEM',
+        section_9: 'PARTNERS NGS',
+        section_10: 'CUSTOMERS NGS',
       },
       section_1: {
         section: {
           id: 1,
-          name: "We strive to become a comprehensive IT and digital transformation services provider",
+          name: 'We strive to become a comprehensive IT and digital transformation services provider',
           code: 'ES12312',
           image: '/images/ESBanner.png',
           description:
-            "Helping our clients navigate the challenges of an uncertain business environment through our three core strengths: superior technological capabilities, a flexible and innovative corporate culture, and an outstanding customer experience.",
+            'Helping our clients navigate the challenges of an uncertain business environment through our three core strengths: superior technological capabilities, a flexible and innovative corporate culture, and an outstanding customer experience.',
         },
         components: [],
       },
       section_2: {
         section: {
           id: 1,
-          name: "NGS VISION",
+          name: 'NGS VISION',
           code: 'ES12312',
           image: '',
           description:
-            "NGS aspires to become a leading technology conglomerate in Vietnam and the region, providing international standard IT solutions and services, and actively researching and developing Next-generation products and applications, accompanying our customers in their Digital Transformation journey.",
+            'NGS aspires to become a leading technology conglomerate in Vietnam and the region, providing international standard IT solutions and services, and actively researching and developing Next-generation products and applications, accompanying our customers in their Digital Transformation journey.',
         },
         components: [],
       },
       section_3: {
         section: {
           id: 1,
-          name: "NGS MISSION",
+          name: 'NGS MISSION',
           code: 'ES12312',
           image: '',
           description:
-            "NGS is committed to becoming a trusted organization in the eyes of our partners, an excellent service provider for our customers, and the best workplace for our employees and colleagues, contributing to making Vietnam a global destination in the field of information technology.",
+            'NGS is committed to becoming a trusted organization in the eyes of our partners, an excellent service provider for our customers, and the best workplace for our employees and colleagues, contributing to making Vietnam a global destination in the field of information technology.',
         },
         components: [
           {
@@ -1817,7 +1817,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000001',
             title: '+15',
-            description: "years of Establishment and Development",
+            description: 'years of Establishment and Development',
             slug: '',
             content: '',
             image: '',
@@ -1829,7 +1829,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000002',
             title: '+1000',
-            description: "Technology experts",
+            description: 'Technology experts',
             slug: '',
             content: '',
             image: '',
@@ -1841,7 +1841,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000003',
             title: '+200',
-            description: "big Customers",
+            description: 'big Customers',
             slug: '',
             content: '',
             image: '',
@@ -1853,7 +1853,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000003',
             title: '+50',
-            description: "Global technology Partners",
+            description: 'Global technology Partners',
             slug: '',
             content: '',
             image: '',
@@ -1865,7 +1865,7 @@ const ENScript = {
       section_4: {
         section: {
           id: 1,
-          name: "Dedication - Integrity - Respect - Harmony - Innovation - Professional",
+          name: 'Dedication - Integrity - Respect - Harmony - Innovation - Professional',
           code: 'ES12312',
           image: '',
           description: '',
@@ -1875,9 +1875,9 @@ const ENScript = {
             id: 1,
             language: 'en',
             code: 'PG003.10SE00003CN000001',
-            title: "Dedication// Integrity// Respect// Harmony// Innovation// Professional",
+            title: 'Dedication// Integrity// Respect// Harmony// Innovation// Professional',
             description:
-              "Embracing the differences between parties to find collaborative and effective solutions// Dedicated and enthusiastic about the work, always bringing positivity and joy to it // Constantly seeking innovation and learning to find the best solutions for optimal results // Sharing common goals, fostering unity and bonds with colleagues, partners, and customers // Valuing integrity, diligently fulfilling every commitment, with actions aligning with words // Adhering to regulations and processes, maintaining an efficient and scientific approach; cooperating effectively with colleagues and partners to complete tasks.",
+              'Embracing the differences between parties to find collaborative and effective solutions// Dedicated and enthusiastic about the work, always bringing positivity and joy to it // Constantly seeking innovation and learning to find the best solutions for optimal results // Sharing common goals, fostering unity and bonds with colleagues, partners, and customers // Valuing integrity, diligently fulfilling every commitment, with actions aligning with words // Adhering to regulations and processes, maintaining an efficient and scientific approach; cooperating effectively with colleagues and partners to complete tasks.',
             slug: '',
             content: '',
             image: '',
@@ -1888,7 +1888,7 @@ const ENScript = {
             id: 2,
             language: 'en',
             code: 'PG003.10SE00003CN000002',
-            title: "Dedication// Integrity// Respect// Harmony// Innovation// Professional",
+            title: 'Dedication// Integrity// Respect// Harmony// Innovation// Professional',
             description:
               "Valuing oneself, maintaining good health, enhancing expertise, and confidently expressing one's opinions with a constructive spirit. // Daringly presenting new ideas and proposals to improve work performance. // Starting from the heart in every thought and action, aiming towards noble values (truth, goodness, beauty). // Mastering professional knowledge, continuously learning and deepening expertise to meet practical requirements. // Living with compassion, giving and caring for others. Living responsibly and showing concern for each other. // Maintaining a gentle and cheerful attitude in interactions, controlling emotions and communication.",
             slug: '',
@@ -1901,7 +1901,7 @@ const ENScript = {
             id: 3,
             language: 'vi',
             code: 'PG003.10SE00003CN000003',
-            title: "Dedication// Integrity// Respect// Harmony// Innovation// Professional",
+            title: 'Dedication// Integrity// Respect// Harmony// Innovation// Professional',
             description:
               " Always promptly acknowledge and reward the efforts and achievements of colleagues and partners in enhancing the company's operational efficiency. // Possess a nimble mindset, logical thinking, insightfulness, and the ability to view issues from various perspectives. // Always act for the common benefit of the community and society, to leave a legacy for the future. // Adhere to the company's regulations regarding working hours and schedules. Follow the company's protocols diligently. // Preserve the image and brand reputation of NGS; every member is a brand ambassador of NGS. // Resolve all issues reasonably and compassionately, maintaining balance and thoroughly understanding every problem before proposing solutions, considering consequences before making decisions.",
             slug: '',
@@ -1915,7 +1915,7 @@ const ENScript = {
       section_5: {
         section: {
           id: 1,
-          name: "NGS Holding Leader",
+          name: 'NGS Holding Leader',
           code: 'ES12312',
           image: '',
           description: '',
@@ -1926,7 +1926,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000001',
             title: 'Mr. Nguyen Vu Hoang An',
-            description: "CEO NGS Holding",
+            description: 'CEO NGS Holding',
             slug: '',
             content:
               '"NGS was born with the mission of bringing Next Generation Solution to customers since 2008. After a journey of nearly 20 years, we understand that, in addition to effective new generation solutions, customers also expect dedicated service with an excellent experience. We look forward to accompanying customers in the process of organizational transformation, applying information technology to create breakthrough results. And it would be great if NGS could become a successful empowerer for its own partners, customers, and associates." // Statement CEO NGS Holding',
@@ -1939,7 +1939,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000002',
             title: 'Mr. Pham The Truong',
-            description: "Vice CEO of NGS Holding & CEO of NGS Consulting",
+            description: 'Vice CEO of NGS Holding & CEO of NGS Consulting',
             slug: '',
             content:
               'After 20 years of working for Leading multinational Technology organizations in High-level positions at Oracle, SAP, and Microsoft, Mr. Truong joined NGS with a strong desire to establish a new type of company with robust technological capabilities and a customer-oriented, professional culture.',
@@ -1952,10 +1952,10 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000003',
             title: 'Ms. Nguyen Thi Thuy Hang',
-            description: "Vice CEO of NGS Holding & Vice CEO of NGS Consulting",
+            description: 'Vice CEO of NGS Holding & Vice CEO of NGS Consulting',
             slug: '',
             content:
-              "With over 20 years of experience in implementing ERP/SAP systems for leading organizations and enterprises in Vietnam, Ms. Thuy Hang joined NGS and established NGS Consulting with the goal of becoming the top Digital Transformation consulting company in Vietnam.",
+              'With over 20 years of experience in implementing ERP/SAP systems for leading organizations and enterprises in Vietnam, Ms. Thuy Hang joined NGS and established NGS Consulting with the goal of becoming the top Digital Transformation consulting company in Vietnam.',
             image: '',
             video: '',
             thumbnail: '',
@@ -1965,7 +1965,7 @@ const ENScript = {
       section_6: {
         section: {
           id: 1,
-          name: "NGS Talent Team",
+          name: 'NGS Talent Team',
           code: 'ES12312',
           image: '',
           description: '',
@@ -1989,7 +1989,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000002',
             title: ' Mr. VU DUY HIEN',
-            description: "CEO of NCS",
+            description: 'CEO of NCS',
             slug: '',
             content: '',
             image: '/images/SYB_MAsection3.png',
@@ -2001,7 +2001,7 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000003',
             title: ' Mr. VU NGOC SON',
-            description: "CTO of NCS",
+            description: 'CTO of NCS',
             slug: '',
             content:
               "Mr. Vu Ngoc Son is renowned as one of Vietnam's top cybersecurity experts, particularly in the field of malware prevention. Before joining NGS, during his tenure at Bkav, Mr. Son participated in numerous significant cybersecurity events both domestically and internationally. This includes the discovery and disclosure of vulnerabilities in facial recognition technology on laptops from Toshiba, Lenovo, Asus, among others. He also successfully traced the origins of attacks on various websites, including those of the U.S. government and South Korean government agencies, including the website of the South Korean President.",
@@ -2014,10 +2014,10 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000004',
             title: 'Ms. TRAN THI LUU',
-            description: "Chief Deployment Officer of NGS Consulting",
+            description: 'Chief Deployment Officer of NGS Consulting',
             slug: '',
             content:
-              "With over 20 years of experience implementing ERP/SAP systems for leading organizations and businesses in Vietnam, Ms. Luu joined NGS Consulting from the very beginning and assumed the role of Director of Implementation for the company. As CDO, Ms. Luu and her team at NGS consistently provide customers with peace of mind during project execution through disciplined project processes and a deep understanding of both business operations and solutions.",
+              'With over 20 years of experience implementing ERP/SAP systems for leading organizations and businesses in Vietnam, Ms. Luu joined NGS Consulting from the very beginning and assumed the role of Director of Implementation for the company. As CDO, Ms. Luu and her team at NGS consistently provide customers with peace of mind during project execution through disciplined project processes and a deep understanding of both business operations and solutions.',
             image: '/images/SYB_MAsection3.png',
             video: '',
             thumbnail: '',
@@ -2026,8 +2026,8 @@ const ENScript = {
             id: 5,
             language: 'en',
             code: 'PG003.10SE00002CN000005',
-            title: "Mr. NGUYEN QUANG HAI",
-            description: "Chief Strategic Projects Officer",
+            title: 'Mr. NGUYEN QUANG HAI',
+            description: 'Chief Strategic Projects Officer',
             slug: '',
             content: '',
             image: '/images/SYB_MAsection3.png',
@@ -2039,10 +2039,10 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000006',
             title: 'Ms. NGUYEN HANG THU',
-            description: "Chief of Enterprise Solutions Consulting - NGSC",
+            description: 'Chief of Enterprise Solutions Consulting - NGSC',
             slug: '',
             content:
-              "With 20 years of experience in implementing ERP/SAP systems for leading organizations and enterprises in Vietnam, and having held high-level management positions at major IT companies, Ms. Hang Thu joined NGS as the Chief of Enterprise Solutions Consulting. Ms. Hang Thu and her team at NGS are always dedicated to thoroughly understanding the transformation goals and current challenges of our clients. They leverage their extensive multi-domain consulting experience to provide comprehensive transformation solutions and plans.",
+              'With 20 years of experience in implementing ERP/SAP systems for leading organizations and enterprises in Vietnam, and having held high-level management positions at major IT companies, Ms. Hang Thu joined NGS as the Chief of Enterprise Solutions Consulting. Ms. Hang Thu and her team at NGS are always dedicated to thoroughly understanding the transformation goals and current challenges of our clients. They leverage their extensive multi-domain consulting experience to provide comprehensive transformation solutions and plans.',
             image: '/images/SYB_MAsection3.png',
             video: '',
             thumbnail: '',
@@ -2052,10 +2052,10 @@ const ENScript = {
             language: 'en',
             code: 'PG003.10SE00002CN000007',
             title: ' Mr. NGUYEN DUC BANG',
-            description: "CEO of Consulting Financial and Banking Solutions - NGSC",
+            description: 'CEO of Consulting Financial and Banking Solutions - NGSC',
             slug: '',
             content:
-              "Mr. Nguyen Duc Bang is known as a top consultant in the field of Finance and Banking with over 13 years of experience in financial and banking solutions in Vietnam. Among his achievements, Mr. Bang has over 8 years of experience in solution architecture and project management at Intellect Design Arena Ltd, a leading company in solutions for Banking & Finance. He has also been involved in numerous implementation projects with various banks, working alongside Tecapro IT, Temenos Polaris, IBM, and more. Mr. Bang and his team at NGS always strive to deeply understand the transformation goals and current issues of financial organizations, offering comprehensive transformation solutions through their expertise in financial and banking consultancy.",
+              'Mr. Nguyen Duc Bang is known as a top consultant in the field of Finance and Banking with over 13 years of experience in financial and banking solutions in Vietnam. Among his achievements, Mr. Bang has over 8 years of experience in solution architecture and project management at Intellect Design Arena Ltd, a leading company in solutions for Banking & Finance. He has also been involved in numerous implementation projects with various banks, working alongside Tecapro IT, Temenos Polaris, IBM, and more. Mr. Bang and his team at NGS always strive to deeply understand the transformation goals and current issues of financial organizations, offering comprehensive transformation solutions through their expertise in financial and banking consultancy.',
             image: '/images/SYB_MAsection3.png',
             video: '',
             thumbnail: '',
@@ -2064,8 +2064,8 @@ const ENScript = {
             id: 8,
             language: 'vi',
             code: 'PG003.10SE00002CN000008',
-            title: " Mr. BUI XUAN QUANG",
-            description: "Vice CTO - NCS",
+            title: ' Mr. BUI XUAN QUANG',
+            description: 'Vice CTO - NCS',
             slug: '',
             content: '',
             image: '/images/SYB_MAsection3.png',
@@ -2080,7 +2080,7 @@ const ENScript = {
             description: 'Chief of CRM Solutions - NGSc',
             slug: '',
             content:
-              "With over 15 years of experience in consulting and implementing ERP/CRM/Supply Chain Management solutions based on platforms from companies like Microsoft, SAP, Infor, Salesforce, Ms. La Thi Thuy Linh has gained insights into the specific operations and management of various industries of her clients. As a result, she has had opportunities to participate in digital transformation projects for businesses, building strategies, directions, and roadmaps for integrating IT into their operations, delivering value through appropriate technology investments, applications, and deployments that align with the right timing for her clients. Joining NGS, Ms. Linh aspires to collaborate with clients in their digital transformation journey by leveraging world-leading CRM solutions, helping businesses implement customer-centric strategies.",
+              'With over 15 years of experience in consulting and implementing ERP/CRM/Supply Chain Management solutions based on platforms from companies like Microsoft, SAP, Infor, Salesforce, Ms. La Thi Thuy Linh has gained insights into the specific operations and management of various industries of her clients. As a result, she has had opportunities to participate in digital transformation projects for businesses, building strategies, directions, and roadmaps for integrating IT into their operations, delivering value through appropriate technology investments, applications, and deployments that align with the right timing for her clients. Joining NGS, Ms. Linh aspires to collaborate with clients in their digital transformation journey by leveraging world-leading CRM solutions, helping businesses implement customer-centric strategies.',
             image: '/images/SYB_MAsection3.png',
             video: '',
             thumbnail: '',
@@ -2100,7 +2100,7 @@ const ENScript = {
             id: 1,
             language: 'en',
             code: 'PG003.10SE00002CN000001',
-            title: "DYNAMIC WORKING ENVIRONMENT WITH VISIONARY AND DEDICATED LEADERSHIP",
+            title: 'DYNAMIC WORKING ENVIRONMENT WITH VISIONARY AND DEDICATED LEADERSHIP',
             description:
               " Being able to work with a skilled and dedicated leader is a stroke of luck that not everyone gets to experience.At NGS, you will find yourself growing up every day when you receive very difficult questions from the leader, or a helping hand from your boss when you encounter difficulties. //NGS leaders have many years of experience either studying abroad or working at the world's leading organizations such as Microsoft, Oracle, SAP... Several other leaders have held leadership positions at leading Vietnamese information technology enterprises. With the desire to build a new, flexible, creative and effective organization, they joined NGS with a modern, professional management mindset, flexibility and a spirit of desire to conquer. //NGS hopes that this spirit will always be maintained in the next generations and that is you, our talented associates.",
             slug: '',
@@ -2116,7 +2116,7 @@ const ENScript = {
             code: 'PG003.10SE00002CN000002',
             title: 'UNLIMITED LEARNING AND CAREER DEVELOPMENT',
             description:
-              "NGS always provides opportunities for you to learn and challenge yourself in any position or field, as long as your determination is strong enough. Whether you are a specialist or a manager, each of your choices will be guided by the HR department or your direct supervisors. We hope you can fully tap into your potential because every step of your growth at NGS is our success – NGS Empower Success for each of our team members.",
+              'NGS always provides opportunities for you to learn and challenge yourself in any position or field, as long as your determination is strong enough. Whether you are a specialist or a manager, each of your choices will be guided by the HR department or your direct supervisors. We hope you can fully tap into your potential because every step of your growth at NGS is our success – NGS Empower Success for each of our team members.',
             slug: '',
             content: '',
             image:
@@ -2142,7 +2142,7 @@ const ENScript = {
             id: 4,
             language: 'en',
             code: 'PG003.10SE00002CN000004',
-            title: "COMPETITIVE AND DIVERSE WELFARE POLICY",
+            title: 'COMPETITIVE AND DIVERSE WELFARE POLICY',
             description:
               "NGS's biggest asset is its talented people, leading to NGS always giving priority to improving HR policy and benefits every year. Income at NGS is paid based on the ability and contribution of each individual and is considered an attractive remuneration in the market. Employee salary is not just a fixed monthly salary, NGS builds a monthly evaluation mechanism so that you can receive timely recognition from managers. At the same time, don't be surprised if your monthly income is higher than the offer if you have had a month of efforts and contributions. //13th month bonus, year-end performance bonus is not the only bonus, if the project works well or receives praise from customers, then be happy to receive unexpected bonuses. Financial benefits on holidays or non-financial benefits such as health insurance, vacation, team building... always brings great experiences to employees. NGS is trying its best to become the Best company to work for each of us.",
             slug: '',
@@ -2161,16 +2161,16 @@ const ENScript = {
           code: 'ES12312',
           image: '/images/ESOrganizationalSystem.png',
           description:
-            "With the aim of becoming a technology conglomerate and delivering excellent digital transformation services, NGS Holding has been and continues to expand its ecosystem of service products through the development of its member units. At the same time, customers can still connect to any services through NGS Holding.",
+            'With the aim of becoming a technology conglomerate and delivering excellent digital transformation services, NGS Holding has been and continues to expand its ecosystem of service products through the development of its member units. At the same time, customers can still connect to any services through NGS Holding.',
         },
         components: [
           {
             id: 1,
             language: 'en',
             code: 'PG003.10SE00002CN000001',
-            title: "NGS Technology Consulting Company",
+            title: 'NGS Technology Consulting Company',
             description:
-              "NGSC is expertised in providing comprehensive IT service to our clients, from consultation, development to training & implementation for various industries.",
+              'NGSC is expertised in providing comprehensive IT service to our clients, from consultation, development to training & implementation for various industries.',
             slug: '',
             content: '',
             image: '/images/ESOrganizationalSystem1.png',
@@ -2183,7 +2183,7 @@ const ENScript = {
             code: 'PG003.10SE00002CN000001',
             title: 'NGS Digital Citizenship Company',
             description:
-              "NGSDC is established to assist citizens with more user-friendly and convenient digital solutions to connect with the government.",
+              'NGSDC is established to assist citizens with more user-friendly and convenient digital solutions to connect with the government.',
             slug: '',
             content: '',
             image: '/images/ESOrganizationalSystem2.png',
@@ -2196,7 +2196,7 @@ const ENScript = {
             code: 'PG003.10SE00002CN000001',
             title: 'iSPACE Cyber Security College',
             description:
-              " iSPACE Cyber Security College is a pioneering institution in practical training since 2008, following the criterion of recruiting students directly into employment, offering three promising majors: Network Security, Software Development, and Graphic Design.",
+              ' iSPACE Cyber Security College is a pioneering institution in practical training since 2008, following the criterion of recruiting students directly into employment, offering three promising majors: Network Security, Software Development, and Graphic Design.',
             slug: '',
             content: '',
             image: '/images/ESOrganizationalSystem3.png',
@@ -2209,7 +2209,7 @@ const ENScript = {
             code: 'PG003.10SE00002CN000001',
             title: 'Entrust',
             description:
-              " Entrust Consulting provides consultation in development and implementation of ERP system for SMEs in Vietnam.",
+              ' Entrust Consulting provides consultation in development and implementation of ERP system for SMEs in Vietnam.',
             slug: '',
             content: '',
             image: '/images/ESOrganizationalSystem4.png',
@@ -2222,7 +2222,7 @@ const ENScript = {
             code: 'PG003.10SE00002CN000001',
             title: 'Vietnam National Cyber Security Technology corporation',
             description:
-              "Vietnam National Cyber Security Technology corporation (NCS) is currently one of the top cyber security solution providers, including consultation, security assessment, implementation and operation of network security systems.",
+              'Vietnam National Cyber Security Technology corporation (NCS) is currently one of the top cyber security solution providers, including consultation, security assessment, implementation and operation of network security systems.',
             slug: '',
             content: '',
             image: '/images/ESOrganizationalSystem5.png',
@@ -2529,7 +2529,7 @@ const ENScript = {
             thumbnail: '',
           },
         ],
-      }
+      },
     },
     formConnectUs: {
       title: 'Connect with NGS',
@@ -2548,7 +2548,7 @@ const ENScript = {
     },
   },
   admin: {
-    title: "NGS Content Management Page",
+    title: 'NGS Content Management Page',
     common: {
       homepage: 'HomePage',
       pages: 'Pages',
@@ -2571,7 +2571,7 @@ const ENScript = {
   },
   common: {
     home: 'Home',
-    aboutUs: "About Us",
+    aboutUs: 'About Us',
     contact: 'Contact',
     findOutMore: 'Find Out More',
   },

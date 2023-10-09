@@ -17,9 +17,9 @@ export const URLS_SYSTEM = {
   NOTFOUND: '/404',
   ADMIN: {
     PAGES_MANAGE: {
-      UPDATE: "/admin/pages-manage/update/"
-    }
-  }
+      UPDATE: '/admin/pages-manage/update/',
+    },
+  },
 };
 export const URLS_EXTERNAL = {
   ISPACE_EDU: 'https://ispace.edu.vn/',

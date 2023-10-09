@@ -3,9 +3,9 @@ export interface IPage {
   id: React.Key;
   name: string;
   active: boolean;
-  is_edit: boolean
-  parent_id?: number
-  childrenPage: IPage[] | []
+  is_edit: boolean;
+  parent_id?: number;
+  childrenPage: IPage[] | [];
 }
 export interface IDetailPageByCompany {
   id: number;

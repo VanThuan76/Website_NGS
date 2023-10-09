@@ -7,16 +7,22 @@ import { setCookie } from 'cookies-next';
 
 function getTrans(locale: string | undefined) {
   switch (locale) {
-    case 'vi': return VnScript
-    case 'en': return EnglishScript
-    default: return VnScript
+    case 'vi':
+      return VnScript;
+    case 'en':
+      return EnglishScript;
+    default:
+      return VnScript;
   }
 }
 function getCurrentcy(locale: string | undefined) {
   switch (locale) {
-    case 'vi': return 'VND'
-    case 'en': return 'USD'
-    default: return 'VND'
+    case 'vi':
+      return 'VND';
+    case 'en':
+      return 'USD';
+    default:
+      return 'VND';
   }
 }
 
@@ -24,27 +30,27 @@ const useTrans = () => {
   const router = useRouter();
   const { locale, pathname, query, asPath } = router;
   const [lang, setLang] = useState(locale);
-  const [currentcy, setCurrentcy] = useState('VND')
-
+  const [currentcy, setCurrentcy] = useState('VND');
 
   const trans = getTrans(locale);
 
-  const changeLanguage = useCallback((lang: 'vi' | 'en') => {
-    router.push({ pathname, query }, asPath, { locale: lang });
-    setLang(lang);
-    setCurrentcy(getCurrentcy(locale))
-    setCookie(APP_SAVE_KEY.CURRENT_LANG, locale)
-
-  }, [router, pathname, query, asPath, locale])
+  const changeLanguage = useCallback(
+    (lang: 'vi' | 'en') => {
+      router.push({ pathname, query }, asPath, { locale: lang });
+      setLang(lang);
+      setCurrentcy(getCurrentcy(locale));
+      setCookie(APP_SAVE_KEY.CURRENT_LANG, locale);
+    },
+    [router, pathname, query, asPath, locale],
+  );
 
   useEffect(() => {
     setLang(locale || 'vi');
-    setCurrentcy(getCurrentcy(locale))
-    setCookie(APP_SAVE_KEY.CURRENT_LANG, locale)
+    setCurrentcy(getCurrentcy(locale));
+    setCookie(APP_SAVE_KEY.CURRENT_LANG, locale);
   }, [router, locale]);
 
   return { trans, lang, changeLanguage, currentcy };
 };
 
 export default useTrans;
-
