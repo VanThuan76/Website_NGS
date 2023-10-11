@@ -32,7 +32,27 @@ type Props = {
   sections: ISection[];
 };
 
-export function EditPage({ informationPage, sections }: Props) {
+export function EditPage({}: Props) {
+  const informationPage = {
+    name: 'Test',
+    updatedDate: 'Test',
+  };
+  const sections = [
+    {
+      id: 1,
+      name: 'Banner',
+      code: 'PG001SE00001',
+      image: '',
+      description: '',
+    },
+    {
+      id: 2,
+      name: 'Banner2',
+      code: 'PG001SE00001',
+      image: '',
+      description: '',
+    },
+  ];
   const { activeSectionCode } = useAppSelector(state => state.pageEditorSlice);
   const router = useRouter();
   const dispatch = useDispatch();

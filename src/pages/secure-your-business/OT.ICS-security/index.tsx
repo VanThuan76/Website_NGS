@@ -8,55 +8,66 @@ import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
-import {
-  SYB_OIS_Section2,
-  SYB_OIS_Section1,
-  SYB_OIS_Section3,
-  SYB_OIS_Section4,
-  SYB_OIS_Section5,
-  SYB_OIS_Section6,
-  SYB_OIS_Section7,
-  SYB_OIS_Section8,
-} from '@/mocks/website/SYB/syb';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const ERPPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>SYB_OIS NGS</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.secure.OT_ICS_security.title}</title>
+        <meta name='description' content={trans.website.secure.OT_ICS_security.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <BannerDesignTwoSection
-        breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'OT/ICS Security']}
-        data={SYB_OIS_Section1}
+        breadcrumb={[trans.common.home, trans.common.secure, trans.website.secure.OT_ICS_security.title]}
+        data={trans.website.secure.OT_ICS_security.section_1}
       />
       <ScrollRevealWrapper>
-        <OverviewDesignEightSection title='Tổng quan' data={SYB_OIS_Section2} />
+        <OverviewDesignEightSection
+          title={trans.website.secure.OT_ICS_security.titleSection.section_2}
+          data={trans.website.secure.OT_ICS_security.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignOneSection title='Thách thức' data={SYB_OIS_Section3} />
+        <ChallengeDesignOneSection
+          title={trans.website.secure.OT_ICS_security.titleSection.section_3}
+          data={trans.website.secure.OT_ICS_security.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={SYB_OIS_Section4} />
+        <ServiceDesignOneSection
+          sectionCodeLink='FormCTA'
+          title={trans.website.secure.OT_ICS_security.titleSection.section_4}
+          data={trans.website.secure.OT_ICS_security.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_OIS_Section5} />
+        <WhyUsDesignOneSection
+          title={trans.website.secure.OT_ICS_security.titleSection.section_5}
+          data={trans.website.secure.OT_ICS_security.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection data={SYB_OIS_Section6} />
+        <PartnerDesignTwoSection data={trans.website.secure.OT_ICS_security.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={SYB_OIS_Section7} />
+        <ClientStoriesDesignTwoSection
+          title={trans.website.secure.OT_ICS_security.titleSection.section_7}
+          data={trans.website.secure.OT_ICS_security.section_7}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={SYB_OIS_Section8} />
+        <FormDesignOneSection
+          title={trans.website.secure.OT_ICS_security.titleSection.section_8}
+          data={trans.website.secure.OT_ICS_security.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

@@ -1,7 +1,7 @@
 import React from 'react';
 import DashBoardLayout from '@/components/layout/layoutAdmin/DashboardLayout';
 import { Button } from '@/components/common/ui/button';
-import { Edit, MoreHorizontal, PlusCircle, Trash2 } from 'lucide-react';
+import { Edit, MoreHorizontal, PlusCircle } from 'lucide-react';
 import { useRouter } from 'next/router';
 import DataTable from '@/components/common/table/DataTable';
 import { IUser } from 'src/shared/schemas/models/IUser';
@@ -12,8 +12,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/common/ui/dropdown-menu';
-import { ConfirmDialog } from '@/components/common/dialog/ConfirmDialog';
 import DataTableColumnHeader from '@/components/common/table/DataTableColumnHeader';
+import { ConfirmDialog } from '@/components/common/dialog/ConfirmDialog';
 import dayjs from 'dayjs';
 import { record } from 'zod';
 
@@ -25,7 +25,7 @@ const generateFakeUser = (id: any) => ({
   email: `user${id + 1}@example.com`,
   organizationDto: `${id + 1}`,
   roles: `Role ${id + 1}`,
-  active: (id + 1) % 2 === 0, // Alternating between active and inactive
+  active: (id + 1) % 2 === 0,
   updatedDate: new Date().toLocaleString(),
 });
 
@@ -46,7 +46,7 @@ const tableConfig = {
   },
 };
 
-const UserManage = () => {
+const CompanyManage = () => {
   const router = useRouter();
   const TABLE_NAME = 'Users Management';
   // const { data, onChangeSearchParams, tableConfig, getFieldValueOnSearchParam2 } = useGetLi();
@@ -144,6 +144,6 @@ const UserManage = () => {
   );
 };
 
-UserManage.getLayout = (children: React.ReactNode) => <DashBoardLayout>{children}</DashBoardLayout>;
+CompanyManage.getLayout = (children: React.ReactNode) => <DashBoardLayout>{children}</DashBoardLayout>;
 
-export default UserManage;
+export default CompanyManage;

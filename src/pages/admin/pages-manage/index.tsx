@@ -10,7 +10,7 @@ import { pageAdminData } from '@/mocks/admin/page';
 const PageChart = dynamic(() => import('@/components/business/admin/pages/PageChart'), { ssr: false });
 export function PagesManage() {
   const { trans } = useTrans();
-  const { data: menuPageTree } = useGetListPage();
+  // const { data: menuPageTree } = useGetListPage();
   return (
     <React.Fragment>
       <Head>

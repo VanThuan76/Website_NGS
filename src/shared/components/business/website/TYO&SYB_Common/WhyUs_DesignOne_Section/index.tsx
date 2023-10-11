@@ -14,8 +14,8 @@ const WhyUsDesignOneSection = ({ title, data, className }: Props) => {
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
-    <section id={data.section.code} className={`max-w-[1440px] overflow-hidden px-4 pb-4 md:px-24 ${className}  `}>
-      <div className='mx-auto my-auto mt-10 grid w-full grid-cols-1 items-start justify-between md:grid-cols-2 md:gap-10'>
+    <section id={data.section.code} className={`w-screen overflow-hidden ${className}`}>
+      <div className='mx-auto my-auto mt-10 grid w-full max-w-[1440px] grid-cols-1 items-start justify-between px-4 pb-4 md:grid-cols-2 md:gap-10 md:px-24'>
         <TitleSection
           title={title}
           name={data.section.name as string}

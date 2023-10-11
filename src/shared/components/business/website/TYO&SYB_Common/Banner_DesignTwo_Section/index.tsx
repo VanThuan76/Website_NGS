@@ -5,6 +5,7 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 import { ChevronRight } from 'lucide-react';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import useBreakPoint from '@/hooks/useBreakPoint';
+import useTrans from '@/hooks/useTrans';
 
 type Props = {
   breadcrumb: string[];
@@ -14,6 +15,7 @@ type Props = {
 };
 const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }: Props) => {
   const currentBreakPoint = useBreakPoint();
+  const { trans } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`relative mb-10 w-full${className}`}>
@@ -33,7 +35,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
               </div>
               <div className='flex w-full flex-col items-start justify-start gap-4'>
                 {data.section.name.split('//').map((word, idx) => (
-                  <h1 className='text-2xl font-semibold leading-6 md:text-5xl' key={idx}>
+                  <h1 className='text-5xl font-semibold uppercase leading-[56px] text-white' key={idx}>
                     {word}
                   </h1>
                 ))}
@@ -47,7 +49,7 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
               </div>
             </div>
             <UseLinkRedirect sectionCode={sectionCodeLink || 'FormCTA'}>
-              <BtnCommon title='Tìm hiểu thêm' cls='bg-white text-orange-500 p-4 rounded-sm' />
+              <BtnCommon title={trans.common.findOutMore} cls='bg-white text-orange-500 p-4 rounded-sm' />
             </UseLinkRedirect>
           </div>
           <div

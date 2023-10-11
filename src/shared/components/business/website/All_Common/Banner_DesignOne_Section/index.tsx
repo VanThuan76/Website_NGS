@@ -4,6 +4,7 @@ import { PreImage } from '@/components/common/customization/PreImage';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
+import useTrans from '@/hooks/useTrans';
 
 type Props = {
   title?: string;
@@ -11,6 +12,7 @@ type Props = {
   className?: string;
 };
 const BannerDesignOneSection = ({ title, data, className }: Props) => {
+  const { trans } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
     <section id={data.section.code} className={`relative mb-10 w-full ${className}`}>
@@ -28,7 +30,7 @@ const BannerDesignOneSection = ({ title, data, className }: Props) => {
               </div>
               <p className='mt-5 text-lg font-thin'>{data.section.description}</p>
               <UseLinkRouter url={URLS_SYSTEM.ES}>
-                <BtnCommon title='Tìm hiểu ngay' cls='bg-white text-orange-500 p-4 rounded-sm' />
+                <BtnCommon title={trans.common.findOutMore} cls='bg-white text-orange-500 p-4 rounded-sm' />
               </UseLinkRouter>
             </div>
           </div>

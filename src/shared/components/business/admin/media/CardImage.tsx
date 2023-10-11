@@ -1,11 +1,10 @@
-import { ImageCommon } from '@/components/common/image/ImageCommon';
 import { Badge } from '@/components/common/ui/badge';
 import EditIcon from '@/components/icon/EditIcon';
 import { IImageMedia } from '@/mocks/admin/media';
-import { useState } from 'react';
 import FormImageEdit from './FormImageEdit';
 import TriggerDialogForm from './TriggerDialogForm';
 import useMediaModal from '@/hooks/useMediaModal';
+import { PreImage } from '@/components/common/customization/PreImage';
 
 interface Props {
   data: IImageMedia;
@@ -20,7 +19,9 @@ const CardImage = ({ data, viewMode }: Props) => {
       onClick={() => setChosenImage(data)}
     >
       <div className='flex w-full justify-center'>
-        <ImageCommon width={88} height={88} src={data.url} alt={`Image ${data.title}`} className='w-full rounded-md' />
+        <div className='relative h-[56px] w-full rounded-md'>
+          <PreImage src={data.url} alt={`Image ${data.title}`} />
+        </div>
       </div>
       <div className='flex w-full items-center justify-between'>
         <div className='hidden flex-col items-start justify-start md:flex lg:flex xl:flex'>

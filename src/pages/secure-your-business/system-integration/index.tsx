@@ -3,16 +3,6 @@ import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  SYB_SI_Banner,
-  SYB_SI_Section2,
-  SYB_SI_Section3,
-  SYB_SI_Section4,
-  SYB_SI_Section5,
-  SYB_SI_Section6,
-  SYB_SI_Section7,
-  SYB_TI_Section9,
-} from '@/mocks/website/SYB/syb';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
@@ -20,45 +10,68 @@ import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB
 import dynamic from 'next/dynamic';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const TIPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>System Integration NGS</title>
-        <meta name='description' content='System Integration NGS' />
+        <title>{trans.website.secure.system_integration.title}</title>
+        <meta name='description' content={trans.website.secure.system_integration.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Dịch vụ triển khai tích hợp giải pháp an toàn thông tin']}
-          data={SYB_SI_Banner}
+          breadcrumb={[trans.common.home, trans.common.secure, trans.website.secure.system_integration.title]}
+          data={trans.website.secure.system_integration.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignEightSection title='Tổng quan' data={SYB_SI_Section2} />
+        <OverviewDesignEightSection
+          title={trans.website.secure.system_integration.titleSection.section_2}
+          data={trans.website.secure.system_integration.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection title='Thách thức' data={SYB_SI_Section3} />
+        <ChallengeDesignThreeSection
+          title={trans.website.secure.system_integration.titleSection.section_3}
+          data={trans.website.secure.system_integration.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='Dịch vụ' data={SYB_SI_Section4} />
+        <ServiceDesignOneSection
+          title={trans.website.secure.system_integration.titleSection.section_4}
+          data={trans.website.secure.system_integration.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_SI_Section5} />
+        <WhyUsDesignOneSection
+          title={trans.website.secure.system_integration.titleSection.section_5}
+          data={trans.website.secure.system_integration.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='Đối tác đồng hành cùng NGS' data={SYB_SI_Section6} />
+        <PartnerDesignTwoSection
+          title={trans.website.secure.system_integration.titleSection.section_6}
+          data={trans.website.secure.system_integration.section_6}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={SYB_SI_Section7} />
+        <ClientStoriesDesignTwoSection
+          title={trans.website.secure.system_integration.titleSection.section_7}
+          data={trans.website.secure.system_integration.section_7}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={SYB_TI_Section9} />
+        <FormDesignOneSection
+          title={trans.website.secure.system_integration.titleSection.section_8}
+          data={trans.website.secure.system_integration.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

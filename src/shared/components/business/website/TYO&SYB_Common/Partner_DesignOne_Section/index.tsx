@@ -5,6 +5,7 @@ import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionCo
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { URLS_SYSTEM } from '@/utils/constants';
 import { useTheme } from 'next-themes';
+import useTrans from '@/hooks/useTrans';
 
 type Props = {
   title?: string;
@@ -13,6 +14,7 @@ type Props = {
 };
 const PartnerDesignOneSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   return (
@@ -29,7 +31,7 @@ const PartnerDesignOneSection = ({ title, data, className }: Props) => {
           <p>{data.section.description}</p>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
             <BtnCommon
-              title='Tìm hiểu thêm'
+              title={trans.common.findOutMore}
               cls='mt-3 w-[190px] md:w-[170px] border border-orange-500'
               colorSvg={colorIcon}
             />

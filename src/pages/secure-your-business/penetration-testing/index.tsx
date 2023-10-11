@@ -7,63 +7,75 @@ import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import ServiceDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  SYBBanner1_PG4_2,
-  SYBForm1_PG4_2,
-  SYBOverview1_PG4_2,
-  SYBPartner3_PG4_2,
-  SYBService2_PG4_2,
-  SYBService3_PG4_2,
-  SYBWhyUs1_PG4_2,
-  SYBchallenge3_PG4_2,
-  SYBclientStories1_PG4_2,
-} from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const PTPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Penetration Testing</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.secure.penetration_testing.title}</title>
+        <meta name='description' content={trans.website.secure.penetration_testing.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Dịch vụ kiểm thử đăng nhập hệ thống ứng dụng']}
-          data={SYBBanner1_PG4_2}
+          breadcrumb={[trans.common.home, trans.common.secure, trans.website.secure.penetration_testing.title]}
+          data={trans.website.secure.penetration_testing.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignEightSection title='Tổng quan' data={SYBOverview1_PG4_2} />
+        <OverviewDesignEightSection
+          title={trans.website.secure.penetration_testing.titleSection.section_2}
+          data={trans.website.secure.penetration_testing.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignThreeSection title='Thách thức' data={SYBchallenge3_PG4_2} />
+        <ChallengeDesignThreeSection
+          title={trans.website.secure.penetration_testing.titleSection.section_3}
+          data={trans.website.secure.penetration_testing.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection title='Dịch vụ' data={SYBService3_PG4_2} />
+        <ServiceDesignThreeSection
+          title={trans.website.secure.penetration_testing.titleSection.section_4}
+          data={trans.website.secure.penetration_testing.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignTwoSection title='Phương pháp thực hiện' data={SYBService2_PG4_2} />
+        <ServiceDesignTwoSection
+          title={trans.website.secure.penetration_testing.titleSection.section_5}
+          data={trans.website.secure.penetration_testing.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYBWhyUs1_PG4_2} />
+        <WhyUsDesignOneSection
+          title={trans.website.secure.penetration_testing.titleSection.section_6}
+          data={trans.website.secure.penetration_testing.section_6}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection data={SYBPartner3_PG4_2} />
+        <PartnerDesignTwoSection data={trans.website.secure.penetration_testing.section_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignOneSection title='' data={SYBclientStories1_PG4_2} />
+        <ClientStoriesDesignOneSection
+          title={trans.website.secure.penetration_testing.titleSection.section_8}
+          data={trans.website.secure.penetration_testing.section_8}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={SYBForm1_PG4_2} />
+        <FormDesignOneSection
+          title={trans.website.secure.penetration_testing.titleSection.section_9}
+          data={trans.website.secure.penetration_testing.section_9}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

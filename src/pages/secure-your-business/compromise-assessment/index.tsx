@@ -6,59 +6,69 @@ import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Commo
 import ServiceDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFive_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  SYBBanner1_PG4_3,
-  SYBForm1_PG4_3,
-  SYBOverview6_PG4_3,
-  SYBPartner2_PG4_3,
-  SYBService5_PG4_3,
-  SYBWhyUs1_PG4_3,
-  SYBclientStories1_PG4_3,
-} from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
 import ChallengeDesignFourSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignFour_Section';
-import { TYOchallenge4 } from '@/mocks/website/TYO/overview';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const SOCPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Compromise Assessment</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.secure.compromise_assessment.title}</title>
+        <meta name='description' content={trans.website.secure.compromise_assessment.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Bảo mật toàn diện', 'Đánh giá xâm nhập hệ thống']}
-          data={SYBBanner1_PG4_3}
+          breadcrumb={[trans.common.home, trans.common.secure, trans.website.secure.compromise_assessment.title]}
+          data={trans.website.secure.compromise_assessment.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignEightSection title='Tổng quan' data={SYBOverview6_PG4_3} />
+        <OverviewDesignEightSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_2}
+          data={trans.website.secure.compromise_assessment.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignFourSection title='Thách thức' data={TYOchallenge4} />
+        <ChallengeDesignFourSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_3}
+          data={trans.website.secure.compromise_assessment.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignFiveSection title='NGS triển khai' data={SYBService5_PG4_3} />
+        <ServiceDesignFiveSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_4}
+          data={trans.website.secure.compromise_assessment.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYBWhyUs1_PG4_3} />
+        <WhyUsDesignOneSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_5}
+          data={trans.website.secure.compromise_assessment.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection data={SYBPartner2_PG4_3} />
+        <PartnerDesignTwoSection data={trans.website.secure.compromise_assessment.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignOneSection title='' data={SYBclientStories1_PG4_3} />
+        <ClientStoriesDesignOneSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_7}
+          data={trans.website.secure.compromise_assessment.section_7}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={SYBForm1_PG4_3} />
+        <FormDesignOneSection
+          title={trans.website.secure.compromise_assessment.titleSection.section_8}
+          data={trans.website.secure.compromise_assessment.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

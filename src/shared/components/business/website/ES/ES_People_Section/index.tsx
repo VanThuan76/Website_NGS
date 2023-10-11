@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import QuoteIcon from '@/components/icon/TYO&SYB_Common/QuoteIcon';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { motion } from 'framer-motion';
@@ -58,6 +59,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
                   <h1 className='text-xl font-medium md:text-3xl'>{selectedTab?.title}</h1>
                   <p className='font-normal'>{selectedTab?.description}</p>
                 </div>
+                <QuoteIcon />
                 {selectedTab && selectedTab?.content!.split('//').length > 1 ? (
                   <div className='flex w-full flex-col items-start justify-start gap-3'>
                     {selectedTab?.content?.split('//').map((item, index) => (

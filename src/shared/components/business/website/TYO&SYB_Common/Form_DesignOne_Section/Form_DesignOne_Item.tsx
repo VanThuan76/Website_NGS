@@ -1,10 +1,12 @@
 import { toast } from '@/components/common/ui/use-toast';
 import IconLineDirection from '@/components/icon/IconLineDirection';
+import useTrans from '@/hooks/useTrans';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import { useState } from 'react';
 
 const FormDesignOneItem = () => {
+  const { trans } = useTrans();
   const [cityAndProvince, setCityAndProvince] = useState<any[]>();
   const [formData, setFormData] = useState({
     fullName: '',
@@ -36,7 +38,7 @@ const FormDesignOneItem = () => {
         <form onSubmit={handleSubmit} className='mt-4 w-full text-[#A6A6A6] md:p-8'>
           <div className='mb-4 w-full'>
             <label htmlFor='fullName' className='mb-1 block'>
-              Họ và tên của bạn
+              {trans.website.formDesignOneSection.fullName}
             </label>
             <input
               type='text'
@@ -73,7 +75,7 @@ const FormDesignOneItem = () => {
             </div>
             <div className='w-full'>
               <label htmlFor='phoneNumber' className='mb-1 block'>
-                Số điện thoại
+                {trans.website.formDesignOneSection.phoneNumber}
               </label>
               <input
                 type='tel'
@@ -93,7 +95,7 @@ const FormDesignOneItem = () => {
           <div className='mb-4 grid w-full grid-cols-2 gap-4'>
             <div className='w-full'>
               <label htmlFor='workPosition' className='mb-1 block'>
-                Vị trí công việc
+                {trans.website.formDesignOneSection.workPosition}
               </label>
               <input
                 id='workPosition'
@@ -110,7 +112,7 @@ const FormDesignOneItem = () => {
             </div>
             <div className='w-full'>
               <label htmlFor='companyName' className='mb-1 block'>
-                Tên công ty
+                {trans.website.formDesignOneSection.companyName}
               </label>
               <input
                 id='companyName'
@@ -128,8 +130,8 @@ const FormDesignOneItem = () => {
           </div>
           <div className='mb-4 grid w-full grid-cols-2 items-end justify-between gap-4'>
             <div className='w-full'>
-              <label htmlFor='staffSize' className='mb-1 block'>
-                Chọn tỉnh/thành phố
+              <label htmlFor='cityOrProvince' className='mb-1 block'>
+                {trans.website.formDesignOneSection.cityOrProvince}
               </label>
               <select
                 id='cityOrProvince'
@@ -155,7 +157,7 @@ const FormDesignOneItem = () => {
 
             <div className='w-full'>
               <label htmlFor='staffSize' className='mb-1 block'>
-                Quy mô nhân sự
+                {trans.website.formDesignOneSection.staffSize}
               </label>
               <input
                 id='staffSize'
@@ -172,16 +174,13 @@ const FormDesignOneItem = () => {
             </div>
           </div>
           <div className='flex w-full flex-col items-center justify-center'>
-            <p className='text-center'>
-              Chúng tôi tự hào chia sẻ những case study đặc biệt, trong đó chúng tôi đã giúp các khách hàng vượt qua
-              thách thức và đạt được thành công đáng kể
-            </p>
+            <p className='text-center'>{trans.website.formDesignOneSection.description}</p>
             <button
               style={{ border: '1px solid #FC5F04' }}
               type='submit'
               className={`relative mt-3 flex cursor-pointer items-center justify-center gap-3 rounded-[12px] bg-[#fff] px-4 py-2 text-left text-orange-500 hover:border-2 hover:transition hover:ease-in-out`}
             >
-              <p className='text-sm'>Đăng ký ngay</p>
+              <p className='text-sm'>{trans.website.formDesignOneSection.register}</p>
               <IconLineDirection color='#FC5F04' />
             </button>
           </div>

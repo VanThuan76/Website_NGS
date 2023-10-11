@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import useTrans from '@/hooks/useTrans';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -13,6 +14,7 @@ type Props = {
 };
 
 const ServiceDesignFourSection = ({ title, data, className }: Props) => {
+  const { trans } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
@@ -33,7 +35,7 @@ const ServiceDesignFourSection = ({ title, data, className }: Props) => {
               })}
           </div>
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon title='Kết nối với NGS' cls='text-white bg-orange-500 p-4' />
+            <BtnCommon title={trans.common.connectUs} cls='text-white bg-orange-500 p-4' />
           </UseLinkRedirect>
         </div>
         <PreImage

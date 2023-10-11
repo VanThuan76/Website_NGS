@@ -1,5 +1,6 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
+import useTrans from '@/hooks/useTrans';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -13,6 +14,7 @@ type Props = {
 };
 
 const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Props) => {
+  const { trans, lang } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const checkSolution = data.components.find(item => item.slug === 'solution');
   const checkServiceAndSupport = data.components.find(item => item.slug === 'service-and-support');
@@ -33,7 +35,7 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
             className='col-span-7 w-full grid-cols-7 !gap-3 !text-left'
           />
           <div className='flex flex-col items-start justify-start gap-3'>
-            <p>Bạn muốn kết nối với chúng tôi?</p>
+            <p>{lang === 'vi' ? 'Bạn muốn kết nối với chúng tôi?' : 'Want to connect with us?'}</p>
 
             <UseLinkRedirect sectionCode={'FormCTA'}>
               <BtnCommon title='Kết nối với NGS' cls='border border-orange-500' />
@@ -43,18 +45,21 @@ const ServiceDesignOneSection = ({ title, data, className, sectionCodeLink }: Pr
         <div className='col-span-1 grid grid-cols-1 gap-10 md:col-span-2 md:grid-cols-2'>
           {checkSolution && (
             <ServiceDesignOneItem
-              titleItem='Giải pháp'
+              titleItem={trans.common.solution}
               data={data.components.filter(item => item.slug === 'solution')}
             />
           )}
           {checkServiceAndSupport && (
             <ServiceDesignOneItem
-              titleItem='Dịch vụ và hỗ trợ'
+              titleItem={`${trans.common.service}&${trans.common.support}`}
               data={data.components.filter(item => item.slug === 'service-and-support')}
             />
           )}
           {checkReport && (
-            <ServiceDesignOneItem titleItem='Báo cáo' data={data.components.filter(item => item.slug === 'report')} />
+            <ServiceDesignOneItem
+              titleItem={trans.common.report}
+              data={data.components.filter(item => item.slug === 'report')}
+            />
           )}
         </div>
       </div>

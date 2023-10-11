@@ -1,21 +1,12 @@
-import { ArrowDownIcon, ArrowUpIcon, ChevronsUpDownIcon, EyeIcon, SearchIcon, Settings2Icon } from 'lucide-react';
 import { Column } from '@tanstack/react-table';
+import { ArrowDownIcon, ArrowUpIcon, EyeIcon, SearchIcon, Settings2Icon } from 'lucide-react';
 
-import { Button } from '@/components/common/ui/button';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/common/ui/dropdown-menu';
-import { cn } from '@/utils/tailwind/functions';
-import { Input } from '../ui/input';
-import { useEffect, useState } from 'react';
-import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
-import { Separator } from '../ui/separator';
-import { useDebounce } from 'usehooks-ts';
 import classNames from 'classnames';
+import { useState } from 'react';
+import { Input } from '../ui/input';
+import { Popover, PopoverContent, PopoverTrigger } from '../ui/popover';
+import { Button } from '../ui/button';
+import { cn } from '@/utils/tailwind/functions';
 
 interface DataTableColumnHeaderProps<TData, TValue> extends React.HTMLAttributes<HTMLDivElement> {
   column: Column<TData, TValue>;
@@ -35,7 +26,7 @@ const DataTableColumnHeader = <TData, TValue>({
   if (!column.getCanSort()) {
     return <div className={cn(className)}>{title}</div>;
   }
-  const itemClassName = 'p-2 rounded-md flex gap-4 items-center hover:bg-foreground/5 cursor-pointer';
+  const itemClassName = 'p-2 rounded-md flex gap-2 items-center hover:bg-foreground/5 cursor-pointer';
   return (
     <div className={cn('flex items-center space-x-2', className)}>
       <Popover>
@@ -43,8 +34,8 @@ const DataTableColumnHeader = <TData, TValue>({
           <Button
             variant='ghost'
             size='sm'
-            className={classNames('-ml-3 h-8 data-[state=open]:bg-accent', {
-              'bg-accent': !!defaultFilter,
+            className={classNames('-ml-3 flex h-8 w-full justify-start data-[state=open]:bg-accent', {
+              'bg-primary/10': !!defaultFilter,
             })}
           >
             <span>{title}</span>
@@ -66,36 +57,46 @@ const DataTableColumnHeader = <TData, TValue>({
               Hide
             </div>
           )}
-          <div className={itemClassName}>
-            <Input
-              value={searchValue}
-              onChange={v => {
-                setSearchValue(v.target.value);
-              }}
-            />
-            <Button
-              onClick={() => {
-                const metaCol = column?.columnDef.meta as any;
-                if (metaCol.searchFn) {
-                  metaCol.searchFn(searchValue);
-                }
-              }}
-            >
-              <SearchIcon />
-            </Button>
-            <Button
-              variant={'destructive'}
-              onClick={() => {
-                setSearchValue('');
-                const metaCol = column?.columnDef.meta as any;
-                if (metaCol.searchFn) {
-                  metaCol.searchFn(undefined);
-                }
-              }}
-            >
-              X
-            </Button>
-          </div>
+          {(column?.columnDef?.meta as any)?.searchFn !== undefined && (
+            <div className={itemClassName}>
+              <Input
+                value={searchValue}
+                onChange={v => {
+                  setSearchValue(v.target.value);
+                }}
+                onKeyDown={event => {
+                  if (event.key === 'Enter') {
+                    const metaCol = column?.columnDef.meta as any;
+                    if (metaCol?.searchFn) {
+                      metaCol.searchFn(searchValue);
+                    }
+                  }
+                }}
+              />
+              <Button
+                onClick={() => {
+                  const metaCol = column?.columnDef.meta as any;
+                  if (metaCol?.searchFn) {
+                    metaCol.searchFn(searchValue);
+                  }
+                }}
+              >
+                <SearchIcon />
+              </Button>
+              <Button
+                variant={'outline'}
+                onClick={() => {
+                  setSearchValue('');
+                  const metaCol = column?.columnDef.meta as any;
+                  if (metaCol?.searchFn) {
+                    metaCol.searchFn(undefined);
+                  }
+                }}
+              >
+                X
+              </Button>
+            </div>
+          )}
         </PopoverContent>
       </Popover>
     </div>

@@ -8,7 +8,7 @@ module.exports = {
     defaultLocale: 'vi',
   },
   images: {
-    domains: ['ngs.com.vn'],
+    domains: ['ngs.com.vn', '172.16.50.206'],
   },
   webpack: (config, { isServer }) => {
     if (!isServer) {

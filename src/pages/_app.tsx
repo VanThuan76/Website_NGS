@@ -60,20 +60,8 @@ const ConfigLayout = ({
             className='flex w-full flex-col items-center justify-center'
           >
             <div className='relative h-[150px] w-[150px] transform overflow-hidden'>
-              <PreImage src='/LogoRoute.png' alt='LogoRoute' objectPosition='center' objectFit='contain' />
+              <PreImage src='/logo.svg' alt='LogoRoute' objectPosition='center' objectFit='contain' />
             </div>
-            <span
-              style={{
-                width: '120px',
-                fontSize: '3rem',
-                fontWeight: 'bold',
-                color: '#fff',
-                fontStyle: 'italic',
-                textShadow: '1px 1px 2px #58585A',
-              }}
-            >
-              NGS
-            </span>
           </motion.div>
         </div>
       ) : (

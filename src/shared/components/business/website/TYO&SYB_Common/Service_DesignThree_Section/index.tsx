@@ -1,6 +1,7 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import TitleSection from '@/components/common/customization/TitleSection';
 import BackgroundServiceDesignThreeSection from '@/components/icon/TYO&SYB_Common/BackgroundServiceDesignThreeSection';
+import useTrans from '@/hooks/useTrans';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
 import React from 'react';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
@@ -16,6 +17,7 @@ type Props = {
 };
 
 const ServiceDesignThreeSection = ({ title, sub, data, className, sectionCodeLink }: Props) => {
+  const { trans } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
 
   return (
@@ -44,7 +46,7 @@ const ServiceDesignThreeSection = ({ title, sub, data, className, sectionCodeLin
           <div className='mt-10 flex flex-col items-end justify-end gap-3'>
             <p className='text-right'>{sub ? sub : ''}</p>
             <UseLinkRedirect sectionCode={'FormCTA'}>
-              <BtnCommon title='Kết nối với NGS' cls='border border-orange-500' />
+              <BtnCommon title={trans.common.connectUs} cls='border border-orange-500' />
             </UseLinkRedirect>
           </div>
         </div>

@@ -2,6 +2,7 @@ import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
 import QuoteIcon from '@/components/icon/TYO&SYB_Common/QuoteIcon';
+import useTrans from '@/hooks/useTrans';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { motion } from 'framer-motion';
@@ -16,6 +17,7 @@ type Props = {
 };
 
 const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
+  const { trans } = useTrans();
   const [selectedTab, setSelectedTab] = useState<Partial<IComponents> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
@@ -46,7 +48,7 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             name={data.section!.name as string}
             description={data.section!.description as string}
             findMore={true}
-            className='w-full font-bold text-orange-500'
+            className='col-span-7 w-full grid-cols-7 !gap-0 font-bold text-orange-500'
           />
           <QuoteIcon />
           <div className='relative min-h-[450px] w-full'>
@@ -75,7 +77,10 @@ const ClientStoriesDesignOneSection = ({ title, data, className }: Props) => {
             ))}
           </div>
           <UseLinkRouter url={URLS_SYSTEM.ES}>
-            <BtnCommon title='Tìm hiểu thêm' cls='absolute bottom-24 left-0 border border-orange-500 !bg-none' />
+            <BtnCommon
+              title={trans.common.findOutMore}
+              cls='absolute bottom-24 left-0 border border-orange-500 !bg-none'
+            />
           </UseLinkRouter>
           {/* <ul className='absolute bottom-10 hidden md:flex items-center justify-between gap-5'>
             {data.components.map((item, idx) => (

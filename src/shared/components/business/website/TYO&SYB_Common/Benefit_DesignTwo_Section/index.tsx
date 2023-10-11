@@ -6,6 +6,7 @@ import { useTheme } from 'next-themes';
 import { IBaseSectionComponent } from 'src/shared/schemas/typedef/IBaseSectionComponent';
 import IconCheckSuccess from '@/components/icon/TYO&SYB_Common/IconCheckSuccess';
 import UseLinkRedirect from '@/utils/functions/UseLinkRedirect';
+import useTrans from '@/hooks/useTrans';
 
 type Props = {
   title: string;
@@ -15,6 +16,7 @@ type Props = {
 
 const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
   const { theme } = useTheme();
+  const { trans } = useTrans();
   if (!data || !data.components || !data.section) return <React.Fragment></React.Fragment>;
   const colorIcon = theme !== 'dark' ? '#F06426' : '#fff';
 
@@ -36,7 +38,11 @@ const BenefitDesignTwoSection = ({ title, data, className }: Props) => {
             </div>
           ))}
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon cls='border border-orange-500 !bg-none px-4' title='Kết nối với NGS' colorSvg={colorIcon} />
+            <BtnCommon
+              cls='border border-orange-500 !bg-none px-4'
+              title={trans.common.connectUs}
+              colorSvg={colorIcon}
+            />
           </UseLinkRedirect>
         </div>
         <div className='relative h-full w-full overflow-hidden object-cover'>

@@ -5,62 +5,64 @@ import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import ServiceDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Service_DesignFive_Section';
 import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
-import {
-  SYB_RT_Section1,
-  SYB_RT_Section2,
-  SYB_RT_Section3,
-  SYB_RT_Section4,
-  SYB_RT_Section5,
-  SYB_RT_Section6,
-  SYB_RT_Section7,
-  SYB_RT_Section8,
-} from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
 import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const ERPPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Red Teaming NGS</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.secure.red_teaming.title}</title>
+        <meta name='description' content={trans.website.secure.red_teaming.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <BannerDesignTwoSection
-        breadcrumb={[
-          'Trang chủ',
-          'Bảo mật toàn diện',
-          'Dịch vụ kiểm thử tấn công xâm nhập chuyên sâu hạ tầng Công nghệ thông tin',
-        ]}
-        data={SYB_RT_Section1}
+        breadcrumb={[trans.common.home, trans.common.secure, trans.website.secure.red_teaming.title]}
+        data={trans.website.secure.red_teaming.section_1}
       />
       <ScrollRevealWrapper>
-        <OverviewDesignEightSection title='Tổng quan' data={SYB_RT_Section2} />
+        <OverviewDesignEightSection
+          title={trans.website.secure.red_teaming.titleSection.section_2}
+          data={trans.website.secure.red_teaming.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignFourSection title='Thách thức' data={SYB_RT_Section3} />
+        <OverviewDesignFourSection
+          title={trans.website.secure.red_teaming.titleSection.section_3}
+          data={trans.website.secure.red_teaming.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignFiveSection title='Dịch vụ' data={SYB_RT_Section4} />
+        <ServiceDesignFiveSection
+          title={trans.website.secure.red_teaming.titleSection.section_4}
+          data={trans.website.secure.red_teaming.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={SYB_RT_Section5} />
-      </ScrollRevealWrapper>
-      {/* <ScrollRevealWrapper>
-        <PartnerDesignTwoSection data={SYB_RT_Section6} />
-      </ScrollRevealWrapper> */}
-      <ScrollRevealWrapper>
-        <ClientStoriesDesignTwoSection title='Client stories' data={SYB_RT_Section7} />
+        <WhyUsDesignOneSection
+          title={trans.website.secure.red_teaming.titleSection.section_5}
+          data={trans.website.secure.red_teaming.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='Kết nối với NGS' data={SYB_RT_Section8} />
+        <ClientStoriesDesignTwoSection
+          title={trans.website.secure.red_teaming.titleSection.section_7}
+          data={trans.website.secure.red_teaming.section_7}
+        />
+      </ScrollRevealWrapper>
+      <ScrollRevealWrapper>
+        <FormDesignOneSection
+          title={trans.website.secure.red_teaming.titleSection.section_8}
+          data={trans.website.secure.red_teaming.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );
