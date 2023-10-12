@@ -11,8 +11,9 @@ interface Props {
   sectionControls: AnimationControls;
   idx: number;
   className?: string;
+  isResponsive?: boolean;
 }
-const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx, className }: Props) => {
+const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx, className, isResponsive }: Props) => {
   const [isHovered, setIsHovered] = useState<number | undefined>();
   const router = useRouter();
   const currentBreakPoint = useBreakPoint();
@@ -26,8 +27,8 @@ const HOSecurityCard = ({ title, description, image, slug, sectionControls, idx,
       initial='hidden'
       animate={sectionControls}
       transition={{ duration: 0.3, delay: idx * 0.5 }}
-      onMouseEnter={() => setIsHovered(idx)}
-      onMouseLeave={() => setIsHovered(undefined)}
+      onMouseEnter={() => !isResponsive && setIsHovered(idx)}
+      onMouseLeave={() => !isResponsive && setIsHovered(undefined)}
       onClick={() => router.push(`/secure-your-business/${slug}`)}
     >
       <div className='flex flex-col items-center justify-center gap-3'>

@@ -59,8 +59,7 @@ export const SYBService3_PG4_1 = {
       language: 'vi',
       code: 'PG003.10SE00003CN000002',
       title: 'Vận hành SOC như một dịch vụ',
-      description:
-        'NGS cung cấp dịch vụ xây dựng mô hình SOC bao gồm SIEM & SOAR',
+      description: 'NGS cung cấp dịch vụ xây dựng mô hình SOC bao gồm SIEM & SOAR',
       slug: '',
       content: '',
       image: '/images/TYO_sec4.png',

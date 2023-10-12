@@ -15,7 +15,7 @@ const ServiceDesignFourItem = ({ item }: Props) => {
       onClick={() => setIsClick(!isClick)}
     >
       <div className='flex w-full items-start justify-between gap-4 md:gap-8'>
-        <h1 className={`text-md font-medium md:text-xl ${isClick ? 'text-orange-500' : ''}`}>{item.title}</h1>
+        <h1 className={`text-md w-[90%] font-medium md:text-xl ${isClick ? 'text-orange-500' : ''}`}>{item.title}</h1>
         <div
           className={`flex h-[30px] w-[30px] items-center justify-center rounded-full ${
             isClick ? 'bg-[#FACFB3]' : 'bg-slate-300'

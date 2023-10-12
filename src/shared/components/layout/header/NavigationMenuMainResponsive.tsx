@@ -1,4 +1,5 @@
 import { PreImage } from '@/components/common/customization/PreImage';
+import LanguageSwitch from '@/components/common/LanguageSwitch';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/common/ui/accordion';
 import { SheetClose } from '@/components/common/ui/sheet';
 import SecureMenuIcon from '@/components/icon/SecureMenuIcon';
@@ -117,6 +118,10 @@ const NavigationMenuMainResponsive = () => {
           )}
         </div>
       ))}
+      <div className='mt-10 flex items-start justify-between'>
+        <div>{lang === 'vi' ? 'Ngôn ngữ:' : 'Language:'}</div>
+        <LanguageSwitch />
+      </div>
     </div>
   );
 };

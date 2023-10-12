@@ -20,7 +20,6 @@ import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/
 import ClientStoriesDesignThreeSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignThree_Section';
 
 import dynamic from 'next/dynamic';
-import PartnerSection from '@/components/business/website/All_Common/Partner_Section';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {

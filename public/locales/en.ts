@@ -7,15 +7,15 @@ const ENScript = {
         path: '/transform-your-organization',
         menuChild: [
           {
-            title: 'Digital Service Consultancy',
+            title: 'Digital Consulting',
             path: '',
             menuChild: [
               {
-                title: 'Feature Solutions',
+                title: '',
                 path: '/transform-your-organization',
                 menuChild: [
                   {
-                    title: 'Digital Transformation Strategy',
+                    title: 'Digital Strategy & Planning',
                     path: '/digital-strategy-planning',
                     menuChild: [],
                   },
@@ -29,11 +29,11 @@ const ENScript = {
             ],
           },
           {
-            title: 'Digital Transformation Services',
+            title: 'Digital Transformation Implementation',
             path: '',
             menuChild: [
               {
-                title: 'Business Development',
+                title: 'Customer Engagement',
                 path: '/transform-your-organization',
                 menuChild: [
                   {
@@ -47,50 +47,50 @@ const ENScript = {
                     menuChild: [],
                   },
                   {
-                    title: 'Contact Center (Customer Care Hotline)',
+                    title: 'Contact Center',
                     path: '/contact-center',
                     menuChild: [],
                   },
                   {
-                    title: 'Customer Experience Management',
+                    title: 'Voice of Customer',
                     path: '/update-soon',
                     menuChild: [],
                   },
                   {
-                    title: 'Digital Marketing Platform',
+                    title: 'Online Marketing platform',
                     path: '/update-soon',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Core IT Systems',
+                title: 'Business Core Operation',
                 path: '/transform-your-organization',
                 menuChild: [
                   {
-                    title: 'Banking Sector',
+                    title: 'Core Banking',
                     path: '/core-banking',
                     menuChild: [],
                   },
                   {
-                    title: 'Insurance Sector',
+                    title: 'Core Insurance',
                     path: '/core-insurance',
                     menuChild: [],
                   },
                   {
-                    title: 'Aviation Sector',
+                    title: 'Core Airline',
                     path: '/core-airline',
                     menuChild: [],
                   },
                   {
-                    title: 'Oil & Gas Sector',
+                    title: 'Core Oil & Gas',
                     path: '/core-oil&gas',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Enterprise Management Solutions',
+                title: 'Enterprise management',
                 path: '/transform-your-organization',
                 menuChild: [
                   {
@@ -119,17 +119,17 @@ const ENScript = {
                     menuChild: [],
                   },
                   {
-                    title: 'Solutions for Small and Midsize Enterprises',
+                    title: 'Small and Midsize Enterprises',
                     path: '/small-and-midsize-enterprises',
                     menuChild: [],
                   },
                   {
-                    title: 'Planning and Analysis',
+                    title: 'Extended Planning and Analysis',
                     path: '/extended-planning-and-analysis',
                     menuChild: [],
                   },
                   {
-                    title: 'Administrative Data Analysis',
+                    title: 'Data and Analytics',
                     path: '/data-and-analysis',
                     menuChild: [],
                   },
@@ -138,7 +138,7 @@ const ENScript = {
             ],
           },
           {
-            title: 'Digital Platform',
+            title: 'Digital Foundation',
             path: '',
             menuChild: [
               {
@@ -146,17 +146,17 @@ const ENScript = {
                 path: '/transform-your-organization',
                 menuChild: [
                   {
-                    title: 'Infrastructure Services',
+                    title: 'Infrastructure as a Service',
                     path: '/update-soon',
                     menuChild: [],
                   },
                   {
-                    title: 'Data Services',
+                    title: 'Data as a Service',
                     path: '/update-soon',
                     menuChild: [],
                   },
                   {
-                    title: 'Platform Transformation',
+                    title: 'System Migration Service',
                     path: '/update-soon',
                     menuChild: [],
                   },
@@ -165,7 +165,7 @@ const ENScript = {
             ],
           },
           {
-            title: 'IT Management Services',
+            title: 'IT Management Service',
             path: '',
             menuChild: [
               {
@@ -178,7 +178,7 @@ const ENScript = {
                     menuChild: [],
                   },
                   {
-                    title: 'System Management Services',
+                    title: 'System Management',
                     path: '/update-soon',
                     menuChild: [],
                   },
@@ -187,7 +187,7 @@ const ENScript = {
             ],
           },
           {
-            title: 'IT Services',
+            title: 'IT Service',
             path: '',
             menuChild: [
               {
@@ -195,12 +195,12 @@ const ENScript = {
                 path: '/transform-your-organization',
                 menuChild: [
                   {
-                    title: 'Application Development Services',
+                    title: 'Application development & modernization',
                     path: '/application-development&modernization',
                     menuChild: [],
                   },
                   {
-                    title: 'Turnkey Resource Fulfillment Services',
+                    title: 'Resource Fulfillment by competencies',
                     path: '/resource-fulfillment-by-competencies',
                     menuChild: [],
                   },
@@ -212,7 +212,7 @@ const ENScript = {
       },
       {
         id: 2,
-        title: 'Secure Your Business',
+        title: 'Secure Your Bussiness',
         path: '/secure-your-business',
         menuChild: [
           {
@@ -220,53 +220,53 @@ const ENScript = {
             path: '',
             menuChild: [
               {
-                title: 'Operation - Design Services',
+                title: 'Security Architecture',
                 path: '/secure-your-business',
                 menuChild: [
                   {
-                    title: 'Security Monitoring and Operation',
+                    title: 'SOC Service',
                     path: '/soc',
                     menuChild: [],
                   },
                   {
-                    title: 'Industrial Network Security Service Solutions',
+                    title: 'OT_ICS Security',
                     path: '/OT.ICS-security',
                     menuChild: [],
                   },
                   {
-                    title: 'Integrated Information Security Solution Deployment',
+                    title: 'System Integration',
                     path: '/system-integration',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Attack Services',
+                title: 'Offensive Operations',
                 path: '/secure-your-business',
                 menuChild: [
                   {
-                    title: 'System/Application Penetration Testing',
+                    title: 'Penetration Testing',
                     path: '/penetration-testing',
                     menuChild: [],
                   },
                   {
-                    title: 'Deep Penetration Testing',
+                    title: 'RedTeaming',
                     path: '/red-teaming',
                     menuChild: [],
                   },
                   {
-                    title: 'System Penetration Assessment',
+                    title: 'Compromise Assessment',
                     path: '/compromise-assessment',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Defense Services',
+                title: 'Defensive Operations',
                 path: '/secure-your-business',
                 menuChild: [
                   {
-                    title: 'Cyber Threat Intelligence',
+                    title: 'Threat intelligence',
                     path: '/threat-intelligence',
                     menuChild: [],
                   },
@@ -276,7 +276,7 @@ const ENScript = {
                     menuChild: [],
                   },
                   {
-                    title: 'Review, Analysis, and Malware Removal',
+                    title: 'Malware Analysis',
                     path: '/malware-analysis',
                     menuChild: [],
                   },
@@ -292,107 +292,107 @@ const ENScript = {
         path: '/your-next-gen',
         menuChild: [
           {
-            title: 'Enterprise Management Solution',
+            title: 'Giải pháp Quản lý doanh nghiệp',
             path: '/your-next-gen',
             menuChild: [
               {
-                title: 'Digital Office',
+                title: 'Văn phòng điện tử',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Messaging & Schedule',
+                    title: 'Tin nhắn & Lịch biểu',
                     path: '/messenger-and-schedule',
                     menuChild: [],
                   },
                   {
-                    title: 'Proposals & Approvals',
+                    title: 'Đề xuất & Phê duyệt',
                     path: '/proposal-and-approval',
                     menuChild: [],
                   },
                   {
-                    title: 'Task Management',
+                    title: 'Quản lý giao việc',
                     path: '/assignment-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Document Management',
+                    title: 'Quản lý tài liệu',
                     path: '/document-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Online Training',
+                    title: 'Đào tạo trực tuyến',
                     path: '/e-learning',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Supply Chain Management',
+                title: 'Quản lý chuỗi cung ứng',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Procurement Management',
+                    title: 'Quản lý mua hàng',
                     path: '/purchase-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Inventory Management',
+                    title: 'Quản lý kho',
                     path: '/inventory-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Project Management',
+                    title: 'Quản lý dự án',
                     path: '/project-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Production Management',
+                    title: 'Quản lý sản xuất',
                     path: '/production-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Quality Management',
+                    title: 'Quản lý chất lượng',
                     path: '/quality-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Equipment and Maintenance',
+                    title: 'Thiết bị và Bảo dưỡng',
                     path: '/equipment-and-maintenance',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Financial Management',
+                title: 'Quản lý tài chính',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Accounts Receivable',
+                    title: 'Kế toán phải thu',
                     path: '/receivable-accounting',
                     menuChild: [],
                   },
                   {
-                    title: 'Accounts Payable',
+                    title: 'Kế toán phải trả',
                     path: '/payable-accounting',
                     menuChild: [],
                   },
                   {
-                    title: 'Fixed Assets & Tools',
+                    title: 'Tài sản cố định & Công cụ, Dụng cụ',
                     path: '/assets-and-tools',
                     menuChild: [],
                   },
                   {
-                    title: 'Stock Accounting',
+                    title: 'Kế toán kho',
                     path: '/stock-accountin',
                     menuChild: [],
                   },
                   {
-                    title: 'General Accounting',
+                    title: 'Kế toán tổng hợp',
                     path: '/general-accounting',
                     menuChild: [],
                   },
                   {
-                    title: 'Budget Management',
+                    title: 'Quản lý ngân sách',
                     path: '/budget-management',
                     menuChild: [],
                   },
@@ -401,66 +401,66 @@ const ENScript = {
             ],
           },
           {
-            title: 'Sales Solution',
+            title: 'Giải pháp Bán hàng',
             path: '',
             menuChild: [
               {
-                title: 'Sales Management',
+                title: 'Quản lý bán hàng',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Promotion & Quotation Management',
+                    title: 'Quản lý khuyến mại & báo giá',
                     path: '/promotion-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Customer Management',
+                    title: 'Quản lý khách hàng',
                     path: '/customer-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Contract Management',
+                    title: 'Quản lý hợp đồng',
                     path: '/contract-management',
                     menuChild: [],
                   },
                   {
-                    title: 'POS System',
+                    title: 'Hệ thống POS',
                     path: '/pos-system',
                     menuChild: [],
                   },
                   {
-                    title: 'Dealer & Wholesale Management',
+                    title: 'Quản lý đại lý & bán sỉ',
                     path: '/dealer-wholesale-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Sales Team Management',
+                    title: 'Quản lý đội nhóm kinh doanh',
                     path: '/sales-team-management',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Customer Care',
+                title: 'Chăm sóc khách hàng',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Customer Relationship Management',
+                    title: 'Quản lý quan hệ khách hàng',
                     path: '/crm-customer-relationship-management',
                     menuChild: [],
                   },
                   {
-                    title: 'Helpdesk - After Sales Care',
+                    title: 'Helpdesk - Chăm sóc sau bán',
                     path: '/helpdesk-after-sale-care',
                     menuChild: [],
                   },
                   {
-                    title: 'Maintenance & Warranty',
+                    title: 'Bảo trì & Bảo hành',
                     path: '/maintenance-warranty',
                     menuChild: [],
                   },
                   {
-                    title: 'Customer Surveys',
+                    title: 'Khảo sát khách hàng',
                     path: '/customer-surveys',
                     menuChild: [],
                   },
@@ -469,73 +469,73 @@ const ENScript = {
             ],
           },
           {
-            title: 'Human Resource Management Solution',
+            title: 'Giải pháp Quản lý nhân sự',
             path: '',
             menuChild: [
               {
-                title: 'Organization & Individual Development',
+                title: 'Phát triển tổ chức & Cá nhân',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Organizational Chart',
+                    title: 'Sơ đồ tổ chức',
                     path: '/organizational-chart',
                     menuChild: [],
                   },
                   {
-                    title: 'Performance Evaluation',
+                    title: 'Đánh giá hiệu suất',
                     path: '/assess',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Recruitment & Onboarding',
+                title: 'Tuyển dụng & Gia nhập',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Recruitment',
+                    title: 'Tuyển dụng',
                     path: '/recruit',
                     menuChild: [],
                   },
                   {
-                    title: 'Onboarding Process',
+                    title: 'Quy trình gia nhập',
                     path: '/joining-process',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'HR Service Operation',
+                title: 'Vận hành dịch vụ nhân sự',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Employee Profiles',
+                    title: 'Hồ sơ nhân viên',
                     path: '/employee_profiles',
                     menuChild: [],
                   },
                   {
-                    title: 'Contract Management',
+                    title: 'Quản lý hợp đồng',
                     path: '/qlhd',
                     menuChild: [],
                   },
                   {
-                    title: 'Timekeeping',
+                    title: 'Chấm công',
                     path: '/timekeeping',
                     menuChild: [],
                   },
                   {
-                    title: 'Leave & Overtime',
+                    title: 'Nghỉ phép & Tăng ca',
                     path: '/vacation-overtime',
                     menuChild: [],
                   },
 
                   {
-                    title: 'Payroll',
+                    title: 'Tính lương',
                     path: '/payroll',
                     menuChild: [],
                   },
                   {
-                    title: 'Tax & Insurance',
+                    title: 'Thuế & Bảo hiểm',
                     path: '/tax-and-insurance',
                     menuChild: [],
                   },
@@ -544,46 +544,46 @@ const ENScript = {
             ],
           },
           {
-            title: 'Connectivity Solution',
+            title: 'Giải pháp Kết nối',
             path: '',
             menuChild: [
               {
-                title: 'Operational Connectivity',
+                title: 'Kết nối vận hành',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Bank Connectivity',
+                    title: 'Kết nối ngân hàng',
                     path: '/bank-connection',
                     menuChild: [],
                   },
                   {
-                    title: 'Recruitment Connectivity',
+                    title: 'Kết nối tuyển dụng',
                     path: '/recruitment-connection',
                     menuChild: [],
                   },
                   {
-                    title: 'E-learning Connectivity',
+                    title: 'Kết nối Đào tạo trực tuyến',
                     path: '/elearning-connection',
                     menuChild: [],
                   },
                 ],
               },
               {
-                title: 'Utility Connectivity',
+                title: 'Kết nối tiện ích',
                 path: '/your-next-gen',
                 menuChild: [
                   {
-                    title: 'Digital Signature',
+                    title: 'Chữ ký số',
                     path: '/e-sign',
                     menuChild: [],
                   },
                   {
-                    title: 'E-commerce Platform',
+                    title: 'Sàn Thương mại Điện tử',
                     path: '/e-commerce',
                     menuChild: [],
                   },
                   {
-                    title: 'Shipping Unit',
+                    title: 'Đơn vị vận chuyển',
                     path: '/shipping-unit',
                     menuChild: [],
                   },
@@ -1789,14 +1789,14 @@ const ENScript = {
             name: 'SOC SERVICE',
             code: 'PG0004SE00001',
             image: '/images/SECURE_banner_page4_1.png',
-            description: "Your Digital Guardian for 24/7 Protection",
+            description: 'Your Digital Guardian for 24/7 Protection',
           },
           components: [],
         },
         section_2: {
           section: {
             id: 2,
-            name: "Cybersecurity Operation Center (SOC) is a solution that monitoring & detecting cybersecurity threats and solving shortcomings in the system.",
+            name: 'Cybersecurity Operation Center (SOC) is a solution that monitoring & detecting cybersecurity threats and solving shortcomings in the system.',
             code: 'PG0004SE00002',
             image: '',
             description: '',
@@ -1810,7 +1810,7 @@ const ENScript = {
             code: 'PG0004_1SE00003',
             image: '/images/SEC_4_1_sec3.png',
             description:
-              "Every company wants to invest in building a secure room with secure network to facilitate, as confidential data needs processing. However, not everyone can afford to build such a SOC system, due to high risk in investment.",
+              'Every company wants to invest in building a secure room with secure network to facilitate, as confidential data needs processing. However, not everyone can afford to build such a SOC system, due to high risk in investment.',
           },
           components: [],
         },
@@ -1879,7 +1879,7 @@ const ENScript = {
               code: 'PG0004_1SE00005CN000001',
               title: '24/7 Threat Monitoring',
               description:
-                "NCS security team monitor your IT system 24/7 throughout 365 days to detect incidents early and promptly prevent possible risks.",
+                'NCS security team monitor your IT system 24/7 throughout 365 days to detect incidents early and promptly prevent possible risks.',
               slug: '',
               content: '',
               image: '/images/clock.png',
@@ -1891,7 +1891,8 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_1SE00005CN000002',
               title: 'The pioneers are recognized',
-              description: " We are confident with the system of experienced and closely connected personnel, in which the Red Team of NGS is recognized as the No. 1 in Vietnam market.",
+              description:
+                ' We are confident with the system of experienced and closely connected personnel, in which the Red Team of NGS is recognized as the No. 1 in Vietnam market.',
               slug: '',
               content: '',
               image: '/images/human.png',
@@ -1917,7 +1918,7 @@ const ENScript = {
               code: 'PG0004_1SE00005CN000004',
               title: ' Provide comprehensive network risk service support',
               description:
-                " We are committed to SOC service built on the international standard NIST network security framework.",
+                ' We are committed to SOC service built on the international standard NIST network security framework.',
               slug: '',
               content: '',
               image: '/images/protect.png',
@@ -2143,13 +2144,13 @@ const ENScript = {
         section_8: {
           section: {
             id: 8,
-            name: "Let us connect with you and bring you the first experiences.",
+            name: 'Let us connect with you and bring you the first experiences.',
             code: 'PG0004_1SE00008',
             image: '',
             description: '',
           },
           components: [],
-        }
+        },
       },
       penetration_testing: {
         title: 'Penetration Testing',
@@ -2168,7 +2169,7 @@ const ENScript = {
             name: 'PENETRATION TESTING SERVICE',
             code: 'PG0004_2SE00001',
             image: '/images/PT_banner.png',
-            description: " Secure Your Digital Assets with Our Penetration Testing Service",
+            description: ' Secure Your Digital Assets with Our Penetration Testing Service',
           },
           components: [],
         },
@@ -2189,7 +2190,7 @@ const ENScript = {
             code: 'PG0004_2SE00002',
             image: '/images/SECURE_challenge3.png',
             description:
-              "Your business needs security most when: Making significant infrastructure modifications; Introduce new products and services; ... However, the cost of implementing high-level system security such as SOC is high compared to small and medium enterprises, so the system/application penetration testing service appears. Pentesting ensures advanced attacks by security professionals in a shorter time frame, at a lower cost than SOC, while still being effective.",
+              'Your business needs security most when: Making significant infrastructure modifications; Introduce new products and services; ... However, the cost of implementing high-level system security such as SOC is high compared to small and medium enterprises, so the system/application penetration testing service appears. Pentesting ensures advanced attacks by security professionals in a shorter time frame, at a lower cost than SOC, while still being effective.',
           },
           components: [],
         },
@@ -2208,7 +2209,7 @@ const ENScript = {
               code: 'PG0004_2SE00004CN000001',
               title: 'Network testing',
               description:
-                " Identify security holes and perform exploits to assess the impact on the network environment.",
+                ' Identify security holes and perform exploits to assess the impact on the network environment.',
               slug: '',
               content: '',
               image: '',
@@ -2220,8 +2221,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00004CN000002',
               title: 'Test the server system',
-              description:
-                "Identify security holes and perform exploits to assess the impact on the servicers.",
+              description: 'Identify security holes and perform exploits to assess the impact on the servicers.',
               slug: '',
               content: '',
               image: '',
@@ -2234,7 +2234,7 @@ const ENScript = {
               code: 'PG0004_2SE00004CN000003',
               title: 'Web Application Testing',
               description:
-                " Identify security vulnerabilities and perform exploits to assess the impact on Web applications.",
+                ' Identify security vulnerabilities and perform exploits to assess the impact on Web applications.',
               slug: '',
               content: '',
               image: '',
@@ -2246,8 +2246,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00004CN000004',
               title: 'Testing Mobile App applications',
-              description:
-                "Identify security holes and perform exploits to assess the impact on Mobile applications.",
+              description: 'Identify security holes and perform exploits to assess the impact on Mobile applications.',
               slug: '',
               content: '',
               image: '',
@@ -2260,7 +2259,7 @@ const ENScript = {
               code: 'PG0004_2SE00004CN000005',
               title: 'ATM system testing',
               description:
-                "Identify security holes and perform exploits to assess the impact on the ATM system and related components.",
+                'Identify security holes and perform exploits to assess the impact on the ATM system and related components.',
               slug: '',
               content: '',
               image: '',
@@ -2283,7 +2282,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00005CN000001',
               title: 'White box',
-              description: "Refer to the category.Application source code security assessment.",
+              description: 'Refer to the category.Application source code security assessment.',
               slug: '',
               content: '',
               image: '/images/grey.png',
@@ -2295,7 +2294,8 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00005CN000002',
               title: 'Black box',
-              description: "The evaluator is provided with a part of information related to the evaluated object (accounts with privileges like normal users, ...).",
+              description:
+                'The evaluator is provided with a part of information related to the evaluated object (accounts with privileges like normal users, ...).',
               slug: '',
               content: '',
               image: '/images/grey.png',
@@ -2307,7 +2307,8 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00005CN000003',
               title: 'Gray box',
-              description: "The evaluator must not provide information related to the evaluator, acting as an external attacker.",
+              description:
+                'The evaluator must not provide information related to the evaluator, acting as an external attacker.',
               slug: '',
               content: '',
               image: '/images/grey.png',
@@ -2319,7 +2320,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_2SE00005CN000004',
               title: ' Exploiting 0-day vulnerabilities',
-              description: "Exploiting 0-day vulnerabilities that exist in 3rd parties.",
+              description: 'Exploiting 0-day vulnerabilities that exist in 3rd parties.',
               slug: '',
               content: '',
               image: '/images/grey.png',
@@ -2431,7 +2432,7 @@ const ENScript = {
             description: '',
           },
           components: [],
-        }
+        },
       },
       incident_response: {
         title: 'Incident Response',
@@ -2457,11 +2458,11 @@ const ENScript = {
         section_2: {
           section: {
             id: 1,
-            name: "Implementing a response plan is the key to completely preventing a breach for your business.",
+            name: 'Implementing a response plan is the key to completely preventing a breach for your business.',
             code: 'PG004.5SE00002',
             image: '',
             description:
-              "The Cybersecurity Incident Response Service aims to conduct a digital investigation – Digital Forensic to identify factors related to the incident, including: // * Exploited security holes// * Server systems/PCs/user accounts have been affected// * The affected account data/information// * Malicious files, attack tools have been used// * Attack flow of attacker",
+              'The Cybersecurity Incident Response Service aims to conduct a digital investigation – Digital Forensic to identify factors related to the incident, including: // * Exploited security holes// * Server systems/PCs/user accounts have been affected// * The affected account data/information// * Malicious files, attack tools have been used// * Attack flow of attacker',
           },
           components: [],
         },
@@ -2491,7 +2492,7 @@ const ENScript = {
               code: 'PG004.5SE00004CN000001',
               title: 'Implement the incident response process in stages',
               description:
-                "Implement the incident response process in stages: Identification; Containment; Remediation; Recovery; Lessons Learned.",
+                'Implement the incident response process in stages: Identification; Containment; Remediation; Recovery; Lessons Learned.',
               slug: '',
               content: '',
               image: '',
@@ -2504,7 +2505,7 @@ const ENScript = {
               code: 'PG004.5SE00004CN000002',
               title: 'Detailed report',
               description:
-                " - Detailed report of detected security issues, including evidence of signs of being compromised.",
+                ' - Detailed report of detected security issues, including evidence of signs of being compromised.',
               slug: '',
               content: '',
               image: '',
@@ -2515,9 +2516,9 @@ const ENScript = {
               id: 3,
               language: 'en',
               code: 'PG004.5SE00004CN000003',
-              title: "Proposing a remediation plan",
+              title: 'Proposing a remediation plan',
               description:
-                "Proposing a plan to radically overcome or reduce risks, a plan to temporarily remedy the found security problems.",
+                'Proposing a plan to radically overcome or reduce risks, a plan to temporarily remedy the found security problems.',
               slug: '',
               content: '',
               image: '',
@@ -2541,7 +2542,7 @@ const ENScript = {
               code: 'PG004.5SE00005CN000001',
               title: 'Leading technology',
               description:
-                "With a team of experienced professionals, NGS is confident to provide leading modern technology for your business.",
+                'With a team of experienced professionals, NGS is confident to provide leading modern technology for your business.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2554,7 +2555,7 @@ const ENScript = {
               code: 'PG004.5SE00005CN000002',
               title: 'Fast processing',
               description:
-                "We understand that time is the key to being committed to preventing incidents, so NGS is confident to handle it quickly for your organization.",
+                'We understand that time is the key to being committed to preventing incidents, so NGS is confident to handle it quickly for your organization.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2567,7 +2568,7 @@ const ENScript = {
               code: 'PG004.5SE00005CN000003',
               title: 'Promised - Details',
               description:
-                "At the same time, we affirm that the NGS implementation method and results always ensure the most detailed steps and details for your business.",
+                'At the same time, we affirm that the NGS implementation method and results always ensure the most detailed steps and details for your business.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2627,7 +2628,7 @@ const ENScript = {
             name: 'COMPROMISE ASSESSMENT SERVICE',
             code: 'PG0004_3SE00001',
             image: '/images/CA_banner.png',
-            description: "Uncover Hidden Threats with Our Compromise Assessment Service",
+            description: 'Uncover Hidden Threats with Our Compromise Assessment Service',
           },
           components: [],
         },
@@ -2638,7 +2639,7 @@ const ENScript = {
             code: 'PG0004_3SE00002',
             image: '/images/SEC_banner2_page4_3.png',
             description:
-              "Performing a breach assessment has proven to be a valuable method for assessing the adequacy of mechanisms to detect and prevent it. This assessment assists in detecting past and ongoing attack activities, facilitating the implementation of the most effective countermeasures. NGS is always confident to accompany your business on the path of system protection.",
+              'Performing a breach assessment has proven to be a valuable method for assessing the adequacy of mechanisms to detect and prevent it. This assessment assists in detecting past and ongoing attack activities, facilitating the implementation of the most effective countermeasures. NGS is always confident to accompany your business on the path of system protection.',
           },
           components: [],
         },
@@ -2740,7 +2741,8 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_3SE00003CN000001',
               title: '',
-              content: " Initial Consultation: Discussing with customer to understand your concerns, objectives and any security incidents",
+              content:
+                ' Initial Consultation: Discussing with customer to understand your concerns, objectives and any security incidents',
               slug: '',
               description: '',
               image: '',
@@ -2753,7 +2755,7 @@ const ENScript = {
               code: 'PG0004_3SE00003CN000002',
               title: '',
               content:
-                "Preparation: Gathering information on the network, infrastructure, system architecture and current security measures.",
+                'Preparation: Gathering information on the network, infrastructure, system architecture and current security measures.',
               slug: '',
               description: '',
               image: '',
@@ -2766,7 +2768,7 @@ const ENScript = {
               code: 'PG0004_3SE00003CN000003',
               title: 'Thấu hiểu và nắm bắt các mục tiêu',
               content:
-                "Compromise Assessment Process:// - Data Collection: Gathering logs, event, traffic data.// - IoC- Analysis: Examing such collected data for known signs of compromise.// - Endpoint and System Analysis: Inspecting endpoints and system for suspicious activities.// - Incident Investigation: Conducting in-depth investigation to determine the extension and impact of the breaches.// - Analysis: Identifying vulnerabilities and weaknesses.",
+                'Compromise Assessment Process:// - Data Collection: Gathering logs, event, traffic data.// - IoC- Analysis: Examing such collected data for known signs of compromise.// - Endpoint and System Analysis: Inspecting endpoints and system for suspicious activities.// - Incident Investigation: Conducting in-depth investigation to determine the extension and impact of the breaches.// - Analysis: Identifying vulnerabilities and weaknesses.',
               slug: '',
               description: '',
               image: '',
@@ -2778,7 +2780,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_3SE00003CN000004',
               title: 'Thấu hiểu và nắm bắt các mục tiêu',
-              content: "Reporting: Providing a detailed report summarizing all the findings.",
+              content: 'Reporting: Providing a detailed report summarizing all the findings.',
               slug: '',
               description: '',
               image: '',
@@ -2801,7 +2803,7 @@ const ENScript = {
               language: 'en',
               code: 'PG0004_3SE00005CN000001',
               title: 'Expert Analysis ',
-              description: "Highly skilled cybersecurity professionals typically conduct compromise assessments.",
+              description: 'Highly skilled cybersecurity professionals typically conduct compromise assessments.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2814,7 +2816,7 @@ const ENScript = {
               code: 'PG0004_3SE00005CN000002',
               title: 'Data Security Assurance',
               description:
-                "By using our compromise assessment service, your organizations can gain confidence in the integrity and security of their data.",
+                'By using our compromise assessment service, your organizations can gain confidence in the integrity and security of their data.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2827,7 +2829,7 @@ const ENScript = {
               code: 'PG0004_3SE00005CN000003',
               title: 'Proactive Threat Detection',
               description:
-                " Compromise assessments focus on identifying threats that have bypassed traditional security defenses. We commit to use various techniques and tools to define indicatos of compromising (IoCs) within your organization network traffic and endpoints.",
+                ' Compromise assessments focus on identifying threats that have bypassed traditional security defenses. We commit to use various techniques and tools to define indicatos of compromising (IoCs) within your organization network traffic and endpoints.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -2947,7 +2949,7 @@ const ENScript = {
             code: 'TPG004.7SE00001',
             image: '/images/SYB_MAsection1.png',
             description:
-              "We provide a strategy and companion to protect your organization against the growing malware threat.",
+              'We provide a strategy and companion to protect your organization against the growing malware threat.',
           },
           components: [],
         },
@@ -2958,7 +2960,7 @@ const ENScript = {
             code: 'TPG004.7SE00001',
             image: '',
             description:
-              "Malware analysis is the process of detecting and reducing potential threats in a website, application, or server. Deploying this service aims to: Identify malicious code functions, assess the nature and extent of the threat. Give identification - IoC of malicious code to serve the scanning process, detect infected systems. Finally, provide solutions to fix, remove malicious code, and minimize damage to infected systems.",
+              'Malware analysis is the process of detecting and reducing potential threats in a website, application, or server. Deploying this service aims to: Identify malicious code functions, assess the nature and extent of the threat. Give identification - IoC of malicious code to serve the scanning process, detect infected systems. Finally, provide solutions to fix, remove malicious code, and minimize damage to infected systems.',
           },
           components: [],
         },
@@ -2969,7 +2971,7 @@ const ENScript = {
             code: 'TPG004.7SE00003',
             image: '/images/SYB_MAsection3.png',
             description:
-              "Different hackers using different techniques will seek to target individuals or organizations of different sizes, industries and locations. With the development of technology, malicious codes are becoming more and more sophisticated, which is a real threat, especially for businesses that do not have the capacity to respond. So NGS is here to troubleshoot your business, let us be with you.",
+              'Different hackers using different techniques will seek to target individuals or organizations of different sizes, industries and locations. With the development of technology, malicious codes are becoming more and more sophisticated, which is a real threat, especially for businesses that do not have the capacity to respond. So NGS is here to troubleshoot your business, let us be with you.',
           },
           components: [
             {
@@ -3001,7 +3003,7 @@ const ENScript = {
               code: 'PG004.7SE00004CN000001',
               title: 'Static analysis solution',
               description:
-                "Use specialized tools to analyze, decompile code, debug malicious code samples on the emulator environment.",
+                'Use specialized tools to analyze, decompile code, debug malicious code samples on the emulator environment.',
               slug: '',
               content: '',
               image: '',
@@ -3014,7 +3016,7 @@ const ENScript = {
               code: 'PG004.7SE00004CN000002',
               title: 'Dynamic analysis solution (behavior analysis)',
               description:
-                "Executing malicious files in a safe simulation environment (sandbox) to determine the behavior generated by malicious code.",
+                'Executing malicious files in a safe simulation environment (sandbox) to determine the behavior generated by malicious code.',
               slug: '',
               content: '',
               image: '',
@@ -3027,14 +3029,14 @@ const ENScript = {
               code: 'PG004.7SE00004CN000003',
               title: 'Comprehensive reporting services and providing remediation methods',
               description:
-                "Detailed reporting service and offer a complete remedial or damage reduction plan for infected systems.",
+                'Detailed reporting service and offer a complete remedial or damage reduction plan for infected systems.',
               slug: '',
               content: '',
               image: '',
               video: '',
               thumbnail: '',
             },
-          ]
+          ],
         },
         section_5: {
           section: {
@@ -3051,7 +3053,7 @@ const ENScript = {
               code: 'PG004.7SE00005CN000001',
               title: 'Comprehensive analysis',
               description:
-                "We understand the threat of malicious code, so NGS is committed to comprehensive analysis of all information related to your business.",
+                'We understand the threat of malicious code, so NGS is committed to comprehensive analysis of all information related to your business.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3064,7 +3066,7 @@ const ENScript = {
               code: 'PG004.7SE00005CN000002',
               title: 'Remove completely',
               description:
-                "NGS will be a companion to remove potential threats, helping customers safely with their own system.",
+                'NGS will be a companion to remove potential threats, helping customers safely with their own system.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3077,14 +3079,14 @@ const ENScript = {
               code: 'PG004.7SE00005CN000003',
               title: 'Companion expert',
               description:
-                "NGS is confident that we have a team of experienced experts and ensures adequate factors to protect your business.",
+                'NGS is confident that we have a team of experienced experts and ensures adequate factors to protect your business.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
               video: '',
               thumbnail: '',
             },
-          ]
+          ],
         },
         section_6: {
           section: {
@@ -3226,7 +3228,7 @@ const ENScript = {
               thumbnail: '',
             },
           ],
-        }
+        },
       },
       OT_ICS_security: {
         title: 'OT/ICS Security',
@@ -3241,15 +3243,15 @@ const ENScript = {
         section_1: {
           section: {
             id: 1,
-            name: 'Dịch vụ kiểm thử tấn công xâm nhập chuyên sâu hạ tầng Công nghệ thông tin',
+            name: 'OT/ICS SECURITY',
             code: 'TPG004.9SE00001',
             image: '/images/SYB_OIS_Section1.png',
-            description: 'Giải phóng sức mạnh bằng phòng thủ chủ động',
+            description: "We protect your critical infrastructure and industrial processes.",
           },
           components: [
             {
               id: 1,
-              language: 'vi',
+              language: 'en',
               code: 'PG004.9SE00001CN000001',
               title: '',
               description: '',
@@ -3268,7 +3270,7 @@ const ENScript = {
             code: 'TPG004.9SE00002',
             image: '',
             description:
-              "According to research by Strategy Analytics, the majority of organizations (75%) consider ICS security a top priority. ICS helps industrial enterprises know the true security state of their environments and can conduct effective security management at scale. Industrial network security systems will increasingly increase efficiency, improve and help you manage from information to time for your business.",
+              'According to research by Strategy Analytics, the majority of organizations (75%) consider ICS security a top priority. ICS helps industrial enterprises know the true security state of their environments and can conduct effective security management at scale. Industrial network security systems will increasingly increase efficiency, improve and help you manage from information to time for your business.',
           },
           components: [
             {
@@ -3298,8 +3300,10 @@ const ENScript = {
               id: 1,
               language: 'en',
               code: 'PG004.9SE00003CN000001',
-              title: "Understand the importance of applying OT's ISC to your production description. In fact, there are many difficulties that businesses face, for example: Sensitivity in OT environment requires many tools to be passive. Having the right tooling and network architecture implementation is critical for timely threat detection,... Despite knowing these difficulties, not all organizations have the capacity and resources to solve this problem.",
-              description: 'In fact, there are many difficulties that businesses encounter, for example: "Sensitivity in the OT environment requires many tools to be passive. Deploying the right network architecture and tools is critical for timely threat detection, ...”. Even though we know these difficulties, not all organizations have enough capacity and resources to solve this problem',
+              title:
+                "Understand the importance of applying OT's ISC to your production description. In fact, there are many difficulties that businesses face, for example: Sensitivity in OT environment requires many tools to be passive. Having the right tooling and network architecture implementation is critical for timely threat detection,... Despite knowing these difficulties, not all organizations have the capacity and resources to solve this problem.",
+              description:
+                'In fact, there are many difficulties that businesses encounter, for example: "Sensitivity in the OT environment requires many tools to be passive. Deploying the right network architecture and tools is critical for timely threat detection, ...”. Even though we know these difficulties, not all organizations have enough capacity and resources to solve this problem',
               slug: '',
               content: '',
               image: '/images/SYB_OIS_Section3.png',
@@ -3383,7 +3387,7 @@ const ENScript = {
               code: 'PG004.9SE00004CN000006',
               title: 'Network security assessment service',
               description:
-                "Direct system survey, using questionnaires, interviewing specialized personnel on the customer side, deploying specialized solutions to collect necessary information, thereby analyzing, assess the security of the system without affecting the normal operation of the system.",
+                'Direct system survey, using questionnaires, interviewing specialized personnel on the customer side, deploying specialized solutions to collect necessary information, thereby analyzing, assess the security of the system without affecting the normal operation of the system.',
               slug: 'service-and-support',
               content: '',
               image: '',
@@ -3394,7 +3398,8 @@ const ENScript = {
               id: 7,
               language: 'en',
               code: 'PG004.9SE00004CN000007',
-              title: ' Report in detail on the current state of industrial network security and propose appropriate solutions.',
+              title:
+                ' Report in detail on the current state of industrial network security and propose appropriate solutions.',
               description: '',
               slug: 'report',
               content: '',
@@ -3419,7 +3424,7 @@ const ENScript = {
               code: 'PG004.9SE00005CN000001',
               title: 'Enhance capacity',
               description:
-                "NGS is committed to conducting training to improve awareness and capacity for the leadership team and staff directly operating the system.",
+                'NGS is committed to conducting training to improve awareness and capacity for the leadership team and staff directly operating the system.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3432,7 +3437,7 @@ const ENScript = {
               code: 'PG004.9SE00005CN000002',
               title: 'No Interruption',
               description:
-                "Implementing a range of mitigation actions, from modest to stringent, to ensure even vulnerable OT/ICS systems can continue to operate securely.",
+                'Implementing a range of mitigation actions, from modest to stringent, to ensure even vulnerable OT/ICS systems can continue to operate securely.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3445,7 +3450,7 @@ const ENScript = {
               code: 'PG004.9SE00005CN000003',
               title: 'Industry leading experts',
               description:
-                "NGS experts and staff fully meet the requirements of experience, capacity and certifications to implement ISC for your business.",
+                'NGS experts and staff fully meet the requirements of experience, capacity and certifications to implement ISC for your business.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3636,7 +3641,7 @@ const ENScript = {
             name: 'REDTEAMING SERVICE',
             code: 'TPG004.8SE00001',
             image: '/images/RT_banner.png',
-            description: "Unleash the Power of Proactive Defense",
+            description: 'Unleash the Power of Proactive Defense',
           },
           components: [
             {
@@ -3718,7 +3723,7 @@ const ENScript = {
               code: 'PG004.8SE00003CN000003',
               title: 'Overlooking security vulnerabilities',
               description:
-                "Wish to uncover remaining security vulnerabilities through regular security assessments and automated vulnerability scanning mechanisms.",
+                'Wish to uncover remaining security vulnerabilities through regular security assessments and automated vulnerability scanning mechanisms.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3757,7 +3762,7 @@ const ENScript = {
               description: '',
               slug: '',
               content:
-                " We shall provide detailed reporting service from overview to implementation approach and detailed results.",
+                ' We shall provide detailed reporting service from overview to implementation approach and detailed results.',
               image: '',
               video: '',
               thumbnail: '',
@@ -3770,7 +3775,7 @@ const ENScript = {
               description: '',
               slug: '',
               content:
-                "Finally, NGS provide solutions to overcome the weaknesses and security holes that are exploited during the service implementation, along with recommendations to improve the ability to defend and monitor Information Security.",
+                'Finally, NGS provide solutions to overcome the weaknesses and security holes that are exploited during the service implementation, along with recommendations to improve the ability to defend and monitor Information Security.',
               image: '',
               video: '',
               thumbnail: '',
@@ -3791,8 +3796,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.8SE00005CN000001',
               title: 'Expert Intrusion Simulation',
-              description:
-                "Unleash our elite team to simulate real-world attacks and pinpoint weaknesses.",
+              description: 'Unleash our elite team to simulate real-world attacks and pinpoint weaknesses.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3804,8 +3808,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.8SE00005CN000002',
               title: 'Confidentiality Assured',
-              description:
-                "Rest easy knowing our discreet approach maintains the integrity of your operations.",
+              description: 'Rest easy knowing our discreet approach maintains the integrity of your operations.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3817,7 +3820,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.8SE00005CN000003',
               title: 'Holistic Approach',
-              description: "Evaluate people, processes, and technology to ensure a comprehensive defense.",
+              description: 'Evaluate people, processes, and technology to ensure a comprehensive defense.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -3950,7 +3953,7 @@ const ENScript = {
             name: 'SYSTEM INTEGRATION SERVICE',
             code: 'PG004.6SE00001',
             image: '/images/SYB_SI_Banner.png',
-            description: "We work with you to create new business values and improve IT infrastructure.",
+            description: 'We work with you to create new business values and improve IT infrastructure.',
           },
           components: [],
         },
@@ -3961,7 +3964,7 @@ const ENScript = {
             code: 'PG004.6SE00002',
             image: '',
             description:
-              "Information security solution integration is a service to support customers during the digital transformation period when they want to achieve greater flexibility and operational efficiency. More detailed goals this service helps your organizations with a number of things such as: Improve information flow; Have a higher quality of business operations (based on cost savings, improve productivity), Improve operational capacity through timely information, ...",
+              'Information security solution integration is a service to support customers during the digital transformation period when they want to achieve greater flexibility and operational efficiency. More detailed goals this service helps your organizations with a number of things such as: Improve information flow; Have a higher quality of business operations (based on cost savings, improve productivity), Improve operational capacity through timely information, ...',
           },
           components: [],
         },
@@ -3972,7 +3975,7 @@ const ENScript = {
             code: 'PG004.6SE00003',
             image: '/images/smile_man.png',
             description:
-              "Harnessing the power of technology requires your business to overcome complex system integration challenges, both within your organization and with external partners, suppliers and customers. But not all businesses are capable of doing that, then your organization needs separate services or comprehensive solutions and with experts. That helps companies manage the complexity of technology and solve business challenges.",
+              'Harnessing the power of technology requires your business to overcome complex system integration challenges, both within your organization and with external partners, suppliers and customers. But not all businesses are capable of doing that, then your organization needs separate services or comprehensive solutions and with experts. That helps companies manage the complexity of technology and solve business challenges.',
           },
           components: [],
         },
@@ -4110,7 +4113,7 @@ const ENScript = {
               code: 'PG004.6SE00005CN000001',
               title: 'Safe Process',
               description:
-                "We understand the difficulty in integrating technology and business, so NGS always wants to bring customers a safe experience with its solutions.",
+                'We understand the difficulty in integrating technology and business, so NGS always wants to bring customers a safe experience with its solutions.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -4123,7 +4126,7 @@ const ENScript = {
               code: 'PG004.6SE00005CN000002',
               title: 'Diverse solutions',
               description:
-                "NGS offers customers a variety of solutions to choose from in order to harness the power of technology.",
+                'NGS offers customers a variety of solutions to choose from in order to harness the power of technology.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -4136,7 +4139,7 @@ const ENScript = {
               code: 'PG004.6SE00005CN000003',
               title: 'Expertise guaranteed',
               description:
-                "NGS expert team always trains and develops continuously so that customers can use our solutions with complete peace of mind.",
+                'NGS expert team always trains and develops continuously so that customers can use our solutions with complete peace of mind.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -4458,8 +4461,7 @@ const ENScript = {
             name: 'THREAT INTELLIGENCE',
             code: 'PG004.4SE00001',
             image: '/images/SYB_TI_Banner.png',
-            description:
-              "Enhance your security measures to counter potential threats lurking within your environment.",
+            description: 'Enhance your security measures to counter potential threats lurking within your environment.',
           },
           components: [],
         },
@@ -4480,7 +4482,7 @@ const ENScript = {
             code: 'PG004.4SE00003',
             image: '/images/hand.png',
             description:
-              "Companies install a multitude of MDR, SIEM, SOAR tools and streamline and automate the threat management process based on predefined rules. In fact, organizations need to use advanced security analytics and cyber threat intelligence to truly protect resources against the most catastrophic cyber threats. But not all businesses can afford to do this because attacks are increasingly modern and difficult to detect.",
+              'Companies install a multitude of MDR, SIEM, SOAR tools and streamline and automate the threat management process based on predefined rules. In fact, organizations need to use advanced security analytics and cyber threat intelligence to truly protect resources against the most catastrophic cyber threats. But not all businesses can afford to do this because attacks are increasingly modern and difficult to detect.',
           },
           components: [],
         },
@@ -4499,7 +4501,7 @@ const ENScript = {
               code: 'PG004.4SE00004CN000001',
               title: 'Provide information about stolen, compromised/leaked data',
               description:
-                "On forums, underground forums, black markets, deep/dark web, social networks, data sharing sites, source code repository…related to customers.",
+                'On forums, underground forums, black markets, deep/dark web, social networks, data sharing sites, source code repository…related to customers.',
               slug: 'solution',
               content: '',
               image: '',
@@ -4548,7 +4550,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.4SE00004CN000005',
               title:
-                "Provide general information about new threats, malicious code, new security incidents occurring in the world",
+                'Provide general information about new threats, malicious code, new security incidents occurring in the world',
               description: '',
               slug: 'service-and-support',
               content: '',
@@ -4573,7 +4575,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.4SE00004CN000007',
               title:
-                "Accessible through a web application interface, customers are provided with an account to access, or via API/STIX/TAXII for integration into customer defense systems",
+                'Accessible through a web application interface, customers are provided with an account to access, or via API/STIX/TAXII for integration into customer defense systems',
               description: '',
               slug: 'service-and-support',
               content: '',
@@ -4597,7 +4599,7 @@ const ENScript = {
               language: 'en',
               code: 'PG004.4SE00005CN000001',
               title: 'Reveal threats',
-              description: "Discover threat activity in any language, format, or platform.",
+              description: 'Discover threat activity in any language, format, or platform.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -4610,7 +4612,7 @@ const ENScript = {
               code: 'PG004.4SE00005CN000002',
               title: 'Streamline workflow',
               description:
-                "Announced security holes or leaked sensitive data related to customers will be updated and sent directly to the customer contact point.",
+                'Announced security holes or leaked sensitive data related to customers will be updated and sent directly to the customer contact point.',
               slug: '',
               content: '',
               image: '/images/card_key.png',
@@ -4712,7 +4714,363 @@ const ENScript = {
           },
           components: [],
         },
-      }
+      },
+    },
+    service: {
+      applicationDevelopmentModernization: {
+        title: 'Application development & modernization',
+        titleSection: {
+          section_1: '',
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_7: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+      },
+      applicationManagementServices: {
+        title: 'Application Management Services',
+        titleSection: {
+          section_1: '',
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_7: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+      },
+      contactCenter: {
+        title: 'Contact Center',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_7: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+      },
+      coreAirline: {
+        title: 'Core Airline',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_6: '',
+          section_7: '',
+          section_9: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+        section_9: {},
+      },
+      coreBanking: {
+        title: 'Core Banking',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_7: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      coreInsurance: {
+        title: 'Core Insurance',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      coreOilGas: {
+        title: 'Core Oil & Gas',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      customerDataPlatform: {
+        title: 'Customer Data Platform',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_7: '',
+          section_9: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+        section_9: {},
+      },
+      customerRelationshipManagement: {
+        title: 'Customer Relationship Management',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      dataAndAnalysis: {
+        title: 'Data And Analysis',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_5: '',
+          section_7: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      digitalStrategyPlanning: {
+        title: 'Digital Strategy Planning',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_7: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      enterpriseResourcePlanning: {
+        title: 'Enterprise Resource Planning',
+        titleSection: {
+          section_2: '',
+          section_4: '',
+          section_5: '',
+          section_6: '',
+          section_8: '',
+          section_9: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+        section_9: {},
+      },
+      extendedPlanningAndAnalysis: {
+        title: 'Extended Planning and Analysis',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      financialManagement: {
+        title: 'Financial Management',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      humanCapitalManagement: {
+        title: 'Human Capital Management',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      onlineMarketingPlatform: {},
+      resourceFulfillmentByCompetencies: {
+        title: 'Resource Fullfillment by Competencies',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_7: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+      },
+      smallAndMidsizeEnterprises: {
+        title: 'Small and Midsize Enterprises',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      spendManagement: {
+        title: 'Spend Management',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
+      supplyChainManagement: {
+        title: 'Supply Chain Management',
+        titleSection: {
+          section_2: '',
+          section_3: '',
+          section_4: '',
+          section_5: '',
+          section_7: '',
+          section_8: '',
+        },
+        section_1: {},
+        section_2: {},
+        section_3: {},
+        section_4: {},
+        section_5: {},
+        section_6: {},
+        section_7: {},
+        section_8: {},
+      },
     },
     aboutUs: {
       titleSection: {
@@ -5489,15 +5847,16 @@ const ENScript = {
       phoneNumber: 'Phone Number:',
     },
     formDesignOneSection: {
-      fullName: "Full Name",
-      phoneNumber: "Phone Number",
-      workPosition: "Work Position",
-      companyName: "Company Name",
-      cityOrProvince: "Select City/Province",
-      staffSize: "Staff Size",
-      description: "We are proud to share special case studies where we have helped clients overcome challenges and achieve significant success.",
-      register: "Register Now"
-    }
+      fullName: 'Full Name',
+      phoneNumber: 'Phone Number',
+      workPosition: 'Work Position',
+      companyName: 'Company Name',
+      cityOrProvince: 'Select City/Province',
+      staffSize: 'Staff Size',
+      description:
+        'We are proud to share special case studies where we have helped clients overcome challenges and achieve significant success.',
+      register: 'Register Now',
+    },
   },
   admin: {
     title: 'NGS Content Management Page',
@@ -5528,10 +5887,10 @@ const ENScript = {
     findOutMore: 'Find Out More',
     secure: 'Secure your bussiness',
     connectUs: 'Connect with NGS',
-    solution: "Solution",
-    report: "Report",
-    service: "Service",
-    support: "Support"
+    solution: 'Solution',
+    report: 'Report',
+    service: 'Service',
+    support: 'Support',
   },
 };
 export default ENScript;

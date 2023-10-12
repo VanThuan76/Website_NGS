@@ -33,6 +33,7 @@ import HomeTestimonialSection from '../../website/HO/HO_Testimonial_Section';
 import HomeCaseStudySection from '../../website/HO/HO_CaseStudy_Section';
 import NewsSection from '../../website/All_Common/News_Section';
 import PartnerSection from '../../website/All_Common/Partner_Section';
+import { Home_1 } from '@/mocks/website/HO/home';
 
 type Props = {};
 
@@ -51,7 +52,7 @@ export default function PageEditor({}: Props) {
   const RenderComponent = () => {
     switch (activeSectionCode) {
       case 'PG001SE00001':
-        return <HomeBannerSection data={data} />;
+        return <HomeBannerSection data={Home_1} />;
       case 'PG001SE00002':
         return <HomeSolutionSection title='' className='!m-0 !p-0' data={data} />;
       case 'HO_security':
@@ -77,7 +78,7 @@ export default function PageEditor({}: Props) {
     <div className='grid h-full w-full grid-cols-1 gap-4'>
       <div className='grid w-full grid-cols-4 gap-4'>
         {/* Preview  */}
-        <Card className='relative col-span-3 flex flex-1 cursor-move flex-col gap-4 overflow-hidden overflow-x-scroll p-4'>
+        <Card className='relative col-span-3 flex flex-1 cursor-move flex-col gap-4 overflow-hidden p-4'>
           {activeSectionCode && data && (
             <TransformWrapper
               initialScale={1}
@@ -103,7 +104,9 @@ export default function PageEditor({}: Props) {
                       </Button>
                     </div>
                   </div>
-                  <TransformComponent>{RenderComponent()}</TransformComponent>
+                  <div className='overflow-x-scroll'>
+                    <TransformComponent>{RenderComponent()}</TransformComponent>
+                  </div>
                 </React.Fragment>
               )}
             </TransformWrapper>

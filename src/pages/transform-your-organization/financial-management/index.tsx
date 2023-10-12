@@ -3,7 +3,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
-import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import {

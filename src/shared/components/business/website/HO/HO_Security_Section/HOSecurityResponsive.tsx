@@ -18,6 +18,7 @@ const HOSecurityResponsive = ({ data, sectionControls }: Props) => {
             sectionControls={sectionControls}
             idx={index}
             slug={item.slug}
+            isResponsive={true}
           />
         ))}
       </div>

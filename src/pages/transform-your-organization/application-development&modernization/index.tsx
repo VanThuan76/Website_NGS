@@ -13,7 +13,6 @@ import {
   TYO_ADM_Section7,
 } from '@/mocks/website/TYO/tyo';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
-import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import BannerDesignOneSection from '@/components/business/website/All_Common/Banner_DesignOne_Section';
 import BenefitDesignOneSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignOne_Section';
 import WhyUsDesignTwoSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignTwo_Section';

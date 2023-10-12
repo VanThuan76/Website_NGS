@@ -1,11 +1,9 @@
 import React from 'react';
 import Head from 'next/head';
 import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
-import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignTwoSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
-import PartnerDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignThree_Section';
 import {
   TYOBanner1_PG3_17,
   TYOClientStories2_PG3_10,
@@ -20,9 +18,11 @@ import {
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 
 import dynamic from 'next/dynamic';
-import OverviewDesignFourSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFour_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
+import OverviewDesignEightSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignEight_Section';
+import BenefitDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Benefit_DesignTwo_Section';
+import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
@@ -43,10 +43,10 @@ const DAAPage = () => {
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignFourSection title='Tổng quan' data={TYOOverview4_PG3_17} />
+        <OverviewDesignEightSection title='Tổng quan' data={TYOOverview4_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_17} />
+        <BenefitDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ServiceDesignOneSection title='' data={TYOService1_PG3_17} />
@@ -55,7 +55,7 @@ const DAAPage = () => {
         <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_17} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
+        <PartnerDesignTwoSection data={TYOPartner1_PG3_10} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
         <ClientStoriesDesignTwoSection title='Client stories' data={TYOClientStories2_PG3_10} />

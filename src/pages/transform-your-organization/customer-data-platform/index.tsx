@@ -4,7 +4,6 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Service_DesignThree_Section';
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import ChallengeDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignThree_Section';
-import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFive_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
@@ -16,7 +15,6 @@ import {
   TYO_CDP_Section3,
   TYO_CDP_Section4,
   TYO_CDP_Section5,
-  TYO_CDP_Section6,
   TYO_CDP_Section7,
   TYO_CDP_Section8,
   TYO_CDP_Section9,

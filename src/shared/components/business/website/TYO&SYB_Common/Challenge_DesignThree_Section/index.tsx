@@ -42,9 +42,9 @@ const ChallengeDesignThreeSection = ({ title, data, className, sectionCodeLink }
             </div>
           </div>
           <UseLinkRedirect sectionCode={'FormCTA'}>
-            <BtnCommon title={trans.common.connectUs} cls='border border-orange-500 !bg-none' />
+            <BtnCommon title={trans.common.connectUs} cls='border border-orange-500 !bg-none z-20' />
           </UseLinkRedirect>
-          <BackgroundChallengeDesignThreeSection className='absolute left-0 top-0 h-full w-full' />
+          <BackgroundChallengeDesignThreeSection className='absolute left-0 top-0 z-10 h-full w-full' />
         </div>
         <div className='relative h-full w-full'>
           <PreImage src={data.section.image} alt={data.section.name} />

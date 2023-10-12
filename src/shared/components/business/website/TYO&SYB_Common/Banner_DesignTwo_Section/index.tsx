@@ -33,13 +33,22 @@ const BannerDesignTwoSection = ({ breadcrumb, data, className, sectionCodeLink }
                   </div>
                 ))}
               </div>
-              <div className='flex w-full flex-col items-start justify-start gap-4'>
+              <div className='hidden w-full flex-col items-start justify-start gap-4 md:flex'>
                 {data.section.name.split('//').map((word, idx) => (
                   <h1 className='text-5xl font-semibold uppercase leading-[56px] text-white' key={idx}>
                     {word}
                   </h1>
                 ))}
               </div>
+              {/* Responsive */}
+              <div className='flex w-full flex-col items-start justify-start gap-2 md:hidden'>
+                {data.section.name.split('//').map((word, idx) => (
+                  <h1 key={idx} className='text-2xl font-semibold uppercase leading-8 text-white'>
+                    {word}
+                  </h1>
+                ))}
+              </div>
+              {/* Responsive */}
               <div className='mt-5 flex w-full flex-col items-start justify-start'>
                 {data.section.description.split('//').map((word, idx) => (
                   <p className='text-sm font-normal leading-5 md:text-lg md:leading-7' key={idx}>

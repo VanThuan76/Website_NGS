@@ -58,7 +58,9 @@ const Header = () => {
           {/* <div className='hidden lg:flex gap-8 items-center'>
             <ThemeModeToggle />
           </div> */}
-          <LanguageSwitch />
+          <div className='hidden md:block'>
+            <LanguageSwitch />
+          </div>
           <div className='lg:hidden'>
             <Sheet>
               <SheetTrigger asChild>
