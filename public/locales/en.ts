@@ -3246,7 +3246,7 @@ const ENScript = {
             name: 'OT/ICS SECURITY',
             code: 'TPG004.9SE00001',
             image: '/images/SYB_OIS_Section1.png',
-            description: "We protect your critical infrastructure and industrial processes.",
+            description: 'We protect your critical infrastructure and industrial processes.',
           },
           components: [
             {

@@ -111,7 +111,8 @@ export const TYOchallenge2_PG3_17 = {
       id: 1,
       language: 'vi',
       code: 'PG003.16SE00003CN000001',
-      title: 'Mở ra cơ hội cho việc xây dựng các ứng dụng dịch vụ mới một cách nhanh chóng, tự động hóa quy trình, đem đến khả năng mở rộng quy mô không giới hạn cho hoạt động sản xuất kinh doanh tại doanh nghiệp ',
+      title:
+        'Mở ra cơ hội cho việc xây dựng các ứng dụng dịch vụ mới một cách nhanh chóng, tự động hóa quy trình, đem đến khả năng mở rộng quy mô không giới hạn cho hoạt động sản xuất kinh doanh tại doanh nghiệp ',
       description: '',
       slug: '',
       content: '',
@@ -123,7 +124,8 @@ export const TYOchallenge2_PG3_17 = {
       id: 2,
       language: 'vi',
       code: 'PG003.17SE00003CN000002',
-      title: 'Nâng cao năng lực lập kế hoạch cho doanh nghiệp bằng sự kết nối Con người và công tác quản trị kế hoạch thông qua dữ liệu.',
+      title:
+        'Nâng cao năng lực lập kế hoạch cho doanh nghiệp bằng sự kết nối Con người và công tác quản trị kế hoạch thông qua dữ liệu.',
       description: '',
       slug: '',
       content: '',
@@ -897,8 +899,8 @@ export const TYOPartner1_PG3_10 = {
       content: '',
       image: '/images/TYO_SAP.png',
       video: '',
-      thumbnail: ''
-    }
+      thumbnail: '',
+    },
   ],
 };
 
