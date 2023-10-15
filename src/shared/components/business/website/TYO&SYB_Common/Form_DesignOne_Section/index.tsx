@@ -25,7 +25,7 @@ const FormDesignOneSection = ({ title, data, className }: Props) => {
         </div>
         <FormDesignOneItem />
       </div>
-      <BorderStyleForm className='absolute -left-1/3 bottom-0 z-10 h-full w-full md:-top-[13%]' />
+      <BorderStyleForm className='absolute -left-[50%] bottom-0 z-10 h-full w-full md:-top-[13%]' />
     </section>
   );
 };

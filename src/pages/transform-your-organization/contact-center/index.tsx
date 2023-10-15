@@ -7,50 +7,64 @@ import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignFiveSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignFive_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  TYO_CC_Banner,
-  TYO_CC_Section2,
-  TYO_CC_Section3,
-  TYO_CC_Section4,
-  TYO_CC_Section5,
-  TYO_CC_Section6,
-  TYO_DSP_Section8,
-} from '@/mocks/website/TYO/tyo';
 import dynamic from 'next/dynamic';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const CCPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Contact Center NGS</title>
-        <meta name='description' content='Contact Center NGS' />
+        <title>{trans.website.service.contactCenter.title}</title>
+        <meta name='description' content={trans.website.service.contactCenter.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignTwoSection breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Contact Center']} data={TYO_CC_Banner} />
+        <BannerDesignTwoSection
+          breadcrumb={[trans.common.home, trans.common.service, trans.website.service.contactCenter.title]}
+          data={trans.website.service.contactCenter.section_1}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignThreeSection title='Tổng quan' data={TYO_CC_Section2} />
+        <OverviewDesignThreeSection
+          title={trans.website.service.contactCenter.titleSection.section_2}
+          data={trans.website.service.contactCenter.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignOneSection title='Thách thức' data={TYO_CC_Section3} />
+        <ChallengeDesignOneSection
+          title={trans.website.service.contactCenter.titleSection.section_3}
+          data={trans.website.service.contactCenter.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignTwoSetion title='Dịch vụ của chúng tôi' data={TYO_CC_Section4} />
+        <ServiceDesignTwoSetion
+          title={trans.website.service.contactCenter.titleSection.section_4}
+          data={trans.website.service.contactCenter.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignFiveSection title='Tại sao chọn NGS' data={TYO_CC_Section5} />
+        <OverviewDesignFiveSection
+          title={trans.website.service.contactCenter.titleSection.section_5}
+          data={trans.website.service.contactCenter.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CC_Section6} />
+        <PartnerDesignTwoSection
+          title={trans.website.service.contactCenter.titleSection.section_6}
+          data={trans.website.service.contactCenter.section_6}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_DSP_Section8} />
+        <FormDesignOneSection
+          title={trans.website.service.contactCenter.titleSection.section_7}
+          data={trans.website.service.contactCenter.section_7}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

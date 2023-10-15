@@ -7,50 +7,64 @@ import OverviewDesignNineSection from '@/components/business/website/TYO&SYB_Com
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  TYO_AMS_Banner,
-  TYO_AMS_Section2,
-  TYO_AMS_Section3,
-  TYO_AMS_Section4,
-  TYO_AMS_Section5,
-  TYO_AMS_Section6,
-} from '@/mocks/website/TYO/tyo';
-import { SYB_TI_Section9 } from '@/mocks/website/SYB/syb';
 import dynamic from 'next/dynamic';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const AMSPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Application Management Services NGS</title>
-        <meta name='description' content='Application Management Services NGS' />
+        <title>{trans.website.service.applicationManagementServices.title}</title>
+        <meta name='description' content={trans.website.service.applicationManagementServices.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
-        <BannerDesignOneSection title='Ngân hàng lõi' data={TYO_AMS_Banner} />
+        <BannerDesignOneSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_1}
+          data={trans.website.service.applicationManagementServices.section_1}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignNineSection title='Tổng quan' data={TYO_AMS_Section2} />
+        <OverviewDesignNineSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_2}
+          data={trans.website.service.applicationManagementServices.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignTwoSection title='Thách thức' data={TYO_AMS_Section3} />
+        <ChallengeDesignTwoSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_3}
+          data={trans.website.service.applicationManagementServices.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignThreeSection title='Dịch vụ' data={TYO_AMS_Section4} />
+        <ServiceDesignThreeSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_4}
+          data={trans.website.service.applicationManagementServices.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYO_AMS_Section5} />
+        <WhyUsDesignOneSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_5}
+          data={trans.website.service.applicationManagementServices.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_AMS_Section6} />
+        <PartnerDesignTwoSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_6}
+          data={trans.website.service.applicationManagementServices.section_6}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={SYB_TI_Section9} />
+        <FormDesignOneSection
+          title={trans.website.service.applicationManagementServices.titleSection.section_7}
+          data={trans.website.service.applicationManagementServices.section_7}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

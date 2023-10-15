@@ -4,67 +4,75 @@ import LayoutWebsite from 'src/shared/components/layout/LayoutWebsite';
 import ServiceDesignTwoSetion from '@/components/business/website/TYO&SYB_Common/Service_DesignTwo_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
-import {
-  TYO_CA_Section2,
-  TYO_CA_Section3,
-  TYO_CA_Section4,
-  TYO_CA_Section5,
-  TYO_CA_Section6,
-  TYO_CA_Section7,
-  TYO_CA_Section8,
-  TYO_CA_Section9,
-  TYO_CB_Section1,
-} from '@/mocks/website/TYO/tyo';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
 import ChallengeDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Challenge_DesignTwo_Section';
 import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Common/Service_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
-
 import dynamic from 'next/dynamic';
 import PartnerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignTwo_Section';
 import WhyUsDesignThreeSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignThree_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 
 const CAPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Core Airline NGS</title>
-        <meta name='description' content='Contact Center NGS' />
+        <title>{trans.website.service.coreAirline.title}</title>
+        <meta name='description' content={trans.website.service.coreAirline.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Ngành Hàng không']}
-          data={TYO_CB_Section1}
+          breadcrumb={[trans.common.home, trans.common.service, trans.website.service.coreAirline.title]}
+          data={trans.website.service.coreAirline.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='Tổng quan' data={TYO_CA_Section2} />
+        <OverviewDesignOneSection
+          title={trans.website.service.coreAirline.titleSection.section_2}
+          data={trans.website.service.coreAirline.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYO_CA_Section3} />
+        <ChallengeDesignTwoSection
+          title={trans.website.service.coreAirline.titleSection.section_3}
+          data={trans.website.service.coreAirline.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignTwoSetion title='Giải pháp' data={TYO_CA_Section4} />
+        <ServiceDesignTwoSetion
+          title={trans.website.service.coreAirline.titleSection.section_4}
+          data={trans.website.service.coreAirline.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='' data={TYO_CA_Section5} />
+        <ServiceDesignOneSection title='' data={trans.website.service.coreAirline.section_5} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignThreeSection title='Tại sao chọn NGS' data={TYO_CA_Section6} />
+        <WhyUsDesignThreeSection
+          title={trans.website.service.coreAirline.titleSection.section_6}
+          data={trans.website.service.coreAirline.section_6}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignTwoSection title='ĐỐI TÁC ĐỒNG HÀNH CÙNG NGS' data={TYO_CA_Section7} />
+        <PartnerDesignTwoSection
+          title={trans.website.service.coreAirline.titleSection.section_7}
+          data={trans.website.service.coreAirline.section_7}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignOneSection title='' data={TYO_CA_Section8} />
+        <ClientStoriesDesignOneSection title='' data={trans.website.service.coreAirline.section_8} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYO_CA_Section9} />
+        <FormDesignOneSection
+          title={trans.website.service.coreAirline.titleSection.section_9}
+          data={trans.website.service.coreAirline.section_9}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

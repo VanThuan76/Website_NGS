@@ -41,10 +41,14 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           modules={[Pagination]}
         >
           {data.components.map((item, idx) => (
-            <SwiperSlide className='mx-auto md:max-w-[335px] md:p-2' key={idx}>
+            <SwiperSlide className='md:mx-2 md:max-w-[335px] md:p-2' key={idx}>
               <div
-                className='relative flex h-[418px] w-full items-center justify-center overflow-hidden rounded-lg md:max-w-[335px]'
-                onMouseEnter={() => setHoveredItem(item)}
+                className='relative mx-auto flex h-[418px] w-[335px] items-center justify-center overflow-hidden rounded-lg'
+                onMouseEnter={() => {
+                  setTimeout(() => {
+                    setHoveredItem(item);
+                  }, 100);
+                }}
                 onMouseLeave={() => setHoveredItem(undefined)}
               >
                 {hoveredItem === item ? (
@@ -53,13 +57,13 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
                     className='absolute left-0 top-0 w-full bg-[#FC5E03] text-white'
                   />
                 ) : (
-                  <div className='relative h-[418px] w-[335px]'>
+                  <div className='relative h-[418px] w-[335px] overflow-hidden rounded-sm'>
                     <PreImage src={item.image} alt={title} objectPosition='center' />
                     <div className='absolute bottom-5 left-5 z-20 flex w-[90%] flex-col items-start justify-start gap-2 text-white'>
                       <p>{item.title}</p>
                       <p>{item.description}</p>
                     </div>
-                    <BackgroundTeam className='absolute -bottom-24 z-10 h-full w-full' />
+                    <BackgroundTeam className='absolute -bottom-10 z-10 h-full w-full' />
                   </div>
                 )}
               </div>

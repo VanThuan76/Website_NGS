@@ -18,9 +18,9 @@ const ESClientItem = ({ title, data }: Props) => {
         {data.map((item, idx) => (
           <div
             key={idx}
-            className={`relative ${
-              currentBreakPoint === 'sm' ? 'h-[53px] w-full' : 'h-[100px] w-[200px]'
-            } cursor-pointer ${idx % 2 === 0 && 'border-card-client-es-right'} ${
+            className={`relative ${currentBreakPoint === 'sm' ? 'h-[53px] w-full' : 'h-[75px] w-full'} cursor-pointer ${
+              idx % 2 === 0 && 'border-card-client-es-right'
+            } ${
               data &&
               data?.length - 1 !== idx &&
               data?.length - 2 !== idx &&

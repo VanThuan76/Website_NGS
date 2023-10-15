@@ -1,7 +1,9 @@
 import BtnCommon from '@/components/common/customization/BtnCommon';
 import { PreImage } from '@/components/common/customization/PreImage';
 import TitleSection from '@/components/common/customization/TitleSection';
+import BackgroundPeople from '@/components/icon/ES/BackgroundPeople';
 import QuoteIcon from '@/components/icon/TYO&SYB_Common/QuoteIcon';
+import useBreakPoint from '@/hooks/useBreakPoint';
 import { URLS_SYSTEM } from '@/utils/constants';
 import UseLinkRouter from '@/utils/functions/UseLinkRouter';
 import { motion } from 'framer-motion';
@@ -17,6 +19,7 @@ type Props = {
 };
 
 const ESPeopleSection = ({ title, data, className }: Props) => {
+  const currentBreakPoint = useBreakPoint();
   const [selectedTab, setSelectedTab] = useState<Partial<IComponents> | undefined>(() => {
     if (data.components && data.components.length > 0) return data.components[0];
     else return undefined;
@@ -45,21 +48,25 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
         name={data.section!.name as string}
         description={data.section!.description as string}
         findMore={true}
-        className='col-span-7 grid-cols-7 !gap-0 !text-left'
+        className='z-20 col-span-7 grid-cols-7 !gap-0 bg-white !text-left'
       />
-      <div className='mx-auto mt-3 hidden max-w-[1440px] grid-cols-5 items-center justify-between gap-10 overflow-hidden md:grid'>
-        <div className='relative col-span-2 h-[500px] w-full'>
-          <PreImage src={data.section.image} alt={data.section.name} objectPosition='center' />
+      <div className='relative mx-auto mt-3 hidden max-w-[1440px] grid-cols-5 items-center justify-between gap-10 overflow-hidden md:grid'>
+        <div className='relative col-span-2 h-[500px] w-full overflow-hidden rounded-[16px]'>
+          <PreImage
+            src={selectedTab?.image as string}
+            alt={selectedTab?.title as string}
+            objectPosition={`${currentBreakPoint === 'sm' ? 'bottom' : 'center'}`}
+          />
         </div>
-        <div className='col-span-3 flex w-full flex-col items-start justify-start gap-3'>
+        <div className='z-20 col-span-3 flex w-full flex-col items-start justify-start gap-3'>
           <div className='relative min-h-[500px] w-full md:min-h-[450px]'>
             {data.components.map((item, idx) => (
-              <div key={idx} className='absolute top-0 flex w-full flex-col items-start justify-start gap-10'>
+              <div key={idx} className='absolute top-0 mt-2 flex w-full flex-col items-start justify-start gap-10'>
+                <QuoteIcon />
                 <div className='flex flex-col items-start justify-start gap-2'>
                   <h1 className='text-xl font-medium md:text-3xl'>{selectedTab?.title}</h1>
                   <p className='font-normal'>{selectedTab?.description}</p>
                 </div>
-                <QuoteIcon />
                 {selectedTab && selectedTab?.content!.split('//').length > 1 ? (
                   <div className='flex w-full flex-col items-start justify-start gap-3'>
                     {selectedTab?.content?.split('//').map((item, index) => (
@@ -92,6 +99,7 @@ const ESPeopleSection = ({ title, data, className }: Props) => {
             ))}
           </ul>
         </div>
+        {/* <BackgroundPeople className='absolute bottom-0 left-0 z-10 mt-3 h-screen w-screen -translate-x-48 translate-y-24 object-cover' /> */}
       </div>
       <ESPeopleResponsive data={data.components} />
     </section>

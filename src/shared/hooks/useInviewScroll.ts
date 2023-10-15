@@ -21,17 +21,24 @@ const useInviewScroll = ({ amountComponent, inView }: Props) => {
   };
 
   const debouncedHandleScroll = debounce(handleScroll, 50);
+  const currentScrollPos = window.scrollY;
+  const scrollAmount = 100;
+
   useEffect(() => {
     if (inView) {
       window.addEventListener('scroll', debouncedHandleScroll);
+      if (currentScrollPos > scrollPositionRef.current) {
+        window.scrollTo(0, currentScrollPos + scrollAmount);
+      } else {
+      }
     } else {
       window.removeEventListener('scroll', debouncedHandleScroll);
+      window.scrollTo(0, currentScrollPos);
     }
-
     return () => {
       window.removeEventListener('scroll', debouncedHandleScroll);
     };
-  }, [debouncedHandleScroll, inView]);
+  }, [debouncedHandleScroll, currentScrollPos, inView]);
   return currentIndex;
 };
 

@@ -5109,7 +5109,6 @@ export const TYO_CI_Section4 = {
     description:
       'Chúng tôi chứng minh chiến lược và lập kế hoạch chuyển đổi kỹ thuật số bằng giải pháp lõi bảo hiểm thế hệ mới:',
   },
-
   components: [
     {
       id: 1,

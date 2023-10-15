@@ -62,7 +62,7 @@ const ESCoreValueSection = ({ title, data, sectionCodeLink, className }: Props) 
         ) : (
           <SectionCoreValue3 className='hidden h-full w-full object-cover md:block' />
         )}
-        <div className={`${inView ? 'fixed -bottom-2 right-1/2 block translate-x-1/2' : 'hidden'}`}>
+        <div className={`${inView ? 'fixed -bottom-2 right-1/2 block translate-x-1/2' : ''}`}>
           <UseLinkRedirect sectionCode={sectionCodeLink || 'ConnectUs'}>
             <BtnCommon title='Khám phá dịch vụ của chúng tôi' cls='text-orange-500 p-4 rounded-sm' hover={false} />
           </UseLinkRedirect>

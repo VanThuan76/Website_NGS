@@ -31,6 +31,7 @@ const ESEnvironment = ({ data, className }: Props) => {
   const backgroundColor = ['#FFF8F5', '#F9F5FF', '#F5F7FF', '#F5FDFF'];
   const [sectionRef, inView] = useInView({
     threshold: 0.2,
+    delay: 300,
   });
   const controls = useAnimation();
   const currentIndex = useInviewScroll({ amountComponent: data.components!.length, inView });
@@ -53,7 +54,7 @@ const ESEnvironment = ({ data, className }: Props) => {
       style={{
         backgroundColor: `${backgroundColor[currentIndex]}`,
       }}
-      className={`h-[300vh] w-screen ${className}`}
+      className={`mt-20 h-[400px] w-screen ${className}`}
     >
       <motion.div
         animate={controls}
