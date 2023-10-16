@@ -8,56 +8,64 @@ import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import OverviewDesignThreeSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignThree_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
-import {
-  TYOBanner1_PG3_14,
-  TYOForm1_PG3_14,
-  TYOOverview3_PG3_14,
-  TYOPartner1_PG3_10,
-  TYOService1_PG3_14,
-  TYOWhyUs1_PG3_14,
-  TYOchallenge2_PG3_14,
-  TYOclientStories1_PG3_14,
-} from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 const HCMPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Human Capital Management</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.service.humanCapitalManagement.title}</title>
+        <meta name='description' content={trans.website.service.humanCapitalManagement.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Quản trị nguồn nhân lực']}
-          data={TYOBanner1_PG3_14}
+          breadcrumb={[trans.common.home, trans.common.service, trans.website.service.humanCapitalManagement.title]}
+          data={trans.website.service.humanCapitalManagement.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignThreeSection title='Tổng quan' data={TYOOverview3_PG3_14} />
+        <OverviewDesignThreeSection
+          title={trans.website.service.humanCapitalManagement.titleSection.section_2}
+          data={trans.website.service.humanCapitalManagement.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_14} />
+        <ChallengeDesignTwoSection
+          title={trans.website.service.humanCapitalManagement.titleSection.section_3}
+          data={trans.website.service.humanCapitalManagement.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection sectionCodeLink='FormCTA' title='Dịch vụ' data={TYOService1_PG3_14} />
+        <ServiceDesignOneSection
+          sectionCodeLink='FormCTA'
+          title={trans.website.service.humanCapitalManagement.titleSection.section_4}
+          data={trans.website.service.humanCapitalManagement.section_4}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_14} />
+        <WhyUsDesignOneSection
+          title={trans.website.service.humanCapitalManagement.titleSection.section_5}
+          data={trans.website.service.humanCapitalManagement.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
+        <PartnerDesignOneSection data={trans.website.service.humanCapitalManagement.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignOneSection title='' data={TYOclientStories1_PG3_14} />
+        <ClientStoriesDesignOneSection title='' data={trans.website.service.humanCapitalManagement.section_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_14} />
+        <FormDesignOneSection
+          title={trans.website.service.humanCapitalManagement.titleSection.section_8}
+          data={trans.website.service.humanCapitalManagement.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

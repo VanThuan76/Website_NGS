@@ -7,57 +7,65 @@ import ServiceDesignOneSection from '@/components/business/website/TYO&SYB_Commo
 import PartnerDesignOneSection from '@/components/business/website/TYO&SYB_Common/Partner_DesignOne_Section';
 import WhyUsDesignOneSection from '@/components/business/website/TYO&SYB_Common/WhyUs_DesignOne_Section';
 import ClientStoriesDesignOneSection from '@/components/business/website/TYO&SYB_Common/ClientStories_DesignOne_Section';
-import {
-  TYOBanner1_PG3_16,
-  TYOForm1_PG3_16,
-  TYOOverview4_PG3_16,
-  TYOPartner1_PG3_10,
-  TYOService1_PG3_16,
-  TYOWhyUs1_PG3_16,
-  TYOchallenge2_PG3_16,
-  TYOclientStories1_PG3_16,
-} from '@/mocks/website/TYO/tyo';
 import FormDesignOneSection from '@/components/business/website/TYO&SYB_Common/Form_DesignOne_Section';
 import BannerDesignTwoSection from '@/components/business/website/TYO&SYB_Common/Banner_DesignTwo_Section';
 import OverviewDesignOneSection from '@/components/business/website/TYO&SYB_Common/Overview_DesignOne_Section';
+import useTrans from '@/hooks/useTrans';
 
 const ScrollRevealWrapper = dynamic(() => import('@/components/common/customization/ScrollRevealWrapper'), {
   ssr: false,
 });
 const EPAAPage = () => {
+  const { trans } = useTrans();
   return (
     <React.Fragment>
       <Head>
-        <title>Extended Planning and Analysis</title>
-        <meta name='description' content='YNG_ERP NGS' />
+        <title>{trans.website.service.extendedPlanningAndAnalysis.title}</title>
+        <meta name='description' content={trans.website.service.extendedPlanningAndAnalysis.title} />
         <meta name='keywords' content='Công nghệ thông tin, Giải pháp số' />
       </Head>
       <ScrollRevealWrapper>
         <BannerDesignTwoSection
-          breadcrumb={['Trang chủ', 'Dịch vụ xuất sắc', 'Lập kế hoạch và phân tích mở rộng (xP&A)']}
-          data={TYOBanner1_PG3_16}
+          breadcrumb={[
+            trans.common.home,
+            trans.common.service,
+            trans.website.service.extendedPlanningAndAnalysis.title,
+          ]}
+          data={trans.website.service.extendedPlanningAndAnalysis.section_1}
         />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <OverviewDesignOneSection title='Tổng quan' data={TYOOverview4_PG3_16} />
+        <OverviewDesignOneSection
+          title={trans.website.service.extendedPlanningAndAnalysis.titleSection.section_2}
+          data={trans.website.service.extendedPlanningAndAnalysis.section_2}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ChallengeDesignTwoSection title='Giá trị mang lại' data={TYOchallenge2_PG3_16} />
+        <ChallengeDesignTwoSection
+          title={trans.website.service.extendedPlanningAndAnalysis.titleSection.section_3}
+          data={trans.website.service.extendedPlanningAndAnalysis.section_3}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ServiceDesignOneSection title='' data={TYOService1_PG3_16} />
+        <ServiceDesignOneSection title='' data={trans.website.service.extendedPlanningAndAnalysis.section_4} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <WhyUsDesignOneSection title='Tại sao chọn NGS' data={TYOWhyUs1_PG3_16} />
+        <WhyUsDesignOneSection
+          title={trans.website.service.extendedPlanningAndAnalysis.titleSection.section_5}
+          data={trans.website.service.extendedPlanningAndAnalysis.section_5}
+        />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <PartnerDesignOneSection data={TYOPartner1_PG3_10} />
+        <PartnerDesignOneSection data={trans.website.service.extendedPlanningAndAnalysis.section_6} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <ClientStoriesDesignOneSection title='' data={TYOclientStories1_PG3_16} />
+        <ClientStoriesDesignOneSection title='' data={trans.website.service.extendedPlanningAndAnalysis.section_7} />
       </ScrollRevealWrapper>
       <ScrollRevealWrapper>
-        <FormDesignOneSection title='KẾT NỐI VỚI NGS' data={TYOForm1_PG3_16} />
+        <FormDesignOneSection
+          title={trans.website.service.extendedPlanningAndAnalysis.titleSection.section_8}
+          data={trans.website.service.extendedPlanningAndAnalysis.section_8}
+        />
       </ScrollRevealWrapper>
     </React.Fragment>
   );

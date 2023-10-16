@@ -36,12 +36,12 @@ const TeamDesignOneSection = ({ title, data, className }: Props) => {
           pagination={{
             dynamicBullets: true,
           }}
-          slidesPerView={currentBreakPoint === 'sm' ? 1 : 4}
-          spaceBetween={0}
+          slidesPerView={currentBreakPoint === 'sm' ? 1 : currentBreakPoint === 'xl' ? 4 : 3}
+          spaceBetween={100}
           modules={[Pagination]}
         >
           {data.components.map((item, idx) => (
-            <SwiperSlide className='md:mx-2 md:max-w-[335px] md:p-2' key={idx}>
+            <SwiperSlide className='md:max-w-[335px]' key={idx}>
               <div
                 className='relative mx-auto flex h-[418px] w-[335px] items-center justify-center overflow-hidden rounded-lg'
                 onMouseEnter={() => {
